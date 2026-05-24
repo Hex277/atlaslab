@@ -1,0 +1,42 @@
+name: Obfuscate JavaScript
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu yoxla
+        uses: actions/checkout@v4
+
+      - name: Node.js quraşdır
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Root-dakı JS-ləri qarışdır və əvəz et
+        run: |
+          for file in *.js; do
+            # eslint.config.js faylını qarışdırmırıq, yoxsa linter işləməz
+            if [ -f "$file" ] && [ "$file" != "eslint.config.js" ]; then
+              npx javascript-obfuscator "$file" --output "$file" --compact true --self-defending true
+            fi
+          done
+
+      - name: Telebe qovluğundakı JS-ləri qarışdır və əvəz et
+        run: |
+          if [ -d "telebe" ]; then
+            # --output ./telebe yazmaqla birbaşa qovluğun daxilini yeniləyirik
+            npx javascript-obfuscator ./telebe --output ./telebe --compact true --self-defending true
+          fi
+
+      - name: Dəyişiklikləri GitHub-a geri yüklə
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Build: Orijinal JS faylları obfuscate edildi" || echo "Dəyişiklik yoxdur"
+          git push

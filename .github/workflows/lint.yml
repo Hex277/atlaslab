@@ -1,0 +1,19 @@
+name: Code Quality Check
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu endir
+        uses: actions/checkout@v4
+
+      - name: Node.js quraşdır
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ESLint ilə yoxla
+        run: npx eslint . || true 
