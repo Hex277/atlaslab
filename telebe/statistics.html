@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistika və Nailiyyətlər | atlaslab.az</title>
+    
+    <meta name="description" content="İmtahan hazırlıq statistikanızı izləyin. Düzgün və səhv cavablarınızı təhlil edin, semestr imtahanlarına hazırlıq tərəqqinizi görün.">
+    <meta name="robots" content="noindex, nofollow"> 
+
+    <meta property="og:title" content="Statistika və Akademik İnkişaf | atlaslab.az">
+    <meta property="og:description" content="Hazırlıq səviyyəni ölç, zəif olduğun fənləri müəyyən et və inkişaf dinamikanı izlə.">
+    <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
+    <meta property="og:url" content="https://atlaslab.az/telebe/statistics.html">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://atlaslab.az/telebe/statistics.html">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+
+    <link rel="icon" href="../logo.webp" type="image/webp">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-content {
+            display: grid;
+            /* Desktopda 2 sütun: Dashboard 300px, Qrafik qalan yer */
+            grid-template-columns: 300px 1fr;
+            gap: 10px;
+            padding: 10px;
+            /* Bu komanda sətirdəki elementləri bir-birinə dartıb bərabərləşdirir */
+            align-items: stretch;
+            background-color: var(--surface2);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                /* Mobildə sütunları ləğv edib hər şeyi tək sütun edirik */
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-dashboard, 
+            .stats-chart-container, 
+            .leaderboard-container {
+                /* Hamısı 1-ci sütunda alt-alta düzülür */
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="isindex.html">
+                <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-toggle">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <a href="premium.html" id="premium-href">
+            <div class="premium">
+                <img src="../images/lightning.png" alt="premium">
+                <p>Premium</p>
+            </div>
+        </a>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <div class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </div>
+    </div>
+    <nav id="menu-bar" class="hidden">
+        <a href="../index.html" id="name-text">
+            <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+        </a>
+        
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow">&gt;</span>
+        </div>
+        
+        <ul id="abituriyent-menu" class="anim-menu">
+            <li><a href="../abituriyent/1ciqrup.html" data-i18n="group1">1ci Qrup</a></li>
+            <li><a href="../abituriyent/2ciqrup.html" data-i18n="group2">2ci Qrup</a></li>
+            <li><a href="../abituriyent/3ciqrup.html" data-i18n="group3">3cü Qrup</a></li>
+            <li><a href="../abituriyent/4ciqrup.html" data-i18n="group4">4cü Qrup</a></li>
+            <li><a href="../abituriyent/specializations.html" data-i18n="aboutspec">İxtisaslar haqqında</a></li>
+            <li><a href="../abituriyent/balhesab.html" data-i18n="scorecalc">Bal hesablanması</a></li>
+            <li><a href="../abituriyent/about.html" data-i18n="about">Haqqımızda</a></li>
+        </ul>
+
+        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+            Tələbə <span class="arrow">&gt;</span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="telebe-menu">
+            <a href="./fennler-menu.html">Fənnlər</a>
+            <a href="./statistics.html">Statistika</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+    </nav>
+    <div class="main-background">
+        <div class="main-content">
+            <section class="stats-dashboard">
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <div class="icon-element">
+                            <img src="../images/clipboard.webp" alt="Total Quiz" class="stat-icon">
+                            <span class="stat-label">Ümumi Sınaq</span>
+                        </div>
+                        <span class="stat-value" id="totalQuizzes">0</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <div class="icon-element">
+                            <img src="../images/bullseye.webp" alt="Accuracy" class="stat-icon">
+                            <span class="stat-label">Düzgünlük Faizi</span>
+                        </div>
+                        <span class="stat-value" id="accuracyRate">0%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <div class="icon-element">
+                            <img src="../images/trophy.webp" alt="Elo" class="stat-icon">
+                            <span class="stat-label">Elo Reytinqi</span>
+                        </div>
+                        <span class="stat-value" id="eloValue">1000</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-info">
+                        <div class="icon-element">
+                            <img src="../images/flames.webp" alt="Streak" class="stat-icon">
+                            <span class="stat-label">Günlük Giriş</span>
+                        </div>
+                        <span class="stat-value" id="userStreak">0 Gün</span>
+                    </div>
+                </div>
+
+                <div class="stat-card"  id="last-label">
+                    <div class="stat-info">
+                        <div class="icon-element">
+                            <img src="../images/stopwatch.webp" alt="Time" class="stat-icon">
+                            <span class="stat-label">Keçirilən Vaxt</span>
+                        </div>
+                        <span class="stat-value" id="avgTime">0:00</span>
+                    </div>
+                </div>
+            </section>
+            <section class="stats-chart-container">
+                <div class="chart-header">
+                    <h3>Aktivlik Qrafiki</h3>
+                    <!-- İD-ni leaderboard-select-dən chart-filter-select-ə dəyişdim ki, mənası daha aydın olsun, amma istəsən əvvəlki kimi saxlaya bilərsən -->
+                    <select name="chart-filter" id="chart-filter-select">
+                        <option value="weekly" selected>Həftəlik</option>
+                        <option value="all">Hamısı</option>
+                    </select>
+                </div>
+                
+                <!-- Wrapper-ə position: relative veririk ki, örtük tam üstünə düşsün -->
+                <div class="chart-wrapper" style="position: relative;">
+                    <canvas id="weeklyActivityChart"></canvas>
+                    
+                    <!-- Premium Xəbərdarlıq Örtüyü (Başlanğıcda gizlidir) -->
+                    <div id="premiumOverlay" class="premium-overlay hidden">
+                        <div class="premium-content">
+                            <h4>Bütün zamanların statistikası</h4>
+                            <p>Bu məlumatı görmək üçün Premium əldə edin.</p>
+                            <button class="buy-premium-btn" onclick="window.location.href='premium.html'">Premium Al</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="leaderboard-container">
+                <div class="leaderboard-header">
+                    <h3>Liderlər Cədvəli</h3>
+                    <select name="leaderboard" id="leaderboard-select">
+                        <option value="all" selected>Hamısı</option>
+                        <option value="weekly">Həftəlik</option>
+                    </select>
+                </div>
+
+                <div class="leaderboard-table-wrapper">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Sıra</th>
+                                <th>İstifadəçi</th>
+                                <th>Elo</th>
+                                <th>Düzgünlük</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardBody">
+                            <tr class="current-user">
+                                <td>1</td>
+                                <td>Sən (Siz)</td>
+                                <td>1000</td>
+                                <td>0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src="script.js" defer></script>
+</html>

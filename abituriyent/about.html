@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AtlasLab – Haqqımızda</title>
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+<link rel="stylesheet" href="qruplar.css" />
+<link rel="icon" href="../logo.webp" type="image/webp" />
+<meta name="description" content="atlaslab.az - Azərbaycan təhsil qruplarına əsasən ixtisasları və universitetləri tapın.">
+<meta name="author" content="AtlasLab Komandası">
+<meta property="og:title" content="atlaslab.az – Haqqımızda">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<meta property="og:description" content="Qrup seçimi və imtahan ballarına əsasən ixtisasları və universitetləri tez bir zamanda tapın.">
+<link rel=canonical href=https://atlaslab.az/about.html>
+<meta property=og:image content=https://atlaslab.az/logo.webp>
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-029N0KCH3P');
+</script>
+<style>
+html, body {
+margin: 0;
+padding: 0;
+min-height: 100vh;
+overflow-y: auto; 
+overflow-x: none;
+background-color: #f3f3f3;
+color: #222;
+font-family: Arial, sans-serif;
+transition: background-color 0.3s, color 0.3s;
+text-align: center;
+}
+body.dark-mode {
+background-color: #121212;
+color: #f0f0f0;
+}
+.site-footer {
+margin: 20px 0 0 0;
+position: relative;
+color: inherit;
+}
+/* Əlavə stil */
+.main-content {
+padding: 20px;
+margin: 0 auto;
+text-align: left;
+position:relative;
+margin-left: 210px;
+margin-top: 50px;
+}
+h1 {
+margin: 0 0 15px 0;
+margin-top: 50px;
+}
+h2 {
+padding: 3px 10px;
+}
+p {
+padding: 3px 20px;
+}
+/* MOBILE THEME */
+@media (max-width:768px) {
+.main-content {
+margin-left: 0px;
+margin-top: 0px;
+}
+}
+@media (min-width:769) {
+.site-footer {
+margin-left: 105px;
+}
+.logo {
+    width: auto;
+}
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<button id="menu-toggle">
+<img id="menu" src="../images/menu-bar.webp" alt="menu" width="20" class="menu" loading="lazy">
+</button>
+<div class="logo">
+    <a href="index.html">
+        <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+    </a>
+</div>
+<button id="toggle-dark-mode">
+<img id="icon" src="../images/moon.webp" alt="rejim" width="23" class="white-icon" loading="lazy">
+</button>
+
+<select id="language-selector">
+<option value="az" selected>AZ</option>
+<option value="en">EN</option>
+<option value="tr">TR</option>
+</select>
+</div>
+<nav id="menu-bar" class="hidden">
+    <a href="index.html" id="name-text">
+      <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+    </a>
+    
+    <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+      Abituriyent <span class="arrow">&gt;</span>
+    </div>
+    
+    <ul id="abituriyent-menu" class="anim-menu">
+      <li><a href="./1ciqrup.html" data-i18n="group1">Group 1</a></li>
+      <li><a href="./2ciqrup.html" data-i18n="group2">Group 2</a></li>
+      <li><a href="./3ciqrup.html" data-i18n="group3">Group 3</a></li>
+      <li><a href="./4ciqrup.html" data-i18n="group4">Group 4</a></li>
+      <li><a href="./specializations.html" data-i18n="aboutspec">About Specializations</a></li>
+      <li><a href="./balhesab.html" data-i18n="scorecalc">Score Calculator</a></li>
+      <li><a href="./about.html" data-i18n="about">About Us & Co</a></li>
+    </ul>
+
+    <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+      Tələbə <span class="arrow">&gt;</span>
+    </div>
+    
+    <div class="menu-bar anim-menu" id="telebe-menu">
+      <a href="../telebe/fennler-menu.html">Fənnlər</a>
+      <a href="../telebe/statistics.html">Statistika</a>
+      <a href="../telebe/profile.html">Profil</a>
+      <a href="../telebe/aboutus.html">Haqqımızda və əlaqə</a>
+      <a href="../telebe/premium.html">Premium abunəlik</a>
+    </div>
+  </nav>
+<header class="header">
+<h1 data-i18n="siteTitle">AtlasLab.com</h1>
+<p data-i18n=aboutUs>About Us</p>
+</header>
+
+<main class="main-content">
+<!-- Privacy Policy content -->
+<div class=text-bar>
+<section class=info-section>
+<p data-i18n=aboutParagraph1>This website was created to fundamentally transform the specialty selection process in Azerbaijan. The abundance and fragmentation of information in the education sector hinder users from finding the right specialty. Our goal is to simplify
+the selection process by providing the most comprehensive, up-to-date, and accessible information to students and specialty seekers.</p>
+<p data-i18n=aboutParagraph2>We have compiled a wide range of specialties and related information into one platform. We follow the latest educational trends and constantly update our database based on the needs of our users. The information we provide about specialties
+covers important aspects such as academic programs, future prospects, and career opportunities.</p>
+<p data-i18n=aboutParagraph3>User experience is our top priority. With an intuitive search system, easy-to-understand interface, and extensive filtering options, everyone can easily find the specialty that suits their needs. Our goal is to be a leading and reliable
+platform in the field of education in Azerbaijan.</p>
+<p data-i18n=aboutParagraph4>We value feedback from our users. We always listen to your opinions and strive to improve our website further. Guiding you in your specialty selection journey is our main mission.</p>
+</section>
+<h1 data-i18n=contactTitle>Contact</h1>
+<section class=contact-section>
+<p><strong data-i18n=emailLabel></strong>: atlaslab.az@gmail.com</p>
+<p><strong data-i18n=phoneLabel></strong>: +994 77 624 70 77</p>
+<p><strong data-i18n=locationLabel></strong>: <span data-i18n=locationValue></span></p>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 atlaslab.az.</p>
+<p>
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="terms-conditions.html">Terms & Conditions</a>
+</p>
+</footer>
+
+<script src="..\translations.js" defer></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src="script.js" defer></script>
+<!--
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    var sf = new Snowflakes({
+        color: "#c5eae7",
+        count: 30,
+        speed: 1.1,
+        minOpacity: 0.8,
+        minSize: 8,
+        maxSize: 18
+    });
+</script>
+-->
+</body>
+</html>

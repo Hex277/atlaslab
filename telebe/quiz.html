@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sual səhifəsi | atlaslab.az</title>
+    <meta name="description" content="Seçdiyiniz fənn üzrə testləri həll edin, nəticələrinizi görün və imtahan hazırlığınızı yoxlayın.">
+    <meta name="robots" content="noindex, follow"> <meta property="og:title" content="Onlayn Quiz Platforması | atlaslab.az">
+    <meta property="og:description" content="İndi testə başla! Biliklərini sına və semestr imtahanlarına hazırlaş.">
+    <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
+    <meta property="og:url" content="https://atlaslab.az/telebe/quiz.html">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://atlaslab.az/telebe/quiz.html">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+    <style>
+        .main-content {
+            margin-left: 0;
+        }
+        .left-menu-bg {
+            visibility: hidden;
+        }
+        .logo {
+            position: absolute;
+            margin-left: 0px;
+            display: flex;
+        }
+        #confirmBtn {
+            background-color: #1e90ff;
+        }
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 300px;
+        }
+
+        /* Fırlanan Spinner animasiyası */
+        .quiz-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 123, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #007bff; /* Sənin dizayna uyğun mavi rəng */
+            animation: quizSpin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        /* Loader mətni */
+        .loader-text {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Yumşaq keçid (Fade-in) animasiyası */
+        .sfx-fade-in {
+            animation: quizFadeIn 0.6s ease-out forwards;
+        }
+
+        /* Animasiya qaydaları (Keyframes) */
+        @keyframes quizSpin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes quizFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="isindex.html">
+                <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-btn" onclick="toggleMobileMenu()">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <a href="profile.html" class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </a>
+            
+        <a href="premium.html" id="premium-href">
+            <div class="premium">
+                <img src="../images/lightning.png" alt="premium">
+                <p>Premium</p>
+            </div>
+        </a>
+    </div>
+    <div class="main-background">
+        <div class="main-content">
+            <div class="sual-bg">
+                <div class="exit-bg">
+                    <a href="fennler-menu.html" id="left-arrow" title="Çıxış">⬅</a>
+                </div>
+                <div class="top-part">
+                    <div class="fenn-id">
+                        <h1></h1>
+                        <div class="sual-sayi">
+                            <div id="timer-box">
+                                <span id="timer-icon">⏰</span>
+                                <span id="quiz-timer">00:00</span>
+                            </div>
+                            <span id="question-counter">1 / 5</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" style="width:0%; height:10px; border-radius:5px;"></div>
+                    </div>
+                </div>
+                <div class="bottom-part">
+                    <div class="sual-text-bg">
+                        <p id="sual-text">SUAL</p>
+                    </div>
+                    <div class="sual-word">
+                        <p id="question-text">Suallar tezliklə əlavə ediləcək.</p>
+                    </div>
+                    <div class="options" id="options-container">
+                        
+                    </div>
+                    <div class="quiz-buttons-bg">
+                        <button id="open-ai-btn"><img src="../images/ai-chat.webp" alt="AI"></button>
+                        <div class="sound-wrapper">
+                            <button id="sound-toggle-btn"><img src="../images/audio-off.png" alt="Səs"></button>                            
+                            <!-- Düymənin tam üzərində açılacaq xüsusi menyu -->
+                            <div id="custom-noise-menu" style="display: none;">
+                                <div class="noise-option" data-value="none">Söndür</div>
+                                <div class="noise-option" data-value="white">White Noise</div>
+                                <div class="noise-option" data-value="brown">Brown Noise</div>
+                                <div class="noise-option" data-value="rain">Yağış Səsi</div>
+                            </div>
+                        </div>
+                        <button onclick="openReportFrame()" id="report"><img src="../images/report.png" alt="Bildir"></button>
+                        <button id="evvelki-btn">Əvvəlki</button>
+                        <button id="novbeti-btn">Növbəti</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src="script.js"></script>
+</html>

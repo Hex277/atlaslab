@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profilim | atlaslab.az</title>
+    <meta name="description" content="atlaslab.az profilinizə daxil olaraq imtahan nəticələrinizi izləyin, abunəlik statusunuzu yoxlayın və şəxsi məlumatlarınızı idarə edin.">
+    <meta name="robots" content="noindex, nofollow"> <meta property="og:title" content="İstifadəçi Profili | atlaslab.az">
+    <meta property="og:description" content="Şəxsi profilinizə daxil olun və akademik inkişaf dinamikanızı izləyin.">
+    <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
+    <meta property="og:url" content="https://atlaslab.az/telebe/profile.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://atlaslab.az/telebe/profile.html">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="isindex.html">
+                <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-toggle">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <a href="premium.html" id="premium-href">
+            <div class="premium">
+                <img src="../images/lightning.png" alt="premium">
+                <p>Premium</p>
+            </div>
+        </a>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <div class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </div>
+    </div>
+    <nav id="menu-bar" class="hidden">
+        <a href="../index.html" id="name-text">
+            <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+        </a>
+        
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow">&gt;</span>
+        </div>
+        
+        <ul id="abituriyent-menu" class="anim-menu">
+            <li><a href="../abituriyent/1ciqrup.html" data-i18n="group1">1ci Qrup</a></li>
+            <li><a href="../abituriyent/2ciqrup.html" data-i18n="group2">2ci Qrup</a></li>
+            <li><a href="../abituriyent/3ciqrup.html" data-i18n="group3">3cü Qrup</a></li>
+            <li><a href="../abituriyent/4ciqrup.html" data-i18n="group4">4cü Qrup</a></li>
+            <li><a href="../abituriyent/specializations.html" data-i18n="aboutspec">İxtisaslar haqqında</a></li>
+            <li><a href="../abituriyent/balhesab.html" data-i18n="scorecalc">Bal hesablanması</a></li>
+            <li><a href="../abituriyent/about.html" data-i18n="about">Haqqımızda</a></li>
+        </ul>
+
+        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+            Tələbə <span class="arrow">&gt;</span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="telebe-menu">
+            <a href="./fennler-menu.html">Fənnlər</a>
+            <a href="./statistics.html">Statistika</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+    </nav>
+    <div class="main-background">
+        <div class="main-content">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <h1>Profiliniz</h1>
+                    <p>Məlumatlarınızı buradan yeniləyə və ya hesabınızı idarə edə bilərsiniz.</p>
+                </div>
+                
+                <div class="profile-form">
+                    <div class="abunelik-bg" style="display: none;">
+                        <p>İstifadəçi abunəliyi:</p>
+                        <p id="movcud-abunelik">Pulsuz</p>
+                    </div>
+                    <div class="premium-abunelik-bg" style="display: none;">
+                        <div class="abunelik-top">
+                            <p>İstifadəçi abunəliyi:</p>
+                            <div class="premium-text-bg" id="premium-text">
+                                <p>Premium</p>
+                            </div>
+                        </div>
+                        <div class="abunelik-bottom">
+                            <p>Bitimə tarixi:</p>
+                            <p id="bitme-tarixi"></p>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>İstifadəçi adı</label>
+                        <input type="text" id="username" placeholder="Ad">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>E-poçt ünvanı</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="E-poçtunuzu daxil edin" disabled>
+                            <button class="btn-change" type="button" onclick="openChangeFrame('email')">Dəyiş</button>                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Şifrə</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Şifrənizi daxil edin" disabled>
+                            <button class="btn-change" type="button" onclick="openChangeFrame('password')">Dəyiş</button>
+                        </div>
+                    </div>
+                    <div class="created-time">
+                        <p>Hesab yaradıldı: </p>
+                        <p id="createdat"></p>
+                    </div>
+                    <div class="profile-buttons">
+                        <div class="action-buttons-lod">
+                            <button class="btn-logout">Hesabdan çıx</button>
+                            <button class="btn-delete">Hesabı sil</button>
+                        </div>
+                        <button class="btn-save">Dəyişiklikləri saxla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src="script.js" defer></script>
+</html>

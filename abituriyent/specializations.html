@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="az">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="atlaslab.az | About Specialties 2025">
+    <meta property="og:description" content="All specialties informations.">
+    <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
+    <meta property="og:url" content="https://atlaslab.az/specializations.html">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="best specialties, specialties, universities, 2025 scores, about specialties, specialty selection, Azerbaijan universities">
+    <meta name="robots" content="index, follow">
+    <title>AtlasLab – İxtisaslar Haqqında Məlumat Bələdçisi</title>
+    <meta name="description" content="Azərbaycan universitetlərindəki ixtisaslar haqqında ətraflı məlumat əldə edin. Hər bir ixtisasın məqsədi, tələbləri və gələcək imkanları ilə tanış olun.">
+    <meta name="keywords" content="ixtisas məlumatı, ixtisaslar haqqında, universitet ixtisasları, təhsil ixtisasları, mühəndislik ixtisasları, tərcüməçilik, hüquq, tibb, 2025 ixtisasları, texniki, humaintar">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <link rel="canonical" href="https://atlaslab.az/specializations.html">
+    <link rel="stylesheet" href="qruplar.css">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+    <style>
+        @media (min-width:768px) {
+            body {
+                margin: auto;
+            }
+            h1 {
+                margin-left: 220px;
+                padding-top: 130px;
+                margin-top: 0;
+            }
+            .search-bar {
+                margin-left: 220px;
+            } 
+        }  
+    </style>
+      
+</head>
+<body>
+    <div class="top-bar">
+      <button id="menu-toggle">
+        <img id="menu" src="../images/menu-bar.webp" alt="menu" width="20" class="menu" loading="lazy">
+      </button>
+      <div class="logo">
+          <a href="./index.html">
+              <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+          </a>
+      </div>
+      <button id="toggle-dark-mode">
+        <img id="icon" src="../images/moon.webp" alt="rejim" width="23" class="white-icon" loading="lazy">
+      </button>
+      
+      <select id="language-selector">
+        <option value="az" selected>AZ</option>
+        <option value="en">EN</option>
+        <option value="tr">TR</option>
+      </select>
+    </div>
+    <nav id="menu-bar" class="hidden">
+    <a href="index.html" id="name-text">
+      <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+    </a>
+    
+    <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+      Abituriyent <span class="arrow">&gt;</span>
+    </div>
+    
+    <ul id="abituriyent-menu" class="anim-menu">
+      <li><a href="./1ciqrup.html" data-i18n="group1">Group 1</a></li>
+      <li><a href="./2ciqrup.html" data-i18n="group2">Group 2</a></li>
+      <li><a href="./3ciqrup.html" data-i18n="group3">Group 3</a></li>
+      <li><a href="./4ciqrup.html" data-i18n="group4">Group 4</a></li>
+      <li><a href="./specializations.html" data-i18n="aboutspec">About Specializations</a></li>
+      <li><a href="./balhesab.html" data-i18n="scorecalc">Score Calculator</a></li>
+      <li><a href="./about.html" data-i18n="about">About Us & Co</a></li>
+    </ul>
+
+    <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+      Tələbə <span class="arrow">&gt;</span>
+    </div>
+    
+    <div class="menu-bar anim-menu" id="telebe-menu">
+      <a href="../telebe/fennler-menu.html">Fənnlər</a>
+      <a href="../telebe/statistics.html">Statistika</a>
+      <a href="../telebe/profile.html">Profil</a>
+      <a href="../telebe/aboutus.html">Haqqımızda və əlaqə</a>
+      <a href="../telebe/premium.html">Premium abunəlik</a>
+    </div>
+  </nav>
+    <div class="page-specializations">
+        <h1 data-i18n="ixtisasinfotext">İxtisaslar Haqqında Məlumat</h1>
+        
+        <div class="search-bar">
+            <input id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Ixtisas axtar...">
+            <div class="button-resizer">
+                <button id="searchBtn" class="button" type="button" data-i18n="searchBtn">Axtar</button>
+            </div>
+        </div>
+        <div id="specializations-body"></div>
+    </div>
+    <div id="specializations-body"></div>
+    <script src="..\translations.js" defer></script>
+    <script src="..\theme.js"></script>
+    <script src="..\menu.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,797 @@
+{
+  "subject_pool": {
+    "global_subjects": [
+      {
+        "id": "azerbaycan-tarixi",
+        "title": "Azərbaycan tarixi",
+        "icon": "📜",
+        "count": 10,
+        "type": "humanitar"
+      },
+      {
+        "id": "adiak",
+        "title": "Azərbaycan dilində işgüzar və akademik kommunikasiya",
+        "icon": "🇦🇿",
+        "count": 10,
+        "type": "dil_fenleri"
+      },
+      {
+        "id": "sahibkarliq-biznes",
+        "title": "Sahibkarlığın əsasları və biznesə giriş",
+        "icon": "💼",
+        "count": 10,
+        "type": "biznes_iqtisadiyyat"
+      },
+      {
+        "id": "eqli-mulkiyyet",
+        "title": "Əqli mülkiyyətin əsasları",
+        "icon": "⚖️",
+        "count": 10,
+        "type": "huquq"
+      }
+    ],
+    "special_subjects": [
+      {
+        "id": "xdiak-stmks",
+        "title": "Xarici dildə işguzar və akademik kommunikasiya",
+        "icon": "🇬🇧",
+        "count": 10,
+        "type": "dil_fenleri"
+      },
+      {
+        "id": "landsaft-meliorasiyasi",
+        "title": "Landşaft Meliorasiyası",
+        "icon": "💧",
+        "count": 10,
+        "type": "muhendislik"
+      }
+    ]
+  },
+  "universities": {
+    "adnsu": {
+      "name": "ADNSU",
+      "faculties": {
+        "geoloji_kesfiyyat": {
+          "name": "Geoloji-kəşfiyyat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "qaz_neft_meden": {
+          "name": "Qaz-neft-mədən Fakültəsi",
+          "assigned_subjects": []
+        },
+        "kimya_texnologiya": {
+          "name": "Kimya Texnologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "neft_mexanika": {
+          "name": "Neft Mexanika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "it_idareetme": {
+          "name": "İt və İdarəetmə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "energetika": {
+          "name": "Energetika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_menecment": {
+          "name": "İqtisadiyyat və Menecment Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "azmiu": {
+      "name": "AzMİU",
+      "faculties": {
+        "insaat": {
+          "name": "İnşaat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tikinti_iqtisad": {
+          "name": "Tikinti-iqtisad Fakültəsi",
+          "assigned_subjects": []
+        },
+        "neqliyyat": {
+          "name": "Nəqliyyat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "mexanika_it": {
+          "name": "Mexanika və İnformasiya Texnologiyaları Fakültəsi",
+          "assigned_subjects": []
+        },
+        "memarliq": {
+          "name": "Memarlıq Fakültəsi",
+          "assigned_subjects": []
+        },
+        "dizayn": {
+          "name": "Dizayn Fakültəsi",
+          "assigned_subjects": []
+        },
+        "stmks": {
+          "name": "Su Təsərrüfatı və Mühəndis Kommunikasiya Sistemləri Fakültəsi",
+          "assigned_subjects": [
+            "landsaft-meliorasiyasi",
+            "xdiak-stmks"
+          ]
+        }
+      }
+    },
+    "bdu": {
+      "name": "BDU",
+      "faculties": {
+        "mexanika_riyaziyyat": {
+          "name": "Mexanika-riyaziyyat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tetbiqi_riyaziyyat_kibernetika": {
+          "name": "Tətbiqi Riyaziyyat və Kibernetika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "fizika": {
+          "name": "Fizika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "kimya": {
+          "name": "Kimya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "biologiya": {
+          "name": "Biologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "ekologiya_torpaqsunasliq": {
+          "name": "Ekologiya və Torpaqşünaslıq Fakültəsi",
+          "assigned_subjects": []
+        },
+        "cografiya": {
+          "name": "Coğrafiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "geologiya": {
+          "name": "Geologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "filologiya": {
+          "name": "Filologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tarix": {
+          "name": "Tarix Fakültəsi",
+          "assigned_subjects": []
+        },
+        "beynelxalq_iqtisadiyyat": {
+          "name": "Beynəlxalq Münasibətlər və İqtisadiyyat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "huquq": {
+          "name": "Hüquq Fakültəsi",
+          "assigned_subjects": []
+        },
+        "jurnalistika": {
+          "name": "Jurnalistika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "informasiya_sened_menecmenti": {
+          "name": "İnformasiya və Sənəd Menecmenti Fakültəsi",
+          "assigned_subjects": []
+        },
+        "serqsunasliq": {
+          "name": "Şərqşünasliq Fakültəsi",
+          "assigned_subjects": []
+        },
+        "sosial_psixologiya": {
+          "name": "Sosial Elmlər və Psixologiya Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "ndu": {
+      "name": "NDU",
+      "faculties": {
+        "tarix_filologiya": {
+          "name": "Tarix Filologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "xarici_diller": {
+          "name": "Xarici Dillər Fakültəsi",
+          "assigned_subjects": []
+        },
+        "fizika_riyaziyyat": {
+          "name": "Fizika Riyaziyyat Fakültəsi",
+          "assigned_subjects": ["landsaft-meliorasiyasi","xdiak-stmks"]
+        },
+        "memarliq_muhendislik": {
+          "name": "Memarlıq və Mühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tebiet_kend_teserrufati": {
+          "name": "Təbiətşünaslıq və Kənd Təsərrüfatı Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tibb": {
+          "name": "Tibb Fakültəsi",
+          "assigned_subjects": []
+        },
+        "pedaqoji": {
+          "name": "Pedaqoji Fakültəsi",
+          "assigned_subjects": []
+        },
+        "incesenet": {
+          "name": "İncəsənət Fakültəsi",
+          "assigned_subjects": []
+        },
+        "beynelxalq_munasibetler_huquq": {
+          "name": "Beynəlxalq Münasibətlər və Hüquq Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "adau": {
+      "name": "ADAU",
+      "faculties": {
+        "aqronomluq": {
+          "name": "Aqronomluq Fakültəsi",
+          "assigned_subjects": []
+        },
+        "torpaqsunasliq_aqrokimya": {
+          "name": "Torpaqşünaslıq və Aqrokimya Fakültəsi",
+          "assigned_subjects": ["landsaft-meliorasiyasi", "xdiak-stmks"]
+        },
+        "baytarlig_tebabeti": {
+          "name": "Baytarlıq Təbabəti Fakültəsi",
+          "assigned_subjects": []
+        },
+        "zoomuhendislik": {
+          "name": "Zoomühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "muhendislik": {
+          "name": "Mühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "aqrotexnologiya": {
+          "name": "Aqrotexnologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "aqrariqtisadiyyat": {
+          "name": "Aqrariqtisadiyyat Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "maa": {
+      "name": "Milli Aviasiya Akademiyası",
+      "faculties": {
+        "hava_neqliyyati": {
+          "name": "Hava Nəqliyyatı",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "neqliyyat_texnologiyalari": {
+          "name": "Nəqliyyat Texnologiyaları",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "aerokosmik": {
+          "name": "Aerokosmik",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "fizika_texnologiya": {
+          "name": "Fizika Texnologiya",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "iqtisadiyyat_ve_huquq": {
+          "name": "İqtisadiyyat və Hüquq",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "aztu": {
+      "name": "Azərbaycan Texniki Universiteti",
+      "faculties": {
+        "informasiya_texnologiyalari_ve_telekommunikasiya": {
+          "name": "İnformasiya Texnologiyaları və Telekommunikasiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "neqliyyat_ve_logistika": {
+          "name": "Nəqliyyat və Logistika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "energetika": {
+          "name": "Energetika Fakültəsi",
+          "assigned_subjects": []
+        },
+        "masinqayirma_ve_metallurgiya": {
+          "name": "Maşınqayırma və Metallurgiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "xususi_texnika_ve_texnologiya": {
+          "name": "Xüsusi Texnika və Texnologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "senaye_iqtisadiyyati_ve_menecment": {
+          "name": "Sənaye İqtisadiyyatı və Menecment Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "unec": {
+      "name": "Azərbaycan Dövlət İqtisad Universiteti",
+      "faculties": {
+        "sabah_merkezi": {
+          "name": "Sabah Mərkəzi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "beynelxalq_iqtisadiyyat_mektebi": {
+          "name": "Beynəlxalq İqtisadiyyat Məktəbi (İse)",
+          "assigned_subjects": []
+        },
+        "unec_dizayn_mektebi": {
+          "name": "Unec Dizayn Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "biznes_ve_menecment": {
+          "name": "Bıznes və Menecment Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_ve_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "maliyye_ve_muhasibat": {
+          "name": "Maliyyə və Mühasibat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "muhendislik": {
+          "name": "Mühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "reqemsal_iqtisadiyyat": {
+          "name": "Rəqəmsal İqtisadiyyat Fakültəsi",
+          "assigned_subjects": []
+        },
+        "turk_dunyasi_iqtisad": {
+          "name": "Türk Dünyası İqtisad Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "bmu": {
+      "name": "Bakı Mühəndislik Universiteti",
+      "faculties": {
+        "informasiya_ve_komputer_texnologiyalari": {
+          "name": "İnformasiya və Kompüter Texnologiyaları",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "muhendislik": {
+          "name": "Mühəndislik",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "iqtisadiyyat_ve_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "memarliq_ve_insaat": {
+          "name": "Memarlıq və İnşaat",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "adda": {
+      "name": "Azərbaycan Dövlət Dəniz Akademiyası",
+      "faculties": {
+        "gemi_mexanikasi_ve_elektromexanikasi": {
+          "name": "Gəmi Mexanikası və Elektromexanikası",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "gemi_suruculuyu": {
+          "name": "Gəmi Sürücülüyü",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "qarabag_universiteti": {
+      "name": "Qarabağ Universiteti",
+      "faculties": {
+        "tibb_ve_saglamliq_elmleri": {
+          "name": "Tibb və Sağlamlıq Elmləri",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "biznes_ve_iqtisadiyyat": {
+          "name": "Biznes və İqtisadiyyat",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "pedaqoji": {
+          "name": "Pedaqoji",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "incesenet": {
+          "name": "İncəsənət",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "muhendislik": {
+          "name": "Mühəndislik",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "humanitar_ve_sosial_elmler": {
+          "name": "Humanitar və Sosial Elmlər",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "beynelxalq_dil_merkezi": {
+          "name": "Beynəlxalq Dil Mərkəzi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "gdu": {
+      "name": "Gəncə Dövlət Universiteti",
+      "faculties": {
+        "kimya_ve_biologiya": {
+          "name": "Kimya və Biologiya",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "riyaziyyat_ve_informatika": {
+          "name": "Riyaziyyat və İnformatika",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "fizika_ve_texniki_fennler": {
+          "name": "Fizika və Texniki Fənnlər",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "pedaqoji": {
+          "name": "Pedaqoji",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "tarix_ve_cografiya": {
+          "name": "Tarix və Coğrafiya",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "filologiya_ve_xarici_diller": {
+          "name": "Filologiya və Xarici Dillər",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "iqtisadiyyat_ve_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "sdu": {
+      "name": "Sumqayıt Dövlət Universiteti",
+      "faculties": {
+        "riyaziyyat": {
+          "name": "Riyaziyyat",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "tebiet_elmleri": {
+          "name": "Təbiət Elmləri",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "iqtisadiyyat_ve_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "muhendislik": {
+          "name": "Mühəndislik",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "tarix_ve_cografiya": {
+          "name": "Tarix və Coğrafiya",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "filologiya": {
+          "name": "Filologiya",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "ldu": {
+      "name": "Lənkəran Dövlət Universiteti",
+      "faculties": {
+        "tebiyyat": {
+          "name": "Təbiət Fakültəsi",
+          "assigned_subjects": []
+        },
+        "filologiya_ve_ibtidai_tehsil": {
+          "name": "Filologiya və İbtidai Təhsil Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tarix_cografiya_ve_incesenet": {
+          "name": "Tarix-coğrafiya və İncəsənət Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_ve_idareetme": {
+          "name": "İqtisadiyyat və İdarəetmə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "aqrar_ve_muhendislik": {
+          "name": "Aqrar və Mühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "baytarliq": {
+          "name": "Baytarlıq Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "aku": {
+      "name": "Azərbaycan Kooperasiya Universiteti",
+      "faculties": {
+        "maliyye_ve_turizm": {
+          "name": "Maliyyə və Turizm İşi Fakültəsi",
+          "assigned_subjects": []
+        },
+        "idareetme": {
+          "name": "İdarəetmə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_ve_ekologiya_muhendisliyi": {
+          "name": "İqtisadiyyat və Ekologiya Mühəndisliyi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "sosial_is_ve_tercume": {
+          "name": "Sosial İş və Tərcümə Fakültəsi",
+          "assigned_subjects": []
+        },
+        "marketinq_ve_menecment": {
+          "name": "Marketinq və Menecment Fakültəsi",
+          "assigned_subjects": []
+        },
+        "ekspertiza_ve_texnologiya": {
+          "name": "Ekspertiza və Texnologiya Fakültəsi",
+          "assigned_subjects": []
+        },
+        "muhasibat_ve_komputer_muhendisliyi": {
+          "name": "Mühasibat və Kompüter Mühəndisliyi Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "wcu": {
+      "name": "Qərbi Kaspi Universiteti",
+      "faculties": {
+        "yuksek_texnologiyalar_ve_innovativ_muhendislik": {
+          "name": "Yüksək Texnologiyalar və İnnovativ Mühəndislik Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "dizayn_mektebi": {
+          "name": "Dizayn Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "biznes_ve_idareetme_mektebi": {
+          "name": "Biznes və İdarəetmə Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "iqtisadiyyat_mektebi": {
+          "name": "İqtisadiyyat Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "filologiya_ve_tercume_mektebi": {
+          "name": "Filologiya və Tərcümə Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "siyasi_ve_ictimai_elmler_mektebi": {
+          "name": "Siyasi və İctimai Elmlər Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        },
+        "psixologiya_mektebi": {
+          "name": "Psixologiya Məktəbi",
+          "assigned_subjects": [
+            "Azərbaycan tarixi",
+            "azerbaycan_tarixi"
+          ]
+        }
+      }
+    },
+    "xezer_universiteti": {
+      "name": "Xəzər Universiteti",
+      "faculties": {
+        "tebiet_elmleri_ve_muhendislik": {
+          "name": "Təbiət Elmləri və Mühəndislik Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_ve_menecment": {
+          "name": "İqtisadiyyat və Menecment Fakültəsi",
+          "assigned_subjects": []
+        },
+        "humanitar_elmler": {
+          "name": "Humanitar Elmlər Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tehsil_ve_sosial_elmler": {
+          "name": "Təhsil və Sosial Elmlər Fakültəsi",
+          "assigned_subjects": []
+        },
+        "tebiet_elmleri_ve_senet": {
+          "name": "Təbiət Elmləri və Sənət Fakültəsi",
+          "assigned_subjects": []
+        },
+        "texnologiya_yuksek_tehsil": {
+          "name": "Texnologiya Yüksək Təhsil Fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_ve_biznes_yuksek_tehsil": {
+          "name": "İqtisadiyyat və Biznes Yüksək Təhsil Fakültəsi",
+          "assigned_subjects": []
+        },
+        "hasvet_baytarliq_tebabeti": {
+          "name": "Hasvet Baytarlıq Təbabəti Fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "azerbaycan_tibb_universiteti": {
+      "name": "Azərbaycan Tibb Universiteti",
+      "faculties": {
+        "mualice_profilaktika": {
+          "name": "Müalicə-profilaktika fakültəsi",
+          "assigned_subjects": []
+        },
+        "ictimai_sehiyye": {
+          "name": "İctimai səhiyyə fakültəsi",
+          "assigned_subjects": []
+        },
+        "stomatologiya": {
+          "name": "Stomatologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "eczaciliq": {
+          "name": "Əczaçılıq fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "azerbaycan_diller_universiteti": {
+      "name": "Azərbaycan Dillər Universiteti",
+      "faculties": {
+        "ingilis_ve_alman_dilleri": {
+          "name": "İngilis və alman dilləri fakültəsi",
+          "assigned_subjects": []
+        },
+        "ingilis_ve_fransiz_dilleri": {
+          "name": "İngilis və fransız dilləri fakültəsi",
+          "assigned_subjects": []
+        },
+        "filologiya": {
+          "name": "Filologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "beynelxalq_munasibetler_ve_regionsunasliq": {
+          "name": "Beynəlxalq münasibətlər və Regionşünaslıq fakültəsi",
+          "assigned_subjects": []
+        },
+        "tercume": {
+          "name": "Tərcümə fakültəsi",
+          "assigned_subjects": []
+        },
+        "tehsil": {
+          "name": "Təhsil fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    }
+  }
+}

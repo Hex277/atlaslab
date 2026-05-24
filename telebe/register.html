@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat | atlaslab.az</title>
+    <meta name="description" content="atlaslab.az-da qeydiyyatdan keçin, semestr imtahanları üçün onlayn testlərdə iştirak edin və biliklərinizi artırın.">
+    <meta name="robots" content="noindex, nofollow"> <meta property="og:title" content="Yeni Hesab Yarat | atlaslab.az">
+    <meta property="og:description" content="İndi qeydiyyatdan keçin və innovativ öyrənmə platformasına qoşulun.">
+    <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
+    <meta property="og:url" content="https://atlaslab.az/telebe/register.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://atlaslab.az/telebe/register.html">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="isindex.html">
+                <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-toggle">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <div class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </div>
+    </div>
+    <nav id="menu-bar" class="hidden">
+        <a href="index.html" id="name-text">
+            <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+        </a>
+        
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow">&gt;</span>
+        </div>
+        
+        <ul id="abituriyent-menu" class="anim-menu">
+            <li><a href="../abituriyent/1ciqrup.html" data-i18n="group1">1ci Qrup</a></li>
+            <li><a href="../abituriyent/2ciqrup.html" data-i18n="group2">2ci Qrup</a></li>
+            <li><a href="../abituriyent/3ciqrup.html" data-i18n="group3">3cü Qrup</a></li>
+            <li><a href="../abituriyent/4ciqrup.html" data-i18n="group4">4cü Qrup</a></li>
+            <li><a href="../abituriyent/specializations.html" data-i18n="aboutspec">İxtisaslar haqqında</a></li>
+            <li><a href="../abituriyent/balhesab.html" data-i18n="scorecalc">Bal hesablanması</a></li>
+            <li><a href="../abituriyent/about.html" data-i18n="about">Haqqımızda</a></li>
+        </ul>
+        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+            Tələbə <span class="arrow">&gt;</span>
+        </div>
+        <div class="menu-bar anim-menu" id="telebe-menu">
+            <a href="./fennler-menu.html">Fənnlər</a>
+            <a href="./statistics.html">Statistika</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+    </nav>
+    <div class="main-background">
+        <div class="main-content">
+            <div class="giris-container">
+                <div class="giris-header">
+                    <h1>Yeni hesab yaradın</h1>
+                    <p>Qeydiyyatı tamamlamaq üçün e-poçt ünvanınıza təsdiqləmə kodu göndəriləcək.</p>
+                </div>
+                <div class="giris-form">
+                    <div class="input-group">
+                        <label>Adınız:</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" placeholder="Ad">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>E-poçt ünvanı</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="E-poçtunuzu daxil edin">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Şifrə</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Şifrənizi daxil edin">
+                        </div>
+                    </div>
+                    <div class="registration-terms">
+                        <input type="checkbox" id="terms_agree" name="terms_agree" required>
+                        <label class="terms_agree">
+                            Mən <a href="terms-conditions.html" target="_blank">İstifadə Şərtləri</a> və 
+                            <a href="privacy-policy.html" target="_blank">Məxfilik Siyasəti</a> ilə tanış oldum və onları qəbul edirəm.
+                        </label>
+                    </div>
+                    <div class="giris-buttons">
+                        <div class="haveac"><p>Artıq hesabınız var? <a href="login.html">Daxil ol</a></p></div>
+                        <button class="btn-login">Yarat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="..\theme.js" defer></script>
+<script src="..\menu.js" defer></script>
+<script src="giris.js" defer></script>
+<script src=script.js defer></script> 
+</html>
