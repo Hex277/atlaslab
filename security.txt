@@ -1,0 +1,4 @@
+Contact: mailto:atlaslab.az@gmail.com
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: az, en
+Policy: https://atlaslab.az/privacy-policy.html
