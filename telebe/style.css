@@ -84,7 +84,11 @@ button {
     width: 20%;
 }
 .logo img {
-    width: 200px;
+    width: 170px;
+}
+#name-text {
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 #premium-href {
     display: flex;

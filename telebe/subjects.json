@@ -44,6 +44,13 @@
         "icon": "💧",
         "count": 10,
         "type": "muhendislik"
+      },
+      {
+        "id": "xdiak-mit1",
+        "title": "Xarici dildə işguzar və akademik kommunikasiya 1",
+        "icon": "🇬🇧",
+        "count": 10,
+        "type": "dil_fenleri"
       }
     ]
   },
@@ -98,7 +105,7 @@
         },
         "mexanika_it": {
           "name": "Mexanika və İnformasiya Texnologiyaları Fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["xdiak-mit1"]
         },
         "memarliq": {
           "name": "Memarlıq Fakültəsi",

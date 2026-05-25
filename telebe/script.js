@@ -1,1 +1,2178 @@
-const a1_0x2726a0=a1_0x2b8f;(function(_0x274bf0,_0x1a8394){const _0x231579=a1_0x2b8f,_0x4d36e3=_0x274bf0();while(!![]){try{const _0x136531=parseInt(_0x231579(0x2ed))/0x1*(parseInt(_0x231579(0x291))/0x2)+-parseInt(_0x231579(0x2f3))/0x3*(-parseInt(_0x231579(0x1c0))/0x4)+parseInt(_0x231579(0x1a9))/0x5+-parseInt(_0x231579(0x1bf))/0x6*(-parseInt(_0x231579(0x2d3))/0x7)+parseInt(_0x231579(0x1d3))/0x8+parseInt(_0x231579(0x1b7))/0x9*(-parseInt(_0x231579(0x1dd))/0xa)+-parseInt(_0x231579(0x2f6))/0xb*(parseInt(_0x231579(0x300))/0xc);if(_0x136531===_0x1a8394)break;else _0x4d36e3['push'](_0x4d36e3['shift']());}catch(_0x181184){_0x4d36e3['push'](_0x4d36e3['shift']());}}}(a1_0x2a82,0xc66c6));const a1_0x1e10ae=a1_0x4a59;(function(_0x571f17,_0x2b21ca){const _0x4ad494=a1_0x2b8f,_0x2f044f=(function(){let _0x43eacc=!![];return function(_0x3e539b,_0x3c37ae){const _0xf6b6d=_0x43eacc?function(){const _0x18019=a1_0x2b8f;if(_0x3c37ae){const _0xc42629=_0x3c37ae[_0x18019(0x25b)](_0x3e539b,arguments);return _0x3c37ae=null,_0xc42629;}}:function(){};return _0x43eacc=![],_0xf6b6d;};}()),_0x1e971f=_0x2f044f(this,function(){const _0xd8d96c=a1_0x2b8f;return _0x1e971f[_0xd8d96c(0x1ac)]()['search']('(((.+)+)+)+$')['toString']()[_0xd8d96c(0x1ce)](_0x1e971f)['search'](_0xd8d96c(0x30a));});_0x1e971f();const _0x1b8c35=a1_0x4a59,_0x23bde1=_0x571f17();while(!![]){try{const _0x363ffd=-parseInt(_0x1b8c35(0x202))/0x1*(-parseInt(_0x1b8c35(0x1dc))/0x2)+parseInt(_0x1b8c35(0x1f6))/0x3+-parseInt(_0x1b8c35(0x260))/0x4*(parseInt(_0x1b8c35(0x217))/0x5)+-parseInt(_0x1b8c35(0x178))/0x6+-parseInt(_0x1b8c35(0x319))/0x7*(parseInt(_0x1b8c35(0x2ee))/0x8)+-parseInt(_0x1b8c35(0x2e8))/0x9*(parseInt(_0x1b8c35(0x262))/0xa)+parseInt(_0x1b8c35(0x1a9))/0xb*(parseInt(_0x1b8c35(0x1d0))/0xc);if(_0x363ffd===_0x2b21ca)break;else _0x23bde1[_0x4ad494(0x2f8)](_0x23bde1[_0x4ad494(0x262)]());}catch(_0x4249bc){_0x23bde1['push'](_0x23bde1['shift']());}}}(a1_0x36bc,0xaba11));const a1_0x2b623a=a1_0x5970;(function(_0x2db42b,_0x281850){const _0x4609a6=a1_0x2b8f,_0x5910c7=a1_0x4a59,_0x46d942=(function(){let _0x27557e=!![];return function(_0x165cb9,_0x1a19d){const _0x19061f=_0x27557e?function(){const _0x442fd1=a1_0x4a59;if(_0x1a19d){const _0x4074ef=_0x1a19d[_0x442fd1(0x1be)](_0x165cb9,arguments);return _0x1a19d=null,_0x4074ef;}}:function(){};return _0x27557e=![],_0x19061f;};}()),_0xc2394=_0x46d942(this,function(){const _0x294653=a1_0x2b8f,_0x5a19c6=a1_0x4a59;return _0xc2394[_0x5a19c6(0x253)]()[_0x5a19c6(0x18c)](_0x5a19c6(0x1d1))[_0x5a19c6(0x253)]()[_0x5a19c6(0x1bf)](_0xc2394)[_0x294653(0x2cf)](_0x294653(0x30a));});_0xc2394();const _0x54e6a9=a1_0x5970,_0x20eb21=_0x2db42b();while(!![]){try{const _0x3fdf2b=-parseInt(_0x54e6a9(0x1dd))/0x1*(-parseInt(_0x54e6a9(0x17c))/0x2)+parseInt(_0x54e6a9(0x1cf))/0x3+-parseInt(_0x54e6a9(0x230))/0x4+-parseInt(_0x54e6a9(0x1fc))/0x5*(parseInt(_0x54e6a9(0x1c2))/0x6)+parseInt(_0x54e6a9(0x326))/0x7*(-parseInt(_0x54e6a9(0x22d))/0x8)+parseInt(_0x54e6a9(0x257))/0x9*(parseInt(_0x54e6a9(0x178))/0xa)+parseInt(_0x54e6a9(0x20b))/0xb*(parseInt(_0x54e6a9(0x2c2))/0xc);if(_0x3fdf2b===_0x281850)break;else _0x20eb21[_0x4609a6(0x2f8)](_0x20eb21[_0x5910c7(0x22b)]());}catch(_0x10eba0){_0x20eb21[_0x5910c7(0x1e5)](_0x20eb21[_0x5910c7(0x22b)]());}}}(a1_0x3aae,0x1c1da));function a1_0x5c5a(_0x324133,_0x435d32){_0x324133=_0x324133-0x16a;const _0x34954f=a1_0x1236();let _0x3a9cc3=_0x34954f[_0x324133];return _0x3a9cc3;}const a1_0x300329=a1_0x5c5a;(function(_0x53de74,_0x3aad1a){const _0x3944a1=a1_0x5970,_0x1a445f=a1_0x5c5a,_0x417f75=_0x53de74();while(!![]){try{const _0x3f26a6=parseInt(_0x1a445f(0x188))/0x1*(parseInt(_0x1a445f(0x1c8))/0x2)+parseInt(_0x1a445f(0x2ff))/0x3+parseInt(_0x1a445f(0x1ce))/0x4*(parseInt(_0x1a445f(0x23a))/0x5)+parseInt(_0x1a445f(0x333))/0x6+-parseInt(_0x1a445f(0x29f))/0x7*(parseInt(_0x1a445f(0x31c))/0x8)+parseInt(_0x1a445f(0x180))/0x9*(-parseInt(_0x1a445f(0x1f5))/0xa)+-parseInt(_0x1a445f(0x214))/0xb;if(_0x3f26a6===_0x3aad1a)break;else _0x417f75[_0x3944a1(0x2ad)](_0x417f75[_0x3944a1(0x258)]());}catch(_0x32d20a){_0x417f75[_0x3944a1(0x2ad)](_0x417f75[_0x3944a1(0x258)]());}}}(a1_0x1236,0x389cd));const a1_0x59317a=a1_0x358b;(function(_0x5bb595,_0x228867){const _0x5a6459=a1_0x5970,_0x4e82b5=(function(){let _0x1f7ec8=!![];return function(_0x27aa4c,_0x72a874){const _0x48b9c3=_0x1f7ec8?function(){const _0x5a40dd=a1_0x5970;if(_0x72a874){const _0x2324ce=_0x72a874[_0x5a40dd(0x199)](_0x27aa4c,arguments);return _0x72a874=null,_0x2324ce;}}:function(){};return _0x1f7ec8=![],_0x48b9c3;};}()),_0x274aa8=a1_0x5c5a,_0x47ed6e=(function(){const _0x6628c6=_0x4e82b5(this,function(){const _0x3a6109=a1_0x2b8f,_0x187e9b=a1_0x4a59,_0x4bde9e=a1_0x5970;return _0x6628c6[_0x187e9b(0x253)]()[_0x4bde9e(0x1a1)](_0x4bde9e(0x2b5))[_0x4bde9e(0x2cd)]()[_0x4bde9e(0x241)](_0x6628c6)[_0x4bde9e(0x1a1)](_0x3a6109(0x30a));});_0x6628c6();let _0x5efeb3=!![];return function(_0x16962f,_0xb4e2ad){const _0x24f762=_0x5efeb3?function(){const _0xc8a9bc=a1_0x5c5a;if(_0xb4e2ad){const _0x4bed91=_0xb4e2ad[_0xc8a9bc(0x2a5)](_0x16962f,arguments);return _0xb4e2ad=null,_0x4bed91;}}:function(){};return _0x5efeb3=![],_0x24f762;};}()),_0x5b9b66=_0x47ed6e(this,function(){const _0x689c9f=a1_0x5970,_0x8152e8=a1_0x5c5a;return _0x5b9b66[_0x8152e8(0x25b)]()[_0x689c9f(0x1a1)](_0x8152e8(0x2f3))[_0x8152e8(0x25b)]()[_0x689c9f(0x241)](_0x5b9b66)[_0x8152e8(0x240)](_0x8152e8(0x2f3));});_0x5b9b66();const _0x497bbc=a1_0x358b,_0x4f1650=_0x5bb595();while(!![]){try{const _0xc372f5=-parseInt(_0x497bbc(0x23e))/0x1+-parseInt(_0x497bbc(0x2d5))/0x2*(-parseInt(_0x497bbc(0x31b))/0x3)+parseInt(_0x497bbc(0x1a3))/0x4*(parseInt(_0x497bbc(0x34b))/0x5)+-parseInt(_0x497bbc(0x2c6))/0x6*(-parseInt(_0x497bbc(0x30d))/0x7)+parseInt(_0x497bbc(0x215))/0x8*(-parseInt(_0x497bbc(0x333))/0x9)+parseInt(_0x497bbc(0x337))/0xa+-parseInt(_0x497bbc(0x2ac))/0xb;if(_0xc372f5===_0x228867)break;else _0x4f1650[_0x274aa8(0x2eb)](_0x4f1650[_0x5a6459(0x258)]());}catch(_0x26df49){_0x4f1650[_0x274aa8(0x2eb)](_0x4f1650[_0x274aa8(0x189)]());}}}(a1_0xd056,0xeec63),document[a1_0x300329(0x2af)](a1_0x59317a(0x224),function(){const _0x2cb97f=a1_0x4a59,_0x393765=a1_0x5970,_0x4de194=a1_0x300329,_0x58ef53=a1_0x59317a,_0x4f906e=document[_0x58ef53(0x35a)](_0x58ef53(0x208));_0x4f906e&&_0x4f906e[_0x58ef53(0x287)]&&(_0x4f906e[_0x58ef53(0x198)][_0x58ef53(0x28c)](_0x58ef53(0x2e2)),_0x4f906e[_0x58ef53(0x287)][_0x58ef53(0x220)](_0x58ef53(0x306))[_0x4de194(0x197)]='v');function _0xfa6101(_0x502f63){const _0x4bd075=a1_0x4a59,_0x48a60c=_0x4de194,_0xdbc9c9=_0x58ef53,_0xf67f6e=document[_0xdbc9c9(0x35a)](_0xdbc9c9(0x1c7)),_0x5a5a81=document[_0xdbc9c9(0x220)](_0xdbc9c9(0x1f7));if(_0x502f63){document[_0xdbc9c9(0x221)][_0xdbc9c9(0x198)][_0xdbc9c9(0x28c)](_0xdbc9c9(0x2f5));if(_0xf67f6e)_0xf67f6e[_0x4bd075(0x2b6)][_0xdbc9c9(0x272)]=_0x48a60c(0x1cf);if(_0x5a5a81)_0x5a5a81[_0xdbc9c9(0x212)]=_0xdbc9c9(0x2e9);}else{document[_0xdbc9c9(0x221)][_0xdbc9c9(0x198)][_0xdbc9c9(0x29c)](_0x48a60c(0x195));if(_0xf67f6e)_0xf67f6e[_0xdbc9c9(0x1f3)][_0xdbc9c9(0x272)]='';if(_0x5a5a81)_0x5a5a81[_0xdbc9c9(0x212)]=_0xdbc9c9(0x27d);}}if(window[_0x58ef53(0x2dd)]){const _0x523c11=_0x393765(0x1e4),_0x584bf9=_0x4de194(0x2f8);!window[_0x58ef53(0x25a)]&&(window[_0x58ef53(0x25a)]=window[_0x58ef53(0x2dd)][_0x58ef53(0x34d)](_0x523c11,_0x584bf9));const _0x24847c=window[_0x58ef53(0x25a)];let _0x2f3714=null;try{const _0x167839=localStorage[_0x58ef53(0x262)](_0x58ef53(0x1cf));_0x167839&&(_0x2f3714=JSON[_0x58ef53(0x356)](_0x167839)[_0x58ef53(0x311)]['id']);}catch(_0x14f621){}const _0x51f773=new Date()[_0x58ef53(0x1a7)]();if(_0x2f3714){const _0x644337=localStorage[_0x2cb97f(0x302)](_0x4de194(0x253)+_0x2f3714);_0x644337&&_0x51f773<parseInt(_0x644337)?_0xfa6101(!![]):_0xfa6101(![]);}_0x24847c[_0x58ef53(0x31f)][_0x58ef53(0x2a9)]()[_0x58ef53(0x1a4)](async({data:{session:_0x45ad47}})=>{const _0xda775e=_0x393765,_0x2cd897=_0x4de194,_0x266733=_0x58ef53;if(_0x45ad47){const _0x32a9a4=_0x45ad47[_0xda775e(0x215)]['id'],{data:_0x352bc}=await _0x24847c[_0x266733(0x1dc)](_0x266733(0x1cd))[_0x266733(0x29b)](_0x266733(0x2f4))['eq'](_0x266733(0x2c0),_0x32a9a4)[_0x266733(0x1f1)]();if(_0x352bc){const _0x57310f=new Date(_0x352bc[_0x266733(0x2f4)])[_0x266733(0x1a7)](),_0x3943d5=new Date()[_0x266733(0x1a7)]();_0x3943d5<_0x57310f?(localStorage[_0x2cd897(0x1ca)](_0x266733(0x209)+_0x32a9a4,_0x57310f),_0xfa6101(!![])):(localStorage[_0x266733(0x268)](_0x266733(0x209)+_0x32a9a4),_0xfa6101(![]));}else localStorage[_0x266733(0x268)](_0x2cd897(0x253)+_0x32a9a4),_0xfa6101(![]);}});}else console[_0x58ef53(0x30b)](_0x58ef53(0x288));}));function a1_0x2b8f(_0x31d532,_0x4855aa){_0x31d532=_0x31d532-0x18a;const _0x5c316d=a1_0x2a82();let _0x4b01ce=_0x5c316d[_0x31d532];return _0x4b01ce;}function showMessage(_0x195e66,_0x18f968=a1_0x59317a(0x2ff),_0x1c4858=a1_0x300329(0x2c9),_0x4ce954=a1_0x2b623a(0x32a)){return new Promise(_0x4c25b5=>{const _0x1b0925=a1_0x4a59,_0x5e2459=a1_0x5970,_0x10452d=a1_0x5c5a,_0x53d12c=a1_0x358b,_0xc0029c=document[_0x53d12c(0x35a)](_0x53d12c(0x27e)),_0x2b8e8d=document[_0x10452d(0x334)](_0x53d12c(0x304)),_0x2f2c10=document[_0x53d12c(0x35a)](_0x5e2459(0x308)),_0x5863b9=document[_0x10452d(0x334)](_0x5e2459(0x249)),_0x41fdd1=document[_0x53d12c(0x35a)](_0x53d12c(0x2dc));if(!_0xc0029c)return _0x4c25b5(![]);_0x2b8e8d[_0x53d12c(0x350)]=_0x195e66,_0xc0029c[_0x53d12c(0x1f3)][_0x5e2459(0x206)]=_0x10452d(0x2ed),_0x18f968===_0x53d12c(0x250)?(_0x2f2c10[_0x53d12c(0x1f3)][_0x53d12c(0x272)]=_0x53d12c(0x255),_0x5863b9[_0x53d12c(0x1f3)][_0x10452d(0x2c1)]=_0x53d12c(0x2bd),_0x41fdd1[_0x53d12c(0x1f3)][_0x53d12c(0x272)]=_0x53d12c(0x2bd),_0x5863b9[_0x1b0925(0x248)]=_0x1c4858,_0x41fdd1[_0x53d12c(0x200)]=_0x4ce954,_0x5863b9[_0x53d12c(0x27a)]=()=>{const _0x5d319f=_0x5e2459,_0x382727=_0x53d12c;_0xc0029c[_0x382727(0x1f3)][_0x5d319f(0x206)]=_0x382727(0x255),_0x4c25b5(!![]);},_0x41fdd1[_0x53d12c(0x27a)]=()=>{const _0x497659=_0x10452d,_0x3a8c50=_0x53d12c;_0xc0029c[_0x497659(0x259)][_0x497659(0x2c1)]=_0x3a8c50(0x255),_0x4c25b5(![]);}):(_0x2f2c10[_0x53d12c(0x1f3)][_0x53d12c(0x272)]=_0x1b0925(0x2c1),_0x5863b9[_0x53d12c(0x1f3)][_0x53d12c(0x272)]=_0x53d12c(0x255),_0x41fdd1[_0x53d12c(0x1f3)][_0x53d12c(0x272)]=_0x53d12c(0x255),_0x2f2c10[_0x53d12c(0x200)]=_0x1c4858!==_0x53d12c(0x358)?_0x1c4858:'OK',_0x2f2c10[_0x10452d(0x1c6)]=()=>{const _0x283710=_0x10452d,_0x1a2ad1=_0x53d12c;_0xc0029c[_0x283710(0x259)][_0x1a2ad1(0x272)]=_0x1a2ad1(0x255),_0x4c25b5(!![]);});});}function a1_0x2a82(){const _0xb4db48=['question','Şikayət\x20göndərilərkən\x20xəta\x20baş\x20verdi:','../images/premium-profile.webp','open-ai-btn','60rFyjfA','159460cozAad','options__E','white','verifyAndFinish','maybeSingle','search','active_session_id','../images/thunder.webp','quiz_history','2178673ZMVYyD','last_quiz_date','update','slice','match','position','Web\x20Audio\x20xətası:','Sizin\x20hesab\x20silmə\x20istəyiniz\x20artıq\x20qeydə\x20alınıb\x20və\x20hazırda\x20icra\x20olunur.','options__D','limit','recovery','all','sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN','split','src','color','disabled','innerHTML','rating_deviation','Profil\x20məlumatlarınız\x20uğurla\x20yadda\x20saxlanıldı!','Səs\x20dayandırılarkən\x20xəta:','center','bitis_tarixi','\x20/\x20','forEach','type','379gdsGaM','querySelector','Limit\x20göstərilərkən\x20xəta:','map','div','Yanvar','963540sGuGgC','Gözləyin...','quiz.html','62359CmDDpc','.arrow','push','decodeAudioData','upsert','10QYRHUl','join','-2px\x200px\x2010px\x20rgba(0,0,0,0.1)','random','newProfilePassword','6852zURvHW','</b>\x20ünvanına\x20təsdiq\x20kodu\x20göndərilməlidir.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22sendOtpBtn\x22\x20onclick=\x22sendProfileOtp(\x27','display','substring','subject_pool','<button\x20class=\x22option-btn\x22\x20data-key=\x22','question-counter','origin','getUTCMonth','username','(((.+)+)+)+$','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Sualı\x20Şikayət\x20Et</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemli\x20sual:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22reported-question-box\x22>','İstifadəçi\x20məlumatı\x20alınarkən\x20xəta:','createElement','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x20last-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-green\x22>●</span>\x20Keçmə\x20faizi</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x20green-text\x22>','toLowerCase','options-container','Yenilə','button','6663VZEwHO','Chart-dakı\x20cəmi\x20quiz\x20sayı:','created_at','removeItem','../images/audio-off.png','JSON\x20Error:','weeklyActivityChart','Salam,\x20mən\x20AtlasLab.az\x20saytından\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/matrix-looking.webp\x22\x20alt=\x22Alert\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Hesabınıza\x20başqa\x20cihazdan\x20giriş\x20edilib.\x20Quiz\x20dayandırıldı!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Hesabınızın\x20qorunması\x20üçün\x20şifrənizi\x20dərhal\x20yeniləməyiniz\x20tövsiyə\x20olunur.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Bu\x20halın\x20təkrarlanması\x20platforma\x20qaydalarının\x20manipulyasiyası\x20kimi\x20qiymətləndiriləcək.\x20Bu\x20zaman\x20hesabınız\x20avtomatik\x20olaraq\x20\x27Yüksək\x20Risk\x27\x20kateqoriyasına\x20keçəcək.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','user_metadata','undefined','.fenn-id\x20h1','line','premium-aktiv','_blank','\x27)\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22animation-delay:\x20','reduce','getUTCFullYear','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-yellow\x22>●</span>\x20Reytinq\x20(Elo)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22\x20style=\x22color:\x20inherit;\x20font-weight:\x20bold;\x22>','chart-filter-select','json','floor','toUpperCase','120zVyjyB','/sounds/wrong.mp3','********','verifyOtp','pow','1738ggmASZ','closeInfoModal','search-input','location','1104XXrYyi','setValueAtTime','\x20Qeydiyyat\x20emailim:\x20','https://xoebhhdirsvjorjlrfzi.supabase.co','5uqWAEV','cursor','data-key','user','Ç.a','5523252cGtBnJ','quiz_date,\x20quiz_count','<img\x20src=\x22../images/infinity.webp\x22\x20alt=\x22∞\x22\x20style=\x22width:\x2018px;\x20vertical-align:\x20middle;\x22>','resetPasswordForEmail','#fff','rgba(0,\x200,\x200,\x200.1)','dark-mode','Mart','DOMContentLoaded','gain','#36A2EB','quiz.html?subject=','input','infoModalText','18936810ITRjEP','/sounds/brown-noise.mp3','webkitAudioContext','backgroundColor','Şifrəniz\x20uğurla\x20yeniləndi!','</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stats-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-blue\x22>●</span>\x20Düzgün\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','49jZIRKU','chtl-script','value','.main-background','innerText','select','stop','block','quiz_date','reported_questions','B.e','0.5','.premium-abunelik-bg','İstifadəçi\x20#','3756376919','Səs\x20başladılarkən\x20xəta\x20baş\x20verdi:','data-value','chtl-inline-bot','totalQuizzes','2984655ZwoCRc','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Təsdiqləmə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>E-poçtunuza\x20gələn\x20kodu\x20və\x20yeni\x20şifrəni\x20daxil\x20edin.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>OTP\x20Kod</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22otpCodeInput\x22\x20placeholder=\x2212345678\x22\x20maxlength=\x228\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20Şifrə</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22password\x22\x20id=\x22newProfilePassword\x22\x20placeholder=\x22Ən\x20azı\x208\x20simvol\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22finalSubmitBtn\x22\x20onclick=\x22verifyAndFinish(\x27','.option-btn','toString','premium-href','avgTime','marginLeft','Fənn\x20tapılmadı:\x20','option','full_name','createClient','total_time_spent','plan_adi','rating','90eTXilJ','supabaseClient','activatePlan','long','.sual-text-bg','Hesabınızı\x20silmək\x20istədiyinizə\x20əminsiniz?\x20Bu\x20əməliyyat\x20geri\x20qaytarıla\x20bilməz!','remove','options__B','6rbWDFR','20YjnnTD','auth','warn','getFullYear','custom-noise-menu','current_streak','options__A','leaderboardBody','energy-icon','5vVOWvG','getUser','?text=','Sentyabr','İndi\x20al','constructor','Kod\x20yanlışdır!','premium.html','dataset','679368Anfeuh','12413040mEZdEJ','message','sound-active','Adsız\x20İstifadəçi','state','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22result-title\x22>Yekun\x20nəticə:\x20','.abunelik-bg','../images/audio-on.png','correct','quizzes_completed','773580kVYIKd','getSession','university-select','Hesab\x20silmə\x20tələbiniz\x20qeydə\x20alındı.\x201\x20həftə\x20içərisində\x20hesabınız\x20tamamilə\x20silinəcək.','\x20(Siz)','48267tKulHJ','\x20AZN)\x20premium\x20planını\x20almaq\x20istəyirəm.','endsWith','1000','email','s\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22info-btn\x22\x20onclick=\x22showSubjectInfo(event,\x20\x27','finalSubmitBtn','<li\x20style=\x22margin-bottom:\x208px;\x22><span\x20style=\x22color:#1e90ff;\x20font-weight:bold;\x22>','elo-down','610uqebwU','single','Hesabdan\x20çıxmaq\x20istədiyinizə\x20əminsiniz?','faculties','okBtn','appendChild','Avqust','showSubjectInfo','\x27,\x20\x27','includes','user_id,\x20quiz_date','textContent','Kod\x20və\x20şifrə\x20tam\x20doldurulmalıdır!','Sorğu\x20yoxlanılarkən\x20xəta\x20baş\x20verdi:\x20','length','background:\x20rgba(30,\x20144,\x20255,\x200.1);','Fakültə\x20təyin\x20edilməyib','\x22\x20style=\x22font-size:\x200.9em;\x20margin-left:\x205px;\x22>','min','getTime','</li>','../images/premium-thunder.webp','start','1858072MayzJz','total_answered_questions','showMessage','top','error','\x27)\x22>Kod\x20Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','inline-block','signOut','.quiz-buttons-bg','fake-ai-btn','sound-toggle-btn','otpCodeInput','right','659472bsKAYg','insert','subject','round','innerWidth','</span></button>','.noise-option','hesab_silme_telebleri','currentTime','9PNkHes','play','keys','</span>','log','telebe-menu','startQuiz','</strong><br><br>Bu\x20qlobal\x20fəndir\x20və\x20universitet/fakültədən\x20asılı\x20olmayaraq\x20hər\x20kəs\x20üçün\x20keçərlidir.','\x22\x20style=\x22','sqrt','global_subjects','script','alert','reportReasonText','openReportFrame','page_inline','abunelikler','Subject\x20fetch\x20error:','2801wJvFji','find','toLocaleDateString','70%','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>','values','fennler-menu.html','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','7795MLHAQu','img','40oYPuLK','C.a','/sounds/rain.mp3','.btn-plan-active','icon','.main-content','setMonth','https://wa.me/','Diqqət:\x20Bu\x20səhifədə\x20Supabase\x20yüklənməyib.','user_stats','Noyabr','getDate','.top-part','actionModalContent','user_id','subjects-bg','sort','toISOString','sendProfileOtp','#ffffff','gte','default','resume','Kod\x20Göndər','parse','.exit-bg\x20a','index','61px','6llVyVI','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemin\x20təsviri:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22reportReasonText\x22\x20class=\x22report-textarea\x22\x20placeholder=\x22Sualda\x20hansı\x20səhvi\x20və\x20ya\x20problemi\x20gördüyünüzü\x20ətraflı\x20yazın...\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20onclick=\x22submitReport()\x22>Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','722HbWeVr','total_score','359244EFWbgf','confirm','Göndərilir...','#F44336','İyun','updateUser','style','apply','quiz-timer','href','order','buffer','Oktyabr','body','shift','open','<option\x20value=\x22\x22>--\x20Fakültə\x20Seçin\x20--</option>','suspended','max','infoModal','evvelki-btn','flex','213477AImrZw','Tamam','classList','Təsdiqlə','hidden','Suallar\x20tapılmadı!','Aylıq\x20hesablamalar:','İyul','Xəta\x20baş\x20verdi!\x20Şikayət\x20göndərilə\x20bilmədi.','chatling-embed-trigger','elo-up','Zəhmət\x20olmasa\x20problemin\x20nə\x20olduğunu\x20qeyd\x20edin!','submitReport','Quiz\x20Sayı','Aprel','connect','text/javascript','createBufferSource','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Fakültə\x20ad(lar)ı\x20kartın\x20üstündə\x20yazılır\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-faculty\x22>','994776247077','zIndex','4144921jdlqMk','Chart\x20data\x20error:','Mövcud\x20planınız\x20var','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-meta\x22>','30%','\x27)\x22>Yenilə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','novbeti-btn','overflow','openChangeFrame','subjects.json','target','Bilinməyən\x20Fənn','https://chatling.ai/js/embed.js','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22subject-card\x20animate-card\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onclick=\x22startQuiz(\x27','126KVvfYu','</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22result-subject\x22>','arrayBuffer','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','3998WYWcuv','width','7vzhuXN','flex-start','replace','total_correct_answers','wrong','Şikayətiniz\x20uğurla\x20göndərildi.\x20Təşəkkür\x20edirik!','createdat','Limit\x20bölməsində\x20xəta\x20yarandı:','none','diff','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-title\x22>','Xəta:\x20',')\x20<span>','wrong_questions','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22loader-container\x20sfx-fade-in\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22quiz-spinner\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22loader-text\x22>Nəticələriniz\x20yoxlanılır\x20və\x20Elo\x20reytinqiniz\x20hesablanır...</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','/sounds/correct.mp3','profile.html','question-text','actionOverlay','Sonra','Anonim','pathname','get','login.html','linearRampToValueAtTime','blurred-chart','current-user','confirmBtn','contains','Nəticə','password','userStreak','8328MrGzpq','opacity','.plan-free\x20.btn-plan-current','eloValue','getAttribute','all\x200.4s\x20ease-in-out','#333333','.btn-logout','disconnect','trim','No\x20subject\x20provided!','justifyContent','click','transition','numeric','bitme-tarixi','../images/profile.webp','357814GkYuUQ'];a1_0x2a82=function(){return _0xb4db48;};return a1_0x2a82();}function openActionModal(_0x493da8){const _0x2fa608=a1_0x300329,_0x205680=a1_0x59317a,_0x1869cb=document[_0x205680(0x35a)](_0x2fa608(0x2f2)),_0x1531fb=document[_0x205680(0x35a)](_0x205680(0x2a6));_0x1869cb&&_0x1531fb&&(_0x1531fb[_0x2fa608(0x17a)]=_0x493da8,_0x1869cb[_0x2fa608(0x259)][_0x205680(0x272)]=_0x205680(0x297),document[_0x205680(0x221)][_0x2fa608(0x259)][_0x2fa608(0x2f0)]=_0x2fa608(0x1f3));}function a1_0x3aae(){const _0x5cd04a=a1_0x2b8f,_0x10cb8c=a1_0x4a59,_0x417dd8=[_0x5cd04a(0x1cc),_0x10cb8c(0x2c3),_0x10cb8c(0x315),_0x10cb8c(0x1de),_0x5cd04a(0x2cf),_0x10cb8c(0x18a),_0x10cb8c(0x23b),_0x10cb8c(0x264),'classList',_0x10cb8c(0x173),_0x10cb8c(0x250),_0x5cd04a(0x30f),_0x10cb8c(0x2fd),_0x10cb8c(0x24f),_0x10cb8c(0x26b),_0x10cb8c(0x258),_0x5cd04a(0x2a6),_0x5cd04a(0x2e6),_0x10cb8c(0x1bb),_0x10cb8c(0x1c3),'accuracyRate',_0x10cb8c(0x188),_0x5cd04a(0x24e),_0x10cb8c(0x310),_0x10cb8c(0x1ee),_0x5cd04a(0x1a2),_0x10cb8c(0x194),_0x10cb8c(0x26e),_0x10cb8c(0x303),_0x10cb8c(0x2f3),_0x5cd04a(0x2ab),_0x10cb8c(0x16b),_0x5cd04a(0x2c1),_0x10cb8c(0x2b5),_0x10cb8c(0x1f7),'az-AZ',_0x10cb8c(0x1b4),_0x10cb8c(0x236),_0x10cb8c(0x283),_0x10cb8c(0x22c),_0x10cb8c(0x1a2),_0x10cb8c(0x176),_0x10cb8c(0x1bd),_0x10cb8c(0x1ec),_0x10cb8c(0x2e6),_0x10cb8c(0x17d),_0x10cb8c(0x242),_0x10cb8c(0x174),_0x10cb8c(0x27a),_0x5cd04a(0x1b8),_0x10cb8c(0x19f),'supabase',_0x10cb8c(0x1ab),_0x10cb8c(0x181),_0x10cb8c(0x2d0),_0x10cb8c(0x1c1),_0x5cd04a(0x2b2),_0x10cb8c(0x318),_0x5cd04a(0x2f9),_0x10cb8c(0x263),_0x10cb8c(0x2f9),_0x5cd04a(0x2a3),_0x10cb8c(0x2dc),_0x10cb8c(0x252),_0x10cb8c(0x19a),_0x5cd04a(0x19c),_0x10cb8c(0x2c1),_0x5cd04a(0x23a),_0x10cb8c(0x184),_0x10cb8c(0x294),_0x5cd04a(0x1c6),_0x10cb8c(0x238),_0x10cb8c(0x1ca),_0x10cb8c(0x1c5),_0x10cb8c(0x1e1),_0x10cb8c(0x2c7),_0x10cb8c(0x2cc),_0x10cb8c(0x1fe),_0x10cb8c(0x1b8),_0x5cd04a(0x235),_0x10cb8c(0x29e),_0x10cb8c(0x2d1),_0x10cb8c(0x26f),_0x10cb8c(0x1c9),_0x10cb8c(0x1c2),_0x10cb8c(0x19d),_0x10cb8c(0x1a1),_0x10cb8c(0x17f),_0x5cd04a(0x20e),_0x10cb8c(0x2eb),_0x10cb8c(0x2aa),_0x10cb8c(0x30b),_0x10cb8c(0x1f2),_0x10cb8c(0x20f),_0x10cb8c(0x1d2),_0x10cb8c(0x180),_0x10cb8c(0x2b7),_0x10cb8c(0x30e),_0x10cb8c(0x23c),_0x10cb8c(0x20d),_0x10cb8c(0x1c8),_0x10cb8c(0x2dd),_0x10cb8c(0x20b),_0x10cb8c(0x287),_0x10cb8c(0x2af),_0x10cb8c(0x20e),'destroy',_0x10cb8c(0x2de),_0x10cb8c(0x28b),_0x10cb8c(0x2cb),_0x10cb8c(0x281),_0x10cb8c(0x2c9),_0x10cb8c(0x210),_0x10cb8c(0x224),_0x10cb8c(0x317),_0x5cd04a(0x2f7),_0x5cd04a(0x19d),_0x10cb8c(0x206),_0x10cb8c(0x1db),_0x5cd04a(0x201),_0x10cb8c(0x227),_0x10cb8c(0x2b2),_0x5cd04a(0x23c),_0x10cb8c(0x1ac),_0x10cb8c(0x282),_0x10cb8c(0x31d),_0x10cb8c(0x1cf),_0x10cb8c(0x2a5),_0x10cb8c(0x20c),_0x10cb8c(0x2bc),_0x10cb8c(0x265),_0x10cb8c(0x2f8),_0x5cd04a(0x2ac),_0x5cd04a(0x321),_0x5cd04a(0x2c0),_0x10cb8c(0x31b),_0x10cb8c(0x2d7),_0x10cb8c(0x320),_0x5cd04a(0x308),'premiumOverlay',_0x10cb8c(0x29b),_0x10cb8c(0x2b0),_0x10cb8c(0x2ac),_0x10cb8c(0x17a),_0x5cd04a(0x2b3),'disabled',_0x10cb8c(0x270),_0x10cb8c(0x2f7),_0x10cb8c(0x1c7),_0x10cb8c(0x2e1),_0x10cb8c(0x2d9),_0x10cb8c(0x2e3),_0x10cb8c(0x2ba),_0x5cd04a(0x1f4),_0x10cb8c(0x1a3),_0x5cd04a(0x1ae),_0x10cb8c(0x225),_0x10cb8c(0x291),_0x10cb8c(0x2a4),_0x10cb8c(0x17e),_0x10cb8c(0x29f),_0x10cb8c(0x1b9),_0x10cb8c(0x2b9),_0x10cb8c(0x1b2),_0x5cd04a(0x1ce),_0x10cb8c(0x2d2),_0x10cb8c(0x239),_0x10cb8c(0x17c),_0x10cb8c(0x311),_0x10cb8c(0x267),'function',_0x10cb8c(0x2fb),_0x5cd04a(0x2ae),'calc(100vh\x20-\x2061px)',_0x10cb8c(0x278),_0x10cb8c(0x19b),_0x10cb8c(0x2c6),'</span>\x20-\x20','[data-key=\x22',_0x5cd04a(0x1be),_0x5cd04a(0x236),_0x5cd04a(0x2a9),_0x10cb8c(0x190),'Aylıq\x20statistika\x20xətası:',_0x10cb8c(0x30a),_0x10cb8c(0x2f4),_0x10cb8c(0x28e),_0x5cd04a(0x262),_0x10cb8c(0x2a8),_0x5cd04a(0x1c5),_0x10cb8c(0x272),_0x10cb8c(0x1dd),_0x5cd04a(0x329),_0x10cb8c(0x2a1),_0x10cb8c(0x286),_0x10cb8c(0x1d4),_0x10cb8c(0x192),_0x10cb8c(0x18d),_0x10cb8c(0x195),_0x10cb8c(0x22d),_0x10cb8c(0x1a5),_0x10cb8c(0x27b),_0x10cb8c(0x1d9),_0x10cb8c(0x186),_0x10cb8c(0x1b7),'entries',_0x5cd04a(0x306),_0x10cb8c(0x179),_0x10cb8c(0x288),_0x10cb8c(0x284),_0x10cb8c(0x1cc),_0x10cb8c(0x1e2),_0x5cd04a(0x2c6),_0x10cb8c(0x1e8),_0x10cb8c(0x24a),_0x10cb8c(0x215),_0x10cb8c(0x251),_0x10cb8c(0x1f5),_0x10cb8c(0x245),_0x10cb8c(0x26c),_0x10cb8c(0x234),_0x10cb8c(0x170),_0x5cd04a(0x325),_0x5cd04a(0x2e0),_0x10cb8c(0x191),_0x10cb8c(0x322),_0x10cb8c(0x2b8),_0x10cb8c(0x276),_0x10cb8c(0x2e2),_0x10cb8c(0x2f6),_0x10cb8c(0x273),_0x10cb8c(0x1c0),_0x5cd04a(0x27c),_0x10cb8c(0x269),'daily_limit_count',_0x5cd04a(0x324),_0x10cb8c(0x21e),_0x5cd04a(0x1a1),_0x10cb8c(0x230),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>E-poçtu\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>Yeni\x20e-poçt\x20ünvanınızı\x20daxil\x20edin.\x20Təsdiq\x20linki\x20göndəriləcək.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20e-poçt</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22email\x22\x20id=\x22newActionValue\x22\x20placeholder=\x22yeni@mail.com\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22modalSubmitBtn\x22\x20onclick=\x22submitChange(\x27email\x27)\x22>Təsdiqlə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x10cb8c(0x277),_0x10cb8c(0x1f8),_0x10cb8c(0x27f),_0x5cd04a(0x1fd),_0x10cb8c(0x222),_0x10cb8c(0x216),'display_name',_0x10cb8c(0x306),'filter',_0x10cb8c(0x1b5),_0x5cd04a(0x323),_0x10cb8c(0x279),_0x10cb8c(0x314),_0x5cd04a(0x282),_0x10cb8c(0x2be),_0x10cb8c(0x301),'stopPropagation',_0x5cd04a(0x299),_0x10cb8c(0x1a0),_0x10cb8c(0x2f1),_0x5cd04a(0x2b7),_0x10cb8c(0x1e3),_0x5cd04a(0x343),_0x10cb8c(0x244),_0x10cb8c(0x1cb),_0x10cb8c(0x16c),_0x10cb8c(0x229),_0x10cb8c(0x305),_0x10cb8c(0x2c4),_0x10cb8c(0x266),_0x5cd04a(0x1e6),_0x10cb8c(0x26d),_0x5cd04a(0x2f8),_0x10cb8c(0x2c2),_0x5cd04a(0x261),_0x10cb8c(0x209),_0x10cb8c(0x2a6),_0x10cb8c(0x2bd),_0x10cb8c(0x25e),_0x10cb8c(0x1f1),_0x10cb8c(0x1d1),_0x10cb8c(0x1f3),_0x5cd04a(0x24c),'%</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x10cb8c(0x289),_0x10cb8c(0x28d),_0x10cb8c(0x25a),_0x10cb8c(0x223),_0x10cb8c(0x203),'rgba(255,\x20255,\x20255,\x200.1)',_0x10cb8c(0x193),_0x10cb8c(0x293),_0x5cd04a(0x278),_0x10cb8c(0x275),_0x5cd04a(0x25a),_0x10cb8c(0x304),_0x10cb8c(0x218),_0x10cb8c(0x1a4),_0x10cb8c(0x26a),_0x10cb8c(0x302),_0x5cd04a(0x312),_0x10cb8c(0x1da),'Ümumi\x20(Bütün\x20fakültələr)',_0x10cb8c(0x268),_0x10cb8c(0x253),_0x10cb8c(0x2fe),_0x10cb8c(0x182),_0x10cb8c(0x1ea),_0x5cd04a(0x239),_0x10cb8c(0x1ba),_0x10cb8c(0x22a),_0x10cb8c(0x1ce),_0x10cb8c(0x296),_0x10cb8c(0x175),_0x10cb8c(0x2b4),_0x10cb8c(0x1ad),_0x10cb8c(0x324),_0x10cb8c(0x211),_0x10cb8c(0x1c4),_0x10cb8c(0x2cf),_0x10cb8c(0x27c),_0x10cb8c(0x18b),_0x5cd04a(0x233),_0x10cb8c(0x16e),_0x10cb8c(0x2d4),_0x5cd04a(0x247),_0x10cb8c(0x187),_0x5cd04a(0x328),_0x10cb8c(0x233),_0x5cd04a(0x2d2),_0x10cb8c(0x299),_0x10cb8c(0x172),_0x10cb8c(0x28c),_0x10cb8c(0x1a7),_0x10cb8c(0x22e),_0x10cb8c(0x1b3),_0x5cd04a(0x204),_0x10cb8c(0x1d3),_0x10cb8c(0x2d8),_0x10cb8c(0x254),_0x10cb8c(0x1b0),_0x10cb8c(0x248),_0x10cb8c(0x21b),_0x10cb8c(0x2ca),_0x10cb8c(0x169),_0x10cb8c(0x2e5),_0x10cb8c(0x30d),_0x10cb8c(0x28f),_0x5cd04a(0x1c4),_0x10cb8c(0x21f),_0x10cb8c(0x1f0),_0x5cd04a(0x264),_0x5cd04a(0x258),_0x10cb8c(0x2e4),_0x5cd04a(0x276),_0x10cb8c(0x2bf),_0x10cb8c(0x24d),_0x10cb8c(0x208),_0x10cb8c(0x2b1),_0x10cb8c(0x316),_0x10cb8c(0x1d7),_0x10cb8c(0x207),_0x10cb8c(0x18f),_0x5cd04a(0x1ef),_0x10cb8c(0x297),_0x10cb8c(0x2ab),_0x10cb8c(0x256),_0x10cb8c(0x171),_0x10cb8c(0x1df),_0x5cd04a(0x2cd),_0x10cb8c(0x1e4),_0x10cb8c(0x212),_0x10cb8c(0x2d6),_0x10cb8c(0x28a),_0x10cb8c(0x220),_0x10cb8c(0x298),_0x10cb8c(0x2f2),_0x10cb8c(0x1eb),_0x10cb8c(0x29a),_0x10cb8c(0x23a),_0x10cb8c(0x221),_0x10cb8c(0x280),_0x5cd04a(0x1e3),_0x5cd04a(0x1d8),_0x10cb8c(0x20a),_0x10cb8c(0x2e7),_0x10cb8c(0x31e),_0x10cb8c(0x309),_0x10cb8c(0x31a),_0x5cd04a(0x213),_0x10cb8c(0x204),_0x10cb8c(0x16a),_0x10cb8c(0x2ce),_0x10cb8c(0x2a9),_0x10cb8c(0x285),_0x10cb8c(0x183),_0x10cb8c(0x24c),_0x10cb8c(0x232),'fixed',_0x5cd04a(0x32f),_0x5cd04a(0x22b),_0x10cb8c(0x2c5),_0x10cb8c(0x1af),'getDay',_0x10cb8c(0x2a0),_0x10cb8c(0x2ae),_0x10cb8c(0x23e),_0x10cb8c(0x1e0),_0x10cb8c(0x22f),_0x5cd04a(0x28b),_0x10cb8c(0x2db),_0x10cb8c(0x2d5),_0x5cd04a(0x30b),_0x5cd04a(0x305),_0x10cb8c(0x2ad),_0x10cb8c(0x2ef),_0x10cb8c(0x1ef),_0x10cb8c(0x1cd),_0x10cb8c(0x308),_0x10cb8c(0x27e),_0x5cd04a(0x255),_0x10cb8c(0x2fa),_0x10cb8c(0x2f0),_0x10cb8c(0x1ed),_0x10cb8c(0x1fd),_0x5cd04a(0x265),'getFullYear','messageOverlay',_0x10cb8c(0x1b6),_0x10cb8c(0x189),_0x10cb8c(0x1c6),_0x10cb8c(0x1ae),_0x10cb8c(0x24e),_0x10cb8c(0x185),_0x10cb8c(0x2e0),_0x10cb8c(0x2ed),_0x10cb8c(0x2a2),_0x5cd04a(0x206),_0x10cb8c(0x1ff),_0x10cb8c(0x1f9),'May',_0x10cb8c(0x274),_0x10cb8c(0x31c),_0x10cb8c(0x29d),'1200px',_0x5cd04a(0x320),_0x5cd04a(0x2f4),_0x10cb8c(0x23f),_0x10cb8c(0x1d8),_0x10cb8c(0x307),_0x10cb8c(0x2ff),_0x10cb8c(0x1be),_0x10cb8c(0x200),_0x10cb8c(0x21d),_0x5cd04a(0x294)];return a1_0x3aae=function(){return _0x417dd8;},a1_0x3aae();}function a1_0xd056(){const _0x15a7cc=a1_0x2b8f,_0x1c5326=a1_0x4a59,_0x1325c4=a1_0x2b623a,_0x2a95b1=a1_0x300329,_0xa4a990=[_0x2a95b1(0x24c),_0x2a95b1(0x21e),_0x2a95b1(0x223),_0x1325c4(0x1b7),_0x1c5326(0x27d),_0x2a95b1(0x250),_0x2a95b1(0x2bd),_0x2a95b1(0x16a),_0x2a95b1(0x190),_0x2a95b1(0x2a6),_0x2a95b1(0x1a8),_0x1325c4(0x223),_0x2a95b1(0x2dd),_0x2a95b1(0x30a),_0x2a95b1(0x1ac),_0x2a95b1(0x227),'sendOtpBtn',_0x2a95b1(0x245),_0x2a95b1(0x32a),_0x2a95b1(0x2db),_0x2a95b1(0x25a),_0x2a95b1(0x1ff),_0x2a95b1(0x21c),_0x2a95b1(0x170),_0x2a95b1(0x1a7),_0x2a95b1(0x219),_0x1325c4(0x1f8),_0x2a95b1(0x32d),_0x2a95b1(0x26c),_0x1325c4(0x295),_0x2a95b1(0x17a),_0x1325c4(0x24b),_0x1325c4(0x291),_0x1325c4(0x1d3),_0x2a95b1(0x287),_0x2a95b1(0x218),_0x1325c4(0x2b7),_0x2a95b1(0x1a0),_0x1c5326(0x26d),_0x2a95b1(0x20a),_0x2a95b1(0x334),_0x2a95b1(0x318),_0x2a95b1(0x2d9),_0x2a95b1(0x290),_0x2a95b1(0x2f3),_0x2a95b1(0x208),_0x2a95b1(0x2b2),_0x2a95b1(0x1f2),_0x2a95b1(0x24f),_0x2a95b1(0x2df),_0x1325c4(0x27c),_0x2a95b1(0x280),_0x2a95b1(0x221),_0x2a95b1(0x1cc),_0x2a95b1(0x31e),_0x1325c4(0x194),_0x2a95b1(0x20e),_0x1325c4(0x203),_0x2a95b1(0x16c),_0x2a95b1(0x2a4),_0x2a95b1(0x308),_0x2a95b1(0x299),_0x1c5326(0x1b2),_0x2a95b1(0x27d),_0x1325c4(0x287),_0x2a95b1(0x22d),_0x2a95b1(0x29b),_0x2a95b1(0x313),_0x2a95b1(0x304),_0x1325c4(0x2a0),_0x2a95b1(0x2a3),_0x2a95b1(0x1d4),_0x2a95b1(0x179),_0x2a95b1(0x1bb),_0x2a95b1(0x18c),_0x1325c4(0x1c4),_0x1325c4(0x1be),_0x1325c4(0x27e),_0x2a95b1(0x1a9),_0x2a95b1(0x1be),_0x1325c4(0x1cb),_0x2a95b1(0x1a3),_0x2a95b1(0x21d),_0x2a95b1(0x1cd),_0x2a95b1(0x2fd),_0x2a95b1(0x241),_0x2a95b1(0x1df),_0x2a95b1(0x300),_0x2a95b1(0x1ee),_0x2a95b1(0x248),_0x2a95b1(0x224),_0x1325c4(0x174),_0x2a95b1(0x1a5),_0x2a95b1(0x1c3),_0x2a95b1(0x319),_0x2a95b1(0x278),_0x1c5326(0x1a6),_0x2a95b1(0x25b),_0x2a95b1(0x260),_0x2a95b1(0x19b),_0x2a95b1(0x194),_0x2a95b1(0x2c2),_0x2a95b1(0x27e),_0x2a95b1(0x258),_0x1c5326(0x2ec),_0x1325c4(0x1cd),_0x2a95b1(0x306),_0x1c5326(0x25d),_0x1325c4(0x1a7),_0x2a95b1(0x2c7),_0x2a95b1(0x328),_0x2a95b1(0x213),_0x1325c4(0x185),_0x2a95b1(0x265),_0x2a95b1(0x238),_0x1325c4(0x1b8),_0x2a95b1(0x1e9),_0x2a95b1(0x276),_0x2a95b1(0x1dd),_0x2a95b1(0x2b6),_0x2a95b1(0x235),_0x2a95b1(0x1ef),_0x1325c4(0x29b),_0x2a95b1(0x1f3),_0x2a95b1(0x256),_0x2a95b1(0x233),_0x2a95b1(0x279),_0x2a95b1(0x18d),_0x2a95b1(0x277),_0x2a95b1(0x1fd),_0x2a95b1(0x1ad),_0x2a95b1(0x21b),_0x2a95b1(0x285),_0x2a95b1(0x1b1),_0x2a95b1(0x2c4),_0x2a95b1(0x2ad),_0x2a95b1(0x1ba),_0x2a95b1(0x25f),_0x2a95b1(0x259),_0x2a95b1(0x2ac),_0x2a95b1(0x1c9),_0x2a95b1(0x28b),_0x2a95b1(0x275),_0x1325c4(0x19e),_0x2a95b1(0x2fc),_0x2a95b1(0x1f9),_0x2a95b1(0x30d),_0x2a95b1(0x2ba),_0x2a95b1(0x293),_0x1325c4(0x221),_0x2a95b1(0x296),_0x2a95b1(0x197),_0x2a95b1(0x267),_0x2a95b1(0x230),_0x2a95b1(0x2d7),_0x2a95b1(0x2ec),_0x1325c4(0x279),_0x2a95b1(0x174),_0x2a95b1(0x2d4),_0x2a95b1(0x2e4),_0x1325c4(0x2bf),_0x1c5326(0x238),_0x1325c4(0x26f),_0x2a95b1(0x2ae),_0x2a95b1(0x28a),_0x1325c4(0x306),_0x2a95b1(0x246),_0x1325c4(0x2a1),_0x2a95b1(0x1c2),_0x1325c4(0x312),_0x2a95b1(0x30e),_0x2a95b1(0x1dc),_0x2a95b1(0x288),_0x2a95b1(0x1c1),_0x2a95b1(0x2eb),_0x2a95b1(0x1e5),_0x2a95b1(0x26b),_0x2a95b1(0x175),_0x2a95b1(0x19d),_0x2a95b1(0x228),_0x2a95b1(0x2ce),_0x2a95b1(0x326),_0x2a95b1(0x2ab),_0x2a95b1(0x1f4),_0x1325c4(0x2af),_0x2a95b1(0x2e1),_0x2a95b1(0x17b),_0x2a95b1(0x273),_0x2a95b1(0x282),_0x2a95b1(0x184),_0x2a95b1(0x1b2),_0x1325c4(0x1f7),_0x2a95b1(0x2e8),_0x1325c4(0x1d6),_0x1325c4(0x1e3),_0x2a95b1(0x200),_0x2a95b1(0x19f),_0x1325c4(0x31d),_0x2a95b1(0x172),_0x2a95b1(0x19c),_0x15a7cc(0x2bf),_0x1325c4(0x167),_0x15a7cc(0x268),_0x2a95b1(0x204),_0x2a95b1(0x272),_0x2a95b1(0x302),_0x2a95b1(0x2fb),_0x1c5326(0x1a8),_0x2a95b1(0x1e3),_0x2a95b1(0x283),_0x2a95b1(0x2e0),_0x2a95b1(0x289),_0x2a95b1(0x270),_0x1325c4(0x294),_0x2a95b1(0x28d),_0x2a95b1(0x29e),_0x2a95b1(0x2a8),_0x2a95b1(0x271),_0x2a95b1(0x321),_0x2a95b1(0x2d6),_0x2a95b1(0x2fa),_0x2a95b1(0x20f),_0x1c5326(0x1bc),_0x2a95b1(0x30f),_0x2a95b1(0x2ee),_0x2a95b1(0x182),_0x2a95b1(0x1d9),_0x2a95b1(0x16b),_0x2a95b1(0x2e6),_0x2a95b1(0x312),_0x2a95b1(0x324),_0x2a95b1(0x284),_0x2a95b1(0x2b4),_0x2a95b1(0x1b0),_0x2a95b1(0x17c),_0x2a95b1(0x207),_0x2a95b1(0x1cf),_0x2a95b1(0x18e),_0x2a95b1(0x210),_0x1325c4(0x2fc),_0x2a95b1(0x28c),_0x1325c4(0x1b5),_0x2a95b1(0x2a1),_0x2a95b1(0x1e8),_0x2a95b1(0x1d0),_0x2a95b1(0x32c),_0x2a95b1(0x20d),_0x2a95b1(0x20b),_0x2a95b1(0x2e5),_0x2a95b1(0x27f),_0x2a95b1(0x18a),_0x2a95b1(0x1a2),_0x2a95b1(0x24d),_0x2a95b1(0x311),_0x1325c4(0x2f6),_0x2a95b1(0x2a0),_0x2a95b1(0x1eb),_0x2a95b1(0x237),_0x2a95b1(0x317),_0x2a95b1(0x22e),_0x2a95b1(0x22a),_0x2a95b1(0x236),_0x2a95b1(0x28e),_0x2a95b1(0x178),_0x1325c4(0x28a),_0x1325c4(0x206),_0x2a95b1(0x18f),_0x2a95b1(0x295),_0x1325c4(0x2d4),_0x2a95b1(0x2c3),_0x2a95b1(0x2d8),_0x2a95b1(0x242),_0x2a95b1(0x2aa),_0x2a95b1(0x1c6),_0x2a95b1(0x1c0),_0x2a95b1(0x327),_0x2a95b1(0x310),_0x1325c4(0x181),_0x1c5326(0x284),_0x1325c4(0x2e8),_0x2a95b1(0x2af),_0x1325c4(0x186),_0x2a95b1(0x1f6),_0x2a95b1(0x1e7),_0x2a95b1(0x2f0),_0x1325c4(0x2d0),_0x2a95b1(0x307),_0x2a95b1(0x1e6),_0x2a95b1(0x23e),_0x1325c4(0x1af),_0x2a95b1(0x222),_0x1325c4(0x16a),_0x2a95b1(0x199),_0x2a95b1(0x2f4),_0x2a95b1(0x1e1),_0x1325c4(0x320),_0x1325c4(0x313),_0x2a95b1(0x325),_0x2a95b1(0x314),_0x2a95b1(0x305),_0x2a95b1(0x1ea),_0x2a95b1(0x1f8),_0x2a95b1(0x2ed),_0x2a95b1(0x2a9),_0x2a95b1(0x24b),_0x2a95b1(0x209),_0x2a95b1(0x2b9),_0x2a95b1(0x24a),_0x2a95b1(0x2d2),_0x1325c4(0x2df),_0x2a95b1(0x303),_0x2a95b1(0x1af),_0x2a95b1(0x266),_0x2a95b1(0x2c0),_0x2a95b1(0x2b1),_0x2a95b1(0x315),_0x2a95b1(0x1c5),_0x2a95b1(0x29c),_0x1325c4(0x2a5),_0x2a95b1(0x249),_0x1325c4(0x2fa),_0x2a95b1(0x1fc),_0x2a95b1(0x205),_0x2a95b1(0x24e),_0x2a95b1(0x25c),_0x2a95b1(0x2f6),_0x1325c4(0x274),_0x2a95b1(0x298),_0x2a95b1(0x243),_0x15a7cc(0x2b4),_0x2a95b1(0x1b7),_0x1c5326(0x2c8),_0x1325c4(0x311),_0x2a95b1(0x1da),_0x2a95b1(0x1e4),_0x2a95b1(0x1a1),_0x2a95b1(0x1e0),_0x2a95b1(0x331),_0x2a95b1(0x16e),_0x2a95b1(0x16f),_0x2a95b1(0x1d7),_0x2a95b1(0x23f),_0x2a95b1(0x28f),_0x1325c4(0x325),_0x2a95b1(0x198),_0x2a95b1(0x2f9),_0x1c5326(0x1e6),_0x2a95b1(0x2e7),_0x2a95b1(0x297),_0x2a95b1(0x1b8),_0x2a95b1(0x1cb),_0x2a95b1(0x31a),_0x2a95b1(0x2b3),_0x2a95b1(0x2e3),_0x2a95b1(0x2f2),_0x1325c4(0x16b),_0x2a95b1(0x1d8),_0x2a95b1(0x181),_0x1c5326(0x24b),_0x1325c4(0x197),_0x1325c4(0x169),_0x2a95b1(0x2d3),_0x1325c4(0x180),_0x1325c4(0x273),_0x2a95b1(0x22f),_0x2a95b1(0x193),_0x2a95b1(0x2d0),_0x1325c4(0x260),_0x2a95b1(0x2fe),_0x2a95b1(0x177),_0x1325c4(0x307),_0x1325c4(0x201),_0x2a95b1(0x1db),_0x2a95b1(0x1ab),_0x2a95b1(0x1fb),_0x1325c4(0x166),_0x2a95b1(0x21f),_0x2a95b1(0x234),_0x1325c4(0x1c9),_0x2a95b1(0x1fe),_0x1325c4(0x1f4),_0x2a95b1(0x2be),_0x2a95b1(0x309),_0x2a95b1(0x2b5),_0x1325c4(0x1c6),_0x1325c4(0x1a8),_0x2a95b1(0x185),_0x2a95b1(0x23b),_0x1325c4(0x1c3),_0x1325c4(0x190),_0x2a95b1(0x203),_0x2a95b1(0x31f),_0x2a95b1(0x2cd),_0x1325c4(0x23d),_0x1325c4(0x21c),_0x2a95b1(0x244),_0x2a95b1(0x195),_0x2a95b1(0x1d1),_0x1325c4(0x2fd),_0x2a95b1(0x1c7),_0x2a95b1(0x1fa),_0x2a95b1(0x316),_0x2a95b1(0x19a),_0x2a95b1(0x2c6),_0x2a95b1(0x257),_0x2a95b1(0x268),_0x2a95b1(0x2de),_0x1325c4(0x1a1),_0x2a95b1(0x323),_0x2a95b1(0x292),_0x2a95b1(0x220),_0x2a95b1(0x202),_0x2a95b1(0x1a4),_0x2a95b1(0x2c5),_0x2a95b1(0x2da),_0x2a95b1(0x26d),_0x2a95b1(0x2cf),_0x2a95b1(0x2f7),_0x1325c4(0x25c),_0x2a95b1(0x17d),_0x2a95b1(0x2cc),_0x1325c4(0x2b8),_0x2a95b1(0x261),_0x2a95b1(0x322),_0x2a95b1(0x31d),_0x1325c4(0x1b0),_0x2a95b1(0x206),_0x2a95b1(0x17e),_0x2a95b1(0x26f),_0x1325c4(0x179),_0x2a95b1(0x2dc),_0x2a95b1(0x1ec),_0x2a95b1(0x1bd),_0x2a95b1(0x1aa),_0x2a95b1(0x229),_0x2a95b1(0x2f5),_0x2a95b1(0x192),_0x2a95b1(0x216),_0x2a95b1(0x27a),_0x2a95b1(0x2ea),'İstifadəçi\x20adı\x20boş\x20ola\x20bilməz!',_0x2a95b1(0x269),_0x2a95b1(0x2c8),_0x2a95b1(0x22b),_0x2a95b1(0x30b),_0x2a95b1(0x23d),_0x2a95b1(0x32b),_0x2a95b1(0x186),_0x1325c4(0x2eb),_0x1325c4(0x2b4),_0x1325c4(0x242),_0x2a95b1(0x2ca),_0x2a95b1(0x25d),_0x1c5326(0x2fc),_0x2a95b1(0x18b),_0x2a95b1(0x1b5),_0x2a95b1(0x23c)];return a1_0xd056=function(){return _0xa4a990;},a1_0xd056();}function closeActionModal(){const _0x3b46c4=a1_0x59317a,_0x282e7b=document[_0x3b46c4(0x35a)](_0x3b46c4(0x2cb)),_0x23247c=document[_0x3b46c4(0x35a)](_0x3b46c4(0x2a6));_0x282e7b&&(_0x282e7b[_0x3b46c4(0x1f3)][_0x3b46c4(0x272)]=_0x3b46c4(0x255),document[_0x3b46c4(0x221)][_0x3b46c4(0x1f3)][_0x3b46c4(0x285)]=''),_0x23247c&&(_0x23247c[_0x3b46c4(0x350)]='');}function a1_0x4a59(_0x5c347d,_0x3f4d1b){_0x5c347d=_0x5c347d-0x169;const _0x33ac86=a1_0x36bc();let _0x50790d=_0x33ac86[_0x5c347d];return _0x50790d;}if(window[a1_0x59317a(0x31a)][a1_0x59317a(0x282)][a1_0x59317a(0x2c9)](a1_0x2726a0(0x230))){const container=document[a1_0x59317a(0x35a)](a1_0x2726a0(0x243)),searchInput=document[a1_0x59317a(0x35a)](a1_0x59317a(0x354)),searchButton=document[a1_0x1e10ae(0x2ed)](a1_0x59317a(0x340)),filterContainer=document[a1_0x59317a(0x35a)](a1_0x59317a(0x2a3)),uniSelect=document[a1_0x300329(0x334)](a1_0x59317a(0x28f)),facultySelect=document[a1_0x59317a(0x35a)](a1_0x59317a(0x23b)),infoModal=document[a1_0x59317a(0x35a)](a1_0x59317a(0x1bd)),infoModalText=document[a1_0x59317a(0x35a)](a1_0x59317a(0x264)),closeInfoModal=document[a1_0x59317a(0x35a)](a1_0x59317a(0x227));let allSubjects=[],globalSubjects=[],universitiesData={},searchTimeout=null;fetch(a1_0x59317a(0x2f8))[a1_0x59317a(0x1a4)](_0x308b2a=>_0x308b2a[a1_0x59317a(0x359)]())[a1_0x59317a(0x1a4)](_0x2e058e=>{const _0x24c5d0=a1_0x2b623a,_0x2b3936=a1_0x300329,_0xa57951=a1_0x59317a,_0x45d7b9=_0x2e058e[_0xa57951(0x348)][_0xa57951(0x1df)]||[],_0x104bdf=_0x2e058e[_0xa57951(0x348)][_0xa57951(0x2f3)]||[];universitiesData=_0x2e058e[_0xa57951(0x19c)]||{},globalSubjects=_0x45d7b9[_0xa57951(0x2d7)](_0x549439=>_0x549439['id']),allSubjects=[..._0x45d7b9,..._0x104bdf][_0x24c5d0(0x2bb)]((_0x2bb18a,_0x151aae)=>_0x2bb18a[_0xa57951(0x26d)][_0xa57951(0x26f)](_0x151aae[_0xa57951(0x26d)],'az')),Object[_0xa57951(0x2a1)](universitiesData)[_0xa57951(0x27f)]>0x0&&(filterContainer[_0x2b3936(0x259)][_0xa57951(0x272)]=_0xa57951(0x297),populateUniversities()),renderSubjects(allSubjects);})[a1_0x300329(0x18d)](_0x390e13=>console[a1_0x59317a(0x2bc)](a1_0x59317a(0x28a),_0x390e13));function populateUniversities(){const _0x2eab55=a1_0x59317a;for(const _0x4741a8 in universitiesData){const _0x49a2f1=document[_0x2eab55(0x1d9)](_0x2eab55(0x243));_0x49a2f1[_0x2eab55(0x229)]=_0x4741a8,_0x49a2f1[_0x2eab55(0x200)]=universitiesData[_0x4741a8][_0x2eab55(0x22d)],uniSelect[_0x2eab55(0x344)](_0x49a2f1);}}uniSelect[a1_0x1e10ae(0x21a)](a1_0x300329(0x320),function(){const _0x3ac6a9=a1_0x1e10ae,_0x1e750e=a1_0x300329,_0x2fd800=a1_0x59317a,_0x5ef978=this[_0x2fd800(0x229)];facultySelect[_0x2fd800(0x350)]=_0x2fd800(0x258),facultySelect[_0x1e750e(0x318)]=!![];if(_0x5ef978&&universitiesData[_0x5ef978]){const _0x260ece=universitiesData[_0x5ef978][_0x2fd800(0x2af)];for(const _0x1488c5 in _0x260ece){const _0x4f1eea=document[_0x1e750e(0x2bc)](_0x1e750e(0x321));_0x4f1eea[_0x2fd800(0x229)]=_0x1488c5,_0x4f1eea[_0x1e750e(0x197)]=_0x260ece[_0x1488c5][_0x2fd800(0x22d)],facultySelect[_0x2fd800(0x344)](_0x4f1eea);}facultySelect[_0x3ac6a9(0x1e7)]=![];}applyFilters();}),facultySelect[a1_0x59317a(0x281)](a1_0x59317a(0x2db),applyFilters);function applyFilters(){const _0x397c66=a1_0x2b623a,_0x5e8f33=a1_0x300329,_0x43de1d=a1_0x59317a,_0x5ec983=uniSelect[_0x397c66(0x208)],_0x43cf34=facultySelect[_0x43de1d(0x229)],_0x5e2bef=searchInput[_0x43de1d(0x229)][_0x5e8f33(0x274)]()[_0x5e8f33(0x2ec)]();let _0x3df924=allSubjects;if(_0x5ec983&&_0x43cf34){const _0x3073d5=universitiesData[_0x5ec983][_0x5e8f33(0x329)][_0x43cf34][_0x43de1d(0x1a2)]||[];_0x3df924=allSubjects[_0x5e8f33(0x1de)](_0x1876ba=>_0x3073d5[_0x43de1d(0x199)](_0x1876ba['id']));}_0x5e2bef!==''&&(_0x3df924=_0x3df924[_0x43de1d(0x34f)](_0x485c2f=>isMatch(_0x485c2f[_0x43de1d(0x26d)],_0x5e2bef))),renderSubjects(_0x3df924);}function isMatch(_0x21c990,_0x418245){const _0xdd78da=a1_0x2b623a,_0x1e9445=a1_0x300329,_0x242d5c=a1_0x59317a;_0x21c990=_0x21c990[_0x1e9445(0x274)](),_0x418245=_0x418245[_0x242d5c(0x2ea)]();if(_0x21c990[_0x242d5c(0x199)](_0x418245))return!![];if(_0x418245[_0x242d5c(0x27f)]<0x3)return![];const _0x490436=Math[_0x1e9445(0x2fb)](0x3,Math[_0x242d5c(0x32d)](_0x418245[_0xdd78da(0x26e)]/0x3));let _0x2007de=0x0,_0x1dbd73=0x0;for(let _0x366084=0x0;_0x366084<_0x418245[_0x242d5c(0x27f)];_0x366084++){_0x1dbd73<_0x21c990[_0xdd78da(0x26e)]&&_0x418245[_0x366084]===_0x21c990[_0x1dbd73]?_0x1dbd73++:_0x2007de++;}return _0x2007de<=_0x490436;}function renderSubjects(_0x17b4ce){const _0x208d94=a1_0x59317a;if(!_0x17b4ce||_0x17b4ce[_0x208d94(0x27f)]===0x0){container[_0x208d94(0x350)]=_0x208d94(0x22a);return;}container[_0x208d94(0x350)]=_0x17b4ce[_0x208d94(0x2d7)]((_0x156083,_0x298211)=>{const _0x557f3c=a1_0x5970,_0x2710d8=a1_0x5c5a,_0x4399e3=_0x208d94;let _0x59c836='';if(globalSubjects[_0x4399e3(0x199)](_0x156083['id']))_0x59c836=_0x4399e3(0x1b8);else{let _0x10f054=[];for(const _0x371929 in universitiesData){const _0x400226=universitiesData[_0x371929][_0x4399e3(0x2af)];for(const _0x393514 in _0x400226){const _0x56a6b2=_0x400226[_0x393514][_0x4399e3(0x1a2)]||[];_0x56a6b2[_0x4399e3(0x199)](_0x156083['id'])&&_0x10f054[_0x4399e3(0x217)](_0x400226[_0x393514][_0x4399e3(0x22d)]);}}_0x10f054[_0x4399e3(0x27f)]>0x0?_0x59c836=_0x10f054[_0x4399e3(0x2d7)](_0x5ef687=>{const _0x242b4a=a1_0x5970,_0x277efe=a1_0x5c5a,_0x43df90=_0x4399e3,_0x214cf2=_0x5ef687[_0x277efe(0x19c)](/fakültəsi/gi,'')[_0x43df90(0x230)](/və/gi,'')[_0x43df90(0x204)]();return _0x214cf2[_0x43df90(0x19b)](/\s+/)[_0x43df90(0x34f)](_0x474cb8=>_0x474cb8[_0x242b4a(0x26e)]>0x0)[_0x43df90(0x2d7)](_0x5b4179=>_0x5b4179[_0x43df90(0x26e)](0x0)[_0x43df90(0x2be)]())[_0x43df90(0x24f)]('');})[_0x4399e3(0x24f)](',\x20'):_0x59c836=_0x4399e3(0x345);}return _0x4399e3(0x216)+_0x156083['id']+_0x4399e3(0x1a5)+_0x298211*0.05+_0x4399e3(0x346)+_0x156083['id']+_0x2710d8(0x226)+_0x156083[_0x4399e3(0x26d)]+_0x4399e3(0x2b5)+_0x156083[_0x2710d8(0x26e)]+_0x4399e3(0x2fc)+_0x156083[_0x557f3c(0x233)]+_0x4399e3(0x2d9)+_0x59c836+_0x4399e3(0x241)+_0x156083[_0x4399e3(0x1c6)]+_0x4399e3(0x23a);})[_0x208d94(0x24f)]('');}searchInput[a1_0x59317a(0x281)](a1_0x300329(0x26a),_0x1f0e4d=>{const _0x1cd303=a1_0x59317a,_0x771386=_0x1f0e4d[_0x1cd303(0x235)][_0x1cd303(0x229)][_0x1cd303(0x2ea)]()[_0x1cd303(0x204)]();clearTimeout(searchTimeout),searchTimeout=setTimeout(()=>{const _0x3677a9=_0x1cd303;if(_0x771386===''){renderSubjects(allSubjects);return;}const _0x4c49b0=allSubjects[_0x3677a9(0x34f)](_0x22185a=>isMatch(_0x22185a[_0x3677a9(0x26d)],_0x771386));renderSubjects(_0x4c49b0);},0x12c);}),searchButton[a1_0x59317a(0x281)](a1_0x300329(0x217),()=>{const _0x51fe28=a1_0x2b623a,_0x111a1c=a1_0x300329,_0x2a7061=a1_0x59317a,_0x1331cb=searchInput[_0x2a7061(0x229)][_0x51fe28(0x1a8)](),_0x524786=allSubjects[_0x111a1c(0x1de)](_0x5a4ec7=>_0x5a4ec7[_0x2a7061(0x26d)][_0x2a7061(0x2ea)]()[_0x2a7061(0x199)](_0x1331cb));renderSubjects(_0x524786);}),window[a1_0x59317a(0x1c9)]=function(_0x2059b0){const _0x1f81fa=a1_0x59317a;window[_0x1f81fa(0x31a)][_0x1f81fa(0x19e)]=_0x1f81fa(0x1d6)+_0x2059b0;},window[a1_0x59317a(0x1fc)]=function(_0x586d25,_0x4f196e,_0x4621a3){const _0x41b7b3=a1_0x2b623a,_0x1537bd=a1_0x300329,_0x5bbf52=a1_0x59317a;_0x586d25[_0x5bbf52(0x234)]();if(globalSubjects[_0x5bbf52(0x199)](_0x4f196e)){infoModalText[_0x5bbf52(0x350)]=_0x5bbf52(0x1de)+_0x4621a3+_0x5bbf52(0x20c),infoModal[_0x1537bd(0x259)][_0x1537bd(0x2c1)]=_0x5bbf52(0x297);return;}let _0x52ed4d=[];for(const _0x190c27 in universitiesData){const _0x119690=universitiesData[_0x190c27][_0x5bbf52(0x2af)];for(const _0x660b63 in _0x119690){const _0x26e8c4=_0x119690[_0x660b63][_0x1537bd(0x255)]||[];_0x26e8c4[_0x5bbf52(0x199)](_0x4f196e)&&_0x52ed4d[_0x5bbf52(0x217)](_0x5bbf52(0x298)+universitiesData[_0x190c27][_0x5bbf52(0x22d)]+_0x41b7b3(0x24e)+_0x119690[_0x660b63][_0x5bbf52(0x22d)]+_0x1537bd(0x225));}}_0x52ed4d[_0x5bbf52(0x27f)]>0x0?infoModalText[_0x5bbf52(0x350)]=_0x1537bd(0x276)+_0x4621a3+_0x1537bd(0x2b7)+_0x52ed4d[_0x1537bd(0x324)]('')+_0x5bbf52(0x259):infoModalText[_0x5bbf52(0x350)]=_0x1537bd(0x276)+_0x4621a3+_0x5bbf52(0x274),infoModal[_0x1537bd(0x259)][_0x5bbf52(0x272)]=_0x5bbf52(0x297);},closeInfoModal[a1_0x59317a(0x281)](a1_0x300329(0x217),()=>{const _0x2e6b72=a1_0x300329,_0x45e460=a1_0x59317a;infoModal[_0x45e460(0x1f3)][_0x45e460(0x272)]=_0x2e6b72(0x1cf);}),window[a1_0x300329(0x2af)](a1_0x300329(0x217),_0x258a6e=>{const _0x2fb485=a1_0x300329,_0x31e133=a1_0x59317a;_0x258a6e[_0x31e133(0x235)]===infoModal&&(infoModal[_0x31e133(0x1f3)][_0x2fb485(0x2c1)]=_0x31e133(0x255));}),((async()=>{const _0x237ad2=a1_0x300329,_0x5c74e2=a1_0x59317a;try{const _0x2b1f9f=_0x5c74e2(0x20a),_0x4c4437=_0x5c74e2(0x2d8),_0x24a30d=window[_0x5c74e2(0x2dd)][_0x5c74e2(0x34d)](_0x2b1f9f,_0x4c4437),_0x3fcc91=localStorage[_0x5c74e2(0x262)](_0x237ad2(0x27e));if(!_0x3fcc91)return;const _0x15cf3b=JSON[_0x237ad2(0x211)](_0x3fcc91)[_0x5c74e2(0x311)],_0xdc4e1d=_0x15cf3b['id'],_0x4f3dd5=document[_0x5c74e2(0x35a)](_0x5c74e2(0x335)),_0x16f794=document[_0x5c74e2(0x35a)](_0x5c74e2(0x1e3)),_0x258fab=localStorage[_0x237ad2(0x27f)](_0x237ad2(0x253)+_0xdc4e1d),_0x3e9755=_0x258fab&&new Date()[_0x237ad2(0x1d3)]()<parseInt(_0x258fab);if(_0x3e9755){if(_0x16f794)_0x16f794[_0x237ad2(0x29d)]=_0x5c74e2(0x265);if(_0x4f3dd5)_0x4f3dd5[_0x237ad2(0x17a)]=_0x5c74e2(0x2f0);return;}const _0x59c622=new Date()[_0x5c74e2(0x201)]()[_0x5c74e2(0x19b)]('T')[0x0],{data:_0x20b172}=await _0x24a30d[_0x237ad2(0x25e)](_0x5c74e2(0x31e))[_0x5c74e2(0x29b)](_0x5c74e2(0x25e))['eq'](_0x5c74e2(0x2c0),_0xdc4e1d)[_0x5c74e2(0x1f1)](),_0x1294e4=_0x20b172&&_0x20b172[_0x5c74e2(0x2da)]===_0x59c622?Number(_0x20b172[_0x5c74e2(0x1a9)])||0x0:0x0,_0x28fbd2=0x3,_0x52f65b=Math[_0x5c74e2(0x24d)](0x0,_0x28fbd2-_0x1294e4);if(_0x4f3dd5)_0x4f3dd5[_0x5c74e2(0x257)]=_0x52f65b;if(_0x16f794)_0x16f794[_0x5c74e2(0x212)]=_0x5c74e2(0x1b9);}catch(_0x21d250){console[_0x5c74e2(0x2bc)](_0x5c74e2(0x2e6),_0x21d250[_0x5c74e2(0x338)]);}})());}function a1_0x36bc(){const _0xd0b0ee=a1_0x2726a0,_0x3e7de5=[_0xd0b0ee(0x301),_0xd0b0ee(0x2a2),_0xd0b0ee(0x22e),'00:00',_0xd0b0ee(0x33f),_0xd0b0ee(0x2af),_0xd0b0ee(0x339),_0xd0b0ee(0x1fb),_0xd0b0ee(0x229),'charAt','Daxil\x20ol',_0xd0b0ee(0x2fc),_0xd0b0ee(0x2c7),_0xd0b0ee(0x322),_0xd0b0ee(0x254),_0xd0b0ee(0x222),_0xd0b0ee(0x2e2),_0xd0b0ee(0x2c1),_0xd0b0ee(0x211),_0xd0b0ee(0x19f),_0xd0b0ee(0x21a),_0xd0b0ee(0x23f),_0xd0b0ee(0x2fb),'sb-xoebhhdirsvjorjlrfzi-auth-token','padStart','.sual-word','Qeyd:\x20Pulsuz\x20istifadəçilər\x20üçün\x20AI\x20aktiv\x20deyil.',_0xd0b0ee(0x251),_0xd0b0ee(0x248),_0xd0b0ee(0x1e9),_0xd0b0ee(0x1b5),_0xd0b0ee(0x24a),'messageText',_0xd0b0ee(0x18d),_0xd0b0ee(0x2cf),'name',_0xd0b0ee(0x337),'change','Növbəti',_0xd0b0ee(0x1db),_0xd0b0ee(0x1d5),'premiumBitis_','limit-text','3761660eTMblJ',_0xd0b0ee(0x272),_0xd0b0ee(0x232),_0xd0b0ee(0x316),_0xd0b0ee(0x245),_0xd0b0ee(0x22a),'filter-container',_0xd0b0ee(0x30e),_0xd0b0ee(0x1ea),'95%','418242LvtDkV',_0xd0b0ee(0x1a4),_0xd0b0ee(0x1a8),_0xd0b0ee(0x260),_0xd0b0ee(0x19b),_0xd0b0ee(0x20a),_0xd0b0ee(0x311),_0xd0b0ee(0x21e),_0xd0b0ee(0x2e4),_0xd0b0ee(0x253),_0xd0b0ee(0x27f),_0xd0b0ee(0x31e),_0xd0b0ee(0x1cb),_0xd0b0ee(0x310),_0xd0b0ee(0x313),_0xd0b0ee(0x30d),_0xd0b0ee(0x2cb),'</strong><br><br>Bu\x20fənn\x20aşağıdakı\x20müəssisə\x20və\x20fakültələrdə\x20tədris\x20olunur:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul\x20style=\x22text-align:\x20left;\x20margin-top:\x2015px;\x20padding-left:\x2020px;\x20font-size:\x2014px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','chtlConfig',_0xd0b0ee(0x1fe),_0xd0b0ee(0x29c),_0xd0b0ee(0x33e),_0xd0b0ee(0x271),'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22fennler-menu.html\x22\x20class=\x22link-blue\x22>Əsas\x20səhifə</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-blue\x22\x20onclick=\x22window.location.reload()\x22>Yenidən\x20sına</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0xd0b0ee(0x333),'querySelectorAll',_0xd0b0ee(0x256),_0xd0b0ee(0x292),_0xd0b0ee(0x318),_0xd0b0ee(0x2b0),'Dekabr',_0xd0b0ee(0x25b),_0xd0b0ee(0x1ce),_0xd0b0ee(0x240),_0xd0b0ee(0x26f),_0xd0b0ee(0x287),_0xd0b0ee(0x2a7),_0xd0b0ee(0x27a),_0xd0b0ee(0x2e5),_0xd0b0ee(0x18f),_0xd0b0ee(0x304),'cancelBtn',_0xd0b0ee(0x1a6),_0xd0b0ee(0x2ef),'not-allowed',_0xd0b0ee(0x334),_0xd0b0ee(0x1ab),_0xd0b0ee(0x2ba),_0xd0b0ee(0x2bb),_0xd0b0ee(0x2c9),_0xd0b0ee(0x30a),'.btn-save',_0xd0b0ee(0x29b),_0xd0b0ee(0x2df),'quiz_count',_0xd0b0ee(0x196),'newElo',_0xd0b0ee(0x327),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22',_0xd0b0ee(0x2a0),_0xd0b0ee(0x1d7),_0xd0b0ee(0x2c4),_0xd0b0ee(0x1c2),_0xd0b0ee(0x2aa),_0xd0b0ee(0x2de),_0xd0b0ee(0x29e),_0xd0b0ee(0x1cd),_0xd0b0ee(0x21b),_0xd0b0ee(0x1a7),_0xd0b0ee(0x18a),_0xd0b0ee(0x2f8),'\x20<span\x20class=\x22',_0xd0b0ee(0x2e3),_0xd0b0ee(0x25c),_0xd0b0ee(0x31a),'getMonth',_0xd0b0ee(0x197),'chatling',_0xd0b0ee(0x19a),'globalSupabaseClient',_0xd0b0ee(0x225),_0xd0b0ee(0x29a),_0xd0b0ee(0x1f8),_0xd0b0ee(0x2fa),_0xd0b0ee(0x20b),'onclick','progress-fill','603183GOFqUZ',_0xd0b0ee(0x1b0),_0xd0b0ee(0x2e7),'Saxlanılır...',_0xd0b0ee(0x2c3),'AudioContext','1713036bDIEMw',_0xd0b0ee(0x28e),_0xd0b0ee(0x241),_0xd0b0ee(0x2d6),_0xd0b0ee(0x279),_0xd0b0ee(0x18e),'2zCSeRO','Gözlənilməz\x20xəta:',_0xd0b0ee(0x1f5),_0xd0b0ee(0x21c),_0xd0b0ee(0x1f2),_0xd0b0ee(0x1d6),'options__C',_0xd0b0ee(0x296),_0xd0b0ee(0x2b5),'assigned_subjects',_0xd0b0ee(0x2a5),_0xd0b0ee(0x1fa),_0xd0b0ee(0x302),_0xd0b0ee(0x26b),_0xd0b0ee(0x2db),_0xd0b0ee(0x1f1),_0xd0b0ee(0x1dc),_0xd0b0ee(0x314),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-container\x20sfx-fade-in\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress\x22\x20style=\x22--degrees:\x20',_0xd0b0ee(0x1ee),_0xd0b0ee(0x266),_0xd0b0ee(0x1c9),_0xd0b0ee(0x2d5),_0xd0b0ee(0x1b4),'addEventListener',_0xd0b0ee(0x1da),_0xd0b0ee(0x2b7),'loop',_0xd0b0ee(0x1df),_0xd0b0ee(0x1de),_0xd0b0ee(0x2c8),_0xd0b0ee(0x237),'/sounds/white-noise.mp3',_0xd0b0ee(0x30c),_0xd0b0ee(0x193),_0xd0b0ee(0x270),_0xd0b0ee(0x286),_0xd0b0ee(0x33a),_0xd0b0ee(0x1af),_0xd0b0ee(0x28a),'<strong>',_0xd0b0ee(0x262),_0xd0b0ee(0x207),_0xd0b0ee(0x2e9),_0xd0b0ee(0x2f2),_0xd0b0ee(0x319),_0xd0b0ee(0x2d0),'count','Ləğv\x20et','elo_rating','setItem',_0xd0b0ee(0x226),'457698VRufEA',_0xd0b0ee(0x2d8),_0xd0b0ee(0x336),'Sorğu\x20göndərilərkən\x20xəta\x20baş\x20verdi:\x20',_0xd0b0ee(0x274),_0xd0b0ee(0x2a1),_0xd0b0ee(0x224),_0xd0b0ee(0x29d),_0xd0b0ee(0x28f),_0xd0b0ee(0x289),_0xd0b0ee(0x210),_0xd0b0ee(0x1f7),_0xd0b0ee(0x2d1),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/freeplanreminder.webp\x22\x20alt=\x22Limit\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Gündəlik\x20limit\x20doldu!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','613455HIuiDa',_0xd0b0ee(0x295),_0xd0b0ee(0x1ff),_0xd0b0ee(0x25d),_0xd0b0ee(0x1f6),'.profile-bg\x20img',_0xd0b0ee(0x195),_0xd0b0ee(0x341),_0xd0b0ee(0x238),_0xd0b0ee(0x199),_0xd0b0ee(0x2a8),'catch',_0xd0b0ee(0x1ed),_0xd0b0ee(0x31c),_0xd0b0ee(0x1b6),_0xd0b0ee(0x1ac),_0xd0b0ee(0x1c7),_0xd0b0ee(0x1d1),_0xd0b0ee(0x275),_0xd0b0ee(0x1bb),_0xd0b0ee(0x1e0),_0xd0b0ee(0x284),_0xd0b0ee(0x244),_0xd0b0ee(0x250),'#4CAF50','.btn-delete',_0xd0b0ee(0x281),_0xd0b0ee(0x288),_0xd0b0ee(0x33c),'9896744625','669910iFwxNO',_0xd0b0ee(0x1ad),_0xd0b0ee(0x27d),'daily_limit_count,\x20last_quiz_date',_0xd0b0ee(0x1a0),_0xd0b0ee(0x25e),_0xd0b0ee(0x24d),'</td>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>',_0xd0b0ee(0x2ec),_0xd0b0ee(0x1f0),'#premium-text\x20p',_0xd0b0ee(0x26d),'from',_0xd0b0ee(0x290),'Supabase\x20xətası:',_0xd0b0ee(0x2fe),_0xd0b0ee(0x2bf),'getContext',_0xd0b0ee(0x335),_0xd0b0ee(0x32a),_0xd0b0ee(0x205),_0xd0b0ee(0x2cc),'height',_0xd0b0ee(0x2b6),_0xd0b0ee(0x277),_0xd0b0ee(0x1ec),_0xd0b0ee(0x330),_0xd0b0ee(0x309),_0xd0b0ee(0x342),'universities',_0xd0b0ee(0x1b9),'74855YHtliu',_0xd0b0ee(0x23b),'Supabase\x20fetch\x20error:',_0xd0b0ee(0x1f9),_0xd0b0ee(0x23e),_0xd0b0ee(0x28c),_0xd0b0ee(0x18c),_0xd0b0ee(0x27e),_0xd0b0ee(0x283),_0xd0b0ee(0x2e1),_0xd0b0ee(0x214),_0xd0b0ee(0x257),'Aktivdir',_0xd0b0ee(0x28d),_0xd0b0ee(0x2c2),'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-grey\x22>●</span>\x20Sərf\x20olunan\x20vaxt</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>',_0xd0b0ee(0x223),'dark-theme',_0xd0b0ee(0x1a5),_0xd0b0ee(0x2be),'search-button',_0xd0b0ee(0x1e4),_0xd0b0ee(0x1c1),'elo-neutral',_0xd0b0ee(0x1b2),_0xd0b0ee(0x209),_0xd0b0ee(0x1b3),'correct_answer',_0xd0b0ee(0x246),_0xd0b0ee(0x249),_0xd0b0ee(0x1ca),'add',_0xd0b0ee(0x340),'faculty-select',_0xd0b0ee(0x2b9),'setDate','special_subjects',_0xd0b0ee(0x1b1),_0xd0b0ee(0x2fd),_0xd0b0ee(0x2ad),'364KnasqX',_0xd0b0ee(0x2ea),_0xd0b0ee(0x2bc),_0xd0b0ee(0x317),_0xd0b0ee(0x2bd),_0xd0b0ee(0x1a3),_0xd0b0ee(0x1bd),'49097356oZPssC','previousElementSibling',_0xd0b0ee(0x2dd),_0xd0b0ee(0x1d0),_0xd0b0ee(0x1ba),_0xd0b0ee(0x2da),_0xd0b0ee(0x25a),_0xd0b0ee(0x31d),_0xd0b0ee(0x2a4),_0xd0b0ee(0x26e),'Hesabı\x20sil',_0xd0b0ee(0x203),_0xd0b0ee(0x19e),'fennler-menu.html',_0xd0b0ee(0x1c8),_0xd0b0ee(0x21d),_0xd0b0ee(0x315),_0xd0b0ee(0x208),_0xd0b0ee(0x24b),_0xd0b0ee(0x2eb),_0xd0b0ee(0x263),_0xd0b0ee(0x194),'async',_0xd0b0ee(0x2ee),_0xd0b0ee(0x22d),_0xd0b0ee(0x1bc),_0xd0b0ee(0x212),_0xd0b0ee(0x1f3),_0xd0b0ee(0x269),_0xd0b0ee(0x33d),_0xd0b0ee(0x242),_0xd0b0ee(0x298),_0xd0b0ee(0x1fc),_0xd0b0ee(0x1e8),_0xd0b0ee(0x280),_0xd0b0ee(0x326),_0xd0b0ee(0x32c),_0xd0b0ee(0x192),'\x27)\x22>i</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-icon\x22>',_0xd0b0ee(0x338),'location','title','boxShadow',_0xd0b0ee(0x2e8),_0xd0b0ee(0x1d4),_0xd0b0ee(0x31b),_0xd0b0ee(0x198),_0xd0b0ee(0x261),'173552VNWxje',_0xd0b0ee(0x2b8),_0xd0b0ee(0x228),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22color:\x20#1e90ff;\x22>Giriş\x20lazımdır</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sual\x20işləmək\x20üçün\x20zəhmət\x20olmasa\x20hesabınıza\x20daxil\x20olun.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0xd0b0ee(0x1cf),_0xd0b0ee(0x2c5),'createGain',_0xd0b0ee(0x21f),'9lVZNRs',_0xd0b0ee(0x22c),_0xd0b0ee(0x29f),_0xd0b0ee(0x2f1),_0xd0b0ee(0x1d9),'getElementById',_0xd0b0ee(0x202),'\x20Gün',_0xd0b0ee(0x234),_0xd0b0ee(0x32e),'localeCompare','key','Fevral',_0xd0b0ee(0x27b),_0xd0b0ee(0x23d),_0xd0b0ee(0x20f),_0xd0b0ee(0x2b1),_0xd0b0ee(0x20d),_0xd0b0ee(0x220),_0xd0b0ee(0x297),_0xd0b0ee(0x217),_0xd0b0ee(0x331),_0xd0b0ee(0x2d9),_0xd0b0ee(0x1d2),_0xd0b0ee(0x2d4),_0xd0b0ee(0x1eb),'getItem',_0xd0b0ee(0x24f),_0xd0b0ee(0x33b),'stringify',_0xd0b0ee(0x26a),_0xd0b0ee(0x32b),_0xd0b0ee(0x2ca),_0xd0b0ee(0x18b),_0xd0b0ee(0x2ce),_0xd0b0ee(0x259),_0xd0b0ee(0x221),_0xd0b0ee(0x191),_0xd0b0ee(0x267),_0xd0b0ee(0x190),'5514812UqmLdk',_0xd0b0ee(0x2f0),_0xd0b0ee(0x2dc),_0xd0b0ee(0x26c),_0xd0b0ee(0x252),_0xd0b0ee(0x1e1),_0xd0b0ee(0x200),'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-red\x22>●</span>\x20Səhv\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','<p\x20style=\x22width:100%;\x20text-align:center;\x20color:#666;\x20grid-column:\x201\x20/\x20-1;\x22>Heç\x20bir\x20nəticə\x20tapılmadı.</p>',_0xd0b0ee(0x293),'rgba(54,\x20162,\x20235,\x200.2)',_0xd0b0ee(0x2f5),_0xd0b0ee(0x216),'\x20sual\x20•\x20Hər\x20gün\x20yenilənir</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-arrow\x22>→</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','then','</strong><br><br>Bu\x20fənn\x20hələ\x20heç\x20bir\x20fakültəyə\x20təyin\x20edilməyib.','maxWidth','statistics.html',_0xd0b0ee(0x231),_0xd0b0ee(0x1e7),_0xd0b0ee(0x25f),_0xd0b0ee(0x2ff)];return a1_0x36bc=function(){return _0x3e7de5;},a1_0x36bc();}function a1_0x1236(){const _0x534f10=a1_0x2726a0,_0x43aa77=a1_0x1e10ae,_0x318249=a1_0x2b623a,_0x26da03=[_0x318249(0x1a5),_0x318249(0x23f),_0x318249(0x1e8),_0x318249(0x29c),_0x318249(0x17f),_0x318249(0x2e1),_0x318249(0x214),_0x318249(0x18e),_0x318249(0x31b),_0x318249(0x2e6),_0x318249(0x2e7),_0x318249(0x253),_0x318249(0x211),_0x43aa77(0x257),_0x318249(0x2ab),_0x318249(0x2f8),_0x318249(0x1a2),'Yoxlanılır...',_0x318249(0x29d),_0x318249(0x21b),_0x43aa77(0x30c),_0x318249(0x266),_0x318249(0x1d5),_0x318249(0x1ac),_0x318249(0x196),_0x318249(0x286),_0x318249(0x244),_0x318249(0x1d7),_0x318249(0x172),_0x318249(0x239),_0x318249(0x17d),_0x318249(0x2b7),_0x318249(0x32b),_0x318249(0x2f0),'2493887XleWdh',_0x318249(0x247),_0x318249(0x282),_0x318249(0x25b),_0x318249(0x2a8),_0x43aa77(0x18e),_0x534f10(0x31f),_0x318249(0x228),_0x318249(0x231),_0x318249(0x1c8),_0x534f10(0x218),_0x318249(0x19a),_0x43aa77(0x1fb),_0x318249(0x318),_0x534f10(0x273),_0x318249(0x2d9),_0x318249(0x252),_0x43aa77(0x246),_0x318249(0x20a),_0x318249(0x24f),_0x318249(0x1a3),_0x318249(0x2d8),_0x318249(0x233),_0x318249(0x2f9),_0x318249(0x238),_0x318249(0x224),_0x43aa77(0x2f5),_0x318249(0x165),_0x318249(0x248),_0x318249(0x23d),_0x318249(0x1ee),_0x318249(0x2f4),_0x534f10(0x263),_0x318249(0x27a),_0x318249(0x1a6),_0x318249(0x27f),_0x318249(0x20e),_0x318249(0x204),_0x43aa77(0x197),_0x318249(0x22c),_0x318249(0x2cc),_0x318249(0x31a),_0x318249(0x1f3),_0x318249(0x25d),_0x534f10(0x2cf),_0x318249(0x1fd),_0x318249(0x20c),_0x318249(0x278),_0x318249(0x264),_0x318249(0x265),_0x318249(0x182),_0x318249(0x2fe),_0x318249(0x220),_0x318249(0x267),_0x318249(0x205),_0x318249(0x30e),_0x318249(0x1f0),_0x318249(0x304),_0x318249(0x22a),_0x318249(0x236),_0x43aa77(0x30f),_0x318249(0x1e4),_0x318249(0x22f),_0x318249(0x2bf),_0x43aa77(0x290),_0x43aa77(0x20b),_0x318249(0x26d),_0x318249(0x1eb),_0x43aa77(0x292),_0x318249(0x2c3),_0x43aa77(0x323),_0x318249(0x2cd),_0x318249(0x20f),_0x318249(0x2e4),_0x318249(0x1b8),_0x534f10(0x307),_0x43aa77(0x2b3),_0x318249(0x271),_0x318249(0x2c4),'9896744625',_0x318249(0x319),_0x318249(0x246),_0x318249(0x23c),_0x43aa77(0x199),_0x43aa77(0x2e9),_0x318249(0x1da),_0x43aa77(0x201),_0x318249(0x1ec),_0x43aa77(0x1e9),_0x318249(0x19b),_0x318249(0x329),_0x318249(0x243),_0x318249(0x2e9),_0x318249(0x2da),_0x318249(0x195),_0x318249(0x30f),_0x318249(0x1a8),_0x43aa77(0x249),_0x318249(0x2d3),_0x43aa77(0x19c),_0x43aa77(0x29c),_0x43aa77(0x271),_0x318249(0x309),_0x318249(0x2a3),_0x318249(0x297),_0x318249(0x1bf),_0x318249(0x1d2),_0x318249(0x2c8),_0x318249(0x28f),_0x318249(0x26e),_0x318249(0x2ed),_0x318249(0x21a),_0x318249(0x17a),_0x318249(0x2bd),_0x318249(0x16a),_0x318249(0x1a9),_0x318249(0x198),_0x318249(0x226),_0x318249(0x2c0),_0x318249(0x1d1),_0x318249(0x2a6),_0x318249(0x2c1),_0x318249(0x315),_0x318249(0x20d),_0x318249(0x16d),_0x43aa77(0x2fc),_0x318249(0x275),_0x318249(0x1de),_0x534f10(0x1ba),_0x43aa77(0x31f),_0x43aa77(0x2bb),_0x318249(0x323),_0x318249(0x298),_0x534f10(0x219),_0x318249(0x190),_0x318249(0x316),_0x318249(0x1ea),_0x318249(0x312),_0x318249(0x218),_0x43aa77(0x1d6),_0x43aa77(0x198),_0x318249(0x1ca),_0x318249(0x2be),_0x318249(0x296),_0x318249(0x31f),_0x318249(0x199),_0x318249(0x284),_0x318249(0x2f7),_0x318249(0x29a),_0x318249(0x2e3),_0x318249(0x1b3),_0x43aa77(0x219),_0x318249(0x259),_0x318249(0x29e),_0x318249(0x31e),_0x43aa77(0x21a),_0x534f10(0x1e5),_0x318249(0x24c),_0x43aa77(0x25c),_0x318249(0x2d5),_0x318249(0x2bc),_0x534f10(0x1aa),_0x318249(0x175),_0x318249(0x2f1),_0x43aa77(0x312),_0x318249(0x237),_0x318249(0x212),_0x318249(0x19f),_0x318249(0x185),_0x534f10(0x1d4),_0x318249(0x2fb),_0x318249(0x2e0),_0x318249(0x207),_0x318249(0x206),_0x318249(0x26b),_0x318249(0x27b),_0x318249(0x2dc),_0x318249(0x210),_0x43aa77(0x23d),_0x318249(0x2de),_0x534f10(0x303),_0x318249(0x2ac),_0x43aa77(0x228),_0x43aa77(0x2df),_0x318249(0x263),_0x318249(0x321),_0x318249(0x1f2),_0x534f10(0x20c),_0x318249(0x245),_0x318249(0x21c),_0x318249(0x227),_0x318249(0x2b6),_0x318249(0x2b2),_0x318249(0x16c),_0x318249(0x2ec),_0x318249(0x1e2),_0x318249(0x2d1),_0x318249(0x28b),_0x318249(0x2bb),_0x318249(0x30c),_0x43aa77(0x243),_0x43aa77(0x1aa),_0x318249(0x1ff),_0x318249(0x171),_0x318249(0x18a),_0x318249(0x30b),_0x318249(0x192),_0x43aa77(0x16d),_0x318249(0x300),_0x318249(0x1b1),_0x318249(0x292),_0x43aa77(0x2da),_0x318249(0x208),_0x318249(0x2c5),'destination',_0x43aa77(0x1e5),_0x318249(0x30a),_0x318249(0x1e9),_0x318249(0x2c9),_0x318249(0x27c),_0x43aa77(0x226),_0x318249(0x216),_0x318249(0x21d),_0x318249(0x2b5),_0x318249(0x1d9),_0x318249(0x2e2),_0x318249(0x209),_0x318249(0x2b0),_0x318249(0x260),_0x318249(0x25a),_0x318249(0x30d),_0x318249(0x290),_0x318249(0x18d),_0x318249(0x1fe),_0x318249(0x285),_0x318249(0x2a4),_0x43aa77(0x213),_0x318249(0x29f),_0x318249(0x225),_0x534f10(0x2d7),_0x318249(0x310),_0x318249(0x18f),_0x318249(0x219),_0x318249(0x303),_0x43aa77(0x177),_0x318249(0x293),'last_session_id',_0x318249(0x1f6),_0x318249(0x2ba),_0x318249(0x26a),_0x318249(0x1cc),_0x318249(0x1dc),_0x43aa77(0x1fa),_0x318249(0x234),_0x318249(0x1d4),_0x318249(0x1ef),_0x318249(0x23e),_0x318249(0x2cf),_0x534f10(0x227),_0x43aa77(0x235),_0x43aa77(0x1e7),_0x318249(0x1d8),_0x534f10(0x285),_0x43aa77(0x237),_0x318249(0x188),_0x318249(0x215),_0x318249(0x16f),_0x318249(0x1c1),_0x318249(0x307),_0x318249(0x2b1),_0x43aa77(0x214),_0x318249(0x276),_0x318249(0x2d6),_0x318249(0x251),_0x318249(0x1e7),_0x43aa77(0x205),_0x318249(0x2f3),_0x318249(0x274),_0x318249(0x1ab),_0x318249(0x168),_0x318249(0x21f),_0x318249(0x229),_0x43aa77(0x19e),_0x318249(0x19d),_0x318249(0x256),_0x318249(0x1f1),_0x318249(0x1ae),_0x43aa77(0x1fc),_0x43aa77(0x2ed),_0x318249(0x322),_0x318249(0x176),_0x318249(0x1f9),_0x318249(0x25e),_0x318249(0x1b4),_0x43aa77(0x21c),_0x318249(0x288),_0x318249(0x18b),_0x318249(0x200),_0x318249(0x1b6),_0x318249(0x21e),_0x318249(0x19e),_0x318249(0x1fb),_0x318249(0x250),_0x318249(0x325),_0x43aa77(0x300),_0x318249(0x1ba),_0x43aa77(0x1b1),_0x318249(0x2ea),_0x43aa77(0x2d3),_0x318249(0x177),_0x534f10(0x215),_0x318249(0x1e1),_0x43aa77(0x309),_0x534f10(0x1e2),_0x318249(0x1c7),_0x318249(0x1a0),_0x318249(0x183),_0x318249(0x1f5),_0x318249(0x23b),_0x318249(0x2ca),_0x318249(0x2db),_0x318249(0x299),_0x318249(0x258),_0x534f10(0x22f),_0x318249(0x22b),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Şifrəni\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Şifrəni\x20dəyişmək\x20üçün\x20<b>',_0x318249(0x1aa),_0x318249(0x2c7),_0x318249(0x2d2),_0x318249(0x24d),_0x43aa77(0x196),_0x318249(0x283),_0x318249(0x1e5),_0x318249(0x281),_0x318249(0x193),_0x318249(0x1c5),_0x318249(0x2f2),_0x43aa77(0x1d5),_0x318249(0x28d),_0x318249(0x213),_0x318249(0x1ed),_0x318249(0x277),_0x318249(0x1e6),_0x318249(0x2a7),_0x318249(0x262),_0x43aa77(0x240),_0x318249(0x301),_0x318249(0x184),_0x43aa77(0x259),_0x43aa77(0x17b),_0x318249(0x1fa),_0x318249(0x2d0),_0x43aa77(0x2a7),_0x318249(0x2b3),_0x318249(0x187),_0x318249(0x2ef),_0x318249(0x1bb),_0x43aa77(0x295),_0x318249(0x28c),_0x318249(0x305),_0x318249(0x2c6),_0x43aa77(0x2c0),_0x318249(0x17e),_0x318249(0x2dd),_0x318249(0x232),_0x318249(0x17b),_0x318249(0x235),_0x318249(0x31c),_0x318249(0x222),_0x43aa77(0x25b),_0x318249(0x221),_0x318249(0x255),_0x318249(0x2b9),_0x318249(0x1f8),_0x318249(0x27d),_0x318249(0x2cb),_0x318249(0x2f5),_0x318249(0x280),_0x318249(0x25f),_0x318249(0x2a2),_0x43aa77(0x231),_0x534f10(0x1c3),_0x318249(0x173),_0x43aa77(0x1f4),_0x43aa77(0x25f),'48THrYoO',_0x318249(0x324),_0x318249(0x279),_0x318249(0x1a4),_0x43aa77(0x247),_0x43aa77(0x2cd),_0x318249(0x269),_0x318249(0x2ee),_0x318249(0x2e5),_0x318249(0x270),_0x43aa77(0x2a3),_0x318249(0x240),_0x318249(0x1ce),_0x318249(0x328),_0x318249(0x1c0),_0x318249(0x1df),_0x318249(0x1bc),_0x318249(0x1ad),_0x534f10(0x32d),_0x318249(0x1d0),_0x318249(0x24a),_0x318249(0x26c),_0x318249(0x295),'Statistika\x20yenilənərkən\x20xəta\x20baş\x20verdi:',_0x318249(0x170),_0x318249(0x289),_0x318249(0x317),_0x318249(0x1b2),_0x43aa77(0x255),_0x318249(0x2ce),_0x318249(0x217),_0x318249(0x314),_0x318249(0x241),_0x318249(0x261),_0x318249(0x16e),_0x43aa77(0x16f),'deg;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22progress-value\x22>',_0x318249(0x272),_0x318249(0x268),_0x318249(0x23a),_0x318249(0x202),_0x318249(0x327)];return a1_0x1236=function(){return _0x26da03;},a1_0x1236();}if(window[a1_0x300329(0x1aa)][a1_0x59317a(0x282)][a1_0x59317a(0x2c9)](a1_0x1e10ae(0x321))){let myChart=null;const getSupabase=()=>window[a1_0x59317a(0x25a)]||window[a1_0x59317a(0x1b0)];async function loadUserDashboard(_0x379eaf){const _0x5f159c=a1_0x2b623a,_0x478079=a1_0x300329,_0x160d50=a1_0x59317a,_0x14cc6e=getSupabase();if(!_0x14cc6e)return;const {data:_0x4ea4b2,error:_0x31c4a3}=await _0x14cc6e[_0x160d50(0x1dc)](_0x160d50(0x31e))[_0x160d50(0x29b)]('*')['eq'](_0x160d50(0x2c0),_0x379eaf)[_0x160d50(0x1f1)]();if(_0x31c4a3||!_0x4ea4b2)return;document[_0x160d50(0x35a)](_0x160d50(0x289))[_0x160d50(0x257)]=_0x4ea4b2[_0x160d50(0x1ad)]||0x0,document[_0x160d50(0x35a)](_0x160d50(0x2b0))[_0x160d50(0x257)]=_0x4ea4b2[_0x5f159c(0x2e5)]||0x3e8,document[_0x5f159c(0x189)](_0x160d50(0x196))[_0x478079(0x210)]=(_0x4ea4b2[_0x160d50(0x2c2)]||0x0)+_0x160d50(0x1e0);const _0x52fc73=_0x4ea4b2[_0x160d50(0x1ff)]||0x0,_0x3991=_0x4ea4b2[_0x478079(0x2f7)]||0x0,_0x45fa0c=_0x52fc73>0x0?Math[_0x5f159c(0x2f4)](_0x3991/_0x52fc73*0x64):0x0;document[_0x160d50(0x35a)](_0x160d50(0x261))[_0x160d50(0x257)]=_0x45fa0c+'%';const _0x4f3b4b=Math[_0x160d50(0x32d)]((_0x4ea4b2[_0x160d50(0x21f)]||0x0)/0x3c),_0x5e8dd4=(_0x4ea4b2[_0x160d50(0x21f)]||0x0)%0x3c;document[_0x160d50(0x35a)](_0x478079(0x22c))[_0x478079(0x210)]=_0x4f3b4b+':'+(_0x5e8dd4<0xa?'0':'')+_0x5e8dd4;}async function loadActivityChart(_0x57d032){const _0x28a21a=a1_0x2b623a,_0x4abd89=a1_0x300329,_0x465cfb=a1_0x59317a,_0x3ce474=getSupabase();if(!_0x3ce474)return;const _0x24dcd7=[_0x28a21a(0x2aa),_0x4abd89(0x262),'Ç',_0x465cfb(0x219),'C','Ş','B'];let _0x346ffc=[0x0,0x0,0x0,0x0,0x0,0x0,0x0];const _0x1cb247=new Date(),_0x3c773e=_0x1cb247[_0x465cfb(0x2d1)]()===0x0?0x7:_0x1cb247[_0x465cfb(0x2d1)](),_0x122d11=new Date(_0x1cb247);_0x122d11[_0x465cfb(0x2eb)](_0x1cb247[_0x465cfb(0x2e5)]()-_0x3c773e+0x1);const _0x2b09f1=_0x122d11[_0x4abd89(0x1c4)]()+'-'+String(_0x122d11[_0x465cfb(0x286)]()+0x1)[_0x465cfb(0x2a4)](0x2,'0')+'-'+String(_0x122d11[_0x465cfb(0x2e5)]())[_0x465cfb(0x2a4)](0x2,'0'),{data:_0x15ec94,error:_0x5ce675}=await _0x3ce474[_0x465cfb(0x1dc)](_0x465cfb(0x2df))[_0x465cfb(0x29b)](_0x465cfb(0x1bc))['eq'](_0x465cfb(0x2c0),_0x57d032)[_0x465cfb(0x1c1)](_0x465cfb(0x22f),_0x2b09f1);if(_0x5ce675){console[_0x4abd89(0x16f)](_0x465cfb(0x32b),_0x5ce675);return;}_0x15ec94&&_0x15ec94[_0x465cfb(0x27f)]>0x0&&_0x15ec94[_0x465cfb(0x1f8)](_0x4de58a=>{const _0x4d6e8c=_0x4abd89,_0x2089f2=_0x465cfb,_0x2ffa10=_0x4de58a[_0x2089f2(0x22f)][_0x4d6e8c(0x2ef)]('-'),_0x22368a=new Date(parseInt(_0x2ffa10[0x0]),parseInt(_0x2ffa10[0x1])-0x1,parseInt(_0x2ffa10[0x2]));let _0xaed8bd=_0x22368a[_0x2089f2(0x2d1)]();_0xaed8bd=_0xaed8bd===0x0?0x6:_0xaed8bd-0x1,_0x346ffc[_0xaed8bd]=_0x4de58a[_0x2089f2(0x2c1)];}),renderChart(_0x24dcd7,_0x346ffc);}async function loadLeaderboard(_0x4e3eac){const _0x1d3122=a1_0x300329,_0x212e6e=a1_0x59317a,_0x3f9ee8=getSupabase();if(!_0x3f9ee8)return;const {data:_0x12bf5e,error:_0x200ad3}=await _0x3f9ee8[_0x212e6e(0x1dc)](_0x1d3122(0x216))[_0x1d3122(0x2b9)]('*')[_0x212e6e(0x1da)](_0x1d3122(0x1d0),{'ascending':![]})[_0x1d3122(0x2b8)](0xa);if(_0x200ad3||!_0x12bf5e)return;const _0x36fb6d=document[_0x212e6e(0x35a)](_0x212e6e(0x1d8));if(!_0x36fb6d)return;_0x36fb6d[_0x212e6e(0x350)]='',_0x12bf5e[_0x1d3122(0x173)]((_0x10440d,_0x3800ee)=>{const _0xe8a080=a1_0x4a59,_0x365052=a1_0x5970,_0x215aed=_0x1d3122,_0x9280c7=_0x212e6e,_0x1e976b=_0x10440d[_0xe8a080(0x2bb)]>0x0?Math[_0x9280c7(0x1e6)](_0x10440d[_0x215aed(0x2f7)]/_0x10440d[_0x9280c7(0x1ff)]*0x64):0x0,_0x425f1d=_0x10440d[_0x9280c7(0x2c0)]===_0x4e3eac;let _0x3ef1b9=_0x10440d[_0x9280c7(0x2e7)]||_0x9280c7(0x2cc)+_0x10440d[_0x215aed(0x176)][_0x365052(0x18c)](0x0,0x5);const _0x22cec9=_0x425f1d?_0x3ef1b9+_0x215aed(0x2bb):_0x3ef1b9;_0x36fb6d[_0x9280c7(0x350)]+=_0x9280c7(0x2a8)+(_0x425f1d?_0x9280c7(0x1f4):'')+_0x215aed(0x1b4)+(_0x425f1d?_0x9280c7(0x349):'')+_0x9280c7(0x1ac)+(_0x3800ee+0x1)+_0xe8a080(0x322)+_0x22cec9+_0x9280c7(0x260)+(_0x10440d[_0x9280c7(0x25d)]||0x3e8)+_0x9280c7(0x1b6)+_0x1e976b+_0x9280c7(0x30e);});}function renderChart(_0x8e8101,_0x33fe30){const _0xd668dd=a1_0x2b623a,_0x4098a8=a1_0x300329,_0xdae1e9=a1_0x59317a,_0x1b0b2f=document[_0xdae1e9(0x35a)](_0xdae1e9(0x295));if(!_0x1b0b2f)return;const _0x4cc2c4=_0x1b0b2f[_0xdae1e9(0x31d)]('2d');typeof myChart!==_0xdae1e9(0x1be)&&myChart&&myChart[_0xdae1e9(0x2a2)]();const _0x1bf6ab=document[_0xdae1e9(0x221)][_0xdae1e9(0x198)][_0x4098a8(0x1eb)](_0xdae1e9(0x1d0))||document[_0xdae1e9(0x221)][_0xdae1e9(0x198)][_0xdae1e9(0x269)](_0xdae1e9(0x316)),_0x347504=_0x1bf6ab?_0xdae1e9(0x31c):_0x4098a8(0x1d2),_0x437eaa=_0x1bf6ab?_0x4098a8(0x2a2):_0xdae1e9(0x2cf);myChart=new Chart(_0x4cc2c4,{'type':_0x4098a8(0x21a),'data':{'labels':_0x8e8101,'datasets':[{'label':_0xdae1e9(0x1d2),'data':_0x33fe30,'borderColor':_0x4098a8(0x239),'backgroundColor':_0xdae1e9(0x2f1),'fill':!![],'tension':0x0,'pointRadius':0x4,'pointBackgroundColor':_0xd668dd(0x204),'pointHoverRadius':0x6}]},'options':{'responsive':!![],'maintainAspectRatio':![],'interaction':{'mode':_0xdae1e9(0x279),'intersect':![]},'plugins':{'legend':{'display':![]}},'scales':{'y':{'beginAtZero':!![],'ticks':{'color':_0x347504,'stepSize':0x1},'grid':{'color':_0x437eaa}},'x':{'ticks':{'color':_0x347504},'grid':{'display':![]}}}}});}async function handleChartFilterChange(_0x3d5a28){const _0x1e3cfc=a1_0x300329,_0x2f5dc6=a1_0x59317a,_0x524a1b=document[_0x2f5dc6(0x35a)](_0x2f5dc6(0x223)),_0x570c0b=document[_0x2f5dc6(0x35a)](_0x2f5dc6(0x1ec)),_0x14b46f=document[_0x2f5dc6(0x35a)](_0x2f5dc6(0x295));if(!_0x524a1b)return;const _0x3e69fb=localStorage[_0x2f5dc6(0x262)](_0x2f5dc6(0x209)+_0x3d5a28),_0x11b3bd=_0x3e69fb&&new Date()[_0x2f5dc6(0x1a7)]()<parseInt(_0x3e69fb);_0x524a1b[_0x1e3cfc(0x2af)](_0x2f5dc6(0x2db),async _0x4a9e99=>{const _0x1a7a6b=a1_0x4a59,_0x144152=_0x1e3cfc,_0x131604=_0x2f5dc6,_0xe71e0e=_0x4a9e99[_0x131604(0x235)][_0x131604(0x229)];_0xe71e0e===_0x131604(0x245)?!_0x11b3bd?(_0x14b46f?.[_0x1a7a6b(0x313)][_0x131604(0x28c)](_0x144152(0x1b9)),_0x570c0b?.[_0x131604(0x198)][_0x131604(0x29c)](_0x131604(0x1e4))):(_0x14b46f?.[_0x131604(0x198)][_0x144152(0x24a)](_0x131604(0x1fe)),_0x570c0b?.[_0x131604(0x198)][_0x131604(0x28c)](_0x144152(0x1f3)),await loadAllTimeActivityChart(_0x3d5a28)):(_0x14b46f?.[_0x131604(0x198)][_0x144152(0x24a)](_0x131604(0x1fe)),_0x570c0b?.[_0x144152(0x1f2)][_0x131604(0x28c)](_0x131604(0x1e4)),await loadActivityChart(_0x3d5a28));});}async function loadAllTimeActivityChart(_0x2692fe){const _0x43a88e=a1_0x2b623a,_0x1594fc=a1_0x300329,_0x5eb5b6=a1_0x59317a,_0x703810=window[_0x5eb5b6(0x25a)]||window[_0x5eb5b6(0x1b0)];if(!_0x703810)return;try{const [{data:_0x16d287},{data:_0x131e85,error:_0x1991a4}]=await Promise[_0x1594fc(0x2fa)]([_0x703810[_0x5eb5b6(0x31f)][_0x5eb5b6(0x2f2)](),_0x703810[_0x5eb5b6(0x1dc)](_0x1594fc(0x1fb))[_0x5eb5b6(0x29b)](_0x5eb5b6(0x1bc))['eq'](_0x5eb5b6(0x2c0),_0x2692fe)]);if(_0x1991a4)throw _0x1991a4;const _0xdeafa0=_0x16d287?.[_0x5eb5b6(0x311)];if(!_0xdeafa0)return;const _0x58d831=new Date(_0xdeafa0[_0x1594fc(0x1b0)]),_0x4a4e2c=new Date(),_0x12f22a=[_0x5eb5b6(0x329),_0x1594fc(0x330),_0x1594fc(0x27b),_0x5eb5b6(0x23f),_0x5eb5b6(0x1fa),_0x5eb5b6(0x2f7),_0x5eb5b6(0x1af),_0x5eb5b6(0x242),_0x1594fc(0x32f),_0x1594fc(0x196),_0x1594fc(0x1f1),_0x5eb5b6(0x2ce)],_0x1d0799={};let _0x5c9035=new Date(_0x58d831[_0x5eb5b6(0x2d3)](),_0x58d831[_0x5eb5b6(0x286)](),0x1);while(_0x5c9035<=_0x4a4e2c){const _0x5d40bc=_0x12f22a[_0x5c9035[_0x5eb5b6(0x286)]()]+'\x20'+_0x5c9035[_0x5eb5b6(0x2d3)]();_0x1d0799[_0x5d40bc]=0x0,_0x5c9035[_0x43a88e(0x1e0)](_0x5c9035[_0x5eb5b6(0x286)]()+0x1);}_0x131e85&&_0x131e85[_0x5eb5b6(0x1f8)](_0x75b788=>{const _0x31991b=_0x5eb5b6,_0x73f4f4=new Date(_0x75b788[_0x31991b(0x22f)]),_0x1753fa=_0x73f4f4[_0x31991b(0x29d)](),_0x261be2=_0x73f4f4[_0x31991b(0x2bb)](),_0x2c3721=_0x12f22a[_0x1753fa]+'\x20'+_0x261be2;_0x1d0799[_0x2c3721]!==undefined&&(_0x1d0799[_0x2c3721]+=Number(_0x75b788[_0x31991b(0x2c1)]));}),console[_0x5eb5b6(0x27c)](_0x5eb5b6(0x246),_0x1d0799);const _0x244de9=Object[_0x5eb5b6(0x263)](_0x1d0799)[_0x1594fc(0x27c)]((_0x2cac66,_0x2a0daa)=>_0x2cac66+_0x2a0daa,0x0);console[_0x5eb5b6(0x27c)](_0x5eb5b6(0x1c0),_0x244de9),renderChart(Object[_0x5eb5b6(0x2a1)](_0x1d0799),Object[_0x5eb5b6(0x263)](_0x1d0799));}catch(_0x65da9d){console[_0x5eb5b6(0x2bc)](_0x43a88e(0x254),_0x65da9d[_0x5eb5b6(0x338)]);}}setTimeout(async()=>{const _0x2583bb=a1_0x59317a,_0x765447=getSupabase();if(!_0x765447)return;const {data:{user:_0x48fd84}}=await _0x765447[_0x2583bb(0x31f)][_0x2583bb(0x2f2)]();if(!_0x48fd84){window[_0x2583bb(0x31a)][_0x2583bb(0x19e)]=_0x2583bb(0x24a);return;}const _0x228e3d=_0x48fd84['id'];loadUserDashboard(_0x228e3d),loadActivityChart(_0x228e3d),loadLeaderboard(_0x228e3d),handleChartFilterChange(_0x228e3d);},0x64);}if(window[a1_0x59317a(0x31a)][a1_0x59317a(0x282)][a1_0x59317a(0x2c9)](a1_0x59317a(0x1aa))){const supabaseUrl=a1_0x300329(0x251),supabaseKey=a1_0x59317a(0x2d8),supabaseClient=window[a1_0x59317a(0x2dd)][a1_0x59317a(0x34d)](supabaseUrl,supabaseKey);document[a1_0x59317a(0x281)](a1_0x59317a(0x224),async()=>{const _0x1dc1b0=a1_0x1e10ae,_0x284dc2=a1_0x2b623a,_0x38dd12=a1_0x300329,_0x1d2ca2=a1_0x59317a,_0x42d91d=new URLSearchParams(window[_0x1d2ca2(0x31a)][_0x38dd12(0x240)]),_0x59453f=_0x42d91d[_0x1d2ca2(0x1c3)](_0x38dd12(0x20c)),_0x4ee80b=_0x42d91d[_0x284dc2(0x252)](_0x284dc2(0x244))||_0x1d2ca2(0x1cc);if(!_0x59453f){console[_0x38dd12(0x16f)](_0x1d2ca2(0x1c4));return;}const _0x3c0515=localStorage[_0x38dd12(0x27f)](_0x1d2ca2(0x1cf));if(!_0x3c0515){const _0x43dde3=_0x1d2ca2(0x266);showMessage(_0x43dde3,_0x1d2ca2(0x2ff),_0x1d2ca2(0x213))[_0x1d2ca2(0x1a4)](()=>{const _0x20a1a4=_0x1d2ca2;window[_0x20a1a4(0x31a)][_0x20a1a4(0x19e)]=_0x20a1a4(0x24a);});return;}const _0x189235=JSON[_0x38dd12(0x211)](_0x3c0515)[_0x1d2ca2(0x311)]['id'],_0x52f18c=Math[_0x1d2ca2(0x1e7)]()[_0x1d2ca2(0x1ca)](0x24)[_0x1d2ca2(0x323)](0x2,0xf);localStorage[_0x1d2ca2(0x205)](_0x1d2ca2(0x193),_0x52f18c);async function _0x2281f2(){const _0x2c4ca4=_0x38dd12,_0x29dcf3=_0x1d2ca2,_0x20f8e3=localStorage[_0x29dcf3(0x262)](_0x29dcf3(0x1cf));if(!_0x20f8e3)return;const _0x20b6b9=JSON[_0x2c4ca4(0x211)](_0x20f8e3)[_0x29dcf3(0x311)]['id'],_0x1fb5f9=localStorage[_0x2c4ca4(0x27f)](_0x29dcf3(0x193)),{data:_0x5d502c,error:_0x528563}=await supabaseClient[_0x29dcf3(0x1dc)](_0x2c4ca4(0x216))[_0x2c4ca4(0x2e9)]({'last_session_id':_0x1fb5f9})[_0x29dcf3(0x29f)]({'user_id':_0x20b6b9});_0x528563&&console[_0x29dcf3(0x2bc)](_0x2c4ca4(0x252),_0x528563[_0x29dcf3(0x338)]);}_0x2281f2();const _0x393c41=localStorage[_0x1d2ca2(0x262)](_0x1d2ca2(0x209)+_0x189235),_0x1afc85=_0x393c41&&new Date()[_0x1d2ca2(0x1a7)]()<parseInt(_0x393c41);if(!_0x1afc85){const _0x4d72d1=new Date(),_0xb3dc4=_0x4d72d1[_0x1d2ca2(0x2d3)]()+'-'+String(_0x4d72d1[_0x1d2ca2(0x286)]()+0x1)[_0x1d2ca2(0x2a4)](0x2,'0')+'-'+String(_0x4d72d1[_0x1d2ca2(0x2e5)]())[_0x1d2ca2(0x2a4)](0x2,'0');let {data:_0xf1f77b}=await supabaseClient[_0x1d2ca2(0x1dc)](_0x1d2ca2(0x31e))[_0x1d2ca2(0x29b)](_0x1d2ca2(0x25e))['eq'](_0x1d2ca2(0x2c0),_0x189235)[_0x284dc2(0x255)]();if(_0xf1f77b&&_0xf1f77b[_0x1d2ca2(0x2da)]===_0xb3dc4&&(Number(_0xf1f77b[_0x1d2ca2(0x1a9)])||0x0)>=0x3){const _0x97c5ca=_0x1d2ca2(0x317),_0x54eaae=await showMessage(_0x97c5ca,_0x1d2ca2(0x250),_0x1d2ca2(0x21e),_0x1d2ca2(0x24b));_0x54eaae?window[_0x38dd12(0x1aa)][_0x1d2ca2(0x19e)]=_0x1d2ca2(0x1cb):window[_0x1d2ca2(0x31a)][_0x1d2ca2(0x19e)]=_0x1d2ca2(0x207);return;}}if(_0x1afc85){const _0x44fd49=window[_0x38dd12(0x335)]<=0x300,_0x55ab96=document[_0x1d2ca2(0x35a)](_0x1d2ca2(0x2d2));if(_0x44fd49){window[_0x1d2ca2(0x1b1)]={'chatbotId':_0x38dd12(0x301)};const _0x31cef4=document[_0x1d2ca2(0x1d9)](_0x1d2ca2(0x1e2));_0x31cef4[_0x38dd12(0x190)]=!![],_0x31cef4[_0x1d2ca2(0x2b7)]['id']=_0x38dd12(0x301),_0x31cef4['id']=_0x38dd12(0x29b),_0x31cef4[_0x1d2ca2(0x256)]=_0x38dd12(0x187),_0x31cef4[_0x38dd12(0x29d)]=_0x1d2ca2(0x19f),document[_0x284dc2(0x2af)][_0x284dc2(0x1ab)](_0x31cef4);if(_0x55ab96)_0x55ab96[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x272)]=_0x1d2ca2(0x297);}else{window[_0x1d2ca2(0x1b1)]={'chatbotId':_0x1dc1b0(0x261),'display':_0x1d2ca2(0x2fa)},document[_0x38dd12(0x1f4)](_0x38dd12(0x2d8))&&(document[_0x1d2ca2(0x220)](_0x1d2ca2(0x277))[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x33d)]=_0x38dd12(0x1b3));let _0x348854=document[_0x1d2ca2(0x35a)](_0x38dd12(0x1c2));!_0x348854&&(_0x348854=document[_0x1d2ca2(0x1d9)](_0x1d2ca2(0x325)),_0x348854['id']=_0x1d2ca2(0x211),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x273)]=_0x1d2ca2(0x1b2),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x351)]=_0x1d2ca2(0x214),_0x348854[_0x1d2ca2(0x1f3)][_0x38dd12(0x31b)]=_0x38dd12(0x212),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x226)]='0',_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x27b)]=_0x284dc2(0x1b9),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x1e5)]=_0x38dd12(0x2b0),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x1db)]=_0x1d2ca2(0x24c),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x2c4)]=_0x1d2ca2(0x34a),_0x348854[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x272)]=_0x1d2ca2(0x255),document[_0x1d2ca2(0x221)][_0x1d2ca2(0x344)](_0x348854));const _0x3795cb=document[_0x1d2ca2(0x35a)](_0x1d2ca2(0x291));_0x3795cb&&(_0x3795cb[_0x1d2ca2(0x27a)]=function(){const _0x59bfa9=_0x1dc1b0,_0x4e4880=_0x284dc2,_0xc98f43=_0x38dd12,_0x3d2532=_0x1d2ca2;let _0x4cb9bb=document[_0x3d2532(0x35a)](_0x3d2532(0x211));_0x4cb9bb[_0x3d2532(0x1f3)][_0x3d2532(0x272)]===_0x3d2532(0x255)?(_0x4cb9bb[_0xc98f43(0x259)][_0xc98f43(0x2c1)]=_0x3d2532(0x2e4),document[_0x3d2532(0x220)](_0x3d2532(0x277))[_0x3d2532(0x1f3)][_0x3d2532(0x273)]=_0x3d2532(0x2b4),document[_0x3d2532(0x220)](_0x3d2532(0x277))[_0xc98f43(0x259)][_0xc98f43(0x289)]=_0x3d2532(0x255),document[_0x3d2532(0x220)](_0x3d2532(0x277))[_0xc98f43(0x259)][_0x3d2532(0x32c)]='0',document[_0xc98f43(0x1f4)](_0x3d2532(0x2b8))[_0x3d2532(0x1f3)][_0x3d2532(0x203)]=_0x4e4880(0x19c)):(_0x4cb9bb[_0x4e4880(0x2c3)][_0xc98f43(0x2c1)]=_0x3d2532(0x255),document[_0x59bfa9(0x2c7)](_0x3d2532(0x277))[_0x3d2532(0x1f3)][_0x3d2532(0x273)]=_0xc98f43(0x32e),document[_0x3d2532(0x220)](_0x3d2532(0x277))[_0x3d2532(0x1f3)][_0x3d2532(0x23c)]=_0xc98f43(0x2e2),document[_0x3d2532(0x220)](_0x3d2532(0x2b8))[_0xc98f43(0x259)][_0xc98f43(0x2d7)]=_0x3d2532(0x2b9));});const _0x4208f4=document[_0x1d2ca2(0x1d9)](_0x1d2ca2(0x1e2));_0x4208f4[_0x1d2ca2(0x33a)]=!![],_0x4208f4[_0x1d2ca2(0x2b7)]['id']=_0x38dd12(0x263),_0x4208f4[_0x1d2ca2(0x2b7)][_0x1d2ca2(0x272)]=_0x38dd12(0x316),_0x4208f4['id']=_0x1d2ca2(0x1ab),_0x4208f4[_0x284dc2(0x2c7)]=_0x38dd12(0x187),_0x4208f4[_0x284dc2(0x312)]=_0x38dd12(0x31e),document[_0x38dd12(0x2cb)][_0x1d2ca2(0x344)](_0x4208f4);if(_0x55ab96)_0x55ab96[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x272)]=_0x1d2ca2(0x255);}}else{const _0xa64b5b=document[_0x1d2ca2(0x35a)](_0x1d2ca2(0x2d2));if(_0xa64b5b)_0xa64b5b[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x272)]=_0x1d2ca2(0x255);const _0x495ec9=document[_0x1d2ca2(0x35a)](_0x1d2ca2(0x211));if(_0x495ec9)_0x495ec9[_0x1d2ca2(0x1f3)][_0x1d2ca2(0x272)]=_0x1d2ca2(0x255);console[_0x1d2ca2(0x27c)](_0x1d2ca2(0x314));}((async()=>{const _0x214d43=_0x284dc2,_0x4055a=_0x38dd12,_0x6d0c2f=_0x1d2ca2,_0x27382b=_0x6d0c2f(0x20a),_0xcac349=_0x6d0c2f(0x2d8),_0x4d6914=window[_0x6d0c2f(0x2dd)][_0x6d0c2f(0x34d)](_0x27382b,_0xcac349);try{const _0x332bf8=localStorage[_0x6d0c2f(0x262)](_0x6d0c2f(0x1cf));if(!_0x332bf8)return;const _0x2695ed=JSON[_0x6d0c2f(0x356)](_0x332bf8)[_0x6d0c2f(0x311)]['id'],_0x1f1bf1=new Date()[_0x6d0c2f(0x201)]()[_0x214d43(0x27c)]('T')[0x0],{data:_0x1a7fdf}=await _0x4d6914[_0x6d0c2f(0x1dc)](_0x6d0c2f(0x31e))[_0x6d0c2f(0x29b)](_0x4055a(0x32c))['eq'](_0x6d0c2f(0x2c0),_0x2695ed)[_0x6d0c2f(0x1f1)]();let _0xa92dae=_0x1a7fdf&&_0x1a7fdf[_0x6d0c2f(0x2da)]===_0x1f1bf1?Number(_0x1a7fdf[_0x6d0c2f(0x1a9)])||0x0:0x0;const _0xd93e50=document[_0x6d0c2f(0x35a)](_0x6d0c2f(0x335));if(_0xd93e50)_0xd93e50[_0x4055a(0x210)]=_0xa92dae;}catch(_0xa65fe1){console[_0x6d0c2f(0x2bc)](_0x6d0c2f(0x2d6),_0xa65fe1[_0x6d0c2f(0x338)]);}})());function _0x41a8b8(_0x7bb14f){const _0x642371=_0x38dd12,_0x20432a=_0x1d2ca2;let _0x567491=JSON[_0x20432a(0x356)](localStorage[_0x20432a(0x262)](_0x642371(0x186)))||{};return _0x567491[_0x7bb14f]||[];}function _0x1e6ea5(_0x38d8a1,_0x225ee5){const _0x28b090=_0x38dd12,_0x4f4d0d=_0x1d2ca2;let _0x512f04=JSON[_0x4f4d0d(0x356)](localStorage[_0x4f4d0d(0x262)](_0x4f4d0d(0x328)))||{};!_0x512f04[_0x38d8a1]&&(_0x512f04[_0x38d8a1]=[]),!_0x512f04[_0x38d8a1][_0x4f4d0d(0x199)](_0x225ee5)&&(_0x512f04[_0x38d8a1][_0x4f4d0d(0x217)](_0x225ee5),localStorage[_0x28b090(0x1ca)](_0x4f4d0d(0x328),JSON[_0x4f4d0d(0x355)](_0x512f04)));}function _0x26b188(_0x577c34,_0xd7cb92){const _0x419fb7=_0x38dd12,_0x1603e8=_0x1d2ca2;let _0xb80352=JSON[_0x419fb7(0x211)](localStorage[_0x1603e8(0x262)](_0x1603e8(0x328)))||{};_0xb80352[_0x577c34]&&(_0xb80352[_0x577c34]=_0xb80352[_0x577c34][_0x1603e8(0x34f)](_0xa74b3e=>_0xa74b3e!==_0xd7cb92),localStorage[_0x1603e8(0x205)](_0x1603e8(0x328),JSON[_0x1603e8(0x355)](_0xb80352)));}fetch(_0x1d2ca2(0x2f8))[_0x1d2ca2(0x1a4)](_0x49ef0c=>_0x49ef0c[_0x1d2ca2(0x359)]())[_0x38dd12(0x2a4)](_0x2fef76=>{const _0x4350f2=_0x284dc2,_0x38cf9b=_0x38dd12,_0x333a46=_0x1d2ca2,_0x27ea18=[..._0x2fef76[_0x333a46(0x348)][_0x333a46(0x1df)]||[],..._0x2fef76[_0x38cf9b(0x21c)][_0x38cf9b(0x2d1)]||[]],_0x43f51e=_0x27ea18[_0x333a46(0x2e0)](_0x4c5801=>_0x4c5801['id']===_0x59453f);if(_0x43f51e){const _0x402168=document[_0x333a46(0x220)](_0x333a46(0x33e));if(_0x402168)_0x402168[_0x4350f2(0x2f2)]=_0x43f51e[_0x333a46(0x26d)];}else console[_0x333a46(0x30b)](_0x333a46(0x1a8)+_0x59453f);})[_0x1d2ca2(0x1e8)](_0x28cc60=>console[_0x38dd12(0x16f)](_0x1d2ca2(0x280),_0x28cc60));async function _0x26aa50(){const _0x2feb7d=a1_0x2b8f,_0x18a1b4=_0x284dc2,_0x49ab12=_0x38dd12,_0x31ee41=_0x1d2ca2;try{const {data:_0x2a7546,error:_0x523072}=await supabaseClient[_0x31ee41(0x1dc)](_0x59453f)[_0x49ab12(0x2b9)]('*');if(_0x523072)throw _0x523072;if(!_0x2a7546||_0x2a7546[_0x31ee41(0x27f)]===0x0){console[_0x31ee41(0x2bc)](_0x31ee41(0x24e));return;}const _0x1eaba3=shuffleArray(_0x2a7546)[_0x18a1b4(0x18c)](0x0,0xa);let _0x128e9b=![],_0x1bb423=0x0,_0x492c3c=0x0,_0x4af0d1,_0x554e8f=0x0,_0x3ae609={};const _0x33250f=document[_0x31ee41(0x35a)](_0x31ee41(0x26a)),_0x302f22=document[_0x31ee41(0x35a)](_0x31ee41(0x240)),_0x529667=document[_0x31ee41(0x35a)](_0x31ee41(0x1ce)),_0xf4236c=document[_0x31ee41(0x35a)](_0x31ee41(0x301)),_0x2ed7f7=document[_0x31ee41(0x35a)](_0x31ee41(0x233)),_0x499523=document[_0x31ee41(0x35a)](_0x31ee41(0x2c8));if(_0x2ed7f7)_0x2ed7f7[_0x31ee41(0x27a)]=()=>_0x3a860a(-0x1);if(_0x499523)_0x499523[_0x49ab12(0x1c6)]=()=>_0x3a860a(0x1);function _0x42231a(_0x39faae){const _0x1536d7=_0x49ab12,_0x254308=_0x31ee41,_0x577fe3=Math[_0x254308(0x32d)](_0x39faae/0x3c)[_0x254308(0x1ca)]()[_0x254308(0x2a4)](0x2,'0'),_0x4e7ab7=(_0x39faae%0x3c)[_0x254308(0x1ca)]()[_0x1536d7(0x315)](0x2,'0');return _0x577fe3+':'+_0x4e7ab7;}function _0x55b4f1(){const _0x36eafd=_0x49ab12,_0x17ecf4=_0x31ee41;if(_0x4af0d1)clearInterval(_0x4af0d1);_0x554e8f=0x0;const _0x3c419c=document[_0x17ecf4(0x35a)](_0x36eafd(0x1ed));if(_0x3c419c)_0x3c419c[_0x17ecf4(0x200)]=_0x17ecf4(0x2ca);_0x4af0d1=setInterval(()=>{const _0x4f6140=_0x17ecf4;_0x554e8f++;if(_0x3c419c)_0x3c419c[_0x4f6140(0x200)]=_0x42231a(_0x554e8f);},0x3e8);}function _0x2fc7cd(){const _0x5a5402=setInterval(async()=>{const _0x1f162c=a1_0x5c5a,_0x3f0980=a1_0x358b,_0x3408fe=localStorage[_0x1f162c(0x27f)](_0x1f162c(0x27e));if(!_0x3408fe)return;const _0x4f12f1=JSON[_0x3f0980(0x356)](_0x3408fe)[_0x1f162c(0x31d)]['id'],{data:_0x1a82f4,error:_0x3e8e9d}=await supabaseClient[_0x3f0980(0x1dc)](_0x3f0980(0x31e))[_0x1f162c(0x2b9)](_0x3f0980(0x33f))[_0x3f0980(0x29f)]({'user_id':_0x4f12f1})[_0x3f0980(0x254)]();if(_0x1a82f4&&_0x1a82f4[_0x1f162c(0x30a)]!==localStorage[_0x1f162c(0x27f)](_0x3f0980(0x193))){clearInterval(_0x5a5402);const _0x416422=_0x1f162c(0x1f0);await showMessage(_0x416422,_0x3f0980(0x24b)),window[_0x3f0980(0x31a)][_0x3f0980(0x19e)]=_0x1f162c(0x2d4);}},0x2710);}_0x2fc7cd();function _0x144939(_0x38f642){const _0x23482d=a1_0x4a59,_0x256126=_0x18a1b4,_0x5c542a=_0x49ab12,_0xca80b9=_0x31ee41,_0x3dc043=_0x1eaba3[_0x38f642];if(!_0x3dc043)return;if(_0x33250f)_0x33250f[_0xca80b9(0x350)]=_0x3dc043[_0xca80b9(0x267)];if(_0x529667)_0x529667[_0xca80b9(0x200)]=_0x38f642+0x1+_0xca80b9(0x228)+_0x1eaba3[_0xca80b9(0x27f)];if(_0xf4236c){const _0x4a9006=_0x38f642/_0x1eaba3[_0xca80b9(0x27f)]*0x64;_0xf4236c[_0xca80b9(0x1f3)][_0x5c542a(0x18f)]=_0x4a9006+'%';}if(_0x302f22){const _0x31737f={'A':_0x3dc043[_0xca80b9(0x22b)],'B':_0x3dc043[_0xca80b9(0x21a)],'C':_0x3dc043[_0x256126(0x302)],'D':_0x3dc043[_0xca80b9(0x2bf)],'E':_0x3dc043[_0xca80b9(0x327)]};_0x302f22[_0x256126(0x2ea)]=Object[_0xca80b9(0x1fb)](_0x31737f)[_0xca80b9(0x34f)](([_0x55c8cd,_0x444d96])=>_0x444d96!==null&&_0x444d96!==undefined&&_0x444d96!=='')[_0xca80b9(0x2d7)](([_0x5b7c46,_0x4a5ad3])=>_0xca80b9(0x2a5)+_0x5b7c46+'\x22>'+_0x5b7c46+_0x23482d(0x2ea)+_0x4a5ad3+_0xca80b9(0x2ae))[_0x5c542a(0x324)]('');}const _0x1e503b=document[_0xca80b9(0x2fd)](_0xca80b9(0x253));if(_0x3ae609[_0x38f642]){const _0x3ae1d6=_0x3ae609[_0x38f642],_0x2acd29=_0x3dc043[_0xca80b9(0x1c8)];_0x302f22[_0xca80b9(0x198)][_0xca80b9(0x28c)](_0xca80b9(0x35b)),_0x1e503b[_0xca80b9(0x1f8)](_0xd26970=>{const _0x1f9603=_0x5c542a,_0x54a6a0=_0xca80b9,_0x74588b=_0xd26970[_0x1f9603(0x1e4)][_0x1f9603(0x178)];_0x74588b===_0x3ae1d6&&_0xd26970[_0x1f9603(0x1f2)][_0x54a6a0(0x28c)](_0x74588b===_0x2acd29?_0x1f9603(0x1bd):_0x54a6a0(0x202)),_0x74588b===_0x2acd29&&_0xd26970[_0x54a6a0(0x198)][_0x54a6a0(0x28c)](_0x54a6a0(0x319));});if(_0x499523)_0x499523[_0xca80b9(0x35b)]=![];}else{_0x302f22[_0xca80b9(0x198)][_0x5c542a(0x24a)](_0xca80b9(0x35b));if(_0x499523)_0x499523[_0xca80b9(0x35b)]=!![];_0x1e503b[_0xca80b9(0x1f8)](_0xe706ff=>{const _0x47088a=_0x5c542a;_0xe706ff[_0x47088a(0x1c6)]=()=>_0x34ad5c(_0xe706ff,_0x3dc043,_0x38f642);});}if(_0x2ed7f7)_0x2ed7f7[_0xca80b9(0x35b)]=_0x38f642===0x0;_0x499523&&(_0x499523[_0xca80b9(0x200)]=_0x38f642===_0x1eaba3[_0xca80b9(0x27f)]-0x1?_0xca80b9(0x247):_0xca80b9(0x1ea));}function _0x4e5986(){const _0x3f0292=_0x18a1b4,_0x4f450f=_0x49ab12,_0x305673=_0x31ee41;if(window[_0x305673(0x1bb)]&&typeof window[_0x4f450f(0x21d)][_0x305673(0x2e2)]===_0x4f450f(0x215))window[_0x3f0292(0x1c8)][_0x3f0292(0x2a9)]();else{const _0x793b1b=document[_0x305673(0x35a)](_0x305673(0x28b));if(_0x793b1b){const _0x1789bc=_0x793b1b[_0x305673(0x220)](_0x305673(0x249))||_0x793b1b;_0x1789bc[_0x305673(0x231)]();}}}const _0x2b43f8=new Audio(window[_0x31ee41(0x31a)][_0x31ee41(0x1f2)]+_0x31ee41(0x2cd)),_0x13f5ae=new Audio(window[_0x31ee41(0x31a)][_0x31ee41(0x1f2)]+_0x31ee41(0x2d0));async function _0x34ad5c(_0x4a5158,_0x3486bd,_0x4a8fef){const _0x4ed209=_0x18a1b4,_0x30294c=_0x49ab12,_0x372304=_0x31ee41,_0x4982b0=_0x4a5158[_0x372304(0x2b7)][_0x372304(0x270)];_0x3ae609[_0x4a8fef]=_0x4982b0;const _0x6a0717=_0x3486bd['id'],_0x3529ef=_0x3486bd[_0x372304(0x1c8)];_0x302f22[_0x372304(0x198)][_0x372304(0x28c)](_0x30294c(0x318));if(_0x4982b0===_0x3529ef){_0x2b43f8[_0x30294c(0x291)]=0x0,_0x2b43f8[_0x30294c(0x299)]()[_0x372304(0x1e8)](_0x251a4c=>console[_0x372304(0x27c)](_0x372304(0x20d),_0x251a4c)),_0x4a5158[_0x4ed209(0x1a5)][_0x372304(0x28c)](_0x372304(0x319));if(_0x499523)_0x499523[_0x30294c(0x318)]=![];_0x492c3c++,_0x26b188(_0x4ee80b,_0x6a0717);}else{_0x13f5ae[_0x372304(0x32e)]=0x0,_0x13f5ae[_0x372304(0x1a6)]()[_0x30294c(0x18d)](_0x2b1733=>console[_0x372304(0x27c)](_0x372304(0x20d),_0x2b1733)),_0x4a5158[_0x372304(0x198)][_0x372304(0x28c)](_0x372304(0x202));if(_0x499523)_0x499523[_0x4ed209(0x22e)]=![];_0x1e6ea5(_0x4ee80b,_0x6a0717),setTimeout(()=>{const _0x59e45d=_0x4ed209,_0x4e9435=_0x372304,_0x24ca4c=_0x302f22[_0x4e9435(0x220)](_0x4e9435(0x341)+_0x3529ef+'\x22]');if(_0x24ca4c)_0x24ca4c[_0x59e45d(0x1a5)][_0x59e45d(0x16a)](_0x4e9435(0x319));},0x1f4);}function _0x487953(_0x14a48f,_0x1c60b4){const _0x2a20a7=_0x4ed209,_0x36977a=_0x30294c,_0x5358c4=_0x372304,_0x4392ea=currentQuestion[_0x5358c4(0x1c8)],_0xf70b91=currentQuestion['id'],_0x4d0183=document[_0x36977a(0x257)](_0x36977a(0x17c));_0x4d0183[_0x5358c4(0x1f8)](_0x308784=>_0x308784[_0x5358c4(0x35b)]=!![]),_0x1c60b4===_0x4392ea?(_0x14a48f[_0x5358c4(0x1f3)][_0x5358c4(0x1db)]=_0x5358c4(0x197),_0x14a48f[_0x36977a(0x259)][_0x36977a(0x23b)]=_0x5358c4(0x28d),_0x26b188(_0x4ee80b,_0xf70b91)):(_0x14a48f[_0x2a20a7(0x2c3)][_0x5358c4(0x1db)]=_0x5358c4(0x23d),_0x14a48f[_0x5358c4(0x1f3)][_0x5358c4(0x2ec)]=_0x5358c4(0x28d),_0x4d0183[_0x5358c4(0x1f8)](_0x6e13d0=>{const _0xabb74f=_0x2a20a7,_0xbd3f9b=_0x36977a,_0x33e34e=_0x5358c4;_0x6e13d0[_0xbd3f9b(0x16d)](_0x33e34e(0x1e1))===_0x4392ea&&(_0x6e13d0[_0xabb74f(0x2c3)][_0x33e34e(0x1db)]=_0x33e34e(0x197),_0x6e13d0[_0x33e34e(0x1f3)][_0x33e34e(0x2ec)]=_0x33e34e(0x28d));}),_0x1e6ea5(_0x4ee80b,_0xf70b91));}const _0x58513a=document[_0x372304(0x35a)](_0x372304(0x240));if(_0x58513a)_0x58513a[_0x372304(0x198)][_0x372304(0x28c)](_0x372304(0x35b));if(_0x499523)_0x499523[_0x372304(0x35b)]=![];}function _0x3a860a(_0x3c5a13){const _0x17d912=_0x31ee41,_0x3ef376=_0x1bb423+_0x3c5a13;if(_0x3ef376>=0x0&&_0x3ef376<_0x1eaba3[_0x17d912(0x27f)])_0x1bb423=_0x3ef376,_0x144939(_0x1bb423);else _0x3ef376>=_0x1eaba3[_0x17d912(0x27f)]&&_0x224d00();}async function _0x4d9a49(_0x526007,_0x50ab11,_0x34b30e,_0x381385,_0x4883b1){const _0x4b706d=a1_0x4a59,_0x46725f=_0x18a1b4,_0x5a3a99=_0x49ab12,_0x51718a=_0x31ee41;try{const _0x39ae75=window[_0x51718a(0x25a)]||window[_0x51718a(0x1b0)],{data:{user:_0x244a90}}=await _0x39ae75[_0x51718a(0x31f)][_0x5a3a99(0x231)](),_0x2e1f9e=_0x244a90?.[_0x51718a(0x302)]?.[_0x46725f(0x2e7)]||_0x51718a(0x20e),_0x21b6d3=new Date(),_0x5d3bc3=_0x21b6d3[_0x51718a(0x2d3)]()+'-'+String(_0x21b6d3[_0x51718a(0x286)]()+0x1)[_0x4b706d(0x182)](0x2,'0')+'-'+String(_0x21b6d3[_0x51718a(0x2e5)]())[_0x51718a(0x2a4)](0x2,'0'),_0x3a6685=new Date(_0x21b6d3);_0x3a6685[_0x51718a(0x2eb)](_0x21b6d3[_0x46725f(0x1f4)]()-0x1);const _0x12e9ed=_0x3a6685[_0x51718a(0x2d3)]()+'-'+String(_0x3a6685[_0x5a3a99(0x1a6)]()+0x1)[_0x51718a(0x2a4)](0x2,'0')+'-'+String(_0x3a6685[_0x51718a(0x2e5)]())[_0x5a3a99(0x315)](0x2,'0');let {data:_0x3032da,error:_0x4d0cba}=await _0x39ae75[_0x51718a(0x1dc)](_0x51718a(0x31e))[_0x51718a(0x29b)]('*')['eq'](_0x51718a(0x2c0),_0x526007)[_0x51718a(0x1f1)]();if(_0x4d0cba)throw _0x4d0cba;let _0x62b10d=_0x3032da?_0x3032da[_0x51718a(0x2da)]:null,_0x3b491a=_0x3032da?Number(_0x3032da[_0x51718a(0x2c2)])||0x0:0x0,_0x1a5594=_0x3032da?Number(_0x3032da[_0x51718a(0x1a9)])||0x0:0x0,_0x327fb3=0x0,_0x917452=0x1;if(!_0x3032da)_0x327fb3=0x1,_0x917452=0x1;else{if(_0x62b10d===_0x5d3bc3)_0x327fb3=_0x3b491a,_0x917452=_0x1a5594+0x1;else _0x62b10d===_0x12e9ed?(_0x327fb3=_0x3b491a+0x1,_0x917452=0x1):(_0x327fb3=0x1,_0x917452=0x1);}function _0x3f990d(_0x21cc94,_0x196d0e,_0xc84f5d){const _0xb0eef4=_0x5a3a99,_0x1f0dbe=_0x51718a,_0xd167b4=Math[_0xb0eef4(0x327)](0xa)/0x190,_0x115a6a=0x3e8,_0x3e0a53=_0xc84f5d/0x64,_0x4274e1=0x1/(0x1+Math[_0x1f0dbe(0x1ae)](0xa,(_0x115a6a-_0x21cc94)/0x190)),_0x1b3e80=0x1/(Math[_0x1f0dbe(0x1ae)](_0xd167b4,0x2)*(_0x4274e1*(0x1-_0x4274e1))),_0xd46ab2=_0xd167b4/(0x1/Math[_0x1f0dbe(0x1ae)](_0x196d0e,0x2)+0x1/_0x1b3e80),_0x5c957a=_0x21cc94+_0xd46ab2*(_0x3e0a53-_0x4274e1);let _0x3713bd=Math[_0x1f0dbe(0x313)](0x1/(0x1/Math[_0x1f0dbe(0x1ae)](_0x196d0e,0x2)+0x1/_0x1b3e80));return _0x3713bd=Math[_0x1f0dbe(0x24d)](0x1e,Math[_0x1f0dbe(0x237)](0x15e,_0x3713bd)),{'rating':Math[_0xb0eef4(0x233)](_0x5c957a),'rd':Math[_0xb0eef4(0x233)](_0x3713bd),'diff':Math[_0xb0eef4(0x233)](_0x5c957a-_0x21cc94)};}const _0x3752fb=_0x4883b1/_0x381385*0x64,_0x50ef52=_0x3032da?Number(_0x3032da[_0x51718a(0x25d)])||0x3e8:0x3e8,_0x4c41f5=_0x3032da?Number(_0x3032da[_0x51718a(0x21b)])||0x15e:0x15e,_0x41f0c8=_0x3f990d(_0x50ef52,_0x4c41f5,_0x3752fb),_0x24a71a={'display_name':_0x2e1f9e,'quizzes_completed':(_0x3032da?Number(_0x3032da[_0x51718a(0x1ad)])||0x0:0x0)+0x1,'total_time_spent':(_0x3032da?Number(_0x3032da[_0x51718a(0x21f)])||0x0:0x0)+_0x34b30e,'total_answered_questions':(_0x3032da?Number(_0x3032da[_0x51718a(0x1ff)])||0x0:0x0)+_0x381385,'total_correct_answers':(_0x3032da?Number(_0x3032da[_0x51718a(0x30a)])||0x0:0x0)+_0x4883b1,'total_score':(_0x3032da?Number(_0x3032da[_0x51718a(0x238)])||0x0:0x0)+_0x50ab11,'elo_rating':_0x41f0c8[_0x51718a(0x248)],'rating_deviation':_0x41f0c8['rd'],'current_streak':_0x327fb3,'last_quiz_date':_0x5d3bc3,'daily_limit_count':_0x917452,'updated_at':new Date()[_0x51718a(0x201)]()},{error:_0x845a84}=await _0x39ae75[_0x51718a(0x1dc)](_0x51718a(0x31e))[_0x51718a(0x339)]({'user_id':_0x526007,..._0x24a71a});if(_0x845a84)throw _0x845a84;const {data:_0x5855d9}=await _0x39ae75[_0x51718a(0x1dc)](_0x51718a(0x2df))[_0x46725f(0x237)](_0x51718a(0x2c1))['eq'](_0x51718a(0x2c0),_0x526007)['eq'](_0x5a3a99(0x172),_0x5d3bc3)[_0x51718a(0x1f1)](),_0x11b393=(_0x5855d9?Number(_0x5855d9[_0x51718a(0x2c1)])||0x0:0x0)+0x1;return await _0x39ae75[_0x51718a(0x1dc)](_0x51718a(0x2df))[_0x5a3a99(0x16a)]({'user_id':_0x526007,'quiz_date':_0x5d3bc3,'quiz_count':_0x11b393},{'onConflict':_0x51718a(0x2c5)}),{'diff':_0x41f0c8[_0x51718a(0x244)],'newElo':_0x41f0c8[_0x46725f(0x1dc)]};}catch(_0x2a78f1){return console[_0x51718a(0x2bc)](_0x51718a(0x1ed),_0x2a78f1[_0x46725f(0x1db)]),null;}}async function _0x224d00(){const _0x5d68f3=_0x18a1b4,_0x558cbd=_0x49ab12,_0xbc3c6f=_0x31ee41;clearInterval(_0x4af0d1);if(_0x128e9b)return;_0x128e9b=!![];const _0x134c9d=document[_0xbc3c6f(0x220)](_0xbc3c6f(0x33b)),_0x38178f=document[_0xbc3c6f(0x220)](_0x558cbd(0x1d5)),_0x4a4ff1=document[_0xbc3c6f(0x220)](_0xbc3c6f(0x2a0)),_0x2f27f0=document[_0xbc3c6f(0x220)](_0xbc3c6f(0x347)),_0x1d144e=document[_0x558cbd(0x1f4)](_0xbc3c6f(0x331));if(_0x134c9d)_0x134c9d[_0xbc3c6f(0x1f3)][_0xbc3c6f(0x272)]=_0x558cbd(0x1cf);if(_0x38178f)_0x38178f[_0x5d68f3(0x2c3)][_0xbc3c6f(0x272)]=_0xbc3c6f(0x255);if(_0x4a4ff1)_0x4a4ff1[_0xbc3c6f(0x1f3)][_0xbc3c6f(0x272)]=_0xbc3c6f(0x255);if(_0x2f27f0)_0x2f27f0[_0xbc3c6f(0x1f3)][_0x558cbd(0x2c1)]=_0xbc3c6f(0x255);if(_0x1d144e)_0x1d144e[_0x558cbd(0x259)][_0xbc3c6f(0x272)]=_0xbc3c6f(0x255);const _0x2b0415=document[_0x5d68f3(0x1e8)](_0xbc3c6f(0x33e));let _0x1b9a40='';_0x2b0415&&(_0x1b9a40=_0x2b0415[_0xbc3c6f(0x200)],_0x2b0415[_0xbc3c6f(0x1f3)][_0x558cbd(0x2c1)]=_0xbc3c6f(0x255)),(_0x302f22[_0xbc3c6f(0x350)]=_0xbc3c6f(0x21c),_0x302f22[_0x558cbd(0x1f2)][_0xbc3c6f(0x29c)](_0xbc3c6f(0x35b)));let _0xe7f049={'diff':0x0,'newElo':0x3e8};if(_0x189235)try{const _0x5e6fe5=await _0x4d9a49(_0x189235,_0x492c3c,_0x554e8f,_0x1eaba3[_0xbc3c6f(0x27f)],_0x492c3c);if(_0x5e6fe5)_0xe7f049=_0x5e6fe5;}catch(_0x24d178){console[_0x558cbd(0x16f)](_0xbc3c6f(0x1bf),_0x24d178);}const _0x4b3f81=_0x42231a(_0x554e8f);let _0x339403=_0xbc3c6f(0x284),_0x3e4976=_0xe7f049[_0xbc3c6f(0x244)]>0x0?'+':'';if(_0xe7f049[_0xbc3c6f(0x244)]>0x0)_0x339403=_0xbc3c6f(0x19d);else _0xe7f049[_0xbc3c6f(0x244)]<0x0&&(_0x339403=_0xbc3c6f(0x21d));const _0x3c39cb=Math[_0xbc3c6f(0x1e6)](_0x492c3c/_0x1eaba3[_0xbc3c6f(0x27f)]*0x64),_0x139ad4=_0x1eaba3[_0xbc3c6f(0x27f)]-_0x492c3c,_0xeed122=_0xe7f049[_0x558cbd(0x1ae)]+_0xbc3c6f(0x2c3)+_0x339403+_0xbc3c6f(0x353)+_0x3e4976+_0xe7f049[_0xbc3c6f(0x244)]+_0xbc3c6f(0x2f6);_0x302f22[_0xbc3c6f(0x350)]=_0xbc3c6f(0x310)+_0x3c39cb*3.6+_0xbc3c6f(0x318)+_0x3c39cb+_0x558cbd(0x1b6)+_0x492c3c+'/'+_0x1eaba3[_0xbc3c6f(0x27f)]+_0xbc3c6f(0x1ee)+_0x1b9a40+_0xbc3c6f(0x2d4)+_0x492c3c+_0xbc3c6f(0x2ad)+_0x139ad4+_0x558cbd(0x254)+_0x4b3f81+_0xbc3c6f(0x1e9)+_0x3c39cb+_0xbc3c6f(0x276)+_0xeed122+_0xbc3c6f(0x20f);}const _0x1c24a3=document[_0x31ee41(0x35a)](_0x31ee41(0x309)),_0x4d00f5=document[_0x31ee41(0x35a)](_0x31ee41(0x324)),_0x562554={'white':window[_0x31ee41(0x31a)][_0x31ee41(0x1f2)]+_0x31ee41(0x352),'brown':window[_0x2feb7d(0x332)][_0x31ee41(0x1f2)]+_0x49ab12(0x2a7),'rain':window[_0x49ab12(0x1aa)][_0x31ee41(0x1f2)]+_0x31ee41(0x292)};let _0x295c74=null,_0x266941=null,_0x556cb3=null,_0x2e4953=null,_0x20286a=![];function _0x16feac(){const _0x422822=_0x18a1b4,_0x322524=_0x49ab12,_0x562871=_0x31ee41;if(_0x556cb3&&_0x2e4953&&_0x295c74)try{const _0x1e701c=_0x295c74[_0x562871(0x32e)];_0x2e4953[_0x562871(0x290)][_0x562871(0x20b)](_0x2e4953[_0x422822(0x320)][_0x562871(0x229)],_0x1e701c),_0x2e4953[_0x562871(0x290)][_0x562871(0x2de)](0x0,_0x1e701c+0.8);const _0x809198=_0x556cb3,_0x27ec33=_0x2e4953;setTimeout(()=>{const _0x201721=a1_0x5c5a,_0x4068ae=_0x562871;try{_0x809198[_0x4068ae(0x1fd)](),_0x809198[_0x4068ae(0x2ab)](),_0x27ec33[_0x201721(0x205)]();}catch(_0x364537){}},0x352);}catch(_0x261866){console[_0x322524(0x16f)](_0x422822(0x28e),_0x261866);}_0x556cb3=null,_0x2e4953=null,_0x20286a=![];}async function _0x32ff50(_0x240f68){const _0x3f1708=_0x49ab12,_0x214f09=_0x31ee41;_0x16feac(),!_0x295c74&&(_0x295c74=new(window[(_0x214f09(0x303))]||window[(_0x214f09(0x19a))])()),_0x295c74[_0x214f09(0x2fb)]===_0x214f09(0x283)&&await _0x295c74[_0x3f1708(0x183)]();try{const _0x3971dc=await fetch(_0x240f68),_0x1bdf4b=await _0x3971dc[_0x3f1708(0x2d5)]();_0x266941=await _0x295c74[_0x214f09(0x25f)](_0x1bdf4b),_0x556cb3=_0x295c74[_0x214f09(0x26c)](),_0x556cb3[_0x214f09(0x334)]=_0x266941,_0x556cb3[_0x214f09(0x308)]=!![],_0x2e4953=_0x295c74[_0x214f09(0x2e3)](),_0x2e4953[_0x214f09(0x290)][_0x214f09(0x20b)](0x0,_0x295c74[_0x3f1708(0x291)]),_0x556cb3[_0x214f09(0x2e1)](_0x2e4953),_0x2e4953[_0x214f09(0x2e1)](_0x295c74[_0x214f09(0x320)]),_0x556cb3[_0x214f09(0x296)](0x0),_0x20286a=!![],_0x2e4953[_0x3f1708(0x17f)][_0x214f09(0x2de)](0x1,_0x295c74[_0x214f09(0x32e)]+0x1);}catch(_0x57ba87){console[_0x214f09(0x2bc)](_0x214f09(0x218),_0x57ba87),_0x20286a=![];}}if(_0x1c24a3&&_0x4d00f5){_0x1c24a3[_0x49ab12(0x1c6)]=function(_0x57a3fb){const _0x231516=_0x18a1b4,_0x4908c8=_0x49ab12,_0x39cdf1=_0x31ee41;_0x57a3fb[_0x39cdf1(0x234)]();const _0x133db0=_0x1c24a3[_0x39cdf1(0x220)](_0x39cdf1(0x29e));if(_0x20286a){_0x16feac();if(_0x133db0)_0x133db0[_0x4908c8(0x29d)]=_0x39cdf1(0x32f);_0x1c24a3[_0x39cdf1(0x198)][_0x39cdf1(0x29c)](_0x39cdf1(0x1dd));}_0x4d00f5[_0x39cdf1(0x1f3)][_0x39cdf1(0x272)]===_0x39cdf1(0x255)||_0x4d00f5[_0x39cdf1(0x1f3)][_0x39cdf1(0x272)]===''?_0x4d00f5[_0x39cdf1(0x1f3)][_0x39cdf1(0x272)]=_0x39cdf1(0x2e4):_0x4d00f5[_0x231516(0x2c3)][_0x39cdf1(0x272)]=_0x39cdf1(0x255);};const _0x82030e=_0x4d00f5[_0x31ee41(0x2fd)](_0x31ee41(0x30c));_0x82030e[_0x49ab12(0x173)](_0x1ebd65=>{const _0x4e7cdb=a1_0x4a59;_0x1ebd65[_0x4e7cdb(0x1f4)]=async function(_0xa4a9e){const _0x415972=a1_0x5c5a,_0x5bbc44=a1_0x358b;_0xa4a9e[_0x415972(0x204)]();const _0x3c9814=this[_0x5bbc44(0x210)](_0x5bbc44(0x332)),_0x4eefda=_0x1c24a3[_0x5bbc44(0x220)](_0x5bbc44(0x29e));if(_0x3c9814!==_0x5bbc44(0x255)&&_0x562554[_0x3c9814]){await _0x32ff50(_0x562554[_0x3c9814]);if(_0x4eefda)_0x4eefda[_0x5bbc44(0x212)]=_0x5bbc44(0x1d7);_0x1c24a3[_0x415972(0x1f2)][_0x415972(0x286)](_0x5bbc44(0x1dd));}else{_0x16feac();if(_0x4eefda)_0x4eefda[_0x5bbc44(0x212)]=_0x5bbc44(0x32f);_0x1c24a3[_0x5bbc44(0x198)][_0x415972(0x24a)](_0x5bbc44(0x1dd));}_0x4d00f5[_0x415972(0x259)][_0x5bbc44(0x272)]=_0x5bbc44(0x255);};}),document[_0x31ee41(0x281)](_0x31ee41(0x231),function(){const _0x71d2dd=_0x49ab12,_0x398046=_0x31ee41;_0x4d00f5[_0x71d2dd(0x259)][_0x71d2dd(0x2c1)]=_0x398046(0x255);});}window[_0x31ee41(0x26b)]=function(){const _0x567b59=_0x18a1b4,_0x52dfab=_0x31ee41,_0x157252=document[_0x567b59(0x189)](_0x52dfab(0x26a))[_0x52dfab(0x257)],_0x1e6bc2=_0x52dfab(0x1a1)+_0x157252+_0x52dfab(0x1b7);openActionModal(_0x1e6bc2);},window[_0x18a1b4(0x2ff)]=async function(){const _0x542085=_0x49ab12,_0x1a2b41=_0x31ee41,_0x5a89a8=document[_0x1a2b41(0x35a)](_0x542085(0x336))[_0x1a2b41(0x229)][_0x1a2b41(0x204)]();if(!_0x5a89a8){showMessage(_0x1a2b41(0x222));return;}try{const {data:{user:_0x1cfccd}}=await supabaseClient[_0x1a2b41(0x31f)][_0x1a2b41(0x2f2)](),_0xa6df66=_0x1cfccd?_0x1cfccd[_0x1a2b41(0x22c)]:_0x1a2b41(0x312),_0x241691=document[_0x542085(0x334)](_0x1a2b41(0x26a))[_0x1a2b41(0x257)],_0x439b76=document[_0x1a2b41(0x220)](_0x542085(0x2dd)),_0x44c576=_0x439b76?_0x439b76[_0x542085(0x210)][_0x1a2b41(0x204)]():_0x542085(0x19e),{error:_0x2df79e}=await supabaseClient[_0x1a2b41(0x1dc)](_0x1a2b41(0x25b))[_0x1a2b41(0x357)]([{'email':_0xa6df66,'sual':_0x241691,'comment':_0x5a89a8,'fenn_adi':_0x44c576}]);if(_0x2df79e)throw _0x2df79e;closeActionModal(),showMessage(_0x1a2b41(0x1ef));}catch(_0x379f90){console[_0x1a2b41(0x2bc)](_0x1a2b41(0x30f),_0x379f90),showMessage(_0x542085(0x191));}},_0x144939(_0x1bb423),_0x55b4f1(),_0x144939(_0x1bb423),_0x55b4f1();}catch(_0x54b0c5){console[_0x18a1b4(0x18b)](_0x31ee41(0x2ed),_0x54b0c5[_0x31ee41(0x338)]);}}_0x26aa50();});function shuffleArray(_0x375774){const _0x4434b8=a1_0x59317a;return _0x375774[_0x4434b8(0x2d7)](_0x15fdfc=>[Math[_0x4434b8(0x1e7)](),_0x15fdfc])[_0x4434b8(0x307)]((_0x4495a2,_0x2cb815)=>_0x4495a2[0x0]-_0x2cb815[0x0])[_0x4434b8(0x2d7)](_0x1719c9=>_0x1719c9[0x1]);}}function a1_0x358b(_0x4f7ce6,_0x412e06){_0x4f7ce6=_0x4f7ce6-0x193;const _0x38b407=a1_0xd056();let _0x26ddbd=_0x38b407[_0x4f7ce6];return _0x26ddbd;}function a1_0x5970(_0x4f4909,_0x28c8ab){_0x4f4909=_0x4f4909-0x165;const _0x533ac6=a1_0x3aae();let _0x706464=_0x533ac6[_0x4f4909];return _0x706464;}if(window[a1_0x59317a(0x31a)][a1_0x59317a(0x282)][a1_0x59317a(0x199)](a1_0x59317a(0x322))){const supabaseUrl=a1_0x59317a(0x20a),supabaseKey=a1_0x59317a(0x2d8),supabaseClient=window[a1_0x59317a(0x2dd)][a1_0x300329(0x32d)](supabaseUrl,supabaseKey);document[a1_0x300329(0x2af)](a1_0x59317a(0x224),async()=>{const _0x3f3464=a1_0x2726a0,_0x42f8fb=a1_0x1e10ae,_0x64e04d=a1_0x2b623a,_0x2ee4be=a1_0x300329,_0xa7c890=a1_0x59317a,{data:{user:_0x435d49},error:_0x32146c}=await supabaseClient[_0xa7c890(0x31f)][_0x2ee4be(0x231)]();if(_0x32146c||!_0x435d49){window[_0xa7c890(0x31a)][_0xa7c890(0x19e)]=_0xa7c890(0x24a);return;}const _0xa64962=document[_0xa7c890(0x35a)](_0xa7c890(0x336)),_0x18b485=document[_0x2ee4be(0x334)](_0xa7c890(0x22c)),_0x21c803=document[_0xa7c890(0x35a)](_0xa7c890(0x1c2)),_0x764df2=document[_0xa7c890(0x35a)](_0xa7c890(0x1f0));if(_0xa64962)_0xa64962[_0x2ee4be(0x2e8)]=_0x435d49[_0xa7c890(0x302)]?.[_0xa7c890(0x2aa)]||'';if(_0x18b485)_0x18b485[_0x42f8fb(0x2de)]=_0x435d49[_0xa7c890(0x22c)]||'';if(_0x21c803)_0x21c803[_0xa7c890(0x229)]=_0x2ee4be(0x1f7);if(_0x764df2&&_0x435d49[_0xa7c890(0x252)]){const _0x151f71=new Date(_0x435d49[_0xa7c890(0x252)]),_0x2d3828={'day':_0xa7c890(0x305),'month':_0x2ee4be(0x294),'year':_0x64e04d(0x1bd)};_0x764df2[_0xa7c890(0x200)]=_0x151f71[_0xa7c890(0x2fe)](_0x2ee4be(0x1d6),_0x2d3828);}const _0x206fb1=document[_0xa7c890(0x220)](_0xa7c890(0x1d1)),_0x3149b2=document[_0xa7c890(0x220)](_0x2ee4be(0x171)),_0x3c72ef=document[_0xa7c890(0x220)](_0xa7c890(0x2b1)),_0x438054=document[_0x64e04d(0x189)](_0x2ee4be(0x201)),{data:_0x25a6ce,error:_0x11cc55}=await supabaseClient[_0xa7c890(0x1dc)](_0xa7c890(0x1cd))[_0x2ee4be(0x2b9)]('*')['eq'](_0xa7c890(0x2c0),_0x435d49['id'])[_0x2ee4be(0x1ba)]();if(_0x25a6ce){const _0xef8154=new Date(),_0xfaad1c=new Date(_0x25a6ce[_0xa7c890(0x2f4)]);if(_0xef8154<_0xfaad1c){if(_0x206fb1)_0x206fb1[_0x2ee4be(0x259)][_0xa7c890(0x272)]=_0xa7c890(0x255);if(_0x3149b2)_0x3149b2[_0x2ee4be(0x259)][_0x2ee4be(0x2c1)]=_0x2ee4be(0x2ed);if(_0x3c72ef)_0x3c72ef[_0xa7c890(0x200)]=_0x25a6ce[_0xa7c890(0x239)];const _0x13f09b={'day':_0xa7c890(0x305),'month':_0x64e04d(0x2d7),'year':_0xa7c890(0x305)};if(_0x438054)_0x438054[_0xa7c890(0x200)]=_0xfaad1c[_0xa7c890(0x2fe)](_0x2ee4be(0x1d6),_0x13f09b);}else _0x206fb1[_0x2ee4be(0x259)][_0x2ee4be(0x2c1)]=_0xa7c890(0x297);}else{if(_0x206fb1)_0x206fb1[_0xa7c890(0x1f3)][_0xa7c890(0x272)]=_0x3f3464(0x269);if(_0x3149b2)_0x3149b2[_0xa7c890(0x1f3)][_0xa7c890(0x272)]=_0xa7c890(0x255);}window[_0xa7c890(0x2ba)]=function(_0x37d79f){const _0x3ee319=_0xa7c890;if(_0x37d79f===_0x3ee319(0x1c2))_0x37acbd();else{const _0x368235=_0x3ee319(0x1eb);openActionModal(_0x368235);}};async function _0x37acbd(){const _0x2d4d10=_0x2ee4be,_0x23de3c=_0xa7c890,{data:{user:_0x21fd32}}=await supabaseClient[_0x23de3c(0x31f)][_0x2d4d10(0x231)](),_0x2ac187=_0x21fd32[_0x23de3c(0x22c)],_0x441622=_0x23de3c(0x1b3)+_0x2ac187+_0x23de3c(0x1f5)+_0x2ac187+_0x23de3c(0x1b4);openActionModal(_0x441622);}window[_0x64e04d(0x191)]=async function(_0x33b890){const _0x4e9451=_0x64e04d,_0x19790e=_0x2ee4be,_0x45a84a=_0xa7c890,_0xe6ed9e=document[_0x19790e(0x334)](_0x45a84a(0x342));_0xe6ed9e[_0x19790e(0x197)]=_0x45a84a(0x293),_0xe6ed9e[_0x45a84a(0x35b)]=!![];const {error:_0x22f20e}=await supabaseClient[_0x45a84a(0x31f)][_0x19790e(0x2bf)](_0x33b890);_0x22f20e?(await showMessage(_0x45a84a(0x194)+_0x22f20e[_0x45a84a(0x338)]),_0xe6ed9e[_0x45a84a(0x35b)]=![],_0xe6ed9e[_0x19790e(0x197)]=_0x4e9451(0x2ae)):_0x42ca8d(_0x33b890);};function _0x42ca8d(_0x17fa75){const _0x6b9c17=_0xa7c890,_0xb27a4a=document[_0x6b9c17(0x35a)](_0x6b9c17(0x2a6));_0xb27a4a[_0x6b9c17(0x350)]=_0x6b9c17(0x2e8)+_0x17fa75+_0x6b9c17(0x1ba);}window[_0xa7c890(0x299)]=async function(_0x1e92e6){const _0x48c2bd=_0x42f8fb,_0x2c22dc=_0x64e04d,_0x1d5ead=_0x2ee4be,_0xf77be=_0xa7c890,_0x5917b7=document[_0xf77be(0x35a)](_0xf77be(0x28e))[_0xf77be(0x229)][_0x1d5ead(0x2ec)](),_0x5ca086=document[_0xf77be(0x35a)](_0x1d5ead(0x1bf))[_0xf77be(0x229)][_0xf77be(0x204)](),_0x36e8b4=document[_0xf77be(0x35a)](_0x1d5ead(0x232));if(_0x5917b7[_0x1d5ead(0x281)]<0x8||_0x5ca086[_0xf77be(0x27f)]<0x6){await showMessage(_0x48c2bd(0x241));return;}_0x36e8b4[_0xf77be(0x200)]=_0xf77be(0x1a0),_0x36e8b4[_0xf77be(0x35b)]=!![];const {error:_0x4784f2}=await supabaseClient[_0x2c22dc(0x309)][_0xf77be(0x2b6)]({'email':_0x1e92e6,'token':_0x5917b7,'type':_0x1d5ead(0x2f1)});if(_0x4784f2)await showMessage(_0x1d5ead(0x247)),_0x36e8b4[_0xf77be(0x35b)]=![],_0x36e8b4[_0xf77be(0x200)]=_0xf77be(0x343);else{const {error:_0x47d034}=await supabaseClient[_0xf77be(0x31f)][_0x1d5ead(0x1bc)]({'password':_0x5ca086});closeActionModal(),_0x47d034?await showMessage(_0x1d5ead(0x290)+_0x47d034[_0xf77be(0x338)]):await showMessage(_0xf77be(0x232));}};const _0xe57359=document[_0xa7c890(0x220)](_0xa7c890(0x206));_0xe57359&&_0xe57359[_0xa7c890(0x281)](_0x2ee4be(0x217),async()=>{const _0x358c62=_0x64e04d,_0x9ced77=_0x2ee4be,_0x3fc41b=_0xa7c890,_0x12e7b5=_0xa64962[_0x3fc41b(0x229)][_0x358c62(0x30a)]();if(!_0x12e7b5){await showMessage(_0x3fc41b(0x321));return;}const _0x1747e3=_0xe57359[_0x3fc41b(0x200)];_0xe57359[_0x3fc41b(0x200)]=_0x3fc41b(0x1f9),_0xe57359[_0x3fc41b(0x35b)]=!![];const {data:_0x10a640,error:_0x25b7bf}=await supabaseClient[_0x3fc41b(0x31f)][_0x3fc41b(0x34c)]({'data':{'full_name':_0x12e7b5}});_0xe57359[_0x3fc41b(0x200)]=_0x1747e3,_0xe57359[_0x9ced77(0x318)]=![],_0x25b7bf?await showMessage(_0x9ced77(0x290)+_0x25b7bf[_0x358c62(0x1db)]):await showMessage(_0x9ced77(0x332),_0x3fc41b(0x225),_0x9ced77(0x1a5));});const _0x5cc0a7=document[_0xa7c890(0x220)](_0xa7c890(0x275));_0x5cc0a7&&_0x5cc0a7[_0xa7c890(0x281)](_0xa7c890(0x231),async()=>{const _0x389c57=_0x2ee4be,_0x59fc22=_0xa7c890,_0x364ceb=await showMessage(_0x59fc22(0x1d5),_0x59fc22(0x250));_0x364ceb&&(await supabaseClient[_0x59fc22(0x31f)][_0x389c57(0x1e2)](),window[_0x389c57(0x1aa)][_0x59fc22(0x19e)]=_0x59fc22(0x24a));});const _0x37143c=document[_0xa7c890(0x220)](_0xa7c890(0x1d4));_0x37143c&&_0x37143c[_0x2ee4be(0x2af)](_0x64e04d(0x25b),async()=>{const _0xcb4036=_0x3f3464,_0x5d9be8=_0x64e04d,_0x162615=_0x2ee4be,_0x20908a=_0xa7c890,_0x1b1a05=await showMessage(_0x20908a(0x278),_0x20908a(0x250));if(_0x1b1a05){_0x37143c[_0x20908a(0x200)]=_0x20908a(0x2ef),_0x37143c[_0x162615(0x318)]=!![];const _0x39dcc3=_0x435d49[_0x20908a(0x22c)],{data:_0x3239e5,error:_0x5aa551}=await supabaseClient[_0x20908a(0x1dc)](_0x162615(0x29a))[_0x162615(0x2b9)](_0x20908a(0x22c))['eq'](_0x20908a(0x22c),_0x39dcc3);if(_0x5aa551){await showMessage(_0x20908a(0x32a)+_0x5aa551[_0x20908a(0x338)]),_0x37143c[_0x20908a(0x200)]=_0x20908a(0x330),_0x37143c[_0x20908a(0x35b)]=![];return;}if(_0x3239e5&&_0x3239e5[_0x20908a(0x27f)]>0x0){await showMessage(_0x20908a(0x1b5),_0xcb4036(0x204),_0x20908a(0x1c5)),_0x37143c[_0x5d9be8(0x2f2)]=_0x20908a(0x330),_0x37143c[_0x20908a(0x35b)]=![];return;}_0x37143c[_0x162615(0x197)]=_0x20908a(0x293);const {error:_0x4d1ef1}=await supabaseClient[_0x20908a(0x1dc)](_0x20908a(0x2ee))[_0x20908a(0x357)]([{'email':_0x39dcc3}]);if(_0x4d1ef1){await showMessage(_0x20908a(0x315)+_0x4d1ef1[_0x20908a(0x338)]),_0x37143c[_0x20908a(0x200)]=_0x20908a(0x330),_0x37143c[_0x20908a(0x35b)]=![];return;}await showMessage(_0x20908a(0x29a),_0x20908a(0x225),_0x20908a(0x1c5)),await supabaseClient[_0x162615(0x27a)][_0x162615(0x1e2)](),window[_0x20908a(0x31a)][_0x20908a(0x19e)]=_0x20908a(0x24a);}});});}if(window[a1_0x300329(0x1aa)]['pathname'][a1_0x59317a(0x199)](a1_0x59317a(0x1cb))){const supabaseUrl=a1_0x59317a(0x20a),supabaseKey=a1_0x59317a(0x2d8),supabaseClient=window[a1_0x2b623a(0x1d0)][a1_0x59317a(0x34d)](supabaseUrl,supabaseKey);async function checkActivePlan(){const _0x5e797f=a1_0x2b623a,_0x5a6508=a1_0x300329,_0x5a6490=a1_0x59317a,_0x1ee5e1=(function(){let _0x5bd60f=!![];return function(_0x4bea72,_0x45a527){const _0x36cffb=_0x5bd60f?function(){const _0xd8fd8b=a1_0x5c5a;if(_0x45a527){const _0x4110fb=_0x45a527[_0xd8fd8b(0x2a5)](_0x4bea72,arguments);return _0x45a527=null,_0x4110fb;}}:function(){};return _0x5bd60f=![],_0x36cffb;};}()),_0x26d468=_0x1ee5e1(this,function(){const _0x2146d9=a1_0x358b;return _0x26d468[_0x2146d9(0x1ca)]()[_0x2146d9(0x300)](_0x2146d9(0x195))[_0x2146d9(0x1ca)]()[_0x2146d9(0x25c)](_0x26d468)[_0x2146d9(0x300)](_0x2146d9(0x195));});_0x26d468();const {data:{user:_0x45322e}}=await supabaseClient[_0x5a6490(0x31f)][_0x5a6490(0x2f2)]();if(_0x45322e){const {data:_0x5cce51}=await supabaseClient[_0x5a6490(0x1dc)](_0x5a6490(0x1cd))[_0x5e797f(0x237)]('*')['eq'](_0x5a6508(0x176),_0x45322e['id'])[_0x5a6490(0x1f1)]();if(_0x5cce51){const _0x47bd27=new Date(),_0x2546e0=new Date(_0x5cce51[_0x5a6490(0x2f4)]);if(_0x47bd27<_0x2546e0){const _0xdc725=document[_0x5a6490(0x220)](_0x5a6490(0x22e));_0xdc725&&(_0xdc725[_0x5a6490(0x200)]=_0x5a6490(0x33c),_0xdc725[_0x5a6490(0x1f3)][_0x5a6490(0x2b2)]=_0x5a6490(0x271));const _0x59f703=document[_0x5a6508(0x257)](_0x5a6508(0x264));_0x59f703[_0x5a6490(0x1f8)](_0x47b193=>{const _0xf32010=_0x5a6508,_0x2d4918=_0x5a6490;_0x47b193[_0x2d4918(0x210)](_0x2d4918(0x27a))[_0xf32010(0x24f)](_0x5cce51[_0x2d4918(0x239)])?(_0x47b193[_0x2d4918(0x200)]=_0xf32010(0x30c),_0x47b193[_0xf32010(0x318)]=!![],_0x47b193[_0x2d4918(0x1f3)][_0xf32010(0x238)]=_0x2d4918(0x197),_0x47b193[_0x2d4918(0x1f3)][_0x2d4918(0x236)]=_0x2d4918(0x1cc)):(_0x47b193[_0x2d4918(0x200)]=_0x2d4918(0x33c),_0x47b193[_0x2d4918(0x35b)]=!![],_0x47b193[_0x2d4918(0x1f3)][_0x2d4918(0x2b2)]=_0x2d4918(0x271),_0x47b193[_0x2d4918(0x1f3)][_0x2d4918(0x236)]=_0x2d4918(0x2a7));});}}}}checkActivePlan(),window[a1_0x59317a(0x326)]=async function(_0x4ba364,_0x4cabc5){const _0x31808d=a1_0x59317a,_0x5d1135=_0x31808d(0x2c7);let _0x47ad18='';try{const {data:{user:_0x5f5ada}}=await supabaseClient[_0x31808d(0x31f)][_0x31808d(0x2f2)]();_0x5f5ada&&_0x5f5ada[_0x31808d(0x22c)]&&(_0x47ad18=_0x5f5ada[_0x31808d(0x22c)]);}catch(_0x480227){console[_0x31808d(0x2bc)](_0x31808d(0x251),_0x480227);}let _0x1b35bf=_0x31808d(0x34e)+_0x4ba364+'\x20('+_0x4cabc5+_0x31808d(0x2f9);_0x47ad18&&(_0x1b35bf+=_0x31808d(0x294)+_0x47ad18);const _0x48285c=encodeURIComponent(_0x1b35bf),_0x10be18=_0x31808d(0x1d3)+_0x5d1135+_0x31808d(0x1f6)+_0x48285c;window[_0x31808d(0x2e2)](_0x10be18,_0x31808d(0x2b3));};}
+// ---------------------- GLOBAL SCRIPTS ----------------------
+document.addEventListener("DOMContentLoaded", function () {
+
+    // 1. Mövcud Menyu Kodunuz
+    const telebeMenu = document.getElementById('telebe-menu');
+    if (telebeMenu && telebeMenu.previousElementSibling) {
+        telebeMenu.classList.add('open');
+        telebeMenu.previousElementSibling.querySelector('.arrow').textContent = 'v';
+    }
+
+    // ==========================================
+    // 2. QLOBAL PREMİUM YOXLANIŞI (Gecikməsiz & Ağıllı Yenilənmə)
+    // ==========================================
+
+    // UI-ı dəyişən və ya geri qaytaran (Sıfırlayan) funksiya
+    function setPremiumUI(isActive) {
+        const premiumHref = document.getElementById('premium-href');
+        const profileImg = document.querySelector('.profile-bg img');
+
+        if (isActive) {
+            // Premium aktivdir
+            document.body.classList.add('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = 'none';
+            if (profileImg) profileImg.src = '../images/premium-profile.webp';
+        } else {
+            // Premium DEYİL (və ya vaxtı bitib) - Hər şeyi standart vəziyyətə qaytarırıq
+            document.body.classList.remove('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = ''; // CSS-dəki original display dəyərinə qayıdır
+            if (profileImg) profileImg.src = '../images/profile.webp';
+        }
+    }
+
+    if (window.supabase) {
+        const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+        const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+
+        // Supabase Tək İnstance Yoxlanışı
+        if (!window.globalSupabaseClient) {
+            window.globalSupabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+        }
+        const supabaseGlobal = window.globalSupabaseClient;
+
+        // --- ADDIM 1: SIFIR GECİKMƏ İLƏ LOCALSTORAGE YOXLANIŞI ---
+        let userId = null;
+        try {
+            // Supabase-in öz qlobal tokenindən (gecikmə olmadan) User ID-ni çəkirik
+            const sbSession = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (sbSession) {
+                userId = JSON.parse(sbSession).user.id;
+            }
+        } catch (e) { }
+
+        const indi = new Date().getTime();
+
+        if (userId) {
+            // Hər istifadəçinin ÖZÜNƏ məxsus premium yaddaşını yoxlayırıq
+            const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+
+            if (cachedBitis && indi < parseInt(cachedBitis)) {
+                setPremiumUI(true); // Gözləmədən anında Premium rəngləri ver
+            } else {
+                setPremiumUI(false); // Keş yoxdursa və ya bitibsə standart UI göstər
+            }
+        }
+
+        // --- ADDIM 2: ARXA FONDA DƏQİQ BAZA YOXLANIŞI ---
+        supabaseGlobal.auth.getSession().then(async ({ data: { session } }) => {
+            if (session) {
+                const currentUserId = session.user.id;
+                const { data: abuneData } = await supabaseGlobal
+                    .from('abunelikler')
+                    .select('bitis_tarixi')
+                    .eq('user_id', currentUserId)
+                    .maybeSingle();
+
+                if (abuneData) {
+                    const bitis = new Date(abuneData.bitis_tarixi).getTime();
+                    const rightNow = new Date().getTime();
+
+                    if (rightNow < bitis) {
+                        // Baza təsdiqlədi: Hələ də premiumdur. Yaddaşı yeniləyirik.
+                        localStorage.setItem('premiumBitis_' + currentUserId, bitis);
+                        setPremiumUI(true);
+                    } else {
+                        // Baza dedi ki: Vaxtı BİTİB! Yaddaşı sil və UI-ı geri al.
+                        localStorage.removeItem('premiumBitis_' + currentUserId);
+                        setPremiumUI(false);
+                    }
+                } else {
+                    // Cədvəldə bu istifadəçiyə aid heç nə yoxdur (Pulsuzdur). Yaddaşı sil və UI-ı geri al.
+                    localStorage.removeItem('premiumBitis_' + currentUserId);
+                    setPremiumUI(false);
+                }
+            }
+        });
+    } else {
+        console.warn("Diqqət: Bu səhifədə Supabase yüklənməyib.");
+    }
+});
+function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", customCancel = "Ləğv et") {
+    return new Promise((resolve) => {
+        const overlay = document.getElementById("messageOverlay");
+        const messageText = document.getElementById("messageText");
+        const okBtn = document.getElementById("okBtn");
+        const confirmBtn = document.getElementById("confirmBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+
+        if (!overlay) return resolve(false);
+
+        // Mesajı qutuya yazırıq və ekranı açırıq
+        messageText.innerHTML = message;
+        overlay.style.display = "flex";
+
+        // Əgər növ "confirm" (Sual) idisə:
+        if (type === "confirm") {
+            okBtn.style.display = "none";
+            confirmBtn.style.display = "inline-block";
+            cancelBtn.style.display = "inline-block";
+
+            // YENİLİK: Düymə yazıları kənardan gələn adlarla dəyişdirilir
+            confirmBtn.textContent = customConfirm;
+            cancelBtn.textContent = customCancel;
+
+            // "İndi al" və ya əsas təsdiq düyməsinə basıldıqda
+            confirmBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+
+            // "Sonra" və ya ləğv düyməsinə basıldıqda
+            cancelBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(false);
+            };
+        }
+        // Əgər növ "alert" (Sadəcə bildiriş) idisə:
+        else {
+            okBtn.style.display = "inline-block";
+            confirmBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+
+            // Tək düyməli mesajlar üçün mətni dəyişə bilərik
+            okBtn.textContent = customConfirm !== "Təsdiqlə" ? customConfirm : "OK";
+
+            okBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+        }
+    });
+}
+function openActionModal(contentHTML) {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay && modalContent) {
+        modalContent.innerHTML = contentHTML;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeActionModal() {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay) {
+        // Modalı gizlədirik
+        overlay.style.display = "none";
+        // Səhifənin sürüşməsini (scroll) geri qaytarırıq
+        document.body.style.overflow = "";
+    }
+
+    if (modalContent) {
+        // Növbəti dəfə açılanda köhnə elementlər görünməsin deyə içini təmizləyirik
+        modalContent.innerHTML = "";
+    }
+}
+
+// ---------------------- FENNLER MENU ----------------------
+if (window.location.pathname.endsWith("fennler-menu.html")) {
+    const container = document.getElementById("subjects-bg");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    const filterContainer = document.getElementById("filter-container");
+    const uniSelect = document.getElementById("university-select");
+    const facultySelect = document.getElementById("faculty-select");
+
+    const infoModal = document.getElementById("infoModal");
+    const infoModalText = document.getElementById("infoModalText");
+    const closeInfoModal = document.getElementById("closeInfoModal");
+    let allSubjects = []; // Bütün fənnləri burada saxlayacağıq
+    let globalSubjects = []; // Yalnız qlobal fənnlərin ID-lərini saxlamaq üçün (Info modalı üçün lazımdır)
+    let universitiesData = {};
+    let searchTimeout = null;
+    fetch("subjects.json")
+        .then(response => response.json())
+        .then(data => {
+            const global = data.subject_pool.global_subjects || [];
+            const special = data.subject_pool.special_subjects || [];
+            universitiesData = data.universities || {};
+
+            // Global fənnlərin ID-lərini yadda saxlayaq (Reverse lookup üçün)
+            globalSubjects = global.map(s => s.id);
+
+            allSubjects = [...global, ...special].sort((a, b) =>
+                a.title.localeCompare(b.title, 'az')
+            );
+            
+            // Əgər universitet datası varsa, filteri göstər və doldur
+            if (Object.keys(universitiesData).length > 0) {
+                filterContainer.style.display = "flex";
+                populateUniversities();
+            }
+
+            renderSubjects(allSubjects);
+        })
+        .catch(error => console.error("JSON Error:", error));
+    function populateUniversities() {
+        for (const uniKey in universitiesData) {
+            const option = document.createElement("option");
+            option.value = uniKey;
+            option.textContent = universitiesData[uniKey].name;
+            uniSelect.appendChild(option);
+        }
+    }
+
+    uniSelect.addEventListener("change", function() {
+        const selectedUni = this.value;
+        
+        // Fakültə select-ini sıfırla
+        facultySelect.innerHTML = '<option value="">-- Fakültə Seçin --</option>';
+        facultySelect.disabled = true;
+
+        if (selectedUni && universitiesData[selectedUni]) {
+            const faculties = universitiesData[selectedUni].faculties;
+            for (const facKey in faculties) {
+                const option = document.createElement("option");
+                option.value = facKey;
+                option.textContent = faculties[facKey].name;
+                facultySelect.appendChild(option);
+            }
+            facultySelect.disabled = false;
+        }
+
+        applyFilters(); // Universitet dəyişəndə filteri yenilə
+    });
+
+    facultySelect.addEventListener("change", applyFilters);
+
+    function applyFilters() {
+        const selectedUni = uniSelect.value;
+        const selectedFac = facultySelect.value;
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        let filtered = allSubjects;
+
+        // 1. Dropdown filteri
+        if (selectedUni && selectedFac) {
+            // Seçilmiş fakültənin icazə verilən fənn ID-lərini alırıq
+            const assignedIds = universitiesData[selectedUni].faculties[selectedFac].assigned_subjects || [];
+            
+            // Fənn siyahısını bu ID-lərə görə süzürük
+            filtered = allSubjects.filter(subject => assignedIds.includes(subject.id));
+        }
+
+        // 2. Axtarış filteri (Mövcud axtarış məntiqin)
+        if (searchTerm !== "") {
+            filtered = filtered.filter(subject => isMatch(subject.title, searchTerm));
+        }
+
+        renderSubjects(filtered);
+    }
+    function isMatch(text, query) {
+        text = text.toLowerCase();
+        query = query.toLowerCase();
+
+        // Əgər yazı fənnin daxilində varsa, dərhal tap
+        if (text.includes(query)) return true;
+
+        // Əgər axtarış sözü çox qısadırsa (3 hərfdən az), səhvə icazə vermə
+        if (query.length < 3) return false;
+
+        // Dinamik səhv limiti: Hər 4 hərfə 1 səhv icazə verək (maksimum 3)
+        const allowedMistakes = Math.min(3, Math.floor(query.length / 3));
+
+        let mistakes = 0;
+        let j = 0;
+        for (let i = 0; i < query.length; i++) {
+            if (j < text.length && query[i] === text[j]) {
+                j++;
+            } else {
+                mistakes++;
+            }
+        }
+
+        return mistakes <= allowedMistakes;
+    }
+    function renderSubjects(data) {
+        if (!data || data.length === 0) {
+            container.innerHTML = `<p style="width:100%; text-align:center; color:#666; grid-column: 1 / -1;">Heç bir nəticə tapılmadı.</p>`;
+            return;
+        }
+
+        container.innerHTML = data.map((subject, index) => {
+            
+            let facultyText = "";
+            
+            // 1. Qlobal fənn yoxlanışı
+            if (globalSubjects.includes(subject.id)) {
+                facultyText = "Ümumi (Bütün fakültələr)";
+            } else {
+                // 2. Canlı axtarış (İnfo düyməsində olduğu kimi)
+                let foundFaculties = [];
+                for (const uniKey in universitiesData) {
+                    const faculties = universitiesData[uniKey].faculties;
+                    for (const facKey in faculties) {
+                        const assigned = faculties[facKey].assigned_subjects || [];
+                        if (assigned.includes(subject.id)) {
+                            // Burada ancaq fakültə adlarını yığırıq (çünki kartın üstündə çox uzun yer tutmasın)
+                            foundFaculties.push(faculties[facKey].name);
+                        }
+                    }
+                }
+
+                // Əgər tapıldılarsa, onları vergüllə birləşdir
+                if (foundFaculties.length > 0) {
+                    facultyText = foundFaculties.map(name => {
+                        const cleanName = name
+                            .replace(/fakültəsi/gi, '') 
+                            .replace(/və/gi, '')
+                            .trim();
+                        return cleanName
+                            .split(/\s+/) // Birdən çox boşluq olsa belə bölür
+                            .filter(word => word.length > 0) // Boş sözləri təmizləyir
+                            .map(word => word.charAt(0).toUpperCase())
+                            .join('');
+                    }).join(", ");
+                } else {
+                    facultyText = "Fakültə təyin edilməyib";
+                }
+            }
+
+            return `
+                <div class="subject-card animate-card" 
+                    onclick="startQuiz('${subject.id}')"
+                    style="animation-delay: ${index * 0.05}s">
+                    
+                    <div class="info-btn" onclick="showSubjectInfo(event, '${subject.id}', '${subject.title}')">i</div>
+                    
+                    <div class="card-icon">${subject.icon}</div>
+                    <div class="card-title">${subject.title}</div>
+                    
+                    <!-- Fakültə ad(lar)ı kartın üstündə yazılır -->
+                    <div class="card-faculty">${facultyText}</div>
+                    
+                    <div class="card-meta">${subject.count} sual • Hər gün yenilənir</div>
+                    <div class="card-arrow">→</div>
+                </div>
+            `;
+        }).join("");
+    }
+    searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+
+        // Əgər köhnə taymer varsa, onu ləğv et
+        clearTimeout(searchTimeout);
+
+        // Yeni taymer başlat (istifadəçi 300ms susanda işləyəcək)
+        searchTimeout = setTimeout(() => {
+            if (searchTerm === "") {
+                renderSubjects(allSubjects);
+                return;
+            }
+
+            const filteredSubjects = allSubjects.filter(subject =>
+                isMatch(subject.title, searchTerm)
+            );
+
+            renderSubjects(filteredSubjects);
+        }, 300); // Gecikmə müddəti
+    });
+
+    // "Axtar" düyməsi üçün də (əlavə olaraq)
+    searchButton.addEventListener("click", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredSubjects = allSubjects.filter(subject =>
+            subject.title.toLowerCase().includes(searchTerm)
+        );
+        renderSubjects(filteredSubjects);
+    });
+
+    window.startQuiz = function (subjectId) {
+        window.location.href = `quiz.html?subject=${subjectId}`;
+    };  
+    window.showSubjectInfo = function(event, subjectId, subjectTitle) {
+        event.stopPropagation(); // Kartın kliklənməsinin (startQuiz) qarşısını alır
+
+        // 1. Qlobal fənn yoxlanışı
+        if (globalSubjects.includes(subjectId)) {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu qlobal fəndir və universitet/fakültədən asılı olmayaraq hər kəs üçün keçərlidir.`;
+            infoModal.style.display = "flex";
+            return;
+        }
+
+        // 2. Spesifik fənn yoxlanışı (Bütün aid olduğu yerləri tapmaq üçün)
+        let foundList = [];
+        
+        for (const uniKey in universitiesData) {
+            const faculties = universitiesData[uniKey].faculties;
+            for (const facKey in faculties) {
+                const assigned = faculties[facKey].assigned_subjects || [];
+                if (assigned.includes(subjectId)) {
+                    // Tapılan hər bir müəssisə və fakültəni siyahıya (Array) əlavə edirik
+                    foundList.push(`<li style="margin-bottom: 8px;"><span style="color:#1e90ff; font-weight:bold;">${universitiesData[uniKey].name}</span> - ${faculties[facKey].name}</li>`);
+                }
+            }
+        }
+
+        // Əgər siyahıda nəsə varsa, hamısını alt-alta (<ul><li>) çap edirik
+        if (foundList.length > 0) {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu fənn aşağıdakı müəssisə və fakültələrdə tədris olunur:<br>
+                <ul style="text-align: left; margin-top: 15px; padding-left: 20px; font-size: 14px;">
+                    ${foundList.join("")}
+                </ul>`;
+        } else {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu fənn hələ heç bir fakültəyə təyin edilməyib.`;
+        }
+
+        infoModal.style.display = "flex";
+    };
+
+    // Modalı bağlamaq üçün
+    closeInfoModal.addEventListener("click", () => {
+        infoModal.style.display = "none";
+    });
+
+    // Modaldan kənara klikləyəndə bağlansın
+    window.addEventListener("click", (e) => {
+        if (e.target === infoModal) {
+            infoModal.style.display = "none";
+        }
+    });
+
+    // --- GÜNDƏLİK LİMİT VƏ PREMİUM VİZUAL İDARƏETMƏSİ ---
+    (async () => {
+        try {
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            // 1. İstifadəçi sessiyasını əldə edirik
+            const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sessionStr) return; // Funksiya daxilində olduğu üçün burada return xəta vermir
+
+            const userData = JSON.parse(sessionStr).user;
+            const uId = userData.id;
+
+            // 2. Elementləri seçirik
+            const display = document.getElementById('limit-text');
+            const energyIcon = document.getElementById('energy-icon');
+
+            // 3. Premium yoxlanışı
+            const cachedBitis = localStorage.getItem('premiumBitis_' + uId);
+            const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+            if (isPremium) {
+                // Premium vizualları
+                if (energyIcon) energyIcon.src = "../images/premium-thunder.webp";
+                if (display) display.innerHTML = `<img src="../images/infinity.webp" alt="∞" style="width: 18px; vertical-align: middle;">`;
+
+                return; // Premiumdursa, aşağıdakı kodları icra etmə və funksiyadan çıx
+            }
+
+            // 4. Standart istifadəçi üçün bazadan limit məlumatını alırıq
+            const today = new Date().toISOString().split('T')[0];
+            const { data: stats } = await client
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', uId)
+                .maybeSingle();
+
+            const usedToday = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+            const totalLimit = 3;
+            const remainingLimit = Math.max(0, totalLimit - usedToday);
+
+            // 5. Standart vizualları göstəririk
+            if (display) display.innerText = remainingLimit;
+            if (energyIcon) energyIcon.src = "../images/thunder.webp";
+
+        } catch (err) {
+            console.error("Limit bölməsində xəta yarandı:", err.message);
+        }
+    })(); // Funksiya burada bağlanır
+}
+// ---------------------- STATISTICS PAGE ----------------------
+if (window.location.pathname.endsWith("statistics.html")) {
+
+    let myChart = null;
+
+    // Kliyenti hər dəfə təhlükəsiz şəkildə götürmək üçün köməkçi funksiya
+    const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
+
+    async function loadUserDashboard(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .eq('user_id', userId)
+            .maybeSingle();
+
+        if (error || !data) return;
+
+        document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+        document.getElementById('eloValue').innerText = data.elo_rating || 1000;
+        document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
+
+        const total = data.total_answered_questions || 0;
+        const correct = data.total_correct_answers || 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        document.getElementById('accuracyRate').innerText = `${percent}%`;
+
+        const minutes = Math.floor((data.total_time_spent || 0) / 60);
+        const seconds = (data.total_time_spent || 0) % 60;
+        document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    async function loadActivityChart(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        // 1. Bazar ertəsindən Bazara qədər olan etiketlər
+        const fixedLabels = ['B.e', 'Ç.a', 'Ç', 'C.a', 'C', 'Ş', 'B'];
+
+        // Bütün günlər üçün başlanğıc dəyəri 0 qoyuruq (0 xətti görünsün deyə)
+        let countsData = [0, 0, 0, 0, 0, 0, 0];
+
+        // 2. Bu həftənin Bazar ertəsinin tarixini tapırıq
+        const now = new Date();
+        // getDay(): 0=Bazar, 1=B.e... Bazar gününü 7 kimi qəbul edirik ki, geriyə hesablaya bilək
+        const currentDayOfWeek = now.getDay() === 0 ? 7 : now.getDay();
+
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - currentDayOfWeek + 1); // Bazar ertəsinə qayıdırıq
+
+        const startOfWeekStr = `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
+
+        // 3. Bazar ertəsindən sonrakı (bu həftəki) dataları çəkirik
+        const { data, error } = await client
+            .from('quiz_history')
+            .select('quiz_date, quiz_count')
+            .eq('user_id', userId)
+            .gte('quiz_date', startOfWeekStr);
+
+        if (error) {
+            console.error("Chart data error:", error);
+            return;
+        }
+
+        // 4. Əgər data varsa, onu sabit günlərə yerləşdiririk
+        if (data && data.length > 0) {
+            data.forEach(item => {
+                const parts = item.quiz_date.split('-');
+                const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+
+                // Həftənin hansı günüdür? (0=Bazar, 1=B.e)
+                let dayIndex = dateObj.getDay();
+                // JS-də Bazar(0) olduğu üçün onu 6 edirik, qalanları 1 çıxırıq (B.e(1) -> 0 olur)
+                dayIndex = (dayIndex === 0) ? 6 : dayIndex - 1;
+
+                // Həmin günün sayını massivə yazırıq
+                countsData[dayIndex] = item.quiz_count;
+            });
+        }
+        renderChart(fixedLabels, countsData);
+    }
+    async function loadLeaderboard(currentUserId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .order('elo_rating', { ascending: false })
+            .limit(10);
+
+        if (error || !data) return;
+
+        const tbody = document.getElementById('leaderboardBody');
+        if (!tbody) return;
+        tbody.innerHTML = '';
+
+        data.forEach((row, index) => {
+            const accuracy = row.total_answered_questions > 0
+                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
+                : 0;
+
+            const isMe = row.user_id === currentUserId;
+            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
+            // YENİLİK: Əgər bazada ad varsa onu, yoxdursa ID-ni göstər
+            const displayName = isMe ? `${nameToShow} (Siz)` : nameToShow;
+            tbody.innerHTML += `
+                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(30, 144, 255, 0.1);' : ''}">
+                    <td>${index + 1}</td>
+                    <td>${displayName}</td> 
+                    <td>${row.elo_rating || 1000}</td>
+                    <td>${accuracy}%</td>
+                </tr>
+            `;
+        });
+    }
+
+    function renderChart(labels, counts) {
+        const canvas = document.getElementById('weeklyActivityChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        if (typeof myChart !== 'undefined' && myChart) {
+            myChart.destroy();
+        }
+
+        // DÜZƏLİŞ: Dark Mode-u düzgün təyin edirik
+        const isDarkMode = document.body.classList.contains('dark-theme') || document.body.classList.contains('dark-mode');
+
+        // Tünd moddasa ağ yazılar, işıqlı moddasa tünd boz yazılar
+        const labelColor = isDarkMode ? '#ffffff' : '#333333';
+        // Arxadakı xətlərin rəngini də modlara uyğunlaşdırırıq
+        const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+        myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Quiz Sayı',
+                    data: counts,
+                    borderColor: '#36A2EB',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#36A2EB',
+                    pointHoverRadius: 6 // Üzərinə gəldikdə dairənin bir az böyüməsi üçün (opsional)
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Div-ə görə formalaşması üçün
+
+                // YENİ ƏLAVƏ EDİLƏN HİSSƏ:
+                interaction: {
+                    mode: 'index',
+                    intersect: false, // Mütləq kəsişmə tələbini ləğv edir
+                },
+
+                plugins: {
+                    legend: { display: false }
+                    // İstəyə görə hover olduqda şaquli bir xətt çəkmək üçün tooltip ayarlarını da burdan genişləndirə bilərsiniz
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: labelColor,
+                            stepSize: 1
+                        },
+                        grid: { color: gridColor } // Şəbəkə rəngini dinamik etdik
+                    },
+                    x: {
+                        ticks: {
+                            color: labelColor
+                        },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    }
+    async function handleChartFilterChange(userId) {
+        const filterSelect = document.getElementById('chart-filter-select');
+        const premiumOverlay = document.getElementById('premiumOverlay');
+        const canvas = document.getElementById('weeklyActivityChart');
+
+        if (!filterSelect) return;
+
+        // Sənin localStorage üzərindəki premium yoxlanışın
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        filterSelect.addEventListener('change', async (e) => {
+            const selectedValue = e.target.value;
+
+            if (selectedValue === 'all') {
+                if (!isPremium) {
+                    // Premium deyilsə: Bluru göstər
+                    canvas?.classList.add('blurred-chart');
+                    premiumOverlay?.classList.remove('hidden');
+                } else {
+                    // Premiumdursa: Bluru qaldır və məlumatları yüklə
+                    canvas?.classList.remove('blurred-chart');
+                    premiumOverlay?.classList.add('hidden');
+                    await loadAllTimeActivityChart(userId);
+                }
+            } else {
+                // Həftəlik seçim: Standart vəziyyət
+                canvas?.classList.remove('blurred-chart');
+                premiumOverlay?.classList.add('hidden');
+                await loadActivityChart(userId);
+            }
+        });
+    }
+    async function loadAllTimeActivityChart(userId) {
+        const client = window.globalSupabaseClient || window.supabaseClient;
+        if (!client) return;
+
+        try {
+            // 1. Məlumatları çəkirik
+            const [{ data: authData }, { data: historyData, error }] = await Promise.all([
+                client.auth.getUser(),
+                client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId)
+            ]);
+
+            if (error) throw error;
+            const user = authData?.user;
+            if (!user) return;
+
+            const startDate = new Date(user.created_at);
+            const endDate = new Date();
+            const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
+
+            const monthlyTotals = {};
+
+            // 2. Qrafik üçün ayları hazırlayırıq (Boş aylar 0 olaraq qalır)
+            let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+            while (tempDate <= endDate) {
+                const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
+                monthlyTotals[label] = 0;
+                tempDate.setMonth(tempDate.getMonth() + 1);
+            }
+
+            // 3. Tarixçəni hesablayırıq
+            if (historyData) {
+                historyData.forEach(item => {
+                    // UTC istifadə edərək vaxt zonası sürüşməsinin qarşısını alırıq
+                    const d = new Date(item.quiz_date);
+                    const monthIndex = d.getUTCMonth();
+                    const year = d.getUTCFullYear();
+                    const label = `${monthNames[monthIndex]} ${year}`;
+
+                    if (monthlyTotals[label] !== undefined) {
+                        monthlyTotals[label] += Number(item.quiz_count);
+                    }
+                });
+            }
+
+            // DEBUG: Konsolda yoxlayaq görək cəmi neçə tapdı
+            console.log("Aylıq hesablamalar:", monthlyTotals);
+            const totalInChart = Object.values(monthlyTotals).reduce((a, b) => a + b, 0);
+            console.log("Chart-dakı cəmi quiz sayı:", totalInChart);
+
+            // 4. Chart-ı render edirik
+            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals));
+
+        } catch (err) {
+            console.error("Aylıq statistika xətası:", err.message);
+        }
+    }
+    // ƏSAS İŞƏSALMA
+    setTimeout(async () => {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data: { user } } = await client.auth.getUser();
+        if (!user) {
+            window.location.href = "login.html";
+            return;
+        }
+
+        const currentUserId = user.id;
+
+        // Sənin mövcud yükləmələrin
+        loadUserDashboard(currentUserId);
+        loadActivityChart(currentUserId); // Default olaraq həftəlik yüklənir
+        loadLeaderboard(currentUserId);
+
+        // YENİ: Filtr dəyişikliyini dinləyən funksiyanı çağırırıq
+        handleChartFilterChange(currentUserId);
+
+    }, 100);
+}
+// ---------------------- QUIZ PAGE ----------------------
+if (window.location.pathname.endsWith("quiz.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const subjectId = urlParams.get('subject');
+        const currentSubjectId = urlParams.get('subject') || 'default';
+        if (!subjectId) {
+            console.error("No subject provided!");
+            return;
+        }
+        // ==========================================
+        // 1. AUTH VƏ GÜNDƏLİK LİMİT YOXLANIŞI
+        // ==========================================
+
+        // Sürətli olması üçün istifadəçi ID-sini birbaşa token-dən çəkirik
+        const sbSessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+        if (!sbSessionStr) {
+            const authHTML = `
+                <div style="text-align: center;">
+                    <h3 style="color: #1e90ff;">Giriş lazımdır</h3>
+                    <p>Sual işləmək üçün zəhmət olmasa hesabınıza daxil olun.</p>
+                </div>
+            `;
+
+            showMessage(authHTML, "alert", "Daxil ol").then(() => {
+                window.location.href = "login.html";
+            });
+
+            return;
+        }
+
+        const userId = JSON.parse(sbSessionStr).user.id;
+        const currentSessionId = Math.random().toString(36).substring(2, 15);
+        localStorage.setItem('active_session_id', currentSessionId);
+
+        async function syncSession() {
+            const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sbToken) return;
+
+            const uId = JSON.parse(sbToken).user.id;
+            const sId = localStorage.getItem('active_session_id');
+
+            // MÜHÜM: Update sorğusunda 'id' sütununa uyğunlaşırıq
+            const { data, error } = await supabaseClient
+                .from('user_stats')
+                .update({ "last_session_id": sId }) // Sütun adını dırnaqda yazmaq bəzən xətanın qarşısını alır
+                .match({ 'user_id': uId }); // .eq() yerinə .match() daha dəqiqdir
+
+            if (error) {
+                console.error("Supabase xətası:", error.message);
+            }
+        }
+
+        syncSession();
+
+        // Premium yoxlanışı
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        // --- LİMİT YOXLAMA MƏNTİQİ ---
+        if (!isPremium) {
+            // 1. Cari tarixi lokal vaxtla alırıq (YYYY-MM-DD formatında)
+            const now = new Date();
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+            let { data: stats } = await supabaseClient
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', userId)
+                .maybeSingle();
+
+            if (stats && stats.last_quiz_date === today && (Number(stats.daily_limit_count) || 0) >= 3) {
+                const limitHTML = `
+                    <div style="text-align: center;">
+                        <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
+                        <h3 style="margin-bottom: 10px; color: #1e90ff;">Gündəlik limit doldu!</h3>
+                        <p style="font-size: 15px; opacity: 0.9;">
+                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                             Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                       </p>
+                    </div>
+                `;
+
+                // showMessage funksiyasını gözləyirik (await)
+                const userChoice = await showMessage(limitHTML, "confirm", "İndi al", "Sonra");
+
+                // Seçimə görə yönləndirmə
+                if (userChoice) {
+                    window.location.href = "premium.html";
+                } else {
+                    window.location.href = "fennler-menu.html";
+                }
+                return; // Funksiyadan çıxırıq ki, quiz başlamasın
+            }
+        }
+        // --- AI YÜKLƏMƏ MƏNTİQİ ---
+        if (isPremium) {
+            const isMobile = window.innerWidth <= 768;
+            const fakeBtn = document.getElementById('fake-ai-btn');
+
+            if (isMobile) {
+                // --- 📱 MOBİL REJİM (Üzən Buton - Solda) ---
+                window.chtlConfig = { chatbotId: "3756376919" };
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "3756376919";
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+                if (fakeBtn) fakeBtn.style.display = 'flex';
+            } else {
+                // --- 💻 DESKTOP REJİM (Səhifə İçi / Inline - Sağda) ---
+                window.chtlConfig = { chatbotId: "9896744625", display: "page_inline" };
+
+                // Animasiyanın rəvan işləməsi üçün keçid effekti veririk
+                if (document.querySelector('.main-content')) {
+                    document.querySelector('.main-content').style.transition = "all 0.4s ease-in-out";
+                }
+
+                // 1. Inline bot üçün div yaradırıq (Əgər HTML-də yoxdursa)
+                let inlineContainer = document.getElementById('chtl-inline-bot');
+                if (!inlineContainer) {
+                    inlineContainer = document.createElement('div');
+                    inlineContainer.id = "chtl-inline-bot";
+                    inlineContainer.style.width = "30%";
+                    inlineContainer.style.height = "calc(100vh - 61px)"; // Öncəki turn təyin etdiyimiz hündürlük
+                    inlineContainer.style.position = "fixed";
+                    inlineContainer.style.right = "0";
+                    inlineContainer.style.top = "61px";
+                    inlineContainer.style.zIndex = "1000";
+                    inlineContainer.style.backgroundColor = "#fff";
+                    inlineContainer.style.boxShadow = "-2px 0px 10px rgba(0,0,0,0.1)";
+
+                    // Başlanğıcda bağlı (gizli) olsun ki, düyməyə basanda açılsın
+                    inlineContainer.style.display = "none";
+                    document.body.appendChild(inlineContainer);
+                }
+
+                // Buton ilə Açıb-Bağlama Məntiqi
+                const openAiBtn = document.getElementById('open-ai-btn');
+                if (openAiBtn) {
+                    openAiBtn.onclick = function () {
+                        let inlineContainer = document.getElementById('chtl-inline-bot');
+
+                        if (inlineContainer.style.display === "none") {
+                            // --- AI PƏNCƏRƏSİNİ AÇIRIQ ---
+                            inlineContainer.style.display = "block";
+                            document.querySelector('.main-content').style.width = "70%";
+                            document.querySelector('.main-content').style.maxWidth = "none";
+                            document.querySelector('.main-content').style.marginLeft = "0";
+                            document.querySelector('.main-background').style.justifyContent = "flex-start";
+                        } else {
+                            // --- AI PƏNCƏRƏSİNİ BAĞLAYIRIQ VƏ APARAT ANIMASIYALI MƏRKƏZƏ QAYIDIR ---
+                            inlineContainer.style.display = "none";
+                            document.querySelector('.main-content').style.width = "95%";
+                            document.querySelector('.main-content').style.maxWidth = "1200px";
+                            document.querySelector('.main-background').style.justifyContent = "center";
+                        }
+                    };
+                }
+
+                // 2. Skripti dinamik yükləyirik və data-display parametrini veririk
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "9896744625";
+                script.dataset.display = "page_inline";
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+
+                if (fakeBtn) fakeBtn.style.display = 'none';
+            }
+        } else {
+            const fakeBtn = document.getElementById('fake-ai-btn');
+            if (fakeBtn) fakeBtn.style.display = 'none';
+
+            const inlineContainer = document.getElementById('chtl-inline-bot');
+            if (inlineContainer) inlineContainer.style.display = 'none';
+
+            console.log("Qeyd: Pulsuz istifadəçilər üçün AI aktiv deyil.");
+        }
+        (async () => {
+            // 1. Supabase Müştərisini təyin edirik (ReferenceError-un qarşısını almaq üçün)
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            try {
+                // 2. İstifadəçi sessiyasını yoxlayırıq
+                const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                if (!sessionStr) return;
+                const uId = JSON.parse(sessionStr).user.id;
+
+                // 3. Bazadan stats məlumatını çəkirik (stats burada təyin olunur)
+                const today = new Date().toISOString().split('T')[0];
+                const { data: stats } = await client
+                    .from('user_stats')
+                    .select('daily_limit_count, last_quiz_date')
+                    .eq('user_id', uId)
+                    .maybeSingle();
+
+                // 4. Sənin istifadə etdiyin dəyişən məntiqi
+                let currentLimitInDb = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                // 5. Ekrana yazdırma
+                const display = document.getElementById('limit-text');
+                if (display) display.innerText = currentLimitInDb;
+
+            } catch (err) {
+                console.error("Limit göstərilərkən xəta:", err.message);
+            }
+        })();
+        // ==========================================
+        // 2. QUIZ MƏNTİQİ (Sizin köhnə kodunuz)
+        // ==========================================
+        // LocalStorage-dan cari fənnin səhvlərini gətirən köməkçi funksiya
+        function getWrongQuestions(subjectId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            return wrongData[subjectId] || [];
+        }
+
+        // Səhv cavab verəndə ID-ni əlavə edən funksiya
+        function addWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+
+            // Əgər bu fənn üçün hələ array yoxdursa, yarat
+            if (!wrongData[subjectId]) {
+                wrongData[subjectId] = [];
+            }
+
+            // Əgər bu ID artıq siyahıda yoxdursa, əlavə et
+            if (!wrongData[subjectId].includes(questionId)) {
+                wrongData[subjectId].push(questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+
+        // Düzgün cavab verəndə ID-ni siyahıdan silən funksiya
+        function removeWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+
+            if (wrongData[subjectId]) {
+                // ID-ni tap və array-dən çıxar
+                wrongData[subjectId] = wrongData[subjectId].filter(id => id !== questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+        fetch("subjects.json")
+            .then(res => res.json())
+            .then(data => {
+                // Hər iki massivi (global və special) bir yerə toplayırıq
+                const allSubjects = [
+                    ...(data.subject_pool.global_subjects || []),
+                    ...(data.subject_pool.special_subjects || [])
+                ];
+
+                const subject = allSubjects.find(s => s.id === subjectId);
+
+                if (subject) {
+                    const titleEl = document.querySelector(".fenn-id h1");
+                    if (titleEl) titleEl.textContent = subject.title;
+                } else {
+                    console.warn("Fənn tapılmadı: " + subjectId);
+                }
+            })
+            .catch(err => console.error("Subject fetch error:", err));
+        // Köhnə fetch blokunu sil və bunu əlavə et:
+        async function loadQuestions() {
+            try {
+                // Supabase-dən subjectId-yə uyğun cədvəldən bütün sətirləri çəkirik
+                const { data: allQuestions, error } = await supabaseClient
+                    .from(subjectId) // Cədvəl adı fənnin ID-si ilə eyni olmalıdır
+                    .select('*');
+
+                if (error) throw error;
+
+                if (!allQuestions || allQuestions.length === 0) {
+                    console.error("Suallar tapılmadı!");
+                    return;
+                }
+
+                // BURADA SUAL SAYINI 10 EDİRİK! (və ya test üçün slice(0, 2))
+                const questions = shuffleArray(allQuestions).slice(0, 10);
+
+                let isQuizFinished = false;
+                let currentIndex = 0;
+                let score = 0;
+                let timerInterval;
+                let secondsElapsed = 0;
+                let userAnswers = {};
+
+                const questionEl = document.getElementById("question-text");
+                const optionsContainer = document.getElementById("options-container");
+                const counterEl = document.getElementById("question-counter");
+                const progressEl = document.getElementById("progress-fill");
+                const prevBtn = document.getElementById("evvelki-btn");
+                const nextBtn = document.getElementById("novbeti-btn");
+
+                if (prevBtn) prevBtn.onclick = () => navigate(-1);
+                if (nextBtn) nextBtn.onclick = () => navigate(1);
+                function formatTime(seconds) {
+                    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+                    const s = (seconds % 60).toString().padStart(2, '0');
+                    return `${m}:${s}`;
+                }
+
+                function startTimer() {
+                    if (timerInterval) clearInterval(timerInterval);
+                    secondsElapsed = 0;
+                    const timerEl = document.getElementById("quiz-timer");
+                    if (timerEl) timerEl.textContent = "00:00";
+
+                    timerInterval = setInterval(() => {
+                        secondsElapsed++;
+                        if (timerEl) timerEl.textContent = formatTime(secondsElapsed);
+                    }, 1000);
+                }
+                function checkMultiLogin() {
+                    const checkInterval = setInterval(async () => {
+                        const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                        if (!sbToken) return;
+                        const uId = JSON.parse(sbToken).user.id;
+
+                        const { data, error } = await supabaseClient
+                            .from('user_stats')
+                            .select('last_session_id')
+                            .match({ 'user_id': uId })
+                            .single();
+                        if (data && data.last_session_id !== localStorage.getItem('active_session_id')) {
+                            clearInterval(checkInterval);
+                            const limitHTML = `
+                                <div style="text-align: center;">
+                                    <img src="../images/matrix-looking.webp" alt="Alert" style="width: 200px; margin-bottom: 15px;">
+                                    <h3 style="margin-bottom: 10px; color: #1e90ff;">Hesabınıza başqa cihazdan giriş edilib. Quiz dayandırıldı!</h3>
+                                    <p style="font-size: 15px; opacity: 0.9;">
+                                    Hesabınızın qorunması üçün şifrənizi dərhal yeniləməyiniz tövsiyə olunur.
+                                    Bu halın təkrarlanması platforma qaydalarının manipulyasiyası kimi qiymətləndiriləcək. Bu zaman hesabınız avtomatik olaraq 'Yüksək Risk' kateqoriyasına keçəcək.
+                                </p>
+                                </div>
+                            `;
+
+                            // showMessage funksiyasını gözləyirik (await)
+                            await showMessage(limitHTML, "Sonra");
+                            window.location.href = "fennler-menu.html"; // İstifadəçini ana səhiffəyə at
+                        }
+                    }, 10000);
+                }
+
+                // Funksiyanı başlat
+                checkMultiLogin();
+                function renderQuestion(index) {
+                    const q = questions[index];
+                    if (!q) return;
+
+                    // 1. Sual mətnini innerHTML-ə çevirdik
+                    if (questionEl) questionEl.innerHTML = q.question;
+                    
+                    if (counterEl) counterEl.textContent = `${index + 1} / ${questions.length}`;
+
+                    if (progressEl) {
+                        const progressPercent = ((index) / questions.length) * 100;
+                        progressEl.style.width = `${progressPercent}%`;
+                    }
+
+                    if (optionsContainer) {
+                        const currentOptions = {
+                            "A": q.options__A,
+                            "B": q.options__B,
+                            "C": q.options__C,
+                            "D": q.options__D,
+                            "E": q.options__E
+                        };
+
+                        // 2. Variantların içindəki mətni də innerHTML ilə dinamik yaratdıq
+                        optionsContainer.innerHTML = Object.entries(currentOptions)
+                            .filter(([key, text]) => text !== null && text !== undefined && text !== "")
+                            .map(([key, text]) =>
+                                // Buradakı mətni `key) ${text}` şəklində qoyuruq ki, 
+                                // text içindəki <u> və ya digər teqlər render olunsun
+                                `<button class="option-btn" data-key="${key}">${key}) <span>${text}</span></button>`
+                            ).join("");
+                    }
+
+                    const optionBtns = document.querySelectorAll(".option-btn");
+
+                    if (userAnswers[index]) {
+                        const savedAnswer = userAnswers[index];
+                        const correctAnswer = q.correct_answer;
+
+                        optionsContainer.classList.add("disabled");
+
+                        optionBtns.forEach(btn => {
+                            const key = btn.dataset.key;
+                            if (key === savedAnswer) {
+                                btn.classList.add(key === correctAnswer ? "correct" : "wrong");
+                            }
+                            if (key === correctAnswer) {
+                                btn.classList.add("correct");
+                            }
+                        });
+                        if (nextBtn) nextBtn.disabled = false;
+                    } else {
+                        optionsContainer.classList.remove("disabled");
+                        if (nextBtn) nextBtn.disabled = true;
+
+                        optionBtns.forEach(btn => {
+                            btn.onclick = () => handleOptionClick(btn, q, index);
+                        });
+                    }
+
+                    if (prevBtn) prevBtn.disabled = (index === 0);
+                    if (nextBtn) {
+                        nextBtn.textContent = (index === questions.length - 1) ? "Nəticə" : "Növbəti";
+                    }
+                }
+                function openChatling() {
+                    if (window.chatling && typeof window.chatling.open === 'function') {
+                        window.chatling.open();
+                    } else {
+                        // Əgər API hələ hazır deyilsə, gizli orijinal düyməni klikləyirik
+                        const originalBtn = document.getElementById('chatling-embed-trigger');
+                        if (originalBtn) {
+                            // Chatling butonu daxilindəki əsl kliklənə bilən elementi tapırıq
+                            const realClickable = originalBtn.querySelector('button') || originalBtn;
+                            realClickable.click();
+                        }
+                    }
+                }
+                // Qısa səs effektləri (SFX) üçün obyektlər
+                const sfxCorrect = new Audio(window.location.origin + '/sounds/correct.mp3');
+                const sfxWrong = new Audio(window.location.origin + '/sounds/wrong.mp3');
+                async function handleOptionClick(btn, questionData, index) {
+                    const selected = btn.dataset.key;
+                    userAnswers[index] = selected;
+
+                    const questionId = questionData.id;
+                    const correctAnswer = questionData.correct_answer;
+
+                    // YENİLİK: Butonları tək-tək bağlamırıq, bütöv qutunu dondururuq
+                    optionsContainer.classList.add("disabled");
+
+                    if (selected === correctAnswer) {
+                        // 🔊 Doğru cavab səsini anında başladırıq
+                        sfxCorrect.currentTime = 0;
+                        sfxCorrect.play().catch(err => console.log("Səs başladılarkən xəta baş verdi:", err));
+
+                        btn.classList.add("correct");
+                        if (nextBtn) nextBtn.disabled = false;
+                        score++;
+                        removeWrongQuestion(currentSubjectId, questionId);
+                    } else {
+                        // 🔊 Yanlış cavab səsini anında başladırıq
+                        sfxWrong.currentTime = 0;
+                        sfxWrong.play().catch(err => console.log("Səs başladılarkən xəta baş verdi:", err));
+
+                        btn.classList.add("wrong");
+                        if (nextBtn) nextBtn.disabled = false;
+                        addWrongQuestion(currentSubjectId, questionId);
+
+                        setTimeout(() => {
+                            const correctBtn = optionsContainer.querySelector(`[data-key="${correctAnswer}"]`);
+                            if (correctBtn) correctBtn.classList.add("correct");
+                        }, 500);
+                    }
+
+                    // Daxili checkAnswer funksiyan (toxunulmadı, olduğu kimi qalır)
+                    function checkAnswer(selectedOptionButton, selectedAnswerKey) {
+                        const correctAnswerKey = currentQuestion.correct_answer;
+                        const questionId = currentQuestion.id;
+                        const allOptions = document.querySelectorAll(".option-btn");
+
+                        allOptions.forEach(btn => btn.disabled = true);
+
+                        if (selectedAnswerKey === correctAnswerKey) {
+                            selectedOptionButton.style.backgroundColor = "#4CAF50"; 
+                            selectedOptionButton.style.color = "white";
+                            removeWrongQuestion(currentSubjectId, questionId);
+                        } else {
+                            selectedOptionButton.style.backgroundColor = "#F44336"; 
+                            selectedOptionButton.style.color = "white";
+
+                            allOptions.forEach(btn => {
+                                if (btn.getAttribute("data-key") === correctAnswerKey) {
+                                    btn.style.backgroundColor = "#4CAF50";
+                                    btn.style.color = "white";
+                                }
+                            });
+
+                            addWrongQuestion(currentSubjectId, questionId);
+                        }
+                    }
+
+                    const container = document.getElementById("options-container");
+                    if (container) container.classList.add("disabled");
+                    if (nextBtn) nextBtn.disabled = false;
+                }
+
+                function navigate(direction) {
+                    const newIndex = currentIndex + direction;
+
+                    if (newIndex >= 0 && newIndex < questions.length) {
+                        currentIndex = newIndex;
+                        renderQuestion(currentIndex);
+                    } else if (newIndex >= questions.length) {
+                        showResult();
+                    }
+                }
+                async function updatePlayerStats(uId, currentScore, currentSeconds, totalQuestions, correctAnswers) {
+                    try {
+                        const client = window.globalSupabaseClient || window.supabaseClient;
+
+                        // 1. İSTİFADƏÇİ MƏLUMATLARINI ALIRIQ
+                        const { data: { user } } = await client.auth.getUser();
+                        const fullName = user?.user_metadata?.full_name || "Adsız İstifadəçi";
+
+                        // 2. TARİXLƏRİN HESABLANMASI
+                        const now = new Date();
+                        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+                        const yesterday = new Date(now);
+                        yesterday.setDate(now.getDate() - 1);
+                        const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
+
+                        // 3. MÖVCUD STATİSTİKANIN ÇƏKİLMƏSİ (Rating Deviation daxil olmaqla)
+                        let { data: stats, error: fetchErr } = await client
+                            .from('user_stats')
+                            .select('*')
+                            .eq('user_id', uId)
+                            .maybeSingle();
+
+                        if (fetchErr) throw fetchErr;
+
+                        let lastDateInDb = stats ? stats.last_quiz_date : null;
+                        let currentStreakInDb = stats ? (Number(stats.current_streak) || 0) : 0;
+                        let currentLimitInDb = stats ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                        let finalStreak = 0;
+                        let finalLimit = 1;
+
+                        // --- STREAK VƏ LİMİT MƏNTİQİ ---
+                        if (!stats) {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        } else if (lastDateInDb === todayStr) {
+                            finalStreak = currentStreakInDb;
+                            finalLimit = currentLimitInDb + 1;
+                        } else if (lastDateInDb === yesterdayStr) {
+                            finalStreak = currentStreakInDb + 1;
+                            finalLimit = 1;
+                        } else {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        }
+
+                        // --- YENİ ELO (GLICKO) HESABLAMA MƏNTİQİ ---
+
+                        function calculateNewRating(currentElo, currentRD, percentage) {
+                            // 1. Sabitlər
+                            const q = Math.log(10) / 400;
+                            const quizDifficulty = 1000; // Quiz-in baza çətinliyi
+
+                            // 2. Quiz nəticəsini 0.0 - 1.0 arasına gətiririk (Actual Score)
+                            const s = percentage / 100;
+
+                            // 3. Ehtimal olunan nəticəni hesablayırıq (Expected Score)
+                            // Düstur: E = 1 / (1 + 10^((difficulty - elo) / 400))
+                            const e = 1 / (1 + Math.pow(10, (quizDifficulty - currentElo) / 400));
+
+                            // 4. RD-nin təsiri ilə d^2 dəyərini tapırıq
+                            const dSquared = 1 / (Math.pow(q, 2) * (e * (1 - e)));
+
+                            // 5. Yeni Elo (Rating)
+                            // K-faktoru yerinə dinamik bir çarpan istifadə olunur
+                            const multiplier = q / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared));
+                            const newElo = currentElo + multiplier * (s - e);
+
+                            let newRD = Math.sqrt(1 / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared)));
+
+                            // RD limitləri: Nə qədər usta olsa da, şübhə 30-dan aşağı düşmür
+                            newRD = Math.max(30, Math.min(350, newRD));
+
+                            return {
+                                rating: Math.round(newElo),
+                                rd: Math.round(newRD),
+                                diff: Math.round(newElo - currentElo)
+                            };
+                        }
+
+                        const percentage = (correctAnswers / totalQuestions) * 100;
+                        const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
+                        const currentRD = stats ? (Number(stats.rating_deviation) || 350) : 350;
+
+                        // Hesablamanı icra edirik
+                        const eloResult = calculateNewRating(currentElo, currentRD, percentage);
+
+                        // 4. USER_STATS YENİLƏMƏSİ (Upsert)
+                        const updatePayload = {
+                            display_name: fullName,
+                            quizzes_completed: (stats ? (Number(stats.quizzes_completed) || 0) : 0) + 1,
+                            total_time_spent: (stats ? (Number(stats.total_time_spent) || 0) : 0) + currentSeconds,
+                            total_answered_questions: (stats ? (Number(stats.total_answered_questions) || 0) : 0) + totalQuestions,
+                            total_correct_answers: (stats ? (Number(stats.total_correct_answers) || 0) : 0) + correctAnswers,
+                            total_score: (stats ? (Number(stats.total_score) || 0) : 0) + currentScore,
+
+                            // YENİ MƏLUMATLAR
+                            elo_rating: eloResult.rating,
+                            rating_deviation: eloResult.rd,
+
+                            current_streak: finalStreak,
+                            last_quiz_date: todayStr,
+                            daily_limit_count: finalLimit,
+                            updated_at: new Date().toISOString()
+                        };
+
+                        const { error: updErr } = await client
+                            .from('user_stats')
+                            .upsert({ user_id: uId, ...updatePayload });
+
+                        if (updErr) throw updErr;
+
+                        // 5. QUIZ_HISTORY (Olduğu kimi qalır)
+                        const { data: historyData } = await client
+                            .from('quiz_history')
+                            .select('quiz_count')
+                            .eq('user_id', uId)
+                            .eq('quiz_date', todayStr)
+                            .maybeSingle();
+
+                        const newHistoryCount = (historyData ? (Number(historyData.quiz_count) || 0) : 0) + 1;
+
+                        await client.from('quiz_history').upsert({
+                            user_id: uId,
+                            quiz_date: todayStr,
+                            quiz_count: newHistoryCount
+                        }, { onConflict: 'user_id, quiz_date' });
+
+                        // NƏTİCƏNİ QAYTARIRIQ (UI üçün eloDifference və newElo)
+                        return {
+                            diff: eloResult.diff,
+                            newElo: eloResult.rating
+                        };
+
+                    } catch (err) {
+                        console.error("Gözlənilməz xəta:", err.message);
+                        return null;
+                    }
+                }
+                async function showResult() {
+                    clearInterval(timerInterval);
+                    
+                    if (isQuizFinished) return;
+                    isQuizFinished = true;
+
+                    // ==========================================
+                    // 1. ADDIMS: UI-I DƏRHAL DƏYİŞDİRİK (DONMANI QABAQLAMAQ ÜÇÜN)
+                    // ==========================================
+                    const topPart = document.querySelector(".top-part");
+                    const sualWord = document.querySelector(".sual-word");
+                    const quizButtons = document.querySelector(".quiz-buttons-bg");
+                    const sualTextBg = document.querySelector(".sual-text-bg");
+                    const exitBg = document.querySelector(".exit-bg a");
+
+                    if (topPart) topPart.style.display = "none";
+                    if (sualWord) sualWord.style.display = "none";
+                    if (quizButtons) quizButtons.style.display = "none";
+                    if (sualTextBg) sualTextBg.style.display = "none";
+                    if (exitBg) exitBg.style.display = "none";
+
+                    const headerTitle = document.querySelector(".fenn-id h1");
+                    let subjectTitle = "";
+                    if (headerTitle) {
+                        subjectTitle = headerTitle.textContent;
+                        headerTitle.style.display = "none";
+                    }
+
+                    // Seçimlər qutusunun içinə dərhal yumşaq animasiyalı yüklənmə ekranı qoyuruq
+                    optionsContainer.innerHTML = `
+                        <div class="loader-container sfx-fade-in">
+                            <div class="quiz-spinner"></div>
+                            <p class="loader-text">Nəticələriniz yoxlanılır və Elo reytinqiniz hesablanır...</p>
+                        </div>
+                    `;
+                    optionsContainer.classList.remove("disabled");
+                    
+                    // ==========================================
+                    // 2. ADDIM: ARXA FONDA ASİNXRON SORĞUNUN GÖNDƏRİLMƏSİ
+                    // ==========================================
+                    let eloData = { diff: 0, newElo: 1000 }; // Default dəyərlər
+                    
+                    if (userId) {
+                        try {
+                            // UI artıq dəyişib və loader fırlanır, ona görə bu gözləmə istifadəçini yorruyacaq
+                            const result = await updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
+                            if (result) eloData = result;
+                        } catch (error) {
+                            console.error("Statistika yenilənərkən xəta baş verdi:", error);
+                        }
+                    }
+
+                    // ==========================================
+                    // 3. ADDIM: REYTİNQ HESABLANDIQDAN SONRA SƏS VƏ NƏTİCƏ
+                    // ==========================================
+                    const finalTime = formatTime(secondsElapsed);
+                    let eloStatusClass = "elo-neutral";
+                    let eloSign = eloData.diff > 0 ? "+" : "";
+
+                    if (eloData.diff > 0) {
+                        eloStatusClass = "elo-up";
+                    } else if (eloData.diff < 0) {
+                        eloStatusClass = "elo-down";
+                    }
+
+                    const percentage = Math.round((score / questions.length) * 100);
+                    const wrongAnswers = questions.length - score;
+                    const eloHTML = `${eloData.newElo} <span class="${eloStatusClass}" style="font-size: 0.9em; margin-left: 5px;">${eloSign}${eloData.diff}</span>`;
+
+                    // Loader-i silib əvəzinə yekun nəticəni yumşaq fade-in animasiyası ilə daxil edirik
+                    optionsContainer.innerHTML = `
+                        <div class="result-container sfx-fade-in">
+                            <div class="circle-progress-container">
+                                <div class="circle-progress" style="--degrees: ${percentage * 3.6}deg;">
+                                    <span class="progress-value">${percentage}%</span>
+                                </div>
+                            </div>
+
+                            <h1 class="result-title">Yekun nəticə: ${score}/${questions.length}</h1>
+                            <p class="result-subject">${subjectTitle}</p>
+
+                            <div class="stats-card">
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-blue">●</span> Düzgün cavablar</span>
+                                    <span class="stat-count">${score}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-red">●</span> Səhv cavablar</span>
+                                    <span class="stat-count">${wrongAnswers}</span>
+                                </div>
+                                
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-grey">●</span> Sərf olunan vaxt</span>
+                                    <span class="stat-count">${finalTime}</span>
+                                </div>
+
+                                <div class="stat-row last-row">
+                                    <span class="stat-label"><span class="dot-green">●</span> Keçmə faizi</span>
+                                    <span class="stat-count green-text">${percentage}%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-yellow">●</span> Reytinq (Elo)</span>
+                                    <span class="stat-count" style="color: inherit; font-weight: bold;">${eloHTML}</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions">
+                                <a href="fennler-menu.html" class="link-blue">Əsas səhifə</a>
+                                <button class="btn-blue" onclick="window.location.reload()">Yenidən sına</button>
+                            </div>
+                        </div>
+                    `;
+                }
+                // ============================================================================
+                // --- KƏSİNTİSİZ VƏ RƏVAN FOKUS SƏSLƏRİ (FADE-IN / FADE-OUT WEB AUDIO API) ---
+                // ============================================================================
+                const soundToggleBtn = document.getElementById('sound-toggle-btn');
+                const customNoiseMenu = document.getElementById('custom-noise-menu');
+
+                // Səs yollarını brauzerin cari domain ünvanına bağlayırıq (404 xətası almaması üçün)
+                const noiseSources = {
+                    white: window.location.origin + '/sounds/white-noise.mp3',
+                    brown: window.location.origin + '/sounds/brown-noise.mp3',
+                    rain: window.location.origin + '/sounds/rain.mp3'
+                };
+
+                let audioCtx = null;
+                let audioBuffer = null;
+                let audioSourceNode = null;
+                let gainNode = null;        // Səsin rəvan azalıb-çoxalmasını idarə edən modul
+                let isAudioPlaying = false; // Səsin durumunu dəqiq izləmək üçün flag
+
+                // Səsi rəvan şəkildə azaldaraq dayandıran funksiya (Fade-out)
+                function stopCurrentNoise() {
+                    if (audioSourceNode && gainNode && audioCtx) {
+                        try {
+                            const currentTime = audioCtx.currentTime;
+                            
+                            // 0.8 saniyə ərzində səsi cari səviyyədən 0-a qədər rəvan azaldırıq
+                            gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
+                            gainNode.gain.linearRampToValueAtTime(0, currentTime + 0.8);
+                            
+                            // Səs tam batdıqdan sonra (0.8 saniyə sonra) oxutmanı tam dayandırırıq
+                            const oldSource = audioSourceNode;
+                            const oldGain = gainNode;
+                            setTimeout(() => {
+                                try {
+                                    oldSource.stop();
+                                    oldSource.disconnect();
+                                    oldGain.disconnect();
+                                } catch (e) { /* Artıq dayandırılıb */ }
+                            }, 850);
+
+                        } catch (e) {
+                            console.error("Səs dayandırılarkən xəta:", e);
+                        }
+                    }
+                    
+                    // Node və statusları dərhal sıfırlayırıq ki, istifadəçi yeni səs seçə bilsin
+                    audioSourceNode = null;
+                    gainNode = null;
+                    isAudioPlaying = false;
+                }
+
+                // Səsi yükləyən və rəvan şəkildə başladan funksiya (Fade-in)
+                async function playNoise(url) {
+                    // Əgər arxa fonda səs varsa, öncə onu rəvan dayandırırıq
+                    stopCurrentNoise(); 
+
+                    if (!audioCtx) {
+                        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    }
+
+                    if (audioCtx.state === 'suspended') {
+                        await audioCtx.resume();
+                    }
+
+                    try {
+                        const response = await fetch(url);
+                        const arrayBuffer = await response.arrayBuffer();
+                        audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+
+                        // 1. Səs mənbəyini yaradırıq
+                        audioSourceNode = audioCtx.createBufferSource();
+                        audioSourceNode.buffer = audioBuffer;
+                        audioSourceNode.loop = true; // Kəsintisiz dövr etsin
+
+                        // 2. Səs səviyyəsi (Gain) tənzimləyicisini yaradırıq
+                        gainNode = audioCtx.createGain();
+                        
+                        // Səsi sıfır (tam səssiz) səviyyəsindən başladırıq
+                        gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+
+                        // 3. Bağlantıları qururuq: Mənbə -> Gain Modulu -> Səs Kartı
+                        audioSourceNode.connect(gainNode);
+                        gainNode.connect(audioCtx.destination);
+
+                        // Səsi başladırıq
+                        audioSourceNode.start(0);
+                        isAudioPlaying = true;
+
+                        // 🚀 FADE-IN EFFECT: 1 saniyə ərzində səsi 0-dan 1-ə (normal səviyyəyə) qaldırırıq
+                        gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 1.0);
+
+                    } catch (err) {
+                        console.error("Web Audio xətası:", err);
+                        isAudioPlaying = false;
+                    }
+                }
+
+                // --- KLİK HADİSƏLƏRİ VƏ İNTERFEYS İDARƏETMƏSİ ---
+                if (soundToggleBtn && customNoiseMenu) {
+                    soundToggleBtn.onclick = function(e) {
+                        e.stopPropagation(); 
+                        const btnImg = soundToggleBtn.querySelector('img');
+
+                        // 1. Əgər səs aktivdirsə, onu dərhal rəvan SÖNDÜRÜRÜK
+                        if (isAudioPlaying) {
+                            stopCurrentNoise();
+                            
+                            if (btnImg) btnImg.src = "../images/audio-off.png";
+                            soundToggleBtn.classList.remove('sound-active');
+                        } 
+
+                        // 2. Səsin olub-olmamasından asılı olmayaraq, hər iki halda menyunu AÇIRIQ/BAĞLAYIRIQ
+                        if (customNoiseMenu.style.display === "none" || customNoiseMenu.style.display === "") {
+                            customNoiseMenu.style.display = "block";
+                        } else {
+                            customNoiseMenu.style.display = "none";
+                        }
+                    };
+
+                    // Menyu daxilindəki fərqli səslərə kliklədikdə
+                    const options = customNoiseMenu.querySelectorAll('.noise-option');
+                    options.forEach(option => {
+                        option.onclick = async function(e) {
+                            e.stopPropagation();
+                            const selectedValue = this.getAttribute('data-value');
+                            const btnImg = soundToggleBtn.querySelector('img');
+                            
+                            if (selectedValue !== "none" && noiseSources[selectedValue]) {
+                                // Seçilən kəsintisiz səs paketini rəvan başladırıq
+                                await playNoise(noiseSources[selectedValue]);
+                                
+                                if (btnImg) btnImg.src = "../images/audio-on.png";
+                                soundToggleBtn.classList.add('sound-active');
+                            } else {
+                                // Siyahıdan "Söndür" seçilərsə
+                                stopCurrentNoise();
+                                if (btnImg) btnImg.src = "../images/audio-off.png";
+                                soundToggleBtn.classList.remove('sound-active');
+                            }
+
+                            customNoiseMenu.style.display = "none"; // Seçimdən sonra menyunu gizlət
+                        };
+                    });
+
+                    // Səhifədə boş bir yerə kliklədikdə açıq olan menyunu bağla
+                    document.addEventListener('click', function() {
+                        customNoiseMenu.style.display = "none";
+                    });
+                }
+                // ==========================================
+                // SUALI REPORT ETMƏK (ŞİKAYƏT) FUNKSİYASI
+                // ==========================================
+                window.openReportFrame = function () {
+                    const currentQuestionText = document.getElementById("question-text").innerText;
+
+                    const reportHTML = `
+                        <h2>Sualı Şikayət Et</h2>
+                        <div>
+                            <span class="report-label">Problemli sual:</span>
+                            <div class="reported-question-box">${currentQuestionText}</div>
+                        </div>
+                        <div>
+                            <span class="report-label">Problemin təsviri:</span>
+                            <textarea id="reportReasonText" class="report-textarea" placeholder="Sualda hansı səhvi və ya problemi gördüyünüzü ətraflı yazın..."></textarea>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                            <button class="btn-continue" onclick="submitReport()">Göndər</button>
+                        </div>
+                    `;
+                    openActionModal(reportHTML);
+                };
+
+                window.submitReport = async function () {
+                    const reason = document.getElementById("reportReasonText").value.trim();
+                    if (!reason) {
+                        showMessage("Zəhmət olmasa problemin nə olduğunu qeyd edin!");
+                        return;
+                    }
+
+                    try {
+                        // 1. Giriş etmiş istifadəçinin emailini alırıq
+                        const { data: { user } } = await supabaseClient.auth.getUser();
+                        const userEmail = user ? user.email : "Anonim";
+
+                        // 2. Hazırda ekranda görünən sualın mətni
+                        const currentQuestionText = document.getElementById("question-text").innerText;
+
+                        // 3. Fənnin adını DOM-dan oxuyuruq
+                        const titleEl = document.querySelector(".fenn-id h1");
+                        const fennAdi = titleEl ? titleEl.innerText.trim() : "Bilinməyən Fənn";
+
+                        // 4. Supabase-ə məlumatı göndəririk
+                        const { error: reportError } = await supabaseClient
+                            .from('reported_questions')
+                            .insert([
+                                {
+                                    email: userEmail,
+                                    sual: currentQuestionText,
+                                    comment: reason,
+                                    fenn_adi: fennAdi // Yeni sütuna fənnin adını yazırıq
+                                }
+                            ]);
+
+                        if (reportError) throw reportError;
+
+                        closeActionModal();
+                        showMessage("Şikayətiniz uğurla göndərildi. Təşəkkür edirik!");
+
+                    } catch (err) {
+                        console.error("Şikayət göndərilərkən xəta baş verdi:", err);
+                        showMessage("Xəta baş verdi! Şikayət göndərilə bilmədi.");
+                    }
+                };
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+
+            } catch (err) {
+                console.error("Supabase fetch error:", err.message);
+            }
+        }
+
+        // Funksiyanı çağırırıq
+        loadQuestions();
+    });
+
+    function shuffleArray(array) {
+        return array
+            .map(a => [Math.random(), a])
+            .sort((a, b) => a[0] - b[0])
+            .map(a => a[1]);
+    }
+}
+// ---------------------- PROFILE PAGE ----------------------
+if (window.location.pathname.includes("profile.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        // 1. İstifadəçi məlumatlarını Supabase-dən çəkirik
+        const { data: { user }, error } = await supabaseClient.auth.getUser();
+
+        if (error || !user) {
+            // Əgər istifadəçi giriş etməyibsə, login səhifəsinə atırıq
+            window.location.href = "login.html";
+            return;
+        }
+
+        // 2. HTML-dəki inputları tapırıq və dəyərləri içinə yazırıq
+        const usernameInput = document.getElementById('username');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const createdAtText = document.getElementById('createdat');
+
+        if (usernameInput) usernameInput.value = user.user_metadata?.full_name || "";
+        if (emailInput) emailInput.value = user.email || "";
+        if (passwordInput) passwordInput.value = "********"; // Şifrə gizli qalmalıdır
+        if (createdAtText && user.created_at) {
+            const createdDate = new Date(user.created_at);
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            createdAtText.textContent = createdDate.toLocaleDateString('az-AZ', options);
+        }
+        // ==========================================
+        // 3. ABUNƏLİK YOXLANIŞI VƏ EKRANA YAZDIRILMASI
+        // ==========================================
+        const abunelikBg = document.querySelector('.abunelik-bg');
+        const premiumBg = document.querySelector('.premium-abunelik-bg');
+        const premiumText = document.querySelector('#premium-text p');
+        const bitmeTarixi = document.getElementById('bitme-tarixi');
+
+        const { data: abuneData, error: abuneError } = await supabaseClient
+            .from('abunelikler')
+            .select('*')
+            .eq('user_id', user.id)
+            .maybeSingle(); // Həmin istifadəçinin sətirini tapırıq
+
+        if (abuneData) {
+            const indi = new Date();
+            const bitis = new Date(abuneData.bitis_tarixi);
+            // Əgər vaxtı hələ bitməyibsə
+            if (indi < bitis) {
+
+                if (abunelikBg) abunelikBg.style.display = 'none';
+                if (premiumBg) premiumBg.style.display = 'flex'; // və ya sizin css necə tələb edirsə
+
+                // Planın adını və bitiş tarixini yaz
+                if (premiumText) premiumText.textContent = abuneData.plan_adi;
+
+                // Tarixi qəşəng və anlaşılan formata salırıq (məs: 20 Mart 2026)
+                const options = { day: 'numeric', month: 'long', year: 'numeric' };
+                if (bitmeTarixi) bitmeTarixi.textContent = bitis.toLocaleDateString('az-AZ', options);
+            } else {
+                abunelikBg.style.display = "flex"
+            }
+        } else {
+            if (abunelikBg) abunelikBg.style.display = 'flex';
+            if (premiumBg) premiumBg.style.display = 'none';
+        }
+        // ==========================================
+        // DƏYİŞDİRMƏ MODALI (E-poçt və Şifrə üçün)
+        // ==========================================
+        // 1. Modalı açan funksiya
+        window.openChangeFrame = function (type) {
+            if (type === 'password') {
+                // Şifrə üçün əvvəlcə e-poçtu təsdiqləməyə yönləndiririk
+                openPasswordResetStep1();
+            } else {
+                // E-poçt dəyişmə köhnə qaydada qalır (link ilə)
+                const modalHTML = `
+                    <h2>E-poçtu yenilə</h2>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Yeni e-poçt ünvanınızı daxil edin. Təsdiq linki göndəriləcək.</p>
+                    <div class="input-group">
+                        <label>Yeni e-poçt</label>
+                        <input type="email" id="newActionValue" placeholder="yeni@mail.com">
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                        <button class="btn-continue" id="modalSubmitBtn" onclick="submitChange('email')">Təsdiqlə</button>
+                    </div>
+                `;
+                openActionModal(modalHTML);
+            }
+        };
+
+        // 2. Şifrə dəyişmənin 1-ci mərhələsi: OTP göndərmək
+        async function openPasswordResetStep1() {
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            const email = user.email;
+
+            const modalHTML = `
+                <h2>Şifrəni yenilə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                    Şifrəni dəyişmək üçün <b>${email}</b> ünvanına təsdiq kodu göndərilməlidir.
+                </p>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="sendOtpBtn" onclick="sendProfileOtp('${email}')">Kod Göndər</button>
+                </div>
+            `;
+            openActionModal(modalHTML);
+        }
+
+        // 3. OTP göndər və 2-ci mərhələyə keç
+        window.sendProfileOtp = async function (email) {
+            const btn = document.getElementById("sendOtpBtn");
+            btn.textContent = "Göndərilir...";
+            btn.disabled = true;
+
+            const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+            if (error) {
+                await showMessage("Xəta: " + error.message);
+                btn.disabled = false;
+                btn.textContent = "Kod Göndər";
+            } else {
+                showProfileOtpEntry(email);
+            }
+        };
+
+        // 4. OTP və Yeni Şifrə daxil etmə modalı
+        function showProfileOtpEntry(email) {
+            const modalContent = document.getElementById("actionModalContent");
+            modalContent.innerHTML = `
+                <h2>Təsdiqləmə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">E-poçtunuza gələn kodu və yeni şifrəni daxil edin.</p>
+                <div class="input-group">
+                    <label>OTP Kod</label>
+                    <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifrə</label>
+                    <input type="password" id="newProfilePassword" placeholder="Ən azı 8 simvol">
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="finalSubmitBtn" onclick="verifyAndFinish('${email}')">Yenilə</button>
+                </div>
+            `;
+        }
+
+        // 5. Kodu yoxla və bitir
+        window.verifyAndFinish = async function (email) {
+            const token = document.getElementById("otpCodeInput").value.trim();
+            const password = document.getElementById("newProfilePassword").value.trim();
+            const btn = document.getElementById("finalSubmitBtn");
+
+            if (token.length < 8 || password.length < 6) {
+                await showMessage("Kod və şifrə tam doldurulmalıdır!");
+                return;
+            }
+
+            btn.textContent = "Gözləyin...";
+            btn.disabled = true;
+
+            // Kodu yoxlayırıq
+            const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+                email,
+                token,
+                type: 'recovery'
+            });
+
+            if (verifyError) {
+                await showMessage("Kod yanlışdır!");
+                btn.disabled = false;
+                btn.textContent = "Yenilə";
+            } else {
+                // Şifrəni yeniləyirik
+                const { error: updateError } = await supabaseClient.auth.updateUser({ password });
+
+                closeActionModal();
+                if (updateError) {
+                    await showMessage("Xəta: " + updateError.message);
+                } else {
+                    await showMessage("Şifrəniz uğurla yeniləndi!");
+                }
+            }
+        };
+        // ==========================================
+        // DƏYİŞİKLİKLƏRİ SAXLA (Yalnız Ad üçün)
+        // ==========================================
+        const saveBtn = document.querySelector('.btn-save');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', async () => {
+                const newName = usernameInput.value.trim();
+
+                if (!newName) {
+                    await showMessage("İstifadəçi adı boş ola bilməz!");
+                    return;
+                }
+
+                const originalText = saveBtn.textContent;
+                saveBtn.textContent = "Saxlanılır...";
+                saveBtn.disabled = true;
+
+                // Adı metadata kimi yeniləyirik
+                const { data, error } = await supabaseClient.auth.updateUser({
+                    data: { full_name: newName }
+                });
+
+                saveBtn.textContent = originalText;
+                saveBtn.disabled = false;
+
+                if (error) {
+                    await showMessage("Xəta: " + error.message);
+                } else {
+                    await showMessage("Profil məlumatlarınız uğurla yadda saxlanıldı!", "showMessage", "Tamam");
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABDAN ÇIX (Logout)
+        // ==========================================
+        const logoutBtn = document.querySelector('.btn-logout');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', async () => {
+                // Sizin yaratdığınız "confirm" tipli showMessage ilə soruşuruq
+                const isConfirmed = await showMessage("Hesabdan çıxmaq istədiyinizə əminsiniz?", "confirm");
+
+                if (isConfirmed) {
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABI SİL (Supabase Cədvəlinə Yazmaq - Spam qorumalı)
+        // ==========================================
+        const deleteBtn = document.querySelector('.btn-delete');
+        if (deleteBtn) {
+            deleteBtn.addEventListener('click', async () => {
+                const isConfirmed = await showMessage("Hesabınızı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz!", "confirm");
+
+                if (isConfirmed) {
+                    deleteBtn.textContent = "Yoxlanılır...";
+                    deleteBtn.disabled = true;
+
+                    const userEmail = user.email;
+
+                    // 1. Əvvəlcə yoxlayırıq: Bu e-poçt artıq cədvəldə varmı?
+                    const { data: existingData, error: checkError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .select('email')
+                        .eq('email', userEmail); // Cədvəldəki 'email' sütunu istifadəçinin e-poçtuna bərabər olanları tap
+
+                    if (checkError) {
+                        await showMessage("Sorğu yoxlanılarkən xəta baş verdi: " + checkError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // 2. Əgər data içində nəticə varsa, deməli artıq müraciət edib
+                    if (existingData && existingData.length > 0) {
+                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return; // funksiyanı buradaca dayandırırıq ki, yenidən bazaya yazmasın
+                    }
+
+                    // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
+                    deleteBtn.textContent = "Göndərilir...";
+
+                    const { error: insertError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .insert([
+                            { email: userEmail }
+                        ]);
+
+                    if (insertError) {
+                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + insertError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // Uğurla yazıldıqdan sonra istifadəçiyə yekun mesajı veririk
+                    await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
+
+                    // Sistemdən çıxış edib login-ə atırıq
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+    });
+}
+// ---------------------- PREMIUM PAGE ----------------------
+if (window.location.pathname.includes("premium.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    // --- 1. SƏHİFƏ AÇILANDA ABUNƏLİYİ YOXLA VƏ DÜYMƏLƏRİ KİLİDLƏ ---
+    // DOMContentLoaded əvəzinə xüsusi asinxron funksiya yaradıb dərhal çağırırıq
+    async function checkActivePlan() {
+        const { data: { user } } = await supabaseClient.auth.getUser();
+
+        if (user) {
+            const { data: abuneData } = await supabaseClient
+                .from('abunelikler')
+                .select('*')
+                .eq('user_id', user.id)
+                .maybeSingle();
+
+            if (abuneData) {
+                const indi = new Date();
+                const bitis = new Date(abuneData.bitis_tarixi);
+
+                if (indi < bitis) {
+                    // Bütün premium düymələrini tapırıq
+                    const freePlanBtn = document.querySelector('.plan-free .btn-plan-current');
+                    if (freePlanBtn) {
+                        freePlanBtn.textContent = "Mövcud planınız var";
+                        freePlanBtn.style.opacity = "0.5"
+                    }
+                    const btns = document.querySelectorAll('.btn-plan-active');
+
+                    btns.forEach(btn => {
+                        // Əgər bu düymə istifadəçinin aldığı plandırsa:
+                        if (btn.getAttribute('onclick').includes(abuneData.plan_adi)) {
+                            btn.textContent = "Aktivdir";
+                            btn.disabled = true;
+                            btn.style.backgroundColor = "#4CAF50"; // Yaşıl rəng
+                            btn.style.cursor = "default";
+                        }
+                        // Digər planlardırsa:
+                        else {
+                            btn.textContent = "Mövcud planınız var";
+                            btn.disabled = true;
+                            btn.style.opacity = "0.5";
+                            btn.style.cursor = "not-allowed";
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    // Funksiyanı dərhal işə salırıq
+    checkActivePlan();
+
+    // --- YENİLƏNMİŞ: WhatsApp-a Yönləndirmə Funksiyası ---
+    window.activatePlan = async function (planAdi, qiymet) {
+        // 1. Azərbaycan nömrə formatı (Arada boşluq və ya + işarəsi olmadan 12 rəqəm)
+        const phoneNumber = "994776247077"; // <-- Öz real nömrənlə əvəzlə
+
+        let userEmail = "";
+        try {
+            // 2. Supabase-dən daxil olmuş istifadəçinin məlumatlarını alırıq
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            if (user && user.email) {
+                userEmail = user.email;
+            }
+        } catch (error) {
+            console.error("İstifadəçi məlumatı alınarkən xəta:", error);
+        }
+
+        // 3. Mesaj şablonu (Email varsa mesaja daxil edilir)
+        let rawMessage = `Salam, mən AtlasLab.az saytından ${planAdi} (${qiymet} AZN) premium planını almaq istəyirəm.`;
+        
+        if (userEmail) {
+            rawMessage += ` Qeydiyyat emailim: ${userEmail}`;
+        }
+
+        // 4. URL üçün kodlaşdırma
+        const encodedMessage = encodeURIComponent(rawMessage);
+        
+        // 5. WhatsApp rəsmi Click-to-Chat linki
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        
+        // 6. Linki yeni tabda açırıq
+        window.open(whatsappUrl, '_blank');
+    };
+}
