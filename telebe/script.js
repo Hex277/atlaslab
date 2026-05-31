@@ -1,1 +1,2199 @@
-const a1_0x485add=a1_0x520a;(function(_0x3bb282,_0x534b75){const _0x5c2b41=a1_0x520a,_0x2156e8=_0x3bb282();while(!![]){try{const _0x5ab6e8=parseInt(_0x5c2b41(0x1c9))/0x1*(-parseInt(_0x5c2b41(0x11e))/0x2)+parseInt(_0x5c2b41(0x1a0))/0x3+-parseInt(_0x5c2b41(0x263))/0x4+parseInt(_0x5c2b41(0x27c))/0x5*(parseInt(_0x5c2b41(0x21f))/0x6)+parseInt(_0x5c2b41(0x1eb))/0x7*(-parseInt(_0x5c2b41(0x11a))/0x8)+parseInt(_0x5c2b41(0x1d0))/0x9*(-parseInt(_0x5c2b41(0x18f))/0xa)+parseInt(_0x5c2b41(0x136))/0xb;if(_0x5ab6e8===_0x534b75)break;else _0x2156e8['push'](_0x2156e8['shift']());}catch(_0x4942da){_0x2156e8['push'](_0x2156e8['shift']());}}}(a1_0x232f,0x84b54));function a1_0x520a(_0x3e1548,_0x2e758e){_0x3e1548=_0x3e1548-0xc2;const _0x22273e=a1_0x232f();let _0x15532b=_0x22273e[_0x3e1548];return _0x15532b;}const a1_0x175385=a1_0x32db;(function(_0x55a0e6,_0x3e2cf5){const _0x1d5c35=a1_0x520a,_0x267a07=(function(){let _0x2b4c4f=!![];return function(_0x1a6bb9,_0x175170){const _0xdf4828=_0x2b4c4f?function(){const _0x1e2d66=a1_0x520a;if(_0x175170){const _0x4fae64=_0x175170[_0x1e2d66(0x11d)](_0x1a6bb9,arguments);return _0x175170=null,_0x4fae64;}}:function(){};return _0x2b4c4f=![],_0xdf4828;};}()),_0x55ec04=_0x267a07(this,function(){const _0x127d05=a1_0x520a;return _0x55ec04[_0x127d05(0x10c)]()['search'](_0x127d05(0x1e4))[_0x127d05(0x10c)]()['constructor'](_0x55ec04)['search'](_0x127d05(0x1e4));});_0x55ec04();const _0x3727ff=a1_0x32db,_0x202f22=_0x55a0e6();while(!![]){try{const _0x538f3e=parseInt(_0x3727ff(0xe1))/0x1*(parseInt(_0x3727ff(0x1ef))/0x2)+-parseInt(_0x3727ff(0x272))/0x3*(-parseInt(_0x3727ff(0x112))/0x4)+-parseInt(_0x3727ff(0x1a7))/0x5+parseInt(_0x3727ff(0x1db))/0x6+-parseInt(_0x3727ff(0x18c))/0x7*(parseInt(_0x3727ff(0x273))/0x8)+parseInt(_0x3727ff(0x1f7))/0x9+parseInt(_0x3727ff(0x10f))/0xa*(-parseInt(_0x3727ff(0x1a4))/0xb);if(_0x538f3e===_0x3e2cf5)break;else _0x202f22[_0x1d5c35(0x10f)](_0x202f22[_0x1d5c35(0x16a)]());}catch(_0xac1139){_0x202f22['push'](_0x202f22[_0x1d5c35(0x16a)]());}}}(a1_0x5a5b,0x36a85),document[a1_0x175385(0x17d)](a1_0x175385(0x1e5),function(){const _0x529a90=a1_0x520a,_0x55b6a8=a1_0x175385,_0x5bb884=document[_0x55b6a8(0x26b)](_0x55b6a8(0x208));_0x5bb884&&_0x5bb884[_0x55b6a8(0x13b)]&&(_0x5bb884[_0x55b6a8(0x1f5)][_0x55b6a8(0x279)](_0x55b6a8(0x27a)),_0x5bb884[_0x55b6a8(0x13b)][_0x529a90(0x275)](_0x55b6a8(0x154))[_0x55b6a8(0x107)]='v');function _0x2b4620(_0x5c0c15){const _0x4f0dc9=_0x529a90,_0x28a439=_0x55b6a8,_0x1b0273=document[_0x28a439(0x26b)]('premium-href'),_0x40bc76=document['querySelector'](_0x28a439(0x226));if(_0x5c0c15){document[_0x4f0dc9(0xd5)][_0x28a439(0x1f5)][_0x28a439(0x279)](_0x4f0dc9(0xe2));if(_0x1b0273)_0x1b0273[_0x28a439(0x1d8)][_0x28a439(0x129)]=_0x28a439(0x125);if(_0x40bc76)_0x40bc76[_0x28a439(0x1a1)]=_0x28a439(0xdc);}else{document[_0x28a439(0x22f)][_0x28a439(0x1f5)][_0x28a439(0xe4)](_0x28a439(0x17c));if(_0x1b0273)_0x1b0273[_0x28a439(0x1d8)][_0x28a439(0x129)]='';if(_0x40bc76)_0x40bc76[_0x4f0dc9(0x24b)]=_0x28a439(0x235);}}if(window[_0x55b6a8(0x1e4)]){const _0x498298=_0x55b6a8(0x1da),_0xbebed4=_0x55b6a8(0x21d);!window[_0x55b6a8(0x1cc)]&&(window[_0x529a90(0xc7)]=window['supabase'][_0x529a90(0x253)](_0x498298,_0xbebed4));const _0x42ffdf=window[_0x55b6a8(0x1cc)];let _0x4b219a=null;try{const _0x2f9bcc=localStorage[_0x55b6a8(0x134)](_0x55b6a8(0x120));_0x2f9bcc&&(_0x4b219a=JSON[_0x529a90(0x1fe)](_0x2f9bcc)[_0x55b6a8(0x176)]['id']);}catch(_0x5cd551){}const _0xb7ef1f=new Date()[_0x529a90(0x1ab)]();if(_0x4b219a){const _0x1b52d9=localStorage[_0x55b6a8(0x134)](_0x55b6a8(0x135)+_0x4b219a);_0x1b52d9&&_0xb7ef1f<parseInt(_0x1b52d9)?_0x2b4620(!![]):_0x2b4620(![]);}_0x42ffdf[_0x55b6a8(0x17b)][_0x529a90(0x248)]()[_0x55b6a8(0x1d0)](async({data:{session:_0x263e7f}})=>{const _0x39474f=_0x529a90,_0x164aae=_0x55b6a8;if(_0x263e7f){const _0x5a8662=_0x263e7f[_0x164aae(0x176)]['id'],{data:_0xf6bc07}=await _0x42ffdf[_0x39474f(0x18b)](_0x164aae(0xfc))[_0x164aae(0x128)](_0x164aae(0xfe))['eq'](_0x164aae(0x130),_0x5a8662)[_0x164aae(0x25a)]();if(_0xf6bc07){const _0x17d2f0=new Date(_0xf6bc07[_0x164aae(0xfe)])[_0x164aae(0x184)](),_0x34a537=new Date()[_0x164aae(0x184)]();_0x34a537<_0x17d2f0?(localStorage[_0x164aae(0x1e3)](_0x164aae(0x135)+_0x5a8662,_0x17d2f0),_0x2b4620(!![])):(localStorage[_0x164aae(0x15b)](_0x164aae(0x135)+_0x5a8662),_0x2b4620(![]));}else localStorage[_0x164aae(0x15b)](_0x164aae(0x135)+_0x5a8662),_0x2b4620(![]);}});}else console['warn'](_0x55b6a8(0xf9));}));function a1_0x32db(_0x8f76d6,_0x1a37bc){_0x8f76d6=_0x8f76d6-0xd1;const _0x73a3f1=a1_0x5a5b();let _0x2eeb0f=_0x73a3f1[_0x8f76d6];return _0x2eeb0f;}function showMessage(_0x7c9cff,_0x56eb08=a1_0x175385(0x1d3),_0x4ab30e=a1_0x175385(0x233),_0x448de1=a1_0x175385(0x200)){return new Promise(_0x20686b=>{const _0x52af06=a1_0x520a,_0x2cf0ea=a1_0x32db,_0x3563b9=document[_0x52af06(0x27d)](_0x2cf0ea(0x250)),_0x41a052=document[_0x52af06(0x27d)](_0x2cf0ea(0xd7)),_0xf9e47e=document[_0x2cf0ea(0x26b)]('okBtn'),_0x4e8c62=document['getElementById'](_0x2cf0ea(0x22a)),_0x30d6ac=document[_0x2cf0ea(0x26b)](_0x2cf0ea(0x264));if(!_0x3563b9)return _0x20686b(![]);_0x41a052[_0x2cf0ea(0x227)]=_0x7c9cff,_0x3563b9[_0x2cf0ea(0x1d8)][_0x52af06(0x254)]=_0x2cf0ea(0x198),_0x56eb08===_0x2cf0ea(0x16f)?(_0xf9e47e[_0x2cf0ea(0x1d8)][_0x52af06(0x254)]=_0x2cf0ea(0x125),_0x4e8c62[_0x2cf0ea(0x1d8)][_0x2cf0ea(0x129)]=_0x2cf0ea(0xd4),_0x30d6ac[_0x2cf0ea(0x1d8)][_0x2cf0ea(0x129)]=_0x52af06(0x128),_0x4e8c62[_0x52af06(0x12f)]=_0x4ab30e,_0x30d6ac[_0x52af06(0x12f)]=_0x448de1,_0x4e8c62[_0x2cf0ea(0x15d)]=()=>{const _0x546bee=_0x2cf0ea;_0x3563b9[_0x546bee(0x1d8)][_0x546bee(0x129)]=_0x546bee(0x125),_0x20686b(!![]);},_0x30d6ac[_0x2cf0ea(0x15d)]=()=>{const _0x486ab9=_0x52af06,_0x26e22b=_0x2cf0ea;_0x3563b9[_0x486ab9(0xe8)][_0x486ab9(0x254)]=_0x26e22b(0x125),_0x20686b(![]);}):(_0xf9e47e['style'][_0x2cf0ea(0x129)]=_0x52af06(0x128),_0x4e8c62[_0x52af06(0xe8)]['display']=_0x2cf0ea(0x125),_0x30d6ac[_0x2cf0ea(0x1d8)][_0x2cf0ea(0x129)]=_0x2cf0ea(0x125),_0xf9e47e[_0x52af06(0x12f)]=_0x4ab30e!==_0x2cf0ea(0x233)?_0x4ab30e:'OK',_0xf9e47e[_0x2cf0ea(0x15d)]=()=>{const _0x4dc7b7=_0x2cf0ea;_0x3563b9[_0x4dc7b7(0x1d8)]['display']=_0x4dc7b7(0x125),_0x20686b(!![]);});});}function openActionModal(_0x2a83e5){const _0x2ec46a=a1_0x520a,_0x1bb189=a1_0x175385,_0x280d40=document[_0x1bb189(0x26b)](_0x1bb189(0x26f)),_0x3f2ab9=document[_0x2ec46a(0x27d)](_0x1bb189(0x19d));_0x280d40&&_0x3f2ab9&&(_0x3f2ab9[_0x1bb189(0x227)]=_0x2a83e5,_0x280d40[_0x1bb189(0x1d8)][_0x1bb189(0x129)]=_0x1bb189(0x198),document[_0x1bb189(0x22f)][_0x1bb189(0x1d8)][_0x1bb189(0x211)]=_0x1bb189(0x1ba));}function closeActionModal(){const _0x2acefe=a1_0x520a,_0x4cb932=a1_0x175385,_0x4674e2=document[_0x4cb932(0x26b)](_0x4cb932(0x26f)),_0x32ae2e=document[_0x4cb932(0x26b)](_0x4cb932(0x19d));_0x4674e2&&(_0x4674e2[_0x4cb932(0x1d8)][_0x4cb932(0x129)]=_0x4cb932(0x125),document[_0x2acefe(0xd5)][_0x2acefe(0xe8)][_0x4cb932(0x211)]=''),_0x32ae2e&&(_0x32ae2e[_0x2acefe(0x220)]='');}if(window[a1_0x485add(0x21e)][a1_0x175385(0x160)][a1_0x485add(0x241)](a1_0x175385(0x1f1))){const container=document[a1_0x175385(0x26b)](a1_0x485add(0xc3)),searchInput=document[a1_0x485add(0x27d)]('search-input'),searchButton=document[a1_0x175385(0x26b)](a1_0x175385(0x109)),filterContainer=document[a1_0x175385(0x26b)](a1_0x175385(0x290)),uniSelect=document[a1_0x175385(0x26b)]('university-select'),facultySelect=document['getElementById'](a1_0x175385(0x1c4)),infoModal=document[a1_0x175385(0x26b)](a1_0x175385(0x20d)),infoModalText=document[a1_0x175385(0x26b)](a1_0x485add(0x126)),closeInfoModal=document[a1_0x485add(0x27d)](a1_0x175385(0xd6));let allSubjects=[],globalSubjects=[],universitiesData={},searchTimeout=null;fetch(a1_0x175385(0x1c2))[a1_0x175385(0x1d0)](_0x2debc0=>_0x2debc0[a1_0x175385(0x105)]())[a1_0x175385(0x1d0)](_0x2e403f=>{const _0x133a71=a1_0x485add,_0x2cabbd=a1_0x175385,_0x24d48e=_0x2e403f[_0x2cabbd(0x104)][_0x133a71(0x116)]||[],_0x28a411=_0x2e403f[_0x2cabbd(0x104)][_0x133a71(0x190)]||[];universitiesData=_0x2e403f[_0x133a71(0x104)]||{},globalSubjects=_0x24d48e[_0x2cabbd(0x23a)](_0x20de22=>_0x20de22['id']),allSubjects=[..._0x24d48e,..._0x28a411][_0x2cabbd(0x20b)]((_0x2f18b0,_0x33ec9a)=>_0x2f18b0[_0x2cabbd(0x164)][_0x2cabbd(0x19f)](_0x33ec9a[_0x133a71(0x1af)],'az')),Object[_0x2cabbd(0x1ea)](universitiesData)['length']>0x0&&(filterContainer[_0x2cabbd(0x1d8)][_0x2cabbd(0x129)]=_0x2cabbd(0x198),populateUniversities()),renderSubjects(allSubjects);})[a1_0x175385(0x110)](_0x205c17=>console[a1_0x175385(0x165)](a1_0x175385(0x183),_0x205c17));function populateUniversities(){const _0x1b5f20=a1_0x485add,_0x5a9b4b=a1_0x175385;for(const _0x52500d in universitiesData){const _0x181feb=document[_0x5a9b4b(0x1fc)](_0x1b5f20(0x223));_0x181feb[_0x5a9b4b(0x116)]=_0x52500d,_0x181feb[_0x1b5f20(0x12f)]=universitiesData[_0x52500d][_0x1b5f20(0xde)],uniSelect[_0x5a9b4b(0x26d)](_0x181feb);}}uniSelect['addEventListener'](a1_0x175385(0x169),function(){const _0x53974a=a1_0x175385,_0x134b6f=this[_0x53974a(0x116)];facultySelect[_0x53974a(0x227)]=_0x53974a(0xe3),facultySelect[_0x53974a(0x260)]=!![];if(_0x134b6f&&universitiesData[_0x134b6f]){const _0x92392a=universitiesData[_0x134b6f][_0x53974a(0x282)];for(const _0x263fd2 in _0x92392a){const _0x420c68=document[_0x53974a(0x1fc)](_0x53974a(0x1ac));_0x420c68[_0x53974a(0x116)]=_0x263fd2,_0x420c68[_0x53974a(0x107)]=_0x92392a[_0x263fd2][_0x53974a(0x28a)],facultySelect[_0x53974a(0x26d)](_0x420c68);}facultySelect[_0x53974a(0x260)]=![];}applyFilters();}),facultySelect[a1_0x485add(0x1d2)](a1_0x175385(0x169),applyFilters);function applyFilters(){const _0x3b7b10=a1_0x485add,_0x3e0676=a1_0x175385,_0x3ca2ec=uniSelect[_0x3e0676(0x116)],_0x43d25e=facultySelect[_0x3e0676(0x116)],_0x20d147=searchInput[_0x3e0676(0x116)][_0x3e0676(0x268)]()[_0x3e0676(0xef)]();let _0x276f6d=allSubjects;if(_0x3ca2ec&&_0x43d25e){const _0x4392e8=universitiesData[_0x3ca2ec][_0x3b7b10(0x151)][_0x43d25e][_0x3b7b10(0x12a)]||[];_0x276f6d=allSubjects[_0x3b7b10(0x1f8)](_0x542ed1=>_0x4392e8[_0x3e0676(0x11c)](_0x542ed1['id']));}_0x20d147!==''&&(_0x276f6d=_0x276f6d['filter'](_0x105f30=>isMatch(_0x105f30[_0x3e0676(0x164)],_0x20d147))),renderSubjects(_0x276f6d);}function isMatch(_0x29c7b4,_0x4899a9){const _0x3a50bd=a1_0x485add,_0xb0b940=a1_0x175385;_0x29c7b4=_0x29c7b4[_0xb0b940(0x268)](),_0x4899a9=_0x4899a9[_0x3a50bd(0x249)]();if(_0x29c7b4[_0xb0b940(0x11c)](_0x4899a9))return!![];if(_0x4899a9[_0xb0b940(0x17a)]<0x3)return![];const _0x46d892=Math[_0xb0b940(0x1be)](0x3,Math[_0x3a50bd(0x272)](_0x4899a9[_0xb0b940(0x17a)]/0x3));let _0x4fef80=0x0,_0x1fd309=0x0;for(let _0x2cbced=0x0;_0x2cbced<_0x4899a9[_0xb0b940(0x17a)];_0x2cbced++){_0x1fd309<_0x29c7b4[_0xb0b940(0x17a)]&&_0x4899a9[_0x2cbced]===_0x29c7b4[_0x1fd309]?_0x1fd309++:_0x4fef80++;}return _0x4fef80<=_0x46d892;}function renderSubjects(_0x3a0886){const _0x2870d9=a1_0x175385;if(!_0x3a0886||_0x3a0886[_0x2870d9(0x17a)]===0x0){container[_0x2870d9(0x227)]=_0x2870d9(0x148);return;}container[_0x2870d9(0x227)]=_0x3a0886[_0x2870d9(0x23a)]((_0x3c7910,_0x3d1dfb)=>{const _0x497472=a1_0x520a,_0x20e456=_0x2870d9;let _0x5d1f4a='';if(globalSubjects['includes'](_0x3c7910['id']))_0x5d1f4a=_0x20e456(0x283);else{let _0x282e13=[];for(const _0x43f0d8 in universitiesData){const _0x431e41=universitiesData[_0x43f0d8][_0x20e456(0x282)];for(const _0x16a4bf in _0x431e41){const _0x4e755d=_0x431e41[_0x16a4bf][_0x20e456(0x153)]||[];_0x4e755d[_0x20e456(0x11c)](_0x3c7910['id'])&&_0x282e13[_0x20e456(0x1a0)](_0x431e41[_0x16a4bf][_0x20e456(0x28a)]);}}_0x282e13[_0x497472(0x268)]>0x0?_0x5d1f4a=_0x282e13[_0x20e456(0x23a)](_0x3f01a9=>{const _0x51e1c7=_0x497472,_0x37ad11=_0x20e456,_0xb98f0e=_0x3f01a9[_0x37ad11(0x251)](/fakültəsi/gi,'')[_0x37ad11(0x251)](/və/gi,'')[_0x37ad11(0xef)]();return _0xb98f0e[_0x51e1c7(0xc9)](/\s+/)[_0x37ad11(0x14a)](_0x5ca403=>_0x5ca403[_0x37ad11(0x17a)]>0x0)[_0x51e1c7(0x23a)](_0x577d92=>_0x577d92[_0x37ad11(0x1bd)](0x0)[_0x37ad11(0x277)]())[_0x51e1c7(0x1f6)]('');})[_0x20e456(0x1f2)](',\x20'):_0x5d1f4a=_0x20e456(0x10a);}return _0x20e456(0x114)+_0x3c7910['id']+_0x20e456(0xe5)+_0x3d1dfb*0.05+_0x20e456(0x156)+_0x3c7910['id']+_0x20e456(0x240)+_0x3c7910[_0x20e456(0x164)]+_0x20e456(0x1f8)+_0x3c7910[_0x20e456(0x1d6)]+_0x20e456(0xdd)+_0x3c7910['title']+_0x497472(0x1b5)+_0x5d1f4a+_0x20e456(0x101)+_0x3c7910[_0x20e456(0x11b)]+_0x20e456(0x221);})[_0x2870d9(0x1f2)]('');}searchInput[a1_0x175385(0x17d)](a1_0x485add(0x12d),_0x5c2696=>{const _0x5ca4f3=a1_0x175385,_0x1c7087=_0x5c2696[_0x5ca4f3(0x14f)]['value'][_0x5ca4f3(0x268)]()[_0x5ca4f3(0xef)]();clearTimeout(searchTimeout),searchTimeout=setTimeout(()=>{const _0x79ca25=_0x5ca4f3;if(_0x1c7087===''){renderSubjects(allSubjects);return;}const _0x581505=allSubjects[_0x79ca25(0x14a)](_0x4e0dae=>isMatch(_0x4e0dae[_0x79ca25(0x164)],_0x1c7087));renderSubjects(_0x581505);},0x12c);}),searchButton[a1_0x485add(0x1d2)](a1_0x175385(0x205),()=>{const _0x1514a3=a1_0x485add,_0x3d0d81=a1_0x175385,_0x9db547=searchInput[_0x3d0d81(0x116)][_0x3d0d81(0x268)](),_0x26a1e0=allSubjects[_0x3d0d81(0x14a)](_0x20fa41=>_0x20fa41[_0x3d0d81(0x164)][_0x3d0d81(0x268)]()[_0x1514a3(0x20c)](_0x9db547));renderSubjects(_0x26a1e0);}),window[a1_0x485add(0x1cf)]=function(_0xf7f624){const _0x426890=a1_0x485add,_0x57b906=a1_0x175385;window[_0x57b906(0x220)][_0x426890(0x1d3)]=_0x57b906(0x23c)+_0xf7f624;},window[a1_0x175385(0x269)]=function(_0x3fb5c5,_0x55f302,_0x443c8a){const _0xab74b6=a1_0x485add,_0x384077=a1_0x175385;_0x3fb5c5['stopPropagation']();if(globalSubjects[_0x384077(0x11c)](_0x55f302)){infoModalText[_0x384077(0x227)]=_0x384077(0x1c5)+_0x443c8a+_0x384077(0x1bb),infoModal[_0xab74b6(0xe8)][_0x384077(0x129)]=_0xab74b6(0x22d);return;}let _0x21d71f=[];for(const _0x2efa24 in universitiesData){const _0x1a94cb=universitiesData[_0x2efa24][_0xab74b6(0x151)];for(const _0x8d272f in _0x1a94cb){const _0x27588b=_0x1a94cb[_0x8d272f][_0xab74b6(0x12a)]||[];_0x27588b['includes'](_0x55f302)&&_0x21d71f[_0xab74b6(0x10f)](_0xab74b6(0x14f)+universitiesData[_0x2efa24]['name']+_0x384077(0x1d1)+_0x1a94cb[_0x8d272f][_0x384077(0x28a)]+_0xab74b6(0x131));}}_0x21d71f[_0x384077(0x17a)]>0x0?infoModalText[_0x384077(0x227)]='<strong>'+_0x443c8a+'</strong><br><br>Bu\x20fənn\x20aşağıdakı\x20müəssisə\x20və\x20fakültələrdə\x20tədris\x20olunur:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul\x20style=\x22text-align:\x20left;\x20margin-top:\x2015px;\x20padding-left:\x2020px;\x20font-size:\x2014px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x21d71f[_0x384077(0x1f2)]('')+_0xab74b6(0x216):infoModalText['innerHTML']=_0x384077(0x1c5)+_0x443c8a+_0x384077(0x1cf),infoModal[_0x384077(0x1d8)]['display']=_0xab74b6(0x22d);},closeInfoModal[a1_0x485add(0x1d2)](a1_0x175385(0x205),()=>{const _0x2cc0dd=a1_0x485add,_0x2ac1a1=a1_0x175385;infoModal[_0x2cc0dd(0xe8)][_0x2ac1a1(0x129)]=_0x2cc0dd(0xd4);}),window[a1_0x175385(0x17d)](a1_0x175385(0x205),_0x33a8b1=>{const _0x498664=a1_0x485add,_0x5174b2=a1_0x175385;_0x33a8b1['target']===infoModal&&(infoModal[_0x498664(0xe8)][_0x498664(0x254)]=_0x5174b2(0x125));}),((async()=>{const _0x1687f2=a1_0x485add,_0x3a9dc8=a1_0x175385;try{const _0x2034dd=_0x3a9dc8(0x1da),_0x28112c=_0x3a9dc8(0x21d),_0x5e86c2=window[_0x3a9dc8(0x1e4)][_0x3a9dc8(0x188)](_0x2034dd,_0x28112c),_0x51016d=localStorage['getItem'](_0x3a9dc8(0x120));if(!_0x51016d)return;const _0xea3945=JSON[_0x3a9dc8(0x10b)](_0x51016d)[_0x3a9dc8(0x176)],_0x1f071c=_0xea3945['id'],_0xd350bd=document[_0x3a9dc8(0x26b)](_0x3a9dc8(0x1fe)),_0xed504a=document['getElementById'](_0x1687f2(0x21b)),_0x3d5195=localStorage[_0x3a9dc8(0x134)](_0x3a9dc8(0x135)+_0x1f071c),_0x28aec4=_0x3d5195&&new Date()[_0x3a9dc8(0x184)]()<parseInt(_0x3d5195);if(_0x28aec4){if(_0xed504a)_0xed504a[_0x3a9dc8(0x1a1)]=_0x3a9dc8(0x19e);if(_0xd350bd)_0xd350bd[_0x3a9dc8(0x227)]=_0x3a9dc8(0x1b5);return;}const _0x161b29=new Date()[_0x3a9dc8(0x25c)]()[_0x3a9dc8(0x1af)]('T')[0x0],{data:_0x152f35}=await _0x5e86c2[_0x3a9dc8(0x185)](_0x3a9dc8(0x28e))[_0x3a9dc8(0x128)](_0x3a9dc8(0x131))['eq'](_0x3a9dc8(0x130),_0x1f071c)[_0x3a9dc8(0x25a)](),_0x450dd0=_0x152f35&&_0x152f35[_0x3a9dc8(0x180)]===_0x161b29?Number(_0x152f35[_0x3a9dc8(0x202)])||0x0:0x0,_0x25c64c=0x3,_0x58306c=Math[_0x3a9dc8(0x19b)](0x0,_0x25c64c-_0x450dd0);if(_0xd350bd)_0xd350bd[_0x3a9dc8(0x26e)]=_0x58306c;if(_0xed504a)_0xed504a[_0x3a9dc8(0x1a1)]=_0x3a9dc8(0x12e);}catch(_0x383c5f){console[_0x3a9dc8(0x165)](_0x3a9dc8(0x199),_0x383c5f[_0x1687f2(0x24e)]);}})());}if(window[a1_0x175385(0x220)][a1_0x175385(0x160)][a1_0x175385(0x1b3)](a1_0x175385(0x142))){let myChart=null;const getSupabase=()=>window[a1_0x175385(0x1cc)]||window[a1_0x175385(0x266)];async function loadUserDashboard(_0xd61eb9){const _0x5c35f0=a1_0x485add,_0x1016e1=a1_0x175385,_0xea6a14=getSupabase();if(!_0xea6a14)return;const {data:_0x59806b,error:_0x34d50f}=await _0xea6a14[_0x1016e1(0x185)]('user_stats')[_0x1016e1(0x128)]('*')['eq']('user_id',_0xd61eb9)[_0x1016e1(0x25a)]();if(_0x34d50f||!_0x59806b)return;document[_0x1016e1(0x26b)](_0x1016e1(0x12f))[_0x1016e1(0x26e)]=_0x59806b[_0x1016e1(0xf0)]||0x0,document[_0x1016e1(0x26b)](_0x5c35f0(0x1d7))[_0x5c35f0(0x250)]=_0x59806b[_0x1016e1(0x1de)]||0x3e8,document[_0x1016e1(0x26b)](_0x5c35f0(0x1ae))[_0x5c35f0(0x250)]=(_0x59806b[_0x1016e1(0x1ec)]||0x0)+_0x1016e1(0x16b);const _0x146a4e=_0x59806b[_0x1016e1(0x28f)]||0x0,_0x17fa31=_0x59806b[_0x1016e1(0x259)]||0x0,_0x1a8df9=_0x146a4e>0x0?Math[_0x1016e1(0x20e)](_0x17fa31/_0x146a4e*0x64):0x0;document[_0x1016e1(0x26b)](_0x1016e1(0x1a9))[_0x5c35f0(0x250)]=_0x1a8df9+'%';const _0x3ff519=Math[_0x1016e1(0x276)]((_0x59806b['total_time_spent']||0x0)/0x3c),_0x17153c=(_0x59806b[_0x1016e1(0x241)]||0x0)%0x3c;document[_0x1016e1(0x26b)](_0x5c35f0(0x184))[_0x5c35f0(0x250)]=_0x3ff519+':'+(_0x17153c<0xa?'0':'')+_0x17153c;}async function loadActivityChart(_0x1153bd){const _0x107773=a1_0x485add,_0x26c890=a1_0x175385,_0x59bb67=getSupabase();if(!_0x59bb67)return;const _0x58d5ec=['B.e',_0x26c890(0x163),'Ç',_0x26c890(0x1ee),'C','Ş','B'];let _0x574648=[0x0,0x0,0x0,0x0,0x0,0x0,0x0];const _0x17bb89=new Date(),_0x23aae2=_0x17bb89[_0x107773(0x158)]()===0x0?0x7:_0x17bb89[_0x107773(0x158)](),_0x5a2c80=new Date(_0x17bb89);_0x5a2c80[_0x26c890(0x137)](_0x17bb89[_0x107773(0x187)]()-_0x23aae2+0x1);const _0x167a08=_0x5a2c80[_0x26c890(0xf7)]()+'-'+String(_0x5a2c80[_0x107773(0x238)]()+0x1)['padStart'](0x2,'0')+'-'+String(_0x5a2c80[_0x26c890(0x1fa)]())[_0x26c890(0x21e)](0x2,'0'),{data:_0x2a87ac,error:_0x12334f}=await _0x59bb67[_0x107773(0x18b)](_0x26c890(0x15c))[_0x26c890(0x128)](_0x26c890(0x143))['eq'](_0x26c890(0x130),_0x1153bd)[_0x26c890(0xd3)](_0x26c890(0x252),_0x167a08);if(_0x12334f){console[_0x26c890(0x165)](_0x26c890(0xda),_0x12334f);return;}_0x2a87ac&&_0x2a87ac[_0x107773(0x268)]>0x0&&_0x2a87ac[_0x107773(0x119)](_0x28710c=>{const _0x545500=_0x26c890,_0x6ca708=_0x28710c[_0x545500(0x252)][_0x545500(0x1af)]('-'),_0x2720cd=new Date(parseInt(_0x6ca708[0x0]),parseInt(_0x6ca708[0x1])-0x1,parseInt(_0x6ca708[0x2]));let _0x2d3b6d=_0x2720cd[_0x545500(0x182)]();_0x2d3b6d=_0x2d3b6d===0x0?0x6:_0x2d3b6d-0x1,_0x574648[_0x2d3b6d]=_0x28710c[_0x545500(0x1b6)];}),renderChart(_0x58d5ec,_0x574648);}async function loadLeaderboard(_0x1cdcd7){const _0xf5418d=a1_0x485add,_0x2760e9=a1_0x175385,_0x5cb092=getSupabase();if(!_0x5cb092)return;const {data:_0x345d11,error:_0xc6392}=await _0x5cb092[_0x2760e9(0x185)](_0xf5418d(0x200))[_0xf5418d(0x144)]('*')[_0xf5418d(0x148)](_0x2760e9(0x1de),{'ascending':![]})['limit'](0xa);if(_0xc6392||!_0x345d11)return;const _0x5b5b9e=document[_0x2760e9(0x26b)]('leaderboardBody');if(!_0x5b5b9e)return;_0x5b5b9e[_0x2760e9(0x227)]='',_0x345d11[_0x2760e9(0x1dd)]((_0x241d7e,_0x13db33)=>{const _0x469056=_0xf5418d,_0x32ee4b=_0x2760e9,_0x64a20=_0x241d7e[_0x32ee4b(0x28f)]>0x0?Math['round'](_0x241d7e[_0x32ee4b(0x259)]/_0x241d7e[_0x32ee4b(0x28f)]*0x64):0x0,_0x362129=_0x241d7e['user_id']===_0x1cdcd7;let _0x294813=_0x241d7e[_0x32ee4b(0x285)]||_0x32ee4b(0x210)+_0x241d7e[_0x32ee4b(0x130)][_0x469056(0x155)](0x0,0x5);const _0x3813b6=_0x362129?_0x294813+_0x469056(0x24c):_0x294813;_0x5b5b9e[_0x469056(0x220)]+=_0x32ee4b(0x271)+(_0x362129?'current-user':'')+_0x32ee4b(0x103)+(_0x362129?_0x32ee4b(0x13c):'')+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+(_0x13db33+0x1)+_0x32ee4b(0x1a2)+_0x3813b6+_0x32ee4b(0x24a)+(_0x241d7e[_0x469056(0x204)]||0x3e8)+_0x469056(0x1a4)+_0x64a20+_0x32ee4b(0x22b);});}function renderChart(_0x30e868,_0x538612){const _0x4064a4=a1_0x485add,_0x4d0a12=a1_0x175385,_0x92e399=document[_0x4d0a12(0x26b)](_0x4d0a12(0x151));if(!_0x92e399)return;const _0x251721=_0x92e399[_0x4d0a12(0x219)]('2d');typeof myChart!==_0x4d0a12(0x244)&&myChart&&myChart[_0x4d0a12(0x1cb)]();const _0x5b45ac=document[_0x4d0a12(0x22f)][_0x4d0a12(0x1f5)][_0x4d0a12(0x213)](_0x4064a4(0x167))||document[_0x4064a4(0xd5)][_0x4d0a12(0x1f5)][_0x4064a4(0x228)](_0x4d0a12(0xde)),_0x10e2f9=_0x5b45ac?_0x4064a4(0x179):_0x4d0a12(0x255),_0x494c3e=_0x5b45ac?_0x4d0a12(0x1c1):_0x4d0a12(0x11d);myChart=new Chart(_0x251721,{'type':_0x4d0a12(0xfb),'data':{'labels':_0x30e868,'datasets':[{'label':_0x4d0a12(0x265),'data':_0x538612,'borderColor':_0x4d0a12(0x261),'backgroundColor':_0x4064a4(0x1fa),'fill':!![],'tension':0x0,'pointRadius':0x4,'pointBackgroundColor':_0x4064a4(0x1ee),'pointHoverRadius':0x6}]},'options':{'responsive':!![],'maintainAspectRatio':![],'interaction':{'mode':'index','intersect':![]},'plugins':{'legend':{'display':![]}},'scales':{'y':{'beginAtZero':!![],'ticks':{'color':_0x10e2f9,'stepSize':0x1},'grid':{'color':_0x494c3e}},'x':{'ticks':{'color':_0x10e2f9},'grid':{'display':![]}}}}});}async function handleChartFilterChange(_0x22394d){const _0x522feb=a1_0x485add,_0x44d247=a1_0x175385,_0x1dd173=document[_0x44d247(0x26b)]('chart-filter-select'),_0x55075c=document[_0x44d247(0x26b)](_0x44d247(0x159)),_0x5c4bad=document[_0x522feb(0x27d)](_0x44d247(0x151));if(!_0x1dd173)return;const _0x56d74f=localStorage[_0x44d247(0x134)](_0x44d247(0x135)+_0x22394d),_0x4bfb9a=_0x56d74f&&new Date()[_0x44d247(0x184)]()<parseInt(_0x56d74f);_0x1dd173[_0x44d247(0x17d)](_0x44d247(0x169),async _0x2deb11=>{const _0x5f281d=_0x522feb,_0x4a69f7=_0x44d247,_0x385873=_0x2deb11[_0x4a69f7(0x14f)][_0x4a69f7(0x116)];_0x385873===_0x4a69f7(0x16d)?!_0x4bfb9a?(_0x5c4bad?.['classList']['add'](_0x4a69f7(0x18d)),_0x55075c?.[_0x5f281d(0x143)][_0x5f281d(0x122)](_0x4a69f7(0x1ba))):(_0x5c4bad?.[_0x5f281d(0x143)][_0x5f281d(0x122)](_0x4a69f7(0x18d)),_0x55075c?.[_0x4a69f7(0x1f5)][_0x4a69f7(0x279)](_0x5f281d(0x1c5)),await loadAllTimeActivityChart(_0x22394d)):(_0x5c4bad?.[_0x4a69f7(0x1f5)][_0x4a69f7(0xe4)](_0x4a69f7(0x18d)),_0x55075c?.[_0x5f281d(0x143)][_0x5f281d(0x1b6)](_0x5f281d(0x1c5)),await loadActivityChart(_0x22394d));});}async function loadAllTimeActivityChart(_0x1c6b90){const _0x269c8a=a1_0x485add,_0x3b20c7=a1_0x175385,_0x571800=window[_0x3b20c7(0x1cc)]||window[_0x3b20c7(0x266)];if(!_0x571800)return;try{const [{data:_0x32bdf1},{data:_0x28e14b,error:_0x41f2b1}]=await Promise[_0x3b20c7(0x16d)]([_0x571800[_0x3b20c7(0x17b)][_0x3b20c7(0x228)](),_0x571800[_0x3b20c7(0x185)](_0x269c8a(0x1a9))[_0x3b20c7(0x128)](_0x269c8a(0x21c))['eq'](_0x3b20c7(0x130),_0x1c6b90)]);if(_0x41f2b1)throw _0x41f2b1;const _0x21e53d=_0x32bdf1?.[_0x3b20c7(0x176)];if(!_0x21e53d)return;const _0x42d289=new Date(_0x21e53d[_0x3b20c7(0x140)]),_0x2beceb=new Date(),_0x294bd7=[_0x269c8a(0xf8),_0x269c8a(0x102),_0x3b20c7(0x18e),_0x3b20c7(0x121),_0x3b20c7(0x123),_0x3b20c7(0x23f),_0x269c8a(0x20b),_0x3b20c7(0x242),_0x3b20c7(0x111),_0x3b20c7(0x122),_0x3b20c7(0x173),_0x3b20c7(0x23d)],_0xbe4c15={};let _0x443e75=new Date(_0x42d289['getFullYear'](),_0x42d289['getMonth'](),0x1);while(_0x443e75<=_0x2beceb){const _0x13485f=_0x294bd7[_0x443e75[_0x3b20c7(0x14e)]()]+'\x20'+_0x443e75[_0x3b20c7(0xf7)]();_0xbe4c15[_0x13485f]=0x0,_0x443e75[_0x3b20c7(0x284)](_0x443e75[_0x3b20c7(0x14e)]()+0x1);}_0x28e14b&&_0x28e14b[_0x269c8a(0x119)](_0x559bc6=>{const _0x55752a=_0x269c8a,_0x15dbc6=_0x3b20c7,_0x44eb33=new Date(_0x559bc6[_0x55752a(0x166)]),_0xce67af=_0x44eb33[_0x15dbc6(0x1ce)](),_0x1d41af=_0x44eb33[_0x15dbc6(0x224)](),_0xbbc450=_0x294bd7[_0xce67af]+'\x20'+_0x1d41af;_0xbe4c15[_0xbbc450]!==undefined&&(_0xbe4c15[_0xbbc450]+=Number(_0x559bc6[_0x15dbc6(0x1b6)]));}),console[_0x269c8a(0x1cb)](_0x3b20c7(0x1fb),_0xbe4c15);const _0x2241f5=Object[_0x3b20c7(0x1c9)](_0xbe4c15)[_0x3b20c7(0x155)]((_0x3e5802,_0x336a2e)=>_0x3e5802+_0x336a2e,0x0);console[_0x3b20c7(0x1ad)](_0x269c8a(0x183),_0x2241f5),renderChart(Object[_0x3b20c7(0x1ea)](_0xbe4c15),Object['values'](_0xbe4c15));}catch(_0x31df2c){console[_0x3b20c7(0x165)](_0x3b20c7(0x1c3),_0x31df2c[_0x3b20c7(0x249)]);}}setTimeout(async()=>{const _0x1805cb=a1_0x485add,_0x504034=a1_0x175385,_0x37144c=getSupabase();if(!_0x37144c)return;const {data:{user:_0x587054}}=await _0x37144c[_0x504034(0x17b)][_0x504034(0x228)]();if(!_0x587054){window[_0x504034(0x220)][_0x504034(0x27c)]=_0x1805cb(0x1e5);return;}const _0x4beefa=_0x587054['id'];loadUserDashboard(_0x4beefa),loadActivityChart(_0x4beefa),loadLeaderboard(_0x4beefa),handleChartFilterChange(_0x4beefa);},0x64);}if(window[a1_0x485add(0x21e)]['pathname'][a1_0x175385(0x1b3)](a1_0x175385(0x179))){const supabaseUrl=a1_0x175385(0x1da),supabaseKey=a1_0x175385(0x21d),supabaseClient=window[a1_0x175385(0x1e4)][a1_0x175385(0x188)](supabaseUrl,supabaseKey);document[a1_0x175385(0x17d)](a1_0x175385(0x1e5),async()=>{const _0x22a55a=a1_0x485add,_0x3a6fc4=a1_0x175385,_0x381632=new URLSearchParams(window[_0x3a6fc4(0x220)][_0x3a6fc4(0x247)]),_0x36adee=_0x381632[_0x3a6fc4(0x24b)](_0x3a6fc4(0x162)),_0x39c525=_0x381632[_0x22a55a(0x108)](_0x22a55a(0x27e))||_0x3a6fc4(0x1b4);if(!_0x36adee){console[_0x3a6fc4(0x165)](_0x22a55a(0xdb));return;}const _0x406896=localStorage[_0x22a55a(0x12c)](_0x3a6fc4(0x120));if(!_0x406896){const _0x2a6932=_0x22a55a(0x23b);showMessage(_0x2a6932,_0x3a6fc4(0x1d3),_0x3a6fc4(0x288))[_0x3a6fc4(0x1d0)](()=>{const _0x3d70e9=_0x3a6fc4;window[_0x3d70e9(0x220)][_0x3d70e9(0x27c)]=_0x3d70e9(0xe7);});return;}const _0x395f28=JSON[_0x3a6fc4(0x10b)](_0x406896)[_0x3a6fc4(0x176)]['id'],_0x1d42e9=Math[_0x3a6fc4(0x192)]()[_0x3a6fc4(0x24f)](0x24)[_0x3a6fc4(0x1ed)](0x2,0xf);localStorage[_0x3a6fc4(0x1e3)](_0x3a6fc4(0x21f),_0x1d42e9);async function _0x37ae90(){const _0x5114c3=_0x22a55a,_0x4b9c81=_0x3a6fc4,_0x273b37=localStorage[_0x4b9c81(0x134)](_0x4b9c81(0x120));if(!_0x273b37)return;const _0x278e62=JSON[_0x4b9c81(0x10b)](_0x273b37)[_0x4b9c81(0x176)]['id'],_0x5c1197=localStorage[_0x5114c3(0x12c)](_0x4b9c81(0x21f)),{data:_0x2be308,error:_0x51abe8}=await supabaseClient[_0x5114c3(0x18b)](_0x5114c3(0x200))[_0x4b9c81(0x232)]({'last_session_id':_0x5c1197})[_0x5114c3(0x21d)]({'user_id':_0x278e62});_0x51abe8&&console[_0x4b9c81(0x165)](_0x4b9c81(0x21b),_0x51abe8[_0x4b9c81(0x249)]);}_0x37ae90();const _0x2d778a=localStorage[_0x3a6fc4(0x134)](_0x3a6fc4(0x135)+_0x395f28),_0x1992c1=_0x2d778a&&new Date()[_0x3a6fc4(0x184)]()<parseInt(_0x2d778a);if(!_0x1992c1){const _0x21b5aa=new Date(),_0x2bfde3=_0x21b5aa[_0x22a55a(0x1c6)]()+'-'+String(_0x21b5aa[_0x3a6fc4(0x14e)]()+0x1)[_0x3a6fc4(0x21e)](0x2,'0')+'-'+String(_0x21b5aa['getDate']())[_0x3a6fc4(0x21e)](0x2,'0');let {data:_0x512807}=await supabaseClient[_0x3a6fc4(0x185)](_0x22a55a(0x200))[_0x3a6fc4(0x128)](_0x3a6fc4(0x131))['eq'](_0x3a6fc4(0x130),_0x395f28)[_0x3a6fc4(0x25a)]();if(_0x512807&&_0x512807[_0x3a6fc4(0x180)]===_0x2bfde3&&(Number(_0x512807[_0x22a55a(0x177)])||0x0)>=0x3){const _0x2a6612=_0x3a6fc4(0x24e),_0x254ce4=await showMessage(_0x2a6612,_0x3a6fc4(0x16f),_0x3a6fc4(0x28c),_0x3a6fc4(0x196));_0x254ce4?window[_0x22a55a(0x21e)][_0x3a6fc4(0x27c)]=_0x3a6fc4(0x245):window[_0x22a55a(0x21e)]['href']=_0x3a6fc4(0x1f1);return;}}if(_0x1992c1){const _0x2e4124=window[_0x3a6fc4(0xec)]<=0x300,_0x3c930d=document[_0x3a6fc4(0x26b)](_0x3a6fc4(0xf5));if(_0x2e4124){window[_0x3a6fc4(0x1a5)]={'chatbotId':_0x3a6fc4(0x106)};const _0x59962b=document[_0x3a6fc4(0x1fc)](_0x3a6fc4(0x203));_0x59962b[_0x3a6fc4(0x195)]=!![],_0x59962b[_0x22a55a(0x127)]['id']=_0x3a6fc4(0x106),_0x59962b['id']=_0x3a6fc4(0x23e),_0x59962b[_0x3a6fc4(0x1e6)]=_0x22a55a(0x1dd),_0x59962b[_0x3a6fc4(0x1a1)]=_0x3a6fc4(0x118),document[_0x3a6fc4(0x22f)][_0x3a6fc4(0x26d)](_0x59962b);if(_0x3c930d)_0x3c930d['style'][_0x22a55a(0x254)]=_0x3a6fc4(0x198);}else{window[_0x3a6fc4(0x1a5)]={'chatbotId':_0x3a6fc4(0x194),'display':_0x3a6fc4(0x236)},document[_0x3a6fc4(0x1d5)](_0x3a6fc4(0x197))&&(document[_0x3a6fc4(0x1d5)](_0x3a6fc4(0x197))[_0x3a6fc4(0x1d8)][_0x22a55a(0x1ce)]=_0x3a6fc4(0x24d));let _0x3c5fbf=document[_0x3a6fc4(0x26b)](_0x3a6fc4(0xfa));!_0x3c5fbf&&(_0x3c5fbf=document[_0x3a6fc4(0x1fc)](_0x22a55a(0x1e7)),_0x3c5fbf['id']=_0x3a6fc4(0xfa),_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x22a55a(0xd9)]=_0x3a6fc4(0x1b0),_0x3c5fbf['style'][_0x3a6fc4(0x22c)]=_0x3a6fc4(0x172),_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x3a6fc4(0x10c)]=_0x3a6fc4(0x19c),_0x3c5fbf[_0x22a55a(0xe8)][_0x3a6fc4(0x286)]='0',_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x3a6fc4(0xd5)]=_0x3a6fc4(0x25f),_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x22a55a(0x1f2)]=_0x3a6fc4(0x21a),_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x22a55a(0x225)]=_0x3a6fc4(0x20f),_0x3c5fbf[_0x3a6fc4(0x1d8)][_0x3a6fc4(0x27f)]=_0x3a6fc4(0x13e),_0x3c5fbf[_0x22a55a(0xe8)][_0x3a6fc4(0x129)]=_0x3a6fc4(0x125),document[_0x3a6fc4(0x22f)][_0x3a6fc4(0x26d)](_0x3c5fbf));const _0xf1bf82=document[_0x3a6fc4(0x26b)](_0x3a6fc4(0x12b));_0xf1bf82&&(_0xf1bf82[_0x3a6fc4(0x15d)]=function(){const _0x2e68b5=_0x22a55a,_0x434a40=_0x3a6fc4;let _0x18f935=document[_0x434a40(0x26b)](_0x2e68b5(0x244));_0x18f935[_0x2e68b5(0xe8)][_0x434a40(0x129)]===_0x2e68b5(0xd4)?(_0x18f935[_0x434a40(0x1d8)][_0x434a40(0x129)]=_0x2e68b5(0x198),document[_0x434a40(0x1d5)](_0x2e68b5(0xfe))[_0x2e68b5(0xe8)][_0x2e68b5(0xd9)]=_0x2e68b5(0x142),document[_0x2e68b5(0x275)](_0x434a40(0x197))[_0x434a40(0x1d8)][_0x434a40(0x270)]=_0x434a40(0x125),document[_0x434a40(0x1d5)](_0x434a40(0x197))[_0x2e68b5(0xe8)][_0x2e68b5(0x1e2)]='0',document[_0x434a40(0x1d5)](_0x434a40(0x1f6))[_0x434a40(0x1d8)][_0x434a40(0x1f3)]=_0x2e68b5(0x1fb)):(_0x18f935[_0x434a40(0x1d8)][_0x434a40(0x129)]=_0x2e68b5(0xd4),document[_0x434a40(0x1d5)](_0x434a40(0x197))[_0x434a40(0x1d8)][_0x434a40(0x147)]=_0x434a40(0x15f),document[_0x2e68b5(0x275)](_0x2e68b5(0xfe))['style'][_0x434a40(0x270)]=_0x434a40(0x177),document['querySelector']('.main-background')[_0x434a40(0x1d8)][_0x2e68b5(0x217)]=_0x434a40(0x13a));});const _0xad536c=document[_0x22a55a(0x12b)](_0x3a6fc4(0x203));_0xad536c[_0x3a6fc4(0x195)]=!![],_0xad536c[_0x22a55a(0x127)]['id']=_0x3a6fc4(0x194),_0xad536c[_0x3a6fc4(0xe0)][_0x3a6fc4(0x129)]=_0x3a6fc4(0x236),_0xad536c['id']=_0x3a6fc4(0x23e),_0xad536c[_0x22a55a(0x170)]=_0x3a6fc4(0x145),_0xad536c[_0x3a6fc4(0x1a1)]=_0x3a6fc4(0x118),document[_0x3a6fc4(0x22f)][_0x3a6fc4(0x26d)](_0xad536c);if(_0x3c930d)_0x3c930d[_0x3a6fc4(0x1d8)][_0x3a6fc4(0x129)]=_0x3a6fc4(0x125);}}else{const _0x2de953=document[_0x22a55a(0x27d)](_0x22a55a(0x26a));if(_0x2de953)_0x2de953[_0x3a6fc4(0x1d8)][_0x3a6fc4(0x129)]=_0x3a6fc4(0x125);const _0x3dad94=document[_0x3a6fc4(0x26b)](_0x3a6fc4(0xfa));if(_0x3dad94)_0x3dad94[_0x3a6fc4(0x1d8)][_0x22a55a(0x254)]=_0x3a6fc4(0x125);console[_0x3a6fc4(0x1ad)](_0x22a55a(0x18c));}((async()=>{const _0x5b80b8=_0x22a55a,_0x545292=_0x3a6fc4,_0xafe250=_0x545292(0x1da),_0x15014c=_0x545292(0x21d),_0x5a9dc=window[_0x545292(0x1e4)][_0x545292(0x188)](_0xafe250,_0x15014c);try{const _0x392480=localStorage[_0x5b80b8(0x12c)](_0x545292(0x120));if(!_0x392480)return;const _0x4b48d3=JSON[_0x545292(0x10b)](_0x392480)[_0x545292(0x176)]['id'],_0x69c104=new Date()[_0x545292(0x25c)]()[_0x545292(0x1af)]('T')[0x0],{data:_0x5202f5}=await _0x5a9dc[_0x545292(0x185)](_0x5b80b8(0x200))[_0x545292(0x128)](_0x545292(0x131))['eq'](_0x545292(0x130),_0x4b48d3)['maybeSingle']();let _0x61c454=_0x5202f5&&_0x5202f5['last_quiz_date']===_0x69c104?Number(_0x5202f5[_0x545292(0x202)])||0x0:0x0;const _0x2130ea=document[_0x545292(0x26b)](_0x5b80b8(0x103));if(_0x2130ea)_0x2130ea[_0x5b80b8(0x250)]=_0x61c454;}catch(_0x35e533){console[_0x545292(0x165)](_0x545292(0x257),_0x35e533[_0x545292(0x249)]);}})());function _0x572d50(_0x248a46){const _0x4c68a0=_0x3a6fc4;let _0x36f60b=JSON[_0x4c68a0(0x10b)](localStorage[_0x4c68a0(0x134)](_0x4c68a0(0x23b)))||{};return _0x36f60b[_0x248a46]||[];}function _0x2c9f7a(_0xc99f6b,_0x2766ee){const _0x23f947=_0x3a6fc4;let _0x192681=JSON[_0x23f947(0x10b)](localStorage['getItem'](_0x23f947(0x23b)))||{};!_0x192681[_0xc99f6b]&&(_0x192681[_0xc99f6b]=[]),!_0x192681[_0xc99f6b][_0x23f947(0x11c)](_0x2766ee)&&(_0x192681[_0xc99f6b][_0x23f947(0x1a0)](_0x2766ee),localStorage[_0x23f947(0x1e3)](_0x23f947(0x23b),JSON[_0x23f947(0x1fd)](_0x192681)));}function _0x1dfc5d(_0xcb9132,_0x16ffff){const _0x1c2b3e=_0x3a6fc4;let _0x34b5c5=JSON[_0x1c2b3e(0x10b)](localStorage[_0x1c2b3e(0x134)](_0x1c2b3e(0x23b)))||{};_0x34b5c5[_0xcb9132]&&(_0x34b5c5[_0xcb9132]=_0x34b5c5[_0xcb9132][_0x1c2b3e(0x14a)](_0x5e6590=>_0x5e6590!==_0x16ffff),localStorage[_0x1c2b3e(0x1e3)](_0x1c2b3e(0x23b),JSON[_0x1c2b3e(0x1fd)](_0x34b5c5)));}fetch(_0x22a55a(0x210))[_0x22a55a(0xe3)](_0x4cfa7b=>_0x4cfa7b[_0x22a55a(0xf9)]())[_0x3a6fc4(0x1d0)](_0x119383=>{const _0x68f97e=_0x22a55a,_0x2e0f28=_0x3a6fc4,_0x2564c6=[..._0x119383['subject_pool'][_0x68f97e(0x116)]||[],..._0x119383[_0x2e0f28(0x104)]['special_subjects']||[]],_0x23a16e=_0x2564c6[_0x2e0f28(0x22e)](_0xcbb3ff=>_0xcbb3ff['id']===_0x36adee);if(_0x23a16e){const _0x36c89b=document[_0x68f97e(0x275)](_0x2e0f28(0x262));if(_0x36c89b)_0x36c89b[_0x2e0f28(0x107)]=_0x23a16e[_0x2e0f28(0x164)];}else console[_0x68f97e(0x240)](_0x2e0f28(0x13d)+_0x36adee);})[_0x3a6fc4(0x110)](_0x4424ba=>console[_0x22a55a(0x237)](_0x3a6fc4(0x1aa),_0x4424ba));async function _0x2ccb22(){const _0xa2da90=_0x22a55a,_0x3706fb=_0x3a6fc4;try{const {data:_0x3e1210,error:_0x2c1cd0}=await supabaseClient[_0x3706fb(0x185)](_0x36adee)[_0xa2da90(0x144)]('*');if(_0x2c1cd0)throw _0x2c1cd0;if(!_0x3e1210||_0x3e1210[_0xa2da90(0x268)]===0x0){console[_0x3706fb(0x165)](_0x3706fb(0x171));return;}const _0x51ca51=shuffleArray(_0x3e1210)[_0x3706fb(0x222)](0x0,0xa);let _0x24c925=![],_0x2fbc4d=0x0,_0x572d8a=0x0,_0x4cac71,_0x1386eb=0x0,_0x4a094d={};const _0x35c65f=document[_0x3706fb(0x26b)](_0x3706fb(0x136)),_0x107a21=document[_0x3706fb(0x26b)](_0x3706fb(0x275)),_0x1f24f1=document[_0x3706fb(0x26b)](_0xa2da90(0x1cc)),_0x14fa04=document[_0xa2da90(0x27d)](_0x3706fb(0x214)),_0x12f054=document[_0x3706fb(0x26b)](_0x3706fb(0x1ff)),_0x4f2953=document[_0xa2da90(0x27d)](_0x3706fb(0x248));if(_0x12f054)_0x12f054[_0x3706fb(0x15d)]=()=>_0x3cf9b3(-0x1);if(_0x4f2953)_0x4f2953[_0xa2da90(0x178)]=()=>_0x3cf9b3(0x1);function _0x56d62f(_0x419454){const _0x356780=_0xa2da90,_0x558835=_0x3706fb,_0x3e05df=Math[_0x558835(0x276)](_0x419454/0x3c)['toString']()[_0x558835(0x21e)](0x2,'0'),_0x2df19d=(_0x419454%0x3c)[_0x558835(0x24f)]()[_0x356780(0x218)](0x2,'0');return _0x3e05df+':'+_0x2df19d;}function _0x85ce9b(){const _0x1f1855=_0xa2da90,_0x2f1600=_0x3706fb;if(_0x4cac71)clearInterval(_0x4cac71);_0x1386eb=0x0;const _0x59dcb1=document[_0x1f1855(0x27d)](_0x2f1600(0x119));if(_0x59dcb1)_0x59dcb1[_0x2f1600(0x107)]=_0x2f1600(0x186);_0x4cac71=setInterval(()=>{const _0x1f451c=_0x2f1600;_0x1386eb++;if(_0x59dcb1)_0x59dcb1[_0x1f451c(0x107)]=_0x56d62f(_0x1386eb);},0x3e8);}function _0x233c82(){const _0x11e607=setInterval(async()=>{const _0x3ba650=a1_0x520a,_0x3bd58d=a1_0x32db,_0x4bee5f=localStorage['getItem'](_0x3bd58d(0x120));if(!_0x4bee5f)return;const _0x4d545a=JSON[_0x3bd58d(0x10b)](_0x4bee5f)[_0x3bd58d(0x176)]['id'],{data:_0x1a887f,error:_0x42db8b}=await supabaseClient[_0x3ba650(0x18b)](_0x3ba650(0x200))[_0x3bd58d(0x128)](_0x3bd58d(0x1f4))[_0x3bd58d(0x287)]({'user_id':_0x4d545a})[_0x3bd58d(0x17f)]();if(_0x1a887f&&_0x1a887f['last_session_id']!==localStorage['getItem'](_0x3ba650(0x1d6))){clearInterval(_0x11e607);const _0x422f1d=_0x3bd58d(0x18b);await showMessage(_0x422f1d,_0x3ba650(0x1ea)),window[_0x3bd58d(0x220)][_0x3bd58d(0x27c)]=_0x3bd58d(0x1f1);}},0x2710);}_0x233c82();function _0x3c744b(_0x2bedf3){const _0x34ed57=_0xa2da90,_0xc5ace7=_0x3706fb,_0x4267ef=_0x51ca51[_0x2bedf3];if(!_0x4267ef)return;if(_0x35c65f)_0x35c65f['innerHTML']=_0x4267ef[_0xc5ace7(0x256)];if(_0x1f24f1)_0x1f24f1[_0xc5ace7(0x107)]=_0x2bedf3+0x1+_0xc5ace7(0x11f)+_0x51ca51[_0x34ed57(0x268)];if(_0x14fa04){const _0x46fd3a=_0x2bedf3/_0x51ca51[_0xc5ace7(0x17a)]*0x64;_0x14fa04[_0xc5ace7(0x1d8)][_0xc5ace7(0x147)]=_0x46fd3a+'%';}if(_0x107a21){const _0x20a6b2={'A':_0x4267ef[_0x34ed57(0xe9)],'B':_0x4267ef[_0xc5ace7(0x167)],'C':_0x4267ef[_0xc5ace7(0xdf)],'D':_0x4267ef[_0xc5ace7(0x201)],'E':_0x4267ef[_0xc5ace7(0x230)]};_0x107a21[_0xc5ace7(0x227)]=Object[_0x34ed57(0x273)](_0x20a6b2)[_0xc5ace7(0x14a)](([_0x4d86cf,_0x5024f5])=>_0x5024f5!==null&&_0x5024f5!==undefined&&_0x5024f5!=='')[_0xc5ace7(0x23a)](([_0x59fae4,_0x59044e])=>_0xc5ace7(0x144)+_0x59fae4+'\x22>'+_0x59fae4+_0xc5ace7(0x24c)+_0x59044e+_0xc5ace7(0x17e))[_0xc5ace7(0x1f2)]('');}const _0x46722f=document[_0xc5ace7(0x181)](_0x34ed57(0x27a));if(_0x4a094d[_0x2bedf3]){const _0xafde46=_0x4a094d[_0x2bedf3],_0x2565a1=_0x4267ef[_0x34ed57(0x1db)];_0x107a21[_0xc5ace7(0x1f5)][_0xc5ace7(0x279)](_0xc5ace7(0x260)),_0x46722f[_0xc5ace7(0x1dd)](_0x2160fb=>{const _0x36732e=_0x34ed57,_0x519860=_0xc5ace7,_0x1d59c9=_0x2160fb[_0x519860(0xe0)][_0x36732e(0x189)];_0x1d59c9===_0xafde46&&_0x2160fb[_0x519860(0x1f5)][_0x519860(0x279)](_0x1d59c9===_0x2565a1?_0x519860(0x14b):_0x519860(0x12a)),_0x1d59c9===_0x2565a1&&_0x2160fb[_0x519860(0x1f5)][_0x519860(0x279)](_0x519860(0x14b));});if(_0x4f2953)_0x4f2953[_0xc5ace7(0x260)]=![];}else{_0x107a21[_0xc5ace7(0x1f5)][_0x34ed57(0x122)](_0xc5ace7(0x260));if(_0x4f2953)_0x4f2953[_0xc5ace7(0x260)]=!![];_0x46722f[_0xc5ace7(0x1dd)](_0x3ba881=>{const _0x353e3c=_0xc5ace7;_0x3ba881[_0x353e3c(0x15d)]=()=>_0x333e76(_0x3ba881,_0x4267ef,_0x2bedf3);});}if(_0x12f054)_0x12f054[_0xc5ace7(0x260)]=_0x2bedf3===0x0;_0x4f2953&&(_0x4f2953[_0xc5ace7(0x107)]=_0x2bedf3===_0x51ca51[_0x34ed57(0x268)]-0x1?_0x34ed57(0x1f9):_0x34ed57(0x19a));}function _0xdbfa67(){const _0xadb079=_0xa2da90,_0x27f75e=_0x3706fb;if(window['chatling']&&typeof window[_0x27f75e(0xd2)][_0x27f75e(0x27a)]==='function')window[_0x27f75e(0xd2)][_0xadb079(0x1c7)]();else{const _0x4c1044=document[_0x27f75e(0x26b)](_0x27f75e(0x215));if(_0x4c1044){const _0xc0efcd=_0x4c1044[_0xadb079(0x275)]('button')||_0x4c1044;_0xc0efcd[_0x27f75e(0x205)]();}}}const _0x3432f1=new Audio(window[_0x3706fb(0x220)][_0x3706fb(0x174)]+_0x3706fb(0x280)),_0x64085c=new Audio(window[_0x3706fb(0x220)][_0x3706fb(0x174)]+_0x3706fb(0x22d));async function _0x333e76(_0x4cba26,_0x31ceed,_0x4e8682){const _0x2d10b0=_0xa2da90,_0x2bf31a=_0x3706fb,_0x12fb4e=_0x4cba26[_0x2bf31a(0xe0)][_0x2bf31a(0xea)];_0x4a094d[_0x4e8682]=_0x12fb4e;const _0x2f84d1=_0x31ceed['id'],_0x275f97=_0x31ceed[_0x2bf31a(0x1f9)];_0x107a21[_0x2bf31a(0x1f5)][_0x2bf31a(0x279)](_0x2bf31a(0x260));if(_0x12fb4e===_0x275f97){_0x3432f1[_0x2bf31a(0x139)]=0x0,_0x3432f1[_0x2d10b0(0x17e)]()['catch'](_0x4c7f4a=>console[_0x2bf31a(0x1ad)](_0x2d10b0(0xce),_0x4c7f4a)),_0x4cba26[_0x2d10b0(0x143)][_0x2bf31a(0x279)](_0x2bf31a(0x14b));if(_0x4f2953)_0x4f2953[_0x2bf31a(0x260)]=![];_0x572d8a++,_0x1dfc5d(_0x39c525,_0x2f84d1);}else{_0x64085c[_0x2bf31a(0x139)]=0x0,_0x64085c[_0x2bf31a(0x15e)]()[_0x2bf31a(0x110)](_0x5450bc=>console[_0x2bf31a(0x1ad)](_0x2bf31a(0x187),_0x5450bc)),_0x4cba26[_0x2bf31a(0x1f5)][_0x2d10b0(0x1b6)](_0x2bf31a(0x12a));if(_0x4f2953)_0x4f2953[_0x2bf31a(0x260)]=![];_0x2c9f7a(_0x39c525,_0x2f84d1),setTimeout(()=>{const _0x172ca5=_0x2d10b0,_0x13b115=_0x2bf31a,_0x27800b=_0x107a21[_0x13b115(0x1d5)](_0x13b115(0xdb)+_0x275f97+'\x22]');if(_0x27800b)_0x27800b[_0x172ca5(0x143)][_0x13b115(0x279)](_0x13b115(0x14b));},0x1f4);}function _0xd22f85(_0x175072,_0x145544){const _0x4e3a14=_0x2d10b0,_0x50287a=_0x2bf31a,_0x2eff34=currentQuestion[_0x50287a(0x1f9)],_0x5951f1=currentQuestion['id'],_0x1ad0ba=document[_0x50287a(0x181)](_0x4e3a14(0x27a));_0x1ad0ba[_0x50287a(0x1dd)](_0x7ad133=>_0x7ad133['disabled']=!![]),_0x145544===_0x2eff34?(_0x175072[_0x50287a(0x1d8)][_0x50287a(0x267)]=_0x4e3a14(0x159),_0x175072[_0x4e3a14(0xe8)][_0x50287a(0x1b1)]=_0x50287a(0x127),_0x1dfc5d(_0x39c525,_0x5951f1)):(_0x175072[_0x50287a(0x1d8)][_0x50287a(0x267)]=_0x50287a(0x10d),_0x175072[_0x50287a(0x1d8)][_0x50287a(0x1b1)]=_0x50287a(0x127),_0x1ad0ba[_0x50287a(0x1dd)](_0x40dd26=>{const _0x294025=_0x4e3a14,_0x3d6aa2=_0x50287a;_0x40dd26[_0x294025(0x1ef)](_0x294025(0x13c))===_0x2eff34&&(_0x40dd26[_0x3d6aa2(0x1d8)][_0x294025(0x225)]=_0x3d6aa2(0x11a),_0x40dd26[_0x3d6aa2(0x1d8)][_0x3d6aa2(0x1b1)]=_0x3d6aa2(0x127));}),_0x2c9f7a(_0x39c525,_0x5951f1));}const _0x1aceaa=document[_0x2d10b0(0x27d)](_0x2d10b0(0x1ff));if(_0x1aceaa)_0x1aceaa[_0x2bf31a(0x1f5)][_0x2bf31a(0x279)](_0x2bf31a(0x260));if(_0x4f2953)_0x4f2953[_0x2bf31a(0x260)]=![];}function _0x3cf9b3(_0x2305f8){const _0x475edb=_0xa2da90,_0x4997a7=_0x3706fb,_0x4d2c35=_0x2fbc4d+_0x2305f8;if(_0x4d2c35>=0x0&&_0x4d2c35<_0x51ca51[_0x475edb(0x268)])_0x2fbc4d=_0x4d2c35,_0x3c744b(_0x2fbc4d);else _0x4d2c35>=_0x51ca51[_0x4997a7(0x17a)]&&_0xdd56b4();}async function _0x24861c(_0x2d51e2,_0x365764,_0x25ce3e,_0xf7847c,_0x537ee7){const _0x4e9fde=_0xa2da90,_0x2d755d=_0x3706fb;try{const _0x1bbbc9=window[_0x2d755d(0x1cc)]||window[_0x2d755d(0x266)],{data:{user:_0x4c0806}}=await _0x1bbbc9['auth'][_0x2d755d(0x228)](),_0x585faf=_0x4c0806?.[_0x4e9fde(0x18a)]?.[_0x2d755d(0x19a)]||_0x2d755d(0x28d),_0x1193d1=new Date(),_0x58a6e4=_0x1193d1[_0x2d755d(0xf7)]()+'-'+String(_0x1193d1[_0x2d755d(0x14e)]()+0x1)[_0x4e9fde(0x218)](0x2,'0')+'-'+String(_0x1193d1[_0x4e9fde(0x187)]())[_0x4e9fde(0x218)](0x2,'0'),_0x596d95=new Date(_0x1193d1);_0x596d95[_0x2d755d(0x137)](_0x1193d1[_0x4e9fde(0x187)]()-0x1);const _0x409d98=_0x596d95[_0x4e9fde(0x1c6)]()+'-'+String(_0x596d95[_0x2d755d(0x14e)]()+0x1)[_0x2d755d(0x21e)](0x2,'0')+'-'+String(_0x596d95[_0x4e9fde(0x187)]())[_0x2d755d(0x21e)](0x2,'0');let {data:_0x18b098,error:_0x264ed6}=await _0x1bbbc9[_0x4e9fde(0x18b)](_0x4e9fde(0x200))[_0x4e9fde(0x144)]('*')['eq'](_0x2d755d(0x130),_0x2d51e2)[_0x2d755d(0x25a)]();if(_0x264ed6)throw _0x264ed6;let _0x56e128=_0x18b098?_0x18b098[_0x2d755d(0x180)]:null,_0x486f59=_0x18b098?Number(_0x18b098[_0x2d755d(0x1ec)])||0x0:0x0,_0x3c1676=_0x18b098?Number(_0x18b098[_0x2d755d(0x202)])||0x0:0x0,_0x2aea98=0x0,_0x47432d=0x1;if(!_0x18b098)_0x2aea98=0x1,_0x47432d=0x1;else{if(_0x56e128===_0x58a6e4)_0x2aea98=_0x486f59,_0x47432d=_0x3c1676+0x1;else _0x56e128===_0x409d98?(_0x2aea98=_0x486f59+0x1,_0x47432d=0x1):(_0x2aea98=0x1,_0x47432d=0x1);}function _0x10ca91(_0x2c7b98,_0x53fd4d,_0x5183e8){const _0x161d50=_0x4e9fde,_0x30fe1b=_0x2d755d,_0x2614b4=Math[_0x30fe1b(0x1ad)](0xa)/0x190,_0xfa5b91=0x3e8,_0x3765e4=_0x5183e8/0x64,_0x21876f=0x1/(0x1+Math[_0x30fe1b(0x1b8)](0xa,(_0xfa5b91-_0x2c7b98)/0x190)),_0x34552e=0x1/(Math[_0x30fe1b(0x1b8)](_0x2614b4,0x2)*(_0x21876f*(0x1-_0x21876f))),_0x5979ba=_0x2614b4/(0x1/Math[_0x161d50(0x252)](_0x53fd4d,0x2)+0x1/_0x34552e),_0x43a24d=_0x2c7b98+_0x5979ba*(_0x3765e4-_0x21876f);let _0x268af2=Math[_0x30fe1b(0x229)](0x1/(0x1/Math[_0x30fe1b(0x1b8)](_0x53fd4d,0x2)+0x1/_0x34552e));return _0x268af2=Math[_0x30fe1b(0x19b)](0x1e,Math[_0x30fe1b(0x1be)](0x15e,_0x268af2)),{'rating':Math[_0x30fe1b(0x20e)](_0x43a24d),'rd':Math[_0x161d50(0x1bc)](_0x268af2),'diff':Math[_0x30fe1b(0x20e)](_0x43a24d-_0x2c7b98)};}const _0x29a170=_0x537ee7/_0xf7847c*0x64,_0x379ebe=_0x18b098?Number(_0x18b098[_0x2d755d(0x1de)])||0x3e8:0x3e8,_0x4a6b5f=_0x18b098?Number(_0x18b098[_0x4e9fde(0x26d)])||0x15e:0x15e,_0x1e8286=_0x10ca91(_0x379ebe,_0x4a6b5f,_0x29a170),_0x211e70={'display_name':_0x585faf,'quizzes_completed':(_0x18b098?Number(_0x18b098[_0x2d755d(0xf0)])||0x0:0x0)+0x1,'total_time_spent':(_0x18b098?Number(_0x18b098[_0x2d755d(0x241)])||0x0:0x0)+_0x25ce3e,'total_answered_questions':(_0x18b098?Number(_0x18b098['total_answered_questions'])||0x0:0x0)+_0xf7847c,'total_correct_answers':(_0x18b098?Number(_0x18b098[_0x2d755d(0x259)])||0x0:0x0)+_0x537ee7,'total_score':(_0x18b098?Number(_0x18b098[_0x2d755d(0x20a)])||0x0:0x0)+_0x365764,'elo_rating':_0x1e8286[_0x2d755d(0x126)],'rating_deviation':_0x1e8286['rd'],'current_streak':_0x2aea98,'last_quiz_date':_0x58a6e4,'daily_limit_count':_0x47432d,'updated_at':new Date()[_0x2d755d(0x25c)]()},{error:_0xc99075}=await _0x1bbbc9[_0x2d755d(0x185)](_0x2d755d(0x28e))[_0x2d755d(0x146)]({'user_id':_0x2d51e2,..._0x211e70});if(_0xc99075)throw _0xc99075;const {data:_0x6c6d00}=await _0x1bbbc9[_0x2d755d(0x185)](_0x2d755d(0x15c))[_0x2d755d(0x128)](_0x2d755d(0x1b6))['eq'](_0x2d755d(0x130),_0x2d51e2)['eq'](_0x4e9fde(0x166),_0x58a6e4)[_0x2d755d(0x25a)](),_0x291bba=(_0x6c6d00?Number(_0x6c6d00[_0x2d755d(0x1b6)])||0x0:0x0)+0x1;return await _0x1bbbc9['from'](_0x2d755d(0x15c))[_0x2d755d(0x146)]({'user_id':_0x2d51e2,'quiz_date':_0x58a6e4,'quiz_count':_0x291bba},{'onConflict':_0x4e9fde(0x138)}),{'diff':_0x1e8286[_0x2d755d(0xe8)],'newElo':_0x1e8286[_0x4e9fde(0x262)]};}catch(_0x227e49){return console[_0x2d755d(0x165)](_0x2d755d(0xf3),_0x227e49[_0x4e9fde(0x24e)]),null;}}async function _0xdd56b4(){const _0x4a898=_0xa2da90,_0x197cc3=_0x3706fb;clearInterval(_0x4cac71);if(_0x24c925)return;_0x24c925=!![];const _0x321004=document[_0x4a898(0x275)](_0x197cc3(0x150)),_0x224a27=document[_0x197cc3(0x1d5)](_0x4a898(0x16f)),_0x3431de=document[_0x197cc3(0x1d5)](_0x4a898(0x17c)),_0x116afd=document[_0x197cc3(0x1d5)](_0x197cc3(0x117)),_0x435baa=document[_0x4a898(0x275)](_0x4a898(0xcf));if(_0x321004)_0x321004[_0x197cc3(0x1d8)][_0x197cc3(0x129)]=_0x197cc3(0x125);if(_0x224a27)_0x224a27[_0x197cc3(0x1d8)][_0x197cc3(0x129)]=_0x197cc3(0x125);if(_0x3431de)_0x3431de[_0x197cc3(0x1d8)][_0x197cc3(0x129)]=_0x197cc3(0x125);if(_0x116afd)_0x116afd['style'][_0x4a898(0x254)]=_0x197cc3(0x125);if(_0x435baa)_0x435baa[_0x197cc3(0x1d8)][_0x197cc3(0x129)]=_0x197cc3(0x125);const _0x20e6e1=document['querySelector'](_0x4a898(0x1d5));let _0x404292='';_0x20e6e1&&(_0x404292=_0x20e6e1[_0x4a898(0x12f)],_0x20e6e1[_0x197cc3(0x1d8)][_0x197cc3(0x129)]=_0x197cc3(0x125)),(_0x107a21[_0x197cc3(0x227)]=_0x197cc3(0x281),_0x107a21[_0x197cc3(0x1f5)][_0x197cc3(0xe4)](_0x197cc3(0x260)));let _0x4ae747={'diff':0x0,'newElo':0x3e8};if(_0x395f28)try{const _0xd2fce2=await _0x24861c(_0x395f28,_0x572d8a,_0x1386eb,_0x51ca51[_0x197cc3(0x17a)],_0x572d8a);if(_0xd2fce2)_0x4ae747=_0xd2fce2;}catch(_0x138804){console[_0x4a898(0x237)](_0x197cc3(0x178),_0x138804);}const _0x2d0f04=_0x56d62f(_0x1386eb);let _0x87f577=_0x197cc3(0x25e),_0x5b3004=_0x4ae747[_0x197cc3(0xe8)]>0x0?'+':'';if(_0x4ae747[_0x4a898(0x208)]>0x0)_0x87f577=_0x4a898(0xec);else _0x4ae747[_0x197cc3(0xe8)]<0x0&&(_0x87f577=_0x197cc3(0x28b));const _0x2cfbe3=Math[_0x197cc3(0x20e)](_0x572d8a/_0x51ca51[_0x4a898(0x268)]*0x64),_0x17725f=_0x51ca51[_0x197cc3(0x17a)]-_0x572d8a,_0x545995=_0x4ae747[_0x197cc3(0xf6)]+_0x197cc3(0x21c)+_0x87f577+_0x197cc3(0x11e)+_0x5b3004+_0x4ae747[_0x197cc3(0xe8)]+_0x197cc3(0x263);_0x107a21[_0x4a898(0x220)]=_0x4a898(0x1a7)+_0x2cfbe3*3.6+_0x197cc3(0x1e9)+_0x2cfbe3+_0x197cc3(0xe9)+_0x572d8a+'/'+_0x51ca51[_0x197cc3(0x17a)]+_0x197cc3(0xf4)+_0x404292+_0x197cc3(0x1c0)+_0x572d8a+_0x197cc3(0x1d7)+_0x17725f+_0x197cc3(0x1df)+_0x2d0f04+_0x197cc3(0x25b)+_0x2cfbe3+_0x197cc3(0x1e0)+_0x545995+_0x197cc3(0x113);}const _0x444269=document['getElementById'](_0xa2da90(0x1e3)),_0x449110=document[_0x3706fb(0x26b)]('custom-noise-menu'),_0x540ab9={'white':window[_0x3706fb(0x220)][_0x3706fb(0x174)]+_0xa2da90(0x10d),'brown':window[_0x3706fb(0x220)][_0x3706fb(0x174)]+_0x3706fb(0x124),'rain':window[_0x3706fb(0x220)]['origin']+_0x3706fb(0x189)};let _0x3379c4=null,_0x5720bf=null,_0x32a684=null,_0x40b8de=null,_0x3360c4=![];function _0x2023bd(){const _0x41e355=_0xa2da90,_0x26eb0f=_0x3706fb;if(_0x32a684&&_0x40b8de&&_0x3379c4)try{const _0x46391b=_0x3379c4[_0x41e355(0x265)];_0x40b8de[_0x26eb0f(0x218)][_0x41e355(0xdf)](_0x40b8de[_0x26eb0f(0x218)][_0x26eb0f(0x116)],_0x46391b),_0x40b8de[_0x26eb0f(0x218)]['linearRampToValueAtTime'](0x0,_0x46391b+0.8);const _0x1723b0=_0x32a684,_0x357686=_0x40b8de;setTimeout(()=>{const _0x383193=_0x41e355,_0x14b0aa=_0x26eb0f;try{_0x1723b0[_0x14b0aa(0x166)](),_0x1723b0[_0x383193(0xe7)](),_0x357686['disconnect']();}catch(_0x420d98){}},0x352);}catch(_0x4fd691){console[_0x26eb0f(0x165)](_0x41e355(0x18d),_0x4fd691);}_0x32a684=null,_0x40b8de=null,_0x3360c4=![];}async function _0x4c0692(_0x2e2087){const _0x22bbc4=_0xa2da90,_0x1aac0e=_0x3706fb;_0x2023bd(),!_0x3379c4&&(_0x3379c4=new(window[(_0x1aac0e(0x1d4))]||window[(_0x1aac0e(0x102))])()),_0x3379c4[_0x22bbc4(0x1c2)]===_0x1aac0e(0x209)&&await _0x3379c4[_0x1aac0e(0x207)]();try{const _0x2525ea=await fetch(_0x2e2087),_0x10167b=await _0x2525ea[_0x1aac0e(0x14c)]();_0x5720bf=await _0x3379c4[_0x1aac0e(0x161)](_0x10167b),_0x32a684=_0x3379c4[_0x22bbc4(0x112)](),_0x32a684[_0x1aac0e(0x206)]=_0x5720bf,_0x32a684[_0x1aac0e(0x20c)]=!![],_0x40b8de=_0x3379c4[_0x1aac0e(0x204)](),_0x40b8de[_0x1aac0e(0x218)][_0x1aac0e(0x175)](0x0,_0x3379c4[_0x1aac0e(0x139)]),_0x32a684[_0x1aac0e(0x193)](_0x40b8de),_0x40b8de[_0x1aac0e(0x193)](_0x3379c4[_0x1aac0e(0x1bc)]),_0x32a684[_0x1aac0e(0xeb)](0x0),_0x3360c4=!![],_0x40b8de[_0x1aac0e(0x218)][_0x1aac0e(0x16a)](0x1,_0x3379c4[_0x22bbc4(0x265)]+0x1);}catch(_0x150f18){console[_0x1aac0e(0x165)](_0x1aac0e(0x157),_0x150f18),_0x3360c4=![];}}if(_0x444269&&_0x449110){_0x444269[_0x3706fb(0x15d)]=function(_0x4b095d){const _0x41d0fa=_0xa2da90,_0x4676be=_0x3706fb;_0x4b095d[_0x4676be(0x27d)]();const _0x25f139=_0x444269[_0x4676be(0x1d5)](_0x4676be(0xd8));if(_0x3360c4){_0x2023bd();if(_0x25f139)_0x25f139['src']='../images/audio-off.png';_0x444269[_0x4676be(0x1f5)][_0x41d0fa(0x122)]('sound-active');}_0x449110[_0x4676be(0x1d8)][_0x41d0fa(0x254)]===_0x41d0fa(0xd4)||_0x449110[_0x4676be(0x1d8)][_0x41d0fa(0x254)]===''?_0x449110[_0x4676be(0x1d8)]['display']=_0x4676be(0x243):_0x449110[_0x4676be(0x1d8)][_0x4676be(0x129)]=_0x4676be(0x125);};const _0x21b079=_0x449110[_0x3706fb(0x181)]('.noise-option');_0x21b079[_0xa2da90(0x119)](_0x98f0dc=>{const _0xd897f9=_0x3706fb;_0x98f0dc[_0xd897f9(0x15d)]=async function(_0x536d99){const _0x1bb229=a1_0x520a,_0x32b3f8=_0xd897f9;_0x536d99[_0x32b3f8(0x27d)]();const _0x132e3d=this[_0x32b3f8(0x1d2)](_0x32b3f8(0x1a6)),_0x1f5a1e=_0x444269[_0x32b3f8(0x1d5)](_0x32b3f8(0xd8));if(_0x132e3d!=='none'&&_0x540ab9[_0x132e3d]){await _0x4c0692(_0x540ab9[_0x132e3d]);if(_0x1f5a1e)_0x1f5a1e[_0x32b3f8(0x1a1)]=_0x32b3f8(0x238);_0x444269[_0x32b3f8(0x1f5)][_0x32b3f8(0x279)](_0x32b3f8(0x1cd));}else{_0x2023bd();if(_0x1f5a1e)_0x1f5a1e[_0x32b3f8(0x1a1)]=_0x32b3f8(0x14d);_0x444269[_0x32b3f8(0x1f5)]['remove'](_0x32b3f8(0x1cd));}_0x449110[_0x32b3f8(0x1d8)][_0x32b3f8(0x129)]=_0x1bb229(0xd4);};}),document[_0xa2da90(0x1d2)](_0x3706fb(0x205),function(){const _0x386c7e=_0x3706fb;_0x449110[_0x386c7e(0x1d8)][_0x386c7e(0x129)]=_0x386c7e(0x125);});}window[_0x3706fb(0xd9)]=function(){const _0x249dcd=_0x3706fb,_0x438423=document[_0x249dcd(0x26b)](_0x249dcd(0x136))[_0x249dcd(0x26e)],_0xa9120=_0x249dcd(0x1ab)+_0x438423+_0x249dcd(0xf2);openActionModal(_0xa9120);},window[_0x3706fb(0xe6)]=async function(){const _0x4463f3=_0xa2da90,_0x48cb1c=_0x3706fb,_0x1ad452=document[_0x48cb1c(0x26b)](_0x48cb1c(0x18f))[_0x48cb1c(0x116)][_0x4463f3(0x197)]();if(!_0x1ad452){showMessage(_0x48cb1c(0x191));return;}try{const {data:{user:_0x8c0641}}=await supabaseClient[_0x48cb1c(0x17b)][_0x48cb1c(0x228)](),_0x426f69=_0x8c0641?_0x8c0641[_0x4463f3(0x280)]:_0x4463f3(0x266),_0x217599=document[_0x48cb1c(0x26b)](_0x4463f3(0x157))[_0x48cb1c(0x26e)],_0x5f24d2=document[_0x4463f3(0x275)](_0x4463f3(0x1d5)),_0xd55216=_0x5f24d2?_0x5f24d2[_0x48cb1c(0x26e)][_0x48cb1c(0xef)]():_0x48cb1c(0x1a3),{error:_0x1b92c0}=await supabaseClient['from']('reported_questions')[_0x48cb1c(0x132)]([{'email':_0x426f69,'sual':_0x217599,'comment':_0x1ad452,'fenn_adi':_0xd55216}]);if(_0x1b92c0)throw _0x1b92c0;closeActionModal(),showMessage(_0x4463f3(0x165));}catch(_0x2978f9){console[_0x48cb1c(0x165)](_0x48cb1c(0xff),_0x2978f9),showMessage(_0x48cb1c(0xed));}},_0x3c744b(_0x2fbc4d),_0x85ce9b(),_0x3c744b(_0x2fbc4d),_0x85ce9b();}catch(_0x368840){console[_0x3706fb(0x165)](_0x3706fb(0x1a8),_0x368840[_0x3706fb(0x249)]);}}_0x2ccb22();});function shuffleArray(_0x3be1e3){const _0x180c27=a1_0x175385;return _0x3be1e3[_0x180c27(0x23a)](_0x51e0c8=>[Math['random'](),_0x51e0c8])['sort']((_0x10a1d8,_0x3a868c)=>_0x10a1d8[0x0]-_0x3a868c[0x0])[_0x180c27(0x23a)](_0x59e685=>_0x59e685[0x1]);}}function a1_0x5a5b(){const _0x678786=a1_0x485add,_0x49c322=['Noyabr',_0x678786(0x101),_0x678786(0xdf),_0x678786(0x17a),'1200px','Statistika\x20yenilənərkən\x20xəta\x20baş\x20verdi:',_0x678786(0x205),_0x678786(0x268),_0x678786(0x1a1),_0x678786(0xe2),'addEventListener',_0x678786(0x156),_0x678786(0x100),'last_quiz_date',_0x678786(0x171),_0x678786(0x158),'JSON\x20Error:',_0x678786(0x1ab),_0x678786(0x18b),_0x678786(0x163),_0x678786(0xce),'createClient',_0x678786(0xc8),'verifyOtp',_0x678786(0x214),_0x678786(0x25d),'blurred-chart',_0x678786(0x188),_0x678786(0xf3),_0x678786(0x264),_0x678786(0x14a),_0x678786(0xdc),'connect',_0x678786(0x115),_0x678786(0xd0),_0x678786(0x1ea),_0x678786(0xfe),'flex',_0x678786(0x18e),_0x678786(0xd2),'max','fixed',_0x678786(0x239),_0x678786(0x175),_0x678786(0x1f3),_0x678786(0x10f),_0x678786(0x24b),_0x678786(0x1a4),'Bilinməyən\x20Fənn',_0x678786(0x181),_0x678786(0xee),_0x678786(0x20a),_0x678786(0x111),'Supabase\x20fetch\x20error:',_0x678786(0x194),_0x678786(0x260),_0x678786(0x129),_0x678786(0x223),'log',_0x678786(0x251),'split',_0x678786(0x236),_0x678786(0x21a),_0x678786(0x23c),_0x678786(0x241),_0x678786(0xdd),'<img\x20src=\x22../images/infinity.webp\x22\x20alt=\x22∞\x22\x20style=\x22width:\x2018px;\x20vertical-align:\x20middle;\x22>',_0x678786(0x1b9),'numeric','pow',_0x678786(0x1a5),_0x678786(0x1c5),_0x678786(0x10b),_0x678786(0x271),_0x678786(0x1e8),_0x678786(0x261),'password',_0x678786(0x15a),_0x678786(0x123),'subjects.json',_0x678786(0x1e1),_0x678786(0x13b),_0x678786(0x20e),_0x678786(0x245),_0x678786(0xeb),_0x678786(0x211),'values',_0x678786(0x195),_0x678786(0x16b),_0x678786(0xc7),'sound-active',_0x678786(0x269),_0x678786(0x1cd),_0x678786(0xe3),'</span>\x20-\x20',_0x678786(0x1ef),_0x678786(0x1f1),_0x678786(0x209),_0x678786(0x275),_0x678786(0x16c),_0x678786(0x22b),'style','cursor',_0x678786(0x25b),_0x678786(0x232),'Hesab\x20silmə\x20tələbiniz\x20qeydə\x20alındı.\x201\x20həftə\x20içərisində\x20hesabınız\x20tamamilə\x20silinəcək.',_0x678786(0x119),_0x678786(0x204),_0x678786(0x256),'%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-yellow\x22>●</span>\x20Reytinq\x20(Elo)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22\x20style=\x22color:\x20inherit;\x20font-weight:\x20bold;\x22>',_0x678786(0x11d),_0x678786(0x1bd),_0x678786(0x19f),_0x678786(0x10e),_0x678786(0x134),_0x678786(0x170),_0x678786(0x27f),_0x678786(0x105),_0x678786(0x25a),'keys',_0x678786(0x22e),_0x678786(0x1ca),_0x678786(0x1b3),_0x678786(0x117),_0x678786(0x274),_0x678786(0xf4),_0x678786(0x1ac),_0x678786(0x1f6),_0x678786(0x217),_0x678786(0x1ba),_0x678786(0x143),_0x678786(0x24f),_0x678786(0x1c4),_0x678786(0x168),_0x678786(0x1db),_0x678786(0x187),_0x678786(0x113),_0x678786(0x12b),_0x678786(0x109),_0x678786(0x103),'evvelki-btn',_0x678786(0x11f),'options__D',_0x678786(0x177),'script',_0x678786(0x145),_0x678786(0x1f5),_0x678786(0xf0),_0x678786(0x246),_0x678786(0xd8),_0x678786(0xfb),'total_score',_0x678786(0x26b),_0x678786(0xcb),_0x678786(0x15e),'round',_0x678786(0x140),'İstifadəçi\x20#',_0x678786(0xd3),_0x678786(0x18a),'contains','progress-fill',_0x678786(0x114),'toLocaleDateString',_0x678786(0x11b),_0x678786(0x1da),_0x678786(0x1df),_0x678786(0x13f),_0x678786(0x106),_0x678786(0x161),_0x678786(0xed),_0x678786(0x218),_0x678786(0x1d6),_0x678786(0x21e),_0x678786(0x25f),'slice',_0x678786(0x1b7),_0x678786(0xf2),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>E-poçtu\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>Yeni\x20e-poçt\x20ünvanınızı\x20daxil\x20edin.\x20Təsdiq\x20linki\x20göndəriləcək.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20e-poçt</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22email\x22\x20id=\x22newActionValue\x22\x20placeholder=\x22yeni@mail.com\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22modalSubmitBtn\x22\x20onclick=\x22submitChange(\x27email\x27)\x22>Təsdiqlə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.profile-bg\x20img',_0x678786(0x220),_0x678786(0x1b4),_0x678786(0x154),_0x678786(0x13d),'%</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x678786(0x202),'/sounds/wrong.mp3','find','body',_0x678786(0x23f),_0x678786(0x153),_0x678786(0x20f),_0x678786(0x213),_0x678786(0x121),_0x678786(0x1ec),_0x678786(0xfc),_0x678786(0x22a),_0x678786(0x185),'Mövcud\x20planınız\x20var',_0x678786(0x23a),_0x678786(0xd1),_0x678786(0x15f),_0x678786(0xd7),_0x678786(0x258),_0x678786(0x230),_0x678786(0x15d),'total_time_spent',_0x678786(0xf1),_0x678786(0x198),_0x678786(0xda),_0x678786(0x180),'az-AZ','search',_0x678786(0x24d),_0x678786(0x24e),_0x678786(0x120),'get',')\x20<span>','all\x200.4s\x20ease-in-out',_0x678786(0x124),_0x678786(0x10c),_0x678786(0xe4),_0x678786(0x19b),_0x678786(0x166),_0x678786(0x277),_0x678786(0x173),_0x678786(0x235),'question',_0x678786(0x13a),_0x678786(0xf5),_0x678786(0x14e),_0x678786(0x207),_0x678786(0xf6),'toISOString','https://wa.me/',_0x678786(0xcc),'61px',_0x678786(0x14d),_0x678786(0x1ee),_0x678786(0x1d5),_0x678786(0x1d4),_0x678786(0xff),_0x678786(0xd6),_0x678786(0x224),_0x678786(0x225),_0x678786(0x249),'showSubjectInfo','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Şifrəni\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Şifrəni\x20dəyişmək\x20üçün\x20<b>',_0x678786(0x27d),_0x678786(0x25e),_0x678786(0x1b8),_0x678786(0x250),'actionOverlay',_0x678786(0xe6),_0x678786(0x110),_0x678786(0x17b),'8GthYHm',_0x678786(0x1bb),_0x678786(0x1ff),_0x678786(0x272),_0x678786(0x22c),_0x678786(0x11c),_0x678786(0x1b6),_0x678786(0x1c7),_0x678786(0x26e),_0x678786(0x1d3),_0x678786(0x26f),_0x678786(0x19c),_0x678786(0xe0),'/sounds/correct.mp3',_0x678786(0x231),_0x678786(0x151),'Ümumi\x20(Bütün\x20fakültələr)','setMonth',_0x678786(0x16e),_0x678786(0xc4),_0x678786(0x21d),_0x678786(0xef),_0x678786(0x182),_0x678786(0xde),_0x678786(0x227),_0x678786(0x1be),_0x678786(0x17d),_0x678786(0x200),_0x678786(0x141),_0x678786(0x107),'.plan-free\x20.btn-plan-current',_0x678786(0x267),_0x678786(0x19d),_0x678786(0x128),_0x678786(0x219),_0x678786(0xfa),_0x678786(0x1fc),'img',_0x678786(0x201),'Chart\x20data\x20error:',_0x678786(0x243),'../images/premium-profile.webp','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-title\x22>',_0x678786(0x259),_0x678786(0x234),_0x678786(0x127),'86426vYOGkz',_0x678786(0x118),_0x678786(0x279),_0x678786(0x122),'\x27)\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22animation-delay:\x20',_0x678786(0x172),_0x678786(0x1e5),'diff','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22result-title\x22>Yekun\x20nəticə:\x20',_0x678786(0x189),_0x678786(0x222),_0x678786(0x221),'Xəta\x20baş\x20verdi!\x20Şikayət\x20göndərilə\x20bilmədi.',_0x678786(0x169),_0x678786(0x197),_0x678786(0x1d9),_0x678786(0x176),_0x678786(0x191),'Gözlənilməz\x20xəta:',_0x678786(0x192),_0x678786(0x26a),'newElo',_0x678786(0x1c6),_0x678786(0x1aa),'Diqqət:\x20Bu\x20səhifədə\x20Supabase\x20yüklənməyib.',_0x678786(0x244),'line',_0x678786(0x242),_0x678786(0x160),_0x678786(0x150),'Şikayət\x20göndərilərkən\x20xəta\x20baş\x20verdi:',_0x678786(0x215),_0x678786(0x139),_0x678786(0x229),_0x678786(0x1a6),_0x678786(0x162),_0x678786(0xf9),_0x678786(0x1bf),'textContent','resetPasswordForEmail',_0x678786(0x1fd),_0x678786(0x1c1),_0x678786(0x1fe),_0x678786(0x270),'#F44336',_0x678786(0x27b),_0x678786(0x206),_0x678786(0x15b),_0x678786(0x14c),'346068CaROLU',_0x678786(0x12e),_0x678786(0x212),_0x678786(0x1b2),_0x678786(0x147),_0x678786(0x24a),_0x678786(0x20d),'quiz-timer','#4CAF50',_0x678786(0x257),_0x678786(0x20c),_0x678786(0x149),_0x678786(0x22f),_0x678786(0x281),_0x678786(0x255),_0x678786(0x15c),_0x678786(0x1b1),_0x678786(0x1d1),_0x678786(0x17f),_0x678786(0xd4),'rating',_0x678786(0x164),_0x678786(0x144),_0x678786(0x254),_0x678786(0x1c8),_0x678786(0x1a3),_0x678786(0xf7),_0x678786(0x10a),_0x678786(0x276),_0x678786(0x1c0),_0x678786(0xfd),'daily_limit_count,\x20last_quiz_date',_0x678786(0x186),_0x678786(0x280),'getItem','premiumBitis_',_0x678786(0x157),_0x678786(0x1f0),_0x678786(0x132),_0x678786(0x265),_0x678786(0x152),'previousElementSibling','background:\x20rgba(30,\x20144,\x20255,\x200.1);','Fənn\x20tapılmadı:\x20',_0x678786(0x1de),_0x678786(0x1a8),_0x678786(0x247),_0x678786(0x1e0),_0x678786(0x125),_0x678786(0x21c),_0x678786(0x226),'text/javascript',_0x678786(0x130),_0x678786(0xd9),_0x678786(0xca),_0x678786(0x1ad),_0x678786(0x1f8),'correct',_0x678786(0x196),'../images/audio-off.png',_0x678786(0x238),'target','.top-part','weeklyActivityChart',_0x678786(0x14b),'assigned_subjects',_0x678786(0x203),_0x678786(0x193),_0x678786(0x135),_0x678786(0x174),_0x678786(0xea),'premiumOverlay','updateUser','removeItem','quiz_history',_0x678786(0x178),_0x678786(0x17e),_0x678786(0x19e),_0x678786(0x13e),_0x678786(0x1e9),_0x678786(0x27e),_0x678786(0x1ed),_0x678786(0x1af),_0x678786(0x237),_0x678786(0x1c3),_0x678786(0xe5),_0x678786(0x137),_0x678786(0x1b0),'linearRampToValueAtTime',_0x678786(0x1f4),_0x678786(0x1a2),_0x678786(0xc5),_0x678786(0x23d),_0x678786(0xc2),_0x678786(0xcd),'Suallar\x20tapılmadı!',_0x678786(0x146)];return a1_0x5a5b=function(){return _0x49c322;},a1_0x5a5b();}if(window[a1_0x175385(0x220)][a1_0x485add(0x13e)][a1_0x175385(0x11c)](a1_0x175385(0x13f))){const supabaseUrl=a1_0x175385(0x1da),supabaseKey=a1_0x175385(0x21d),supabaseClient=window[a1_0x485add(0x10e)][a1_0x175385(0x188)](supabaseUrl,supabaseKey);document[a1_0x485add(0x1d2)](a1_0x175385(0x1e5),async()=>{const _0x373e05=a1_0x485add,_0xd5f582=a1_0x175385,{data:{user:_0x2ee1ac},error:_0x52b193}=await supabaseClient[_0xd5f582(0x17b)][_0x373e05(0x1b4)]();if(_0x52b193||!_0x2ee1ac){window['location'][_0xd5f582(0x27c)]=_0xd5f582(0xe7);return;}const _0x319912=document['getElementById'](_0xd5f582(0x12d)),_0x4e7e48=document[_0xd5f582(0x26b)](_0x373e05(0x280)),_0x4d6b37=document[_0xd5f582(0x26b)](_0xd5f582(0x1bf)),_0x5750b7=document[_0xd5f582(0x26b)](_0xd5f582(0x115));if(_0x319912)_0x319912[_0x373e05(0x147)]=_0x2ee1ac[_0xd5f582(0x212)]?.[_0xd5f582(0x19a)]||'';if(_0x4e7e48)_0x4e7e48[_0xd5f582(0x116)]=_0x2ee1ac[_0xd5f582(0x133)]||'';if(_0x4d6b37)_0x4d6b37[_0xd5f582(0x116)]=_0xd5f582(0x10e);if(_0x5750b7&&_0x2ee1ac[_0xd5f582(0x140)]){const _0x41854c=new Date(_0x2ee1ac[_0xd5f582(0x140)]),_0x25344e={'day':_0xd5f582(0x1b7),'month':_0x373e05(0x195),'year':_0xd5f582(0x1b7)};_0x5750b7['textContent']=_0x41854c[_0xd5f582(0x216)](_0xd5f582(0x246),_0x25344e);}const _0x349d2a=document[_0xd5f582(0x1d5)](_0xd5f582(0x158)),_0x14d6b3=document[_0x373e05(0x275)](_0x373e05(0x1d8)),_0x1b890a=document[_0xd5f582(0x1d5)](_0xd5f582(0x1e8)),_0x54abab=document[_0xd5f582(0x26b)](_0xd5f582(0x254)),{data:_0x54bb7d,error:_0x39392f}=await supabaseClient[_0x373e05(0x18b)](_0xd5f582(0xfc))[_0x373e05(0x144)]('*')['eq'](_0xd5f582(0x130),_0x2ee1ac['id'])[_0xd5f582(0x25a)]();if(_0x54bb7d){const _0x37c3ae=new Date(),_0x45b44a=new Date(_0x54bb7d[_0x373e05(0x150)]);if(_0x37c3ae<_0x45b44a){if(_0x349d2a)_0x349d2a[_0xd5f582(0x1d8)][_0xd5f582(0x129)]=_0xd5f582(0x125);if(_0x14d6b3)_0x14d6b3[_0xd5f582(0x1d8)][_0xd5f582(0x129)]='flex';if(_0x1b890a)_0x1b890a['textContent']=_0x54bb7d[_0x373e05(0x11c)];const _0x69501d={'day':'numeric','month':_0xd5f582(0x1ca),'year':_0x373e05(0x26c)};if(_0x54abab)_0x54abab[_0x373e05(0x12f)]=_0x45b44a['toLocaleDateString'](_0x373e05(0x199),_0x69501d);}else _0x349d2a[_0xd5f582(0x1d8)][_0xd5f582(0x129)]=_0xd5f582(0x198);}else{if(_0x349d2a)_0x349d2a[_0xd5f582(0x1d8)][_0x373e05(0x254)]=_0x373e05(0x22d);if(_0x14d6b3)_0x14d6b3[_0x373e05(0xe8)][_0xd5f582(0x129)]=_0xd5f582(0x125);}window[_0xd5f582(0x231)]=function(_0x39577e){const _0x341f45=_0x373e05,_0x142388=_0xd5f582;if(_0x39577e===_0x341f45(0xe1))_0x355836();else{const _0x5aa605=_0x142388(0x225);openActionModal(_0x5aa605);}};async function _0x355836(){const _0xd7f2b5=_0x373e05,_0x22e295=_0xd5f582,{data:{user:_0x4b81cb}}=await supabaseClient[_0xd7f2b5(0x1a1)][_0x22e295(0x228)](),_0x54ee46=_0x4b81cb[_0xd7f2b5(0x280)],_0x1429cc=_0x22e295(0x26a)+_0x54ee46+_0xd7f2b5(0x278)+_0x54ee46+_0x22e295(0x237);openActionModal(_0x1429cc);}window[_0xd5f582(0xf8)]=async function(_0x246ed0){const _0x339f76=_0xd5f582,_0xc2c4d6=document[_0x339f76(0x26b)](_0x339f76(0x16c));_0xc2c4d6['textContent']='Göndərilir...',_0xc2c4d6[_0x339f76(0x260)]=!![];const {error:_0x4a58e9}=await supabaseClient[_0x339f76(0x17b)][_0x339f76(0x108)](_0x246ed0);_0x4a58e9?(await showMessage(_0x339f76(0x1ae)+_0x4a58e9[_0x339f76(0x249)]),_0xc2c4d6[_0x339f76(0x260)]=![],_0xc2c4d6[_0x339f76(0x107)]=_0x339f76(0x141)):_0x2a98c0(_0x246ed0);};function _0x2a98c0(_0x5f1227){const _0x4b2b08=_0x373e05,_0x5e0590=_0xd5f582,_0x570741=document[_0x5e0590(0x26b)](_0x5e0590(0x19d));_0x570741[_0x4b2b08(0x220)]=_0x5e0590(0x149)+_0x5f1227+_0x4b2b08(0x25c);}window[_0xd5f582(0x274)]=async function(_0x1cc7d9){const _0x184ca8=_0x373e05,_0x26b279=_0xd5f582,_0x1c0293=document[_0x26b279(0x26b)](_0x184ca8(0x1e6))[_0x26b279(0x116)][_0x26b279(0xef)](),_0x593ee4=document[_0x26b279(0x26b)](_0x184ca8(0x1dc))[_0x26b279(0x116)][_0x26b279(0xef)](),_0x1b96b1=document[_0x184ca8(0x27d)](_0x184ca8(0x1f7));if(_0x1c0293[_0x26b279(0x17a)]<0x8||_0x593ee4[_0x184ca8(0x268)]<0x6){await showMessage(_0x26b279(0x1c8));return;}_0x1b96b1[_0x26b279(0x107)]=_0x26b279(0xee),_0x1b96b1[_0x26b279(0x260)]=!![];const {error:_0x826a24}=await supabaseClient[_0x26b279(0x17b)][_0x26b279(0x18a)]({'email':_0x1cc7d9,'token':_0x1c0293,'type':_0x26b279(0x1b2)});if(_0x826a24)await showMessage(_0x26b279(0xe2)),_0x1b96b1[_0x26b279(0x260)]=![],_0x1b96b1[_0x184ca8(0x12f)]=_0x26b279(0x16e);else{const {error:_0x104a54}=await supabaseClient['auth'][_0x26b279(0x15a)]({'password':_0x593ee4});closeActionModal(),_0x104a54?await showMessage(_0x26b279(0x1ae)+_0x104a54[_0x26b279(0x249)]):await showMessage(_0x26b279(0x1f0));}};const _0x57b10b=document[_0xd5f582(0x1d5)](_0xd5f582(0x1e7));_0x57b10b&&_0x57b10b[_0xd5f582(0x17d)]('click',async()=>{const _0x41cb50=_0x373e05,_0x5389a6=_0xd5f582,_0x349fcf=_0x319912[_0x5389a6(0x116)][_0x41cb50(0x197)]();if(!_0x349fcf){await showMessage(_0x5389a6(0x152));return;}const _0x5a1b84=_0x57b10b[_0x41cb50(0x12f)];_0x57b10b[_0x5389a6(0x107)]=_0x5389a6(0x27e),_0x57b10b[_0x5389a6(0x260)]=!![];const {data:_0x264c2e,error:_0x139216}=await supabaseClient[_0x41cb50(0x1a1)][_0x5389a6(0x15a)]({'data':{'full_name':_0x349fcf}});_0x57b10b[_0x5389a6(0x107)]=_0x5a1b84,_0x57b10b[_0x5389a6(0x260)]=![],_0x139216?await showMessage(_0x5389a6(0x1ae)+_0x139216[_0x5389a6(0x249)]):await showMessage(_0x5389a6(0xf1),'showMessage',_0x5389a6(0x27b));});const _0x340eed=document[_0xd5f582(0x1d5)](_0xd5f582(0x190));_0x340eed&&_0x340eed[_0x373e05(0x1d2)](_0xd5f582(0x205),async()=>{const _0x5738a9=_0x373e05,_0x5d47e6=_0xd5f582,_0x16b9e3=await showMessage(_0x5d47e6(0x1eb),_0x5738a9(0xc2));_0x16b9e3&&(await supabaseClient[_0x5d47e6(0x17b)][_0x5d47e6(0x100)](),window[_0x5738a9(0x21e)][_0x5738a9(0x1d3)]=_0x5d47e6(0xe7));});const _0xdca47d=document[_0xd5f582(0x1d5)](_0xd5f582(0x168));_0xdca47d&&_0xdca47d[_0xd5f582(0x17d)](_0xd5f582(0x205),async()=>{const _0x3296e5=_0x373e05,_0x3d56d7=_0xd5f582,_0x2a0abb=await showMessage(_0x3d56d7(0x258),_0x3d56d7(0x16f));if(_0x2a0abb){_0xdca47d[_0x3d56d7(0x107)]=_0x3d56d7(0x289),_0xdca47d[_0x3d56d7(0x260)]=!![];const _0x19309c=_0x2ee1ac[_0x3d56d7(0x133)],{data:_0x5678aa,error:_0x2c8190}=await supabaseClient[_0x3d56d7(0x185)](_0x3296e5(0x277))[_0x3d56d7(0x128)](_0x3d56d7(0x133))['eq'](_0x3d56d7(0x133),_0x19309c);if(_0x2c8190){await showMessage(_0x3d56d7(0x138)+_0x2c8190[_0x3d56d7(0x249)]),_0xdca47d[_0x3296e5(0x12f)]=_0x3d56d7(0x1b9),_0xdca47d[_0x3d56d7(0x260)]=![];return;}if(_0x5678aa&&_0x5678aa[_0x3d56d7(0x17a)]>0x0){await showMessage('Sizin\x20hesab\x20silmə\x20istəyiniz\x20artıq\x20qeydə\x20alınıb\x20və\x20hazırda\x20icra\x20olunur.',_0x3d56d7(0x26c),_0x3d56d7(0x27b)),_0xdca47d[_0x3d56d7(0x107)]=_0x3296e5(0x1a5),_0xdca47d[_0x3d56d7(0x260)]=![];return;}_0xdca47d[_0x3d56d7(0x107)]='Göndərilir...';const {error:_0xb9f8d9}=await supabaseClient[_0x3296e5(0x18b)](_0x3d56d7(0x253))[_0x3d56d7(0x132)]([{'email':_0x19309c}]);if(_0xb9f8d9){await showMessage(_0x3296e5(0x133)+_0xb9f8d9[_0x3296e5(0x24e)]),_0xdca47d[_0x3296e5(0x12f)]='Hesabı\x20sil',_0xdca47d[_0x3d56d7(0x260)]=![];return;}await showMessage(_0x3d56d7(0x1dc),'showMessage',_0x3d56d7(0x27b)),await supabaseClient[_0x3d56d7(0x17b)][_0x3d56d7(0x100)](),window[_0x3d56d7(0x220)][_0x3d56d7(0x27c)]=_0x3d56d7(0xe7);}});});}if(window[a1_0x175385(0x220)]['pathname'][a1_0x485add(0x20c)](a1_0x175385(0x245))){const supabaseUrl=a1_0x175385(0x1da),supabaseKey=a1_0x175385(0x21d),supabaseClient=window[a1_0x485add(0x10e)][a1_0x485add(0x253)](supabaseUrl,supabaseKey);async function checkActivePlan(){const _0x41fe07=a1_0x485add,_0x43a8fb=a1_0x175385,_0x48803d=(function(){let _0x4d7b0c=!![];return function(_0x48a9a4,_0x5dba39){const _0x275438=_0x4d7b0c?function(){const _0x38d3df=a1_0x32db;if(_0x5dba39){const _0x4c9893=_0x5dba39[_0x38d3df(0x1e1)](_0x48a9a4,arguments);return _0x5dba39=null,_0x4c9893;}}:function(){};return _0x4d7b0c=![],_0x275438;};}()),_0x3df144=_0x48803d(this,function(){const _0xb75deb=a1_0x520a,_0x301a0a=a1_0x32db;return _0x3df144[_0xb75deb(0x10c)]()[_0x301a0a(0x247)](_0xb75deb(0x1e4))[_0xb75deb(0x10c)]()[_0xb75deb(0x233)](_0x3df144)['search']('(((.+)+)+)+$');});_0x3df144();const {data:{user:_0x25669d}}=await supabaseClient['auth'][_0x41fe07(0x1b4)]();if(_0x25669d){const {data:_0x5c2be5}=await supabaseClient[_0x43a8fb(0x185)](_0x43a8fb(0xfc))[_0x43a8fb(0x128)]('*')['eq'](_0x43a8fb(0x130),_0x25669d['id'])[_0x43a8fb(0x25a)]();if(_0x5c2be5){const _0x5dfa9b=new Date(),_0x5571bf=new Date(_0x5c2be5[_0x43a8fb(0xfe)]);if(_0x5dfa9b<_0x5571bf){const _0x5a53d8=document[_0x43a8fb(0x1d5)](_0x43a8fb(0xd1));_0x5a53d8&&(_0x5a53d8[_0x41fe07(0x12f)]=_0x43a8fb(0x239),_0x5a53d8[_0x43a8fb(0x1d8)][_0x43a8fb(0x217)]=_0x43a8fb(0x1e2));const _0x14e84a=document[_0x43a8fb(0x181)](_0x43a8fb(0x234));_0x14e84a[_0x43a8fb(0x1dd)](_0x310d21=>{const _0x29a874=_0x41fe07,_0x41f422=_0x43a8fb;_0x310d21[_0x41f422(0x1d2)](_0x41f422(0x15d))[_0x41f422(0x11c)](_0x5c2be5[_0x41f422(0x278)])?(_0x310d21[_0x29a874(0x12f)]=_0x41f422(0x12c),_0x310d21[_0x29a874(0x14d)]=!![],_0x310d21[_0x41f422(0x1d8)][_0x41f422(0x267)]=_0x41f422(0x11a),_0x310d21[_0x41f422(0x1d8)][_0x41f422(0x1d9)]=_0x41f422(0x1b4)):(_0x310d21[_0x29a874(0x12f)]=_0x41f422(0x239),_0x310d21[_0x41f422(0x260)]=!![],_0x310d21[_0x29a874(0xe8)][_0x41f422(0x217)]=_0x41f422(0x1e2),_0x310d21[_0x41f422(0x1d8)][_0x41f422(0x1d9)]=_0x29a874(0x282));});}}}}checkActivePlan(),window[a1_0x175385(0x1c7)]=async function(_0x122ea7,_0x31aead){const _0x310410=a1_0x485add,_0x3d7efd=a1_0x175385,_0x2a8c58=_0x3d7efd(0xfd);let _0x35b35a='';try{const {data:{user:_0x30bfb8}}=await supabaseClient[_0x3d7efd(0x17b)][_0x3d7efd(0x228)]();_0x30bfb8&&_0x30bfb8[_0x3d7efd(0x133)]&&(_0x35b35a=_0x30bfb8[_0x310410(0x280)]);}catch(_0x2c29d9){console[_0x3d7efd(0x165)](_0x310410(0xc6),_0x2c29d9);}let _0x7e4abe=_0x3d7efd(0x1c6)+_0x122ea7+'\x20('+_0x31aead+_0x310410(0x16d);_0x35b35a&&(_0x7e4abe+=_0x3d7efd(0x223)+_0x35b35a);const _0x231d24=encodeURIComponent(_0x7e4abe),_0x54dd4f=_0x3d7efd(0x25d)+_0x2a8c58+_0x310410(0x23e)+_0x231d24;window[_0x3d7efd(0x27a)](_0x54dd4f,_0x3d7efd(0x170));};}function a1_0x232f(){const _0x3ed8f8=['body','Quiz\x20Sayı','Dekabr','telebe-menu','width','undefined','No\x20subject\x20provided!','random','default','name','setValueAtTime','boxShadow','password','premium-aktiv','then','messageOverlay','options__B','maxWidth','disconnect','style','options__A','.abunelik-bg','activatePlan','elo-up','sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN','chtlConfig','Daxil\x20ol','buffer','Avqust','getUTCFullYear','reportReasonText','Şifrəniz\x20uğurla\x20yeniləndi!','Hesabınızı\x20silmək\x20istədiyinizə\x20əminsiniz?\x20Bu\x20əməliyyat\x20geri\x20qaytarıla\x20bilməz!','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x20last-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-green\x22>●</span>\x20Keçmə\x20faizi</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x20green-text\x22>','Aktivdir','Yanvar','json','closeInfoModal','suspended','page_inline','user_id','.main-content','cancelBtn','single','origin','Fevral','limit-text','universities','#premium-text\x20p','Supabase\x20xətası:','filter-container','get','stringify','username','</strong><br><br>Bu\x20qlobal\x20fəndir\x20və\x20universitet/fakültədən\x20asılı\x20olmayaraq\x20hər\x20kəs\x20üçün\x20keçərlidir.','toString','/sounds/white-noise.mp3','supabase','push','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22','1439150mjRcfe','createBufferSource','Aylıq\x20hesablamalar:','chatling-embed-trigger','9896744625','global_subjects','C.a','Kod\x20yanlışdır!','forEach','2367928wLxwIQ','opacity','plan_adi','apply','182276betNgK','Ləğv\x20et','</td>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','.btn-plan-active','remove','rgba(255,\x20255,\x20255,\x200.1)','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/freeplanreminder.webp\x22\x20alt=\x22Limit\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Gündəlik\x20limit\x20doldu!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','statistics.html','infoModalText','dataset','inline-block','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Sualı\x20Şikayət\x20Et</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemli\x20sual:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22reported-question-box\x22>','assigned_subjects','createElement','getItem','input','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22fennler-menu.html\x22\x20class=\x22link-blue\x22>Əsas\x20səhifə</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-blue\x22\x20onclick=\x22window.location.reload()\x22>Yenidən\x20sına</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','textContent','upsert','</li>','Sorğu\x20yoxlanılarkən\x20xəta\x20baş\x20verdi:\x20','Sorğu\x20göndərilərkən\x20xəta\x20baş\x20verdi:\x20','DOMContentLoaded','s\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22info-btn\x22\x20onclick=\x22showSubjectInfo(event,\x20\x27','17326441fiJDvr','.btn-delete','user_id,\x20quiz_date','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-meta\x22>','Limit\x20göstərilərkən\x20xəta:','faculty-select','data-key','confirmBtn','pathname','1000','#fff','total_answered_questions','70%','classList','select','createGain','calc(100vh\x20-\x2061px)','value','order','rgba(0,\x200,\x200,\x200.1)','Zəhmət\x20olmasa\x20problemin\x20nə\x20olduğunu\x20qeyd\x20edin!','İstifadəçi\x20adı\x20boş\x20ola\x20bilməz!','Sentyabr','disabled','total_correct_answers','<li\x20style=\x22margin-bottom:\x208px;\x22><span\x20style=\x22color:#1e90ff;\x20font-weight:bold;\x22>','bitis_tarixi','faculties','center','openChangeFrame','sqrt','slice','</span></button>','question-text','getDay','#4CAF50','</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stats-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-blue\x22>●</span>\x20Düzgün\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','catch','Aprel','\x27,\x20\x27','infoModal','quiz.html?subject=','994776247077','\x20<span\x20class=\x22','subject_pool','00:00','white','Şikayətiniz\x20uğurla\x20göndərildi.\x20Təşəkkür\x20edirik!','quiz_date','dark-theme','\x27)\x22>i</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-icon\x22>','Gözləyin...','shift','destroy','icon','\x20AZN)\x20premium\x20planını\x20almaq\x20istəyirəm.','display_name','.sual-word','type','querySelectorAll','submitReport','bitme-tarixi','Web\x20Audio\x20xətası:','../images/premium-thunder.webp','Profil\x20məlumatlarınız\x20uğurla\x20yadda\x20saxlanıldı!','daily_limit_count','onclick','#ffffff','user','15sYFWIQ','.quiz-buttons-bg','Adsız\x20İstifadəçi','play','/sounds/brown-noise.mp3','premium.html','367576vNJbHi','Yoxlanılır...','Chart-dakı\x20cəmi\x20quiz\x20sayı:','avgTime','../images/audio-on.png','insert','getDate','Mart','key','user_metadata','from','Qeyd:\x20Pulsuz\x20istifadəçilər\x20üçün\x20AI\x20aktiv\x20deyil.','Səs\x20dayandırılarkən\x20xəta:','Limit\x20bölməsində\x20xəta\x20yarandı:','30YWmfCA','special_subjects','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemin\x20təsviri:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22reportReasonText\x22\x20class=\x22report-textarea\x22\x20placeholder=\x22Sualda\x20hansı\x20səhvi\x20və\x20ya\x20problemi\x20gördüyünüzü\x20ətraflı\x20yazın...\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20onclick=\x22submitReport()\x22>Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22result-subject\x22>','reduce','accuracyRate','long','arrayBuffer','trim','block','az-AZ','Növbəti','replace','Saxlanılır...','gte','95%','setItem','1405923FuDcmP','auth','sendOtpBtn','open-ai-btn','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','Hesabı\x20sil','\x22\x20style=\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-container\x20sfx-fade-in\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress\x22\x20style=\x22--degrees:\x20','profile.html','quiz_history','sendProfileOtp','getTime','fennler-menu.html','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Təsdiqləmə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>E-poçtunuza\x20gələn\x20kodu\x20və\x20yeni\x20şifrəni\x20daxil\x20edin.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>OTP\x20Kod</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22otpCodeInput\x22\x20placeholder=\x2212345678\x22\x20maxlength=\x228\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20Şifrə</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22password\x22\x20id=\x22newProfilePassword\x22\x20placeholder=\x22Ən\x20azı\x208\x20simvol\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22finalSubmitBtn\x22\x20onclick=\x22verifyAndFinish(\x27','userStreak','title','change','Oktyabr','createdat','substring','getUser','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20Fakültə\x20ad(lar)ı\x20kartın\x20üstündə\x20yazılır\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-faculty\x22>','add','\x20Qeydiyyat\x20emailim:\x20','appendChild','quiz_count','last_session_id','verifyAndFinish','round','0.5','İndi\x20al','3756376919','totalQuizzes','Fakültə\x20təyin\x20edilməyib','state','stop','3159621OiHAEm','hidden','getFullYear','open','wrong','7NWrRqg','current_streak','log','question-counter','</strong><br><br>Bu\x20fənn\x20hələ\x20heç\x20bir\x20fakültəyə\x20təyin\x20edilməyib.','transition','startQuiz','2740356CiNESH','May','addEventListener','href','</span>','.fenn-id\x20h1','active_session_id','eloValue','.premium-abunelik-bg','quizzes_completed','gain','correct_answer','newProfilePassword','text/javascript','-2px\x200px\x2010px\x20rgba(0,0,0,0.1)','getContext','Kod\x20Göndər','Aylıq\x20statistika\x20xətası:','marginLeft','sound-toggle-btn','(((.+)+)+)+$','login.html','otpCodeInput','div','charAt','decodeAudioData','Sonra','7Gdnwbc','../images/profile.webp','Ç.a','#36A2EB','getAttribute','setDate','alert','zIndex','localeCompare','\x20Gün','click','join','finalSubmitBtn','filter','Nəticə','rgba(54,\x20162,\x20235,\x200.2)','flex-start','messageText','search-button','parse','options-container','user_stats','openReportFrame','height','.arrow','elo_rating','quiz.html','140crBwsP','maybeSingle','diff','AudioContext','data-value','İyul','includes','https://chatling.ai/js/embed.js','<strong>','update','subjects.json','Kod\x20və\x20şifrə\x20tam\x20doldurulmalıdır!','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22subject-card\x20animate-card\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onclick=\x22startQuiz(\x27','Təsdiqlə','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/matrix-looking.webp\x22\x20alt=\x22Alert\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Hesabınıza\x20başqa\x20cihazdan\x20giriş\x20edilib.\x20Quiz\x20dayandırıldı!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Hesabınızın\x20qorunması\x20üçün\x20şifrənizi\x20dərhal\x20yeniləməyiniz\x20tövsiyə\x20olunur.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Bu\x20halın\x20təkrarlanması\x20platforma\x20qaydalarının\x20manipulyasiyası\x20kimi\x20qiymətləndiriləcək.\x20Bu\x20zaman\x20hesabınız\x20avtomatik\x20olaraq\x20\x27Yüksək\x20Risk\x27\x20kateqoriyasına\x20keçəcək.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','signOut','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>','justifyContent','padStart','top','color','energy-icon','quiz_date,\x20quiz_count','match','location','1362KtKtcb','innerHTML','innerWidth','start','option','supabaseClient','backgroundColor','<button\x20class=\x22option-btn\x22\x20data-key=\x22','elo-down','contains','webkitAudioContext','\x27)\x22>Kod\x20Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-red\x22>●</span>\x20Səhv\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','toUpperCase','flex','Hesabdan\x20çıxmaq\x20istədiyinizə\x20əminsiniz?','\x22\x20style=\x22font-size:\x200.9em;\x20margin-left:\x205px;\x22>','İyun','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22loader-container\x20sfx-fade-in\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22quiz-spinner\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22loader-text\x22>Nəticələriniz\x20yoxlanılır\x20və\x20Elo\x20reytinqiniz\x20hesablanır...</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','1528710fAsjrZ','constructor','options__C','#333333','30%','error','getMonth','actionModalContent','map','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22color:\x20#1e90ff;\x22>Giriş\x20lazımdır</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sual\x20işləmək\x20üçün\x20zəhmət\x20olmasa\x20hesabınıza\x20daxil\x20olun.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','recovery','Yenilə','?text=','options__E','warn','endsWith','abunelikler','[data-key=\x22','chtl-inline-bot','Salam,\x20mən\x20AtlasLab.az\x20saytından\x20','resume','created_at','getSession','toLowerCase','.sual-text-bg','src','\x20(Siz)','novbeti-btn','message','.main-background','innerText','Xəta:\x20','pow','createClient','display','sb-xoebhhdirsvjorjlrfzi-auth-token','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-grey\x22>●</span>\x20Sərf\x20olunan\x20vaxt</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','count','chtl-script','dark-mode','deg;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22progress-value\x22>','https://xoebhhdirsvjorjlrfzi.supabase.co','\x27)\x22>Yenilə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','1622320FQpxYf','showMessage','\x20sual\x20•\x20Hər\x20gün\x20yenilənir</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-arrow\x22>→</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Subject\x20fetch\x20error:','min','rating','2866960urXBFX','.btn-logout','currentTime','Anonim','chatling','length','getUTCMonth','fake-ai-btn','sort','numeric','rating_deviation','Tamam','stopPropagation','position','destination','floor','entries','4PmumIk','querySelector','../images/thunder.webp','hesab_silme_telebleri','</b>\x20ünvanına\x20təsdiq\x20kodu\x20göndərilməlidir.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22sendOtpBtn\x22\x20onclick=\x22sendProfileOtp(\x27','<option\x20value=\x22\x22>--\x20Fakültə\x20Seçin\x20--</option>','.option-btn','********','23435qltzvE','getElementById','subject','.btn-save','email','\x20/\x20','not-allowed','confirm','subjects-bg','right','all','İstifadəçi\x20məlumatı\x20alınarkən\x20xəta:','globalSupabaseClient','/sounds/rain.mp3','split','<p\x20style=\x22width:100%;\x20text-align:center;\x20color:#666;\x20grid-column:\x201\x20/\x20-1;\x22>Heç\x20bir\x20nəticə\x20tapılmadı.</p>','loop','elo-neutral','_blank','Səs\x20başladılarkən\x20xəta\x20baş\x20verdi:','.exit-bg\x20a','async','wrong_questions','full_name','overflow','none'];a1_0x232f=function(){return _0x3ed8f8;};return a1_0x232f();}
+// ---------------------- GLOBAL SCRIPTS ----------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+      
+      if (preloader) {
+          // 1000ms ulduzun tam 360 dərəcə fırlanmasına gedir.
+          // +400ms ulduz dayandıqdan sonra ekranda sabit qalmasını görmək üçündür.
+          // Ümumi: 1400ms (1.4 saniyə) sonra yüklənmə ekranı yox olur.
+          setTimeout(() => {
+              preloader.classList.add("hidden");
+          }, 1600);
+      }
+  });
+document.addEventListener("DOMContentLoaded", function () {
+
+    // 1. Mövcud Menyu Kodunuz
+    const telebeMenu = document.getElementById('telebe-menu');
+    if (telebeMenu && telebeMenu.previousElementSibling) {
+        telebeMenu.classList.add('open');
+        telebeMenu.previousElementSibling.querySelector('.arrow').textContent = 'v';
+    }
+
+    // ==========================================
+    // 2. QLOBAL PREMİUM YOXLANIŞI (Gecikməsiz & Ağıllı Yenilənmə)
+    // ==========================================
+
+    // UI-ı dəyişən və ya geri qaytaran (Sıfırlayan) funksiya
+    function setPremiumUI(isActive) {
+        const premiumHref = document.getElementById('premium-href');
+        const profileImg = document.querySelector('.profile-bg img');
+
+        if (isActive) {
+            // Premium aktivdir
+            document.body.classList.add('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = 'none';
+            if (profileImg) profileImg.src = '../images/premium-profile.webp';
+        } else {
+            // Premium DEYİL (və ya vaxtı bitib) - Hər şeyi standart vəziyyətə qaytarırıq
+            document.body.classList.remove('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = ''; // CSS-dəki original display dəyərinə qayıdır
+            if (profileImg) profileImg.src = '../images/profile.webp';
+        }
+    }
+
+    if (window.supabase) {
+        const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+        const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+
+        // Supabase Tək İnstance Yoxlanışı
+        if (!window.globalSupabaseClient) {
+            window.globalSupabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+        }
+        const supabaseGlobal = window.globalSupabaseClient;
+
+        // --- ADDIM 1: SIFIR GECİKMƏ İLƏ LOCALSTORAGE YOXLANIŞI ---
+        let userId = null;
+        try {
+            // Supabase-in öz qlobal tokenindən (gecikmə olmadan) User ID-ni çəkirik
+            const sbSession = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (sbSession) {
+                userId = JSON.parse(sbSession).user.id;
+            }
+        } catch (e) { }
+
+        const indi = new Date().getTime();
+
+        if (userId) {
+            // Hər istifadəçinin ÖZÜNƏ məxsus premium yaddaşını yoxlayırıq
+            const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+
+            if (cachedBitis && indi < parseInt(cachedBitis)) {
+                setPremiumUI(true); // Gözləmədən anında Premium rəngləri ver
+            } else {
+                setPremiumUI(false); // Keş yoxdursa və ya bitibsə standart UI göstər
+            }
+        }
+
+        // --- ADDIM 2: ARXA FONDA DƏQİQ BAZA YOXLANIŞI ---
+        supabaseGlobal.auth.getSession().then(async ({ data: { session } }) => {
+            if (session) {
+                const currentUserId = session.user.id;
+                const { data: abuneData } = await supabaseGlobal
+                    .from('abunelikler')
+                    .select('bitis_tarixi')
+                    .eq('user_id', currentUserId)
+                    .maybeSingle();
+
+                if (abuneData) {
+                    const bitis = new Date(abuneData.bitis_tarixi).getTime();
+                    const rightNow = new Date().getTime();
+
+                    if (rightNow < bitis) {
+                        // Baza təsdiqlədi: Hələ də premiumdur. Yaddaşı yeniləyirik.
+                        localStorage.setItem('premiumBitis_' + currentUserId, bitis);
+                        setPremiumUI(true);
+                    } else {
+                        // Baza dedi ki: Vaxtı BİTİB! Yaddaşı sil və UI-ı geri al.
+                        localStorage.removeItem('premiumBitis_' + currentUserId);
+                        setPremiumUI(false);
+                    }
+                } else {
+                    // Cədvəldə bu istifadəçiyə aid heç nə yoxdur (Pulsuzdur). Yaddaşı sil və UI-ı geri al.
+                    localStorage.removeItem('premiumBitis_' + currentUserId);
+                    setPremiumUI(false);
+                }
+            }
+        });
+    } else {
+        console.warn("Diqqət: Bu səhifədə Supabase yüklənməyib.");
+    }
+});
+
+function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", customCancel = "Ləğv et") {
+    return new Promise((resolve) => {
+        const overlay = document.getElementById("messageOverlay");
+        const messageText = document.getElementById("messageText");
+        const okBtn = document.getElementById("okBtn");
+        const confirmBtn = document.getElementById("confirmBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+
+        if (!overlay) return resolve(false);
+
+        // Mesajı qutuya yazırıq və ekranı açırıq
+        messageText.innerHTML = message;
+        overlay.style.display = "flex";
+
+        // Əgər növ "confirm" (Sual) idisə:
+        if (type === "confirm") {
+            okBtn.style.display = "none";
+            confirmBtn.style.display = "inline-block";
+            cancelBtn.style.display = "inline-block";
+
+            // YENİLİK: Düymə yazıları kənardan gələn adlarla dəyişdirilir
+            confirmBtn.textContent = customConfirm;
+            cancelBtn.textContent = customCancel;
+
+            // "İndi al" və ya əsas təsdiq düyməsinə basıldıqda
+            confirmBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+
+            // "Sonra" və ya ləğv düyməsinə basıldıqda
+            cancelBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(false);
+            };
+        }
+        // Əgər növ "alert" (Sadəcə bildiriş) idisə:
+        else {
+            okBtn.style.display = "inline-block";
+            confirmBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+
+            // Tək düyməli mesajlar üçün mətni dəyişə bilərik
+            okBtn.textContent = customConfirm !== "Təsdiqlə" ? customConfirm : "OK";
+
+            okBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+        }
+    });
+}
+function openActionModal(contentHTML) {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay && modalContent) {
+        modalContent.innerHTML = contentHTML;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeActionModal() {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay) {
+        // Modalı gizlədirik
+        overlay.style.display = "none";
+        // Səhifənin sürüşməsini (scroll) geri qaytarırıq
+        document.body.style.overflow = "";
+    }
+
+    if (modalContent) {
+        // Növbəti dəfə açılanda köhnə elementlər görünməsin deyə içini təmizləyirik
+        modalContent.innerHTML = "";
+    }
+}
+
+// ---------------------- FENNLER MENU ----------------------
+if (window.location.pathname.endsWith("fennler-menu.html")) {
+    const container = document.getElementById("subjects-bg");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    const filterContainer = document.getElementById("filter-container");
+    const uniSelect = document.getElementById("university-select");
+    const facultySelect = document.getElementById("faculty-select");
+
+    const infoModal = document.getElementById("infoModal");
+    const infoModalText = document.getElementById("infoModalText");
+    const closeInfoModal = document.getElementById("closeInfoModal");
+    let allSubjects = []; // Bütün fənnləri burada saxlayacağıq
+    let globalSubjects = []; // Yalnız qlobal fənnlərin ID-lərini saxlamaq üçün (Info modalı üçün lazımdır)
+    let universitiesData = {};
+    let searchTimeout = null;
+    fetch("subjects.json")
+        .then(response => response.json())
+        .then(data => {
+            const global = data.subject_pool.global_subjects || [];
+            const special = data.subject_pool.special_subjects || [];
+            universitiesData = data.universities || {};
+
+            // Global fənnlərin ID-lərini yadda saxlayaq (Reverse lookup üçün)
+            globalSubjects = global.map(s => s.id);
+
+            allSubjects = [...global, ...special].sort((a, b) =>
+                a.title.localeCompare(b.title, 'az')
+            );
+            
+            // Əgər universitet datası varsa, filteri göstər və doldur
+            if (Object.keys(universitiesData).length > 0) {
+                filterContainer.style.display = "flex";
+                populateUniversities();
+            }
+
+            renderSubjects(allSubjects);
+        })
+        .catch(error => console.error("JSON Error:", error));
+    function populateUniversities() {
+        for (const uniKey in universitiesData) {
+            const option = document.createElement("option");
+            option.value = uniKey;
+            option.textContent = universitiesData[uniKey].name;
+            uniSelect.appendChild(option);
+        }
+    }
+
+    uniSelect.addEventListener("change", function() {
+        const selectedUni = this.value;
+        
+        // Fakültə select-ini sıfırla
+        facultySelect.innerHTML = '<option value="">-- Fakültə Seçin --</option>';
+        facultySelect.disabled = true;
+
+        if (selectedUni && universitiesData[selectedUni]) {
+            const faculties = universitiesData[selectedUni].faculties;
+            for (const facKey in faculties) {
+                const option = document.createElement("option");
+                option.value = facKey;
+                option.textContent = faculties[facKey].name;
+                facultySelect.appendChild(option);
+            }
+            facultySelect.disabled = false;
+        }
+
+        applyFilters(); // Universitet dəyişəndə filteri yenilə
+    });
+
+    facultySelect.addEventListener("change", applyFilters);
+
+    function applyFilters() {
+        const selectedUni = uniSelect.value;
+        const selectedFac = facultySelect.value;
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        let filtered = allSubjects;
+
+        // 1. Dropdown filteri
+        if (selectedUni && selectedFac) {
+            // Seçilmiş fakültənin icazə verilən fənn ID-lərini alırıq
+            const assignedIds = universitiesData[selectedUni].faculties[selectedFac].assigned_subjects || [];
+            
+            // Fənn siyahısını bu ID-lərə görə süzürük
+            filtered = allSubjects.filter(subject => assignedIds.includes(subject.id));
+        }
+
+        // 2. Axtarış filteri (Mövcud axtarış məntiqin)
+        if (searchTerm !== "") {
+            filtered = filtered.filter(subject => isMatch(subject.title, searchTerm));
+        }
+
+        renderSubjects(filtered);
+    }
+    function isMatch(text, query) {
+        text = text.toLowerCase();
+        query = query.toLowerCase();
+
+        // Əgər yazı fənnin daxilində varsa, dərhal tap
+        if (text.includes(query)) return true;
+
+        // Əgər axtarış sözü çox qısadırsa (3 hərfdən az), səhvə icazə vermə
+        if (query.length < 3) return false;
+
+        // Dinamik səhv limiti: Hər 4 hərfə 1 səhv icazə verək (maksimum 3)
+        const allowedMistakes = Math.min(3, Math.floor(query.length / 3));
+
+        let mistakes = 0;
+        let j = 0;
+        for (let i = 0; i < query.length; i++) {
+            if (j < text.length && query[i] === text[j]) {
+                j++;
+            } else {
+                mistakes++;
+            }
+        }
+
+        return mistakes <= allowedMistakes;
+    }
+    function renderSubjects(data) {
+        if (!data || data.length === 0) {
+            container.innerHTML = `<p style="width:100%; text-align:center; color:#666; grid-column: 1 / -1;">Heç bir nəticə tapılmadı.</p>`;
+            return;
+        }
+
+        container.innerHTML = data.map((subject, index) => {
+            
+            let facultyText = "";
+            
+            // 1. Qlobal fənn yoxlanışı
+            if (globalSubjects.includes(subject.id)) {
+                facultyText = "Ümumi (Bütün fakültələr)";
+            } else {
+                // 2. Canlı axtarış (İnfo düyməsində olduğu kimi)
+                let foundFaculties = [];
+                for (const uniKey in universitiesData) {
+                    const faculties = universitiesData[uniKey].faculties;
+                    for (const facKey in faculties) {
+                        const assigned = faculties[facKey].assigned_subjects || [];
+                        if (assigned.includes(subject.id)) {
+                            // Burada ancaq fakültə adlarını yığırıq (çünki kartın üstündə çox uzun yer tutmasın)
+                            foundFaculties.push(faculties[facKey].name);
+                        }
+                    }
+                }
+
+                // Əgər tapıldılarsa, onları vergüllə birləşdir
+                if (foundFaculties.length > 0) {
+                    facultyText = foundFaculties.map(name => {
+                        const cleanName = name
+                            .replace(/fakültəsi/gi, '') 
+                            .replace(/və/gi, '')
+                            .trim();
+                        return cleanName
+                            .split(/\s+/) // Birdən çox boşluq olsa belə bölür
+                            .filter(word => word.length > 0) // Boş sözləri təmizləyir
+                            .map(word => word.charAt(0).toUpperCase())
+                            .join('');
+                    }).join(", ");
+                } else {
+                    facultyText = "Fakültə təyin edilməyib";
+                }
+            }
+
+            return `
+                <div class="subject-card animate-card" 
+                    onclick="startQuiz('${subject.id}')"
+                    style="animation-delay: ${index * 0.05}s">
+                    
+                    <div class="info-btn" onclick="showSubjectInfo(event, '${subject.id}', '${subject.title}')">i</div>
+                    
+                    <div class="card-icon">${subject.icon}</div>
+                    <div class="card-title">${subject.title}</div>
+                    
+                    <!-- Fakültə ad(lar)ı kartın üstündə yazılır -->
+                    <div class="card-faculty">${facultyText}</div>
+                    
+                    <div class="card-meta">${subject.count} sual • Hər gün yenilənir</div>
+                    <div class="card-arrow">→</div>
+                </div>
+            `;
+        }).join("");
+    }
+    searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+
+        // Əgər köhnə taymer varsa, onu ləğv et
+        clearTimeout(searchTimeout);
+
+        // Yeni taymer başlat (istifadəçi 300ms susanda işləyəcək)
+        searchTimeout = setTimeout(() => {
+            if (searchTerm === "") {
+                renderSubjects(allSubjects);
+                return;
+            }
+
+            const filteredSubjects = allSubjects.filter(subject =>
+                isMatch(subject.title, searchTerm)
+            );
+
+            renderSubjects(filteredSubjects);
+        }, 300); // Gecikmə müddəti
+    });
+
+    // "Axtar" düyməsi üçün də (əlavə olaraq)
+    searchButton.addEventListener("click", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredSubjects = allSubjects.filter(subject =>
+            subject.title.toLowerCase().includes(searchTerm)
+        );
+        renderSubjects(filteredSubjects);
+    });
+
+    window.startQuiz = function (subjectId) {
+        window.location.href = `quiz.html?subject=${subjectId}`;
+    };  
+    window.showSubjectInfo = function(event, subjectId, subjectTitle) {
+        event.stopPropagation(); // Kartın kliklənməsinin (startQuiz) qarşısını alır
+
+        // 1. Qlobal fənn yoxlanışı
+        if (globalSubjects.includes(subjectId)) {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu qlobal fəndir və universitet/fakültədən asılı olmayaraq hər kəs üçün keçərlidir.`;
+            infoModal.style.display = "flex";
+            return;
+        }
+
+        // 2. Spesifik fənn yoxlanışı (Bütün aid olduğu yerləri tapmaq üçün)
+        let foundList = [];
+        
+        for (const uniKey in universitiesData) {
+            const faculties = universitiesData[uniKey].faculties;
+            for (const facKey in faculties) {
+                const assigned = faculties[facKey].assigned_subjects || [];
+                if (assigned.includes(subjectId)) {
+                    // Tapılan hər bir müəssisə və fakültəni siyahıya (Array) əlavə edirik
+                    foundList.push(`<li style="margin-bottom: 8px;"><span style="color:#B89A5A; font-weight:bold;">${universitiesData[uniKey].name}</span> - ${faculties[facKey].name}</li>`);
+                }
+            }
+        }
+
+        // Əgər siyahıda nəsə varsa, hamısını alt-alta (<ul><li>) çap edirik
+        if (foundList.length > 0) {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu fənn aşağıdakı müəssisə və fakültələrdə tədris olunur:<br>
+                <ul style="text-align: left; margin-top: 15px; padding-left: 20px; font-size: 14px;">
+                    ${foundList.join("")}
+                </ul>`;
+        } else {
+            infoModalText.innerHTML = `<strong>${subjectTitle}</strong><br><br>Bu fənn hələ heç bir fakültəyə təyin edilməyib.`;
+        }
+
+        infoModal.style.display = "flex";
+    };
+
+    // Modalı bağlamaq üçün
+    closeInfoModal.addEventListener("click", () => {
+        infoModal.style.display = "none";
+    });
+
+    // Modaldan kənara klikləyəndə bağlansın
+    window.addEventListener("click", (e) => {
+        if (e.target === infoModal) {
+            infoModal.style.display = "none";
+        }
+    });
+
+    // --- GÜNDƏLİK LİMİT VƏ PREMİUM VİZUAL İDARƏETMƏSİ ---
+    (async () => {
+        try {
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            // 1. İstifadəçi sessiyasını əldə edirik
+            const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sessionStr) return; // Funksiya daxilində olduğu üçün burada return xəta vermir
+
+            const userData = JSON.parse(sessionStr).user;
+            const uId = userData.id;
+
+            // 2. Elementləri seçirik
+            const display = document.getElementById('limit-text');
+            const energyIcon = document.getElementById('energy-icon');
+
+            // 3. Premium yoxlanışı
+            const cachedBitis = localStorage.getItem('premiumBitis_' + uId);
+            const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+            if (isPremium) {
+                // Premium vizualları
+                if (energyIcon) energyIcon.src = "../images/premium-thunder.webp";
+                if (display) display.innerHTML = `<img src="../images/infinity.webp" alt="∞" style="width: 18px; vertical-align: middle;">`;
+
+                return; // Premiumdursa, aşağıdakı kodları icra etmə və funksiyadan çıx
+            }
+
+            // 4. Standart istifadəçi üçün bazadan limit məlumatını alırıq
+            const today = new Date().toISOString().split('T')[0];
+            const { data: stats } = await client
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', uId)
+                .maybeSingle();
+
+            const usedToday = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+            const totalLimit = 3;
+            const remainingLimit = Math.max(0, totalLimit - usedToday);
+
+            // 5. Standart vizualları göstəririk
+            if (display) display.innerText = remainingLimit;
+            if (energyIcon) energyIcon.src = "../images/thunder.webp";
+
+        } catch (err) {
+            console.error("Limit bölməsində xəta yarandı:", err.message);
+        }
+    })(); // Funksiya burada bağlanır
+}
+// ---------------------- STATISTICS PAGE ----------------------
+if (window.location.pathname.endsWith("statistics.html")) {
+
+    let myChart = null;
+
+    // Kliyenti hər dəfə təhlükəsiz şəkildə götürmək üçün köməkçi funksiya
+    const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
+
+    async function loadUserDashboard(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .eq('user_id', userId)
+            .maybeSingle();
+
+        if (error || !data) return;
+
+        document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+        document.getElementById('eloValue').innerText = data.elo_rating || 1000;
+        document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
+
+        const total = data.total_answered_questions || 0;
+        const correct = data.total_correct_answers || 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        document.getElementById('accuracyRate').innerText = `${percent}%`;
+
+        const minutes = Math.floor((data.total_time_spent || 0) / 60);
+        const seconds = (data.total_time_spent || 0) % 60;
+        document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    async function loadActivityChart(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        // 1. Bazar ertəsindən Bazara qədər olan etiketlər
+        const fixedLabels = ['B.e', 'Ç.a', 'Ç', 'C.a', 'C', 'Ş', 'B'];
+
+        // Bütün günlər üçün başlanğıc dəyəri 0 qoyuruq (0 xətti görünsün deyə)
+        let countsData = [0, 0, 0, 0, 0, 0, 0];
+
+        // 2. Bu həftənin Bazar ertəsinin tarixini tapırıq
+        const now = new Date();
+        // getDay(): 0=Bazar, 1=B.e... Bazar gününü 7 kimi qəbul edirik ki, geriyə hesablaya bilək
+        const currentDayOfWeek = now.getDay() === 0 ? 7 : now.getDay();
+
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - currentDayOfWeek + 1); // Bazar ertəsinə qayıdırıq
+
+        const startOfWeekStr = `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
+
+        // 3. Bazar ertəsindən sonrakı (bu həftəki) dataları çəkirik
+        const { data, error } = await client
+            .from('quiz_history')
+            .select('quiz_date, quiz_count')
+            .eq('user_id', userId)
+            .gte('quiz_date', startOfWeekStr);
+
+        if (error) {
+            console.error("Chart data error:", error);
+            return;
+        }
+
+        // 4. Əgər data varsa, onu sabit günlərə yerləşdiririk
+        if (data && data.length > 0) {
+            data.forEach(item => {
+                const parts = item.quiz_date.split('-');
+                const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+
+                // Həftənin hansı günüdür? (0=Bazar, 1=B.e)
+                let dayIndex = dateObj.getDay();
+                // JS-də Bazar(0) olduğu üçün onu 6 edirik, qalanları 1 çıxırıq (B.e(1) -> 0 olur)
+                dayIndex = (dayIndex === 0) ? 6 : dayIndex - 1;
+
+                // Həmin günün sayını massivə yazırıq
+                countsData[dayIndex] = item.quiz_count;
+            });
+        }
+        renderChart(fixedLabels, countsData);
+    }
+    async function loadLeaderboard(currentUserId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .order('elo_rating', { ascending: false })
+            .limit(10);
+
+        if (error || !data) return;
+
+        const tbody = document.getElementById('leaderboardBody');
+        if (!tbody) return;
+        tbody.innerHTML = '';
+
+        data.forEach((row, index) => {
+            const accuracy = row.total_answered_questions > 0
+                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
+                : 0;
+
+            const isMe = row.user_id === currentUserId;
+            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
+            // YENİLİK: Əgər bazada ad varsa onu, yoxdursa ID-ni göstər
+            const displayName = isMe ? `${nameToShow} (Siz)` : nameToShow;
+            tbody.innerHTML += `
+                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
+                    <td>${index + 1}</td>
+                    <td>${displayName}</td> 
+                    <td>${row.elo_rating || 1000}</td>
+                    <td>${accuracy}%</td>
+                </tr>
+            `;
+        });
+    }
+
+    function renderChart(labels, counts) {
+        const canvas = document.getElementById('weeklyActivityChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        if (typeof myChart !== 'undefined' && myChart) {
+            myChart.destroy();
+        }
+
+        // DÜZƏLİŞ: Dark Mode-u düzgün təyin edirik
+        const isDarkMode = document.body.classList.contains('dark-theme') || document.body.classList.contains('dark-mode');
+
+        // Tünd moddasa ağ yazılar, işıqlı moddasa tünd boz yazılar
+        const labelColor = isDarkMode ? '#ffffff' : '#333333';
+        // Arxadakı xətlərin rəngini də modlara uyğunlaşdırırıq
+        const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+        myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Quiz Sayı',
+                    data: counts,
+                    borderColor: '#B89A5A',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#B89A5A',
+                    pointHoverRadius: 6 // Üzərinə gəldikdə dairənin bir az böyüməsi üçün (opsional)
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Div-ə görə formalaşması üçün
+
+                // YENİ ƏLAVƏ EDİLƏN HİSSƏ:
+                interaction: {
+                    mode: 'index',
+                    intersect: false, // Mütləq kəsişmə tələbini ləğv edir
+                },
+
+                plugins: {
+                    legend: { display: false }
+                    // İstəyə görə hover olduqda şaquli bir xətt çəkmək üçün tooltip ayarlarını da burdan genişləndirə bilərsiniz
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: labelColor,
+                            stepSize: 1
+                        },
+                        grid: { color: gridColor } // Şəbəkə rəngini dinamik etdik
+                    },
+                    x: {
+                        ticks: {
+                            color: labelColor
+                        },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    }
+    async function handleChartFilterChange(userId) {
+        const filterSelect = document.getElementById('chart-filter-select');
+        const premiumOverlay = document.getElementById('premiumOverlay');
+        const canvas = document.getElementById('weeklyActivityChart');
+
+        if (!filterSelect) return;
+
+        // Sənin localStorage üzərindəki premium yoxlanışın
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        filterSelect.addEventListener('change', async (e) => {
+            const selectedValue = e.target.value;
+
+            if (selectedValue === 'all') {
+                if (!isPremium) {
+                    // Premium deyilsə: Bluru göstər
+                    canvas?.classList.add('blurred-chart');
+                    premiumOverlay?.classList.remove('hidden');
+                } else {
+                    // Premiumdursa: Bluru qaldır və məlumatları yüklə
+                    canvas?.classList.remove('blurred-chart');
+                    premiumOverlay?.classList.add('hidden');
+                    await loadAllTimeActivityChart(userId);
+                }
+            } else {
+                // Həftəlik seçim: Standart vəziyyət
+                canvas?.classList.remove('blurred-chart');
+                premiumOverlay?.classList.add('hidden');
+                await loadActivityChart(userId);
+            }
+        });
+    }
+    async function loadAllTimeActivityChart(userId) {
+        const client = window.globalSupabaseClient || window.supabaseClient;
+        if (!client) return;
+
+        try {
+            // 1. Məlumatları çəkirik
+            const [{ data: authData }, { data: historyData, error }] = await Promise.all([
+                client.auth.getUser(),
+                client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId)
+            ]);
+
+            if (error) throw error;
+            const user = authData?.user;
+            if (!user) return;
+
+            const startDate = new Date(user.created_at);
+            const endDate = new Date();
+            const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
+
+            const monthlyTotals = {};
+
+            // 2. Qrafik üçün ayları hazırlayırıq (Boş aylar 0 olaraq qalır)
+            let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+            while (tempDate <= endDate) {
+                const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
+                monthlyTotals[label] = 0;
+                tempDate.setMonth(tempDate.getMonth() + 1);
+            }
+
+            // 3. Tarixçəni hesablayırıq
+            if (historyData) {
+                historyData.forEach(item => {
+                    // UTC istifadə edərək vaxt zonası sürüşməsinin qarşısını alırıq
+                    const d = new Date(item.quiz_date);
+                    const monthIndex = d.getUTCMonth();
+                    const year = d.getUTCFullYear();
+                    const label = `${monthNames[monthIndex]} ${year}`;
+
+                    if (monthlyTotals[label] !== undefined) {
+                        monthlyTotals[label] += Number(item.quiz_count);
+                    }
+                });
+            }
+
+            // DEBUG: Konsolda yoxlayaq görək cəmi neçə tapdı
+            console.log("Aylıq hesablamalar:", monthlyTotals);
+            const totalInChart = Object.values(monthlyTotals).reduce((a, b) => a + b, 0);
+            console.log("Chart-dakı cəmi quiz sayı:", totalInChart);
+
+            // 4. Chart-ı render edirik
+            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals));
+
+        } catch (err) {
+            console.error("Aylıq statistika xətası:", err.message);
+        }
+    }
+    // ƏSAS İŞƏSALMA
+    setTimeout(async () => {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data: { user } } = await client.auth.getUser();
+        if (!user) {
+            window.location.href = "login.html";
+            return;
+        }
+
+        const currentUserId = user.id;
+
+        // Sənin mövcud yükləmələrin
+        loadUserDashboard(currentUserId);
+        loadActivityChart(currentUserId); // Default olaraq həftəlik yüklənir
+        loadLeaderboard(currentUserId);
+
+        // YENİ: Filtr dəyişikliyini dinləyən funksiyanı çağırırıq
+        handleChartFilterChange(currentUserId);
+
+    }, 100);
+}
+// ---------------------- QUIZ PAGE ----------------------
+if (window.location.pathname.endsWith("quiz.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const subjectId = urlParams.get('subject');
+        const currentSubjectId = urlParams.get('subject') || 'default';
+        if (!subjectId) {
+            console.error("No subject provided!");
+            return;
+        }
+        // ==========================================
+        // 1. AUTH VƏ GÜNDƏLİK LİMİT YOXLANIŞI
+        // ==========================================
+
+        // Sürətli olması üçün istifadəçi ID-sini birbaşa token-dən çəkirik
+        const sbSessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+        if (!sbSessionStr) {
+            const authHTML = `
+                <div style="text-align: center;">
+                    <h3 style="color: #B89A5A;">Giriş lazımdır</h3>
+                    <p>Sual işləmək üçün zəhmət olmasa hesabınıza daxil olun.</p>
+                </div>
+            `;
+
+            showMessage(authHTML, "alert", "Daxil ol").then(() => {
+                window.location.href = "login.html";
+            });
+
+            return;
+        }
+
+        const userId = JSON.parse(sbSessionStr).user.id;
+        const currentSessionId = Math.random().toString(36).substring(2, 15);
+        localStorage.setItem('active_session_id', currentSessionId);
+
+        async function syncSession() {
+            const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sbToken) return;
+
+            const uId = JSON.parse(sbToken).user.id;
+            const sId = localStorage.getItem('active_session_id');
+
+            // MÜHÜM: Update sorğusunda 'id' sütununa uyğunlaşırıq
+            const { data, error } = await supabaseClient
+                .from('user_stats')
+                .update({ "last_session_id": sId }) // Sütun adını dırnaqda yazmaq bəzən xətanın qarşısını alır
+                .match({ 'user_id': uId }); // .eq() yerinə .match() daha dəqiqdir
+
+            if (error) {
+                console.error("Supabase xətası:", error.message);
+            }
+        }
+
+        syncSession();
+
+        // Premium yoxlanışı
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        // --- LİMİT YOXLAMA MƏNTİQİ ---
+        if (!isPremium) {
+            // 1. Cari tarixi lokal vaxtla alırıq (YYYY-MM-DD formatında)
+            const now = new Date();
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+            let { data: stats } = await supabaseClient
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', userId)
+                .maybeSingle();
+
+            if (stats && stats.last_quiz_date === today && (Number(stats.daily_limit_count) || 0) >= 3) {
+                const limitHTML = `
+                    <div style="text-align: center;">
+                        <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
+                        <h3 style="margin-bottom: 10px; color: #B89A5A;">Gündəlik limit doldu!</h3>
+                        <p style="font-size: 15px; opacity: 0.9;">
+                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                             Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                       </p>
+                    </div>
+                `;
+
+                // showMessage funksiyasını gözləyirik (await)
+                const userChoice = await showMessage(limitHTML, "confirm", "İndi al", "Sonra");
+
+                // Seçimə görə yönləndirmə
+                if (userChoice) {
+                    window.location.href = "premium.html";
+                } else {
+                    window.location.href = "fennler-menu.html";
+                }
+                return; // Funksiyadan çıxırıq ki, quiz başlamasın
+            }
+        }
+        // --- AI YÜKLƏMƏ MƏNTİQİ ---
+        if (isPremium) {
+            const isMobile = window.innerWidth <= 768;
+            const fakeBtn = document.getElementById('fake-ai-btn');
+
+            if (isMobile) {
+                // --- 📱 MOBİL REJİM (Üzən Buton - Solda) ---
+                window.chtlConfig = { chatbotId: "3756376919" };
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "3756376919";
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+                if (fakeBtn) fakeBtn.style.display = 'flex';
+            } else {
+                // --- 💻 DESKTOP REJİM (Səhifə İçi / Inline - Sağda) ---
+                window.chtlConfig = { chatbotId: "9896744625", display: "page_inline" };
+
+                // Animasiyanın rəvan işləməsi üçün keçid effekti veririk
+                if (document.querySelector('.main-content')) {
+                    document.querySelector('.main-content').style.transition = "all 0.4s ease-in-out";
+                }
+
+                // 1. Inline bot üçün div yaradırıq (Əgər HTML-də yoxdursa)
+                let inlineContainer = document.getElementById('chtl-inline-bot');
+                if (!inlineContainer) {
+                    inlineContainer = document.createElement('div');
+                    inlineContainer.id = "chtl-inline-bot";
+                    inlineContainer.style.width = "30%";
+                    inlineContainer.style.height = "calc(100vh - 61px)"; // Öncəki turn təyin etdiyimiz hündürlük
+                    inlineContainer.style.position = "fixed";
+                    inlineContainer.style.right = "0";
+                    inlineContainer.style.top = "61px";
+                    inlineContainer.style.zIndex = "1000";
+                    inlineContainer.style.backgroundColor = "#fff";
+                    inlineContainer.style.boxShadow = "-2px 0px 10px rgba(0,0,0,0.1)";
+
+                    // Başlanğıcda bağlı (gizli) olsun ki, düyməyə basanda açılsın
+                    inlineContainer.style.display = "none";
+                    document.body.appendChild(inlineContainer);
+                }
+
+                // Buton ilə Açıb-Bağlama Məntiqi
+                const openAiBtn = document.getElementById('open-ai-btn');
+                if (openAiBtn) {
+                    openAiBtn.onclick = function () {
+                        let inlineContainer = document.getElementById('chtl-inline-bot');
+
+                        if (inlineContainer.style.display === "none") {
+                            // --- AI PƏNCƏRƏSİNİ AÇIRIQ ---
+                            inlineContainer.style.display = "block";
+                            document.querySelector('.main-content').style.width = "70%";
+                            document.querySelector('.main-content').style.maxWidth = "none";
+                            document.querySelector('.main-content').style.marginLeft = "0";
+                            document.querySelector('.main-background').style.justifyContent = "flex-start";
+                        } else {
+                            // --- AI PƏNCƏRƏSİNİ BAĞLAYIRIQ VƏ APARAT ANIMASIYALI MƏRKƏZƏ QAYIDIR ---
+                            inlineContainer.style.display = "none";
+                            document.querySelector('.main-content').style.width = "95%";
+                            document.querySelector('.main-content').style.maxWidth = "1200px";
+                            document.querySelector('.main-background').style.justifyContent = "center";
+                        }
+                    };
+                }
+
+                // 2. Skripti dinamik yükləyirik və data-display parametrini veririk
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "9896744625";
+                script.dataset.display = "page_inline";
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+
+                if (fakeBtn) fakeBtn.style.display = 'none';
+            }
+        } else {
+            const fakeBtn = document.getElementById('fake-ai-btn');
+            if (fakeBtn) fakeBtn.style.display = 'none';
+
+            const inlineContainer = document.getElementById('chtl-inline-bot');
+            if (inlineContainer) inlineContainer.style.display = 'none';
+
+            console.log("Qeyd: Pulsuz istifadəçilər üçün AI aktiv deyil.");
+        }
+        (async () => {
+            // 1. Supabase Müştərisini təyin edirik (ReferenceError-un qarşısını almaq üçün)
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            try {
+                // 2. İstifadəçi sessiyasını yoxlayırıq
+                const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                if (!sessionStr) return;
+                const uId = JSON.parse(sessionStr).user.id;
+
+                // 3. Bazadan stats məlumatını çəkirik (stats burada təyin olunur)
+                const today = new Date().toISOString().split('T')[0];
+                const { data: stats } = await client
+                    .from('user_stats')
+                    .select('daily_limit_count, last_quiz_date')
+                    .eq('user_id', uId)
+                    .maybeSingle();
+
+                // 4. Sənin istifadə etdiyin dəyişən məntiqi
+                let currentLimitInDb = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                // 5. Ekrana yazdırma
+                const display = document.getElementById('limit-text');
+                if (display) display.innerText = currentLimitInDb;
+
+            } catch (err) {
+                console.error("Limit göstərilərkən xəta:", err.message);
+            }
+        })();
+        // ==========================================
+        // 2. QUIZ MƏNTİQİ (Sizin köhnə kodunuz)
+        // ==========================================
+        // LocalStorage-dan cari fənnin səhvlərini gətirən köməkçi funksiya
+        function getWrongQuestions(subjectId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            return wrongData[subjectId] || [];
+        }
+
+        // Səhv cavab verəndə ID-ni əlavə edən funksiya
+        function addWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+
+            // Əgər bu fənn üçün hələ array yoxdursa, yarat
+            if (!wrongData[subjectId]) {
+                wrongData[subjectId] = [];
+            }
+
+            // Əgər bu ID artıq siyahıda yoxdursa, əlavə et
+            if (!wrongData[subjectId].includes(questionId)) {
+                wrongData[subjectId].push(questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+
+        // Düzgün cavab verəndə ID-ni siyahıdan silən funksiya
+        function removeWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+
+            if (wrongData[subjectId]) {
+                // ID-ni tap və array-dən çıxar
+                wrongData[subjectId] = wrongData[subjectId].filter(id => id !== questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+        fetch("subjects.json")
+            .then(res => res.json())
+            .then(data => {
+                // Hər iki massivi (global və special) bir yerə toplayırıq
+                const allSubjects = [
+                    ...(data.subject_pool.global_subjects || []),
+                    ...(data.subject_pool.special_subjects || [])
+                ];
+
+                const subject = allSubjects.find(s => s.id === subjectId);
+
+                if (subject) {
+                    const titleEl = document.querySelector(".fenn-id h1");
+                    if (titleEl) titleEl.textContent = subject.title;
+                } else {
+                    console.warn("Fənn tapılmadı: " + subjectId);
+                }
+            })
+            .catch(err => console.error("Subject fetch error:", err));
+        // Köhnə fetch blokunu sil və bunu əlavə et:
+        async function loadQuestions() {
+            try {
+                // Supabase-dən subjectId-yə uyğun cədvəldən bütün sətirləri çəkirik
+                const { data: allQuestions, error } = await supabaseClient
+                    .from(subjectId) // Cədvəl adı fənnin ID-si ilə eyni olmalıdır
+                    .select('*');
+
+                if (error) throw error;
+
+                if (!allQuestions || allQuestions.length === 0) {
+                    console.error("Suallar tapılmadı!");
+                    return;
+                }
+
+                // BURADA SUAL SAYINI 10 EDİRİK! (və ya test üçün slice(0, 2))
+                const questions = shuffleArray(allQuestions).slice(0, 10);
+
+                let isQuizFinished = false;
+                let currentIndex = 0;
+                let score = 0;
+                let timerInterval;
+                let secondsElapsed = 0;
+                let userAnswers = {};
+
+                const questionEl = document.getElementById("question-text");
+                const optionsContainer = document.getElementById("options-container");
+                const counterEl = document.getElementById("question-counter");
+                const progressEl = document.getElementById("progress-fill");
+                const prevBtn = document.getElementById("evvelki-btn");
+                const nextBtn = document.getElementById("novbeti-btn");
+
+                if (prevBtn) prevBtn.onclick = () => navigate(-1);
+                if (nextBtn) nextBtn.onclick = () => navigate(1);
+                function formatTime(seconds) {
+                    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+                    const s = (seconds % 60).toString().padStart(2, '0');
+                    return `${m}:${s}`;
+                }
+
+                function startTimer() {
+                    if (timerInterval) clearInterval(timerInterval);
+                    secondsElapsed = 0;
+                    const timerEl = document.getElementById("quiz-timer");
+                    if (timerEl) timerEl.textContent = "00:00";
+
+                    timerInterval = setInterval(() => {
+                        secondsElapsed++;
+                        if (timerEl) timerEl.textContent = formatTime(secondsElapsed);
+                    }, 1000);
+                }
+                function checkMultiLogin() {
+                    const checkInterval = setInterval(async () => {
+                        const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                        if (!sbToken) return;
+                        const uId = JSON.parse(sbToken).user.id;
+
+                        const { data, error } = await supabaseClient
+                            .from('user_stats')
+                            .select('last_session_id')
+                            .match({ 'user_id': uId })
+                            .single();
+                        if (data && data.last_session_id !== localStorage.getItem('active_session_id')) {
+                            clearInterval(checkInterval);
+                            const limitHTML = `
+                                <div style="text-align: center;">
+                                    <img src="../images/matrix-looking.webp" alt="Alert" style="width: 200px; margin-bottom: 15px;">
+                                    <h3 style="margin-bottom: 10px; color: #B89A5A;">Hesabınıza başqa cihazdan giriş edilib. Quiz dayandırıldı!</h3>
+                                    <p style="font-size: 15px; opacity: 0.9;">
+                                    Hesabınızın qorunması üçün şifrənizi dərhal yeniləməyiniz tövsiyə olunur.
+                                    Bu halın təkrarlanması platforma qaydalarının manipulyasiyası kimi qiymətləndiriləcək. Bu zaman hesabınız avtomatik olaraq 'Yüksək Risk' kateqoriyasına keçəcək.
+                                </p>
+                                </div>
+                            `;
+
+                            // showMessage funksiyasını gözləyirik (await)
+                            await showMessage(limitHTML, "Sonra");
+                            window.location.href = "fennler-menu.html"; // İstifadəçini ana səhiffəyə at
+                        }
+                    }, 10000);
+                }
+
+                // Funksiyanı başlat
+                checkMultiLogin();
+                function renderQuestion(index) {
+                    const q = questions[index];
+                    if (!q) return;
+
+                    // 1. Sual mətnini innerHTML-ə çevirdik
+                    if (questionEl) questionEl.innerHTML = q.question;
+                    
+                    if (counterEl) counterEl.textContent = `${index + 1} / ${questions.length}`;
+
+                    if (progressEl) {
+                        const progressPercent = ((index) / questions.length) * 100;
+                        progressEl.style.width = `${progressPercent}%`;
+                    }
+
+                    if (optionsContainer) {
+                        const currentOptions = {
+                            "A": q.options__A,
+                            "B": q.options__B,
+                            "C": q.options__C,
+                            "D": q.options__D,
+                            "E": q.options__E
+                        };
+
+                        // 2. Variantların içindəki mətni də innerHTML ilə dinamik yaratdıq
+                        optionsContainer.innerHTML = Object.entries(currentOptions)
+                            .filter(([key, text]) => text !== null && text !== undefined && text !== "")
+                            .map(([key, text]) =>
+                                // Buradakı mətni `key) ${text}` şəklində qoyuruq ki, 
+                                // text içindəki <u> və ya digər teqlər render olunsun
+                                `<button class="option-btn" data-key="${key}">${key}) <span>${text}</span></button>`
+                            ).join("");
+                    }
+
+                    const optionBtns = document.querySelectorAll(".option-btn");
+
+                    if (userAnswers[index]) {
+                        const savedAnswer = userAnswers[index];
+                        const correctAnswer = q.correct_answer;
+
+                        optionsContainer.classList.add("disabled");
+
+                        optionBtns.forEach(btn => {
+                            const key = btn.dataset.key;
+                            if (key === savedAnswer) {
+                                btn.classList.add(key === correctAnswer ? "correct" : "wrong");
+                            }
+                            if (key === correctAnswer) {
+                                btn.classList.add("correct");
+                            }
+                        });
+                        if (nextBtn) nextBtn.disabled = false;
+                    } else {
+                        optionsContainer.classList.remove("disabled");
+                        if (nextBtn) nextBtn.disabled = true;
+
+                        optionBtns.forEach(btn => {
+                            btn.onclick = () => handleOptionClick(btn, q, index);
+                        });
+                    }
+
+                    if (prevBtn) prevBtn.disabled = (index === 0);
+                    if (nextBtn) {
+                        nextBtn.textContent = (index === questions.length - 1) ? "Nəticə" : "Növbəti";
+                    }
+                }
+                function openChatling() {
+                    if (window.chatling && typeof window.chatling.open === 'function') {
+                        window.chatling.open();
+                    } else {
+                        // Əgər API hələ hazır deyilsə, gizli orijinal düyməni klikləyirik
+                        const originalBtn = document.getElementById('chatling-embed-trigger');
+                        if (originalBtn) {
+                            // Chatling butonu daxilindəki əsl kliklənə bilən elementi tapırıq
+                            const realClickable = originalBtn.querySelector('button') || originalBtn;
+                            realClickable.click();
+                        }
+                    }
+                }
+                // Qısa səs effektləri (SFX) üçün obyektlər
+                const sfxCorrect = new Audio(window.location.origin + '/sounds/correct.mp3');
+                const sfxWrong = new Audio(window.location.origin + '/sounds/wrong.mp3');
+                async function handleOptionClick(btn, questionData, index) {
+                    const selected = btn.dataset.key;
+                    userAnswers[index] = selected;
+
+                    const questionId = questionData.id;
+                    const correctAnswer = questionData.correct_answer;
+
+                    // YENİLİK: Butonları tək-tək bağlamırıq, bütöv qutunu dondururuq
+                    optionsContainer.classList.add("disabled");
+
+                    if (selected === correctAnswer) {
+                        // 🔊 Doğru cavab səsini anında başladırıq
+                        sfxCorrect.currentTime = 0;
+                        sfxCorrect.play().catch(err => console.log("Səs başladılarkən xəta baş verdi:", err));
+
+                        btn.classList.add("correct");
+                        if (nextBtn) nextBtn.disabled = false;
+                        score++;
+                        removeWrongQuestion(currentSubjectId, questionId);
+                    } else {
+                        // 🔊 Yanlış cavab səsini anında başladırıq
+                        sfxWrong.currentTime = 0;
+                        sfxWrong.play().catch(err => console.log("Səs başladılarkən xəta baş verdi:", err));
+
+                        btn.classList.add("wrong");
+                        if (nextBtn) nextBtn.disabled = false;
+                        addWrongQuestion(currentSubjectId, questionId);
+
+                        setTimeout(() => {
+                            const correctBtn = optionsContainer.querySelector(`[data-key="${correctAnswer}"]`);
+                            if (correctBtn) correctBtn.classList.add("correct");
+                        }, 500);
+                    }
+
+                    // Daxili checkAnswer funksiyan (toxunulmadı, olduğu kimi qalır)
+                    function checkAnswer(selectedOptionButton, selectedAnswerKey) {
+                        const correctAnswerKey = currentQuestion.correct_answer;
+                        const questionId = currentQuestion.id;
+                        const allOptions = document.querySelectorAll(".option-btn");
+
+                        allOptions.forEach(btn => btn.disabled = true);
+
+                        if (selectedAnswerKey === correctAnswerKey) {
+                            selectedOptionButton.style.backgroundColor = "#4CAF50"; 
+                            selectedOptionButton.style.color = "white";
+                            removeWrongQuestion(currentSubjectId, questionId);
+                        } else {
+                            selectedOptionButton.style.backgroundColor = "#F44336"; 
+                            selectedOptionButton.style.color = "white";
+
+                            allOptions.forEach(btn => {
+                                if (btn.getAttribute("data-key") === correctAnswerKey) {
+                                    btn.style.backgroundColor = "#4CAF50";
+                                    btn.style.color = "white";
+                                }
+                            });
+
+                            addWrongQuestion(currentSubjectId, questionId);
+                        }
+                    }
+
+                    const container = document.getElementById("options-container");
+                    if (container) container.classList.add("disabled");
+                    if (nextBtn) nextBtn.disabled = false;
+                }
+
+                function navigate(direction) {
+                    const newIndex = currentIndex + direction;
+
+                    if (newIndex >= 0 && newIndex < questions.length) {
+                        currentIndex = newIndex;
+                        renderQuestion(currentIndex);
+                    } else if (newIndex >= questions.length) {
+                        showResult();
+                    }
+                }
+                async function updatePlayerStats(uId, currentScore, currentSeconds, totalQuestions, correctAnswers) {
+                    try {
+                        const client = window.globalSupabaseClient || window.supabaseClient;
+
+                        // 1. İSTİFADƏÇİ MƏLUMATLARINI ALIRIQ
+                        const { data: { user } } = await client.auth.getUser();
+                        const fullName = user?.user_metadata?.full_name || "Adsız İstifadəçi";
+
+                        // 2. TARİXLƏRİN HESABLANMASI
+                        const now = new Date();
+                        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+                        const yesterday = new Date(now);
+                        yesterday.setDate(now.getDate() - 1);
+                        const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
+
+                        // 3. MÖVCUD STATİSTİKANIN ÇƏKİLMƏSİ (Rating Deviation daxil olmaqla)
+                        let { data: stats, error: fetchErr } = await client
+                            .from('user_stats')
+                            .select('*')
+                            .eq('user_id', uId)
+                            .maybeSingle();
+
+                        if (fetchErr) throw fetchErr;
+
+                        let lastDateInDb = stats ? stats.last_quiz_date : null;
+                        let currentStreakInDb = stats ? (Number(stats.current_streak) || 0) : 0;
+                        let currentLimitInDb = stats ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                        let finalStreak = 0;
+                        let finalLimit = 1;
+
+                        // --- STREAK VƏ LİMİT MƏNTİQİ ---
+                        if (!stats) {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        } else if (lastDateInDb === todayStr) {
+                            finalStreak = currentStreakInDb;
+                            finalLimit = currentLimitInDb + 1;
+                        } else if (lastDateInDb === yesterdayStr) {
+                            finalStreak = currentStreakInDb + 1;
+                            finalLimit = 1;
+                        } else {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        }
+
+                        // --- YENİ ELO (GLICKO) HESABLAMA MƏNTİQİ ---
+
+                        function calculateNewRating(currentElo, currentRD, percentage) {
+                            // 1. Sabitlər
+                            const q = Math.log(10) / 400;
+                            const quizDifficulty = 1000; // Quiz-in baza çətinliyi
+
+                            // 2. Quiz nəticəsini 0.0 - 1.0 arasına gətiririk (Actual Score)
+                            const s = percentage / 100;
+
+                            // 3. Ehtimal olunan nəticəni hesablayırıq (Expected Score)
+                            // Düstur: E = 1 / (1 + 10^((difficulty - elo) / 400))
+                            const e = 1 / (1 + Math.pow(10, (quizDifficulty - currentElo) / 400));
+
+                            // 4. RD-nin təsiri ilə d^2 dəyərini tapırıq
+                            const dSquared = 1 / (Math.pow(q, 2) * (e * (1 - e)));
+
+                            // 5. Yeni Elo (Rating)
+                            // K-faktoru yerinə dinamik bir çarpan istifadə olunur
+                            const multiplier = q / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared));
+                            const newElo = currentElo + multiplier * (s - e);
+
+                            let newRD = Math.sqrt(1 / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared)));
+
+                            // RD limitləri: Nə qədər usta olsa da, şübhə 30-dan aşağı düşmür
+                            newRD = Math.max(30, Math.min(350, newRD));
+
+                            return {
+                                rating: Math.round(newElo),
+                                rd: Math.round(newRD),
+                                diff: Math.round(newElo - currentElo)
+                            };
+                        }
+
+                        const percentage = (correctAnswers / totalQuestions) * 100;
+                        const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
+                        const currentRD = stats ? (Number(stats.rating_deviation) || 350) : 350;
+
+                        // Hesablamanı icra edirik
+                        const eloResult = calculateNewRating(currentElo, currentRD, percentage);
+
+                        // 4. USER_STATS YENİLƏMƏSİ (Upsert)
+                        const updatePayload = {
+                            display_name: fullName,
+                            quizzes_completed: (stats ? (Number(stats.quizzes_completed) || 0) : 0) + 1,
+                            total_time_spent: (stats ? (Number(stats.total_time_spent) || 0) : 0) + currentSeconds,
+                            total_answered_questions: (stats ? (Number(stats.total_answered_questions) || 0) : 0) + totalQuestions,
+                            total_correct_answers: (stats ? (Number(stats.total_correct_answers) || 0) : 0) + correctAnswers,
+                            total_score: (stats ? (Number(stats.total_score) || 0) : 0) + currentScore,
+
+                            // YENİ MƏLUMATLAR
+                            elo_rating: eloResult.rating,
+                            rating_deviation: eloResult.rd,
+
+                            current_streak: finalStreak,
+                            last_quiz_date: todayStr,
+                            daily_limit_count: finalLimit,
+                            updated_at: new Date().toISOString()
+                        };
+
+                        const { error: updErr } = await client
+                            .from('user_stats')
+                            .upsert({ user_id: uId, ...updatePayload });
+
+                        if (updErr) throw updErr;
+
+                        // 5. QUIZ_HISTORY (Olduğu kimi qalır)
+                        const { data: historyData } = await client
+                            .from('quiz_history')
+                            .select('quiz_count')
+                            .eq('user_id', uId)
+                            .eq('quiz_date', todayStr)
+                            .maybeSingle();
+
+                        const newHistoryCount = (historyData ? (Number(historyData.quiz_count) || 0) : 0) + 1;
+
+                        await client.from('quiz_history').upsert({
+                            user_id: uId,
+                            quiz_date: todayStr,
+                            quiz_count: newHistoryCount
+                        }, { onConflict: 'user_id, quiz_date' });
+
+                        // NƏTİCƏNİ QAYTARIRIQ (UI üçün eloDifference və newElo)
+                        return {
+                            diff: eloResult.diff,
+                            newElo: eloResult.rating
+                        };
+
+                    } catch (err) {
+                        console.error("Gözlənilməz xəta:", err.message);
+                        return null;
+                    }
+                }
+                async function showResult() {
+                    clearInterval(timerInterval);
+                    
+                    if (isQuizFinished) return;
+                    isQuizFinished = true;
+
+                    // ==========================================
+                    // 1. ADDIMS: UI-I DƏRHAL DƏYİŞDİRİK (DONMANI QABAQLAMAQ ÜÇÜN)
+                    // ==========================================
+                    const topPart = document.querySelector(".top-part");
+                    const sualWord = document.querySelector(".sual-word");
+                    const quizButtons = document.querySelector(".quiz-buttons-bg");
+                    const sualTextBg = document.querySelector(".sual-text-bg");
+                    const exitBg = document.querySelector(".exit-bg a");
+
+                    if (topPart) topPart.style.display = "none";
+                    if (sualWord) sualWord.style.display = "none";
+                    if (quizButtons) quizButtons.style.display = "none";
+                    if (sualTextBg) sualTextBg.style.display = "none";
+                    if (exitBg) exitBg.style.display = "none";
+
+                    const headerTitle = document.querySelector(".fenn-id h1");
+                    let subjectTitle = "";
+                    if (headerTitle) {
+                        subjectTitle = headerTitle.textContent;
+                        headerTitle.style.display = "none";
+                    }
+                    const isDarkTheme = document.body.classList.contains("dark-theme") || document.body.classList.contains("dark-mode");
+                    const dynamicBorderSrc = isDarkTheme ? "../images/al-border-w.webp" : "../images/al-border-b.webp";
+                    const dynamicCenterSrc = isDarkTheme ? "../images/al-center-w.webp" : "../images/al-center-b.webp";
+
+                    // Seçimlər qutusunun içinə dərhal yumşaq animasiyalı yüklənmə ekranı qoyuruq
+                    optionsContainer.innerHTML = `
+                        <div class="loader-container sfx-fade-in" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0;">
+                            
+                            <div class="logo-wrapper" style="width: 75px; height: 75px; margin-bottom: 20px;">
+                                <img src="${dynamicBorderSrc}" class="al-border" style="animation: spinLogo 2s linear infinite;" alt="AtlasLab Border">
+                                <img src="${dynamicCenterSrc}" class="al-center" alt="AtlasLab Center">
+                            </div>
+                            
+                            <p class="loader-text" style="text-align: center; margin: 0;">Nəticələriniz yoxlanılır və Elo reytinqiniz hesablanır...</p>
+                        </div>
+                    `;
+                    optionsContainer.classList.remove("disabled");
+                    
+                    // ==========================================
+                    // 2. ADDIM: ARXA FONDA ASİNXRON SORĞUNUN GÖNDƏRİLMƏSİ
+                    // ==========================================
+                    let eloData = { diff: 0, newElo: 1000 }; // Default dəyərlər
+                    
+                    if (userId) {
+                        try {
+                            // UI artıq dəyişib və loader fırlanır, ona görə bu gözləmə istifadəçini yorruyacaq
+                            const result = await updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
+                            if (result) eloData = result;
+                        } catch (error) {
+                            console.error("Statistika yenilənərkən xəta baş verdi:", error);
+                        }
+                    }
+
+                    // ==========================================
+                    // 3. ADDIM: REYTİNQ HESABLANDIQDAN SONRA SƏS VƏ NƏTİCƏ
+                    // ==========================================
+                    const finalTime = formatTime(secondsElapsed);
+                    let eloStatusClass = "elo-neutral";
+                    let eloSign = eloData.diff > 0 ? "+" : "";
+
+                    if (eloData.diff > 0) {
+                        eloStatusClass = "elo-up";
+                    } else if (eloData.diff < 0) {
+                        eloStatusClass = "elo-down";
+                    }
+
+                    const percentage = Math.round((score / questions.length) * 100);
+                    const wrongAnswers = questions.length - score;
+                    const eloHTML = `${eloData.newElo} <span class="${eloStatusClass}" style="font-size: 0.9em; margin-left: 5px;">${eloSign}${eloData.diff}</span>`;
+
+                    // Loader-i silib əvəzinə yekun nəticəni yumşaq fade-in animasiyası ilə daxil edirik
+                    optionsContainer.innerHTML = `
+                        <div class="result-container sfx-fade-in">
+                            <div class="circle-progress-container">
+                                <div class="circle-progress" style="--degrees: ${percentage * 3.6}deg;">
+                                    <span class="progress-value">${percentage}%</span>
+                                </div>
+                            </div>
+
+                            <h1 class="result-title">Yekun nəticə: ${score}/${questions.length}</h1>
+                            <p class="result-subject">${subjectTitle}</p>
+
+                            <div class="stats-card">
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-blue">●</span> Düzgün cavablar</span>
+                                    <span class="stat-count">${score}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-red">●</span> Səhv cavablar</span>
+                                    <span class="stat-count">${wrongAnswers}</span>
+                                </div>
+                                
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-grey">●</span> Sərf olunan vaxt</span>
+                                    <span class="stat-count">${finalTime}</span>
+                                </div>
+
+                                <div class="stat-row last-row">
+                                    <span class="stat-label"><span class="dot-green">●</span> Keçmə faizi</span>
+                                    <span class="stat-count green-text">${percentage}%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-yellow">●</span> Reytinq (Elo)</span>
+                                    <span class="stat-count" style="color: inherit; font-weight: bold;">${eloHTML}</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions">
+                                <a href="fennler-menu.html" class="link-blue">Əsas səhifə</a>
+                                <button class="btn-blue" onclick="window.location.reload()">Yenidən sına</button>
+                            </div>
+                        </div>
+                    `;
+                }
+                // ============================================================================
+                // --- KƏSİNTİSİZ VƏ RƏVAN FOKUS SƏSLƏRİ (FADE-IN / FADE-OUT WEB AUDIO API) ---
+                // ============================================================================
+                const soundToggleBtn = document.getElementById('sound-toggle-btn');
+                const customNoiseMenu = document.getElementById('custom-noise-menu');
+
+                // Səs yollarını brauzerin cari domain ünvanına bağlayırıq (404 xətası almaması üçün)
+                const noiseSources = {
+                    white: window.location.origin + '/sounds/white-noise.mp3',
+                    brown: window.location.origin + '/sounds/brown-noise.mp3',
+                    rain: window.location.origin + '/sounds/rain.mp3'
+                };
+
+                let audioCtx = null;
+                let audioBuffer = null;
+                let audioSourceNode = null;
+                let gainNode = null;        // Səsin rəvan azalıb-çoxalmasını idarə edən modul
+                let isAudioPlaying = false; // Səsin durumunu dəqiq izləmək üçün flag
+
+                // Səsi rəvan şəkildə azaldaraq dayandıran funksiya (Fade-out)
+                function stopCurrentNoise() {
+                    if (audioSourceNode && gainNode && audioCtx) {
+                        try {
+                            const currentTime = audioCtx.currentTime;
+                            
+                            // 0.8 saniyə ərzində səsi cari səviyyədən 0-a qədər rəvan azaldırıq
+                            gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
+                            gainNode.gain.linearRampToValueAtTime(0, currentTime + 0.8);
+                            
+                            // Səs tam batdıqdan sonra (0.8 saniyə sonra) oxutmanı tam dayandırırıq
+                            const oldSource = audioSourceNode;
+                            const oldGain = gainNode;
+                            setTimeout(() => {
+                                try {
+                                    oldSource.stop();
+                                    oldSource.disconnect();
+                                    oldGain.disconnect();
+                                } catch (e) { /* Artıq dayandırılıb */ }
+                            }, 850);
+
+                        } catch (e) {
+                            console.error("Səs dayandırılarkən xəta:", e);
+                        }
+                    }
+                    
+                    // Node və statusları dərhal sıfırlayırıq ki, istifadəçi yeni səs seçə bilsin
+                    audioSourceNode = null;
+                    gainNode = null;
+                    isAudioPlaying = false;
+                }
+
+                // Səsi yükləyən və rəvan şəkildə başladan funksiya (Fade-in)
+                async function playNoise(url) {
+                    // Əgər arxa fonda səs varsa, öncə onu rəvan dayandırırıq
+                    stopCurrentNoise(); 
+
+                    if (!audioCtx) {
+                        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    }
+
+                    if (audioCtx.state === 'suspended') {
+                        await audioCtx.resume();
+                    }
+
+                    try {
+                        const response = await fetch(url);
+                        const arrayBuffer = await response.arrayBuffer();
+                        audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+
+                        // 1. Səs mənbəyini yaradırıq
+                        audioSourceNode = audioCtx.createBufferSource();
+                        audioSourceNode.buffer = audioBuffer;
+                        audioSourceNode.loop = true; // Kəsintisiz dövr etsin
+
+                        // 2. Səs səviyyəsi (Gain) tənzimləyicisini yaradırıq
+                        gainNode = audioCtx.createGain();
+                        
+                        // Səsi sıfır (tam səssiz) səviyyəsindən başladırıq
+                        gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+
+                        // 3. Bağlantıları qururuq: Mənbə -> Gain Modulu -> Səs Kartı
+                        audioSourceNode.connect(gainNode);
+                        gainNode.connect(audioCtx.destination);
+
+                        // Səsi başladırıq
+                        audioSourceNode.start(0);
+                        isAudioPlaying = true;
+
+                        // 🚀 FADE-IN EFFECT: 1 saniyə ərzində səsi 0-dan 1-ə (normal səviyyəyə) qaldırırıq
+                        gainNode.gain.linearRampToValueAtTime(1, audioCtx.currentTime + 1.0);
+
+                    } catch (err) {
+                        console.error("Web Audio xətası:", err);
+                        isAudioPlaying = false;
+                    }
+                }
+
+                // --- KLİK HADİSƏLƏRİ VƏ İNTERFEYS İDARƏETMƏSİ ---
+                if (soundToggleBtn && customNoiseMenu) {
+                    soundToggleBtn.onclick = function(e) {
+                        e.stopPropagation(); 
+                        const btnImg = soundToggleBtn.querySelector('img');
+
+                        // 1. Əgər səs aktivdirsə, onu dərhal rəvan SÖNDÜRÜRÜK
+                        if (isAudioPlaying) {
+                            stopCurrentNoise();
+                            
+                            if (btnImg) btnImg.src = "../images/audio-off.png";
+                            soundToggleBtn.classList.remove('sound-active');
+                        } 
+
+                        // 2. Səsin olub-olmamasından asılı olmayaraq, hər iki halda menyunu AÇIRIQ/BAĞLAYIRIQ
+                        if (customNoiseMenu.style.display === "none" || customNoiseMenu.style.display === "") {
+                            customNoiseMenu.style.display = "block";
+                        } else {
+                            customNoiseMenu.style.display = "none";
+                        }
+                    };
+
+                    // Menyu daxilindəki fərqli səslərə kliklədikdə
+                    const options = customNoiseMenu.querySelectorAll('.noise-option');
+                    options.forEach(option => {
+                        option.onclick = async function(e) {
+                            e.stopPropagation();
+                            const selectedValue = this.getAttribute('data-value');
+                            const btnImg = soundToggleBtn.querySelector('img');
+                            
+                            if (selectedValue !== "none" && noiseSources[selectedValue]) {
+                                // Seçilən kəsintisiz səs paketini rəvan başladırıq
+                                await playNoise(noiseSources[selectedValue]);
+                                
+                                if (btnImg) btnImg.src = "../images/audio-on.png";
+                                soundToggleBtn.classList.add('sound-active');
+                            } else {
+                                // Siyahıdan "Söndür" seçilərsə
+                                stopCurrentNoise();
+                                if (btnImg) btnImg.src = "../images/audio-off.png";
+                                soundToggleBtn.classList.remove('sound-active');
+                            }
+
+                            customNoiseMenu.style.display = "none"; // Seçimdən sonra menyunu gizlət
+                        };
+                    });
+
+                    // Səhifədə boş bir yerə kliklədikdə açıq olan menyunu bağla
+                    document.addEventListener('click', function() {
+                        customNoiseMenu.style.display = "none";
+                    });
+                }
+                // ==========================================
+                // SUALI REPORT ETMƏK (ŞİKAYƏT) FUNKSİYASI
+                // ==========================================
+                window.openReportFrame = function () {
+                    const currentQuestionText = document.getElementById("question-text").innerText;
+
+                    const reportHTML = `
+                        <h2>Sualı Şikayət Et</h2>
+                        <div>
+                            <span class="report-label">Problemli sual:</span>
+                            <div class="reported-question-box">${currentQuestionText}</div>
+                        </div>
+                        <div>
+                            <span class="report-label">Problemin təsviri:</span>
+                            <textarea id="reportReasonText" class="report-textarea" placeholder="Sualda hansı səhvi və ya problemi gördüyünüzü ətraflı yazın..."></textarea>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                            <button class="btn-continue" onclick="submitReport()">Göndər</button>
+                        </div>
+                    `;
+                    openActionModal(reportHTML);
+                };
+
+                window.submitReport = async function () {
+                    const reason = document.getElementById("reportReasonText").value.trim();
+                    if (!reason) {
+                        showMessage("Zəhmət olmasa problemin nə olduğunu qeyd edin!");
+                        return;
+                    }
+
+                    try {
+                        // 1. Giriş etmiş istifadəçinin emailini alırıq
+                        const { data: { user } } = await supabaseClient.auth.getUser();
+                        const userEmail = user ? user.email : "Anonim";
+
+                        // 2. Hazırda ekranda görünən sualın mətni
+                        const currentQuestionText = document.getElementById("question-text").innerText;
+
+                        // 3. Fənnin adını DOM-dan oxuyuruq
+                        const titleEl = document.querySelector(".fenn-id h1");
+                        const fennAdi = titleEl ? titleEl.innerText.trim() : "Bilinməyən Fənn";
+
+                        // 4. Supabase-ə məlumatı göndəririk
+                        const { error: reportError } = await supabaseClient
+                            .from('reported_questions')
+                            .insert([
+                                {
+                                    email: userEmail,
+                                    sual: currentQuestionText,
+                                    comment: reason,
+                                    fenn_adi: fennAdi // Yeni sütuna fənnin adını yazırıq
+                                }
+                            ]);
+
+                        if (reportError) throw reportError;
+
+                        closeActionModal();
+                        showMessage("Şikayətiniz uğurla göndərildi. Təşəkkür edirik!");
+
+                    } catch (err) {
+                        console.error("Şikayət göndərilərkən xəta baş verdi:", err);
+                        showMessage("Xəta baş verdi! Şikayət göndərilə bilmədi.");
+                    }
+                };
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+
+            } catch (err) {
+                console.error("Supabase fetch error:", err.message);
+            }
+        }
+
+        // Funksiyanı çağırırıq
+        loadQuestions();
+    });
+
+    function shuffleArray(array) {
+        return array
+            .map(a => [Math.random(), a])
+            .sort((a, b) => a[0] - b[0])
+            .map(a => a[1]);
+    }
+}
+// ---------------------- PROFILE PAGE ----------------------
+if (window.location.pathname.includes("profile.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        // 1. İstifadəçi məlumatlarını Supabase-dən çəkirik
+        const { data: { user }, error } = await supabaseClient.auth.getUser();
+
+        if (error || !user) {
+            // Əgər istifadəçi giriş etməyibsə, login səhifəsinə atırıq
+            window.location.href = "login.html";
+            return;
+        }
+
+        // 2. HTML-dəki inputları tapırıq və dəyərləri içinə yazırıq
+        const usernameInput = document.getElementById('username');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const createdAtText = document.getElementById('createdat');
+
+        if (usernameInput) usernameInput.value = user.user_metadata?.full_name || "";
+        if (emailInput) emailInput.value = user.email || "";
+        if (passwordInput) passwordInput.value = "********"; // Şifrə gizli qalmalıdır
+        if (createdAtText && user.created_at) {
+            const createdDate = new Date(user.created_at);
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            createdAtText.textContent = createdDate.toLocaleDateString('az-AZ', options);
+        }
+        // ==========================================
+        // 3. ABUNƏLİK YOXLANIŞI VƏ EKRANA YAZDIRILMASI
+        // ==========================================
+        const abunelikBg = document.querySelector('.abunelik-bg');
+        const premiumBg = document.querySelector('.premium-abunelik-bg');
+        const premiumText = document.querySelector('#premium-text p');
+        const bitmeTarixi = document.getElementById('bitme-tarixi');
+
+        const { data: abuneData, error: abuneError } = await supabaseClient
+            .from('abunelikler')
+            .select('*')
+            .eq('user_id', user.id)
+            .maybeSingle(); // Həmin istifadəçinin sətirini tapırıq
+
+        if (abuneData) {
+            const indi = new Date();
+            const bitis = new Date(abuneData.bitis_tarixi);
+            // Əgər vaxtı hələ bitməyibsə
+            if (indi < bitis) {
+
+                if (abunelikBg) abunelikBg.style.display = 'none';
+                if (premiumBg) premiumBg.style.display = 'flex'; // və ya sizin css necə tələb edirsə
+
+                // Planın adını və bitiş tarixini yaz
+                if (premiumText) premiumText.textContent = abuneData.plan_adi;
+
+                // Tarixi qəşəng və anlaşılan formata salırıq (məs: 20 Mart 2026)
+                const options = { day: 'numeric', month: 'long', year: 'numeric' };
+                if (bitmeTarixi) bitmeTarixi.textContent = bitis.toLocaleDateString('az-AZ', options);
+            } else {
+                abunelikBg.style.display = "flex"
+            }
+        } else {
+            if (abunelikBg) abunelikBg.style.display = 'flex';
+            if (premiumBg) premiumBg.style.display = 'none';
+        }
+        // ==========================================
+        // DƏYİŞDİRMƏ MODALI (E-poçt və Şifrə üçün)
+        // ==========================================
+        // 1. Modalı açan funksiya
+        window.openChangeFrame = function (type) {
+            if (type === 'password') {
+                // Şifrə üçün əvvəlcə e-poçtu təsdiqləməyə yönləndiririk
+                openPasswordResetStep1();
+            } else {
+                // E-poçt dəyişmə köhnə qaydada qalır (link ilə)
+                const modalHTML = `
+                    <h2>E-poçtu yenilə</h2>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Yeni e-poçt ünvanınızı daxil edin. Təsdiq linki göndəriləcək.</p>
+                    <div class="input-group">
+                        <label>Yeni e-poçt</label>
+                        <input type="email" id="newActionValue" placeholder="yeni@mail.com">
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                        <button class="btn-continue" id="modalSubmitBtn" onclick="submitChange('email')">Təsdiqlə</button>
+                    </div>
+                `;
+                openActionModal(modalHTML);
+            }
+        };
+
+        // 2. Şifrə dəyişmənin 1-ci mərhələsi: OTP göndərmək
+        async function openPasswordResetStep1() {
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            const email = user.email;
+
+            const modalHTML = `
+                <h2>Şifrəni yenilə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                    Şifrəni dəyişmək üçün <b>${email}</b> ünvanına təsdiq kodu göndərilməlidir.
+                </p>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="sendOtpBtn" onclick="sendProfileOtp('${email}')">Kod Göndər</button>
+                </div>
+            `;
+            openActionModal(modalHTML);
+        }
+
+        // 3. OTP göndər və 2-ci mərhələyə keç
+        window.sendProfileOtp = async function (email) {
+            const btn = document.getElementById("sendOtpBtn");
+            btn.textContent = "Göndərilir...";
+            btn.disabled = true;
+
+            const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+            if (error) {
+                await showMessage("Xəta: " + error.message);
+                btn.disabled = false;
+                btn.textContent = "Kod Göndər";
+            } else {
+                showProfileOtpEntry(email);
+            }
+        };
+
+        // 4. OTP və Yeni Şifrə daxil etmə modalı
+        function showProfileOtpEntry(email) {
+            const modalContent = document.getElementById("actionModalContent");
+            modalContent.innerHTML = `
+                <h2>Təsdiqləmə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">E-poçtunuza gələn kodu və yeni şifrəni daxil edin.</p>
+                <div class="input-group">
+                    <label>OTP Kod</label>
+                    <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifrə</label>
+                    <input type="password" id="newProfilePassword" placeholder="Ən azı 8 simvol">
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="finalSubmitBtn" onclick="verifyAndFinish('${email}')">Yenilə</button>
+                </div>
+            `;
+        }
+
+        // 5. Kodu yoxla və bitir
+        window.verifyAndFinish = async function (email) {
+            const token = document.getElementById("otpCodeInput").value.trim();
+            const password = document.getElementById("newProfilePassword").value.trim();
+            const btn = document.getElementById("finalSubmitBtn");
+
+            if (token.length < 8 || password.length < 6) {
+                await showMessage("Kod və şifrə tam doldurulmalıdır!");
+                return;
+            }
+
+            btn.textContent = "Gözləyin...";
+            btn.disabled = true;
+
+            // Kodu yoxlayırıq
+            const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+                email,
+                token,
+                type: 'recovery'
+            });
+
+            if (verifyError) {
+                await showMessage("Kod yanlışdır!");
+                btn.disabled = false;
+                btn.textContent = "Yenilə";
+            } else {
+                // Şifrəni yeniləyirik
+                const { error: updateError } = await supabaseClient.auth.updateUser({ password });
+
+                closeActionModal();
+                if (updateError) {
+                    await showMessage("Xəta: " + updateError.message);
+                } else {
+                    await showMessage("Şifrəniz uğurla yeniləndi!");
+                }
+            }
+        };
+        // ==========================================
+        // DƏYİŞİKLİKLƏRİ SAXLA (Yalnız Ad üçün)
+        // ==========================================
+        const saveBtn = document.querySelector('.btn-save');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', async () => {
+                const newName = usernameInput.value.trim();
+
+                if (!newName) {
+                    await showMessage("İstifadəçi adı boş ola bilməz!");
+                    return;
+                }
+
+                const originalText = saveBtn.textContent;
+                saveBtn.textContent = "Saxlanılır...";
+                saveBtn.disabled = true;
+
+                // Adı metadata kimi yeniləyirik
+                const { data, error } = await supabaseClient.auth.updateUser({
+                    data: { full_name: newName }
+                });
+
+                saveBtn.textContent = originalText;
+                saveBtn.disabled = false;
+
+                if (error) {
+                    await showMessage("Xəta: " + error.message);
+                } else {
+                    await showMessage("Profil məlumatlarınız uğurla yadda saxlanıldı!", "showMessage", "Tamam");
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABDAN ÇIX (Logout)
+        // ==========================================
+        const logoutBtn = document.querySelector('.btn-logout');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', async () => {
+                // Sizin yaratdığınız "confirm" tipli showMessage ilə soruşuruq
+                const isConfirmed = await showMessage("Hesabdan çıxmaq istədiyinizə əminsiniz?", "confirm");
+
+                if (isConfirmed) {
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABI SİL (Supabase Cədvəlinə Yazmaq - Spam qorumalı)
+        // ==========================================
+        const deleteBtn = document.querySelector('.btn-delete');
+        if (deleteBtn) {
+            deleteBtn.addEventListener('click', async () => {
+                const isConfirmed = await showMessage("Hesabınızı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz!", "confirm");
+
+                if (isConfirmed) {
+                    deleteBtn.textContent = "Yoxlanılır...";
+                    deleteBtn.disabled = true;
+
+                    const userEmail = user.email;
+
+                    // 1. Əvvəlcə yoxlayırıq: Bu e-poçt artıq cədvəldə varmı?
+                    const { data: existingData, error: checkError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .select('email')
+                        .eq('email', userEmail); // Cədvəldəki 'email' sütunu istifadəçinin e-poçtuna bərabər olanları tap
+
+                    if (checkError) {
+                        await showMessage("Sorğu yoxlanılarkən xəta baş verdi: " + checkError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // 2. Əgər data içində nəticə varsa, deməli artıq müraciət edib
+                    if (existingData && existingData.length > 0) {
+                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return; // funksiyanı buradaca dayandırırıq ki, yenidən bazaya yazmasın
+                    }
+
+                    // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
+                    deleteBtn.textContent = "Göndərilir...";
+
+                    const { error: insertError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .insert([
+                            { email: userEmail }
+                        ]);
+
+                    if (insertError) {
+                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + insertError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // Uğurla yazıldıqdan sonra istifadəçiyə yekun mesajı veririk
+                    await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
+
+                    // Sistemdən çıxış edib login-ə atırıq
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+    });
+}
+// ---------------------- PREMIUM PAGE ----------------------
+if (window.location.pathname.includes("premium.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    // --- 1. SƏHİFƏ AÇILANDA ABUNƏLİYİ YOXLA VƏ DÜYMƏLƏRİ KİLİDLƏ ---
+    // DOMContentLoaded əvəzinə xüsusi asinxron funksiya yaradıb dərhal çağırırıq
+    async function checkActivePlan() {
+        const { data: { user } } = await supabaseClient.auth.getUser();
+
+        if (user) {
+            const { data: abuneData } = await supabaseClient
+                .from('abunelikler')
+                .select('*')
+                .eq('user_id', user.id)
+                .maybeSingle();
+
+            if (abuneData) {
+                const indi = new Date();
+                const bitis = new Date(abuneData.bitis_tarixi);
+
+                if (indi < bitis) {
+                    // Bütün premium düymələrini tapırıq
+                    const freePlanBtn = document.querySelector('.plan-free .btn-plan-current');
+                    if (freePlanBtn) {
+                        freePlanBtn.textContent = "Mövcud planınız var";
+                        freePlanBtn.style.opacity = "0.5"
+                    }
+                    const btns = document.querySelectorAll('.btn-plan-active');
+
+                    btns.forEach(btn => {
+                        // Əgər bu düymə istifadəçinin aldığı plandırsa:
+                        if (btn.getAttribute('onclick').includes(abuneData.plan_adi)) {
+                            btn.textContent = "Aktivdir";
+                            btn.disabled = true;
+                            btn.style.backgroundColor = "#4CAF50"; // Yaşıl rəng
+                            btn.style.cursor = "default";
+                        }
+                        // Digər planlardırsa:
+                        else {
+                            btn.textContent = "Mövcud planınız var";
+                            btn.disabled = true;
+                            btn.style.opacity = "0.5";
+                            btn.style.cursor = "not-allowed";
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    // Funksiyanı dərhal işə salırıq
+    checkActivePlan();
+
+    // --- YENİLƏNMİŞ: WhatsApp-a Yönləndirmə Funksiyası ---
+    window.activatePlan = async function (planAdi, qiymet) {
+        // 1. Azərbaycan nömrə formatı (Arada boşluq və ya + işarəsi olmadan 12 rəqəm)
+        const phoneNumber = "994776247077"; // <-- Öz real nömrənlə əvəzlə
+
+        let userEmail = "";
+        try {
+            // 2. Supabase-dən daxil olmuş istifadəçinin məlumatlarını alırıq
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            if (user && user.email) {
+                userEmail = user.email;
+            }
+        } catch (error) {
+            console.error("İstifadəçi məlumatı alınarkən xəta:", error);
+        }
+
+        // 3. Mesaj şablonu (Email varsa mesaja daxil edilir)
+        let rawMessage = `Salam, mən AtlasLab.az saytından ${planAdi} (${qiymet} AZN) premium planını almaq istəyirəm.`;
+        
+        if (userEmail) {
+            rawMessage += ` Qeydiyyat emailim: ${userEmail}`;
+        }
+
+        // 4. URL üçün kodlaşdırma
+        const encodedMessage = encodeURIComponent(rawMessage);
+        
+        // 5. WhatsApp rəsmi Click-to-Chat linki
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        
+        // 6. Linki yeni tabda açırıq
+        window.open(whatsappUrl, '_blank');
+    };
+}

@@ -9,7 +9,18 @@ const groupNames = {
     4: "4-c\xfc Qrup",
     5: "5-ci Qrup"
 };
-
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+      
+      if (preloader) {
+          // 1000ms ulduzun tam 360 dərəcə fırlanmasına gedir.
+          // +400ms ulduz dayandıqdan sonra ekranda sabit qalmasını görmək üçündür.
+          // Ümumi: 1400ms (1.4 saniyə) sonra yüklənmə ekranı yox olur.
+          setTimeout(() => {
+              preloader.classList.add("hidden");
+          }, 1500);
+      }
+  });
 function loadData() {
     fetch(jsonFile).then(e => {
         if (!e.ok) throw Error(`Failed to fetch ${jsonFile}: ${e.statusText}`);

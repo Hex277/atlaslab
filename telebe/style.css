@@ -1,32 +1,43 @@
 :root {
-  --main-color: #1e90ff;
-  --progress-color: #1e90ff;
-  --bg: var(--bg);
-  --border: #E5E9F2;
-  --top-bg: rgba(255, 255, 255, 0.575);
-  --text-color: #222;
-  --surface: #FFFFFF;
-  --surface2: #EFF2F8;
-  --correct: #e5f7ec;
-  --wrong: #fae9e7;
-  --limit-bg: rgba(255, 193, 7, 0.15);
-  --table-hover: rgba(41, 41, 41, 0.158);
+  /* Əsas rənglər */
+  --main-color:#B89A5A; 
+  --progress-color:  #B89A5A;
+  
+  /* ATLASLAB dəyişənlərinin tətbiqi */
+  --bg:              #F2F0EB;
+  --border:          rgba(20,18,16,0.10);
+  --top-bg:          rgba(242,240,235,0.88);
+  --text-color:      #141210;
+  --surface:         #FAFAF7;
+  --surface2:        #F0EEE9;
+  --glass-bar:       #ffffff65;
+  --correct:         #eaf5ee;
+  --wrong:           #faecea;
+
+  --ease:   cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* Xüsusi elementlər */
+  --limit-bg:        var(--gold-dim);
+  --table-hover:     var(--border-raw);
 }
+
 body.dark-theme {
-  --main-color: #1e90ff;
-  --progress-color: #1e90ff;
-  --bg: #0F1117;
-  --border: #2A2F42;
-  --top-bg: #0F1117;
-  --text-color: #fff;
-  --surface: #1A1D27;
-  --surface2: #232736;
-  --correct: #1a2720;
-  --wrong: #271c1a;
-  --table-hover: rgba(255, 255, 255, 0.08);
+  --main-color:      var(--gold);
+  --bg:              #0D0C0B;
+  --border:          rgba(234,230,220,0.08);
+  --top-bg:          rgba(13,12,11,0.92);
+  --text-color:      #EAE6DC;
+  --surface:         #1B1A18;
+  --surface2:        #222120;
+  --glass-bar:       #1b1a18bd;
+  --correct:         #1a2720;
+  --wrong:           #271c1a;
+  
+  --limit-bg:        var(--gold-dim);
+  --table-hover:     var(--border-raw);
 }
 body.premium-aktiv {
-    --progress-color: linear-gradient(90deg, #1e90ff, #6B48FF);
+    --progress-color: linear-gradient(90deg, #B89A5A, #6B48FF);
     --limit-bg: rgba(43, 186, 255, 0.15);
 }
 body {
@@ -38,9 +49,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: background 0.4s var(--ease), color 0.4s var(--ease);
 }
+
 input {
-    border: 1px solid #4a90e2;
+    border: 1px solid #B89A5A;
     border-radius: 25px;
     padding: 10px;
     font-size: 18px;
@@ -54,7 +67,7 @@ input:focus {
     border: none;
 }
 button {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -67,11 +80,70 @@ button {
     height: 44px;
     height: auto;
 }
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(11, 15, 25, 0.4); /* Yarı-şəffaf tünd arxa fon */
+    backdrop-filter: blur(12px); /* Arxa planı blurlayır */
+    -webkit-backdrop-filter: blur(12px); /* Safari dəstəyi üçün */
+    z-index: 99999; /* Bütün elementlərdən ən üstdə qalması üçün */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Yüklənmə bitdikdə preloader-i yumşaq şəkildə gizlətmək üçün */
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* --- Logonun Konteyneri --- */
+.logo-wrapper {
+    position: relative;
+    width: 90px;  /* Logonun ölçüsünü buradan dəyişə bilərsən */
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Şəkillərin tam üst-üstə düşməsi üçün */
+.logo-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Sabit mərkəz dairəsi (Həmişə ulduzun üstündə görünsün) */
+.al-center {
+    z-index: 2;
+}
+
+.al-border {
+    z-index: 1;
+    /* 1s fırlanma müddəti. 
+       ease-in-out: yavaş başlayır, sürətlənir və sonda yavaşlayaraq dayanır. 
+       forwards: animasiya bitəndə (360 dərəcədə) həmin vəziyyətdə sabit qalır. */
+    animation: spinLogo 1s ease-in-out forwards; 
+}
+/* Ulduzun 360 dərəcə fırlanma animasiyası */
+@keyframes spinLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 .top-bar {
     height: 60px;
     width: 100%;
-    background: var(--surface);
+    background: var(--glass-bar);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
     display: flex;
@@ -79,12 +151,18 @@ button {
     margin: 0;
     align-items: center;
     z-index: 100;
+    transition: background 0.4s var(--ease), border-color 0.4s var(--ease), backdrop-filter 0.4s;
 }
 .logo {
     width: 20%;
 }
 .logo img {
-    width: 170px;
+    width: 150px;
+    margin-left: 20px;
+}
+#atlaslab-logo {
+    width: 43px;
+    margin-left: 10px;
 }
 #name-text {
     padding-top: 60px;
@@ -99,20 +177,20 @@ button {
     height: 40px;
     min-width: 60px;
     border-radius: 49px;
-    background: linear-gradient(90deg, #1e90ff, #6B48FF); 
+    background: linear-gradient(90deg, #B89A5A, #6B48FF); 
     display: flex;
     align-items: center;
     align-self: center;
     padding-right: 20px;
     padding-left: 15px;
     gap: 3px;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 221, 0, 0.5);
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
 }
 .premium:hover {
-    box-shadow: 0 3px 15px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 3px 15px rgba(255, 221, 0, 0.5);
 }
 .premium img {
     width: 15px;
@@ -192,7 +270,7 @@ button {
     color: var(--text-color, #000000);
     padding: 50px 25px;
     border-radius: 15px;
-    border: 1px solid #1e90ff;
+    border: 1px solid #B89A5A;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     width: 90%;
     max-width: 350px;
@@ -230,13 +308,13 @@ button {
 }
 
 #okBtn {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
 }
-#okBtn:hover { background-color: #107ae6; }
+#okBtn:hover { background-color: #B89A5A; }
 
 #confirmBtn {
-    background-color: #ff4d4d; /* Təsdiq düyməsi diqqət çəksin deyə qırmızı/göy ola bilər */
+    background-color: #B89A5A; /* Təsdiq düyməsi diqqət çəksin deyə qırmızı/göy ola bilər */
     color: white;
 }
 #confirmBtn:hover { background-color: #d43f3f; }
@@ -261,7 +339,7 @@ button {
     background-color: var(--surface, #ffffff);
     padding: 35px 25px;
     border-radius: 15px;
-    border: 1px solid #1e90ff;
+    border: 1px solid #B89A5A;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     width: 90%; 
     max-width: 420px;
@@ -292,7 +370,7 @@ button {
     width: 100%; 
     box-sizing: border-box; 
     padding: 14px;
-    border: 1px solid rgba(30,144,255,0.4); 
+    border: 1px solid #B89A5A; 
     border-radius: 10px;
     font-size: 15px; 
     outline: none; 
@@ -342,21 +420,21 @@ button {
 .btn-cancel:hover { opacity: 1; }
 
 .btn-continue { 
-    background: #1e90ff; 
+    background: #B89A5A; 
     color: white; 
 }
 
-.btn-continue:hover { background: #107ae6; }
+.btn-continue:hover { background: #B89A5A; }
 
 .verify-email-row { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    background: rgba(30,144,255,0.08); 
+    background: rgba(234, 207, 30, 0.077); 
     padding: 14px 18px; 
     border-radius: 10px; 
     margin-bottom: 25px; 
-    border: 1px dashed rgba(30,144,255,0.4); 
+    border: 1px dashed #B89A5A; 
 }
 
 .verify-email-row span { 
@@ -367,7 +445,7 @@ button {
 .verify-email-row button { 
     background: none; 
     border: none; 
-    color: #1e90ff; 
+    color: #B89A5A; 
     font-weight: 700; 
     cursor: pointer; 
 }
@@ -385,7 +463,7 @@ button {
     text-align: center; 
     font-size: 24px; 
     font-weight: 700;
-    border: 1px solid rgba(30,144,255,0.4); 
+    border: 1px solid rgba(234, 207, 30, 0.077); 
     border-radius: 10px; 
     outline: none;
     background: transparent; 
@@ -394,7 +472,7 @@ button {
 }
 
 .otp-container input:focus { 
-    border-color: #1e90ff; 
+    border-color: #B89A5A; 
     box-shadow: 0 0 0 3px rgba(30,144,255,0.15); 
 }
 /* ==============================
@@ -668,7 +746,7 @@ button {
     transform: translateY(-50%); /* Şaquli olaraq tam mərkəzə gətirir */
     background: transparent;
     border: none;
-    color: #1e90ff;
+    color: #B89A5A;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
@@ -677,7 +755,7 @@ button {
 }
 
 .input-wrapper .btn-change:hover {
-    color: #107ae6;
+    color: #B89A5A;
     text-decoration: underline;
 }
 
@@ -698,7 +776,7 @@ button {
 }
 
 .input-group input:focus {
-    border:1px solid var(--main-color);
+    border:1px solid #B89A5A;
 }
 
 .profile-buttons {
@@ -710,7 +788,7 @@ button {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    border: 2px solid var(--main-color);
+    border: 1px solid #B89A5A;
     border-radius: 15px;
     justify-content: space-between;
 }
@@ -724,7 +802,7 @@ button {
     align-items: center;
 }
 #premium-text {
-    background: linear-gradient(90deg, #1e90ff, #6B48FF);
+    background: linear-gradient(90deg, #B89A5A, #6B48FF);
     display: flex;
     align-items: center;
     height: 36px;
@@ -781,7 +859,7 @@ button {
 }
 .donthaveac a, .haveac a {
     text-decoration: none;
-    color: #1e90ff;
+    color: #B89A5A;
 }
 
 .action-buttons-lod {
@@ -793,7 +871,7 @@ button {
     padding: 12px 28px;
     background-color: var(--surface);
     color: var(--text-color);
-    border: 1px solid var(--main-color);
+    border: 1px solid #B89A5A;
     border-radius: 15px;
     font-weight: 700;
     font-size: 14px;
@@ -802,7 +880,7 @@ button {
 }
 
 .btn-save:hover {
-    background-color: var(--main-color);
+    background-color: #B89A5A;
     color: white;
 }
 
@@ -937,7 +1015,7 @@ button {
     border-bottom: 1px solid #E5E9F2;
 }
 body.dark-theme #menu-bar a:not(#name-text) {
-    border-bottom:1px solid #2A2F42;
+    border-bottom:1px solid rgba(234, 207, 30, 0.077);
 }
 
 #menu-bar a:hover {
@@ -979,7 +1057,7 @@ body.dark-theme #menu-bar a:not(#name-text) {
 .plan-card {
     background-color: var(--surface); /* Dark mode üçün səth rəngi */
     border-radius: 15px; /* Sizin fənn kartlarındakı kənar yumruluğu */
-    border: 1px solid #1e90ff; /* Sizin fənn kartlarındakı göy xətt */
+    border: 1px solid #B89A5A; /* Sizin fənn kartlarındakı göy xətt */
     padding: 20px;
     position: relative;
     display: flex;
@@ -993,7 +1071,7 @@ body.dark-theme #menu-bar a:not(#name-text) {
 .plan-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    background-color: #1e8fff0c;
+    background-color: rgba(234, 207, 30, 0.077);
 }
 
 /* Tövsiyə edilən kartın xüsusi fərqlənməsi */
@@ -1006,7 +1084,7 @@ body.dark-theme #menu-bar a:not(#name-text) {
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -1025,7 +1103,7 @@ body.dark-theme #menu-bar a:not(#name-text) {
 
 .plan-price {
     font-size: 28px;
-    color: #1e90ff; /* Fənn kartlarındakı əsas vurğu rəngi */
+    color: #B89A5A; /* Fənn kartlarındakı əsas vurğu rəngi */
     font-weight: 800;
     margin: 10px 0;
 }
@@ -1078,18 +1156,18 @@ body.dark-theme #menu-bar a:not(#name-text) {
 
 .btn-plan-current {
     background-color: rgba(30, 144, 255, 0.1);
-    color: #1e90ff;
+    color: #B89A5A;
     cursor: not-allowed;
 }
 
 .btn-plan-active {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
     cursor: pointer;
 }
 
 .btn-plan-active:hover {
-    background-color: #107ae6;
+    background-color: #99772f;
 }
 .theme-mode {
     display: flex;
@@ -1127,7 +1205,10 @@ body.dark-theme #report img {
     flex-direction: column;
     align-items: center;
     margin-left: 250px;
+    z-index: 1; 
+    background-clip: padding-box;
 }
+
 .header-bg {
     margin-top: 20px;
 }
@@ -1156,13 +1237,13 @@ body.dark-theme #report img {
     justify-self: left;
 }
 .contact-section a {
-    color: #1e90ff;
+    color: #B89A5A;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-section a:hover {
-    color: #107ae6;
+    color: #99772f;
     text-decoration: underline;
 }
 .site-footer {
@@ -1222,7 +1303,7 @@ body.dark-theme #report img {
 .subject-card {
     background-color: var(--surface);;
     border-radius: 15px;
-    border: 1px solid #1e90ff;
+    border: 1px solid #B89A5A;
     padding: 20px;
     position: relative;
     display: flex;
@@ -1238,12 +1319,12 @@ body.dark-theme #report img {
 .subject-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    background-color: #1e8fff0c;
+    background-color: rgba(234, 207, 30, 0.077);
 }
 /* YENİ: Fənn kartı daxilindəki fakültə adı üçün dizayn */
 .card-faculty {
     font-size: 13px;
-    color: #1e90ff; 
+    color: #B89A5A; 
     margin-bottom: 8px;
     font-weight: 500;
     display: -webkit-box;
@@ -1271,7 +1352,7 @@ body.dark-theme #report img {
 .card-icon {
     width: 44px; height: 44px;
     border-radius: 12px;
-    background-color: rgba(29, 115, 245, 0.075);
+    background-color: rgba(234, 207, 30, 0.077);
     display: grid;
     place-items: center;
     font-size: 20px;
@@ -1296,7 +1377,7 @@ body.dark-theme #report img {
     bottom: 20px;
     right: 20px;
     font-size: 18px;
-    color: #1e90ff;
+    color: #B89A5A;
     transition: transform 0.3s ease;
 }
 
@@ -1331,7 +1412,7 @@ body.dark-theme #report img {
 .filter-group select {
     padding: 12px 16px;
     border-radius: 25px;
-    border: 1px solid #1e90ff;
+    border: 1px solid #B89A5A;
     background-color: var(--surface);
     color: var(--text-color);
     font-size: 15px;
@@ -1357,8 +1438,8 @@ body.dark-theme #report img {
     right: 15px;
     width: 28px;
     height: 28px;
-    background-color: rgba(30, 144, 255, 0.1);
-    color: #1e90ff;
+    background-color: rgba(234, 207, 30, 0.077);
+    color: #B89A5A;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1371,7 +1452,7 @@ body.dark-theme #report img {
 }
 
 .info-btn:hover {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
     transform: scale(1.1);
 }
@@ -1404,7 +1485,7 @@ body.dark-theme #report img {
 }
 
 .info-modal-header {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
     padding: 15px 20px;
     display: flex;
@@ -1498,7 +1579,7 @@ body.dark-theme #report img {
     align-items: center;
     gap: 5px;
     background-color: var(--surface2);
-    color: #1e90ff;
+    color: #B89A5A;
     padding: 5px 12px;
     border-radius: 20px;
     font-weight: bold;
@@ -1561,7 +1642,7 @@ body.dark-theme #report img {
     width: 95%;
     background-color: var(--surface);;
     color: var(--text-color);;
-    border: 1px solid #1e90ff;
+    border: 1px solid #B89A5A;
     display: flex;
     justify-content: left;
     text-align: left;
@@ -1595,7 +1676,7 @@ body.dark-theme #report img {
 }
 /* Şikayət edilən sualın görünüşü */
 .reported-question-box {
-    background-color: rgba(30, 144, 255, 0.08);
+    background-color: rgba(234, 207, 30, 0.077);
     padding: 15px;
     border-radius: 10px;
     margin-top: 5px;
@@ -1603,7 +1684,7 @@ body.dark-theme #report img {
     font-size: 14px;
     text-align: left;
     color: var(--text-color);
-    border: 1px dashed rgba(30, 144, 255, 0.4);
+    border: 1px dashed rgba(234, 207, 30, 0.077);
     max-height: 90px;
     overflow-y: auto;
 }
@@ -1613,7 +1694,7 @@ body.dark-theme #report img {
     width: 100%;
     min-height: 100px;
     padding: 15px;
-    border: 1px solid rgba(30, 144, 255, 0.4);
+    border: 1px solid rgba(234, 207, 30, 0.077);
     border-radius: 10px;
     font-size: 14px;
     background: transparent;
@@ -1626,8 +1707,8 @@ body.dark-theme #report img {
 }
 
 .report-textarea:focus {
-    border-color: #1e90ff;
-    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+    border-color: #B89A5A;
+    box-shadow: 0 0 0 3px rgba(234, 207, 30, 0.077);
 }
 
 /* Şikayət modalı daxilində başlıqlar (Label) */
@@ -1809,7 +1890,7 @@ button:disabled {
 }
 
 .dot-blue {
-    color: #1e90ff;
+    color: #B89A5A;
 }
 
 .dot-red {
@@ -1849,7 +1930,7 @@ button:disabled {
 }
 
 .btn-blue {
-    background-color: #1e90ff;
+    background-color: #B89A5A;
     color: white;
     border: none;
     padding: 12px 30px;
@@ -1857,7 +1938,7 @@ button:disabled {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(234, 207, 30, 0.077);
     transition: transform 0.2s;
 }
 
@@ -1867,7 +1948,7 @@ button:disabled {
 
 .link-blue {
     text-decoration: none;
-    color: #1e90ff;
+    color: #B89A5A;
     font-weight: 600;
     font-size: 16px;
 }

@@ -1,1 +1,90 @@
-function a0_0x4710(_0x1b24af,_0x11bc05){_0x1b24af=_0x1b24af-0x15d;const _0x3a2627=a0_0x1c7b();let _0x45ddb9=_0x3a2627[_0x1b24af];return _0x45ddb9;}(function(_0x7d8cdd,_0x222ac8){const _0x44fd70=a0_0x4710,_0x580a79=_0x7d8cdd();while(!![]){try{const _0xa8c937=parseInt(_0x44fd70(0x190))/0x1*(-parseInt(_0x44fd70(0x17d))/0x2)+parseInt(_0x44fd70(0x162))/0x3*(parseInt(_0x44fd70(0x17f))/0x4)+parseInt(_0x44fd70(0x182))/0x5*(-parseInt(_0x44fd70(0x181))/0x6)+-parseInt(_0x44fd70(0x174))/0x7+parseInt(_0x44fd70(0x17b))/0x8*(-parseInt(_0x44fd70(0x160))/0x9)+parseInt(_0x44fd70(0x170))/0xa*(-parseInt(_0x44fd70(0x18a))/0xb)+-parseInt(_0x44fd70(0x18f))/0xc*(-parseInt(_0x44fd70(0x17e))/0xd);if(_0xa8c937===_0x222ac8)break;else _0x580a79['push'](_0x580a79['shift']());}catch(_0x2058f8){_0x580a79['push'](_0x580a79['shift']());}}}(a0_0x1c7b,0xdc1d3));const a0_0xd5e76c=a0_0x93bc;function a0_0x93bc(_0x35f17b,_0x3ce1d8){_0x35f17b=_0x35f17b-0xbe;const _0x46f01d=a0_0x1b21();let _0x52861d=_0x46f01d[_0x35f17b];return _0x52861d;}(function(_0x1e6774,_0x50a7d1){const _0x3d55c0=a0_0x4710,_0x40c7f4=a0_0x93bc,_0x31ac7d=_0x1e6774();while(!![]){try{const _0x5d3989=-parseInt(_0x40c7f4(0xd5))/0x1+parseInt(_0x40c7f4(0xe8))/0x2+parseInt(_0x40c7f4(0xdd))/0x3*(-parseInt(_0x40c7f4(0xd0))/0x4)+-parseInt(_0x40c7f4(0xdb))/0x5*(parseInt(_0x40c7f4(0xd2))/0x6)+parseInt(_0x40c7f4(0xc4))/0x7*(-parseInt(_0x40c7f4(0xc9))/0x8)+parseInt(_0x40c7f4(0xe3))/0x9+-parseInt(_0x40c7f4(0xcd))/0xa*(-parseInt(_0x40c7f4(0xd7))/0xb);if(_0x5d3989===_0x50a7d1)break;else _0x31ac7d[_0x3d55c0(0x16d)](_0x31ac7d['shift']());}catch(_0x38fc4e){_0x31ac7d[_0x3d55c0(0x16d)](_0x31ac7d[_0x3d55c0(0x169)]());}}}(a0_0x1b21,0x70867));function a0_0x1b21(){const _0x263124=a0_0x4710,_0x435679=[_0x263124(0x172),'104ALVmRm','add',_0x263124(0x15f),'getItem',_0x263124(0x167),_0x263124(0x18c),_0x263124(0x16a),_0x263124(0x177),_0x263124(0x180),_0x263124(0x175),_0x263124(0x17c),'center-logo','377618Jwgksa',_0x263124(0x18b),_0x263124(0x192),_0x263124(0x185),_0x263124(0x183),_0x263124(0x188),_0x263124(0x18d),'getElementById',_0x263124(0x166),_0x263124(0x178),'../images/moon.webp',_0x263124(0x176),_0x263124(0x16f),_0x263124(0x15e),_0x263124(0x187),'DOMContentLoaded',_0x263124(0x189),_0x263124(0x184),_0x263124(0x161),_0x263124(0x16b),_0x263124(0x179),_0x263124(0x186),_0x263124(0x173),_0x263124(0x191),_0x263124(0x15d),'theme-btn',_0x263124(0x165),_0x263124(0x164),_0x263124(0x171),_0x263124(0x16e),_0x263124(0x163),_0x263124(0x18e),_0x263124(0x168),'contains'];return a0_0x1b21=function(){return _0x435679;},a0_0x1b21();}const a0_0xc45bb4=(function(){const _0x5b2fb9=(function(){let _0x2c80a3=!![];return function(_0x148ea9,_0x409181){const _0x3426c8=_0x2c80a3?function(){if(_0x409181){const _0x574725=_0x409181['apply'](_0x148ea9,arguments);return _0x409181=null,_0x574725;}}:function(){};return _0x2c80a3=![],_0x3426c8;};}()),_0x122385=_0x5b2fb9(this,function(){const _0x37771e=a0_0x4710;return _0x122385[_0x37771e(0x17c)]()[_0x37771e(0x184)]('(((.+)+)+)+$')[_0x37771e(0x17c)]()[_0x37771e(0x16e)](_0x122385)[_0x37771e(0x184)](_0x37771e(0x168));});_0x122385();let _0x43898f=!![];return function(_0x2b9396,_0x4a1094){const _0x309916=_0x43898f?function(){const _0x321ecf=a0_0x4710;if(_0x4a1094){const _0x320764=_0x4a1094[_0x321ecf(0x17a)](_0x2b9396,arguments);return _0x4a1094=null,_0x320764;}}:function(){};return _0x43898f=![],_0x309916;};}()),a0_0x7664=a0_0xc45bb4(this,function(){const _0x4227bd=a0_0x93bc;return a0_0x7664[_0x4227bd(0xd3)]()[_0x4227bd(0xe6)](_0x4227bd(0xc6))[_0x4227bd(0xd3)]()[_0x4227bd(0xc3)](a0_0x7664)[_0x4227bd(0xe6)](_0x4227bd(0xc6));});a0_0x7664(),document[a0_0xd5e76c(0xc5)](a0_0xd5e76c(0xe4),()=>{const _0x37be94=a0_0x4710,_0x3e1055=a0_0xd5e76c;let _0x576195=localStorage[_0x3e1055(0xcc)](_0x3e1055(0xd9));!_0x576195&&(_0x576195=localStorage['getItem'](_0x3e1055(0xd8))===_0x3e1055(0xe0)?_0x3e1055(0xc2):_0x3e1055(0xea)),_0x576195==='dark'?document[_0x37be94(0x15d)][_0x3e1055(0xeb)][_0x3e1055(0xca)](_0x3e1055(0xe2),_0x3e1055(0xc0)):document[_0x3e1055(0xbe)][_0x3e1055(0xeb)][_0x3e1055(0xc1)](_0x3e1055(0xe2),_0x3e1055(0xc0));const _0x1fbfe6=document[_0x3e1055(0xdc)](_0x3e1055(0xd4)),_0x1d8e06=document[_0x37be94(0x15f)](_0x3e1055(0xe5));_0x1fbfe6&&(_0x1fbfe6[_0x3e1055(0xd1)]=_0x576195===_0x3e1055(0xc2)?_0x3e1055(0xec):_0x3e1055(0xe1)),_0x1d8e06&&(_0x1d8e06['src']=_0x576195===_0x3e1055(0xc2)?_0x37be94(0x191):_0x3e1055(0xe1));const _0x13a6a9=document[_0x37be94(0x16c)](_0x3e1055(0xbf))||document[_0x37be94(0x16c)](_0x3e1055(0xde)),_0x52f008=document[_0x3e1055(0xdc)]('theme-img')||document[_0x3e1055(0xcb)](_0x3e1055(0xc8))||document[_0x3e1055(0xdc)](_0x3e1055(0xd6));_0x13a6a9&&_0x52f008&&(_0x52f008[_0x37be94(0x180)]=_0x576195===_0x3e1055(0xc2)?_0x3e1055(0xda):_0x3e1055(0xdf),_0x13a6a9[_0x3e1055(0xc5)](_0x3e1055(0xce),()=>{const _0x330de2=_0x37be94,_0x317bda=_0x3e1055;document[_0x317bda(0xbe)][_0x330de2(0x173)][_0x317bda(0xcf)](_0x317bda(0xe2)),document[_0x317bda(0xbe)][_0x317bda(0xeb)][_0x330de2(0x16a)](_0x317bda(0xc0));let _0x57d8db=_0x317bda(0xea);if(document[_0x317bda(0xbe)][_0x317bda(0xeb)][_0x317bda(0xc7)](_0x317bda(0xe2))||document[_0x317bda(0xbe)][_0x317bda(0xeb)][_0x317bda(0xc7)](_0x330de2(0x165))){_0x57d8db=_0x317bda(0xc2),_0x52f008[_0x330de2(0x180)]=_0x317bda(0xda);if(_0x1fbfe6)_0x1fbfe6[_0x317bda(0xd1)]=_0x317bda(0xec);if(_0x1d8e06)_0x1d8e06[_0x317bda(0xd1)]=_0x317bda(0xec);}else{_0x57d8db=_0x317bda(0xea),_0x52f008[_0x317bda(0xd1)]=_0x317bda(0xdf);if(_0x1fbfe6)_0x1fbfe6[_0x317bda(0xd1)]=_0x330de2(0x16f);if(_0x1d8e06)_0x1d8e06[_0x317bda(0xd1)]=_0x317bda(0xe1);}localStorage[_0x317bda(0xe9)](_0x317bda(0xd9),_0x57d8db),localStorage['setItem'](_0x317bda(0xd8),_0x57d8db===_0x317bda(0xc2)?_0x317bda(0xe0):_0x317bda(0xe7));})),typeof loadData==='function'&&loadData();});function a0_0x1c7b(){const _0x397b57=['6976792KJWhUv','src','1368UpwHzs','33605AkZhei','theme','search','darkMode','light','3807000LfiPAj','../images/issun.webp','.logopng','935xvIuTr','icon','click','277625WEUfVF','addEventListener','1092mdwgbx','7GUQehk','../images/logo-crop-w.png','11dlapxO','body','dark-theme','querySelector','3609JKcscS','disabled','3cuDdgc','42301ZzYDvJ','remove','dark-mode','6249ZlFlCl','1730130vlEiur','(((.+)+)+)+$','shift','toggle','1604350WCDfRU','getElementById','push','constructor','../images/logo-crop-b.png','133810uvSaXv','dark','#toggle-dark-mode\x20#icon','classList','2571660FGHDXZ','18xSuWwp','enabled','604PCBGxO','toggle-dark-mode','setItem','apply','23072RnMJRS','toString','122838AjHoUU','540137vGZMqY'];a0_0x1c7b=function(){return _0x397b57;};return a0_0x1c7b();}
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Yaddaşı yoxlayırıq (həm tələbənin "theme", həm də abituriyentin "darkMode" açarını)
+    let currentTheme = localStorage.getItem("theme");
+    
+    // Əgər "theme" yoxdursa, köhnə "darkMode" yaddaşını yoxla
+    if (!currentTheme) {
+        currentTheme = (localStorage.getItem("darkMode") === "enabled") ? "dark" : "light";
+    }
+
+    // 2. Səhifə yüklənəndə hər iki CSS sinfini (həm tələbə, həm abituriyent üçün) tətbiq edirik
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-theme", "dark-mode");
+    } else {
+        document.body.classList.remove("dark-theme", "dark-mode");
+    }
+
+    // --- YENİ KOD: Loqonu tapırıq ---
+    const centerLogo = document.getElementById("center-logo");
+    const alLogo = document.getElementById("atlaslab-logo");
+    const heroTelebe = document.getElementById("telebe-hero");
+    const loaderBorders = document.querySelectorAll(".al-border");
+    const loaderCenters = document.querySelectorAll(".al-center");
+    const sideLogo = document.querySelector(".logopng");
+    // Səhifə yüklənəndə loqonun düzgün versiyasını göstəririk
+    if (centerLogo) {
+        centerLogo.src = (currentTheme === "dark") ? "../images/logo-crop-w.png" : "../images/logo-crop-b.png";
+    }
+    if (alLogo) {
+        alLogo.src = (currentTheme === "dark") ? "../images/logo-w.webp" : "../images/logo-b.webp";
+    }
+    if (heroTelebe) {
+        heroTelebe.src = (currentTheme === "dark") ? "../images/hero-visual-w.webp" : "../images/hero-visual-b.webp";
+    }
+    if (sideLogo) {
+        sideLogo.src = (currentTheme === "dark") ? "../images/logo-crop-w.png" : "../images/logo-crop-b.png";
+    }
+    loaderBorders.forEach(img => img.src = (currentTheme === "dark") ? "../images/al-border-w.webp" : "../images/al-border-b.webp");
+    loaderCenters.forEach(img => img.src = (currentTheme === "dark") ? "../images/al-center-w.webp" : "../images/al-center-b.webp");
+    // 3. Düyməni və ikonu hər iki layihənin ID-sinə uyğun axtarırıq
+    const toggleBtn = document.getElementById("theme-btn") || document.getElementById("toggle-dark-mode");
+    const toggleIcon = document.getElementById("theme-img") || document.querySelector("#toggle-dark-mode #icon") || document.getElementById("icon");
+
+    // Əgər səhifədə düymə varsa, funksiyanı işə salırıq
+    if (toggleBtn && toggleIcon) {
+        
+        // Səhifə açılanda ikonu düzgün göstər (tələbənin issun.webp şəkli ilə)
+        toggleIcon.src = (currentTheme === "dark") ? "../images/issun.webp" : "../images/moon.webp";
+
+        // Düyməyə kliklədikdə
+        toggleBtn.addEventListener("click", () => {
+            // Hər iki CSS sinfini dəyişirik
+            document.body.classList.toggle("dark-theme");
+            document.body.classList.toggle("dark-mode");
+            
+            let theme = "light";
+            
+            // Əgər dark mode aktivdirsə
+            if (document.body.classList.contains("dark-theme") || document.body.classList.contains("dark-mode")) {
+                theme = "dark";
+                toggleIcon.src = "../images/issun.webp";
+                // --- YENİ KOD: Dark mode aktiv olduqda ağ loqonu qoyuruq ---
+                if (centerLogo) centerLogo.src = "../images/logo-crop-w.png";
+                if (heroTelebe) heroTelebe.src = "../images/hero-visual-w.webp";
+                if (alLogo) alLogo.src = "../images/logo-w.webp";
+                if (sideLogo) sideLogo.src = "../images/logo-crop-w.png";
+                loaderBorders.forEach(img => img.src = "../images/al-border-w.webp");
+                loaderCenters.forEach(img => img.src = "../images/al-center-w.webp");
+            } else {
+                theme = "light";
+                toggleIcon.src = "../images/moon.webp";
+                // --- YENİ KOD: Light mode aktiv olduqda qara loqonu qoyuruq ---
+                if (centerLogo) centerLogo.src = "../images/logo-crop-b.png";
+                if (alLogo) alLogo.src = "../images/logo-b.webp";  
+                if (heroTelebe) heroTelebe.src = "../images/hero-visual-b.webp";
+                if (sideLogo) sideLogo.src = "../images/logo-crop-b.png";
+                loaderBorders.forEach(img => img.src = "../images/al-border-b.webp");
+                loaderCenters.forEach(img => img.src = "../images/al-center-b.webp");
+            }
+            
+            // Yaddaşı hər iki layihə üçün eyni anda yeniləyirik ki, səhifələr arası keçiddə itməsin
+            localStorage.setItem("theme", theme);
+            localStorage.setItem("darkMode", theme === "dark" ? "enabled" : "disabled");
+        });
+    }
+
+    // Digər məlumatları yükləyən funksiya (əgər mövcuddursa)
+    if (typeof loadData === 'function') {
+        loadData();
+    }
+});

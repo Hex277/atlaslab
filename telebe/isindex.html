@@ -40,152 +40,159 @@
         gtag('js', new Date());
         gtag('config', 'G-029N0KCH3P');
     </script>
-
 </head>
 <body>
+    <div id="preloader">
+        <div class="logo-wrapper">
+            <img src="../images/al-border-w.webp" class="al-border">
+            <img src="../images/al-center-w.webp" class="al-center">
+        </div>
+    </div>
+    <!-- Custom cursor dot (desktop) -->
+    <div id="cursor" aria-hidden="true"></div>
 
     <!-- ═══ TOP BAR ═══ -->
     <div class="top-bar">
         <div class="logo">
-            <a href="">
-                <img id="center-logo" src="../images/logo-crop-w.png" alt="Main Menu">
-            </a>
+            <img src="../images/logo-crop-w.png" id="center-logo" alt="AtlasLab Logo">
         </div>
-        <a href="premium.html" id="premium-href">
-            <div class="premium">
-                <img src="../images/lightning.png" alt="premium">
-                <p>Premium</p>
-            </div>
+
+        <a href="../index.html" class="abituriyent-link">
+            📖 Abituriyent paneli
         </a>
-        <div class="theme-mode">
-            <button id="theme-btn">
-                <img src="../images/moon.webp" alt="dark mode" id="theme-img">
-            </button>
-        </div>
-        <a href="profile.html" class="profile-bg">
-            <img src="../images/profile.webp" alt="profile">
-        </a>
+
+        <button id="toggle-dark-mode" aria-label="Mövzu dəyiş">
+            <img id="icon" src="../images/moon.webp" alt="rejim" class="white-icon">
+        </button>
     </div>
 
-    <!-- ═══ SIDE NAV ═══ -->
-    <nav id="menu-bar" class="hidden">
-        <a href="./isindex.html" id="name-text">
-            <img src="../images/logo-crop-w.png" class="logopng" alt="SiteName">
-        </a>
+    <!-- ═══ PAGE BODY ═══ -->
+    <div class="page-body">
 
-        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
-            Abituriyent <span class="arrow">&gt;</span>
-        </div>
-        <ul id="abituriyent-menu" class="anim-menu">
-            <li><a href="../abituriyent/1ciqrup.html">1ci Qrup</a></li>
-            <li><a href="../abituriyent/2ciqrup.html">2ci Qrup</a></li>
-            <li><a href="../abituriyent/3ciqrup.html">3cü Qrup</a></li>
-            <li><a href="../abituriyent/4ciqrup.html">4cü Qrup</a></li>
-            <li><a href="../abituriyent/specializations.html">İxtisaslar haqqında</a></li>
-            <li><a href="../abituriyent/balhesab.html">Bal hesablanması</a></li>
-            <li><a href="../abituriyent/about.html">Haqqımızda</a></li>
-        </ul>
-
-        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
-            Tələbə <span class="arrow">&gt;</span>
-        </div>
-        <div class="menu-bar anim-menu open" id="telebe-menu">
-            <a href="./isindex.html" class="active">Ana Səhifə</a>
-            <a href="./fennler-menu.html">Fənnlər</a>
-            <a href="./statistics.html">Statistika</a>
-            <a href="./profile.html">Profil</a>
-            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
-            <a href="./premium.html">Premium abunəlik</a>
-        </div>
-    </nav>
-
-    <!-- ═══ MAIN BACKGROUND ═══ -->
-    <div class="main-background" id="main-bg">
-
-        <!-- Hero -->
+        <!-- ── Hero ── -->
         <section class="hero">
-            <div class="hero-orb"></div>
             <div class="hero-inner">
-                <div class="hero-tag">
-                    <span></span> Tələbə paneli
-                </div>
-                <h1><span class="accent">Əzbərləməyi</span> dayandır!<br>öyrənməyə başla!</h1>
-                <p>Semestr imtahanlarına hazırlaşmaq üçün fənnlərini seç, test həll et və irəliləyişini izlə.</p>
-                <div class="hero-cta">
-                    <a href="fennler-menu.html">
-                        <button class="btn-primary">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+
+                <!-- Left: text -->
+                <div class="hero-text-col">
+                    <div class="hero-tag">
+                        <span class="hero-tag-dot"></span>
+                        Tələbə platforması
+                    </div>
+                    <h1 data-i18n="siteTitle">
+                        Əzbərləməyi dayandır!<br>
+                        <span class="accent">Öyrənməyə başla!</span>
+                    </h1>
+                    <p class="hero-sub" data-i18n="selectPrompt">
+                        Semestr imtahanlarına hazırlaşmaq üçün fənnlərini seç, test həll et və irəliləyişini izlə.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="./fennler-menu.html" class="btn-primary">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
                             Quizə başla
-                        </button>
-                    </a>
-                    <a href="statistics.html">
-                        <button class="btn-secondary">Statistikam</button>
-                    </a>
+                        </a>
+                        <a href="./statistics.html" class="btn-ghost">Statistikam</a>
+                    </div>
                 </div>
+                <div class="hero-visual-col">
+                    <div class="hero-img-frame">
+                        <img src="../images/hero-visual-w.webp"
+                            alt="AtlasLab — Abituriyent platforması"
+                            class="hero-img"
+                            id="telebe-hero"
+                            width="800" height="960"
+                            loading="eager" fetchpriority="high">
+                    </div>
+                </div>
+
             </div>
         </section>
-        <!-- Main Content -->
+        <!-- ── Main content ── -->
         <div class="main-content">
-            <!-- Feature Cards -->
-            <p class="section-title">Xüsusiyyətlər</p>
-            <div class="feature-grid">
-                <a href="fennler-menu.html" class="feature-card card-blue" style="animation: fadeUp 0.5s 0.4s both;">
-                    <div class="card-icon-wrap"><img src="../images/book.webp" alt="tests"></div>
-                    <div class="card-title">Fənnlər & Quiz</div>
-                    <div class="card-desc">Semestr imtahanı materiallarını quiz formatında həll et. Bütün fənnlər əhatə olunub.</div>
-                    <div class="card-arrow">
+            <!-- Group cards -->
+            <p class="section-label">Xüsusiyyətlər</p>
+            <div class="group-grid">
+                <!-- data-num drives the giant ghost background digit via CSS attr() -->
+                <a href="./fenner-menu.html" class="group-card gc-1 reveal">
+                    <div class="group-title" data-i18n="group1">Fənnlər & Quiz</div>
+                    <div class="group-desc">Semestr imtahanı materiallarını quiz formatında həll et. Bütün fənnlər əhatə olunub.</div>
+                    <div class="group-arrow">
                         Fənnlərə bax
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
                     </div>
                 </a>
-                <a href="statistics.html" class="feature-card card-green" style="animation: fadeUp 0.5s 0.47s both;">
-                    <div class="card-icon-wrap"><img src="../images/index-statistics.webp" alt="statistics"></div>
-                    <div class="card-title">Statistika</div>
-                    <div class="card-desc">Cavablarının düzgünlük faizini, irəliləyiş qrafikini və zəif mövzularını gör.</div>
-                    <div class="card-arrow">
+
+                <a href="./statistics.html" class="group-card gc-2 reveal">
+                    <div class="group-title" data-i18n="group2">Statistika</div>
+                    <div class="group-desc">Cavablarının düzgünlük faizini, irəliləyiş qrafikini və zəif mövzularını gör.</div>
+                    <div class="group-arrow">
                         Statistikaya keç
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
                     </div>
                 </a>
 
-                <a href="profile.html" class="feature-card card-amber" style="animation: fadeUp 0.5s 0.54s both;">
-                    <div class="card-icon-wrap"><img src="../images/index-profile.webp" alt="profile"></div>
-                    <div class="card-title">Profil</div>
-                    <div class="card-desc">Hesab məlumatlarını idarə et, şifrəni dəyiş, nailiyyətlərini izlə.</div>
-                    <div class="card-arrow">
+                <a href="./profile.html" class="group-card gc-3 reveal">
+                    <div class="group-title" data-i18n="group3">Profil</div>
+                    <div class="group-desc">Hesab məlumatlarını idarə et, şifrəni dəyiş, abunəliyini yoxla.</div>
+                    <div class="group-arrow">
                         Profilə keç
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
                     </div>
                 </a>
 
-                <a href="premium.html" class="feature-card card-purple" style="animation: fadeUp 0.5s 0.61s both;">
-                    <div class="card-icon-wrap"><img src="../images/thunder.webp" alt="premium"></div>
-                    <div class="card-title">Premium</div>
-                    <div class="card-desc">Limitsiz quiz, əlavə statistika və erkən çıxan materiallara sınırsız giriş əldə et.</div>
-                    <div class="card-arrow" style="color:#a855f7;">
+                <a href="./premium.html" class="group-card gc-4 reveal">
+                    <div class="group-title" data-i18n="group4">Premium</div>
+                    <div class="group-desc">Limitsiz quiz, əlavə statistika və erkən çıxan materiallara limitsiz giriş əldə et.</div>
+                    <div class="group-arrow">
                         Premium al
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
                     </div>
                 </a>
             </div>
-            <div class="promo-banner">
-                <div class="promo-icon">🎯</div>
+
+            <!-- Promo banner -->
+            <div class="promo-banner reveal">
+                <div class="promo-icon">📖</div>
                 <div class="promo-text">
-                    <h3>İxtisas seçimi etməlisən?</h3>
-                    <p>Gələcək peşəni müəyyən etmək üçün <a href="../index.html">Abituriyent panelinə</a> keçid et — balını hesabla, ixtisasları araşdır və düzgün seçim et.</p>
+                    <h3>Hələ abituriyentsən?</h3>
+                    <p>
+                        Öz ixtisasını tapmaq üçün
+                        <a href="../index.html">Abituriyent panelini</a>
+                        istifadə et — ixtisaslarla maraqlan, balını hesabla.
+                    </p>
                 </div>
             </div>
+
         </div><!-- /main-content -->
 
         <footer class="site-footer">
             <p>&copy; 2026 atlaslab.az.</p>
             <p>
-                <a href="privacy-policy.html">Məxfilik Siyasəti</a> |
-                <a href="terms-conditions.html">İstifadə Şərtləri</a>
+                <a href="./privacy-policy.html">Məxfilik Siyasəti</a> |
+                <a href="./terms-conditions.html">İstifadə Şərtləri</a>
             </p>
         </footer>
-    </div><!-- /main-background -->
-    <script src="../theme.js"></script>
+
+    </div><!-- /page-body -->
+
+    <script src="../translations.js" defer></script>
+    <script src="../theme.js" defer></script>
+    <script src="../interactions.js" defer></script>
 
 </body>
 </html>

@@ -1,66 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+/* ═══════════════════════════════════════════
+   ATLASLAB — qruplar.css
+   Rənglər index-sty.css dizayn sisteminə uyğunlaşdırıldı
+   ═══════════════════════════════════════════ */
+
 :root {
-  /* Default (Free) Theme */
-  --progress-color: #1e90ff;
-  --bg: var(--bg);
-  --border: #E5E9F2;
-  --top-bg: rgba(255, 255, 255, 0.575);
-  --text-color: #222;
-  --surface: #FFFFFF;
-  --surface2: #EFF2F8;
-  --correct: #e5f7ec;
-  --wrong: #fae9e7;
-}
-body.dark-theme {
-  --bg: #0F1117;
-  --border: #2A2F42;
-  --top-bg: #0F1117;
-  --text-color: #fff;
-  --surface: #1A1D27;
-  --surface2: #232736;
-  --correct: #1a2720;
-  --wrong: #271c1a;
+  --bg:              #F2F0EB;
+  --bg-2:            #E9E6DF;
+  --surface:         #FAFAF7;
+  --surface2:        #F0EEE9;
+  --border:          rgba(20,18,16,0.10);
+  --border-raw:      #E2DDD5;
+  --top-bg:          rgba(242,240,235,0.88);
+  --text-color:      #141210;
+  --text-2:          #48453F;
+  --text-3:          #9A9590;
+  --gold:            #B89A5A;
+  --gold-dim:        rgba(184,154,90,0.10);
+  --gold-hover:      #A48950;
+  --progress-color:  #B89A5A;
+  --glass-bar:       #ffffff65;
+  --correct:         #eaf5ee;
+  --wrong:           #faecea;
 }
 
+body.dark-theme,
+body.dark-mode {
+  --bg:              #0D0C0B;
+  --bg-2:            #161513;
+  --surface:         #1B1A18;
+  --surface2:        #222120;
+  --border:          rgba(234,230,220,0.08);
+  --border-raw:      #2E2B27;
+  --top-bg:          rgba(13,12,11,0.92);
+  --text-color:      #EAE6DC;
+  --text-2:          #A8A49C;
+  --text-3:          #5A5650;
+  --gold:            #C8A96E;
+  --gold-dim:        rgba(200,169,110,0.10);
+  --gold-hover:      #D8B97E;
+  --progress-color:  #C8A96E;
+  --glass-bar:       #1b1a18bd;
+  --correct:         #1a2720;
+  --wrong:           #271c1a;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(11, 15, 25, 0.4); /* Yarı-şəffaf tünd arxa fon */
+    backdrop-filter: blur(12px); /* Arxa planı blurlayır */
+    -webkit-backdrop-filter: blur(12px); /* Safari dəstəyi üçün */
+    z-index: 99999; /* Bütün elementlərdən ən üstdə qalması üçün */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Yüklənmə bitdikdə preloader-i yumşaq şəkildə gizlətmək üçün */
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* --- Logonun Konteyneri --- */
+.logo-wrapper {
+    position: relative;
+    width: 90px;  /* Logonun ölçüsünü buradan dəyişə bilərsən */
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Şəkillərin tam üst-üstə düşməsi üçün */
+.logo-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: none !important;
+}
+
+/* Sabit mərkəz dairəsi (Həmişə ulduzun üstündə görünsün) */
+.al-center {
+    z-index: 2;
+}
+
+.al-border {
+    z-index: 1;
+    animation: spinLogo 1.2s ease-in-out forwards; 
+}
+/* Ulduzun 360 dərəcə fırlanma animasiyası */
+@keyframes spinLogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* ─── Cursor & select helpers ─── */
 #resultCount,
 #search,
 .filter-bar {
-    position: relative
+    position: relative;
 }
 
 #menu-toggle,
 button,
 select {
-    cursor: pointer
+    cursor: pointer;
 }
 
 #menu-bar,
 button {
-    padding: 10px 20px
+    padding: 10px 20px;
 }
 
 #name-text,
 .toggle-more {
     display: inline-block;
-    text-decoration: none
+    text-decoration: none;
 }
 
 #language-selector,
 #menu-bar a:not(#name-text) {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Sora', sans-serif;
 }
 
 #name-text,
 .menu-button,
 .toggle-more {
-    text-decoration: none
+    text-decoration: none;
 }
+
 #center-logo {
     filter: invert(0);
 }
+
+/* ─── Base ─── */
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    color: #222;
+    font-family: 'Sora', sans-serif;
+    background: var(--bg);
+    color: var(--text-color);
     margin: 0;
 }
 
@@ -68,12 +154,12 @@ body {
 .uni-basliq,
 h1 {
     text-align: center;
-    color: #313131
+    color: var(--text-color);
 }
 
 button,
 th {
-    color: #fff
+    color: #fff;
 }
 
 h1 {
@@ -82,21 +168,22 @@ h1 {
 
 .qrup-basliq {
     margin-top: 40px;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .uni-basliq {
     margin-top: 70px;
     font-size: 20px;
-    color: #1e90ff
+    color: var(--gold);
 }
 
+/* ─── Table ─── */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background: var(--surface);
+    box-shadow: 0 0 10px rgba(20,18,16,0.07);
     table-layout: fixed;
     border-radius: 12px;
 }
@@ -105,219 +192,202 @@ td,
 th {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-raw);
     word-wrap: break-word;
     font-size: 16px;
 }
-th:first-child {
-    border-top-left-radius: 12px;
-}
-th:last-child {
-    border-top-right-radius: 12px;
-}
-.score-range input,
-input[type=text],
-select, #search {
-    padding: 10px;
-    width: auto;
-    font-size: 15px;
-    transition: .3s
-}
+
+th:first-child { border-top-left-radius: 12px; }
+th:last-child  { border-top-right-radius: 12px; }
 
 th {
-    background-color: #007bff
+    background-color: var(--gold);
 }
 
 tr:hover {
-    background-color: #a54343
+    background-color: var(--gold-dim);
 }
 
 tr.even-row {
-    background-color: #e2f1ff
+    background-color: var(--surface2);
 }
 
-.toggle-more {
-    padding: 2px 6px;
-    font-size: 14px;
-    color: #007bff
+/* ─── Inputs / Selects ─── */
+.score-range input,
+input[type=text],
+select,
+#search {
+    padding: 10px;
+    width: auto;
+    font-size: 15px;
+    font-family: 'Sora', sans-serif;
+    transition: .3s;
 }
 
-.header,
-.menu-container {
-    padding: 40px 20px;
+input[type=text],
+select,
+#search {
+    border: 1.5px solid var(--border-raw);
+    border-radius: 10px;
+    max-width: 700px;
+    background: var(--surface);
+    color: var(--text-color);
 }
 
-.filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    z-index: 95;
+.score-range input:focus,
+input[type=text]:focus,
+select:focus,
+#search:focus {
+    border-color: var(--gold);
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--gold-dim);
 }
 
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center
+select {
+    width: 150px;
+}
+
+select:hover {
+    border-color: var(--gold);
 }
 
 #search {
     max-width: 700px;
     padding: 10px;
     font-size: 15px;
-    border: 2px solid #4a90e2;
-    border-radius: 12px;
+    border: 1.5px solid var(--border-raw);
+    border-radius: 10px;
     transition: 0.3s ease;
-    max-width: 700px;
     width: auto;
-    background-color: #fff;
+    background-color: var(--surface);
+    color: var(--text-color);
 }
 
 body.dark-mode #search {
-    color: #f0f0f0;
-}
-
-
-body.dark-mode .filter-bar,
-body.dark-mode .menu-button {
-    background-color: #0F1117
-}
-
-input[type=text],
-select, #search {
-    border: 2px solid #4a90e2;
-    border-radius: 12px;
-    max-width: 700px
-}
-
-.score-range input:focus,
-input[type=text]:focus,
-select:focus, #search:focus {
-    border-color: #1e62d0;
-    outline: 0
-}
-
-select {
-    width: 150px;
-    background-color: white;
-}
-
-select:hover {
-    border-color: #1e62d0
-}
-
-.score-range {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px
-}
-.logo {
-    width: 20%;
-}
-.logo img {
-    width: 170px;
-}
-#resultCount,
-.hidden {
-    display: none
+    color: var(--text-color);
 }
 
 .score-range input {
-    border: 2px solid #4a90e2;
-    border-radius: 12px;
-    max-width: 55px
+    border: 1.5px solid var(--border-raw);
+    border-radius: 10px;
+    max-width: 55px;
 }
 
 body.dark-mode .score-range input {
-    border: 2px solid #555;
-    background-color: #1A1D27;
-    color: #eee
+    border: 1.5px solid var(--border-raw);
+    background-color: var(--surface);
+    color: var(--text-color);
+}
+
+/* ─── Filter bar ─── */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    z-index: 95;
+}
+
+body.dark-mode .filter-bar,
+body.dark-mode .menu-button {
+    background-color: var(--bg);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ─── Toggle-more link ─── */
+.toggle-more {
+    padding: 2px 6px;
+    font-size: 14px;
+    color: var(--gold);
+}
+
+/* ─── Result count ─── */
+#resultCount,
+.hidden {
+    display: none;
 }
 
 #resultCount {
     left: 10px;
     font-weight: 700;
-    margin-top: 0
+    margin-top: 0;
+    color: var(--text-color);
 }
 
+/* ─── Buttons ─── */
 button {
     font-size: 15px;
-    background-color: #1e90ff;
+    font-family: 'Sora', sans-serif;
+    background-color: var(--gold);
     border: none;
-    border-radius: 12px;
-    transition: background-color .3s
+    border-radius: 10px;
+    transition: background-color .3s;
 }
+
+button:hover {
+    background-color: var(--gold-hover);
+}
+
+/* ─── Top bar ─── */
 .top-bar {
     height: 60px;
     width: 100%;
-    background: white;
+    background: var(--glass-bar);
     backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
     display: flex;
     position: fixed;
     margin: 0;
     align-items: center;
     z-index: 100;
-}
-#menu-bar a:not(#name-text),
-#menu-toggle {
-    border: none;
-    background-color: transparent
+    transition: background 0.4s ease;
 }
 
-button:hover {
-    background-color: #1e62d0
+.top-bar.scrolled {
+    background: var(--top-bg);
+}
+
+/* ─── Header strip ─── */
+.header,
+.menu-container {
+    padding: 40px 20px;
 }
 
 .header,
 .header h1 {
-    background-color: #1e90ff;
-    color: #fff
+    background-color: var(--gold);
+    color: #fff;
 }
+
 .header h1 {
     margin-top: 100px;
+    padding: 20px;
 }
+
 #abituriyent-header {
     margin-top: 100px;
 }
+
 #telebe-header {
     margin-top: 10px;
 }
 
-#abituriyent-header, #telebe-header {
+#abituriyent-header,
+#telebe-header {
     cursor: default;
-    font-size: 22px;
+    font-size: 19px;
     display: flex;
     justify-content: space-between;
 }
-#abituriyent-menu {
-    padding-left: 10px  ;
-}
-#telebe-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-#telebe-menu.open, #abituriyent-menu.open {
-    margin-top: 10px;
-    padding-left: 10px;
-}
-#menu-toggle {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    z-index: 999
-}
 
-#menu-toggle img {
-    width: 48px;
-    height: 48px;
-    border-radius: 15px;
-    margin-top: -4px;
-}
-
+/* ─── Sidebar menu ─── */
 #menu-bar {
     position: fixed;
     height: 100vh;
@@ -325,12 +395,19 @@ button:hover {
     margin-top: 61px;
     left: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: var(--surface); 
     border-right: 1px solid var(--border);
     transition: transform 0.3s ease;
     z-index: 999;
+    padding: 10px 20px;
 }
+
+#menu-bar a, #menu-btn {
+    display: none;
+}
+
 #menu-bar ul {
     list-style: none;
     margin: 10% 0 0;
@@ -338,7 +415,6 @@ button:hover {
     text-align: center;
     margin-top: 5px;
 }
-
 #menu-bar li {
     margin-bottom: 10px
 }
@@ -347,252 +423,319 @@ button:hover {
     display: block;
     width: 100%;
     padding: 5px 0;
-    color: #000;
+    color: var(--text-color);
     text-align: left;
-    font-size: 19px;
+    font-size: 17px;
     transition: background-color .3s, transform .2s;
     box-sizing: border-box;
     text-decoration: none;
     border-bottom: 1px solid #E5E9F2;
 }
-body.dark-mode #menu-bar a:not(#name-text) {
+body.dark-theme #menu-bar a:not(#name-text) {
     border-bottom:1px solid #2A2F42;
 }
 
 #menu-bar a:hover {
     transform: scale(1.02)
 }
-/* Həm abituriyent, həm də tələbə menyusuna aid ortaq xüsusiyyətlər */
-#abituriyent-menu, #telebe-menu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-in-out; /* 0.4 saniyəlik sürüşmə animasiyası */
-  display: flex;
-  flex-direction: column; /* Elementləri alt-alta düzürük */
-  margin: 0;
-  padding-left: 15px; /* Səliqəli görünməsi üçün boşluq */
+/* Accordion sub-menus */
+#abituriyent-menu,
+#telebe-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-left: 15px;
 }
 
-/* Menyu açılanda işə düşəcək sinif */
-#abituriyent-menu.open, #telebe-menu.open {
-  max-height: 400px; /* Menyunun içindəkilərin hündürlüyündən böyük bir rəqəm */
+#abituriyent-menu { padding-left: 10px; }
+#telebe-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
+#abituriyent-menu.open,
+#telebe-menu.open {
+    max-height: 400px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+#telebe-menu.open,
+#abituriyent-menu.open {
+    padding-left: 10px;
+}
+
+/* Menu toggle button */
+#menu-toggle {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: -10px;
+    z-index: 999;
+}
+
+#menu-toggle img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-top: -4px;
+}
+
+/* Site name text */
 #name-text {
     font-size: 23px;
-    color: #1e90ff !important;
+    color: var(--gold) !important;
     display: flex;
     justify-content: center;
     cursor: default;
-    transition: none
+    transition: none;
+}
+
+/* Logo */
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 20px;
 }
 
 .logopng {
-    filter: none !important; 
-}
-.header h1 {
-    padding: 20px
-}
-.site-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;  
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 14px;
-    left: 120px;
-}
-  
-
-.site-footer p:first-child {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 16px;
+    filter: none !important;
 }
 
-.site-footer a {
-  color: #0077cc;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.site-footer a:hover {
-  text-decoration: underline;
-}
+/* ─── Dark mode overrides ─── */
 body.dark-mode {
-    background: #0F1117;
-    color: #eee
+    background: var(--bg);
+    color: var(--text-color);
 }
 
 body.dark-mode .qrup-basliq,
 body.dark-mode .uni-basliq,
 body.dark-mode h1 {
-    color: #f8fbff
+    color: var(--text-color);
 }
 
 body.dark-mode table {
-    background: #1A1D27;
-    box-shadow: 0 0 10px rgba(255, 255, 255, .05)
+    background: var(--surface);
+    box-shadow: 0 0 10px rgba(255,255,255,.04);
 }
 
 body.dark-mode th {
-    background-color: #1e90ff;
-    color: #f1f1f1
+    background-color: var(--gold);
+    color: #fff;
 }
 
 body.dark-mode td {
-    border-bottom: 1px solid #232736;
-    color: #ccc
+    border-bottom: 1px solid var(--border-raw);
+    color: var(--text-2);
 }
 
 body.dark-mode tr:hover {
-    background-color: #2c2c2c
+    background-color: rgba(200,169,110,0.08);
 }
 
 body.dark-mode tr.even-row {
-    background-color: #232736
+    background-color: var(--surface2);
 }
 
 body.dark-mode input[type=text],
-body.dark-mode select, body.dark-mode #search {
-    background-color: #1A1D27;
-    color: #eee;
-    border: 2px solid #555
-}
-
-#toggle-dark-mode {
-    background-color: transparent;
-}
-body.dark-mode #toggle-dark-mode {
-    background-color: transparent;
+body.dark-mode select,
+body.dark-mode #search {
+    background-color: var(--surface);
+    color: var(--text-color);
+    border: 1.5px solid var(--border-raw);
 }
 
 body.dark-mode img {
     filter: invert(1);
 }
+
 body.dark-mode button {
-    color: #eee
+    color: #fff;
 }
 
 body.dark-mode button:hover {
-    background-color: #555
+    background-color: var(--gold-hover);
 }
 
-body.dark-mode #menu-bar, body.dark-mode .top-bar {
-    background-color: #1A1D27;
-    border-color: #555
+body.dark-mode #menu-bar,
+body.dark-mode .top-bar {
+    background-color: var(--surface);
+    border-color: var(--border);
 }
 
 body.dark-mode #menu-bar a:not(#name-text) {
-    color: #fff
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border);
 }
 
 body.dark-mode #menu-bar a:hover {
-    color: #00aced
+    color: var(--gold);
 }
 
+/* ─── Language selector ─── */
 #language-selector {
     right: 64px;
     width: 47px;
     height: 48px;
     padding: 4px 0;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     background-color: transparent;
-    border: none
+    border: none;
+    color: var(--text-color);
 }
 
 body.dark-mode #language-selector option {
-    background-color: #222;
-    color: #fff
+    background-color: var(--surface);
+    color: var(--text-color);
 }
 
+/* ─── Dark mode toggle ─── */
+#toggle-dark-mode {
+    position: absolute;
+    right: 10px;
+    padding: 4px;
+    color: #fff;
+    width: 46px;
+    font-size: 22px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+#toggle-dark-mode:hover {
+    border-color: var(--gold);
+    background: var(--gold-dim);
+}
+
+body.dark-mode #toggle-dark-mode {
+    background-color: transparent;
+}
+
+#toggle-dark-mode img {
+    margin-top: 5px;
+}
+.white-icon {
+    filter: invert(0);
+    opacity: 0.65;
+}
+
+body.dark-mode .white-icon {
+    filter: invert(0);
+}
+
+.white-filter-icon {
+    filter: invert(1);
+}
+
+/* ─── Menu container / buttons ─── */
 .menu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
 
 .menu-button {
     display: block;
     width: 200px;
     padding: 15px;
-    background-color: #fff;
-    border: 2px solid #1e90ff;
-    border-radius: 8px;
-    color: #1e90ff;
-    font-weight: 700;
-    transition: .3s;
+    background-color: var(--surface);
+    border: 1.5px solid var(--gold);
+    border-radius: 10px;
+    color: var(--gold);
+    font-weight: 600;
+    transition: .25s;
+    font-family: 'Sora', sans-serif;
 }
 
 .menu-button:hover {
-    color: #1e90ff;
+    background-color: var(--gold-dim);
+    color: var(--gold);
 }
 
-#toggle-dark-mode {
-    position: absolute;
-    right: 10px;
-    padding: 10px;
-    color: #fff;
-    width: 52px;
-    font-size: 22px;
-    border: none;
-    border-radius: 14px
+/* ─── Footer (desktop sidebar pages) ─── */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    left: 120px;
+    color: var(--text-3);
 }
 
-#toggle-dark-mode img {
-    margin-top: 3px
+.site-footer p:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.privacy-section, .terms-section {
+.site-footer a {
+    color: var(--gold);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ─── Privacy / Terms sections ─── */
+.privacy-section,
+.terms-section {
     margin-top: 30px;
 }
 
-.white-icon {
-    filter: invert(0)
-}
-body.dark-mode .white-icon {
-    filter: invert(0);
-}
-.white-filter-icon {
-    filter: invert(1);
-}
-/* Başlıq (ixtisasın adı) */
+/* ─── Specialization accordion ─── */
 .page-specializations {
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
+
 .specialization-title {
     display: flex;
-    align-items: center;             
-    justify-content: space-between;  
-    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--surface);
     padding: 0 16px;
     font-weight: 600;
+    font-family: 'Sora', sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.25s ease;
     position: relative;
-    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(20,18,16,0.07);
     border-radius: 12px;
     height: 50px;
-    margin-bottom: 0; /* Alt boşluq olmasın */
-    border: 1px solid #1e90ff;
+    margin-bottom: 0;
+    border: 1.5px solid var(--border-raw);
+    color: var(--text-color);
 }
+
 body.dark-mode .specialization-title {
-    background: #1A1D27;
-    color: #ddd;
-    border: 1px solid #3f3f3f;
+    background: var(--surface);
+    color: var(--text-color);
+    border: 1.5px solid var(--border-raw);
 }
-/* Description açılanda title-ın alt radiusları silinsin */
+
 .specialization-title.active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: none;
+    border-color: var(--gold);
 }
 
-/* + və - ikonları */
 .specialization-title::after {
     content: "+";
     position: absolute;
@@ -600,74 +743,74 @@ body.dark-mode .specialization-title {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    transition: transform 0.3s ease;
-    color: #666;
+    transition: transform 0.25s ease;
+    color: var(--text-3);
 }
 
-/* Açıq olanda ikon dəyişsin */
 .specialization-title.active::after {
     content: "−";
+    color: var(--gold);
 }
 
-/* Açılan mətn hissəsi */
 .specialization-description {
     padding: 10px 16px;
-    background-color: #ffffff;
-    border-left: 1px solid #1e90ff;
-    border-right: 1px solid #1e90ff;
-    border-bottom: 1px solid #1e90ff;
-    border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
+    background-color: var(--surface);
+    border-left:   1.5px solid var(--gold);
+    border-right:  1.5px solid var(--gold);
+    border-bottom: 1.5px solid var(--gold);
+    border-radius: 0 0 12px 12px;
     display: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    color: #1A1D27;
-    line-height: 1.5;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(20,18,16,0.05);
+    color: var(--text-2);
+    line-height: 1.6;
+    font-family: 'Sora', sans-serif;
 }
+
 body.dark-mode .specialization-description {
-    background: #1A1D27;
-    color: #ddd;
-    border-left: 1px solid #3f3f3f;
-    border-right: 1px solid #3f3f3f;
-    border-bottom: 1px solid #3f3f3f;
+    background: var(--surface);
+    color: var(--text-2);
+    border-left:   1.5px solid var(--border-raw);
+    border-right:  1.5px solid var(--border-raw);
+    border-bottom: 1.5px solid var(--border-raw);
 }
 
 .specialization-description {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+/* ─── Chatling hide ─── */
 a[href*="chatling.ai"],
 a[href*="chatling.ai"] *,
 div[data-v-77565f88] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
-body.dark-mode .selected-ixtisas {
-    background-color: #1A1D27;
-    color: #ddd;
-} 
 
-
-
+/* ─── Gradient button (for score calc pages) ─── */
 .button {
-  position: relative;
-  padding: 10px 16px;
-  width: 100%;
-  min-width: 8em;
-  text-align: center;
-  color: #fff;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), inset 0 -1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.25);
-  transition-property: transform, filter;
-  transition-duration: 0.2s;
-  will-change: transform;
-  resize: both;
+    position: relative;
+    padding: 10px 16px;
+    width: 100%;
+    min-width: 8em;
+    text-align: center;
+    color: #fff;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    box-shadow: inset 0 1px rgba(255,255,255,0.20), inset 0 -1px rgba(0,0,0,0.10), 0 2px 6px rgba(20,18,16,0.18);
+    transition-property: transform, filter;
+    transition-duration: 0.2s;
+    will-change: transform;
+    resize: both;
 }
 
-/* DESKTOP THEME */
-@media (min-width:769px) {
+/* ═══════════════════════════════════════════
+   DESKTOP ( ≥ 769px )
+   ═══════════════════════════════════════════ */
+@media (min-width: 769px) {
     #language-selector,
     #menu-bar,
     #toggle-dark-mode,
@@ -675,17 +818,21 @@ body.dark-mode .selected-ixtisas {
         position: fixed;
         z-index: 99;
     }
+
     .main-content {
-        margin-left: 200px;
+        margin-left: 235px;
         padding: 10px 0 10px 30px;
     }
+
     .search-bar {
         gap: 10px;
     }
+
     #resultCount {
         position: absolute;
-        margin-top: 78px
+        margin-top: 78px;
     }
+
     #table-container {
         position: relative;
         display: block;
@@ -693,6 +840,7 @@ body.dark-mode .selected-ixtisas {
         height: 425px;
         overflow-y: auto;
     }
+
     #card-container,
     #filterToggleBtn,
     #menu-toggle {
@@ -700,34 +848,39 @@ body.dark-mode .selected-ixtisas {
     }
 
     .specialization-title {
-        margin-left: 220px;
+        margin-left: 240px;
     }
+
     .specialization-description {
-        margin-left: 220px;
+        margin-left: 240px;
     }
+
     #menu-bar {
         margin-top: 0 !important;
         left: 0;
         height: 100%;
-        width: 180px;
-        display: block !important
+        display: block !important;
     }
+
     #menu-bar img {
         display: none;
     }
+
     .menu-toggle {
         margin-top: 70px;
     }
+
     .filter-bar {
         padding: 0 30px 15px;
         margin-top: 10px;
         gap: 8px;
     }
+
     .header {
-        margin-left: 220px;
+        margin-left: 240px;
     }
 
-    
+    /* Group block switcher */
     .qrup-blok {
         display: none;
         box-sizing: border-box;
@@ -735,96 +888,111 @@ body.dark-mode .selected-ixtisas {
         align-items: center;
         background-color: transparent;
     }
-    
+
     .qrup-blok.active {
         display: block;
         margin-right: 10px;
     }
+
     .qrup-menusu-container {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 30px 0;
     }
-    
+
     #qrup-menusu {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 16px;
         justify-content: center;
         align-items: center;
     }
-    
+
     #qrup-menusu button {
         padding: 10px 20px;
         font-size: 16px;
-        border-radius: 6px;
+        border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.25s;
     }
+
     .qrup-btn {
-        border: 2px solid #1e90ff;
-        background-color: white;
-        color: #1e90ff;
+        border: 1.5px solid var(--gold);
+        background-color: var(--surface);
+        color: var(--gold);
     }
+
     .qrup-btn:hover {
-        background-color: #287ed4;
-        color: white;
+        background-color: var(--gold);
+        color: #fff;
     }
+
     body.dark-mode .qrup-btn {
-        border: 2px solid #1e90ff;
-        background-color: #1A1D27;
-        color: #1e90ff;
+        border: 1.5px solid var(--gold);
+        background-color: var(--surface);
+        color: var(--gold);
     }
+
     .qrup-btn.active {
-        background-color: #1e90ff;
-        color: white;
+        background-color: var(--gold);
+        color: #fff;
     }
-    
+
     body.dark-mode .qrup-btn.active {
-        background-color: #1e90ff;
-        color: white;
+        background-color: var(--gold);
+        color: #fff;
     }
+
+    /* Score/grading table */
     table.qiymetlendirme {
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
-        border: 2px solid #1e90ff;
-    
+        border: 1.5px solid var(--border-raw);
     }
-    
+
     table.qiymetlendirme th,
     table.qiymetlendirme td {
-        border: 1px solid #1e90ff;
+        border: 1px solid var(--border-raw);
         padding: 10px;
         text-align: center;
     }
-    
+
     table.qiymetlendirme input {
         width: 100%;
         text-align: center;
-        border: 0px;
+        border: 0;
         font-size: 20px;
         height: 60px;
+        font-family: 'Sora', sans-serif;
+        background: transparent;
+        color: var(--text-color);
     }
+
     table.qiymetlendirme input:focus {
         outline: none;
         box-shadow: none;
     }
+
     body.dark-mode table.qiymetlendirme input {
-        background-color: #1A1D27;
-        color: white;
+        background-color: var(--surface);
+        color: var(--text-color);
     }
-    table.qiymetlendirme #umumi-netice, #umumi-netice-text {
+
+    table.qiymetlendirme #umumi-netice,
+    #umumi-netice-text {
         font-size: 18px;
     }
+
     #reveal-banner {
         display: none;
     }
-    /* Advertisement Banner */
+
     .adsterrabanner {
         display: none;
     }
+
     .social-bar {
         position: fixed !important;
         bottom: 10px !important;
@@ -834,9 +1002,11 @@ body.dark-mode .selected-ixtisas {
         width: auto !important;
         z-index: 9999 !important;
     }
+
     .ixtisassec-toggle {
         display: none;
     }
+
     .ixtisassec-toggle,
     .fullscreen-frame,
     .close-btn,
@@ -847,198 +1017,254 @@ body.dark-mode .selected-ixtisas {
     .ixtisaslar-content {
         display: none;
     }
-
-
-      
-    
 }
-/* MOBILE THEME */
-@media (max-width:768px) {
+
+/* ═══════════════════════════════════════════
+   MOBILE ( ≤ 768px )
+   ═══════════════════════════════════════════ */
+@media (max-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #language-selector,
     #toggle-dark-mode {
         position: absolute;
     }
+
     #table-container,
     .hidden {
-        display: none
+        display: none;
     }
+
     #card-container {
         display: block;
-        margin-top: -40px
+        margin-top: -40px;
     }
+
     .button {
         height: 46px;
     }
+
     .main-content {
-        margin-left: 0px;
+        margin-left: 0;
         position: absolute;
         box-sizing: border-box;
         padding: 10px;
     }
+
     .logo {
         display: none;
     }
+    #menu-bar a {
+        display: flex;
+    }
+    
+    #name-text {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
     .filter-bar,
     .search-bar {
         flex-direction: column;
-        align-items: stretch
+        align-items: stretch;
     }
-    .filter-bar>*,
-    .search-bar>* {
+    .score-range {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    } 
+
+    .filter-bar > *,
+    .search-bar > * {
         width: 100%;
         max-width: 700px;
         margin-top: 10px;
         height: 46px;
     }
-    .select, #search {
+
+    .select,
+    #search {
         height: 25px;
     }
+
     #resultCount {
-        margin-top: 100px
+        margin-top: 100px;
     }
+
+    /* Mobile card view */
     .card {
-        background: #f9f9f9;
-        border: 1px solid #ccc;
-        border-radius: 16px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
         padding: 15px;
         margin: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+        box-shadow: 0 2px 8px rgba(20,18,16,0.07);
     }
+
     .card h3 {
         margin-top: 0;
         font-size: 18px;
-        color: #1A1D27
+        color: var(--text-color);
     }
+
     .card .field {
         margin-bottom: 6px;
-        font-size: 15px
+        font-size: 15px;
+        color: var(--text-2);
     }
+
     .card #ixtisasad {
-        color: #010102;
-        font-size: 16px
+        color: var(--text-color);
+        font-size: 16px;
     }
+
     body.dark-mode .card {
-        background: #1A1D27;
-        border: 1px solid #1A1D27;
-        color: #ddd
+        background: var(--surface);
+        border: 1px solid var(--border);
+        color: var(--text-color);
     }
+
     body.dark-mode .card #ixtisasad,
     body.dark-mode .card .field {
-        color: #ccc
+        color: var(--text-2);
     }
+
     #menu-toggle {
-        display: block
+        display: block;
     }
+
+    /* Mobile slide-in sidebar */
     #menu-bar {
         position: fixed;
         top: 0;
         height: 100vh;
-        background: white;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: transform 0.8s cubic-bezier(.25,.8,.25,1);
+        background: var(--surface);
+        box-shadow: 2px 0 16px rgba(20,18,16,0.12);
+        transition: transform 0.35s cubic-bezier(.25,.8,.25,1);
         z-index: 1000;
         padding: 20px;
         box-sizing: border-box;
         overflow-y: auto;
         border-top-right-radius: 20px;
         width: 60%;
-        height: 100vh;
         transform: translateX(-100%);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
+
     #menu-bar:not(.hidden) {
         transform: translateX(0);
         margin: 0;
     }
+
     #menu-bar.hidden {
         left: 0;
         pointer-events: none;
     }
+
     #menu-bar img {
         display: flex;
         width: 90%;
     }
+    .page-specializations {
+        padding-left: 10px;
+    }
     #abituriyent-header {
         margin-top: 40px;
     }
+
     .hidden {
         left: -100%;
     }
-    
+
     #filterToggleBtn {
         position: relative;
         margin-top: 10px;
-        background-color: #1e90ff;
+        background-color: var(--gold);
         color: #fff;
         width: 85px;
         font-size: 16px;
         border: none;
-        border-radius: 12px;
+        border-radius: 10px;
         display: flex;
         gap: 6px;
         padding: 8px 12px;
         justify-content: center;
         height: 34px;
     }
+
     .site-footer {
         position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: transparent;  
-        font-family: sans-serif;
+    }
+
+    select,
+    input[type=text] {
+        background-color: transparent;
+        font-family: 'Sora', sans-serif;
         font-size: 14px;
         margin: auto;
     }
-    .header, .menu-container {
+
+    .header,
+    .menu-container {
         width: 100%;
     }
+
+    /* Mobile card (score calc) */
     .mobile-card {
-        background: #f4f4f4;
+        background: var(--surface);
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 12px;
         margin-bottom: 10px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 6px rgba(20,18,16,0.07);
+        border: 1px solid var(--border);
     }
+
     body.dark-mode .mobile-card {
-        background-color: #1A1D27;
+        background-color: var(--surface);
     }
+
     body.dark-mode .mobile-card input {
-        background-color: #1A1D27;
-        color: white;
+        background-color: var(--surface);
+        color: var(--text-color);
     }
+
     .mobile-card input {
         margin: 5px 0;
         padding: 6px;
         font-size: 17px;
-        border: 2px solid #4a90e2;
-        border-radius: 12px;
+        border: 1.5px solid var(--gold);
+        border-radius: 10px;
         max-width: 700px;
-        border: 2px solid #1e90ff;
         outline: none;
         width: 15px;
         text-align: center;
+        background: transparent;
+        color: var(--text-color);
     }
+
     .mobile-card input {
-        transition: border-color 0.3s ease;
+        transition: border-color 0.25s ease;
     }
-      
+
     .umumi-netice-row {
         display: inline-block;
         max-width: 600px;
         min-width: 300px;
     }
+
     .mobile-card {
         max-width: 700px;
         padding: 10px;
-    
     }
 
     .form-row {
@@ -1048,38 +1274,39 @@ body.dark-mode .selected-ixtisas {
         margin-bottom: 10px;
         gap: 10px;
     }
-    
+
     .form-row label {
         flex: 1;
         font-size: 15px;
-        color: black;
+        color: var(--text-color);
         word-wrap: break-word;
     }
-    
+
     .mobile-card .form-row input {
         flex: 0 0 50px;
         padding: 6px;
         font-size: 16px;
-        border: 2px solid #1e90ff;
-        border-radius: 12px;
+        border: 1.5px solid var(--gold);
+        border-radius: 10px;
         text-align: center;
-        background-color: white;
-        color: black;
+        background-color: var(--surface);
+        color: var(--text-color);
     }
-    body.dark-mode .mobile-card .form-row input, body.dark-mode .form-row label{
-        color: white;
+
+    body.dark-mode .mobile-card .form-row input,
+    body.dark-mode .form-row label {
+        color: var(--text-color);
     }
-    
+
     #secret-reveal {
         transition: height 0.3s ease;
         background: transparent;
-        color: #555;
+        color: var(--text-3);
         font-size: 15px;
         font-weight: 500;
     }
 
-
-
+    /* Social bar (mobile top) */
     .social-bar {
         position: fixed !important;
         top: 0 !important;
@@ -1089,34 +1316,40 @@ body.dark-mode .selected-ixtisas {
         width: 100% !important;
         z-index: 9999 !important;
     }
+
     .bigads-bar {
         background-color: transparent;
     }
+
+    /* İxtisas seç button */
     .filter_ixtisassec {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px; 
+        padding: 10px;
         margin-top: -10px;
     }
+
     .ixtisassec-toggle {
         position: relative;
         margin-top: 10px;
         margin-left: 6px;
-        background-color: #1e90ff;
+        background-color: var(--gold);
         color: #fff;
         width: 152px;
-        font-size: 16px;
+        font-size: 14px;
         border: none;
-        border-radius: 12px;
+        border-radius: 10px;
         display: flex;
         gap: 6px;
         padding: 8px 12px;
         justify-content: center;
         height: 34px;
     }
+
+    /* Fullscreen frame (ixtisas seçim) */
     .fullscreen-frame {
-        display: none; 
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1126,22 +1359,24 @@ body.dark-mode .selected-ixtisas {
         justify-content: center;
         align-items: center;
     }
-      
+
     .frame-content {
-        background: #f0f0f0;
+        background: var(--bg);
         padding: 15px;
         width: 100%;
         height: 100%;
         max-width: 600px;
-        border-radius: 10px;
+        border-radius: 14px;
         position: relative;
         text-align: center;
         overflow: auto;
     }
+
     body.dark-mode .frame-content {
-        background: #121212;
-        color: #ddd;
+        background: var(--bg);
+        color: var(--text-color);
     }
+
     .close-btn {
         position: absolute;
         top: 33px;
@@ -1152,26 +1387,34 @@ body.dark-mode .selected-ixtisas {
         z-index: 9999;
         background-color: transparent;
     }
+
     .close-btn img {
-        height:28px;
+        height: 28px;
         width: 28px;
         margin-left: -5px;
         margin-top: -5px;
         filter: invert(0);
     }
+
     body.dark-mode .close-btn img {
         filter: invert(1);
     }
+
     #ixtisassec2 {
         font-size: 30px;
+        color: var(--text-color);
     }
+
     #ixtisassec_info {
         padding: 20px;
         margin-top: -20px;
     }
+
     body.dark-mode #ixtisassec2 {
-        color: #ddd;
+        color: var(--text-color);
     }
+
+    /* Selected cards container */
     .selected-cards {
         display: flex;
         flex-wrap: wrap;
@@ -1181,27 +1424,27 @@ body.dark-mode .selected-ixtisas {
         width: 100%;
         position: relative;
     }
-      
+
     .selected-card {
         width: 100%;
-        background: #f2f2f2;
-        border: 1px solid #ccc;
+        background: var(--surface);
+        border: 1px solid var(--border);
         display: flex;
         justify-content: center;
         position: relative;
         text-align: center;
         flex-direction: column;
-        border-radius: 16px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+        border-radius: 14px;
+        box-shadow: 0 2px 6px rgba(20,18,16,0.07);
     }
-    
-    
+
     .card-inner {
         display: flex;
         align-items: center;
         position: relative;
-        gap: 10px; 
+        gap: 10px;
     }
+
     .selected-card-wrapper {
         display: flex;
         align-items: center;
@@ -1209,39 +1452,43 @@ body.dark-mode .selected-ixtisas {
         width: 100%;
         position: relative;
     }
-      
+
     .card-index {
         font-size: 18px;
         font-weight: bold;
-        color: #474747;
+        color: var(--text-2);
         min-width: 24px;
         text-align: right;
     }
+
     body.dark-mode .card-index {
-        color: #ececec;
+        color: var(--text-2);
     }
+
     .selected-card .plus-btn {
         font-size: 65px;
         cursor: pointer;
         background: none;
         border: none;
-        color: #7e7e7e;
+        color: var(--text-3);
         width: 100%;
-        border: 1px solid rgb(131, 131, 131);
+        border: 1px solid var(--border);
     }
+
     body.dark-mode .selected-card .plus-btn {
-        color: #ddd;
-        background-color: #1A1D27;
-        border: 1px solid #555;
+        color: var(--text-2);
+        background-color: var(--surface);
+        border: 1px solid var(--border);
     }
-    
-      
+
     .selected-card.filled {
         border-style: solid;
-        background: #fff;
-    } 
+        background: var(--surface);
+    }
+
+    /* Fullscreen ixtisaslar */
     .fullscreen-ixtisaslar {
-        display: none; 
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1250,130 +1497,152 @@ body.dark-mode .selected-ixtisas {
         z-index: 9998;
         justify-content: center;
         align-items: center;
-        background-color: #121212;
+        background-color: var(--bg);
         overflow: auto;
     }
-      
+
     .ixtisaslar-content {
         padding: 16px;
         width: 100%;
         height: 100%;
         max-width: 600px;
-        border-radius: 10px;
+        border-radius: 14px;
         position: relative;
         text-align: center;
         overflow-y: auto;
-        background-color: #f0f0f0;
+        background-color: var(--bg);
+        color: var(--text-color);
     }
-    
+
     body.dark-mode .ixtisaslar-content {
-        background: #121212;
-        color: #ddd;
+        background: var(--bg);
+        color: var(--text-color);
     }
-    .frame-content h2, .ixtisaslar-content h2{
-        color: rgb(20, 20, 20);
+
+    .frame-content h2,
+    .ixtisaslar-content h2 {
+        color: var(--text-color);
     }
-    body.dark-mode .frame-content h2, .ixtisaslar-content h2 {
-        color: #ddd;
+
+    body.dark-mode .frame-content h2,
+    body.dark-mode .ixtisaslar-content h2 {
+        color: var(--text-color);
     }
+
     .card {
         position: relative;
         text-align: left;
     }
+
+    /* Selected ixtisas card */
     .selected-ixtisas {
-        color: black;
+        color: var(--text-color);
         text-align: left;
-        padding: 10px;
-        background: #f9f9f9;    
-        border-radius: 16px;
         padding: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+        background: var(--surface);
+        border-radius: 14px;
+        box-shadow: 0 2px 6px rgba(20,18,16,0.07);
+        border: 1px solid var(--border);
     }
-      
+
+    body.dark-mode .selected-ixtisas {
+        background-color: var(--surface);
+        color: var(--text-color);
+    }
+
     .select-btn {
-        background-color: #1e90ff;
-        color: white;
+        background-color: var(--gold);
+        color: #fff;
         border: none;
         padding: 8px 14px;
-        border-radius: 6px;
+        border-radius: 8px;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 14px;
+        font-family: 'Sora', sans-serif;
     }
-      
+
     .select-btn:hover {
-        background-color: #45a049;
+        background-color: var(--gold-hover);
     }
+
+    /* Payment modal */
     .payment-modal {
-        display: none; /* Başlanğıcda gizlidir */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(131, 131, 131, 0.13);
-        color: black;
-        z-index: 99999; /* Hər şeyin üstündə */
+        background-color: rgba(20,18,16,0.25);
+        color: var(--text-color);
+        z-index: 99999;
         justify-content: center;
         align-items: center;
     }
-    
+
     .modal {
-        display: flex; /* başlanğıcda gizli */
+        display: flex;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: blue;
+        background-color: rgba(20,18,16,0.55);
         justify-content: center;
         align-items: center;
         z-index: 9999;
     }
-      
+
     .modal-content {
-        background: #fff;
+        background: var(--surface);
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 14px;
         text-align: center;
+        border: 1px solid var(--border);
+        color: var(--text-color);
     }
+
     body.dark-mode .modal-content {
-        background: #1e1e1e;
-        color: #ddd;
+        background: var(--surface);
+        color: var(--text-color);
     }
-      
-    
+
     .modal-content button {
         margin: 10px;
         padding: 10px 20px;
         cursor: pointer;
     }
+
+    /* İxtisas search inside fullscreen */
     .searchIxtisas {
         width: 100%;
         padding-right: 100px;
     }
+
     #searchIxtisasInput {
         padding: 10px;
         font-size: 16px;
-        border: 2px solid #1e90ff;
-        border-radius: 12px;
-        background-color: #ffffff;
-        color: #121212;
-        transition: border-color 0.3s ease;
+        border: 1.5px solid var(--gold);
+        border-radius: 10px;
+        background-color: var(--surface);
+        color: var(--text-color);
+        transition: border-color 0.25s ease;
         position: relative;
+        font-family: 'Sora', sans-serif;
     }
+
     body.dark-mode #searchIxtisasInput {
-        background-color: #1A1D27;
-        color: white;
-        border: 2px solid #555;
+        background-color: var(--surface);
+        color: var(--text-color);
+        border: 1.5px solid var(--border-raw);
     }
-    
+
     #closeIxtisaslar {
         top: 10px;
         right: 10px;
         font-size: 20px;
         cursor: pointer;
-        color: #1e90ff;
+        color: var(--gold);
     }
-    
 }
