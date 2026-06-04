@@ -1237,8 +1237,8 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     }
                 }
                 // Qısa səs effektləri (SFX) üçün obyektlər
-                const sfxCorrect = new Audio(window.location.origin + '/sounds/correct.mp3');
-                const sfxWrong = new Audio(window.location.origin + '/sounds/wrong.mp3');
+                const sfxCorrect = new Audio(window.location.origin + './sounds/correct.mp3');
+                const sfxWrong = new Audio(window.location.origin + './sounds/wrong.mp3');
                 async function handleOptionClick(btn, questionData, index) {
                     const selected = btn.dataset.key;
                     userAnswers[index] = selected;
@@ -1584,9 +1584,9 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                 // Səs yollarını brauzerin cari domain ünvanına bağlayırıq (404 xətası almaması üçün)
                 const noiseSources = {
-                    white: window.location.origin + '/sounds/white-noise.mp3',
-                    brown: window.location.origin + '/sounds/brown-noise.mp3',
-                    rain: window.location.origin + '/sounds/rain.mp3'
+                    white: window.location.origin + './sounds/white-noise.mp3',
+                    brown: window.location.origin + './sounds/brown-noise.mp3',
+                    rain: window.location.origin + './sounds/rain.mp3'
                 };
 
                 let audioCtx = null;
