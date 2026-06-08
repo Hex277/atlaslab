@@ -51,6 +51,13 @@
         "icon": "🇬🇧",
         "count": 10,
         "type": "dil_fenleri"
+      },
+      {
+        "id": "xdiak-mit2",
+        "title": "Xarici dildə işguzar və akademik kommunikasiya 2",
+        "icon": "🇬🇧",
+        "count": 10,
+        "type": "dil_fenleri"
       }
     ]
   },
