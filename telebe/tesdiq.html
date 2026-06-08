@@ -116,14 +116,29 @@
         <a href="./login.html" class="btn">Hesaba Daxil Ol</a>
     </div>
 
-    <script>
-        window.onload = function() {
-            if(window.location.hash) {
-                history.replaceState(null, null, window.location.pathname);
-            }
-        };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script>
+    // Supabase-i başlatın (URL və anon açarınızı daxil edin)
+    const supabase = supabase.createClient('URL_BURAYA', 'ANON_KEY_BURAYA');
+
+    window.onload = async function() {
+        // 1. Supabase URL-dəki tokenləri oxuyub sessiyanı qurur
+        const { data, error } = await supabase.auth.getSession();
+        
+        if (error) {
+            console.error("Təsdiq xətası:", error.message);
+            // Burada istifadəçiyə "linkin müddəti bitib" deyə bilərsiniz
+        } else if (data.session) {
+            console.log("Uğurla təsdiqləndi!");
+        }
+
+        // 2. Tokenləri sildikdən sonra URL-i təmizləyin
+        if(window.location.hash) {
+            history.replaceState(null, null, window.location.pathname);
+        }
+    };
+</script>
 </body>
 <script src="../theme.js"></script>
 </html>
