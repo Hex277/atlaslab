@@ -33,7 +33,14 @@
     "special_subjects": [
       {
         "id": "xdiak-stmks",
-        "title": "Xarici dildə işguzar və akademik kommunikasiya",
+        "title": "Xarici dildə işguzar və akademik kommunikasiya 1",
+        "icon": "🇬🇧",
+        "count": 10,
+        "type": "dil_fenleri"
+      },
+      {
+        "id": "xdiak-stmks2",
+        "title": "Xarici dildə işguzar və akademik kommunikasiya 2",
         "icon": "🇬🇧",
         "count": 10,
         "type": "dil_fenleri"
@@ -126,7 +133,8 @@
           "name": "Su Təsərrüfatı və Mühəndis Kommunikasiya Sistemləri Fakültəsi",
           "assigned_subjects": [
             "landsaft-meliorasiyasi",
-            "xdiak-stmks"
+            "xdiak-stmks",
+            "xdiak-stmks2"
           ]
         }
       }
@@ -217,7 +225,7 @@
         },
         "fizika_riyaziyyat": {
           "name": "Fizika Riyaziyyat Fakültəsi",
-          "assigned_subjects": ["landsaft-meliorasiyasi","xdiak-stmks"]
+          "assigned_subjects": ["landsaft-meliorasiyasi","xdiak-stmks","xdiak-stmks2"]
         },
         "memarliq_muhendislik": {
           "name": "Memarlıq və Mühəndislik Fakültəsi",
@@ -254,7 +262,7 @@
         },
         "torpaqsunasliq_aqrokimya": {
           "name": "Torpaqşünaslıq və Aqrokimya Fakültəsi",
-          "assigned_subjects": ["landsaft-meliorasiyasi", "xdiak-stmks"]
+          "assigned_subjects": ["landsaft-meliorasiyasi", "xdiak-stmks","xdiak-stmks2"]
         },
         "baytarlig_tebabeti": {
           "name": "Baytarlıq Təbabəti Fakültəsi",
