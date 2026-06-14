@@ -260,21 +260,47 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
     });
 
     facultySelect.addEventListener("change", applyFilters);
-
     function applyFilters() {
         const selectedUni = uniSelect.value;
         const selectedFac = facultySelect.value;
         const searchTerm = searchInput.value.toLowerCase().trim();
 
-        let filtered = allSubjects;
+        let filtered = [];
 
-        // 1. Dropdown filteri
-        if (selectedUni && selectedFac) {
-            // Seçilmiş fakültənin icazə verilən fənn ID-lərini alırıq
-            const assignedIds = universitiesData[selectedUni].faculties[selectedFac].assigned_subjects || [];
-            
-            // Fənn siyahısını bu ID-lərə görə süzürük
-            filtered = allSubjects.filter(subject => assignedIds.includes(subject.id));
+        // 1. Dropdown filteri (Universitet və Fakültə məntiqi)
+        if (selectedUni) {
+            let assignedIds = [];
+
+            if (selectedFac) {
+                // SSENARİ A: Həm Universitet, həm də Fakültə seçilib
+                // Yalnız seçilmiş fakültənin icazə verilən fənn ID-lərini alırıq
+                assignedIds = universitiesData[selectedUni].faculties[selectedFac].assigned_subjects || [];
+            } else {
+                // SSENARİ B: Yalnız Universitet seçilib
+                // Seçilmiş universitetin bütün fakültələrinin fənnlərini bir araya yığırıq
+                const faculties = universitiesData[selectedUni].faculties;
+                for (const facKey in faculties) {
+                    const facSubjects = faculties[facKey].assigned_subjects || [];
+                    assignedIds = assignedIds.concat(facSubjects);
+                }
+                // Eyni fənn fərqli fakültələrdə varsa, təkrarları silirik
+                assignedIds = [...new Set(assignedIds)];
+            }
+
+            // A: İlk olaraq seçilmiş prioritet fənnləri (universitetə/fakültəyə aid olanları) tapırıq
+            const prioritySubjects = allSubjects.filter(subject => assignedIds.includes(subject.id));
+
+            // B: Sonra yalnız qlobal (ümumi) fənnləri tapırıq 
+            // (əgər qlobal fənn onsuz da priority içindədirsə, təkrarlanmasın deyə çıxarırıq)
+            const generalSubjects = allSubjects.filter(subject => globalSubjects.includes(subject.id) && !assignedIds.includes(subject.id));
+
+            // Siyahını birləşdiririk: ƏN BAŞDA spesifik fənnlər, SONRA ümumi fənnlər. 
+            // Başqa universitetlərin fənnləri avtomatik kənarda qalır.
+            filtered = [...prioritySubjects, ...generalSubjects];
+
+        } else {
+            // SSENARİ C: Heç bir universitet seçilməyib (Bütün fənnlər)
+            filtered = allSubjects;
         }
 
         // 2. Axtarış filteri (Mövcud axtarış məntiqin)
@@ -359,20 +385,81 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
                     onclick="startQuiz('${subject.id}')"
                     style="animation-delay: ${index * 0.05}s">
                     
+                    <button class="pdf-download-btn" onclick="event.stopPropagation(); downloadPdf(this, '${subject.id}')"><img src="../images/download.webp"></button>
+                    
                     <div class="info-btn" onclick="showSubjectInfo(event, '${subject.id}', '${subject.title}')">i</div>
                     
                     <div class="card-icon">${subject.icon}</div>
                     <div class="card-title">${subject.title}</div>
-                    
-                    <!-- Fakültə ad(lar)ı kartın üstündə yazılır -->
                     <div class="card-faculty">${facultyText}</div>
-                    
-                    <div class="card-meta">${subject.count} sual • Hər gün yenilənir</div>
+                    <div class="card-meta">${subject.count} sual • Hər dəfə yenilənir</div>
                     <div class="card-arrow">→</div>
                 </div>
             `;
         }).join("");
     }
+    window.downloadPdf = async function(clickedBtn, subjectId) {
+        // 1. İstifadəçinin ID-sini tapırıq
+        const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+        if (!sessionStr) {
+            showMessage("Zəhmət olmasa, əvvəlcə sistemə daxil olun.");
+            return;
+        }
+        
+        const userId = JSON.parse(sessionStr).user.id;
+
+        // 2. Premium olub-olmadığını yoxlayırıq
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        // Əgər premium deyilsə, alert verib funksiyanı dərhal dayandırırıq
+        if (!isPremium) {
+            showMessage("🔒 Bu fənnin PDF materialını yükləmək üçün Premium hesab əldə etməlisiniz.");
+            return;
+        }
+
+        // 3. Əgər premiumdursa, yalnız kliklənən düymənin adını dəyişirik
+        if (clickedBtn) {
+            clickedBtn.innerText = "...";
+            clickedBtn.style.disabled = true; // Müvəqqəti kliklənməni bağlayırıq
+        }
+
+        try {
+            // Cloudflare Worker URL-in
+            const workerUrl = `https://pdf-security.hexgroupaz.workers.dev/?file=${subjectId}.pdf`;
+
+            const response = await fetch(workerUrl, {
+                headers: {
+                    'X-Premium-Token': 'sb-4utc' // Yeni təyin etdiyin token
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Bu fənnin pdf faylı mövcud deyil.");
+            }
+
+            // Faylı endirmə məntiqi
+            const blob = await response.blob();
+            const downloadUrl = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = downloadUrl;
+            a.download = `${subjectId}.pdf`; 
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(downloadUrl);
+
+        } catch (error) {
+            console.error(error);
+            showMessage(error.message);
+        } finally {
+            // Düyməni yenidən köhnə halına qaytarırıq
+            if (clickedBtn) {
+                clickedBtn.innerHTML = '<img src="../images/download.webp" alt="Download">'; 
+                clickedBtn.disabled = false;
+            }
+        }
+    };
     searchInput.addEventListener("input", (e) => {
         const searchTerm = e.target.value.toLowerCase().trim();
 
@@ -494,7 +581,7 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
                 .maybeSingle();
 
             const usedToday = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
-            const totalLimit = 3;
+            const totalLimit = 5;
             const remainingLimit = Math.max(0, totalLimit - usedToday);
 
             // 5. Standart vizualları göstəririk
@@ -590,41 +677,66 @@ if (window.location.pathname.endsWith("statistics.html")) {
         renderChart(fixedLabels, countsData);
     }
     async function loadLeaderboard(currentUserId) {
-        const client = getSupabase();
-        if (!client) return;
+    const client = getSupabase();
+    if (!client) return;
 
-        const { data, error } = await client
-            .from('user_stats')
-            .select('*')
-            .order('elo_rating', { ascending: false })
-            .limit(10);
+    // 1. Top 30 istifadəçini çəkirik
+    const { data: statsData, error: statsError } = await client
+        .from('user_stats')
+        .select('*')
+        .order('elo_rating', { ascending: false })
+        .limit(30);
 
-        if (error || !data) return;
+    if (statsError || !statsData) return;
 
-        const tbody = document.getElementById('leaderboardBody');
-        if (!tbody) return;
-        tbody.innerHTML = '';
+    // 2. Liderlərin ID-lərini massivə yığırıq
+    const userIds = statsData.map(row => row.user_id);
 
-        data.forEach((row, index) => {
-            const accuracy = row.total_answered_questions > 0
-                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
-                : 0;
+    // 3. YENİLİK: Təhlükəsiz virtual cədvəldən yalnız aktiv premium ID-ləri çəkirik
+    const { data: premiumData, error: premiumError } = await client
+        .from('aktiv_premiumlar')
+        .select('user_id')
+        .in('user_id', userIds);
 
-            const isMe = row.user_id === currentUserId;
-            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
-            // YENİLİK: Əgər bazada ad varsa onu, yoxdursa ID-ni göstər
-            const displayName = isMe ? `${nameToShow} (Siz)` : nameToShow;
-            tbody.innerHTML += `
-                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
-                    <td>${index + 1}</td>
-                    <td>${displayName}</td> 
-                    <td>${row.elo_rating || 1000}</td>
-                    <td>${accuracy}%</td>
-                </tr>
-            `;
-        });
+    // Aktiv premiumların ID-lərini sürətli axtarış (Set) üçün hazırlayırıq
+    const activePremiumUserIds = new Set();
+    if (!premiumError && premiumData) {
+        premiumData.forEach(p => activePremiumUserIds.add(p.user_id));
     }
 
+    const tbody = document.getElementById('leaderboardBody');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+
+    // 4. Cədvəli render edirik
+    statsData.forEach((row, index) => {
+        const accuracy = row.total_answered_questions > 0
+            ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
+            : 0;
+
+        const isMe = row.user_id === currentUserId;
+        let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
+        
+        if (isMe) {
+            nameToShow += ' (Siz)';
+        }
+
+        // Bizim virtual cədvəldən gələn ID-lər arasında bu istifadəçi var?
+        const isPremium = activePremiumUserIds.has(row.user_id);
+        
+        // Əgər premiumdursa, yanına sənin istədiyin CSS klası olan yazını əlavə edirik
+        const premiumBadge = isPremium ? `<div class="lb-premium-text-bg" id="lb-premium-text"><p>Premium</p></div>` : '';
+
+        tbody.innerHTML += `
+            <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
+                <td>${index + 1}</td>
+                <td>${nameToShow} ${premiumBadge}</td> 
+                <td>${row.elo_rating || 1000}</td>
+                <td>${accuracy}%</td>
+            </tr>
+        `;
+    });
+}
     function renderChart(labels, counts) {
         const canvas = document.getElementById('weeklyActivityChart');
         if (!canvas) return;

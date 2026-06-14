@@ -505,6 +505,7 @@ button {
     justify-content: space-between;
     width: 100%;
 }
+
 .stats-chart-container {
     grid-column: 2; 
     background-color: var(--surface);
@@ -686,6 +687,29 @@ button {
     border: 1px solid var(--surface2);
     color: var(--text-color);
 }
+.lb-premium-text-bg {
+    background: linear-gradient(90deg, #B89A5A, #6B48FF);
+    display: inline-flex; /* Müqəddəs toxunuş: Bütün sətri tutmağı əngəlləyir və elementi inline edir */
+    align-items: center;
+    height: 18px; /* Cədvəl sətirlərini çox partlatmaması üçün 30px ideal ola bilər (istəsən 36px edə bilərsən) */
+    transform: skew(-20deg);
+    margin-left: 10px; /* Ad ilə badge arasında qəşəng bir boşluq yaradır */
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    vertical-align: middle; /* Yazı ilə tam eyni mərkəz xəttində dayanmasını təmin edir */
+}
+
+.lb-premium-text-bg p {
+    margin: 0; /* <p> teqinin brauzerdən gələn standart boşluqlarını sıfırlayırıq ki, dizaynı sındırmasın */
+    padding-right: 10px;
+    padding-left: 10px;
+    transform: skew(20deg);
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff; /* Yazının rəngini ağ etdik ki, gradient üzərində oxunsun */
+    white-space: nowrap; /* Yazının qırılıb alt-alta düşməsini mütləq şəkildə əngəlləyir */
+}
 /* ==============================
    PROFILE STYLES
 ============================== */
@@ -818,6 +842,7 @@ button {
     font-size: 14px;
     font-weight: bold;
     font-style: italic;
+    color: white;
 }
 #bitme-tarixi {
     margin-right: 10px;
@@ -1169,6 +1194,7 @@ body.dark-theme #menu-bar a:not(#name-text) {
 .btn-plan-active:hover {
     background-color: #99772f;
 }
+
 .theme-mode {
     display: flex;
     position: fixed;
@@ -1456,7 +1482,41 @@ body.dark-theme #report img {
     color: white;
     transform: scale(1.1);
 }
+.pdf-download-btn {
+    position: absolute;
+    top: 15px;
+    right: 48px; /* 15px (kənar) + 28px (i butonu) + 5px (ara boşluğu) */
+    width: 28px;
+    height: 28px;
+    background-color: rgba(234, 207, 30, 0.077);
+    border: none; /* Butonun standart çərçivəsini silmək üçün */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 2;
+    padding: 0; /* İç boşluğu sıfırlayırıq ki, şəkil mərkəzləşsin */
+}
 
+/* PDF Butonunun içindəki şəkil (ikon) üçün */
+.pdf-download-btn img {
+    width: 14px; /* i hərfinin font-size ölçüsü ilə eyni */
+    height: 14px;
+    object-fit: contain;
+}
+
+/* PDF Butonuna hover effekti */
+.pdf-download-btn:hover {
+    background-color: #B89A5A;
+    transform: scale(1.1);
+}
+
+/* Hover zamanı şəklin ağ rəngə boyanması üçün (bunu ikonun növünə görə tənzimləyə bilərsiniz) */
+.pdf-download-btn:hover img {
+    filter: brightness(0) invert(1);
+}
 /* ==========================================
    YENİ: İnfo Modalı Dizaynı
    ========================================== */

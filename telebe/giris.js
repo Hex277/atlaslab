@@ -41,22 +41,69 @@ if (actionBtn) {
             const nameInput = document.getElementById('name');
             const name = nameInput ? nameInput.value.trim() : "";
             const termsAgree = document.getElementById('terms_agree');
+            
+            // 1. Şərtlərin yoxlanılması
             if (!termsAgree || !termsAgree.checked) {
                 showMessage("Davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul etməlisiniz!");
                 actionBtn.disabled = false; 
                 return;
             }
+
+            // 2. Adın boş olub-olmaması
             if (!name) {
                 showMessage("Zəhmət olmasa, adınızı daxil edin!");
                 actionBtn.disabled = false; return;
             }
-            if (password.length < 6) {
+
+            // 3. TƏHLÜKƏSİZLİK: Adın Uzunluq Limiti (Min 3, Max 20 simvol)
+            if (name.length < 3 || name.length > 20) {
+                showMessage("İstifadəçi adı ən azı 3, ən çoxu 20 simvoldan ibarət olmalıdır!");
+                actionBtn.disabled = false; return;
+            }
+            const allowedCharsRegex = /^[a-zA-Z0-9çəğıöşüÇƏĞİÖŞÜ_ \-]+$/;
+            if (!allowedCharsRegex.test(name)) {
+                showMessage("İstifadəçi adında xüsusi simvollar istifadə edilə bilməz!");
+                actionBtn.disabled = false; return;
+            }
+
+            // 5. TƏHLÜKƏSİZLİK: E-poçt Formatının İlkin Yoxlanışı (Regex)
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage("Zəhmət olmasa, düzgün bir e-poçt ünvanı daxil edin!");
+                actionBtn.disabled = false; return;
+            }
+
+            // 6. TƏHLÜKƏSİZLİK: Unikal Ad Yoxlanışı (Supabase)
+            actionBtn.textContent = "Ad yoxlanılır...";
+            const { data: existingUser, error: checkError } = await supabaseClient
+                .from('user_stats')
+                .select('display_name')
+                .ilike('display_name', name)
+                .maybeSingle();
+
+            if (checkError) {
+                showMessage("Ad yoxlanılarkən xəta baş verdi: " + checkError.message);
+                actionBtn.textContent = originalText;
+                actionBtn.disabled = false;
+                return;
+            }
+
+            if (existingUser) {
+                showMessage("Bu istifadəçi adı artıq istifadədədir! Zəhmət olmasa başqa bir ad seçin.");
+                actionBtn.textContent = originalText;
+                actionBtn.disabled = false;
+                return;
+            }
+
+            // 7. TƏHLÜKƏSİZLİK: Şifrə Uzunluq Limiti (Min 6, Max 64 simvol)
+            // Max 64 qoyuruq ki, kimsə 10.000 simvolluq şifrə göndərib serveri dondura bilməsin (DoS attack)
+            if (password.length < 6 || password.length > 64) {
                 showMessage("Şifrə ən azı 6 simvol olmalıdır!");
                 actionBtn.disabled = false; return;
             }
 
+            // Hər şey təhlükəsizdirsə, qeydiyyat başlayır...
             actionBtn.textContent = "Yaradılır...";
-
             const { data, error } = await supabaseClient.auth.signUp({
                 email: email,
                 password: password,
