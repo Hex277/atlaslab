@@ -65,6 +65,13 @@
         "icon": "🇬🇧",
         "count": 10,
         "type": "dil_fenleri"
+      },
+      {
+        "id": "informatika-atu",
+        "title": "İnformatika",
+        "icon": "💾",
+        "count": 10,
+        "type": "texniki"
       }
     ]
   },
@@ -237,7 +244,7 @@
         },
         "tibb": {
           "name": "Tibb Fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["informatika-atu"]
         },
         "pedaqoji": {
           "name": "Pedaqoji Fakültəsi",
@@ -460,7 +467,6 @@
         "tibb_ve_saglamliq_elmleri": {
           "name": "Tibb və Sağlamlıq Elmləri",
           "assigned_subjects": [
-            "Azərbaycan tarixi",
             "azerbaycan_tarixi"
           ]
         },
@@ -770,19 +776,19 @@
       "faculties": {
         "mualice_profilaktika": {
           "name": "Müalicə-profilaktika fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["informatika-atu"]
         },
         "ictimai_sehiyye": {
           "name": "İctimai səhiyyə fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["informatika-atu"]
         },
         "stomatologiya": {
           "name": "Stomatologiya fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["informatika-atu"]
         },
         "eczaciliq": {
           "name": "Əczaçılıq fakültəsi",
-          "assigned_subjects": []
+          "assigned_subjects": ["informatika-atu"]
         }
       }
     },
