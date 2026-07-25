@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>İxtisas Cədvəli</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    background: #f0f2f5;
+    color: #1a1a1a;
+    min-height: 100vh;
+  }
+
+  /* ── Yüklə ekranı ── */
+  #drop-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 100vh;
+    cursor: pointer;
+  }
+  #drop-zone.drag-over { background: #e0ebff; }
+  #drop-zone .box {
+    background: #fff;
+    border: 2px dashed #aab;
+    border-radius: 12px;
+    padding: 60px 80px;
+    text-align: center;
+  }
+  #drop-zone .box h2 { font-size: 20px; margin-bottom: 8px; }
+  #drop-zone .box p  { color: #666; margin-bottom: 20px; }
+  #file-btn {
+    padding: 8px 20px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #file-btn:hover { background: #1d4ed8; }
+  #file-input { display: none; }
+
+  /* ── Əsas layout ── */
+  #app { display: none; flex-direction: column; height: 100vh; }
+
+  /* ── Filter panel ── */
+  #filters {
+    background: #fff;
+    border-bottom: 1px solid #dde;
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+  }
+  .f-group { display: flex; flex-direction: column; gap: 4px; }
+  .f-group label { font-size: 11px; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: .4px; }
+  .f-group select,
+  .f-group input[type="number"] {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    background: #fafafa;
+    width: 120px;
+  }
+  .f-group select { width: 200px; }
+  .f-range { display: flex; gap: 6px; align-items: center; }
+  .f-range span { color: #999; font-size: 12px; }
+
+  .f-check { display: flex; align-items: center; gap: 6px; padding-bottom: 2px; }
+  .f-check input { width: 15px; height: 15px; cursor: pointer; }
+  .f-check label { font-size: 13px; cursor: pointer; }
+
+  #btn-reset {
+    padding: 5px 14px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    align-self: flex-end;
+  }
+  #btn-reset:hover { background: #e4e4e4; }
+
+  #result-count {
+    margin-left: auto;
+    align-self: center;
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+  }
+
+  /* ── Cədvəl ── */
+  #table-wrap {
+    flex: 1;
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #1e293b;
+    color: #e2e8f0;
+  }
+  thead th {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { background: #2d3f55; }
+  thead th .sort-icon { margin-left: 4px; opacity: .5; }
+  thead th.sorted .sort-icon { opacity: 1; }
+
+  tbody tr:nth-child(even) { background: #f8f9fc; }
+  tbody tr:hover { background: #eef2ff; }
+  tbody td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+
+  .td-uni  { color: #555; font-size: 12px; }
+  .td-kod  { font-family: monospace; color: #888; }
+  .td-ad   { max-width: 360px; }
+
+  .badge-form {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+  .badge-form.qiyabi { background: #fce7f3; color: #9d174d; }
+
+  .bal-cell { text-align: right; font-variant-numeric: tabular-nums; }
+  .bal-paid { font-weight: 600; color: #0f172a; }
+  .bal-free { color: #16a34a; font-weight: 600; }
+  .bal-none { color: #bbb; font-size: 12px; }
+
+  /* ── Boş hal ── */
+  #empty-row td {
+    text-align: center;
+    padding: 40px;
+    color: #aaa;
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Yüklə ekranı -->
+<div id="drop-zone">
+  <div class="box">
+    <h2>İxtisas Cədvəli</h2>
+    <p>JSON faylını bura sürükle və ya seç</p>
+    <button id="file-btn" onclick="document.getElementById('file-input').click()">
+      📂 JSON Faylı Seç
+    </button>
+    <input type="file" id="file-input" accept=".json">
+  </div>
+</div>
+
+<!-- Əsas panel -->
+<div id="app">
+  <div id="filters">
+
+    <!-- Universitet filter -->
+    <div class="f-group">
+      <label>Universitet</label>
+      <select id="f-uni">
+        <option value="">Hamısı</option>
+      </select>
+    </div>
+
+    <!-- Ödənişli bal aralığı -->
+    <div class="f-group">
+      <label>Ödənişli bal aralığı</label>
+      <div class="f-range">
+        <input type="number" id="f-paid-min" placeholder="Min" step="0.5">
+        <span>—</span>
+        <input type="number" id="f-paid-max" placeholder="Max" step="0.5">
+      </div>
+    </div>
+
+    <!-- Ödənişsiz bal aralığı -->
+    <div class="f-group">
+      <label>Ödənişsiz bal aralığı</label>
+      <div class="f-range">
+        <input type="number" id="f-free-min" placeholder="Min" step="0.5">
+        <span>—</span>
+        <input type="number" id="f-free-max" placeholder="Max" step="0.5">
+      </div>
+    </div>
+
+    <!-- Yalnız ödənişsiz yeri olanlar -->
+    <div class="f-group">
+      <label>&nbsp;</label>
+      <div class="f-check">
+        <input type="checkbox" id="f-has-free">
+        <label for="f-has-free">Yalnız ödənişsiz yeri olanlar</label>
+      </div>
+    </div>
+
+    <!-- Axtarış -->
+    <div class="f-group">
+      <label>Axtar (ixtisas adı / kod)</label>
+      <input type="text" id="f-search" placeholder="Məs: geologiya, 2111..."
+        style="width:200px; padding:5px 8px; border:1px solid #ccc; border-radius:5px; font-size:13px; background:#fafafa;">
+    </div>
+
+    <button id="btn-reset">Sıfırla</button>
+
+    <div id="result-count"></div>
+  </div>
+
+  <div id="table-wrap">
+    <table id="main-table">
+      <thead>
+        <tr>
+          <th data-col="uni">Universitet <span class="sort-icon">↕</span></th>
+          <th data-col="kod">Kod <span class="sort-icon">↕</span></th>
+          <th data-col="ad">İxtisas adı <span class="sort-icon">↕</span></th>
+          <th data-col="forma">Forma <span class="sort-icon">↕</span></th>
+          <th data-col="paid" style="text-align:right">Ödənişli bal <span class="sort-icon">↕</span></th>
+          <th data-col="free" style="text-align:right">Ödənişsiz bal <span class="sort-icon">↕</span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────
+// Məlumat
+// ─────────────────────────────────────────
+let ALL_ROWS = [];   // {uni, kod, ad, forma, paid, free}
+let sortCol  = null;
+let sortAsc  = true;
+
+// ─────────────────────────────────────────
+// JSON yüklə
+// ─────────────────────────────────────────
+function loadJSON(json) {
+  ALL_ROWS = [];
+  json.forEach(uni => {
+    (uni.ixtisaslar || []).forEach(ix => {
+      ALL_ROWS.push({
+        uni:  uni.ad || '',
+        kod:  ix.kod || '',
+        ad:   ix.ad  || '',
+        forma: ix.tehsil_forması || '',
+        paid: ix['ödənişli_bal']  ?? null,
+        free: ix['ödənişsiz_bal'] ?? null,
+      });
+    });
+  });
+
+  // Universitet dropdown
+  const unis = [...new Set(ALL_ROWS.map(r => r.uni))].sort();
+  const sel  = document.getElementById('f-uni');
+  sel.innerHTML = '<option value="">Hamısı</option>';
+  unis.forEach(u => {
+    const o = document.createElement('option');
+    o.value = o.textContent = u;
+    sel.appendChild(o);
+  });
+
+  document.getElementById('drop-zone').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+  render();
+}
+
+// ─────────────────────────────────────────
+// Filter + render
+// ─────────────────────────────────────────
+function getFilters() {
+  return {
+    uni:     document.getElementById('f-uni').value,
+    paidMin: parseFloat(document.getElementById('f-paid-min').value) || null,
+    paidMax: parseFloat(document.getElementById('f-paid-max').value) || null,
+    freeMin: parseFloat(document.getElementById('f-free-min').value) || null,
+    freeMax: parseFloat(document.getElementById('f-free-max').value) || null,
+    hasFree: document.getElementById('f-has-free').checked,
+    search:  document.getElementById('f-search').value.trim().toLowerCase(),
+  };
+}
+
+function applyFilters(rows, f) {
+  return rows.filter(r => {
+    if (f.uni     && r.uni !== f.uni) return false;
+    if (f.paidMin !== null && (r.paid === null || r.paid < f.paidMin)) return false;
+    if (f.paidMax !== null && (r.paid === null || r.paid > f.paidMax)) return false;
+    if (f.freeMin !== null && (r.free === null || r.free < f.freeMin)) return false;
+    if (f.freeMax !== null && (r.free === null || r.free > f.freeMax)) return false;
+    if (f.hasFree && r.free === null) return false;
+    if (f.search) {
+      const hay = (r.ad + ' ' + r.kod).toLowerCase();
+      if (!hay.includes(f.search)) return false;
+    }
+    return true;
+  });
+}
+
+function applySorting(rows) {
+  if (!sortCol) return rows;
+  return [...rows].sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (va === null) va = sortAsc ? Infinity : -Infinity;
+    if (vb === null) vb = sortAsc ? Infinity : -Infinity;
+    if (typeof va === 'string') return sortAsc ? va.localeCompare(vb, 'az') : vb.localeCompare(va, 'az');
+    return sortAsc ? va - vb : vb - va;
+  });
+}
+
+function render() {
+  const f    = getFilters();
+  const rows = applySorting(applyFilters(ALL_ROWS, f));
+  const tbody = document.getElementById('tbody');
+
+  document.getElementById('result-count').textContent =
+    `${rows.length} / ${ALL_ROWS.length} ixtisas`;
+
+  if (rows.length === 0) {
+    tbody.innerHTML = '<tr id="empty-row"><td colspan="6">Heç bir ixtisas tapılmadı.</td></tr>';
+    return;
+  }
+
+  const frag = document.createDocumentFragment();
+  rows.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="td-uni">${esc(r.uni)}</td>
+      <td class="td-kod">${esc(r.kod)}</td>
+      <td class="td-ad">${esc(r.ad)}</td>
+      <td>
+        <span class="badge-form ${r.forma === 'qiyabi' ? 'qiyabi' : ''}">
+          ${esc(r.forma || '—')}
+        </span>
+      </td>
+      <td class="bal-cell">
+        <span class="bal-paid">${r.paid !== null ? r.paid.toFixed(1) : '<span class="bal-none">—</span>'}</span>
+      </td>
+      <td class="bal-cell">
+        ${r.free !== null
+          ? `<span class="bal-free">${r.free.toFixed(1)}</span>`
+          : '<span class="bal-none">yalnız ödənişli</span>'}
+      </td>`;
+    frag.appendChild(tr);
+  });
+
+  tbody.innerHTML = '';
+  tbody.appendChild(frag);
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;');
+}
+
+// ─────────────────────────────────────────
+// Sort başlıqları
+// ─────────────────────────────────────────
+const colMap = { uni:'uni', kod:'kod', ad:'ad', forma:'forma', paid:'paid', free:'free' };
+document.querySelectorAll('thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = colMap[th.dataset.col];
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = true; }
+
+    document.querySelectorAll('thead th').forEach(t => t.classList.remove('sorted'));
+    th.classList.add('sorted');
+    th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
+    render();
+  });
+});
+
+// ─────────────────────────────────────────
+// Filter dinləyiciləri
+// ─────────────────────────────────────────
+['f-uni','f-paid-min','f-paid-max','f-free-min','f-free-max','f-search'].forEach(id => {
+  document.getElementById(id).addEventListener('input', render);
+});
+document.getElementById('f-has-free').addEventListener('change', render);
+
+document.getElementById('btn-reset').addEventListener('click', () => {
+  document.getElementById('f-uni').value      = '';
+  document.getElementById('f-paid-min').value = '';
+  document.getElementById('f-paid-max').value = '';
+  document.getElementById('f-free-min').value = '';
+  document.getElementById('f-free-max').value = '';
+  document.getElementById('f-free-max').value = '';
+  document.getElementById('f-has-free').checked = false;
+  document.getElementById('f-search').value   = '';
+  sortCol = null; sortAsc = true;
+  document.querySelectorAll('thead th').forEach(t => {
+    t.classList.remove('sorted');
+    t.querySelector('.sort-icon').textContent = '↕';
+  });
+  render();
+});
+
+// ─────────────────────────────────────────
+// Fayl yüklə — sürükle-at
+// ─────────────────────────────────────────
+function readFile(file) {
+  if (!file || !file.name.endsWith('.json')) {
+    alert('Zəhmət olmasa .json faylı seçin.');
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      loadJSON(JSON.parse(e.target.result));
+    } catch {
+      alert('JSON oxunmadı. Fayl düzgün formatdadır?');
+    }
+  };
+  reader.readAsText(file, 'utf-8');
+}
+
+const dz = document.getElementById('drop-zone');
+dz.addEventListener('dragover',  e => { e.preventDefault(); dz.classList.add('drag-over'); });
+dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+dz.addEventListener('drop', e => {
+  e.preventDefault();
+  dz.classList.remove('drag-over');
+  readFile(e.dataTransfer.files[0]);
+});
+document.getElementById('file-input').addEventListener('change', e => {
+  readFile(e.target.files[0]);
+});
+</script>
+</body>
+</html>
