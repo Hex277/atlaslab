@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ═══════════════════════════════════════════
    ATLASLAB — qruplar.css
@@ -129,7 +129,7 @@ button {
 
 #language-selector,
 #menu-bar a:not(#name-text) {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #name-text,
@@ -144,7 +144,7 @@ button {
 
 /* ─── Base ─── */
 body {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--bg);
     color: var(--text-color);
     margin: 0;
@@ -220,7 +220,7 @@ select,
     padding: 10px;
     width: auto;
     font-size: 15px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: .3s;
 }
 
@@ -323,7 +323,7 @@ body.dark-mode .menu-button {
 /* ─── Buttons ─── */
 button {
     font-size: 15px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--gold);
     border: none;
     border-radius: 10px;
@@ -654,7 +654,7 @@ body.dark-mode .white-icon {
     color: var(--gold);
     font-weight: 600;
     transition: .25s;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu-button:hover {
@@ -670,7 +670,7 @@ body.dark-mode .white-icon {
     width: 100%;
     background-color: transparent;
     text-align: center;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     left: 120px;
     color: var(--text-3);
@@ -711,7 +711,7 @@ body.dark-mode .white-icon {
     background-color: var(--surface);
     padding: 0 16px;
     font-weight: 600;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: background-color 0.25s ease;
     position: relative;
@@ -764,7 +764,7 @@ body.dark-mode .specialization-title {
     box-shadow: 0 2px 6px rgba(20,18,16,0.05);
     color: var(--text-2);
     line-height: 1.6;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body.dark-mode .specialization-description {
@@ -965,7 +965,7 @@ div[data-v-77565f88] {
         border: 0;
         font-size: 20px;
         height: 60px;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background: transparent;
         color: var(--text-color);
     }
@@ -1209,7 +1209,7 @@ div[data-v-77565f88] {
     select,
     input[type=text] {
         background-color: transparent;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 14px;
         margin: auto;
     }
@@ -1559,7 +1559,7 @@ div[data-v-77565f88] {
         cursor: pointer;
         font-weight: 600;
         font-size: 14px;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 
     .select-btn:hover {
@@ -1629,7 +1629,7 @@ div[data-v-77565f88] {
         color: var(--text-color);
         transition: border-color 0.25s ease;
         position: relative;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 
     body.dark-mode #searchIxtisasInput {
