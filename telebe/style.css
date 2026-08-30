@@ -842,7 +842,7 @@ button {
     font-size: 14px;
     font-weight: bold;
     font-style: italic;
-    color: white;
+    color: white ;
 }
 #bitme-tarixi {
     margin-right: 10px;
@@ -952,114 +952,171 @@ button {
     padding: 0;
 }
 /* ==============================
-   LEFT MENU STYLES
+   LEFT MENU — ANİMASİYA + DİZAYN
 ============================== */
+
+/* Mobil default: ekran xaricindədir */
+#menu-bar {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  margin-top: 61px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--surface);
+  border-right: 1px solid var(--border);
+  z-index: 999;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /* transform əsaslı animasiya — display:none işlənmir */
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+/* Açıq vəziyyət (mobil) */
+#menu-bar.menu-open {
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.3s ease-in-out, visibility 0s linear 0s;
+}
+
+/* Desktop: hər zaman görünür */
+@media (min-width: 769px) {
+  #menu-bar {
+    transform: translateX(0) !important;
+    visibility: visible !important;
+    transition: none !important;
+  }
+  #menu-toggle {
+    display: none !important;
+  }
+}
+
+/* --- Logo linki --- */
+#name-text {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* --- Kateqoriya başlıqları (Abituriyent, Tələbə) --- */
 #abituriyent-header {
-    margin-top: 40px;
+  margin-top: 28px;
 }
 #telebe-header {
-    margin-top: 10px;
+  margin-top: 8px;
 }
 
-#abituriyent-header, #telebe-header {
-    cursor: default;
-    font-size: 22px;
-    display: flex;
-    justify-content: space-between;
+#abituriyent-header,
+#telebe-header {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 7px;
+  color: var(--text-color);
+  opacity: 0.6;
+  user-select: none;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
 }
-#abituriyent-menu {
-    padding-left: 10px;
+
+#abituriyent-header:hover,
+#telebe-header:hover {
+  background-color: var(--menu-item-hover);
+  opacity: 0.9;
 }
+
+/* --- Arrow: CSS ilə fırlanır, JS text dəyişdirmir --- */
+#menu-bar .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid var(--text-color);
+  opacity: 0.45;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+#menu-bar .arrow.open {
+  transform: rotate(90deg);
+  opacity: 0.8;
+}
+
+/* --- Alt menyu konteynerlər --- */
+#abituriyent-menu,
 #telebe-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-#telebe-menu.open, #abituriyent-menu.open {
-    margin-top: 10px;
-    padding-left: 10px;
-}
-#menu-toggle {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    z-index: 999
-}
-
-#menu-toggle img {
-    width: 48px;
-    height: 48px;
-    border-radius: 15px;
-    margin-top: -4px;
-}
-
-#menu-bar {
-    position: fixed;
-    height: 100vh;
-    width: 210px;
-    margin-top: 61px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: var(--surface); 
-    border-right: 1px solid var(--border);
-    transition: transform 0.3s ease;
-    z-index: 999;
-    padding: 10px 20px;
-}
-
-.menu-btn-bg {
-    display: none;
-}
-#menu-bar a, #menu-btn {
-    display: none;
-}
-
-#menu-bar ul {
-    list-style: none;
-    margin: 10% 0 0;
-    padding: 0;
-    text-align: center;
-    margin-top: 5px;
-}
-#menu-bar li {
-    margin-bottom: 10px
-}
-
-#menu-bar a:not(#name-text) {
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    color: var(--text-color);
-    text-align: left;
-    font-size: 19px;
-    transition: background-color .3s, transform .2s;
-    box-sizing: border-box;
-    text-decoration: none;
-    border-bottom: 1px solid #E5E9F2;
-}
-body.dark-theme #menu-bar a:not(#name-text) {
-    border-bottom:1px solid rgba(234, 207, 30, 0.077);
-}
-
-#menu-bar a:hover {
-    transform: scale(1.02)
-}
-/* Həm abituriyent, həm də tələbə menyusuna aid ortaq xüsusiyyətlər */
-#abituriyent-menu, #telebe-menu {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out; /* 0.4 saniyəlik sürüşmə animasiyası */
+  transition: max-height 0.35s ease-in-out;
   display: flex;
-  flex-direction: column; /* Elementləri alt-alta düzürük */
+  flex-direction: column;
+  gap: 1px;
   margin: 0;
-  padding-left: 15px; /* Səliqəli görünməsi üçün boşluq */
+  padding: 0;
 }
 
-/* Menyu açılanda işə düşəcək sinif */
-#abituriyent-menu.open, #telebe-menu.open {
-  max-height: 400px; /* Menyunun içindəkilərin hündürlüyündən böyük bir rəqəm */
+#abituriyent-menu.open,
+#telebe-menu.open {
+  max-height: 500px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+}
+
+/* --- List reset (abituriyent <ul>) --- */
+#menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+#menu-bar li {
+  margin: 0;
+}
+
+/* --- Nav linkləri --- */
+#menu-bar a:not(#name-text) {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  opacity: 0.75;
+  transition: background-color 0.2s ease, opacity 0.2s ease, padding-left 0.18s ease;
+}
+
+#menu-bar a:not(#name-text):hover {
+  background-color: var(--menu-item-hover);
+  opacity: 1;
+  padding-left: 15px;
+}
+
+/* --- Hover rəngləri: light / dark tema --- */
+body:not(.dark-theme) {
+  --menu-item-hover: rgba(0, 0, 0, 0.06);
+}
+
+body.dark-theme {
+  --menu-item-hover: rgba(255, 255, 255, 0.07);
+  --menu-item-hover: rgba(255, 255, 255, 0.07);
 }
 /* ==============================
    PREMIUM PLANS GRID STYLES
@@ -2072,6 +2129,10 @@ button:disabled {
 .btn-login {
     height: auto;
 }
+
+#menu-bar a{
+    display: none;
+}
 @media (max-width: 768px) {
     .subjects-grid {
         grid-template-columns: 1fr;
@@ -2145,10 +2206,14 @@ button:disabled {
         border-radius: 0;
         background-color: transparent;
         height: auto;
-        width: 90px;
+        width: 70px;
     }
     body.dark-theme #menu-toggle img {
         filter: invert(1);
+        height: 50px;
+    }
+    #menu-toggle img {
+        height: 50px;
     }
     #menu-bar {
         margin: 0;
