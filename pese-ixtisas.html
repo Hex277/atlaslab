@@ -150,6 +150,113 @@
             background: #fff;
             display: none;
         }
+        /* Mobil görünüş konteynerləri (default olaraq gizli) */
+        .mobile-cards-wrap {
+            display: none;
+        }
+
+        /* 768px-dən kiçik ekranlar üçün responsive qaydalar */
+        @media (max-width: 768px) {
+            /* Desktop cədvəlini gizlədirik */
+            .table-wrap {
+                display: none !important;
+            }
+
+            /* Mobil kartlar konteynerini aktivləşdiririk */
+            .mobile-cards-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                margin-top: 15px;
+            }
+
+            /* Təhsil Mərkəzinin başlığı */
+            .mobile-center-group {
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 16px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                border: 1px solid #e2e8f0;
+            }
+
+            .mobile-center-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #1e293b;
+                margin: 0 0 14px 0;
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--primary, #2563eb);
+            }
+
+            /* İxtisas kartı */
+            .mobile-card {
+                background: #f8fafc;
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                padding: 12px 14px;
+                margin-bottom: 10px;
+            }
+
+            .mobile-card:last-child {
+                margin-bottom: 0;
+            }
+
+            .mobile-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            .mobile-card-sira {
+                background: var(--primary, #2563eb);
+                color: #fff;
+                font-size: 0.8rem;
+                font-weight: bold;
+                padding: 2px 8px;
+                border-radius: 4px;
+                white-space: nowrap;
+            }
+
+            .mobile-card-title {
+                font-weight: 600;
+                color: #0f172a;
+                font-size: 0.95rem;
+                line-height: 1.4;
+            }
+
+            /* Ballar şəbəkəsi */
+            .mobile-card-scores {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+                margin-top: 8px;
+                padding-top: 8px;
+                border-top: 1px dashed #cbd5e1;
+            }
+
+            .score-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #ffffff;
+                padding: 6px;
+                border-radius: 6px;
+                border: 1px solid #e2e8f0;
+            }
+
+            .score-item label {
+                font-size: 0.75rem;
+                color: #64748b;
+                margin-bottom: 2px;
+            }
+
+            .score-item span {
+                font-weight: bold;
+                color: #0f172a;
+            }
+        }
     </style>
 </head>
 <body>
@@ -210,6 +317,7 @@
             </tbody>
         </table>
     </div>
+    <div class="mobile-cards-wrap" id="mobile-cards-wrap"></div>
     
     <div class="stats" id="stats">
         Göstərilir: <strong id="result-count">0</strong> ixtisas
@@ -304,17 +412,20 @@
             });
         }
 
-        // Cədvələ yaz
+        // Cədvəl və Mobil konteynerləri təmizləyirik
         const tbody = document.getElementById('tbody');
+        const mobileCardsWrap = document.getElementById('mobile-cards-wrap');
         tbody.innerHTML = '';
+        mobileCardsWrap.innerHTML = '';
         
         if (rows.length === 0) {
             tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 30px; color: #6b7280;">Heç bir məlumat tapılmadı.</td></tr>';
+            mobileCardsWrap.innerHTML = '<div style="text-align:center; padding: 20px; color: #6b7280;">Heç bir məlumat tapılmadı.</div>';
         } else {
+            // --- 1. DESKTOP CƏDVƏL RENDERİ ---
             const frag = document.createDocumentFragment();
             rows.forEach(r => {
                 const tr = document.createElement('tr');
-                
                 const dText = r.dovlet !== null ? r.dovlet : '<span class="score null">—</span>';
                 const oText = r.odenisli !== null ? r.odenisli : '<span class="score null">—</span>';
 
@@ -328,9 +439,54 @@
                 frag.appendChild(tr);
             });
             tbody.appendChild(frag);
+
+            // --- 2. MOBİL KART RENDERİ (Təhsil Mərkəzinə görə Qruplaşdırma) ---
+            const groupedByCenter = rows.reduce((acc, row) => {
+                if (!acc[row.merkez]) acc[row.merkez] = [];
+                acc[row.merkez].push(row);
+                return acc;
+            }, {});
+
+            Object.keys(groupedByCenter).forEach(centerName => {
+                const centerGroup = document.createElement('div');
+                centerGroup.className = 'mobile-center-group';
+
+                let cardsHTML = `<h3 class="mobile-center-title">${escapeHtml(centerName)}</h3>`;
+
+                groupedByCenter[centerName].forEach(r => {
+                    const dText = r.dovlet !== null ? r.dovlet : '—';
+                    const oText = r.odenisli !== null ? r.odenisli : '—';
+
+                    cardsHTML += `
+                        <div class="mobile-card">
+                            <div class="mobile-card-header">
+                                <span class="mobile-card-title">${escapeHtml(r.ad)}</span>
+                                <span class="mobile-card-sira">№ ${escapeHtml(r.sira.toString())}</span>
+                            </div>
+                            <div class="mobile-card-scores">
+                                <div class="score-item">
+                                    <label>Dövlət sifarişi</label>
+                                    <span>${dText}</span>
+                                </div>
+                                <div class="score-item">
+                                    <label>Ödənişli</label>
+                                    <span>${oText}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                centerGroup.innerHTML = cardsHTML;
+                mobileCardsWrap.appendChild(centerGroup);
+            });
         }
 
-        document.getElementById('result-count').textContent = `${rows.length} / ${ALL_ROWS.length}`;
+        // Statistikada mobil görünüş üçün lazımdırsa konteyneri göstər/gizlət
+        const mobileWrap = document.getElementById('mobile-cards-wrap');
+        if (ALL_ROWS.length > 0) {
+            mobileWrap.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
+        }
     }
 
     // Təhlükəsizlik
