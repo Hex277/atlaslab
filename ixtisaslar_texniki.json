@@ -1,0 +1,908 @@
+[
+    {
+        "Təhsil Mərkəzi": "“Profi-Resurs” Peşə Tədris Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Avtomobil diaqnostikası və təmiri ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Avtomobil üzrə elektrik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Avtomobillərin təmiri çilingəri",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Dronların texniki xidməti və təmiri üzrə texnik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.8"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Elektrik qaz qaynaqçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.8"
+                }
+            },
+            {
+                "Sıra №": 13,
+                "İxtisasın adı": "İnformasiya texnologiyaları üzrə texniki dəstək mütəxəssisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.7"
+                }
+            },
+            {
+                "Sıra №": 15,
+                "İxtisasın adı": "Uçan aparatların cihaz avadanlıqları üzrə elektromexanik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "4.1"
+                }
+            },
+            {
+                "Sıra №": 16,
+                "İxtisasın adı": "Veb dizayner və proqram təminatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "2.1"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Bakı Turizm Peşə Məktəbi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.3"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Mehmanxana inzibatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "2.9"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Tədbirlərin təşkilatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.8",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Turizm sahəsində iaşə üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Turizm təşkilatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "3.3"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Emal Sənayesi üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "2.9"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.2",
+                    "Ödənişli": "2.7"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Geyim üzrə dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.4",
+                    "Ödənişli": "3.2"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Kimyəvi analiz laborantı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.8",
+                    "Ödənişli": "3.6"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Kompüterlərin təmiri və xidməti üzrə texnik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 10,
+                "İxtisasın adı": "Laborant-mikrobioloq",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.1",
+                    "Ödənişli": "4.0"
+                }
+            },
+            {
+                "Sıra №": 11,
+                "İxtisasın adı": "Logistika operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 12,
+                "İxtisasın adı": "Mebel ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 13,
+                "İxtisasın adı": "Neft və qazçıxarma operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.8",
+                    "Ödənişli": "2.9"
+                }
+            },
+            {
+                "Sıra №": 14,
+                "İxtisasın adı": "Neft-kimya sənayesi aparatçısı-operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 15,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "3.3"
+                }
+            },
+            {
+                "Sıra №": 16,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "3.2"
+                }
+            },
+            {
+                "Sıra №": 17,
+                "İxtisasın adı": "Rabitə avadanlıqlarının quraşdırıcısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "2.9",
+                    "Ödənişli": "3.6"
+                }
+            },
+            {
+                "Sıra №": 18,
+                "İxtisasın adı": "Telekommunikasiyada kompüter texnikasının istismarı üzrə operator",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 20,
+                "İxtisasın adı": "Yeraltı qaz kəmərlərinin təmiri və istismarı üzrə çilingər",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.4"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "İctimai İaşə və Xidmət üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "2.1",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Logistika operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "2.8",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Tədbirlərin təşkilatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "4.9"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Turizm sahəsində iaşə üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Mədəniyyət və Sənətkarlıq üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.6",
+                    "Ödənişli": "3.6"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "4.8"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Florist",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.3",
+                    "Ödənişli": "2.1"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Geyim üzrə dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.2",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "İşıq operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Kinomontajçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.3",
+                    "Ödənişli": "2.2"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.2",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 14,
+                "İxtisasın adı": "Tədbirlərin təşkilatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "2.9"
+                }
+            },
+            {
+                "Sıra №": 15,
+                "İxtisasın adı": "Veb dizayner və proqram təminatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "3.4"
+                }
+            },
+            {
+                "Sıra №": 16,
+                "İxtisasın adı": "Video çəkiliş üzrə operator",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.6",
+                    "Ödənişli": "3.4"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Rabitə və İnformasiya Texnologiyaları üzrə Bakı Dövlət Peşə Təhsili Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.3"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "İnformasiya texnologiyaları üzrə texniki dəstək mütəxəssisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.0",
+                    "Ödənişli": "3.7"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Kargüzarlıq və ofis xidmətləri üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.0",
+                    "Ödənişli": "3.5"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "2.8"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Rabitə quraşdırıcısı-kabelçi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.1",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Telekommunikasiyada kompüter texnikasının istismarı üzrə operator",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "3.7"
+                }
+            },
+            {
+                "Sıra №": 10,
+                "İxtisasın adı": "Veb dizayner və proqram təminatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Sənaye və İnnovasiyalar üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Avtomobil diaqnostikası və təmiri ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Avtomobil nəqliyyatı ilə beynəlxalq sərnişin və yük daşımaları üzrə operator",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Elektrik avadanlıqlarına xidmət və təmir üzrə elektrik montyoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.6",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Elektrik və hibrid avtomobillərin texniki qulluğu və təmiri üzrə texnik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.3",
+                    "Ödənişli": "3.2"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Elektronika ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "İnformasiya texnologiyaları üzrə texniki dəstək mütəxəssisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 10,
+                "İxtisasın adı": "Logistika operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 11,
+                "İxtisasın adı": "Mebel ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 12,
+                "İxtisasın adı": "Proqramla idarə olunan dəzgahların operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.2",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 13,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 14,
+                "İxtisasın adı": "Rəqəmsal inşaat üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 15,
+                "İxtisasın adı": "Sənayedə quraşdırma işləri üzrə usta",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 16,
+                "İxtisasın adı": "Tibbi avadanlıqların təmiri və xidməti elektromexaniki",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 17,
+                "İxtisasın adı": "Torna və frezer dəzgahların operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 18,
+                "İxtisasın adı": "Veb dizayner və proqram təminatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.2",
+                    "Ödənişli": "3.5"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Sənaye və Yüksək Texnologiyalar üzrə Sumqayıt Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.4",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Avtomobil üzrə elektrik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.4",
+                    "Ödənişli": "3.8"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.4",
+                    "Ödənişli": "4.1"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Elektrik avadanlıqlarına xidmət və təmir üzrə elektrik montyoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Elektrik qaz qaynaqçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Elektronika ustası",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Günəş panelləri quraşdırıcısı və təmirçisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.5"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "İnformasiya texnologiyaları üzrə texniki dəstək mütəxəssisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "3.4"
+                }
+            },
+            {
+                "Sıra №": 10,
+                "İxtisasın adı": "Kimyəvi analiz laborantı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "3.6"
+                }
+            },
+            {
+                "Sıra №": 11,
+                "İxtisasın adı": "Kompüterlərin təmiri və xidməti üzrə texnik",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.2",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 12,
+                "İxtisasın adı": "Proqramla idarə olunan dəzgahların operatoru",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.2",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 13,
+                "İxtisasın adı": "Rabitə avadanlıqlarının quraşdırıcısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.3"
+                }
+            },
+            {
+                "Sıra №": 14,
+                "İxtisasın adı": "Telekommunikasiyada kompüter texnikasının istismarı üzrə operator",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.4",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 15,
+                "İxtisasın adı": "Veb dizayner və proqram təminatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.8",
+                    "Ödənişli": "3.6"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Turizm və Sosial Xidmətlər üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.2"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.9",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "-",
+                    "Ödənişli": "2.9"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Mehmanxana inzibatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.1"
+                }
+            },
+            {
+                "Sıra №": 6,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Qida və içki üzrə nəzarətçi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Sığorta işçisi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.1",
+                    "Ödənişli": "3.0"
+                }
+            },
+            {
+                "Sıra №": 9,
+                "İxtisasın adı": "Turizm sahəsində iaşə üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "3.4"
+                }
+            },
+            {
+                "Sıra №": 10,
+                "İxtisasın adı": "Turizm təşkilatçısı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.6",
+                    "Ödənişli": "3.2"
+                }
+            }
+        ]
+    },
+    {
+        "Təhsil Mərkəzi": "Xidmət Sahələri üzrə Sumqayıt Dövlət Peşə Təhsil Mərkəzi",
+        "İxtisaslar": [
+            {
+                "Sıra №": 1,
+                "İxtisasın adı": "Aşpaz",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "3.4"
+                }
+            },
+            {
+                "Sıra №": 2,
+                "İxtisasın adı": "Bərbər-vizajist-manikürçü",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.7",
+                    "Ödənişli": "3.8"
+                }
+            },
+            {
+                "Sıra №": 3,
+                "İxtisasın adı": "Dərzi",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.0",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 4,
+                "İxtisasın adı": "Əməliyyatçı-mühasib",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.8",
+                    "Ödənişli": "3.7"
+                }
+            },
+            {
+                "Sıra №": 5,
+                "İxtisasın adı": "Kargüzarlıq və ofis xidmətləri üzrə mütəxəssis",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.5",
+                    "Ödənişli": "-"
+                }
+            },
+            {
+                "Sıra №": 7,
+                "İxtisasın adı": "Qənnadçı, şirniyyatçı",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "4.0",
+                    "Ödənişli": "3.2"
+                }
+            },
+            {
+                "Sıra №": 8,
+                "İxtisasın adı": "Qrafik dizayner",
+                "Tam orta təhsil bazasında": {
+                    "Dövlət sifarişi": "3.6",
+                    "Ödənişli": "3.0"
+                }
+            }
+        ]
+    }
+]

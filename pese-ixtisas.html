@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peşə Təhsili İxtisasları</title>
+    <style>
+        :root {
+            --bg: #f3f4f6;
+            --card: #ffffff;
+            --primary: #3b82f6;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+            --hover: #f9fafb;
+            --th-bg: #111827;
+            --th-text: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 90vh;
+        }
+
+        .header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: var(--text-main);
+        }
+
+        .upload-area {
+            padding: 40px;
+            text-align: center;
+            border: 2px dashed #9ca3af;
+            border-radius: 8px;
+            margin: 20px;
+            background: #f8fafc;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .upload-area:hover, .upload-area.dragover {
+            border-color: var(--primary);
+            background: #eff6ff;
+        }
+
+        .filters {
+            display: none;
+            padding: 16px 24px;
+            background: #f8fafc;
+            border-bottom: 1px solid var(--border);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .filter-group { display: flex; flex-direction: column; gap: 6px; }
+        .filter-group label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; }
+        
+        input, select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+        }
+        input:focus, select:focus { border-color: var(--primary); }
+
+        .btn-reset {
+            padding: 8px 16px;
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            align-self: flex-end;
+            height: 35px;
+        }
+        .btn-reset:hover { background: #dc2626; }
+
+        .table-wrap {
+            overflow-x: auto;
+            display: none;
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th {
+            background: var(--th-bg);
+            color: var(--th-text);
+            padding: 12px 16px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+        th:hover { background: #1f2937; }
+        
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:nth-child(even) { background: var(--hover); }
+        tr:hover { background: #f1f5f9; }
+
+        .center-name { font-weight: 600; color: #0369a1; }
+        .score { font-weight: bold; }
+        .score.null { color: #9ca3af; font-weight: normal; }
+
+        .sort-icon { margin-left: 5px; opacity: 0.5; }
+        th.sorted .sort-icon { opacity: 1; color: #60a5fa; }
+
+        .stats {
+            padding: 10px 24px;
+            font-size: 14px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            background: #fff;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>🎓 Peşə Təhsili İxtisasları</h1>
+        <input type="file" id="file-input" accept=".json" style="display: none;">
+        <button onclick="document.getElementById('file-input').click()" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+            JSON Seç
+        </button>
+    </div>
+
+    <div id="drop-zone" class="upload-area">
+        <h2 style="margin:0 0 10px 0; color: #475569;">Faylı bura sürükləyin və ya klikləyib seçin</h2>
+        <p style="margin:0; color: #64748b;">(Yalnız .json formatı)</p>
+    </div>
+
+    <div class="filters" id="filters">
+        <div class="filter-group">
+            <label>Axtarış (İxtisas / Kod)</label>
+            <input type="text" id="f-search" placeholder="Məs: Avtomatika...">
+        </div>
+        <div class="filter-group">
+            <label>Təhsil Mərkəzi</label>
+            <select id="f-merkez"><option value="">Hamısı</option></select>
+        </div>
+        <div class="filter-group">
+            <label>Dövlət sifarişi (Min - Max)</label>
+            <div style="display:flex; gap:8px;">
+                <input type="number" id="f-dovlet-min" placeholder="Min" style="width:50%;">
+                <input type="number" id="f-dovlet-max" placeholder="Max" style="width:50%;">
+            </div>
+        </div>
+        <div class="filter-group">
+            <label>Ödənişli (Min - Max)</label>
+            <div style="display:flex; gap:8px;">
+                <input type="number" id="f-odenisli-min" placeholder="Min" style="width:50%;">
+                <input type="number" id="f-odenisli-max" placeholder="Max" style="width:50%;">
+            </div>
+        </div>
+        <button class="btn-reset" id="btn-reset">Filtrləri Sıfırla</button>
+    </div>
+
+    <div class="table-wrap" id="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th data-col="merkez">Təhsil Mərkəzi <span class="sort-icon">↕</span></th>
+                    <th data-col="sira">Sıra № <span class="sort-icon">↕</span></th>
+                    <th data-col="ad">İxtisasın adı <span class="sort-icon">↕</span></th>
+                    <th data-col="dovlet">Dövlət sifarişi balı <span class="sort-icon">↕</span></th>
+                    <th data-col="odenisli">Ödənişli balı <span class="sort-icon">↕</span></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Data goes here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="stats" id="stats">
+        Göstərilir: <strong id="result-count">0</strong> ixtisas
+    </div>
+</div>
+
+<script>
+    let ALL_ROWS = [];
+    let sortCol = null;
+    let sortAsc = true;
+
+    // Sətirləri JSON-dan oxumaq
+    function loadJSON(json) {
+        ALL_ROWS = [];
+        
+        json.forEach(merkez => {
+            const mName = merkez["Təhsil Mərkəzi"] || "Naməlum";
+            
+            (merkez["İxtisaslar"] || []).forEach(ix => {
+                const basliq = ix["Tam orta təhsil bazasında"] || {};
+                
+                // Balı təmizləyən funksiya
+                const parseBal = (val) => {
+                    if (val === "-" || val === "–" || val === "" || val == null) return null;
+                    return parseFloat(val) || null;
+                };
+
+                ALL_ROWS.push({
+                    merkez: mName,
+                    sira: ix["Sıra №"] || "-",
+                    ad: ix["İxtisasın adı"] || "-",
+                    dovlet: parseBal(basliq["Dövlət sifarişi"]),
+                    odenisli: parseBal(basliq["Ödənişli"])
+                });
+            });
+        });
+
+        // Mərkəz Dropdown-u doldur
+        const merkezlər = [...new Set(ALL_ROWS.map(r => r.merkez))].sort();
+        const sel = document.getElementById('f-merkez');
+        sel.innerHTML = '<option value="">Hamısı</option>';
+        merkezlər.forEach(m => {
+            const o = document.createElement('option');
+            o.value = o.textContent = m;
+            sel.appendChild(o);
+        });
+
+        // UI-ı göstər
+        document.getElementById('drop-zone').style.display = 'none';
+        document.getElementById('filters').style.display = 'grid';
+        document.getElementById('table-wrap').style.display = 'block';
+        document.getElementById('stats').style.display = 'block';
+        
+        render();
+    }
+
+    // Filter və Sort
+    function render() {
+        const query = document.getElementById('f-search').value.toLowerCase().trim();
+        const fMerkez = document.getElementById('f-merkez').value;
+        const dMin = parseFloat(document.getElementById('f-dovlet-min').value) || null;
+        const dMax = parseFloat(document.getElementById('f-dovlet-max').value) || null;
+        const oMin = parseFloat(document.getElementById('f-odenisli-min').value) || null;
+        const oMax = parseFloat(document.getElementById('f-odenisli-max').value) || null;
+
+        // Filtrləmə
+        let rows = ALL_ROWS.filter(r => {
+            if (fMerkez && r.merkez !== fMerkez) return false;
+            
+            if (dMin !== null && (r.dovlet === null || r.dovlet < dMin)) return false;
+            if (dMax !== null && (r.dovlet === null || r.dovlet > dMax)) return false;
+            
+            if (oMin !== null && (r.odenisli === null || r.odenisli < oMin)) return false;
+            if (oMax !== null && (r.odenisli === null || r.odenisli > oMax)) return false;
+            
+            if (query) {
+                const hay = (r.ad + " " + r.sira).toLowerCase();
+                if (!hay.includes(query)) return false;
+            }
+            return true;
+        });
+
+        // Sıralama
+        if (sortCol) {
+            rows.sort((a, b) => {
+                let va = a[sortCol], vb = b[sortCol];
+                if (va === null) va = sortAsc ? Infinity : -Infinity;
+                if (vb === null) vb = sortAsc ? Infinity : -Infinity;
+                
+                if (typeof va === 'string') return sortAsc ? va.localeCompare(vb, 'az') : vb.localeCompare(va, 'az');
+                return sortAsc ? va - vb : vb - va;
+            });
+        }
+
+        // Cədvələ yaz
+        const tbody = document.getElementById('tbody');
+        tbody.innerHTML = '';
+        
+        if (rows.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 30px; color: #6b7280;">Heç bir məlumat tapılmadı.</td></tr>';
+        } else {
+            const frag = document.createDocumentFragment();
+            rows.forEach(r => {
+                const tr = document.createElement('tr');
+                
+                const dText = r.dovlet !== null ? r.dovlet : '<span class="score null">—</span>';
+                const oText = r.odenisli !== null ? r.odenisli : '<span class="score null">—</span>';
+
+                tr.innerHTML = `
+                    <td class="center-name">${escapeHtml(r.merkez)}</td>
+                    <td style="text-align:center; font-weight:bold;">${escapeHtml(r.sira.toString())}</td>
+                    <td>${escapeHtml(r.ad)}</td>
+                    <td class="score" style="text-align:center;">${dText}</td>
+                    <td class="score" style="text-align:center;">${oText}</td>
+                `;
+                frag.appendChild(tr);
+            });
+            tbody.appendChild(frag);
+        }
+
+        document.getElementById('result-count').textContent = `${rows.length} / ${ALL_ROWS.length}`;
+    }
+
+    // Təhlükəsizlik
+    function escapeHtml(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    // Event Dinləyicilər
+    document.querySelectorAll('thead th').forEach(th => {
+        th.addEventListener('click', () => {
+            const col = th.dataset.col;
+            if (sortCol === col) sortAsc = !sortAsc;
+            else { sortCol = col; sortAsc = true; }
+
+            document.querySelectorAll('thead th').forEach(t => {
+                t.classList.remove('sorted');
+                t.querySelector('.sort-icon').textContent = '↕';
+            });
+            th.classList.add('sorted');
+            th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
+            
+            render();
+        });
+    });
+
+    ['f-search', 'f-merkez', 'f-dovlet-min', 'f-dovlet-max', 'f-odenisli-min', 'f-odenisli-max'].forEach(id => {
+        document.getElementById(id).addEventListener('input', render);
+    });
+
+    document.getElementById('btn-reset').addEventListener('click', () => {
+        ['f-search', 'f-merkez', 'f-dovlet-min', 'f-dovlet-max', 'f-odenisli-min', 'f-odenisli-max'].forEach(id => {
+            document.getElementById(id).value = '';
+        });
+        sortCol = null; sortAsc = true;
+        document.querySelectorAll('thead th').forEach(t => {
+            t.classList.remove('sorted');
+            t.querySelector('.sort-icon').textContent = '↕';
+        });
+        render();
+    });
+
+    // Drag & Drop / Fayl Seçimi
+    const dz = document.getElementById('drop-zone');
+    const fi = document.getElementById('file-input');
+
+    dz.addEventListener('click', () => fi.click());
+    dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('dragover'); });
+    dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+    dz.addEventListener('drop', e => {
+        e.preventDefault();
+        dz.classList.remove('dragover');
+        handleFile(e.dataTransfer.files[0]);
+    });
+    fi.addEventListener('change', e => handleFile(e.target.files[0]));
+
+    function handleFile(file) {
+        if (!file || !file.name.endsWith('.json')) {
+            alert('Zəhmət olmasa düzgün .json faylı seçin!');
+            return;
+        }
+        const reader = new FileReader();
+        reader.onload = e => {
+            try {
+                loadJSON(JSON.parse(e.target.result));
+            } catch (err) {
+                alert('JSON faylı xarabdır və ya düzgün formatda deyil!');
+                console.error(err);
+            }
+        };
+        reader.readAsText(file, 'utf-8');
+    }
+    async function autoLoadLocalJSON() {
+        try {
+            const response = await fetch('ixtisaslar_texniki.json');
+            
+            if (response.ok) {
+                const jsonData = await response.json();
+                loadJSON(jsonData);
+            } else {
+                console.log("Qovluqda 'ixtisaslar_texniki.json' tapılmadı. Manual yükləmə ekranda qalır.");
+            }
+        } catch (error) {
+            console.log("Avtomatik oxunma mümkün olmadı. İstifadəçi faylı manual seçə bilər.", error);
+        }
+    }
+
+    // Səhifə yüklənəndə avtomatik oxumanı başlat
+    document.addEventListener('DOMContentLoaded', autoLoadLocalJSON);
+</script>
+
+</body>
+</html>
