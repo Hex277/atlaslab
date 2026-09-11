@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (abituriyentMenu && abituriyentHeader) {
       abituriyentMenu.classList.add('open');
-      abituriyentHeader.textContent = 'v';
+      abituriyentHeader.textContent = '';
   }
 
   if (window.innerWidth <= 768) {
