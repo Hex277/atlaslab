@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const telebeMenu = document.getElementById('telebe-menu');
     if (telebeMenu && telebeMenu.previousElementSibling) {
         telebeMenu.classList.add('open');
-        telebeMenu.previousElementSibling.querySelector('.arrow').textContent = 'v';
+        telebeMenu.previousElementSibling.querySelector('.arrow').textContent = '';
     }
 
     // ==========================================
