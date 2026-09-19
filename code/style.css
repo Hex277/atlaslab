@@ -998,15 +998,14 @@ button {
 
 /* --- Logo linki --- */
 #name-text {
-  display: block;
+  display: none;
   margin-bottom: 8px;
 }
-
-/* --- Kateqoriya başlıqları (Abituriyent, Tələbə) --- */
-#telebe-header {
+#kodlama-header {
   margin-top: 28px;
 }
-#abituriyent-header, #kodlama-header {
+/* --- Kateqoriya başlıqları (Abituriyent, Tələbə) --- */
+#abituriyent-header, #telebe-header {
   margin-top: 8px;
 }
 
@@ -1111,16 +1110,6 @@ button {
   background-color: var(--menu-item-hover);
   opacity: 1;
   padding-left: 15px;
-}
-
-/* --- Hover rəngləri: light / dark tema --- */
-body:not(.dark-theme) {
-  --menu-item-hover: rgba(0, 0, 0, 0.06);
-}
-
-body.dark-theme {
-  --menu-item-hover: rgba(255, 255, 255, 0.07);
-  --menu-item-hover: rgba(255, 255, 255, 0.07);
 }
 /* ==============================
    PREMIUM PLANS GRID STYLES

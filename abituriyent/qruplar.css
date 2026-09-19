@@ -167,6 +167,22 @@ th {
 h1 {
     margin-top: 90px;
 }
+.year-select {
+    font-size: inherit;     /* h1-in şrift ölçüsünü mənimsəyir */
+    font-family: inherit;   /* h1-in şrift növünü mənimsəyir */
+    font-weight: inherit;
+    color: inherit;         /* Mətnin rəngini qoruyur */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+}
+
+/* Açılan siyahının daxilindəki seçimlərin rəngi */
+.year-select option {
+    color: #000; 
+}
 
 .qrup-basliq {
     margin-top: 40px;
@@ -180,13 +196,15 @@ h1 {
 }
 
 /* ─── Table ─── */
+
 table {
     width: 100%;
+    min-width: 100%;
+    table-layout:fixed;
     border-collapse: collapse;
     margin-top: 30px;
     background: var(--surface);
     box-shadow: 0 0 10px rgba(20,18,16,0.07);
-    table-layout: fixed;
     border-radius: 12px;
 }
 
@@ -195,7 +213,6 @@ th {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid var(--border-raw);
-    word-wrap: break-word;
     font-size: 16px;
 }
 
@@ -213,6 +230,15 @@ tr:hover {
 tr.even-row {
     background-color: var(--surface2);
 }
+
+/* Qısa sütunlar (Təhsil forması, Dil, Alt qrup, Ballar) sıxılaraq yalnız mətn boyda yer tutur */
+td:not(:first-child),
+th:not(:first-child) {
+    white-space: nowrap;
+    width:10%;
+}
+
+
 
 /* ─── Inputs / Selects ─── */
 .score-range input,
@@ -382,7 +408,8 @@ button:hover {
 }
 
 #abituriyent-header,
-#telebe-header {
+#telebe-header,
+#kodlama-header {
     cursor: default;
     font-size: 19px;
     display: flex;
@@ -445,12 +472,14 @@ button:hover {
 #abituriyent-header {
   margin-top: 28px;
 }
-#telebe-header {
+#telebe-header,
+#kodlama-header {
   margin-top: 8px;
 }
 
 #abituriyent-header,
-#telebe-header {
+#telebe-header,
+#kodlama-header {
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
@@ -468,7 +497,8 @@ button:hover {
 }
 
 #abituriyent-header:hover,
-#telebe-header:hover {
+#telebe-header:hover,
+#kodlama-header:hover {
   background-color: var(--menu-item-hover);
   opacity: 0.9;
 }
@@ -493,7 +523,8 @@ button:hover {
 
 /* --- Alt menyu konteynerlər --- */
 #abituriyent-menu,
-#telebe-menu {
+#telebe-menu,
+#kodlama-menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease-in-out;
@@ -505,7 +536,8 @@ button:hover {
 }
 
 #abituriyent-menu.open,
-#telebe-menu.open {
+#telebe-menu.open,
+#kodlama-menu.open {
   max-height: 500px;
   padding-top: 3px;
   padding-bottom: 6px;
@@ -1234,7 +1266,7 @@ div[data-v-77565f88] {
         padding-left: 10px;
     }
     #abituriyent-header {
-        margin-top: 40px;
+        margin-top: 28px;
     }
 
     .hidden {

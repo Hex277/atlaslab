@@ -597,8 +597,8 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
 if (window.location.pathname.endsWith("statistics.html")) {
 
     let myChart = null;
+    let currentChartType = 'total'; // 'total' | 'code' | 'quiz'
 
-    // Kliyenti hər dəfə təhlükəsiz şəkildə götürmək üçün köməkçi funksiya
     const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
 
     async function loadUserDashboard(userId) {
@@ -614,6 +614,7 @@ if (window.location.pathname.endsWith("statistics.html")) {
         if (error || !data) return;
 
         document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+        document.getElementById('totalCode').innerText = data.totalCode || 0; // sütun adını öz DB-nlə tutuşdur
         document.getElementById('eloValue').innerText = data.elo_rating || 1000;
         document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
 
@@ -627,117 +628,107 @@ if (window.location.pathname.endsWith("statistics.html")) {
         document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
     }
 
-    async function loadActivityChart(userId) {
+    function chartLabelFor(type) {
+        if (type === 'code') return 'Kodlama Sayı';
+        if (type === 'quiz') return 'Sınaq Sayı';
+        return 'Ümumi Fəaliyyət';
+    }
+
+    async function fetchHistoryRows(client, table, dateCol, countCol, userId, startDateStr) {
+        let query = client.from(table).select(`${dateCol}, ${countCol}`).eq('user_id', userId);
+        if (startDateStr) query = query.gte(dateCol, startDateStr);
+        const { data, error } = await query;
+        if (error) { console.error(`${table} fetch error:`, error); return []; }
+        return data || [];
+    }
+
+    async function loadActivityChart(userId, type = currentChartType) {
         const client = getSupabase();
         if (!client) return;
 
-        // 1. Bazar ertəsindən Bazara qədər olan etiketlər
         const fixedLabels = ['B.e', 'Ç.a', 'Ç', 'C.a', 'C', 'Ş', 'B'];
-
-        // Bütün günlər üçün başlanğıc dəyəri 0 qoyuruq (0 xətti görünsün deyə)
         let countsData = [0, 0, 0, 0, 0, 0, 0];
 
-        // 2. Bu həftənin Bazar ertəsinin tarixini tapırıq
         const now = new Date();
-        // getDay(): 0=Bazar, 1=B.e... Bazar gününü 7 kimi qəbul edirik ki, geriyə hesablaya bilək
         const currentDayOfWeek = now.getDay() === 0 ? 7 : now.getDay();
-
         const monday = new Date(now);
-        monday.setDate(now.getDate() - currentDayOfWeek + 1); // Bazar ertəsinə qayıdırıq
-
+        monday.setDate(now.getDate() - currentDayOfWeek + 1);
         const startOfWeekStr = `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
 
-        // 3. Bazar ertəsindən sonrakı (bu həftəki) dataları çəkirik
-        const { data, error } = await client
-            .from('quiz_history')
-            .select('quiz_date, quiz_count')
-            .eq('user_id', userId)
-            .gte('quiz_date', startOfWeekStr);
-
-        if (error) {
-            console.error("Chart data error:", error);
-            return;
-        }
-
-        // 4. Əgər data varsa, onu sabit günlərə yerləşdiririk
-        if (data && data.length > 0) {
-            data.forEach(item => {
-                const parts = item.quiz_date.split('-');
+        const addToCounts = (rows, dateCol, countCol) => {
+            rows.forEach(item => {
+                const parts = item[dateCol].split('-');
                 const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-
-                // Həftənin hansı günüdür? (0=Bazar, 1=B.e)
                 let dayIndex = dateObj.getDay();
-                // JS-də Bazar(0) olduğu üçün onu 6 edirik, qalanları 1 çıxırıq (B.e(1) -> 0 olur)
                 dayIndex = (dayIndex === 0) ? 6 : dayIndex - 1;
-
-                // Həmin günün sayını massivə yazırıq
-                countsData[dayIndex] = item.quiz_count;
+                countsData[dayIndex] += Number(item[countCol]) || 0;
             });
+        };
+
+        if (type === 'quiz' || type === 'total') {
+            const rows = await fetchHistoryRows(client, 'quiz_history', 'quiz_date', 'quiz_count', userId, startOfWeekStr);
+            addToCounts(rows, 'quiz_date', 'quiz_count');
         }
-        renderChart(fixedLabels, countsData);
+        if (type === 'code' || type === 'total') {
+            const rows = await fetchHistoryRows(client, 'code_history', 'code_date', 'code_count', userId, startOfWeekStr);
+            addToCounts(rows, 'code_date', 'code_count');
+        }
+
+        renderChart(fixedLabels, countsData, chartLabelFor(type));
     }
+
     async function loadLeaderboard(currentUserId) {
-    const client = getSupabase();
-    if (!client) return;
+        const client = getSupabase();
+        if (!client) return;
 
-    // 1. Top 30 istifadəçini çəkirik
-    const { data: statsData, error: statsError } = await client
-        .from('user_stats')
-        .select('*')
-        .order('elo_rating', { ascending: false })
-        .limit(30);
+        const { data: statsData, error: statsError } = await client
+            .from('user_stats')
+            .select('*')
+            .order('elo_rating', { ascending: false })
+            .limit(30);
 
-    if (statsError || !statsData) return;
+        if (statsError || !statsData) return;
 
-    // 2. Liderlərin ID-lərini massivə yığırıq
-    const userIds = statsData.map(row => row.user_id);
+        const userIds = statsData.map(row => row.user_id);
 
-    // 3. YENİLİK: Təhlükəsiz virtual cədvəldən yalnız aktiv premium ID-ləri çəkirik
-    const { data: premiumData, error: premiumError } = await client
-        .from('aktiv_premiumlar')
-        .select('user_id')
-        .in('user_id', userIds);
+        const { data: premiumData, error: premiumError } = await client
+            .from('aktiv_premiumlar')
+            .select('user_id')
+            .in('user_id', userIds);
 
-    // Aktiv premiumların ID-lərini sürətli axtarış (Set) üçün hazırlayırıq
-    const activePremiumUserIds = new Set();
-    if (!premiumError && premiumData) {
-        premiumData.forEach(p => activePremiumUserIds.add(p.user_id));
-    }
-
-    const tbody = document.getElementById('leaderboardBody');
-    if (!tbody) return;
-    tbody.innerHTML = '';
-
-    // 4. Cədvəli render edirik
-    statsData.forEach((row, index) => {
-        const accuracy = row.total_answered_questions > 0
-            ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
-            : 0;
-
-        const isMe = row.user_id === currentUserId;
-        let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
-        
-        if (isMe) {
-            nameToShow += ' (Siz)';
+        const activePremiumUserIds = new Set();
+        if (!premiumError && premiumData) {
+            premiumData.forEach(p => activePremiumUserIds.add(p.user_id));
         }
 
-        // Bizim virtual cədvəldən gələn ID-lər arasında bu istifadəçi var?
-        const isPremium = activePremiumUserIds.has(row.user_id);
-        
-        // Əgər premiumdursa, yanına sənin istədiyin CSS klası olan yazını əlavə edirik
-        const premiumBadge = isPremium ? `<div class="lb-premium-text-bg" id="lb-premium-text"><p>Premium</p></div>` : '';
+        const tbody = document.getElementById('leaderboardBody');
+        if (!tbody) return;
+        tbody.innerHTML = '';
 
-        tbody.innerHTML += `
-            <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
-                <td>${index + 1}</td>
-                <td>${nameToShow} ${premiumBadge}</td> 
-                <td>${row.elo_rating || 1000}</td>
-                <td>${accuracy}%</td>
-            </tr>
-        `;
-    });
-}
-    function renderChart(labels, counts) {
+        statsData.forEach((row, index) => {
+            const accuracy = row.total_answered_questions > 0
+                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100)
+                : 0;
+
+            const isMe = row.user_id === currentUserId;
+            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
+            if (isMe) nameToShow += ' (Siz)';
+
+            const isPremium = activePremiumUserIds.has(row.user_id);
+            const premiumBadge = isPremium ? `<div class="lb-premium-text-bg" id="lb-premium-text"><p>Premium</p></div>` : '';
+
+            tbody.innerHTML += `
+                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
+                    <td>${index + 1}</td>
+                    <td>${nameToShow} ${premiumBadge}</td>
+                    <td>${row.elo_rating || 1000}</td>
+                    <td>${accuracy}%</td>
+                </tr>
+            `;
+        });
+    }
+
+    function renderChart(labels, counts, label = 'Ümumi Fəaliyyət') {
         const canvas = document.getElementById('weeklyActivityChart');
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
@@ -746,12 +737,8 @@ if (window.location.pathname.endsWith("statistics.html")) {
             myChart.destroy();
         }
 
-        // DÜZƏLİŞ: Dark Mode-u düzgün təyin edirik
         const isDarkMode = document.body.classList.contains('dark-theme') || document.body.classList.contains('dark-mode');
-
-        // Tünd moddasa ağ yazılar, işıqlı moddasa tünd boz yazılar
         const labelColor = isDarkMode ? '#ffffff' : '#333333';
-        // Arxadakı xətlərin rəngini də modlara uyğunlaşdırırıq
         const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
 
         myChart = new Chart(ctx, {
@@ -759,7 +746,7 @@ if (window.location.pathname.endsWith("statistics.html")) {
             data: {
                 labels: labels,
                 datasets: [{
-                    label: 'Quiz Sayı',
+                    label: label,
                     data: counts,
                     borderColor: '#B89A5A',
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -767,97 +754,77 @@ if (window.location.pathname.endsWith("statistics.html")) {
                     tension: 0,
                     pointRadius: 4,
                     pointBackgroundColor: '#B89A5A',
-                    pointHoverRadius: 6 // Üzərinə gəldikdə dairənin bir az böyüməsi üçün (opsional)
+                    pointHoverRadius: 6
                 }]
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: false, // Div-ə görə formalaşması üçün
-
-                // YENİ ƏLAVƏ EDİLƏN HİSSƏ:
-                interaction: {
-                    mode: 'index',
-                    intersect: false, // Mütləq kəsişmə tələbini ləğv edir
-                },
-
-                plugins: {
-                    legend: { display: false }
-                    // İstəyə görə hover olduqda şaquli bir xətt çəkmək üçün tooltip ayarlarını da burdan genişləndirə bilərsiniz
-                },
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: { legend: { display: false } },
                 scales: {
                     y: {
                         beginAtZero: true,
-                        ticks: {
-                            color: labelColor,
-                            stepSize: 1
-                        },
-                        grid: { color: gridColor } // Şəbəkə rəngini dinamik etdik
+                        ticks: { color: labelColor, stepSize: 1 },
+                        grid: { color: gridColor }
                     },
                     x: {
-                        ticks: {
-                            color: labelColor
-                        },
+                        ticks: { color: labelColor },
                         grid: { display: false }
                     }
                 }
             }
         });
     }
+
     async function handleChartFilterChange(userId) {
         const filterSelect = document.getElementById('chart-filter-select');
+        const typeSelect = document.getElementById('chart-type-select');
         const premiumOverlay = document.getElementById('premiumOverlay');
         const canvas = document.getElementById('weeklyActivityChart');
-
         if (!filterSelect) return;
 
-        // Sənin localStorage üzərindəki premium yoxlanışın
         const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
         const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
 
-        filterSelect.addEventListener('change', async (e) => {
-            const selectedValue = e.target.value;
+        async function reload() {
+            const period = filterSelect.value;
+            currentChartType = typeSelect ? typeSelect.value : 'total';
 
-            if (selectedValue === 'all') {
+            if (period === 'all') {
                 if (!isPremium) {
-                    // Premium deyilsə: Bluru göstər
                     canvas?.classList.add('blurred-chart');
                     premiumOverlay?.classList.remove('hidden');
                 } else {
-                    // Premiumdursa: Bluru qaldır və məlumatları yüklə
                     canvas?.classList.remove('blurred-chart');
                     premiumOverlay?.classList.add('hidden');
-                    await loadAllTimeActivityChart(userId);
+                    await loadAllTimeActivityChart(userId, currentChartType);
                 }
             } else {
-                // Həftəlik seçim: Standart vəziyyət
                 canvas?.classList.remove('blurred-chart');
                 premiumOverlay?.classList.add('hidden');
-                await loadActivityChart(userId);
+                await loadActivityChart(userId, currentChartType);
             }
-        });
+        }
+
+        filterSelect.addEventListener('change', reload);
+        if (typeSelect) typeSelect.addEventListener('change', reload);
     }
-    async function loadAllTimeActivityChart(userId) {
-        const client = window.globalSupabaseClient || window.supabaseClient;
+
+    async function loadAllTimeActivityChart(userId, type = currentChartType) {
+        const client = getSupabase();
         if (!client) return;
 
         try {
-            // 1. Məlumatları çəkirik
-            const [{ data: authData }, { data: historyData, error }] = await Promise.all([
-                client.auth.getUser(),
-                client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId)
-            ]);
-
-            if (error) throw error;
+            const { data: authData } = await client.auth.getUser();
             const user = authData?.user;
             if (!user) return;
 
             const startDate = new Date(user.created_at);
             const endDate = new Date();
             const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
-
             const monthlyTotals = {};
 
-            // 2. Qrafik üçün ayları hazırlayırıq (Boş aylar 0 olaraq qalır)
             let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
             while (tempDate <= endDate) {
                 const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
@@ -865,34 +832,30 @@ if (window.location.pathname.endsWith("statistics.html")) {
                 tempDate.setMonth(tempDate.getMonth() + 1);
             }
 
-            // 3. Tarixçəni hesablayırıq
-            if (historyData) {
-                historyData.forEach(item => {
-                    // UTC istifadə edərək vaxt zonası sürüşməsinin qarşısını alırıq
-                    const d = new Date(item.quiz_date);
-                    const monthIndex = d.getUTCMonth();
-                    const year = d.getUTCFullYear();
-                    const label = `${monthNames[monthIndex]} ${year}`;
-
-                    if (monthlyTotals[label] !== undefined) {
-                        monthlyTotals[label] += Number(item.quiz_count);
-                    }
+            const addMonthly = (rows, dateCol, countCol) => {
+                rows.forEach(item => {
+                    const d = new Date(item[dateCol]);
+                    const label = `${monthNames[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+                    if (monthlyTotals[label] !== undefined) monthlyTotals[label] += Number(item[countCol]) || 0;
                 });
+            };
+
+            if (type === 'quiz' || type === 'total') {
+                const { data } = await client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId);
+                addMonthly(data || [], 'quiz_date', 'quiz_count');
+            }
+            if (type === 'code' || type === 'total') {
+                const { data } = await client.from('code_history').select('code_date, code_count').eq('user_id', userId);
+                addMonthly(data || [], 'code_date', 'code_count');
             }
 
-            // DEBUG: Konsolda yoxlayaq görək cəmi neçə tapdı
-            console.log("Aylıq hesablamalar:", monthlyTotals);
-            const totalInChart = Object.values(monthlyTotals).reduce((a, b) => a + b, 0);
-            console.log("Chart-dakı cəmi quiz sayı:", totalInChart);
-
-            // 4. Chart-ı render edirik
-            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals));
+            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals), chartLabelFor(type));
 
         } catch (err) {
             console.error("Aylıq statistika xətası:", err.message);
         }
     }
-    // ƏSAS İŞƏSALMA
+
     setTimeout(async () => {
         const client = getSupabase();
         if (!client) return;
@@ -905,12 +868,9 @@ if (window.location.pathname.endsWith("statistics.html")) {
 
         const currentUserId = user.id;
 
-        // Sənin mövcud yükləmələrin
         loadUserDashboard(currentUserId);
-        loadActivityChart(currentUserId); // Default olaraq həftəlik yüklənir
+        loadActivityChart(currentUserId);
         loadLeaderboard(currentUserId);
-
-        // YENİ: Filtr dəyişikliyini dinləyən funksiyanı çağırırıq
         handleChartFilterChange(currentUserId);
 
     }, 100);

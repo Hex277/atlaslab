@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Haqqımızda | atlaslab.az - İnnovativ Təhsil Platforması</title>
-    <meta name="description" content="Təhsilinizi stresi yox, inkişafa çevirin. atlaslab.az tələbələrə məntiqi öyrənmə metodları və obyektiv qiymətləndirmə ilə akademik hədəflərinə çatmağa kömək edir.">
-    <meta name="keywords" content="ixtisastap, haqqımızda, təhsil platforması, tələbə dəstəyi, innovativ öyrənmə, Azərbaycan təhsili, akademik hədəflər">
+    <meta name="description" content="Təhsilinizi stresə yox, inkişafa çevirin. atlaslab.az tələbələrə məntiqi öyrənmə metodları və obyektiv qiymətləndirmə ilə akademik hədəflərinə çatmağa kömək edir.">
+    <meta name="keywords" content="haqqımızda, təhsil platforması, tələbə dəstəyi, innovativ öyrənmə, Azərbaycan təhsili, akademik hədəflər">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Haqqımızda | atlaslab.az">
     <meta property="og:description" content="Təhsilinizi stresi yox, inkişafa çevirin. atlaslab.az ilə ənənəvi hazırlıq metodlarından uzaqlaşın və potensialınızı kəşf edin.">
     <meta property="og:image" content="https://atlaslab.az/ixtisastap.jpg">
-    <meta property="og:url" content="https://atlaslab.az/telebe/aboutus.html">
+    <meta property="og:url" content="https://atlaslab.az/code/aboutus.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Haqqımızda | atlaslab.az">
     <meta name="twitter:description" content="Əzbərləməyi dayandır, öyrənməyə başla! atlaslab.az tələbələr üçün yeni nəsil öyrənmə mühitidir.">
-    <link rel="canonical" href="https://atlaslab.az/telebe/aboutus.html">
+    <link rel="canonical" href="https://atlaslab.az/code/aboutus.html">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
@@ -83,9 +83,34 @@
         
     </div>
     <nav id="menu-bar">
-        <a href="../  index.html" id="name-text">
+        <a href="isindex.html" id="name-text">
             <img src="../images/logo-crop-w.png" class="logopng" alt="SiteName" style="width: 200px;">
         </a>
+        <div class="menu-header" id="kodlama-header" onclick="toggleMenu('kodlama-menu', this)">
+            Kodlama <span class="arrow"></span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="kodlama-menu">
+            <a href="./problems-menu.html">Problemlər</a>
+            <a href="./statistics.html">Statistika</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow"></span>
+        </div>
+        
+        <div id="abituriyent-menu" class="menu-bar anim-menu">
+            <a href="../abituriyent/1ciqrup.html" data-i18n="group1">1ci Qrup</a>
+            <a href="../abituriyent/2ciqrup.html" data-i18n="group2">2ci Qrup</a>
+            <a href="../abituriyent/3ciqrup.html" data-i18n="group3">3cü Qrup</a>
+            <a href="../abituriyent/4ciqrup.html" data-i18n="group4">4cü Qrup</a>
+            <a href="../abituriyent/specializations.html" data-i18n="aboutspec">İxtisaslar haqqında</a>
+            <a href="../abituriyent/balhesab.html" data-i18n="scorecalc">Bal hesablanması</a>
+            <a href="../abituriyent/about.html" data-i18n="about">Haqqımızda</a>
+        </div>
+
         <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
             Tələbə <span class="arrow"></span>
         </div>
@@ -97,31 +122,6 @@
             <a href="../telebe/aboutus.html">Haqqımızda və əlaqə</a>
             <a href="../telebe/premium.html">Premium abunəlik</a>
         </div>
-        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
-            Abituriyent <span class="arrow"></span>
-        </div>
-        
-        <div id="abituriyent-menu" class="menu-bar anim-menu">
-            <a href="./1ciqrup.html" data-i18n="group1">1ci Qrup</a>
-            <a href="./2ciqrup.html" data-i18n="group2">2ci Qrup</a>
-            <a href="./3ciqrup.html" data-i18n="group3">3cü Qrup</a>
-            <a href="./4ciqrup.html" data-i18n="group4">4cü Qrup</a>
-            <a href="./specializations.html" data-i18n="aboutspec">İxtisaslar Haqqında</a>
-            <a href="./balhesab.html" data-i18n="scorecalc">Balların Hesablanması</a>
-            <a href="./about.html" data-i18n="about">Haqqımızda və Əlaqə</a>
-        </div>
-        
-        <div class="menu-header" id="kodlama-header" onclick="toggleMenu('kodlama-menu', this)">
-            Kodlama <span class="arrow"></span>
-        </div>
-        
-        <div class="menu-bar anim-menu" id="kodlama-menu">
-            <a href="../code/problems-menu.html">Problemlər</a>
-            <a href="../code/statistics.html">Statistika</a>
-            <a href="../code/profile.html">Profil</a>
-            <a href="../code/aboutus.html">Haqqımızda və əlaqə</a>
-            <a href="../code/premium.html">Premium abunəlik</a>
-        </div>
         
     </nav>
     <div class="main-background">
@@ -129,13 +129,10 @@
             <div class="infotext-bg">
                 <h1 id="header-aboutus">Haqqımızda</h1>
                 
-                <p><strong>atlaslab.az</strong> müasir təhsilin tələblərinə cavab verən, tələbələrin akademik inkişafına dəstək olmaq məqsədilə yaradılmış innovativ öyrənmə platformasıdır. Bizim əsas missiyamız tədris prosesini sadəcə imtahandan keçmək məcburiyyətindən çıxararaq, onu daha şüurlu, səmərəli və qalıcı bir təcrübəyə çevirməkdir.</p>
+                <p><strong>atlaslab.az</strong> müasir təhsilin tələblərinə cavab verən, tələbələrin həm akademik, həm də rəqəmsal inkişafına dəstək olmaq məqsədilə yaradılmış innovativ öyrənmə platformasıdır. Bizim əsas missiyamız tədris prosesini sadəcə imtahandan keçmək məcburiyyətindən çıxararaq, onu daha şüurlu, səmərəli və qalıcı bir təcrübəyə çevirməkdir. "Əzbərləməyi dayandır, öyrənməyə başla" prinsipinə sadiq qalaraq, biz ənənəvi və yorucu hazırlıq metodlarından uzaqlaşmağı təşviq edirik. Python və digər populyar proqramlaşdırma dillərini seçərək, real alqoritmik tapşırıqları həll etmək, kodlaşdırma məntiqini dərindən mənimsəmək və mürəkkəb problemlərin həlli yollarını tapmaq artıq daha əlçatandır.</p>
+
+                <p>Layihəmiz tələbələrə istər fənn hazırlığında, istərsə də proqramlaşdırmada öz biliklərini obyektiv şəkildə qiymətləndirmək, inkişaf dinamikalarını izləmək və qarşılarına qoyduqları hədəflərə daha inamla addımlamaq imkanı yaradır. Biz hər bir istifadəçimizin potensialını ən yüksək səviyyəyə çatdırması üçün sağlam və rəqabətədavamlı bir mühit formalaşdırmağa çalışırıq. Dəyərli vaxtınızı ən effektiv şəkildə idarə etmək, stresdən uzaq və daha məqsədyönlü bir təhsil formalaşdırmaq üçün daim sizinləyik. Peşəkar gələcəyinizə gedən yolda etibarlı bələdçiniz olmaqdan qürur duyuruq.</p>
                 
-                <p><em>"Əzbərləməyi dayandır, öyrənməyə başla"</em> prinsipinə sadiq qalaraq, biz ənənəvi və yorucu hazırlıq metodlarından uzaqlaşmağı təşviq edirik. Məqsədimiz informasiyanın mexaniki şəkildə yadda saxlanılmasından daha çox, onun məntiqi mahiyyətinin dərk edilməsinə yönəlib.</p>
-                
-                <p>Layihəmiz tələbələrə öz biliklərini obyektiv şəkildə qiymətləndirmək, inkişaf dinamikalarını izləmək və qarşılarına qoyduqları akademik hədəflərə daha inamla addımlamaq imkanı yaradır. Biz hər bir istifadəçimizin potensialını ən yüksək səviyyəyə çatdırması üçün sağlam və rəqabətədavamlı bir mühit formalaşdırmağa çalışırıq.</p>
-                
-                <p>Dəyərli vaxtınızı ən effektiv şəkildə idarə etmək, stresdən uzaq və daha məqsədyönlü bir təhsil formalaşdırmaq üçün daim sizinləyik. Peşəkar gələcəyinizə gedən yolda etibarlı bələdçiniz olmaqdan qürur duyuruq.</p>
                 <div class="contact-section">
                     <h1 id="header-aboutus">Əlaqə</h1>
                     <p><strong>E-poçt:</strong> <a href="mailto:atlaslab.az@gmail.com">atlaslab.az@gmail.com</a></p>

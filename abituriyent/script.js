@@ -21,17 +21,73 @@ document.addEventListener("DOMContentLoaded", () => {
           }, 1500);
       }
   });
-function loadData() {
-    fetch(jsonFile).then(e => {
-        if (!e.ok) throw Error(`Failed to fetch ${jsonFile}: ${e.statusText}`);
-        return e.json()
-    }).then(e => {
-        globalData = e, initPage()
-    }).catch(e => {
-        console.error("Error loading data:", e)
-    })
-}
+function transformSupabaseData(rows) {
+    const uniMap = new Map();
 
+    rows.forEach(row => {
+        const uniName = row.universitet || "Universitet";
+        if (!uniMap.has(uniName)) {
+            uniMap.set(uniName, {
+                universitet: uniName,
+                universitet_en: row.universitet_en || uniName,
+                yer: row.yer || "", // Xətanı həll edən əsas sahə
+                ixtisaslar: []
+            });
+        }
+
+        uniMap.get(uniName).ixtisaslar.push({
+            ad: row.ad,
+            ad_en: row.ad_en,
+            tehsil_formasi: row.tehsil_formasi,
+            tehsil_formasi_en: row.tehsil_formasi_en,
+            dil: row.dil,
+            dil_en: row.dil_en,
+            alt_qrup: row.alt_qrup,
+            bal_pulsuz: row.bal_pulsuz,
+            bal_pullu: row.bal_pullu
+        });
+    });
+
+    return [{ universitetler: Array.from(uniMap.values()) }];
+}
+const yearSwitcher = document.getElementById("yearSwitcher");
+
+if (yearSwitcher) {
+    yearSwitcher.addEventListener("change", (event) => {
+        const selectedYear = event.target.value;
+        
+        // Yeni seçilmiş ili məlumat yükləmə funksiyasına ötürürük
+        loadData(selectedYear);
+    });
+}
+function loadData(selectedYear = "2026-2027") {
+    const groupMatch = window.location.pathname.match(/(\d)ciqrup\.html$/);
+    const groupNumber = groupMatch ? groupMatch[1] : "1";
+    
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    
+    const tableName = `qrup${groupNumber}-${selectedYear}`;
+    const url = `${supabaseUrl}/rest/v1/${tableName}?select=*`;
+
+    fetch(url, {
+        headers: {
+            "apikey": supabaseKey,
+            "Authorization": `Bearer ${supabaseKey}`
+        }
+    })
+    .then(res => {
+        if (!res.ok) throw Error(`Xəta baş verdi: ${res.statusText}`);
+        return res.json();
+    })
+    .then(data => {
+        globalData = transformSupabaseData(data);
+        initPage();
+    })
+    .catch(e => {
+        console.error("Məlumat yüklənərkən xəta baş verdi:", e);
+    });
+}
 function initPage() {
     let e = localStorage.getItem("selectedLanguage") || "az",
         a = document.getElementById("group-title");
@@ -209,6 +265,7 @@ function filterData(data, {
 
     return data.map(group => {
         let filteredUniversities = group.universitetler.map(univ => {
+            const uniYer = univ.yer ? univ.yer.toLowerCase() : "";
             if (locationValue && !univ.yer.toLowerCase().includes(locationValue.toLowerCase())) return null;
 
             let filteredIxtisaslar = univ.ixtisaslar.filter(ixtisas => {
