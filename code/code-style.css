@@ -766,12 +766,21 @@ button:disabled {
 /* Page header */
 .page-header { margin-bottom: 28px; }
 .page-header h1 {
-  font-size: 24px; font-weight: 800;
+  font-size: 26px; font-weight: 800;
   letter-spacing: -0.02em; margin-bottom: 8px;
 }
 .page-header p {
-  font-size: 14px; line-height: 1.7;
-  color: var(--muted); max-width: 600px;
+    font-style: italic; /* Sitatın daha estetik, fəlsəfi görünməsi üçün */
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.quote-author {
+    display: block; /* Müəllif adını mətndən ayırıb yeni sətrə keçirir */
+    text-align: right; /* Sağa yaslayır */
+    font-weight: bold; /* Qalın şriftlə yazır */
+    margin-top: 8px; /* Mətndən bir az fasilə buraxır */
+    font-style: normal; /* Müəllif adının kursiv olmasının qarşısını alır */
 }
 
 /* Stats bar */

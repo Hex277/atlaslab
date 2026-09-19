@@ -27,6 +27,41 @@ const statSolved   = document.getElementById('stat-solved');
 const statEasy     = document.getElementById('stat-easy');
 const statMedium   = document.getElementById('stat-medium');
 const statHard     = document.getElementById('stat-hard');
+const aforizmler = [
+    { text: "Təhsil dünyanı dəyişdirmək üçün istifadə edə biləcəyiniz ən güclü silahdır.", author: "Nelson Mandela" },
+    { text: "Biliyə qoyulan sərmayə həmişə ən yüksək gəliri gətirir.", author: "Benjamin Franklin" },
+    { text: "Təhsilin məqsədi boş bir ağlı açıq bir ağılla əvəz etməkdir.", author: "Malcolm Forbes" },
+    { text: "Elm öyrənmək hər bir müsəlman üçün fərzdir.", author: "Hədisi-şərif" },
+    { text: "Bilmək kifayət deyil, tətbiq etmək lazımdır; istəmək kifayət deyil, əməl etmək lazımdır.", author: "Iohan Volfqanq Höte" },
+    { text: "Təxəyyül biliyin özündən daha vacibdir, çünki bilik məhduddur, təxəyyül isə bütün dünyanı əhatə edir.", author: "Albert Eynşteyn" },
+    { text: "Mən yalnız onu bilirəm ki, heç nə bilmirəm.", author: "Sokrat" },
+    { text: "Mütaliə zehin üçün nədirsə, idman bədən üçün odur.", author: "Riçard Stil" },
+    { text: "Yeni bir şey öyrənməyi dayandıran insan qocalmışdır, istər iyirmi yaşında olsun, istər səksən.", author: "Henri Ford" },
+    { text: "Kitabsız ev pəncərəsiz otaq kimidir.", author: "Horace Mann" },
+    { text: "Bilik güclüdür, çünki o insana yeni imkanlar və yeni yollar açır.", author: "Frensis Bekon" },
+    { text: "Öyrətmək öyrənməyin ikinci dəfə təkrarıdır.", author: "Jozef Juber" },
+    { text: "Bir uşaq, bir müəllim, bir kitab və bir qələm dünyanı dəyişə bilər.", author: "Malala Yusufzai" },
+    { text: "Həyatda ən həqiqi yol göstərən elm və fəndir.", author: "Mustafa Kamal Atatürk" },
+    { text: "Təhsilli insan təhsilsiz insandan yaşayan ölüdən fərqləndiyi qədər fərqlənir.", author: "Aristotel" },
+    { text: "Kim bir məktəb açırsa, əslində bir həbsxananın qapısını bağlayır.", author: "Viktor Hüqo" },
+    { text: "Ağıl doldurulası qab deyil, alovlandırılası oddur.", author: "Plutarx" },
+    { text: "Təhsil həyata hazırlıq deyil, təhsil həyatın özüdür.", author: "Con Dyui" },
+    { text: "Mən heç vaxt məktəbdə oxumağımın öz təhsilimə mane olmasına icazə verməmişəm.", author: "Mark Tven" },
+    { text: "Nə qədər yavaş getsən də, dayanmadığın müddətcə önəmli deyil.", author: "Konfutsi" }
+];  
+
+function showRandomQuote() {
+    const headerParagraph = document.querySelector(".page-header p");
+    
+    if (headerParagraph) {
+        // Riyazi olaraq təsadüfi (random) bir indeks seçirik
+        const randomIndex = Math.floor(Math.random() * aforizmler.length);
+        const secilmisSitat = aforizmler[randomIndex];
+        
+        // Mətni və müəllifi HTML daxilinə yerləşdiririk
+        headerParagraph.innerHTML = `"${secilmisSitat.text}" <span class="quote-author">- ${secilmisSitat.author}</span>`;
+    }
+}
 
 const kodlamaMenu = document.getElementById('kodlama-menu');
     if (kodlamaMenu && kodlamaMenu.previousElementSibling) {
@@ -243,3 +278,4 @@ searchInput.addEventListener('input', () => {
 loadProblems();
 CURRENT_USER_ID = getCurrentUserId();
 refreshEnergyBadge(CURRENT_USER_ID);
+showRandomQuote();
