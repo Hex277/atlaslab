@@ -62,6 +62,84 @@ function showRandomQuote() {
         headerParagraph.innerHTML = `"${secilmisSitat.text}" <span class="quote-author">- ${secilmisSitat.author}</span>`;
     }
 }
+function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", customCancel = "Ləğv et") {
+    return new Promise((resolve) => {
+        const overlay = document.getElementById("messageOverlay");
+        const messageText = document.getElementById("messageText");
+        const okBtn = document.getElementById("okBtn");
+        const confirmBtn = document.getElementById("confirmBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+
+        if (!overlay) return resolve(false);
+
+        // Mesajı qutuya yazırıq və ekranı açırıq
+        messageText.innerHTML = message;
+        overlay.style.display = "flex";
+
+        // Əgər növ "confirm" (Sual) idisə:
+        if (type === "confirm") {
+            okBtn.style.display = "none";
+            confirmBtn.style.display = "inline-block";
+            cancelBtn.style.display = "inline-block";
+
+            // YENİLİK: Düymə yazıları kənardan gələn adlarla dəyişdirilir
+            confirmBtn.textContent = customConfirm;
+            cancelBtn.textContent = customCancel;
+
+            // "İndi al" və ya əsas təsdiq düyməsinə basıldıqda
+            confirmBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+
+            // "Sonra" və ya ləğv düyməsinə basıldıqda
+            cancelBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(false);
+            };
+        }
+        // Əgər növ "alert" (Sadəcə bildiriş) idisə:
+        else {
+            okBtn.style.display = "inline-block";
+            confirmBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+
+            // Tək düyməli mesajlar üçün mətni dəyişə bilərik
+            okBtn.textContent = customConfirm !== "Təsdiqlə" ? customConfirm : "OK";
+
+            okBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+        }
+    });
+}
+function openActionModal(contentHTML) {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay && modalContent) {
+        modalContent.innerHTML = contentHTML;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeActionModal() {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+
+    if (overlay) {
+        // Modalı gizlədirik
+        overlay.style.display = "none";
+        // Səhifənin sürüşməsini (scroll) geri qaytarırıq
+        document.body.style.overflow = "";
+    }
+
+    if (modalContent) {
+        // Növbəti dəfə açılanda köhnə elementlər görünməsin deyə içini təmizləyirik
+        modalContent.innerHTML = "";
+    }
+}
 
 const kodlamaMenu = document.getElementById('kodlama-menu');
     if (kodlamaMenu && kodlamaMenu.previousElementSibling) {
@@ -234,7 +312,23 @@ function renderTable(problems) {
 
   // Row click → navigate to problem page
   tbody.querySelectorAll('tr[data-id]').forEach(row => {
-    const navigate = () => {
+    const navigate = async () => {
+      if (!CURRENT_USER_ID) {
+        const accountHTML = `
+          <div style="text-align: center;">
+            <img src="../images/whoisthis.webp" alt="Hesab" style="width: 200px; margin-bottom: 15px;">
+            <h3 style="margin-bottom: 10px; color: #B89A5A;">Hesabınız yoxdur</h3>
+            <p style="font-size: 15px; opacity: 0.9;">
+              Məsələləri həll etmək üçün əvvəlcə qeydiyyatdan keçməlisiniz.
+            </p>
+          </div>
+        `;
+        const userChoice = await showMessage(accountHTML, "confirm", "Qeydiyyat", "Bağla");
+        if (userChoice) {
+          window.location.href = "register.html";
+        }
+        return;
+      }
       window.location.href = `problem.html?id=${encodeURIComponent(row.dataset.id)}`;
     };
     row.addEventListener('click', navigate);

@@ -856,6 +856,7 @@ button:disabled {
 }
 .problems-table {
   width: 100%; border-collapse: collapse;
+  table-layout: fixed;
 }
 .problems-table th {
   background: var(--surface2);
@@ -878,10 +879,9 @@ button:disabled {
 }
 .problems-table tbody tr:hover { background: var(--surface2); }
 
-.col-num  { width: 52px; text-align: center; }
-.col-status { width: 44px; text-align: center; }
-.col-diff { width: 120px; }
-
+.col-num    { width: 10px; text-align: center; }
+.col-status { width: 6px; text-align: center; }
+.col-diff   { width: 90px; }
 .problem-num { font-size: 13px; color: var(--muted); font-weight: 500; }
 
 .status-ic {
@@ -1305,4 +1305,5 @@ body.workspace-page { overflow: hidden; }
     .problems-table th:nth-child(1),
     .problems-table td:nth-child(1) { display: none; }
     .diff-filter { flex-wrap: wrap; }
+    .col-diff   { width: 60px; }
 }
