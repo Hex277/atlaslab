@@ -2,39 +2,44 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtlasLab – Qrup Seç, İxtisasını Tap!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AtlasLab – Abituriyent, Tələbə və Kodlama</title>
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
     <link rel="icon" href="logo.webp" type="image/webp">
-    <meta name="description" content="İmtahan balınıza və qrupunuza əsasən ixtisasları və universitetləri asanlıqla tapın. Qrup seç, ixtisasını tap, gələcəyini qur!">
+    <meta name="description" content="İxtisasını tap, semestr imtahanlarına quizlərlə hazırlaş, alqoritm məsələləri həll et. Abituriyent, tələbə və proqramçılar üçün bir platforma.">
     <meta name="author" content="AtlasLab Komandası">
-    <meta property="og:title" content="atlaslab.az – Qrup Seç, İxtisasını Tap!">
-    <meta property="og:description" content="İmtahan balınıza əsasən ixtisas və universitetlər arasından seçim edin.">
+    <meta property="og:title" content="atlaslab.az – Abituriyent, Tələbə və Kodlama">
+    <meta property="og:description" content="İxtisas seçimi, semestr imtahanı hazırlığı və alqoritm məsələləri bir platformada.">
     <meta property="og:image" content="https://atlaslab.az/atlaslab-link.png">
     <meta property="og:type" content="website">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://atlaslab.az/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Google Analytics -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Analytics + Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
-    <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-029N0KCH3P")</script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17132841493"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-17132841493');</script>
-    <script>gtag('event','conversion',{'send_to':'AW-17132841493/FerQCKPhnp4cEJXUyek_','value':1.0,'currency':'USD'});</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+        gtag('config', 'AW-17132841493');
+        gtag('event', 'conversion', {'send_to': 'AW-17132841493/FerQCKPhnp4cEJXUyek_', 'value': 1.0, 'currency': 'USD'});
+    </script>
 
-    <link rel="stylesheet" href="index-sty.css">
+    <link rel="stylesheet" href="index-style.css">
 </head>
 <body id="index-page">
     <div id="preloader">
         <div class="logo-wrapper">
-            <img src="images/al-border-w.webp" class="al-border">
-            <img src="images/al-center-w.webp" class="al-center">
+            <img src="images/al-border-w.webp" class="al-border" alt="">
+            <img src="images/al-center-w.webp" class="al-center" alt="">
         </div>
     </div>
+
     <!-- Custom cursor dot (desktop) -->
     <div id="cursor" aria-hidden="true"></div>
 
@@ -44,214 +49,431 @@
             <img src="images/logo-crop-w.png" id="center-logo" alt="AtlasLab Logo">
         </div>
 
-        <a href="./telebe/isindex.html" class="telebe-link">
-            🎓 Tələbə paneli
-        </a>
-
         <button id="toggle-dark-mode" aria-label="Mövzu dəyiş">
             <img id="icon" src="images/moon.webp" alt="rejim" class="white-icon">
         </button>
     </div>
 
+    <!-- ═══ SECTION NAV (desktop: top center / mobile: bottom tab bar) ═══ -->
+    <nav class="section-nav" aria-label="Bölmələr">
+        <a href="#abituriyent" class="active" aria-current="true"><span class="nav-ico" aria-hidden="true">📖</span>Abituriyent</a>
+        <a href="#telebe"><span class="nav-ico" aria-hidden="true">🎓</span>Tələbə</a>
+        <a href="#kodlama"><span class="nav-ico" aria-hidden="true">💻</span>Kodlama</a>
+    </nav>
+
     <!-- ═══ PAGE BODY ═══ -->
     <div class="page-body">
 
-        <!-- ── Hero ── -->
-        <section class="hero">
-            <div class="hero-inner">
+        <!-- ╔══════════════════════════════════╗
+             ║  1. ABİTURİYENT                  ║
+             ╚══════════════════════════════════╝ -->
+        <section class="zone" id="abituriyent">
 
-                <!-- Left: text -->
-                <div class="hero-text-col">
-                    <div class="hero-tag">
-                        <span class="hero-tag-dot"></span>
-                        Abituriyent platforması
-                    </div>
+            <div class="hero">
+                <div class="hero-inner">
 
-                    <h1 data-i18n="siteTitle">
-                        Qrup seç,<br>
-                        <span class="accent">ixtisasını tap!</span>
-                    </h1>
+                    <div class="hero-text-col">
+                        <div class="hero-tag">
+                            <span class="hero-tag-dot"></span>
+                            Abituriyent platforması
+                        </div>
 
-                    <p class="hero-sub" data-i18n="selectPrompt">
-                        İmtahan balın və qrupuna əsasən uyğun ixtisas və universitetləri asanlıqla tap. Gələcəyini planlaşdır.
-                    </p>
+                        <h1 data-i18n="siteTitle">
+                            Qrup seç,<br>
+                            <span class="accent">ixtisasını tap!</span>
+                        </h1>
 
-                    <div class="hero-actions">
-                        <a href="./abituriyent/balhesab.html" class="btn-primary">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <line x1="12" y1="5" x2="12" y2="19"/>
-                                <line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                            Balımı hesabla
-                        </a>
-                        <a href="./abituriyent/specializations.html" class="btn-ghost">İxtisaslar haqqında</a>
-                    </div>
-                </div>
-                <div class="hero-visual-col">
-                    <div class="hero-img-frame">
-                        <img src="images/hero-visual.webp"
-                            alt="AtlasLab — Abituriyent platforması"
-                            class="hero-img"
-                            width="800" height="960"
-                            loading="eager" fetchpriority="high">
-                    </div>
+                        <p class="hero-sub" data-i18n="selectPrompt">
+                            İmtahan balın və qrupuna əsasən uyğun ixtisas və universitetləri asanlıqla tap. Gələcəyini planlaşdır.
+                        </p>
 
-                    <!-- Floating badge -->
-                    <div class="hero-badge" aria-hidden="true">
-                        <div class="hero-badge-num">200+</div>
-                        <div class="hero-badge-text">
-                            İxtisas<br>bir platformada
+                        <div class="hero-actions">
+                            <a href="./abituriyent/balhesab.html" class="btn-primary">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Balımı hesabla
+                            </a>
+                            <a href="./abituriyent/specializations.html" class="btn-ghost">İxtisaslar haqqında</a>
                         </div>
                     </div>
+
+                    <div class="hero-visual-col">
+                        <div class="hero-img-frame">
+                            <img src="images/hero-visual.webp"
+                                alt="AtlasLab — Abituriyent platforması"
+                                class="hero-img"
+                                width="800" height="960"
+                                loading="eager" fetchpriority="high">
+                        </div>
+
+                        <div class="hero-badge" aria-hidden="true">
+                            <div class="hero-badge-num">200+</div>
+                            <div class="hero-badge-text">
+                                İxtisas<br>bir platformada
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="stats-row reveal">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(30,144,255,0.08);">🎓</div>
+                    <div>
+                        <div class="stat-value">4</div>
+                        <div class="stat-label">Qrup</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(59,176,138,0.08);">
+                        <img src="images/university.webp" alt="Universitet">
+                    </div>
+                    <div>
+                        <div class="stat-value">50+</div>
+                        <div class="stat-label">Universitet</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(245,158,11,0.08);">
+                        <img src="images/book.webp" alt="İxtisas">
+                    </div>
+                    <div>
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">İxtisas</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background:rgba(139,92,246,0.08);">
+                        <img src="images/free.webp" alt="Pulsuz">
+                    </div>
+                    <div>
+                        <div class="stat-value">Pulsuz</div>
+                        <div class="stat-label">Tam icazəli</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+
+                <p class="section-label">İxtisas qrupları</p>
+
+                <div class="group-grid">
+                    <!-- data-num drives the giant ghost background digit via CSS attr() -->
+                    <a href="./abituriyent/1ciqrup.html" class="group-card gc-1 reveal" data-num="1">
+                        <div class="group-num">Qrup 1</div>
+                        <div class="group-title" data-i18n="group1">1-ci Qrup</div>
+                        <div class="group-desc">Riyaziyyat, fizika və texniki ixtisaslar üzrə imtahan verən abituriyentlər üçün.</div>
+                        <div class="group-arrow">
+                            Bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./abituriyent/2ciqrup.html" class="group-card gc-2 reveal" data-num="2">
+                        <div class="group-num">Qrup 2</div>
+                        <div class="group-title" data-i18n="group2">2-ci Qrup</div>
+                        <div class="group-desc">Humanitar, hüquq, iqtisadiyyat və ictimai elmlər üzrə imtahan verənlər üçün.</div>
+                        <div class="group-arrow">
+                            Bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./abituriyent/3ciqrup.html" class="group-card gc-3 reveal" data-num="3">
+                        <div class="group-num">Qrup 3</div>
+                        <div class="group-title" data-i18n="group3">3-cü Qrup</div>
+                        <div class="group-desc">Tibb, biologiya, kimya və əczaçılıq ixtisasları üzrə imtahan verənlər üçün.</div>
+                        <div class="group-arrow">
+                            Bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./abituriyent/4ciqrup.html" class="group-card gc-4 reveal" data-num="4">
+                        <div class="group-num">Qrup 4</div>
+                        <div class="group-title" data-i18n="group4">4-cü Qrup</div>
+                        <div class="group-desc">İncəsənət, idman, musiqi və xüsusi ixtisaslar üzrə imtahan verənlər üçün.</div>
+                        <div class="group-arrow">
+                            Bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
 
-            </div>
+                <p class="section-label">Əlavə bölmələr</p>
+
+                <div class="extra-grid">
+                    <a href="./abituriyent/specializations.html" class="extra-card reveal">
+                        <div class="extra-icon">📚</div>
+                        <div class="extra-text">
+                            <strong data-i18n="aboutspec">İxtisaslar haqqında</strong>
+                            <span>Bütün ixtisaslar, şərtlər və təfərrüatlar</span>
+                        </div>
+                    </a>
+                    <a href="./abituriyent/balhesab.html" class="extra-card reveal">
+                        <div class="extra-icon">
+                            <img src="images/calculator.webp" alt="Kalkulyator">
+                        </div>
+                        <div class="extra-text">
+                            <strong data-i18n="scorecalc">Balların hesablanması</strong>
+                            <span>Bal formulunu öyrən, nəticəni gör</span>
+                        </div>
+                    </a>
+                    <a href="./abituriyent/about.html" class="extra-card reveal">
+                        <div class="extra-icon">
+                            <img src="images/group.webp" alt="Komanda">
+                        </div>
+                        <div class="extra-text">
+                            <strong>Haqqımızda</strong>
+                            <span>Platforma haqqında məlumat</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div><!-- /main-content -->
         </section>
 
-        <!-- ── Stats strip ── -->
-        <div class="stats-row reveal">
-            <div class="stat-card">
-                <div class="stat-icon" style="background:rgba(30,144,255,0.08);">🎓</div>
-                <div>
-                    <div class="stat-value">4</div>
-                    <div class="stat-label">Qrup</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background:rgba(59,176,138,0.08);">
-                    <img src="images/university.webp" alt="Universitet">
-                </div>
-                <div>
-                    <div class="stat-value">50+</div>
-                    <div class="stat-label">Universitet</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background:rgba(245,158,11,0.08);">
-                    <img src="images/book.webp" alt="İxtisas">
-                </div>
-                <div>
-                    <div class="stat-value">200+</div>
-                    <div class="stat-label">İxtisas</div>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon" style="background:rgba(139,92,246,0.08);">
-                    <img src="images/free.webp" alt="Pulsuz">
-                </div>
-                <div>
-                    <div class="stat-value">Pulsuz</div>
-                    <div class="stat-label">Tam icazəli</div>
-                </div>
-            </div>
-        </div>
 
-        <!-- ── Main content ── -->
-        <div class="main-content">
+        <!-- ╔══════════════════════════════════╗
+             ║  2. TƏLƏBƏ                       ║
+             ╚══════════════════════════════════╝ -->
+        <section class="zone zone--alt" id="telebe">
 
-            <!-- Group cards -->
-            <p class="section-label">İxtisas qrupları</p>
+            <div class="hero hero--compact hero--flip">
+                <div class="hero-inner">
 
-            <div class="group-grid">
-                <!-- data-num drives the giant ghost background digit via CSS attr() -->
-                <a href="./abituriyent/1ciqrup.html" class="group-card gc-1 reveal" data-num="1">
-                    <div class="group-num">Qrup 1</div>
-                    <div class="group-title" data-i18n="group1">1-ci Qrup</div>
-                    <div class="group-desc">Riyaziyyat, fizika və texniki ixtisaslar üzrə imtahan verən abituriyentlər üçün.</div>
-                    <div class="group-arrow">
-                        Bax
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </div>
-                </a>
+                    <div class="hero-text-col reveal">
+                        <div class="hero-tag">
+                            <span class="hero-tag-dot"></span>
+                            Tələbə platforması
+                        </div>
 
-                <a href="./abituriyent/2ciqrup.html" class="group-card gc-2 reveal" data-num="2">
-                    <div class="group-num">Qrup 2</div>
-                    <div class="group-title" data-i18n="group2">2-ci Qrup</div>
-                    <div class="group-desc">Humanitar, hüquq, iqtisadiyyat və ictimai elmlər üzrə imtahan verənlər üçün.</div>
-                    <div class="group-arrow">
-                        Bax
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </div>
-                </a>
+                        <h2>
+                            Əzbərləməyi dayandır!<br>
+                            <span class="accent">Öyrənməyə başla!</span>
+                        </h2>
 
-                <a href="./abituriyent/3ciqrup.html" class="group-card gc-3 reveal" data-num="3">
-                    <div class="group-num">Qrup 3</div>
-                    <div class="group-title" data-i18n="group3">3-cü Qrup</div>
-                    <div class="group-desc">Tibb, biologiya, kimya və əczaçılıq ixtisasları üzrə imtahan verənlər üçün.</div>
-                    <div class="group-arrow">
-                        Bax
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </div>
-                </a>
+                        <p class="hero-sub">
+                            Semestr imtahanlarına hazırlaşmaq üçün fənnlərini seç, test həll et və irəliləyişini izlə.
+                        </p>
 
-                <a href="./abituriyent/4ciqrup.html" class="group-card gc-4 reveal" data-num="4">
-                    <div class="group-num">Qrup 4</div>
-                    <div class="group-title" data-i18n="group4">4-cü Qrup</div>
-                    <div class="group-desc">İncəsənət, idman, musiqi və xüsusi ixtisaslar üzrə imtahan verənlər üçün.</div>
-                    <div class="group-arrow">
-                        Bax
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
+                        <div class="hero-actions">
+                            <a href="./telebe/fennler-menu.html" class="btn-primary">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Quizə başla
+                            </a>
+                            <a href="./telebe/statistics.html" class="btn-ghost">Statistikam</a>
+                        </div>
                     </div>
-                </a>
-            </div>
 
-            <!-- Extra links -->
-            <p class="section-label">Əlavə bölmələr</p>
+                    <div class="hero-visual-col reveal">
+                        <div class="hero-img-frame">
+                            <img src="images/hero-visual-w.webp"
+                                alt="AtlasLab — Tələbə platforması"
+                                class="hero-img"
+                                id="telebe-hero"
+                                width="800" height="960"
+                                loading="lazy">
+                        </div>
+                    </div>
 
-            <div class="extra-grid">
-                <a href="./abituriyent/specializations.html" class="extra-card reveal">
-                    <div class="extra-icon">📚</div>
-                    <div class="extra-text">
-                        <strong data-i18n="aboutspec">İxtisaslar haqqında</strong>
-                        <span>Bütün ixtisaslar, şərtlər və təfərrüatlar</span>
-                    </div>
-                </a>
-                <a href="./abituriyent/balhesab.html" class="extra-card reveal">
-                    <div class="extra-icon">
-                        <img src="images/calculator.webp" alt="Kalkulyator">
-                    </div>
-                    <div class="extra-text">
-                        <strong data-i18n="scorecalc">Balların hesablanması</strong>
-                        <span>Bal formulunu öyrən, nəticəni gör</span>
-                    </div>
-                </a>
-                <a href="./abituriyent/about.html" class="extra-card reveal">
-                    <div class="extra-icon">
-                        <img src="images/group.webp" alt="Komanda">
-                    </div>
-                    <div class="extra-text">
-                        <strong>Haqqımızda</strong>
-                        <span>Platforma haqqında məlumat</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Promo banner -->
-            <div class="promo-banner reveal">
-                <div class="promo-icon">🎓</div>
-                <div class="promo-text">
-                    <h3>Artıq tələbəsən?</h3>
-                    <p>
-                        Semestr imtahanlarına hazırlaşmaq üçün
-                        <a href="./telebe/isindex.html">Tələbə panelini</a>
-                        istifadə et — quiz həll et, statistikana bax, biliklərin artır.
-                    </p>
                 </div>
             </div>
 
-        </div><!-- /main-content -->
+            <div class="main-content">
+
+                <p class="section-label">Xüsusiyyətlər</p>
+
+                <div class="group-grid">
+                    <a href="./telebe/fennler-menu.html" class="group-card gc-1 reveal">
+                        <div class="group-title">Fənnlər &amp; Quiz</div>
+                        <div class="group-desc">Semestr imtahanı materiallarını quiz formatında həll et. Bütün fənnlər əhatə olunub.</div>
+                        <div class="group-arrow">
+                            Fənnlərə bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./telebe/statistics.html" class="group-card gc-2 reveal">
+                        <div class="group-title">Statistika</div>
+                        <div class="group-desc">Cavablarının düzgünlük faizini, irəliləyiş qrafikini və zəif mövzularını gör.</div>
+                        <div class="group-arrow">
+                            Statistikaya keç
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./telebe/profile.html" class="group-card gc-3 reveal">
+                        <div class="group-title">Profil</div>
+                        <div class="group-desc">Hesab məlumatlarını idarə et, şifrəni dəyiş, abunəliyini yoxla.</div>
+                        <div class="group-arrow">
+                            Profilə keç
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./telebe/premium.html" class="group-card gc-4 reveal">
+                        <div class="group-title">Premium</div>
+                        <div class="group-desc">Limitsiz quiz, əlavə statistika və erkən çıxan materiallara limitsiz giriş əldə et.</div>
+                        <div class="group-arrow">
+                            Premium al
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+            </div><!-- /main-content -->
+        </section>
+
+
+        <!-- ╔══════════════════════════════════╗
+             ║  3. KODLAMA                      ║
+             ╚══════════════════════════════════╝ -->
+        <section class="zone" id="kodlama">
+
+            <div class="hero hero--compact">
+                <div class="hero-inner">
+
+                    <div class="hero-text-col reveal">
+                        <div class="hero-tag">
+                            <span class="hero-tag-dot"></span>
+                            Kodlama platforması
+                        </div>
+
+                        <h2>
+                            Kod yaz,<br>
+                            <span class="accent">alqoritmi həll et!</span>
+                        </h2>
+
+                        <p class="hero-sub">
+                            İstədiyin proqramlaşdırma dilini seç, məsələləri birbaşa brauzerdə həll et və reytinqdə yerini izlə.
+                        </p>
+
+                        <div class="lang-chips">
+                            <span class="lang-chip">Python</span>
+                            <span class="lang-chip">JavaScript</span>
+                            <span class="lang-chips-note">Java və C++ tezliklə</span>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="./code/problems-menu.html" class="btn-primary">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Həll etməyə başla
+                            </a>
+                            <a href="./code/statistics.html" class="btn-ghost">Statistikam</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual-col reveal">
+                        <div class="hero-img-frame">
+                            <!-- Placeholder: real şəkil hazır olanda yalnız images/hero-visual-code.webp faylını qoy.
+                                 Fayl tapılsa şəkil placeholder-in üstündə görünür, tapılmasa placeholder qalır.
+                                 Ölçü digər hero şəkilləri ilə eynidir: 800 × 960 px (5:6). -->
+                            <div class="hero-img-placeholder" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"/>
+                                    <polyline points="8 6 2 12 8 18"/>
+                                    <line x1="14" y1="4" x2="10" y2="20"/>
+                                </svg>
+                                <span>Şəkil yeri, 800×960 px</span>
+                            </div>
+                            <img src="images/hero-visual-code-w.webp"
+                                alt="AtlasLab — Kodlama platforması"
+                                class="hero-img hero-img--light"
+                                data-optional
+                                width="800" height="960"
+                                decoding="async">
+                            <img src="images/hero-visual-code-b.webp"
+                                alt="AtlasLab — Kodlama platforması"
+                                class="hero-img hero-img--dark"
+                                data-optional
+                                width="800" height="960"
+                                decoding="async">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main-content">
+
+                <p class="section-label">İmkanlar</p>
+
+                <div class="group-grid group-grid--3">
+                    <a href="./code/problems-menu.html" class="group-card gc-1 reveal" data-num="{ }">
+                        <div class="group-title">Məsələlər</div>
+                        <div class="group-desc">Alqoritm məsələsi seç, redaktorda kod yaz və test halları üzərində birbaşa brauzerdə yoxla.</div>
+                        <div class="group-arrow">
+                            Məsələlərə bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./code/statistics.html" class="group-card gc-2 reveal" data-num="%">
+                        <div class="group-title">Statistika</div>
+                        <div class="group-desc">Həll etdiyin məsələləri, uğur faizini və dillər üzrə irəliləyişini izlə.</div>
+                        <div class="group-arrow">
+                            Statistikaya keç
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="./telebe/statistics.html" class="group-card gc-4 reveal" data-num="#1">
+                        <div class="group-title">Leaderboard</div>
+                        <div class="group-desc">Tələbə bölməsi ilə ortaq reytinq cədvəlində digər istifadəçilərlə müqayisə ol.</div>
+                        <div class="group-arrow">
+                            Reytinqə bax
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+            </div><!-- /main-content -->
+        </section>
+
 
         <footer class="site-footer">
             <p>&copy; 2026 atlaslab.az.</p>
