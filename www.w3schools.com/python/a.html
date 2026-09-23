@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Mətn Köçürücü</title>
+</head>
+<body>
+
+    <!-- Sadəcə daxiletmə sahəsi və iki düymə -->
+    <input type="text" id="mesajGirdisi">
+    <button id="tryItDuymesi">try it</button>
+    <button id="copyDuymesi">copy</button>
+
+    <script>
+        const mesajGirdisi = document.getElementById('mesajGirdisi');
+        const tryItDuymesi = document.getElementById('tryItDuymesi');
+        const copyDuymesi = document.getElementById('copyDuymesi');
+
+        let aiCavabi = ""; 
+        
+        // Bura öz OpenAI API açarınızı yazın
+        const API_KEY = "BURAYA_OPENAI_API_KEY_YAZIN"; 
+
+        tryItDuymesi.addEventListener('click', async () => {
+            const mesaj = mesajGirdisi.value;
+            
+            if (mesaj === "") return;
+
+            // Sorğu başlayanda düymənin mətnini dəyişirik
+            tryItDuymesi.textContent = "trying...";
+            
+            // Sıfırlamalar
+            copyDuymesi.style.backgroundColor = "";
+            aiCavabi = "";
+
+            try {
+                const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: "gpt-4o-mini",
+                        messages: [
+                            { role: "user", content: mesaj }
+                        ]
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.choices && data.choices[0].message.content) {
+                    aiCavabi = data.choices[0].message.content;
+                    
+                    // Cavab gəldikdə copy düyməsinin rəngini yaşıl edirik
+                    copyDuymesi.style.backgroundColor = "lightgreen";
+                }
+            } catch (xeta) {
+                console.log("Xəta baş verdi: ", xeta);
+            } finally {
+                // İstər cavab uğurla gəlsin, istərsə də xəta versin, düymənin mətni əvvəlki halına qayıdır
+                tryItDuymesi.textContent = "try it";
+            }
+        });
+
+        // Copy düyməsinə basıldıqda mətni clipboard-a kopyalayır
+        copyDuymesi.addEventListener('click', () => {
+            if (aiCavabi !== "") {
+                navigator.clipboard.writeText(aiCavabi);
+            }
+        });
+    </script>
+
+</body>
+</html>
