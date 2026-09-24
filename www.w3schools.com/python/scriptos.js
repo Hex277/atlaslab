@@ -14,7 +14,6 @@
         const API_KEY = "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";
 
         tryItDuymesi.addEventListener('click', async (event) => {
-            // Başqa skriptlərin klik hadisəsinə müdaxilə etməməsi üçün
             if (event) event.stopPropagation();
 
             const mesaj = mesajGirdisi.value.trim();
@@ -25,31 +24,26 @@
             aiCavabi = "";
 
             try {
-                const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                // Supabase URL və Publishable (Anon) Key istifadə olunur
+                const SUPABASE_URL = "https://xoebhhdirsvjorjlrfzi.supabase.co";
+                const SUPABASE_KEY = "sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN";
+
+                const response = await fetch(`${SUPABASE_URL}/functions/v1/openai-proxy`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": `Bearer ${API_KEY}`
+                        "Authorization": `Bearer ${SUPABASE_KEY}`
                     },
-                    body: JSON.stringify({
-                        model: "gpt-4o-mini",
-                        messages: [
-                            { role: "user", content: mesaj }
-                        ]
-                    })
+                    body: JSON.stringify({ mesaj: mesaj })
                 });
-
-                if (!response.ok) {
-                    const xetaMelumati = await response.json();
-                    console.error("OpenAI API Xətası:", xetaMelumati);
-                    return;
-                }
 
                 const data = await response.json();
 
                 if (data.choices && data.choices[0] && data.choices[0].message.content) {
                     aiCavabi = data.choices[0].message.content;
                     copyDuymesi.style.backgroundColor = "lightgreen";
+                } else {
+                    console.error("Gözlənilməz cavab strukturu:", data);
                 }
             } catch (xeta) {
                 console.error("Şəbəkə və ya sorğu xətası:", xeta);
