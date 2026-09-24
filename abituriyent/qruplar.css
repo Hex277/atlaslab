@@ -232,13 +232,115 @@ tr.even-row {
 }
 
 /* Qısa sütunlar (Təhsil forması, Dil, Alt qrup, Ballar) sıxılaraq yalnız mətn boyda yer tutur */
-td:not(:first-child),
-th:not(:first-child) {
+td:nth-child(1),
+th:nth-child(1) {
+    width: 40px;
+    text-align: center;
     white-space: nowrap;
-    width:10%;
+}
+td:nth-child(n+3),
+th:nth-child(n+3) {
+    white-space: nowrap;
+    width: 10%;
+}
+/* "Bax" düyməsinin stili */
+.btn-view-code {
+  background-color: var(--primary, var(--gold));
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
 }
 
+.btn-view-code:hover {
+  background-color: var(--gold-hover);
+}
 
+/* Açılan pəncərənin arxa fonu (Overlay) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* Pəncərə qutusu */
+.modal-box {
+  background: var(--surface, #ffffff);
+  color: var(--text-color, #222);
+  width: 90%;
+  max-width: 360px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Reklam sahəsi */
+.ad-area {
+  min-height: 100px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/* Kodun göstərilmə sahəsi */
+.code-info {
+  font-size: 20px;
+}
+
+.code-info strong {
+  font-size: 26px;
+  color: var(--primary, var(--text-color));
+  letter-spacing: 1px;
+}
+
+/* Düymələr paneli */
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+#copy-code-btn {
+  background-color: var(--gold);
+  color: white;
+}
+
+.modal-buttons .btn-close {
+  background-color: var(--surface);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
 
 /* ─── Inputs / Selects ─── */
 .score-range input,
@@ -1096,7 +1198,6 @@ div[data-v-77565f88] {
         display: none;
     }
 }
-
 /* ═══════════════════════════════════════════
    MOBILE ( ≤ 768px )
    ═══════════════════════════════════════════ */
@@ -1200,7 +1301,15 @@ div[data-v-77565f88] {
         color: var(--text-color);
         font-size: 16px;
     }
-
+    .modal-box {
+        width: 85%;
+    }
+    .banner-container-desktop {
+        display: none !important; 
+    }
+    .banner-container-mobile {
+        display: flex !important;
+    }
     body.dark-mode .card {
         background: var(--surface);
         border: 1px solid var(--border);

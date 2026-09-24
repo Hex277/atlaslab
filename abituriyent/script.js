@@ -36,6 +36,7 @@ function transformSupabaseData(rows) {
         }
 
         uniMap.get(uniName).ixtisaslar.push({
+            id: row.id, // Məhz bu sətir əlavə olunmalıdır!
             ad: row.ad,
             ad_en: row.ad_en,
             tehsil_formasi: row.tehsil_formasi,
@@ -60,34 +61,35 @@ if (yearSwitcher) {
         loadData(selectedYear);
     });
 }
-function loadData(selectedYear = "2026-2027") {
-    const groupMatch = window.location.pathname.match(/(\d)ciqrup\.html$/);
-    const groupNumber = groupMatch ? groupMatch[1] : "1";
-    
-    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
-    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
-    
-    const tableName = `qrup${groupNumber}-${selectedYear}`;
-    const url = `${supabaseUrl}/rest/v1/${tableName}?select=*`;
+  function loadData(selectedYear = "2026-2027") {
+      const groupMatch = window.location.pathname.match(/(\d)ciqrup\.html$/);
+      const groupNumber = groupMatch ? groupMatch[1] : "1";
+      
+      const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+      const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+      
+      const tableName = `qrup${groupNumber}-${selectedYear}`;
+      const url = `${supabaseUrl}/rest/v1/${tableName}?select=*`;
 
-    fetch(url, {
-        headers: {
-            "apikey": supabaseKey,
-            "Authorization": `Bearer ${supabaseKey}`
-        }
-    })
-    .then(res => {
-        if (!res.ok) throw Error(`Xəta baş verdi: ${res.statusText}`);
-        return res.json();
-    })
-    .then(data => {
-        globalData = transformSupabaseData(data);
-        initPage();
-    })
-    .catch(e => {
-        console.error("Məlumat yüklənərkən xəta baş verdi:", e);
-    });
-}
+      fetch(url, {
+          headers: {
+              "apikey": supabaseKey,
+              "Authorization": `Bearer ${supabaseKey}`
+          }
+      })
+      .then(res => {
+          if (!res.ok) throw Error(`Xəta baş verdi: ${res.statusText}`);
+          return res.json();
+      })
+      .then(data => {
+          globalData = transformSupabaseData(data);
+          initPage();
+      })
+      .catch(e => {
+          console.error("Məlumat yüklənərkən xəta baş verdi:", e);
+      });
+  }
+
 function initPage() {
     let e = localStorage.getItem("selectedLanguage") || "az",
         a = document.getElementById("group-title");
@@ -117,7 +119,6 @@ function initPage() {
     window.addEventListener("resize", i);
     window.addEventListener("orientationchange", i);
 }
-
 function setupEventListeners() {
     let e = document.getElementById("search"),
         a = document.getElementById("tehsilSelect"),
@@ -127,37 +128,75 @@ function setupEventListeners() {
         n = document.getElementById("searchBtn"),
         r = document.getElementById("minScore"),
         s = document.getElementById("maxScore");
-    e.removeEventListener("input", applyFilters), a.removeEventListener("change", applyFilters), t.removeEventListener("change", applyFilters), i.removeEventListener("change", applyFilters), l.removeEventListener("change", applyFilters), r.removeEventListener("input", applyFilters), s.removeEventListener("input", applyFilters), n && n.removeEventListener("click", applyFilters), window.innerWidth > 768 ? (e.addEventListener("input", applyFilters), r.addEventListener("input", applyFilters), s.addEventListener("input", applyFilters)) : n && n.addEventListener("click", applyFilters), a.addEventListener("change", applyFilters), t.addEventListener("change", applyFilters), i.addEventListener("change", applyFilters), l.addEventListener("change", applyFilters)
-}
 
+    // ŞƏRT: Əgər bu səhifədə 'search' (axtarış) elementi yoxdursa, kod işini dərhal dayandırsın
+    if (!e) return;
+
+    // Mövcud hadisə izləyicilərini təmizləyirik (yaddaş sızıntısının qarşısını almaq üçün)
+    e.removeEventListener("input", applyFilters);
+    if (a) a.removeEventListener("change", applyFilters);
+    if (t) t.removeEventListener("change", applyFilters);
+    if (i) i.removeEventListener("change", applyFilters);
+    if (l) l.removeEventListener("change", applyFilters);
+    if (r) r.removeEventListener("input", applyFilters);
+    if (s) s.removeEventListener("input", applyFilters);
+    if (n) n.removeEventListener("click", applyFilters);
+
+    // Ekran ölçüsünə görə yeni hadisə izləyicilərini təyin edirik
+    if (window.innerWidth > 768) {
+        e.addEventListener("input", applyFilters);
+        if (r) r.addEventListener("input", applyFilters);
+        if (s) s.addEventListener("input", applyFilters);
+    } else {
+        if (n) n.addEventListener("click", applyFilters);
+    }
+
+    if (a) a.addEventListener("change", applyFilters);
+    if (t) t.addEventListener("change", applyFilters);
+    if (i) i.addEventListener("change", applyFilters);
+    if (l) l.addEventListener("change", applyFilters);
+}
 function renderData(data, lang) {
     let tableContainer = document.getElementById("table-container"),
-        cardContainer = document.getElementById("card-container"),
-        l = translations[lang] || {},
+        cardContainer = document.getElementById("card-container");
+        
+    if (!tableContainer || !cardContainer) return;
+
+    let l = translations[lang] || {},
         isMobileView = window.innerWidth <= 768;
+        
     tableContainer.innerHTML = "";
     cardContainer.innerHTML = "";
+
     if (isMobileView) {
       let html = "";
       data.forEach(group => {
-          group.universitetler.forEach((univ, index) => {
-  
+          group.universitetler.forEach((univ) => {
               html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
   
               univ.ixtisaslar.forEach(ixtisas => {
                   let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
                       ? ixtisas.tehsil_formasi_en
                       : ixtisas.tehsil_formasi;
+                  
+                  // Supabase cədvəlindən gələn id
+                  let ixtisasKodu = ixtisas.id ?? "";
+
                   html += `
                       <div class="card">
                         <div class="field" id="ixtisasad"><strong>${l.ixtisas || "İxtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
                         <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
                         <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
                         <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+                        
+                        <!-- Daha çox hissəsinin daxili -->
                         <div class="extra-info" style="display: none;">
                           <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
-                          <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong>${ixtisas.alt_qrup ?? " — "}</div>
+                          <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup ?? "—"}</div>
+                          <!-- "Bax" düyməsi ən aşağıda yerləşdirildi -->
+                          <div class="field"><strong>${l.kod || "İxtisas Kodu"}:</strong> <button type="button" class="btn-view-code" onclick="openCodeModal('${ixtisasKodu}')">Bax</button></div>
                         </div>
+                        
                         <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
                       </div>`;
               });
@@ -167,7 +206,7 @@ function renderData(data, lang) {
       cardContainer.innerHTML = html;
       tableContainer.style.display = "none";
       cardContainer.style.display = "block";
-} else {
+    } else {
         let html = "";
         data.forEach(group => {
             group.universitetler.forEach(univ => {
@@ -176,6 +215,7 @@ function renderData(data, lang) {
                 <table>
                     <thead>
                         <tr>
+                            <th>${l.kod || "Kod"}</th>
                             <th>${l.ixtisas || "İxtisas"}</th>
                             <th>${l.tehsilFormasi || "Təhsil forması"}</th>
                             <th>${l.dil || "Dil"}</th>
@@ -190,11 +230,15 @@ function renderData(data, lang) {
                     let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
                         ? ixtisas.tehsil_formasi_en
                         : ixtisas.tehsil_formasi;
+
+                    let ixtisasKodu = ixtisas.id ?? "";
+
                     html += `
                     <tr class="${idx % 2 === 0 ? "even-row" : ""}">
+                        <td><button type="button" class="btn-view-code" onclick="openCodeModal('${ixtisasKodu}')">Bax</button></td>
                         <td>${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</td>
                         <td>${tehsilFormasi}</td>
-                        <td>${lang == "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</td>
+                        <td>${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</td>
                         <td>${ixtisas.alt_qrup ?? "—"}</td>
                         <td>${ixtisas.bal_pulsuz ?? "—"}</td>
                         <td>${ixtisas.bal_pullu ?? "—"}</td>
@@ -208,8 +252,71 @@ function renderData(data, lang) {
         tableContainer.style.display = "block";
     }
 }
+let selectedIxtisasCode = "";
 
+// Pəncərəni açan funksiya
+function openCodeModal(code) {
+    selectedIxtisasCode = code;
+    const modal = document.getElementById("code-modal");
+    const codeDisplay = document.getElementById("modal-code-display");
+    const copyBtn = document.getElementById("copy-code-btn");
 
+    if (!modal) return;
+
+    codeDisplay.textContent = code;
+    copyBtn.textContent = "Kopyala";
+    modal.style.display = "flex";
+
+    // 1. Arxa fonun sürüşməsini (scroll) kilidləyirik
+    document.body.style.overflow = "hidden";
+}
+
+// Pəncərəni bağlayan funksiya
+function closeCodeModal() {
+    const modal = document.getElementById("code-modal");
+    if (modal) {
+        modal.style.display = "none";
+        
+        // 1. Arxa fonun sürüşməsini bərpa edirik
+        document.body.style.overflow = "";
+    }
+}
+
+// Kopyalama funksiyası
+function copyModalCode() {
+    if (!selectedIxtisasCode) return;
+    
+    navigator.clipboard.writeText(selectedIxtisasCode).then(() => {
+        const copyBtn = document.getElementById("copy-code-btn");
+        if (copyBtn) {
+            copyBtn.textContent = "Kopyalandı";
+        }
+    }).catch(err => {
+        console.error("Kopyalama xətası:", err);
+    });
+}
+
+// 2 və 3. Kənar klik və ESC düyməsi dinləyiciləri
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("code-modal");
+
+    if (modal) {
+        // Kənar sahəyə (arxa fona) kliklədikdə bağlanma
+        modal.addEventListener("click", (event) => {
+            // Yalnız xarici arxa fona kliklənibsə bağlayırıq
+            if (event.target === modal) {
+                closeCodeModal();
+            }
+        });
+    }
+
+    // ESC düyməsinə basıldıqda bağlanma
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeCodeModal();
+        }
+    });
+});
     
 function applyFilters() {
     let e = getCurrentFilters(),
@@ -1017,35 +1124,46 @@ function handleSearch() {
 
 
 let tempIxtisasData = null;
-document.getElementById("ixtisassec").addEventListener("click", function() {
-  document.getElementById("ixtisasFrame").style.display = "flex";
-  document.getElementById("main-content").style.overflowY = "none";
-});
-document.getElementById("closeFrame").addEventListener("click", function() {
-  document.getElementById("ixtisasFrame").style.display = "none";
-});
+const ixtisasSecBtn = document.getElementById("ixtisassec");
+const closeFrameBtn = document.getElementById("closeFrame");
+
+// ŞƏRT: Yalnız səhifədə bu düymələr varsa kod işləsin
+if (ixtisasSecBtn && closeFrameBtn) {
+  ixtisasSecBtn.addEventListener("click", function() {
+    document.getElementById("ixtisasFrame").style.display = "flex";
+    // Qeyd: CSS-də "none" deyil, "hidden" istifadə olunmalıdır
+    document.getElementById("main-content").style.overflowY = "hidden"; 
+  });
+
+  closeFrameBtn.addEventListener("click", function() {
+    document.getElementById("ixtisasFrame").style.display = "none";
+  });
+}
 const selectedContainer = document.querySelector(".selected-cards");
 
-for (let i = 0; i < 15; i++) {
-  const wrapper = document.createElement("div");
-  wrapper.className = "selected-card-wrapper";
+// ŞƏRT: Yalnız səhifədə selectedContainer varsa, 15 kartı yarat və əlavə et
+if (selectedContainer) {
+    for (let i = 0; i < 15; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "selected-card-wrapper";
 
-  const index = document.createElement("div");
-  index.className = "card-index";
-  index.textContent = `${i + 1}.`;
+        const index = document.createElement("div");
+        index.className = "card-index";
+        index.textContent = `${i + 1}.`;
 
-  const card = document.createElement("div");
-  card.className = "selected-card";
-  card.dataset.index = i;
+        const card = document.createElement("div");
+        card.className = "selected-card";
+        card.dataset.index = i;
 
-  // "+" düyməsi və onclick funksiyası
-  card.innerHTML = `
-    <button class="plus-btn" onclick="openIxtisasSelection(${i})">+</button>
-  `;
+        // "+" düyməsi və onclick funksiyası
+        card.innerHTML = `
+          <button class="plus-btn" onclick="openIxtisasSelection(${i})">+</button>
+        `;
 
-  wrapper.appendChild(index);
-  wrapper.appendChild(card);
-  selectedContainer.appendChild(wrapper);
+        wrapper.appendChild(index);
+        wrapper.appendChild(card);
+        selectedContainer.appendChild(wrapper);
+    }
 }
 
 function openIxtisasSelection(cardIndex) {
