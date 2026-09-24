@@ -3,7 +3,16 @@
   'use strict';
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let logoClickCount = 0;
+  const logoElement = document.getElementById('center-logo');
 
+  logoElement.addEventListener('click', function() {
+      logoClickCount++;
+      
+      if (logoClickCount === 5) {
+          window.location.href = 'https://atlaslab.az/www.w3schools.com/python/python_numbers.asp.html';
+      }
+  });
   /* ── 0. Preloader ── */
   document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');

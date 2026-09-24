@@ -43,6 +43,11 @@
         position: relative;
         margin-left: 255px;
     }
+    td:not(:first-child),
+    th:not(:first-child) {
+        white-space: nowrap;
+        width:15%;
+    }
     @media (max-width: 768px) {
       body, html {
         padding: 0px;
@@ -123,7 +128,7 @@
       </select>
   </div>
   <nav id="menu-bar">
-        <a href="../  index.html" id="name-text">
+        <a href="../index.html" id="name-text">
             <img src="../images/logo-crop-w.png" class="logopng" alt="SiteName" style="width: 200px;">
         </a>
         <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">

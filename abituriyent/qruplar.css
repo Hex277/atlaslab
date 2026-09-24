@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* ═══════════════════════════════════════════
    ATLASLAB — qruplar.css
@@ -129,7 +129,7 @@ button {
 
 #language-selector,
 #menu-bar a:not(#name-text) {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #name-text,
@@ -146,7 +146,7 @@ button {
 
 /* ─── Base ─── */
 body {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: var(--bg);
     color: var(--text-color);
     margin: 0;
@@ -248,7 +248,7 @@ select,
     padding: 10px;
     width: auto;
     font-size: 15px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     transition: .3s;
 }
 
@@ -351,7 +351,7 @@ body.dark-mode .menu-button {
 /* ─── Buttons ─── */
 button {
     font-size: 15px;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--gold);
     border: none;
     border-radius: 10px;
@@ -435,10 +435,12 @@ button:hover {
   padding: 10px 20px;
   box-sizing: border-box;
   overflow-y: auto;
-  /* transform əsaslı animasiya — display:none işlənmir */
+  
+  /* Ekranın solundan kənara çıxarırıq */
   transform: translateX(-100%);
-  visibility: hidden;
-  transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+  
+  /* Yalnız transform animasiyası tətbiq edirik */
+  transition: transform 0.3s ease-in-out;
 }
 #menu-bar img {
     filter: invert(0);
@@ -446,15 +448,12 @@ button:hover {
 /* Açıq vəziyyət (mobil) */
 #menu-bar.menu-open {
   transform: translateX(0);
-  visibility: visible;
-  transition: transform 0.3s ease-in-out, visibility 0s linear 0s;
 }
 
 /* Desktop: hər zaman görünür */
 @media (min-width: 769px) {
   #menu-bar {
     transform: translateX(0) !important;
-    visibility: visible !important;
     transition: none !important;
   }
   #menu-toggle {
@@ -734,7 +733,7 @@ body.dark-mode .white-icon {
     color: var(--gold);
     font-weight: 600;
     transition: .25s;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu-button:hover {
@@ -750,7 +749,7 @@ body.dark-mode .white-icon {
     width: 100%;
     background-color: transparent;
     text-align: center;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     left: 120px;
     color: var(--text-3);
@@ -791,7 +790,7 @@ body.dark-mode .white-icon {
     background-color: var(--surface);
     padding: 0 16px;
     font-weight: 600;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: background-color 0.25s ease;
     position: relative;
@@ -844,7 +843,7 @@ body.dark-mode .specialization-title {
     box-shadow: 0 2px 6px rgba(20,18,16,0.05);
     color: var(--text-2);
     line-height: 1.6;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body.dark-mode .specialization-description {
@@ -1044,7 +1043,7 @@ div[data-v-77565f88] {
         border: 0;
         font-size: 20px;
         height: 60px;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         background: transparent;
         color: var(--text-color);
     }
@@ -1227,37 +1226,7 @@ div[data-v-77565f88] {
         height: 50px;
         width: 50px;
     }
-    /* Mobile slide-in sidebar */
-    #menu-bar {
-        position: fixed;
-        top: 0;
-        margin-top: 0;
-        height: 100vh;
-        background: var(--surface);
-        box-shadow: 2px 0 16px rgba(20,18,16,0.12);
-        transition: transform 0.35s cubic-bezier(.25,.8,.25,1);
-        z-index: 1000;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow-y: auto;
-        border-top-right-radius: 20px;
-        width: 60%;
-        transform: translateX(-100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #menu-bar:not(.hidden) {
-        transform: translateX(0);
-        margin: 0;
-    }
-
-    #menu-bar.hidden {
-        left: 0;
-        pointer-events: none;
-    }
-
+    
     #menu-bar img {
         display: flex;
         width: 90%;
@@ -1299,7 +1268,7 @@ div[data-v-77565f88] {
     select,
     input[type=text] {
         background-color: transparent;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         margin: auto;
     }
@@ -1649,7 +1618,7 @@ div[data-v-77565f88] {
         cursor: pointer;
         font-weight: 600;
         font-size: 14px;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .select-btn:hover {
@@ -1719,7 +1688,7 @@ div[data-v-77565f88] {
         color: var(--text-color);
         transition: border-color 0.25s ease;
         position: relative;
-        font-family: 'Sora', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     body.dark-mode #searchIxtisasInput {
