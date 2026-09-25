@@ -21,6 +21,35 @@ supabaseClient.auth.getSession().then(({ data: { session } }) => {
         window.location.href = "profile.html";
     }
 });
+// Supabase daxilolma funksiyası
+async function loginWithProvider(providerName) {
+    const termsAgree = document.getElementById("terms_agree");
+
+    // 1. İstifadə Şərtlərinin yoxlanılması
+    if (!termsAgree || !termsAgree.checked) {
+        alert("Lütfən, davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul edin.");
+        return;
+    }
+
+    // 2. Supabase OAuth axınının başladılması
+    try {
+        // DÜZƏLİŞ: 'supabase' əvəzinə 'supabaseClient' yazıldı
+        const { data, error } = await supabaseClient.auth.signInWithOAuth({
+            provider: providerName,
+            options: {
+                // Giriş tamamlandıqdan sonra istifadəçinin yönləndiriləcəyi səhifə
+                redirectTo: window.location.origin + "/telebe/profile.html"
+            }
+        });
+
+        if (error) {
+            console.error(providerName + " ilə daxil olarkən xəta baş verdi:", error.message);
+            alert("Giriş zamanı xəta baş verdi: " + error.message);
+        }
+    } catch (err) {
+        console.error("Gözlənilməyən xəta:", err);
+    }
+}
 // Düyməyə klikləyəndə işləyəcək əsas funksiya
 if (actionBtn) {
     actionBtn.addEventListener('click', async () => {
