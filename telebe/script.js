@@ -980,10 +980,10 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
             if (isMobile) {
                 // --- 📱 MOBİL REJİM (Üzən Buton - Solda) ---
-                window.chtlConfig = { chatbotId: "3756376919" };
+                window.chtlConfig = { chatbotId: "8752246377" };
                 const script = document.createElement('script');
                 script.async = true;
-                script.dataset.id = "3756376919";
+                script.dataset.id = "8752246377";
                 script.id = "chtl-script";
                 script.type = "text/javascript";
                 script.src = "https://chatling.ai/js/embed.js";
@@ -991,7 +991,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 if (fakeBtn) fakeBtn.style.display = 'flex';
             } else {
                 // --- 💻 DESKTOP REJİM (Səhifə İçi / Inline - Sağda) ---
-                window.chtlConfig = { chatbotId: "9896744625", display: "page_inline" };
+                window.chtlConfig = { chatbotId: "5844357538", display: "page_inline" };
 
                 // Animasiyanın rəvan işləməsi üçün keçid effekti veririk
                 if (document.querySelector('.main-content')) {
@@ -1043,7 +1043,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 // 2. Skripti dinamik yükləyirik və data-display parametrini veririk
                 const script = document.createElement('script');
                 script.async = true;
-                script.dataset.id = "9896744625";
+                script.dataset.id = "5844357538";
                 script.dataset.display = "page_inline";
                 script.id = "chtl-script";
                 script.type = "text/javascript";
@@ -1059,7 +1059,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
             const inlineContainer = document.getElementById('chtl-inline-bot');
             if (inlineContainer) inlineContainer.style.display = 'none';
 
-            console.log("Qeyd: Pulsuz istifadəçilər üçün AI aktiv deyil.");
+            showMessage("Qeyd: Pulsuz istifadəçilər üçün AI aktiv deyil.");
         }
         (async () => {
             // 1. Supabase Müştərisini təyin edirik (ReferenceError-un qarşısını almaq üçün)
@@ -1899,7 +1899,33 @@ if (window.location.pathname.includes("profile.html")) {
             window.location.href = "login.html";
             return;
         }
+        // ==========================================
+        // İSTİFADƏÇİ ŞƏRTLƏRİNİN YOXLANIŞI
+        // ==========================================
+        if (!user.user_metadata?.terms_accepted) {
+            const isTermsAccepted = await showMessage(
+                "Sistemdən istifadəyə davam etmək üçün İstifadəçi Şərtlərini qəbul etməlisiniz.",
+                "confirm"
+            );
 
+            if (isTermsAccepted) {
+                // İstifadəçi təsdiqlədikdə metadata yenilənir
+                const { error: updateTermsError } = await supabaseClient.auth.updateUser({
+                    data: { terms_accepted: true }
+                });
+
+                if (updateTermsError) {
+                    await showMessage("Xəta baş verdi: " + updateTermsError.message);
+                } else {
+                    await showMessage("Şərtlər uğurla qəbul edildi!");
+                }
+            } else {
+                // İmtina etdikdə sistemdən çıxış olunur və giriş səhifəsinə yönləndirilir
+                await supabaseClient.auth.signOut();
+                window.location.href = "login.html";
+                return;
+            }
+        }
         // 2. HTML-dəki inputları tapırıq və dəyərləri içinə yazırıq
         const usernameInput = document.getElementById('username');
         const emailInput = document.getElementById('email');

@@ -23,13 +23,6 @@ supabaseClient.auth.getSession().then(({ data: { session } }) => {
 });
 // Supabase daxilolma funksiyası
 async function loginWithProvider(providerName) {
-    const termsAgree = document.getElementById("terms_agree");
-
-    // 1. İstifadə Şərtlərinin yoxlanılması
-    if (!termsAgree || !termsAgree.checked) {
-        alert("Lütfən, davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul edin.");
-        return;
-    }
 
     // 2. Supabase OAuth axınının başladılması
     try {
@@ -44,7 +37,7 @@ async function loginWithProvider(providerName) {
 
         if (error) {
             console.error(providerName + " ilə daxil olarkən xəta baş verdi:", error.message);
-            alert("Giriş zamanı xəta baş verdi: " + error.message);
+            await showMessage("Giriş zamanı xəta baş verdi: " + error.message);
         }
     } catch (err) {
         console.error("Gözlənilməyən xəta:", err);

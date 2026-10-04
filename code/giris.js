@@ -27,7 +27,7 @@ async function loginWithProvider(providerName) {
 
     // 1. İstifadə Şərtlərinin yoxlanılması
     if (!termsAgree || !termsAgree.checked) {
-        alert("Lütfən, davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul edin.");
+        showMessage("Lütfən, davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul edin.");
         return;
     }
 
@@ -38,7 +38,7 @@ async function loginWithProvider(providerName) {
             provider: providerName,
             options: {
                 // Giriş tamamlandıqdan sonra istifadəçinin yönləndiriləcəyi səhifə
-                redirectTo: window.location.origin + "/telebe/profile.html"
+                redirectTo: window.location.origin + "/code/profile.html"
             }
         });
 

@@ -25,7 +25,6 @@
             --border-raw:  rgba(234,230,220,0.06);
         }
 
-        /* Bu səhifədə yan menyu yoxdur, top-bar tam eni tutur */
         .theme-mode { right: 130px; }
         .profile-bg { position: relative; right: 5px; }
 
@@ -52,7 +51,7 @@
             color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em;
         }
 
-        /* ── İkinci splitter: editor / console arası ── */
+        /* ── İkinci splitter: editor / konsol arası ── */
         .console-splitter {
             height: 5px; flex-shrink: 0; cursor: row-resize;
             background: var(--border); transition: background 0.2s;
@@ -63,7 +62,7 @@
         .console-panel.collapsed .console-splitter-inner { display: none; }
         .console-panel.collapsed { height: 38px !important; }
 
-        /* ── Mühit hazırlanma göstəricisi (editor topbar daxilində) ── */
+        /* ── Mühit hazırlanma göstəricisi ── */
         .env-status {
             display: flex; align-items: center; gap: 7px;
             font-size: 12px; font-weight: 600; color: var(--muted);
@@ -75,7 +74,7 @@
             border-top-color: var(--gold); border-radius: 50%;
             animation: spin 0.7s linear infinite;
         }
-        .env-status.ready { color: var(--easy-fg); border-color: var(--easy-fg); background: var(--surface  ); }
+        .env-status.ready { color: var(--easy-fg); border-color: var(--easy-fg); background: var(--surface); }
         .env-status.ready .env-spin { display: none; }
 
         /* ── Uğurlu təqdimat modalı ── */
@@ -100,23 +99,12 @@
         .result-modal .rm-buttons { display: flex; gap: 10px; }
         .result-modal .rm-buttons button {
             flex: 1; height: 42px; padding: 0 10px; border-radius: 10px;
-            font-size: 13px;
-            align-items: center;
+            font-size: 13px; align-items: center;
         }
         .rm-btn-secondary {
             background: var(--surface2) !important; color: var(--text-color) !important;
             border: 1px solid var(--border);
         }
-
-        /* Panel-tab bildiriş nöqtəsi (test nəticəsi hazır olduqda) */
-        .panel-tab { position: relative; }
-        .tab-dot {
-            display: none; position: absolute; top: 7px; right: 4px;
-            width: 7px; height: 7px; border-radius: 50%;
-        }
-        .tab-dot.show { display: inline-block; }
-        .tab-dot.pass { background: var(--easy-fg); }
-        .tab-dot.fail { background: var(--hard-fg); }
 
         .diff-mini {
             display: inline-block; padding: 3px 10px; border-radius: 6px;
@@ -126,6 +114,44 @@
         .diff-mini.easy   { color: var(--easy-fg);   background: var(--easy-bg); }
         .diff-mini.medium { color: var(--medium-fg); background: var(--medium-bg); }
         .diff-mini.hard   { color: var(--hard-fg);   background: var(--hard-bg); }
+
+        /* ── Monaco xəta sətri vurğulanması ── */
+        .error-line-highlight { background: rgba(239,68,68,0.15); }
+        .error-line-glyph::before {
+            content: ''; display: block; width: 8px; height: 8px; border-radius: 50%;
+            background: var(--hard-fg); margin-left: 6px; margin-top: 6px;
+        }
+
+        /* ── Test Result paneli (LeetCode tərzi) ── */
+        .test-result { padding: 4px 2px; }
+        .tr-status-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+        .tr-status { font-size: 17px; font-weight: 700; }
+        .tr-status.accepted { color: var(--easy-fg); }
+        .tr-status.wrong { color: var(--hard-fg); }
+        .tr-status.runtime-error { color: var(--hard-fg); }
+        .tr-runtime { font-size: 12px; color: var(--muted); }
+
+        .tr-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+        .tr-tab {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 12px; border-radius: 8px; border: 1px solid transparent;
+            background: var(--surface2); color: var(--muted);
+            font-size: 12.5px; font-weight: 600; cursor: pointer;
+        }
+        .tr-tab.active { background: var(--gold-dim); border-color: var(--gold); color: var(--text-color); }
+        .tr-tab.fail .tr-tab-ic { color: var(--hard-fg); }
+        .tr-tab.pass .tr-tab-ic { color: var(--easy-fg); }
+        .tr-tab-ic { font-size: 11px; }
+
+        .tr-detail .tr-label { font-size: 12px; color: var(--muted); margin: 12px 0 6px; }
+        .tr-detail .tr-label:first-child { margin-top: 0; }
+        .tr-box {
+            background: var(--surface2); border-radius: 8px;
+            padding: 10px 14px; font-size: 13px; font-family: 'Fira Code', Consolas, monospace;
+            white-space: pre-wrap; word-break: break-word; color: var(--text-color);
+        }
+        .tr-box.tr-mismatch { border: 1px solid var(--hard-fg); color: var(--hard-fg); }
+        .tr-box.tr-error-box { border: 1px solid var(--hard-fg); color: var(--hard-fg); white-space: pre-wrap; }
     </style>
 </head>
 <body class="workspace-page">
@@ -147,7 +173,7 @@
             <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
         </div>
         <div class="profile-badge-bg">
-            <div id="daily-limit-badge" class="limit-badge" title="Günlük Quiz Enerjisi">
+            <div id="daily-limit-badge" class="limit-badge" title="Günlük Enerji">
                 <img src="../images/thunder.webp" alt="Energy" id="energy-icon">
                 <span id="limit-text">...</span>
             </div>
@@ -235,7 +261,7 @@
 
             <div class="console-panel" id="console-panel">
                 <div class="console-header" id="console-header" title="Kiçilt / böyüt">
-                    <span class="console-title">Konsol</span>
+                    <span class="console-title">Test Result</span>
                     <div class="console-dots">
                         <span class="d1"></span><span class="d2"></span><span class="d3"></span>
                     </div>

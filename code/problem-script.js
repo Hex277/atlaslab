@@ -1,6 +1,7 @@
 /* ================================================
    AtlasLab Code — problem-script.js
    Məsələ Həlli Workspace: Monaco + Pyodide + Web Worker
+   Funksiya-imzası əsaslı (LeetCode tərzi) mühakimə
    ================================================ */
 
 'use strict';
@@ -15,6 +16,7 @@ const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const PROBLEM_ID = new URLSearchParams(window.location.search).get('id');
 const ELO_REWARD = { easy: 10, medium: 20, hard: 50 };
 let problemStartTime = null;
+
 // ─── State ────────────────────────────────────────────────────
 let problem       = null;
 let testCases     = [];
@@ -26,6 +28,10 @@ let pyodideLoading = false;
 let isRunning     = false;
 let CURRENT_USER_ID = null;
 let energyRemaining = null;
+let errorDecorations = [];
+let lastResults = [];
+
+const RUN_TIMEOUT_MS = 6000;
 
 function getCurrentUserId() {
   const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
@@ -45,7 +51,7 @@ async function refreshEnergyBadge(uId) {
   if (isPremium) {
     if (energyIcon) energyIcon.src = '../images/premium-thunder.webp';
     if (display) display.innerHTML = `<img src="../images/infinity.webp" alt="∞" style="width:18px;vertical-align:middle;">`;
-    if (premiumAds) premiumAds.style.display = 'none'; // Fixed: properties are assigned, not called as functions
+    if (premiumAds) premiumAds.style.display = 'none';
     if (profileImg) profileImg.src = '../images/premium-profile.webp';
     energyRemaining = Infinity;
     return;
@@ -61,64 +67,100 @@ async function refreshEnergyBadge(uId) {
   if (display) display.innerText = energyRemaining;
   if (energyIcon) energyIcon.src = '../images/thunder.webp';
 }
-const RUN_TIMEOUT_MS = 6000;
 
-// Hər dil üçün başlanğıc şablon və Monaco dil id-si
+// Hər dil üçün Monaco dil id-si və icra imkanı
 const LANG_CONFIG = {
-  python: {
-    label: 'Python', monacoId: 'python', dotColor: '#3572A5', executable: true,
-    template:
-`# Kodunuzu bu sahədə yazın.
-
-def main():
-    pass
-
-main()
-`
-  },
-  javascript: {
-    label: 'JavaScript', monacoId: 'javascript', dotColor: '#f0db4f', executable: true,
-    template:
-`// Kodunuzu bu sahədə yazın.
-// Məlumatı oxumaq üçün: readline()
-// Nəticəni çap etmək üçün: console.log()
-
-function main() {
-
-}
-
-main();
-`
-  },
-  java: {
-    label: 'Java', monacoId: 'java', dotColor: '#e76f00', executable: false,
-    template:
-`import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-    }
-}
-`
-  },
-  cpp: {
-    label: 'C++', monacoId: 'cpp', dotColor: '#00599C', executable: false,
-    template:
-`#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-
-    return 0;
-}
-`
-  }
+  python:     { label: 'Python',     monacoId: 'python',     dotColor: '#3572A5', executable: true },
+  javascript: { label: 'JavaScript', monacoId: 'javascript', dotColor: '#f0db4f', executable: true },
+  java:       { label: 'Java',       monacoId: 'java',       dotColor: '#e76f00', executable: false },
+  cpp:        { label: 'C++',        monacoId: 'cpp',        dotColor: '#00599C', executable: false },
 };
 
 // Hər dil üzrə istifadəçinin yazdığı kodu yadda saxla (dil dəyişəndə itməsin)
 const codeByLang = {};
+
+// ═══════════════════════════════════════════════════════════════
+// ŞABLON QURUCULARI (funksiya imzasından)
+// ═══════════════════════════════════════════════════════════════
+function buildPythonTemplate() {
+  const className = problem.class_name || 'Solution';
+  const funcName  = problem.function_name || 'solve';
+  const returnType = problem.return_type || 'None';
+  const params = problem.params || [];
+  const needsTyping = params.some(p => (p.type || '').startsWith('List')) || returnType.startsWith('List');
+  const paramStr = params.map(p => `${p.name}: ${p.type}`).join(', ');
+
+  let code = '';
+  if (needsTyping) code += 'from typing import List\n\n';
+  code += `class ${className}:\n`;
+  code += `    def ${funcName}(self${paramStr ? ', ' + paramStr : ''}) -> ${returnType}:\n`;
+  code += `        `;
+  return code;
+}
+
+function jsTypeOf(t) {
+  if (t === 'int' || t === 'float') return 'number';
+  if (t === 'str') return 'string';
+  if (t === 'bool') return 'boolean';
+  const m = /^List\[(.+)\]$/.exec(t || '');
+  if (m) return jsTypeOf(m[1]) + '[]';
+  return t || '';
+}
+
+function buildJsTemplate() {
+  const funcName = problem.function_name || 'solve';
+  const returnType = problem.return_type || '';
+  const params = problem.params || [];
+
+  let doc = '/**\n';
+  params.forEach(p => { doc += ` * @param {${jsTypeOf(p.type)}} ${p.name}\n`; });
+  doc += ` * @return {${jsTypeOf(returnType)}}\n */\n`;
+  const paramNames = params.map(p => p.name).join(', ');
+  return `${doc}var ${funcName} = function(${paramNames}) {\n    \n};`;
+}
+
+function javaTypeOf(t) {
+  const map = { int: 'int', float: 'double', str: 'String', bool: 'boolean' };
+  if (map[t]) return map[t];
+  const boxMap = { int: 'Integer', float: 'Double', str: 'String', bool: 'Boolean' };
+  const m = /^List\[(.+)\]$/.exec(t || '');
+  if (m) {
+    const inner = boxMap[m[1]] || javaTypeOf(m[1]);
+    return `List<${inner}>`;
+  }
+  return t || 'void';
+}
+
+function buildJavaTemplate() {
+  const funcName = problem.function_name || 'solve';
+  const params = problem.params || [];
+  const returnType = javaTypeOf(problem.return_type || 'void');
+  const paramStr = params.map(p => `${javaTypeOf(p.type)} ${p.name}`).join(', ');
+  return `class Solution {\n    public ${returnType} ${funcName}(${paramStr}) {\n        \n    }\n}`;
+}
+
+function cppTypeOf(t) {
+  const map = { int: 'int', float: 'double', str: 'string', bool: 'bool' };
+  if (map[t]) return map[t];
+  const m = /^List\[(.+)\]$/.exec(t || '');
+  if (m) return `vector<${cppTypeOf(m[1])}>`;
+  return t || 'void';
+}
+
+function buildCppTemplate() {
+  const funcName = problem.function_name || 'solve';
+  const params = problem.params || [];
+  const returnType = cppTypeOf(problem.return_type || 'void');
+  const paramStr = params.map(p => `${cppTypeOf(p.type)} ${p.name}`).join(', ');
+  return `class Solution {\npublic:\n    ${returnType} ${funcName}(${paramStr}) {\n        \n    }\n};`;
+}
+
+const TEMPLATE_BUILDERS = {
+  python: buildPythonTemplate,
+  javascript: buildJsTemplate,
+  java: buildJavaTemplate,
+  cpp: buildCppTemplate,
+};
 
 // ─── DOM refs ─────────────────────────────────────────────────
 const wsLoading      = document.getElementById('ws-loading');
@@ -127,7 +169,7 @@ const problemDiffEl  = document.getElementById('problem-diff-badge');
 const problemDescEl  = document.getElementById('problem-desc');
 const testCasesList  = document.getElementById('test-cases-list');
 
-const langBadge      = document.getElementById('lang-badge');
+const langBadge       = document.getElementById('lang-badge');
 const langDropdown    = document.getElementById('lang-dropdown');
 const langLabel       = document.getElementById('lang-label');
 const langDot         = document.getElementById('lang-dot');
@@ -175,26 +217,18 @@ function escHtml(str) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// CONSOLE
+// KONSOL (sadə köməkçilər — placeholder və təmizləmə üçün)
 // ═══════════════════════════════════════════════════════════════
-function consoleLog(text, cls = 'output') {
-  const span = document.createElement('span');
-  span.className = `c-line c-${cls}`;
-  span.textContent = text;
-  consoleOutput.appendChild(span);
-  consoleOutput.scrollTop = consoleOutput.scrollHeight;
-}
-
 function consoleClear() {
-  consoleOutput.innerHTML = '';
+  consoleOutput.innerHTML = '<span class="c-line c-info">Kod işə salındıqda nəticə burada görünəcək.</span>';
 }
 
 consoleClearBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   consoleClear();
+  clearErrorHighlight();
 });
 
-// Konsolu qat/aç (header-ə klik)
 consoleHeader.addEventListener('click', (e) => {
   if (e.target === consoleClearBtn) return;
   consolePanel.classList.toggle('collapsed');
@@ -208,7 +242,7 @@ document.querySelectorAll('.panel-tab').forEach(tab => {
     document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.panel-content').forEach(c => c.classList.add('hidden'));
     tab.classList.add('active');
-    document.getElementById(`tab-${tab.dataset.tab}`).classList.remove('hidden'); 
+    document.getElementById(`tab-${tab.dataset.tab}`).classList.remove('hidden');
   });
 });
 
@@ -226,7 +260,7 @@ async function loadProblem() {
   try {
     const { data: probData, error: probErr } = await db
       .from('coding_problems')
-      .select('id, title, description, difficulty')
+      .select('id, title, description, difficulty, function_name, class_name, params, return_type')
       .eq('id', PROBLEM_ID)
       .single();
 
@@ -267,10 +301,16 @@ function renderProblem() {
     problemDiffEl.style.display = 'none';
   }
 
-  // Sual mətnini sətir sonlarına görə paraqraflara böl (sadə render)
   const desc = problem.description || '';
   const paragraphs = desc.split(/\n{2,}/).map(p => `<p>${escHtml(p).replace(/\n/g, '<br>')}</p>`).join('');
   problemDescEl.innerHTML = paragraphs || '<p>Təsvir mövcud deyil.</p>';
+}
+
+function renderInputLines(inputObj) {
+  if (!inputObj || typeof inputObj !== 'object') return '—';
+  const entries = Object.entries(inputObj);
+  if (!entries.length) return '—';
+  return entries.map(([k, v]) => `${escHtml(k)} = ${escHtml(JSON.stringify(v))}`).join('<br>');
 }
 
 function renderTestCases() {
@@ -285,11 +325,11 @@ function renderTestCases() {
       <div class="tc-row">
         <div class="tc-field">
           <div class="tc-key">Giriş</div>
-          <div class="tc-val">${escHtml(tc.input_data) || '—'}</div>
+          <div class="tc-val">${renderInputLines(tc.input_data)}</div>
         </div>
         <div class="tc-field">
           <div class="tc-key">Gözlənilən Çıxış</div>
-          <div class="tc-val">${escHtml(tc.expected_output) || '—'}</div>
+          <div class="tc-val">${escHtml(JSON.stringify(tc.expected_output))}</div>
         </div>
       </div>
     </div>
@@ -307,7 +347,7 @@ function initEditor() {
     const isDark = document.body.classList.contains('dark-theme');
 
     monacoEditor = monaco.editor.create(document.getElementById('monaco-host'), {
-      value: LANG_CONFIG[currentLang].template,
+      value: TEMPLATE_BUILDERS[currentLang](),
       language: LANG_CONFIG[currentLang].monacoId,
       theme: isDark ? 'vs-dark' : 'vs',
       fontSize: 14,
@@ -315,25 +355,48 @@ function initEditor() {
       minimap: { enabled: false },
       automaticLayout: true,
       scrollBeyondLastLine: false,
+      glyphMargin: true,
       padding: { top: 14 },
       tabSize: 4,
     });
 
-    codeByLang[currentLang] = LANG_CONFIG[currentLang].template;
+    codeByLang[currentLang] = TEMPLATE_BUILDERS[currentLang]();
 
-    // Tema dəyişikliyini izlə (theme.js body.dark-theme sinifini toggle edir)
+    monacoEditor.onDidChangeModelContent(() => clearErrorHighlight());
+
     const observer = new MutationObserver(() => {
       const dark = document.body.classList.contains('dark-theme');
       monaco.editor.setTheme(dark ? 'vs-dark' : 'vs');
     });
     observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
-    // Pyodide-i indi (redaktor hazır olan kimi) arxa planda yükləməyə başla
     loadPyodideInBackground();
   });
-  
+
+  problemStartTime = Date.now();
 }
-problemStartTime = Date.now();
+
+// ═══════════════════════════════════════════════════════════════
+// MONACO XƏTA SƏTRİ VURĞULANMASI
+// ═══════════════════════════════════════════════════════════════
+function highlightErrorLine(lineNumber) {
+  clearErrorHighlight();
+  if (!lineNumber || !monacoEditor || !window.monaco) return;
+  errorDecorations = monacoEditor.deltaDecorations([], [{
+    range: new monaco.Range(lineNumber, 1, lineNumber, 1),
+    options: {
+      isWholeLine: true,
+      className: 'error-line-highlight',
+      glyphMarginClassName: 'error-line-glyph',
+    }
+  }]);
+  monacoEditor.revealLineInCenter(lineNumber);
+}
+
+function clearErrorHighlight() {
+  if (monacoEditor) errorDecorations = monacoEditor.deltaDecorations(errorDecorations, []);
+}
+
 // ═══════════════════════════════════════════════════════════════
 // DİL SEÇİMİ
 // ═══════════════════════════════════════════════════════════════
@@ -354,7 +417,6 @@ document.querySelectorAll('.lang-option').forEach(opt => {
 function switchLanguage(lang) {
   if (lang === currentLang || !LANG_CONFIG[lang]) return;
 
-  // Cari dilin kodunu yadda saxla
   if (monacoEditor) codeByLang[currentLang] = monacoEditor.getValue();
 
   currentLang = lang;
@@ -362,10 +424,12 @@ function switchLanguage(lang) {
   langLabel.textContent = cfg.label;
   langDot.style.background = cfg.dotColor;
 
+  clearErrorHighlight();
+
   if (monacoEditor) {
     const model = monacoEditor.getModel();
     monaco.editor.setModelLanguage(model, cfg.monacoId);
-    monacoEditor.setValue(codeByLang[lang] ?? cfg.template);
+    monacoEditor.setValue(codeByLang[lang] ?? TEMPLATE_BUILDERS[lang]());
   }
 
   updateEnvStatus();
@@ -380,7 +444,6 @@ async function loadPyodideInBackground() {
   updateEnvStatus();
 
   try {
-    // pyodide.js CDN-dən dinamik yüklə
     await loadScript('https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js');
     pyodide = await window.loadPyodide({
       indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/'
@@ -428,69 +491,101 @@ function updateEnvStatus() {
   }
 }
 
-// ═══════════════════════════════════════════════════════════════
-// PYTHON İCRA — Pyodide, əsas thread
-// ═══════════════════════════════════════════════════════════════
-async function runPython(code, stdin) {
-  if (!pyodideReady) {
-    throw { engineError: 'Python mühiti hələ hazır deyil. Bir az gözləyin.' };
-  }
-
-  try {
-    pyodide.runPython(`
-import sys, io
-sys.stdin = io.StringIO(${pyStrLiteral(stdin)})
-_atlas_stdout = io.StringIO()
-sys.stdout = _atlas_stdout
-`);
-
-    await pyodide.runPythonAsync(code);
-
-    const output = pyodide.runPython('_atlas_stdout.getvalue()');
-    return { output, error: null };
-
-  } catch (err) {
-    return { output: '', error: formatPyError(err) };
-
-  } finally {
-    try {
-      pyodide.runPython('sys.stdout = sys.__stdout__; sys.stdin = sys.__stdin__');
-    } catch (_) { /* no-op */ }
-  }
-}
-
-// Python string literalını təhlükəsiz qurmaq üçün (JSON.stringify Python
-// sintaksisi ilə uyğun gəlir, çünki ikisi də cüt-dırnaqlı escape edir)
+// Python string literalını təhlükəsiz qurmaq üçün
 function pyStrLiteral(str) {
   return JSON.stringify(str ?? '');
 }
 
-function formatPyError(err) {
-  const msg = (err && err.message) ? err.message : String(err);
-  // Pyodide traceback-in son mənalı sətrini çıxar
-  const lines = msg.trim().split('\n');
-  return lines[lines.length - 1] || msg;
+// ═══════════════════════════════════════════════════════════════
+// PYTHON İCRA — Pyodide, funksiya çağırışı
+// ═══════════════════════════════════════════════════════════════
+async function runPython(code, argsObj, paramNames, funcName, className) {
+  if (!pyodideReady) {
+    return { resultJson: null, output: '', error: 'Python mühiti hələ hazır deyil. Bir az gözləyin.', errorLine: null };
+  }
+
+  const driver = `
+import sys, io, json, traceback
+
+sys.stdout = io.StringIO()
+_atlas_stdout = sys.stdout
+
+__error_line = None
+__error_msg = None
+__result_json = None
+
+try:
+    __ns = {}
+    exec(compile(${pyStrLiteral(code)}, '<user_code>', 'exec'), __ns)
+    __Solution = __ns[${pyStrLiteral(className)}]
+    __sol = __Solution()
+    __args = json.loads(${pyStrLiteral(JSON.stringify(argsObj))})
+    __param_names = json.loads(${pyStrLiteral(JSON.stringify(paramNames))})
+    __ordered_args = [__args[p] for p in __param_names]
+    __result = getattr(__sol, ${pyStrLiteral(funcName)})(*__ordered_args)
+    __result_json = json.dumps(__result)
+except SyntaxError as e:
+    __error_line = e.lineno
+    __error_msg = f"SyntaxError: {e.msg}"
+except Exception as e:
+    tb = traceback.extract_tb(e.__traceback__)
+    for frame in reversed(tb):
+        if frame.filename == '<user_code>':
+            __error_line = frame.lineno
+            break
+    __error_msg = f"{type(e).__name__}: {e}"
+
+sys.stdout = sys.__stdout__
+`;
+
+  try {
+    await pyodide.runPythonAsync(driver);
+  } catch (fatalErr) {
+    return { resultJson: null, output: '', error: (fatalErr && fatalErr.message) || String(fatalErr), errorLine: null };
+  }
+
+  const stdoutText = pyodide.globals.get('_atlas_stdout').getvalue();
+  const errorMsg = pyodide.globals.get('__error_msg');
+  const errorLineRaw = pyodide.globals.get('__error_line');
+  const resultJson = pyodide.globals.get('__result_json');
+
+  return {
+    resultJson: resultJson ?? null,
+    output: stdoutText || '',
+    error: errorMsg ?? null,
+    errorLine: (errorLineRaw === undefined || errorLineRaw === null) ? null : errorLineRaw,
+  };
 }
 
 // ═══════════════════════════════════════════════════════════════
-// JAVASCRIPT İCRA — Web Worker
+// JAVASCRIPT İCRA — Web Worker, funksiya çağırışı
 // ═══════════════════════════════════════════════════════════════
-function runJavaScript(code, stdin) {
+function runJavaScript(code, argsObj, paramNames, funcName) {
   return new Promise((resolve) => {
-    const workerSrc = `
-      const __lines = ${JSON.stringify(stdin)}.split('\\n');
-      let __idx = 0;
-      function readline() { return __idx < __lines.length ? __lines[__idx++] : ''; }
-      const __out = [];
-      console.log = (...args) => __out.push(args.map(a =>
-        typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' '));
-      try {
-        ${code}
-        postMessage({ output: __out.join('\\n'), error: null });
-      } catch (e) {
-        postMessage({ output: __out.join('\\n'), error: e.message || String(e) });
-      }
-    `;
+    const prefixLines = [
+      `const __args = ${JSON.stringify(argsObj)};`,
+      `const __paramNames = ${JSON.stringify(paramNames)};`,
+      `const __out = [];`,
+      `console.log = (...a) => __out.push(a.map(x => typeof x === 'object' ? JSON.stringify(x) : String(x)).join(' '));`,
+    ];
+    const prefixLineCount = prefixLines.length;
+
+    const workerSrc = prefixLines.join('\n') + '\n' +
+      code + '\n' +
+`
+try {
+  const __ordered = __paramNames.map(p => __args[p]);
+  const __result = ${funcName}(...__ordered);
+  postMessage({ resultJson: JSON.stringify(__result), output: __out.join('\\n'), error: null, errorLine: null });
+} catch (e) {
+  let line = null;
+  try {
+    const m = e.stack && e.stack.match(/:(\\d+):(\\d+)/);
+    if (m) line = parseInt(m[1], 10) - ${prefixLineCount};
+  } catch (_e2) {}
+  postMessage({ resultJson: null, output: __out.join('\\n'), error: e.message || String(e), errorLine: line });
+}
+`;
     const blob = new Blob([workerSrc], { type: 'application/javascript' });
     const url = URL.createObjectURL(blob);
     const worker = new Worker(url);
@@ -498,7 +593,7 @@ function runJavaScript(code, stdin) {
     const timer = setTimeout(() => {
       worker.terminate();
       URL.revokeObjectURL(url);
-      resolve({ output: '', error: 'Vaxt bitdi (mümkün sonsuz dövr). Kodunuzu yoxlayın.' });
+      resolve({ resultJson: null, output: '', error: 'Vaxt bitdi (mümkün sonsuz dövr). Kodunuzu yoxlayın.', errorLine: null });
     }, RUN_TIMEOUT_MS);
 
     worker.onmessage = (e) => {
@@ -511,7 +606,7 @@ function runJavaScript(code, stdin) {
       clearTimeout(timer);
       worker.terminate();
       URL.revokeObjectURL(url);
-      resolve({ output: '', error: e.message || 'Naməlum xəta' });
+      resolve({ resultJson: null, output: '', error: e.message || 'Naməlum xəta', errorLine: null });
     };
   });
 }
@@ -519,11 +614,115 @@ function runJavaScript(code, stdin) {
 // ═══════════════════════════════════════════════════════════════
 // KODU İCRA ET (bir test keysi üçün)
 // ═══════════════════════════════════════════════════════════════
-async function executeCode(code, stdin) {
-  if (currentLang === 'python') return runPython(code, stdin);
-  if (currentLang === 'javascript') return runJavaScript(code, stdin);
-  return { output: '', error: 'Bu dil hələ dəstəklənmir.' };
+async function executeCode(code, argsObj, paramNames) {
+  if (currentLang === 'python') {
+    return runPython(code, argsObj, paramNames, problem.function_name, problem.class_name || 'Solution');
+  }
+  if (currentLang === 'javascript') {
+    return runJavaScript(code, argsObj, paramNames, problem.function_name);
+  }
+  return { resultJson: null, output: '', error: 'Bu dil hələ dəstəklənmir.', errorLine: null };
 }
+
+// ═══════════════════════════════════════════════════════════════
+// DƏRİN BƏRABƏRLİK (nəticə müqayisəsi üçün)
+// ═══════════════════════════════════════════════════════════════
+function deepEqual(a, b) {
+  if (a === b) return true;
+  if (typeof a !== typeof b) return false;
+  if (Array.isArray(a) || Array.isArray(b)) {
+    if (!Array.isArray(a) || !Array.isArray(b)) return false;
+    if (a.length !== b.length) return false;
+    return a.every((v, i) => deepEqual(v, b[i]));
+  }
+  if (a && b && typeof a === 'object') {
+    const ka = Object.keys(a), kb = Object.keys(b);
+    if (ka.length !== kb.length) return false;
+    return ka.every(k => deepEqual(a[k], b[k]));
+  }
+  return false;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// TEST RESULT PANELİ (LeetCode tərzi)
+// ═══════════════════════════════════════════════════════════════
+function computeOverallStatus(results, allPassed) {
+  if (results.some(r => r.error)) return { key: 'runtime-error', label: 'Runtime Error' };
+  if (allPassed) return { key: 'accepted', label: 'Accepted' };
+  return { key: 'wrong', label: 'Wrong Answer' };
+}
+
+function renderCaseDetail(r) {
+  const inputHTML = renderInputLines(r.input);
+
+  if (r.error) {
+    return `
+      <div class="tr-label">Giriş</div>
+      <div class="tr-box">${inputHTML}</div>
+      <div class="tr-label">Runtime Error</div>
+      <div class="tr-box tr-error-box">${escHtml(r.error)}</div>
+      ${r.output ? `<div class="tr-label">Çap olunanlar (stdout)</div><div class="tr-box">${escHtml(r.output)}</div>` : ''}
+    `;
+  }
+
+  return `
+    <div class="tr-label">Giriş</div>
+    <div class="tr-box">${inputHTML}</div>
+    <div class="tr-label">Sizin Nəticə</div>
+    <div class="tr-box ${r.passed ? '' : 'tr-mismatch'}">${escHtml(JSON.stringify(r.actual))}</div>
+    <div class="tr-label">Gözlənilən</div>
+    <div class="tr-box">${escHtml(JSON.stringify(r.expected))}</div>
+    ${r.output ? `<div class="tr-label">Çap olunanlar (stdout)</div><div class="tr-box">${escHtml(r.output)}</div>` : ''}
+  `;
+}
+
+function renderTestResultPanel(results, runtimeMs) {
+  lastResults = results;
+  const allPassed = results.every(r => r.passed) && results.length > 0;
+  const status = computeOverallStatus(results, allPassed);
+  const firstFailIdx = results.findIndex(r => !r.passed);
+  const activeIdx = firstFailIdx === -1 ? 0 : firstFailIdx;
+
+  const tabsHTML = results.map((r, i) => `
+    <button class="tr-tab ${r.passed ? 'pass' : 'fail'} ${i === activeIdx ? 'active' : ''}" data-idx="${i}">
+      <span class="tr-tab-ic">${r.passed ? '✓' : '✕'}</span> Case ${i + 1}
+    </button>`).join('');
+
+  consoleOutput.innerHTML = `
+    <div class="test-result">
+      <div class="tr-status-row">
+        <span class="tr-status ${status.key}">${status.label}</span>
+        <span class="tr-runtime">Runtime: ${runtimeMs} ms</span>
+      </div>
+      <div class="tr-tabs">${tabsHTML}</div>
+      <div class="tr-detail" id="tr-detail">${renderCaseDetail(results[activeIdx])}</div>
+    </div>
+  `;
+
+  const activeResult = results[activeIdx];
+  if (activeResult.error && activeResult.errorLine) {
+    highlightErrorLine(activeResult.errorLine);
+  } else {
+    clearErrorHighlight();
+  }
+}
+
+consoleOutput.addEventListener('click', (e) => {
+  const tab = e.target.closest('.tr-tab');
+  if (!tab) return;
+  const idx = parseInt(tab.dataset.idx, 10);
+  const r = lastResults[idx];
+  if (!r) return;
+
+  consoleOutput.querySelectorAll('.tr-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+
+  const detail = document.getElementById('tr-detail');
+  if (detail) detail.innerHTML = renderCaseDetail(r);
+
+  if (r.error && r.errorLine) highlightErrorLine(r.errorLine);
+  else clearErrorHighlight();
+});
 
 // ═══════════════════════════════════════════════════════════════
 // RUN / SUBMIT
@@ -557,40 +756,43 @@ async function executeAllTests(isSubmit) {
   btnSubmit.disabled = true;
   const originalSubmitText = btnSubmit.textContent;
   btnSubmit.textContent = isSubmit ? '⏳ Yoxlanılır...' : originalSubmitText;
-
-  consoleClear();
-  consoleLog(`▶ ${cfg.label} kodu icra olunur (${testCases.length} test keysi)...`, 'info');
+  clearErrorHighlight();
 
   const code = monacoEditor.getValue();
-  let passedCount = 0;
+  const paramNames = (problem.params || []).map(p => p.name);
+  const results = [];
   let stoppedOnError = false;
+
+  const t0 = performance.now();
 
   for (let i = 0; i < testCases.length; i++) {
     const tc = testCases[i];
-    const { output, error } = await executeCode(code, tc.input_data || '');
-    const actual = (output || '').trim();
-    const expected = (tc.expected_output || '').trim();
-    const passed = !error && actual === expected;
+    const { resultJson, output, error, errorLine } = await executeCode(code, tc.input_data || {}, paramNames);
 
-    consoleLog(passed ? `✓ Test ${i + 1} — Keçdi` : `✕ Test ${i + 1} — Keçmədi`, passed ? 'success' : 'error');
-    if (!passed && !error) {
-      consoleLog(`  Giriş: ${tc.input_data || '—'}`, 'info');
-      consoleLog(`  Gözlənilən: ${expected || '—'}`, 'info');
-      consoleLog(`  Sizin nəticə: ${actual || '—'}`, 'warn');
+    let actual = null;
+    let passed = false;
+    if (!error) {
+      try {
+        actual = (resultJson === null || resultJson === undefined) ? null : JSON.parse(resultJson);
+        passed = deepEqual(actual, tc.expected_output);
+      } catch (_) {
+        passed = false;
+      }
     }
 
-    if (output) output.split('\n').forEach(line => consoleLog(line, 'output'));
-    if (passed) passedCount++;
+    results.push({
+      index: i + 1, passed, error, errorLine,
+      input: tc.input_data, expected: tc.expected_output, actual, output,
+    });
 
-    if (error) {
-      consoleLog(`Xəta: ${error}`, 'error');
-      consoleLog(`Test ${i + 1}-də xəta baş verdiyi üçün sonrakı testlər işə salınmadı.`, 'warn');
-      stoppedOnError = true;
-      break;
-    }
+    if (error) { stoppedOnError = true; break; }
   }
 
-  const allPassed = !stoppedOnError && passedCount === testCases.length;
+  const runtimeMs = Math.round(performance.now() - t0);
+  const allPassed = !stoppedOnError && results.length === testCases.length && results.every(r => r.passed);
+  const passedCount = results.filter(r => r.passed).length;
+
+  renderTestResultPanel(results, runtimeMs);
 
   if (isSubmit) {
     await recordDailyActivity(CURRENT_USER_ID);
@@ -598,7 +800,6 @@ async function executeAllTests(isSubmit) {
     await addTimeSpent(CURRENT_USER_ID);
 
     if (allPassed) {
-      consoleLog('✓ Bütün testlər keçdi. Nəticə yadda saxlanılır...', 'gold');
       const alreadySolved = await checkAlreadySolved();
       if (!alreadySolved) {
         await markAsSolved();
@@ -620,18 +821,13 @@ async function executeAllTests(isSubmit) {
   btnSubmit.textContent = originalSubmitText;
 }
 
-
-// ═══════════════════════════════════════════════════════════════
-// SUPABASE: Həll edildi kimi qeyd et
-// ═══════════════════════════════════════════════════════════════
 // ═══════════════════════════════════════════════════════════════
 // SUPABASE: Həll edildi kimi qeyd et (Real Auth)
 // ═══════════════════════════════════════════════════════════════
 async function markAsSolved() {
   try {
-    // 1. Cari daxil olmuş istifadəçini yoxla
     const { data: { user }, error: authError } = await db.auth.getUser();
-    
+
     if (authError || !user) {
       showToast('Nəticəni qeyd etmək üçün sistemə daxil olmalısınız.', 'error');
       return;
@@ -639,7 +835,6 @@ async function markAsSolved() {
 
     const userId = user.id;
 
-    // 2. Əvvəllər həll edilib-edilmədiyini yoxla
     const { data: existing } = await db
       .from('user_submissions')
       .select('id')
@@ -648,15 +843,14 @@ async function markAsSolved() {
       .eq('status', 'solved')
       .maybeSingle();
 
-    if (existing) return; // artıq həll edilib
+    if (existing) return;
 
-    // 3. Real user_id ilə bazaya yaz
     const { error } = await db
       .from('user_submissions')
-      .insert({ 
-        user_id: userId, 
-        problem_id: PROBLEM_ID, 
-        status: 'solved' 
+      .insert({
+        user_id: userId,
+        problem_id: PROBLEM_ID,
+        status: 'solved'
       });
 
     if (error) throw error;
@@ -665,6 +859,7 @@ async function markAsSolved() {
     showToast('Nəticə bazaya yazılarkən xəta baş verdi.', 'error');
   }
 }
+
 async function checkAlreadySolved() {
   const { data } = await db.from('user_submissions')
     .select('id').eq('user_id', CURRENT_USER_ID).eq('problem_id', PROBLEM_ID)
@@ -731,6 +926,7 @@ async function syncSession(uId) {
     .update({ last_session_id: getSessionId() }).match({ user_id: uId });
   if (error) console.error('[AtlasLab Code] syncSession:', error.message);
 }
+
 async function recordDailyActivity(uId) {
   if (!uId) return;
   const now = new Date();
@@ -774,7 +970,7 @@ function showResultModal(success, passedCount, totalCount) {
   } else {
     rmIcon.textContent = '⚠️';
     rmTitle.textContent = 'Hələ tam deyil';
-    rmText.textContent = `${passedCount}/${totalCount} test keçdi. "Nəticələr" bölməsindən fərqləri yoxlayıb kodunuzu düzəldin.`;
+    rmText.textContent = `${passedCount}/${totalCount} test keçdi. "Test Result" bölməsindən fərqləri yoxlayıb kodunuzu düzəldin.`;
   }
   resultModalOverlay.classList.add('show');
 }
@@ -860,8 +1056,13 @@ resultModalOverlay.addEventListener('click', (e) => {
 // ═══════════════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════════════
-updateEnvStatus();
-loadProblem();
 CURRENT_USER_ID = getCurrentUserId();
-syncSession(CURRENT_USER_ID);
-refreshEnergyBadge(CURRENT_USER_ID);
+
+if (!CURRENT_USER_ID) {
+  window.location.href = 'register.html';
+} else {
+  updateEnvStatus();
+  loadProblem();
+  syncSession(CURRENT_USER_ID);
+  refreshEnergyBadge(CURRENT_USER_ID);
+}

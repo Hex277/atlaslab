@@ -484,7 +484,33 @@ if (window.location.pathname.includes("profile.html")) {
             window.location.href = "login.html";
             return;
         }
+        // ==========================================
+        // İSTİFADƏÇİ ŞƏRTLƏRİNİN YOXLANIŞI
+        // ==========================================
+        if (!user.user_metadata?.terms_accepted) {
+            const isTermsAccepted = await showMessage(
+                "Sistemdən istifadəyə davam etmək üçün İstifadəçi Şərtlərini qəbul etməlisiniz.",
+                "confirm"
+            );
 
+            if (isTermsAccepted) {
+                // İstifadəçi təsdiqlədikdə metadata yenilənir
+                const { error: updateTermsError } = await supabaseClient.auth.updateUser({
+                    data: { terms_accepted: true }
+                });
+
+                if (updateTermsError) {
+                    await showMessage("Xəta baş verdi: " + updateTermsError.message);
+                } else {
+                    await showMessage("Şərtlər uğurla qəbul edildi!");
+                }
+            } else {
+                // İmtina etdikdə sistemdən çıxış olunur və giriş səhifəsinə yönləndirilir
+                await supabaseClient.auth.signOut();
+                window.location.href = "login.html";
+                return;
+            }
+        }
         // 2. HTML-dəki inputları tapırıq və dəyərləri içinə yazırıq
         const usernameInput = document.getElementById('username');
         const emailInput = document.getElementById('email');
