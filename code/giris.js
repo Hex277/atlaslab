@@ -23,28 +23,17 @@ supabaseClient.auth.getSession().then(({ data: { session } }) => {
 });
 // Supabase daxilolma funksiyası
 async function loginWithProvider(providerName) {
-    const termsAgree = document.getElementById("terms_agree");
-
-    // 1. İstifadə Şərtlərinin yoxlanılması
-    if (!termsAgree || !termsAgree.checked) {
-        showMessage("Lütfən, davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul edin.");
-        return;
-    }
-
-    // 2. Supabase OAuth axınının başladılması
     try {
-        // DÜZƏLİŞ: 'supabase' əvəzinə 'supabaseClient' yazıldı
         const { data, error } = await supabaseClient.auth.signInWithOAuth({
             provider: providerName,
             options: {
-                // Giriş tamamlandıqdan sonra istifadəçinin yönləndiriləcəyi səhifə
-                redirectTo: window.location.origin + "/code/profile.html"
+                redirectTo: window.location.origin + "/telebe/profile.html"
             }
         });
 
         if (error) {
             console.error(providerName + " ilə daxil olarkən xəta baş verdi:", error.message);
-            alert("Giriş zamanı xəta baş verdi: " + error.message);
+            await showMessage("Giriş zamanı xəta baş verdi: " + error.message);
         }
     } catch (err) {
         console.error("Gözlənilməyən xəta:", err);
@@ -57,7 +46,7 @@ if (actionBtn) {
         const password = passwordInput?.value;
         
         if (!email || !password) {
-            showMessage("Zəhmət olmasa, e-poçt və şifrəni daxil edin!");
+            await showMessage("Zəhmət olmasa, e-poçt və şifrəni daxil edin!");
             return;
         }
         const originalText = actionBtn.textContent;
@@ -73,7 +62,7 @@ if (actionBtn) {
             
             // 1. Şərtlərin yoxlanılması
             if (!termsAgree || !termsAgree.checked) {
-                showMessage("Davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul etməlisiniz!");
+                await showMessage("Davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul etməlisiniz!");
                 actionBtn.disabled = false; 
                 return;
             }
