@@ -840,7 +840,7 @@ button:disabled {
   cursor: pointer; transition: all 0.2s;
 }
 .diff-btn:hover { border-color: var(--gold); color: var(--gold); }
-.diff-btn.active { background: var(--gold); color: #fff; border-color: var(--gold); }
+.diff-btn.active { background: var(--gold); color: var(--text-color); border-color: var(--gold); }
 .diff-btn.easy.active  { background: var(--easy-fg);   border-color: var(--easy-fg); }
 .diff-btn.medium.active{ background: var(--medium-fg); border-color: var(--medium-fg); }
 .diff-btn.hard.active  { background: var(--hard-fg);   border-color: var(--hard-fg); }
