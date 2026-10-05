@@ -1236,6 +1236,10 @@ div[data-v-77565f88] {
     .logo {
         display: none;
     }
+    #menu-bar {
+        margin-top: 0;
+        border-top-right-radius: 36px;
+    }
     #menu-bar a {
         display: flex;
     }
