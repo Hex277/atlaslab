@@ -215,7 +215,13 @@ function escHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
-
+function displayValue(v) {
+  if (v === null || v === undefined) return 'None';
+  if (typeof v === 'string') return v; // dırnaqsız, backslash-sız — məhz dəyərin özü
+  if (Array.isArray(v)) return '[' + v.map(displayValue).join(', ') + ']';
+  if (typeof v === 'object') return JSON.stringify(v);
+  return String(v); // number, boolean
+}
 // ═══════════════════════════════════════════════════════════════
 // KONSOL (sadə köməkçilər — placeholder və təmizləmə üçün)
 // ═══════════════════════════════════════════════════════════════
@@ -308,9 +314,9 @@ function renderProblem() {
 
 function renderInputLines(inputObj) {
   if (!inputObj || typeof inputObj !== 'object') return '—';
-  const entries = Object.entries(inputObj);
-  if (!entries.length) return '—';
-  return entries.map(([k, v]) => `${escHtml(k)} = ${escHtml(JSON.stringify(v))}`).join('<br>');
+  const values = Object.values(inputObj);
+  if (!values.length) return '—';
+  return values.map(v => `<div class="io-row">${escHtml(displayValue(v))}</div>`).join('');
 }
 
 function renderTestCases() {
@@ -321,7 +327,7 @@ function renderTestCases() {
 
   testCasesList.innerHTML = testCases.map((tc, i) => `
     <div class="test-case-card">
-      <div class="tc-header">Test ${i + 1}</div>
+      <div class="tc-header">Test ${i + 1}</div>  
       <div class="tc-row">
         <div class="tc-field">
           <div class="tc-key">Giriş</div>
@@ -329,7 +335,7 @@ function renderTestCases() {
         </div>
         <div class="tc-field">
           <div class="tc-key">Gözlənilən Çıxış</div>
-          <div class="tc-val">${escHtml(JSON.stringify(tc.expected_output))}</div>
+          <div class="tc-val">${escHtml(displayValue(tc.expected_output))}</div>
         </div>
       </div>
     </div>
@@ -669,9 +675,8 @@ function renderCaseDetail(r) {
     <div class="tr-label">Giriş</div>
     <div class="tr-box">${inputHTML}</div>
     <div class="tr-label">Sizin Nəticə</div>
-    <div class="tr-box ${r.passed ? '' : 'tr-mismatch'}">${escHtml(JSON.stringify(r.actual))}</div>
-    <div class="tr-label">Gözlənilən</div>
-    <div class="tr-box">${escHtml(JSON.stringify(r.expected))}</div>
+    <div class="tr-box ${r.passed ? '' : 'tr-mismatch'}">${escHtml(displayValue(r.actual))}</div>    <div class="tr-label">Gözlənilən</div>
+    <div class="tr-box">${escHtml(displayValue(r.expected))}</div>
     ${r.output ? `<div class="tr-label">Çap olunanlar (stdout)</div><div class="tr-box">${escHtml(r.output)}</div>` : ''}
   `;
 }

@@ -844,7 +844,14 @@ button:disabled {
 .diff-btn.easy.active  { background: var(--easy-fg);   border-color: var(--easy-fg); }
 .diff-btn.medium.active{ background: var(--medium-fg); border-color: var(--medium-fg); }
 .diff-btn.hard.active  { background: var(--hard-fg);   border-color: var(--hard-fg); }
-
+.io-row { margin-bottom: 10px; }
+.io-row:last-child { margin-bottom: 0; }
+.io-label { font-size: 11px; color: var(--muted); margin-bottom: 3px; }
+.io-value {
+  font-family: 'Fira Code', Consolas, monospace; font-size: 13px;
+  background: var(--surface2); border-radius: 6px; padding: 8px 12px;
+  white-space: pre-wrap; word-break: break-word;
+}
 /* Problems Table */
 .table-wrap {
   width: 100%;
