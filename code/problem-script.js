@@ -368,8 +368,11 @@ function initEditor() {
 
     codeByLang[currentLang] = TEMPLATE_BUILDERS[currentLang]();
 
-    monacoEditor.onDidChangeModelContent(() => clearErrorHighlight());
-
+    monacoEditor.onDidChangeModelContent(() => {
+      clearErrorHighlight();
+      resetBrainBreakTimer();
+    });
+    resetBrainBreakTimer();
     const observer = new MutationObserver(() => {
       const dark = document.body.classList.contains('dark-theme');
       monaco.editor.setTheme(dark ? 'vs-dark' : 'vs');
@@ -1025,7 +1028,99 @@ resultModalOverlay.addEventListener('click', (e) => {
     document.body.style.userSelect = '';
   });
 })();
+// ═══════════════════════════════════════════════════════════════
+// MESSAGE OVERLAY
+// ═══════════════════════════════════════════════════════════════
+function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", customCancel = "Ləğv et") {
+  return new Promise((resolve) => {
+    const overlay = document.getElementById("messageOverlay");
+    const messageText = document.getElementById("messageText");
+    const okBtn = document.getElementById("okBtn");
+    const confirmBtn = document.getElementById("confirmBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+    if (!overlay) return resolve(false);
 
+    messageText.innerHTML = message;
+    overlay.style.display = "flex";
+
+    if (type === "confirm") {
+      okBtn.style.display = "none";
+      confirmBtn.style.display = "inline-block";
+      cancelBtn.style.display = "inline-block";
+      confirmBtn.textContent = customConfirm;
+      cancelBtn.textContent = customCancel;
+      confirmBtn.onclick = () => { overlay.style.display = "none"; resolve(true); };
+      cancelBtn.onclick = () => { overlay.style.display = "none"; resolve(false); };
+    } else {
+      okBtn.style.display = "inline-block";
+      confirmBtn.style.display = "none";
+      cancelBtn.style.display = "none";
+      okBtn.textContent = customConfirm !== "Təsdiqlə" ? customConfirm : "OK";
+      okBtn.onclick = () => { overlay.style.display = "none"; resolve(true); };
+    }
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// BEYİN FASİLƏSİ — idle aşkarlama
+// ═══════════════════════════════════════════════════════════════
+const BRAIN_BREAK_IDLE_MS = 5 * 60 * 1000; 
+let brainBreakTimer = null;
+let brainBreakShown = false;
+
+const BRAIN_BREAK_MESSAGES = [
+  "404: Diqqət tapılmadı. Zəhmət olmasa kursoru kənara qoyun və təmiz hava alın.",
+  "15 dəqiqədir eyni sətrə baxırsan. Bir fincan çay alıb gəl, kod bir yerə qaçmır.",
+  "Beyin yüklənir... Resurslar tükəndi. Sistemə 'Çay/Qəhvə' yenilənməsi lazımdır.",
+  "Status 408: Request Timeout. Diqqətinizin vaxtı bitdi! Sistemə təcili təmiz hava və su qəbulu lazımdır.",
+  "RAM doldu? Keşi təmizləmək və beyni sıfırlamaq üçün 5 dəqiqəlik gəzinti tövsiyə olunur.",
+];
+
+function resetBrainBreakTimer() {
+  if (brainBreakShown) return;
+  clearTimeout(brainBreakTimer);
+  brainBreakTimer = setTimeout(triggerBrainBreakPrompt, BRAIN_BREAK_IDLE_MS);
+}
+
+async function triggerBrainBreakPrompt() {
+  if (brainBreakShown) return;
+  brainBreakShown = true;
+  const msg = BRAIN_BREAK_MESSAGES[Math.floor(Math.random() * BRAIN_BREAK_MESSAGES.length)];
+  const wantsBreak = await showMessage(msg, "confirm", "Fasilə ver", "Sonra");
+  if (wantsBreak) startBreakOverlay();
+}
+
+function formatBreakTime(totalSeconds) {
+  const m = Math.floor(totalSeconds / 60);
+  const s = totalSeconds % 60;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+function startBreakOverlay() {
+  const overlay = document.getElementById('breakOverlay');
+  const timerEl = document.getElementById('breakTimer');
+  const continueBtn = document.getElementById('breakContinueBtn');
+  if (!overlay) return;
+
+  overlay.style.display = 'flex';
+  timerEl.style.display = 'block';
+
+  let secondsLeft = 5 * 60; 
+  timerEl.textContent = formatBreakTime(secondsLeft);
+
+  const interval = setInterval(() => {
+    secondsLeft--;
+    if (secondsLeft <= 0) { clearInterval(interval); timerEl.style.display = 'none'; }
+    else timerEl.textContent = formatBreakTime(secondsLeft);
+  }, 1000);
+
+  const closeBreak = () => {
+    clearInterval(interval);
+    overlay.style.display = 'none';
+    continueBtn.removeEventListener('click', closeBreak);
+  };
+  continueBtn.addEventListener('click', closeBreak);
+}
 // ─── Splitter: editor / konsol hündürlüyü (şaquli) ────────────
 (function setupConsoleSplitter() {
   const editorPanel = document.getElementById('editor-panel');

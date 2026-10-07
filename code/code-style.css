@@ -335,7 +335,7 @@ button {
     background-color: #B89A5A; /* Təsdiq düyməsi diqqət çəksin deyə qırmızı/göy ola bilər */
     color: white;
 }
-#confirmBtn:hover { background-color: #d43f3f; }
+#confirmBtn:hover { background-color: var(--gold-hover); }
 
 #cancelBtn {
     background-color: transparent;
@@ -852,6 +852,25 @@ button:disabled {
   background: var(--surface2); border-radius: 6px; padding: 8px 12px;
   white-space: pre-wrap; word-break: break-word;
 }
+.break-overlay {
+    position: fixed; inset: 0; background: rgba(20,20,20,0.96);
+    z-index: 600; display: flex; align-items: center; justify-content: center;
+}
+.break-content { text-align: center; display: flex; flex-direction: column;}
+.break-img {
+    width: 220px; height: 220px; object-fit: cover;
+    margin-bottom: 24px;
+}
+.break-timer {
+    font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 20px;
+    font-family: 'Fira Code', Consolas, monospace;
+}
+.break-continue-btn {
+    padding: 12px 28px; font-size: 14px; font-weight: 700;
+    background: var(--gold); color: white; border: none;
+    border-radius: 10px; cursor: pointer;
+}
+.break-continue-btn:hover { background: var(--gold-hover); }
 /* Problems Table */
 .table-wrap {
   width: 100%;

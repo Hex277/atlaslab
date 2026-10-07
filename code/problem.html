@@ -294,6 +294,24 @@
     </div>
 
     <div class="toast-container" id="toast-container"></div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="break-overlay" id="breakOverlay" style="display:none;">
+        <div class="break-content">
+            <img src="../images/koala-resting.png" alt="Fasilə" class="break-img">
+            <div class="break-timer" id="breakTimer">05:00</div>
+            <button class="break-continue-btn" id="breakContinueBtn">Davam et</button>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
