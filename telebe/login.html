@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Giriş | atlaslab.az</title>
+    <meta name="description" content="atlaslab.az hesabınıza giriş edərək semestr imtahanlarına hazırlığa və onlayn quizlərə başlayın.">
+    <meta name="robots" content="noindex, nofollow"> <meta property="og:title" content="Hesaba Giriş | atlaslab.az">
+    <meta property="og:description" content="Öyrənməyə davam etmək üçün hesabınıza daxil olun.">
+    <meta property="og:image" content="https://atlaslab.az/atlaslab-link.png">
+    <meta property="og:url" content="https://atlaslab.az/telebe/login.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://atlaslab.az/telebe/login.html">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-029N0KCH3P');
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="logo-wrapper">
+          <img src="../images/al-border-w.webp" class="al-border">
+          <img src="../images/al-center-w.webp" class="al-center">
+        </div>
+    </div>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="fennler-menu.html">
+                <img id="center-logo" src="../images/logo-crop-w.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-toggle">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <div class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </div>
+    </div>
+    <nav id="menu-bar">
+        <a href="../index.html" id="name-text">
+            <img src="../images/logo-crop-w.png" class="logopng" alt="SiteName" style="width: 200px;">
+        </a>
+        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+            Tələbə <span class="arrow"></span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="telebe-menu">
+            <a href="./fennler-menu.html">Fənnlər</a>
+            <a href="./statistics.html">Statistika</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow"></span>
+        </div>
+        
+        <div id="abituriyent-menu" class="menu-bar anim-menu">
+            <a href="../abituriyent/1ciqrup.html" data-i18n="group1">1ci Qrup</a>
+            <a href="../abituriyent/2ciqrup.html" data-i18n="group2">2ci Qrup</a>
+            <a href="../abituriyent/3ciqrup.html" data-i18n="group3">3cü Qrup</a>
+            <a href="../abituriyent/4ciqrup.html" data-i18n="group4">4cü Qrup</a>
+            <a href="../abituriyent/specializations.html" data-i18n="aboutspec">İxtisaslar Haqqında</a>
+            <a href="../abituriyent/balhesab.html" data-i18n="scorecalc">Balların Hesablanması</a>
+            <a href="../abituriyent/about.html" data-i18n="about">Haqqımızda və Əlaqə</a>
+        </div>
+        
+        <div class="menu-header" id="kodlama-header" onclick="toggleMenu('kodlama-menu', this)">
+            Kodlama <span class="arrow"></span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="kodlama-menu">
+            <a href="../code/problems-menu.html">Problemlər</a>
+            <a href="../code/statistics.html">Statistika</a>
+            <a href="../code/profile.html">Profil</a>
+            <a href="../code/aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="../code/premium.html">Premium abunəlik</a>
+        </div>
+        
+    </nav>
+    <div class="main-background">
+        <div class="main-content">
+            <div class="giris-container">
+                <div class="giris-header">
+                    <h1>Hesabınıza daxil olun</h1>
+                    <p>Mövcud hesabınıza giriş etmək üçün aşağıdakı boşluqları doldurun.</p>
+                </div>
+                <div class="giris-form">
+                    <div class="input-group">
+                        <label>E-poçt ünvanı</label>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" placeholder="E-poçtunuzu daxil edin">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Şifrə</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Şifrənizi daxil edin">
+                        </div>
+                    </div>
+                    <div class="forgotpwd">
+                        <a href="javascript:void(0)" onclick="openResetPasswordModal()">
+                            Şifrəni unutmusunuz?
+                        </a>
+                    </div>
+                    <div class="giris-buttons">
+                        <div class="donthaveac"><p>Hesabınız yoxdur? <a href="register.html">Yarat</a></p></div>
+                        <button class="btn-login">Daxil ol</button>
+                    </div>
+                    <!-- Ayırıcı Xətt -->
+                    <div class="social-divider">
+                        <span>və ya</span>
+                    </div>
+
+                    <!-- Yan-yana İkon Düymələri -->
+                    <div class="social-buttons-icon-only">
+                        <button type="button" class="btn-social-icon btn-google" onclick="loginWithProvider('google')" title="Google ilə daxil ol">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+                                <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+                                <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+                                <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="btn-social-icon btn-facebook" onclick="loginWithProvider('facebook')" title="Facebook ilə daxil ol">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"/>
+                                <path fill="#fff" d="M26.572,29.036h4.917l0.772-5.701h-5.689v-3.682c0-1.569,0.768-3.098,3.233-3.098h2.502V11.66c0,0-2.271-0.388-4.442-0.388c-4.534,0-7.493,2.748-7.493,7.72v4.343h-5.008v5.701h5.008v13.78c1.002,0.157,2.022,0.24,3.057,0.24c0.978,0,1.945-0.076,2.895-0.217V29.036z"/>
+                            </svg>
+                        </button>
+
+                        <button type="button" class="btn-social-icon btn-github" onclick="loginWithProvider('github')" title="GitHub ilə daxil ol">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="giris.js" defer></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src=script.js defer></script> 
+</body>
+</html>

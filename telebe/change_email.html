@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Təsdiqləndi - AtlasLab</title>
+    <style>
+        :root {
+            --progress-color: #1e90ff;
+            --bg: #f8f9fa;
+            --border: #E5E9F2;
+            --top-bg: rgba(255, 255, 255, 0.575);
+            --text-color: #222;
+            --text-muted: #5a6c7d; /* Açıq temada alt yazılar üçün */
+            --surface: #FFFFFF;
+            --surface2: #EFF2F8;
+            --correct: #e5f7ec;
+            --icon-color: #28a745; /* Açıq temada tünd yaşıl ikon */
+        }
+
+        body.dark-theme {
+            --bg: #0F1117;
+            --border: #2A2F42;
+            --top-bg: #0F1117;
+            --text-color: #fff;
+            --text-muted: #9aaaba; /* Qara temada alt yazılar üçün daha aydın boz rəng */
+            --surface: #1A1D27;
+            --surface2: #232736;
+            --correct: #1a2720;
+            --icon-color: #4CAF50; /* Qara temada parlayan yaşıl ikon */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--surface2);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Temalar arası yumşaq keçid */
+        }
+
+        .success-card {
+            background-color: var(--surface);
+            padding: 40px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        @media(max-width:768px) {
+            .success-card {
+                width: 70%;
+            }
+        }
+
+        .icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            background-color: var(--correct);
+            color: var(--icon-color);
+            font-size: 40px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1 { 
+            font-size: 26px; 
+            margin-top: 0; 
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        p { 
+            font-size: 15px;
+            line-height: 1.6; 
+            margin-bottom: 30px; 
+            color: var(--text-muted); /* Dinamik alt yazı rəngi */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--progress-color);
+            color: #ffffff; /* Düymə üzərindəki yazı həmişə ağ qalmalıdır */
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: opacity 0.3s ease, transform 0.1s;
+        }
+
+        .btn:hover { 
+            opacity: 0.85; 
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-card">
+        <div class="icon">✓</div>
+        <h1>Uğurla Yeniləndi!</h1>
+        <p>Hesabınıza bağlı e-poçt ünvanı uğurla dəyişdirildi və təsdiqləndi. Yeni məlumatlarınız sistemə qeyd olundu.</p>
+        <a href="./profile.html" class="btn">Profilə qayıt</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if(window.location.hash) {
+                // Səhifə yüklənən kimi URL-dəki #access_token=... hissəsini silib səliqəyə salır
+                history.replaceState(null, null, window.location.pathname);
+            }
+        };
+    </script>
+
+</body>
+<script src="../theme.js"></script>
+</html>

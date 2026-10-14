@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>Java Worker test (TLE daxil olmaqla)</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 860px; margin: 30px auto; padding: 0 16px; }
+  pre { background: #111; color: #ddd; padding: 14px; border-radius: 8px; white-space: pre-wrap; min-height: 160px; }
+  button { padding: 8px 14px; margin: 4px 6px 4px 0; cursor: pointer; }
+  .warn { color: #b45309; font-size: 13px; }
+</style>
+</head>
+<body>
+<h2>Java Worker test — TLE (sonsuz dövr) daxil olmaqla</h2>
+<p class="warn">
+  Bu fayl Claude tərəfindən brauzerdə test edilməyib. <code>ecj.jar</code>, <code>java-driver.js</code> və
+  <code>java-worker.js</code> bu səhifə ilə eyni qovluqda olmalıdır. Lokal serverlə aç (Live Server və ya
+  <code>python3 -m http.server</code>).
+</p>
+<button id="normal">1) Normal kompilyasiya + icra</button>
+<button id="err">2) Kompilyasiya xətası</button>
+<button id="loop">3) Sonsuz dövr (TLE) — səhifə dondurmamalıdır!</button>
+<button id="after">4) TLE-dən sonra təkrar iş (worker özünü bərpa edirmi?)</button>
+<pre id="log"></pre>
+
+<script src="cpp-engine.js"></script>
+<script>
+const logEl = document.getElementById('log');
+const log = (...a) => { logEl.textContent += a.join(' ') + '\n'; logEl.scrollTop = logEl.scrollHeight; };
+
+const engine = AtlasCppEngine.create({
+  workerUrl: 'java-worker.js',
+  runTimeoutMs: 8000,
+  compileTimeoutMs: 60000,
+  onStateChange: s => log('[state]', s),
+});
+
+const PROBLEM = { function_name: 'isPalindrome', class_name: 'Solution',
+  params: [{ name: 'x', type: 'int' }], return_type: 'bool' };
+const INPUTS = [{ x: 121 }, { x: -121 }, { x: 10 }];
+
+const GOOD = `class Solution {
+    public boolean isPalindrome(int x) {
+        System.out.println("debug " + x);
+        if (x < 0) return false;
+        String s = Integer.toString(x);
+        return new StringBuilder(s).reverse().toString().equals(s);
+    }
+}`;
+const BAD = `class Solution {
+    public boolean isPalindrome(int x) {
+        int y = "a";
+        return true;
+    }
+}`;
+const LOOP = `class Solution {
+    public boolean isPalindrome(int x) {
+        while (true) { }
+    }
+}`;
+
+async function run(label, code, inputs) {
+  log(`\n--- ${label} ---`);
+  const t0 = performance.now();
+  const res = await engine.runBatch({ userCode: code, problem: PROBLEM, testCases: inputs.map(i => ({ input_data: i })) });
+  log(`(${Math.round(performance.now() - t0)} ms)`, JSON.stringify(res, null, 1));
+  return res;
+}
+
+document.getElementById('normal').onclick = () => run('Normal', GOOD, INPUTS);
+document.getElementById('err').onclick = () => run('Compile error', BAD, INPUTS);
+document.getElementById('loop').onclick = async () => {
+  log('\n--- Sonsuz dövr --- (başqa tab-larda işini saxla, bu bir neçə saniyə "running" qalacaq, sonra avtomatik kəsilməlidir)');
+  const t0 = performance.now();
+  // Bu tıklamadan sonra UI dərhal cavab verməlidir (worker ayrı thread-dir) — stop düyməsinə ehtiyac olmamalıdır
+  const res = await engine.runBatch({ userCode: LOOP, problem: PROBLEM, testCases: [{ input_data: { x: 1 } }] });
+  log(`(${Math.round(performance.now() - t0)} ms, gözlənilən ~8000ms ətrafında kəsilmə)`, JSON.stringify(res, null, 1));
+};
+document.getElementById('after').onclick = () => run('TLE-dən sonra', GOOD, INPUTS);
+</script>
+</body>
+</html>

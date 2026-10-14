@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məsələ Həlli | atlaslab.az</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <link rel="icon" href="../logo.webp" type="image/webp">
+
+    <link rel="stylesheet" href="code-style.css">
+    <style>
+        /* ── Fallback dəyişənlər (əsas stildə tərif olunmayıb, workspace üçün lazımdır) ── */
+        :root {
+            --gold:        #B89A5A;
+            --gold-dim:    rgba(184,154,90,0.12);
+            --gold-hover:  #a38750;
+            --muted:       #8a8478;
+            --border-raw:  rgba(20,18,16,0.06);
+        }
+        body.dark-theme {
+            --muted:       #8f897c;
+            --border-raw:  rgba(234,230,220,0.06);
+        }
+
+        .theme-mode { right: 130px; }
+        .profile-bg { position: relative; right: 5px; }
+
+        /* ── Dil seçici dropdown ── */
+        .lang-badge { cursor: pointer; position: relative; user-select: none; }
+        .lang-badge .lang-caret { font-size: 9px; opacity: 0.6; margin-left: 2px; }
+        .lang-dropdown {
+            position: absolute; top: calc(100% + 6px); left: 0;
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+            min-width: 190px; z-index: 40; overflow: hidden;
+            display: none;
+        }
+        .lang-dropdown.open { display: block; }
+        .lang-option {
+            display: flex; align-items: center; gap: 8px;
+            padding: 9px 14px; font-size: 13px; font-weight: 600;
+            color: var(--text-color); cursor: pointer;
+        }
+        .lang-option:hover { background: var(--surface2); }
+        .lang-option .lang-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .lang-option .lang-soon {
+            margin-left: auto; font-size: 10px; font-weight: 700;
+            color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em;
+        }
+
+        /* ── İkinci splitter: editor / konsol arası ── */
+        .console-splitter {
+            height: 5px; flex-shrink: 0; cursor: row-resize;
+            background: var(--border); transition: background 0.2s;
+        }
+        .console-splitter:hover, .console-splitter.dragging { background: var(--gold); }
+        .console-header { cursor: pointer; }
+        .console-panel.collapsed .console-output,
+        .console-panel.collapsed .console-splitter-inner { display: none; }
+        .console-panel.collapsed { height: 38px !important; }
+
+        /* ── Mühit hazırlanma göstəricisi ── */
+        .env-status {
+            display: flex; align-items: center; gap: 7px;
+            font-size: 12px; font-weight: 600; color: var(--muted);
+            padding: 5px 12px; border-radius: 6px; background: var(--surface);
+            border: 1px solid var(--border);
+        }
+        .env-status .env-spin {
+            width: 12px; height: 12px; border: 2px solid var(--border);
+            border-top-color: var(--gold); border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        .env-status.ready { color: var(--easy-fg); border-color: var(--easy-fg); background: var(--surface); }
+        .env-status.ready .env-spin { display: none; }
+
+        /* ── Uğurlu təqdimat modalı ── */
+        .result-modal-overlay {
+            position: fixed; inset: 0; background: rgba(13,12,11,0.55);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 500; opacity: 0; pointer-events: none;
+            transition: opacity 0.25s var(--ease);
+        }
+        .result-modal-overlay.show { opacity: 1; pointer-events: auto; }
+        .result-modal {
+            background: var(--surface); border-radius: 16px;
+            padding: 36px 34px; width: 90%; max-width: 380px;
+            text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transform: translateY(14px) scale(0.97);
+            transition: transform 0.25s var(--ease-spring);
+        }
+        .result-modal-overlay.show .result-modal { transform: translateY(0) scale(1); }
+        .result-modal .rm-icon { font-size: 44px; margin-bottom: 14px; line-height: 1; }
+        .result-modal h3 { font-size: 18px; margin: 0 0 8px; }
+        .result-modal p { font-size: 13px; color: var(--muted); margin: 0 0 22px; line-height: 1.6; }
+        .result-modal .rm-buttons { display: flex; gap: 10px; }
+        .result-modal .rm-buttons button {
+            flex: 1; height: 42px; padding: 0 10px; border-radius: 10px;
+            font-size: 13px; align-items: center;
+        }
+        .rm-btn-secondary {
+            background: var(--surface2) !important; color: var(--text-color) !important;
+            border: 1px solid var(--border);
+        }
+
+        .diff-mini {
+            display: inline-block; padding: 3px 10px; border-radius: 6px;
+            font-size: 11px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.04em; margin-top: 3px;
+        }
+        .diff-mini.easy   { color: var(--easy-fg);   background: var(--easy-bg); }
+        .diff-mini.medium { color: var(--medium-fg); background: var(--medium-bg); }
+        .diff-mini.hard   { color: var(--hard-fg);   background: var(--hard-bg); }
+
+        /* ── Monaco xəta sətri vurğulanması ── */
+        .error-line-highlight { background: rgba(239,68,68,0.15); }
+        .error-line-glyph::before {
+            content: ''; display: block; width: 8px; height: 8px; border-radius: 50%;
+            background: var(--hard-fg); margin-left: 6px; margin-top: 6px;
+        }
+
+        /* ── Test Result paneli (LeetCode tərzi) ── */
+        .test-result { padding: 4px 2px; }
+        .tr-status-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+        .tr-status { font-size: 17px; font-weight: 700; }
+        .tr-status.accepted { color: var(--easy-fg); }
+        .tr-status.wrong { color: var(--hard-fg); }
+        .tr-status.runtime-error { color: var(--hard-fg); }
+        .tr-runtime { font-size: 12px; color: var(--muted); }
+
+        .tr-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+        .tr-tab {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 12px; border-radius: 8px; border: 1px solid transparent;
+            background: var(--surface2); color: var(--muted);
+            font-size: 12.5px; font-weight: 600; cursor: pointer;
+        }
+        .tr-tab.active { background: var(--gold-dim); border-color: var(--gold); color: var(--text-color); }
+        .tr-tab.fail .tr-tab-ic { color: var(--hard-fg); }
+        .tr-tab.pass .tr-tab-ic { color: var(--easy-fg); }
+        .tr-tab-ic { font-size: 11px; }
+
+        .tr-detail .tr-label { font-size: 12px; color: var(--muted); margin: 12px 0 6px; }
+        .tr-detail .tr-label:first-child { margin-top: 0; }
+        .tr-box {
+            background: var(--surface2); border-radius: 8px;
+            padding: 10px 14px; font-size: 13px; font-family: 'Fira Code', Consolas, monospace;
+            white-space: pre-wrap; word-break: break-word; color: var(--text-color);
+        }
+        .tr-box.tr-mismatch { border: 1px solid var(--hard-fg); color: var(--hard-fg); }
+        .tr-box.tr-error-box { border: 1px solid var(--hard-fg); color: var(--hard-fg); white-space: pre-wrap; }
+    </style>
+</head>
+<body class="workspace-page">
+    <div id="preloader">
+        <div class="logo-wrapper">
+          <img src="../images/al-border-w.webp" class="al-border">
+          <img src="../images/al-center-w.webp" class="al-center">
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <a href="problems-menu.html" class="back-link-top" style="display: none;">← Məsələlərə qayıt</a>
+        <div class="logo">
+            <a href="problems-menu.html">
+                <img id="center-logo" src="../images/logo-crop-w.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <div class="profile-badge-bg">
+            <div id="daily-limit-badge" class="limit-badge" title="Günlük Enerji">
+                <img src="../images/thunder.webp" alt="Energy" id="energy-icon">
+                <span id="limit-text">...</span>
+            </div>
+            <a href="profile.html" class="profile-bg">
+                <img src="../images/profile.webp" alt="profile">
+            </a>
+        </div>
+    </div>
+
+    <!-- ── Workspace ── -->
+    <div class="workspace-layout" id="workspace-layout">
+
+        <!-- Sol panel: sual -->
+        <div class="problem-panel" id="problem-panel">
+            <div class="panel-tabs">
+                <button class="panel-tab active" data-tab="desc">Təsvir</button>
+                <button class="panel-tab" data-tab="tests">Test Keysləri</button>
+            </div>
+
+            <div class="panel-scroll">
+                <div class="panel-content" id="tab-desc">
+                    <div class="ws-problem-header">
+                        <div>
+                            <h2 id="problem-title">Yüklənir...</h2>
+                            <span class="diff-mini" id="problem-diff-badge"></span>
+                        </div>
+                        <a href="problems-menu.html" class="back-link">← Məsələlərə qayıt</a>
+                    </div>
+                    <div class="problem-desc" id="problem-desc">Sual yüklənir...</div>
+                </div>
+
+                <div class="panel-content hidden" id="tab-tests">
+                    <div id="test-cases-list"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Splitter -->
+        <div class="splitter" id="main-splitter"></div>
+
+        <!-- Sağ panel: editor -->
+        <div class="editor-panel" id="editor-panel">
+            <div class="editor-topbar">
+                <div class="lang-badge" id="lang-badge">
+                    <span class="lang-dot" id="lang-dot"></span>
+                    <span id="lang-label">Python</span>
+                    <span class="lang-caret">▾</span>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-option" data-lang="python">
+                            <span class="lang-dot" style="background:#3572A5"></span> Python
+                        </div>
+                        <div class="lang-option" data-lang="javascript">
+                            <span class="lang-dot" style="background:#f0db4f"></span> JavaScript
+                        </div>
+                        <div class="lang-option" data-lang="java">
+                            <span class="lang-dot" style="background:#e76f00"></span> Java
+                        </div>
+                        <div class="lang-option" data-lang="cpp">
+                            <span class="lang-dot" style="background:#00599C"></span> C++
+                        </div>
+                    </div>
+                </div>
+
+                <div class="env-status" id="env-status">
+                    <span class="env-spin"></span>
+                    <span id="env-status-text">Mühit hazırlanır...</span>
+                </div>
+
+                <button class="btn-reset" id="btn-reset" title="Başlanğıc koda qayıt" style="background:none;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer;">↺ Sıfırla</button>
+                <div class="spacer"></div>
+                <button class="btn-run" id="btn-run">▶ İşə sal</button>
+                <button class="btn-submit" id="btn-submit">Təqdim et</button>
+            </div>
+
+            <div class="monaco-host" id="monaco-host">
+                <div class="ws-loading" id="editor-loading">
+                    <div class="big-spin"></div>
+                    <p>Redaktor hazırlanır...</p>
+                </div>
+            </div>
+
+            <div class="console-splitter" id="console-splitter"></div>
+
+            <div class="console-panel" id="console-panel">
+                <div class="console-header" id="console-header" title="Kiçilt / böyüt">
+                    <span class="console-title">Test Result</span>
+                    <div class="console-dots">
+                        <span class="d1"></span><span class="d2"></span><span class="d3"></span>
+                    </div>
+                    <button class="console-clear" id="console-clear">Təmizlə</button>
+                </div>
+                <div class="console-output" id="console-output">
+                    <span class="c-line c-info">Kod işə salındıqda nəticə burada görünəcək.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İlkin (sual) yüklənməsi overlay -->
+    <div class="ws-loading" id="ws-loading">
+        <div class="big-spin"></div>
+        <p>Məsələ yüklənir...</p>
+    </div>
+
+    <!-- Nəticə modalı (uğur / uğursuzluq) -->
+    <div class="result-modal-overlay" id="result-modal-overlay">
+        <div class="result-modal">
+            <div class="rm-icon" id="rm-icon">🎉</div>
+            <h3 id="rm-title">Uğurla tamamlandı!</h3>
+            <p id="rm-text">Bütün test keysləri uğurla keçdi.</p>
+            <div class="rm-buttons">
+                <button class="rm-btn-secondary" id="rm-stay-btn">Buradaqal</button>
+                <button id="rm-back-btn">Məsələlərə qayıt</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container"></div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="break-overlay" id="breakOverlay" style="display:none;">
+        <div class="break-content">
+            <img src="../images/koala-resting.png" alt="Fasilə" class="break-img">
+            <div class="break-timer" id="breakTimer">05:00</div>
+            <button class="break-continue-btn" id="breakContinueBtn">Davam et</button>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+<script src="../theme.js"></script>
+<script src="draft-store.js"></script>
+<script src="cpp-engine.js"></script>
+<script src="problem-script.js" defer></script>
+<script>
+    // Preloader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const pre = document.getElementById('preloader');
+        if (pre) pre.classList.add('hidden');
+      }, 500);
+    });
+</script>
+</html>

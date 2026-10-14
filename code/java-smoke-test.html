@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>Java (CheerpJ + ECJ) smoke test</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 860px; margin: 30px auto; padding: 0 16px; }
+  pre { background: #111; color: #ddd; padding: 14px; border-radius: 8px; white-space: pre-wrap; min-height: 160px; }
+  button { padding: 8px 14px; margin: 4px 6px 4px 0; cursor: pointer; }
+  .warn { color: #b45309; font-size: 13px; }
+</style>
+</head>
+<body>
+<h2>Java (CheerpJ + ECJ) smoke test</h2>
+<p class="warn">
+  Bu səhifə Claude tərəfindən brauzerdə TEST EDİLMƏYİB (sandbox-da CheerpJ-ə çıxış yoxdur).
+  Məqsəd: Java dəstəyinin mümkün olub-olmadığını 2 dəqiqəyə göstərmək. Nəticəni (xüsusən ❌ olan addımı) mənə göndər.
+</p>
+<p>
+  Əvvəlcə <b>ecj.jar</b> faylını bu səhifənin yanına qoy (Eclipse Compiler for Java, ~2 MB — Maven Central: org.eclipse.jdt:ecj).<br>
+  Sonra səhifəni <b>lokal serverlə</b> aç (məs. <code>python3 -m http.server</code> → http://localhost:8000/java-smoke-test.html).
+</p>
+<button id="run">1) Kompilyasiya + icra testi</button>
+<button id="err">2) Xəta formatı testi</button>
+<button id="loop" title="Tab donub-donmadığını yoxlayır">3) Sonsuz dövr testi (DİQQƏT!)</button>
+<pre id="log"></pre>
+
+<script src="java-driver.js"></script>
+<script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
+<script>
+const APP_DIR = '/app' + location.pathname.replace(/[^/]*$/, '');  // səhifənin öz qovluğu
+const ECJ_PATH = APP_DIR + 'ecj.jar';
+console.log('[debug] ECJ_PATH =', ECJ_PATH);const ECJ_MAIN = 'org.eclipse.jdt.internal.compiler.batch.Main';
+const logEl = document.getElementById('log');
+const log = (m) => { logEl.textContent += m + '\n'; };
+const timed = async (label, fn) => {
+  const t = performance.now();
+  try { const r = await fn(); log(`✅ ${label} (${Math.round(performance.now() - t)} ms)`); return r; }
+  catch (e) { log(`❌ ${label}: ${e && e.message || e}`); throw e; }
+};
+const readFile = async (p) => { const b = await cjFileBlob(p); return await b.text(); };
+
+const PROBLEM = { function_name: 'isPalindrome', class_name: 'Solution', params: [{ name: 'x', type: 'int' }], return_type: 'bool' };
+const GOOD = `class Solution {
+    public boolean isPalindrome(int x) {
+        System.out.println("debug " + x);
+        String s = Integer.toString(x);
+        return x >= 0 && new StringBuilder(s).reverse().toString().equals(s);
+    }
+}`;
+const BAD = `class Solution {
+    public boolean isPalindrome(int x) {
+        int y = "a";
+        return true;
+    }
+}`;
+const LOOP = `class Solution {
+    public boolean isPalindrome(int x) {
+        while (true) { }
+    }
+}`;
+const INPUTS = [{ x: 121 }, { x: -121 }, { x: 10 }];
+
+let ready = null;
+function init() { return ready || (ready = timed('cheerpjInit', () => cheerpjInit())); }
+async function compileAndRun(userCode, inputs) {
+  await init();
+  cheerpOSAddStringFile('/str/Main.java', AtlasJava.buildJavaSource(userCode, PROBLEM));
+  cheerpOSAddStringFile('/str/in.txt', AtlasJava.buildStdin(inputs, PROBLEM.params));
+
+  const compileExit = await timed('ECJ ilə kompilyasiya', () => cheerpjRunMain(ECJ_MAIN, ECJ_PATH,
+    '-1.8', '-nowarn', '-d', '/files', '-log', '/files/ecj.log', '/str/Main.java'));
+  log('ECJ exit kodu: ' + compileExit);
+
+  let ecjLog = '';
+  try { ecjLog = await readFile('/files/ecj.log'); } catch (e) { log('(ecj.log oxunmadı: ' + e.message + ')'); }
+  log('--- ecj.log ---\n' + ecjLog + '--------------');
+  if (compileExit !== 0 || /ERROR in/.test(ecjLog)) {
+    const p = AtlasJava.parseEcjLog(ecjLog, AtlasJava.countUserLines(userCode));
+    log('Parse olunmuş: errorLine=' + p.errorLine + '\n' + p.text);
+    return null;
+  }
+
+  const runExit = await timed('Main sinfinin icrası', () => cheerpjRunMain('Main', '/files', '/str/in.txt', '/files/out.txt'));
+  log('Main exit kodu: ' + runExit);
+  const out = await timed('nəticə faylının oxunması', () => readFile('/files/out.txt'));
+  const res = AtlasJava.interpretOutput(out, inputs.length);
+  log('Nəticələr: ' + JSON.stringify(res));
+  return res;
+}
+
+document.getElementById('run').onclick = async () => {
+  logEl.textContent = '';
+  try {
+    const res = await compileAndRun(GOOD, INPUTS);
+    const ok = res && JSON.stringify(res.map(r => JSON.parse(r.resultJson))) === JSON.stringify([true, false, false]);
+    log(ok ? '\n🎉 HAMISI İŞLƏYİR: [true,false,false] alındı' : '\n⚠ Nəticə gözlənildiyi kimi deyil');
+  } catch (e) { log('\nDayandı.'); }
+};
+document.getElementById('err').onclick = async () => {
+  logEl.textContent = '';
+  try { await compileAndRun(BAD, INPUTS); } catch (e) { log('\nDayandı.'); }
+};
+document.getElementById('loop').onclick = async () => {
+  if (!confirm('Bu test tabı DONDURA bilər. Başqa tab-larda işini saxla. Davam edək?')) return;
+  logEl.textContent = 'Sonsuz dövr başladı... tab donursa, bu Java üçün TLE qorunması YOXDUR deməkdir.\n';
+  try { await compileAndRun(LOOP, [{ x: 1 }]); } catch (e) {}
+};
+</script>
+</body>
+</html>
