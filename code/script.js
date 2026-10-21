@@ -27,21 +27,39 @@ document.addEventListener("DOMContentLoaded", function () {
     // UI-ı dəyişən və ya geri qaytaran (Sıfırlayan) funksiya
     function setPremiumUI(isActive) {
         const premiumHref = document.getElementById('premium-href');
-        const profileImg = document.querySelector('.profile-bg img');
-
         if (isActive) {
-            // Premium aktivdir
             document.body.classList.add('premium-aktiv');
             if (premiumHref) premiumHref.style.display = 'none';
-            if (profileImg) profileImg.src = '../images/premium-profile.webp';
         } else {
-            // Premium DEYİL (və ya vaxtı bitib) - Hər şeyi standart vəziyyətə qaytarırıq
             document.body.classList.remove('premium-aktiv');
-            if (premiumHref) premiumHref.style.display = ''; // CSS-dəki original display dəyərinə qayıdır
-            if (profileImg) profileImg.src = '../images/profile.webp';
+            if (premiumHref) premiumHref.style.display = '';
         }
     }
 
+
+    const DEFAULT_AVATAR = '../images/profile.webp';
+
+    function setTopAvatar(url) {
+        const img = document.querySelector('.profile-bg img');
+        if (!img) return;
+        img.onerror = () => { img.onerror = null; img.src = DEFAULT_AVATAR; };
+        img.src = url || DEFAULT_AVATAR;
+    }
+    window.setTopAvatar = setTopAvatar;
+
+    async function resolveAvatar(client, session) {
+        const uid = session.user.id;
+        let { data } = await client.from('profile_avatars')
+            .select('avatar_url').eq('user_id', uid).maybeSingle();
+        let url = data?.avatar_url || null;
+        if (!url) {                                   // sətir yoxdur: OAuth şəklini sinxronlaşdır
+            const { data: synced } = await client.rpc('sync_oauth_avatar');
+            url = synced || null;
+        }
+        if (url) localStorage.setItem('avatar_' + uid, url);
+        else localStorage.removeItem('avatar_' + uid);
+        setTopAvatar(url);
+    }
     if (window.supabase) {
         const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
         const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
@@ -65,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const indi = new Date().getTime();
 
         if (userId) {
+            setTopAvatar(localStorage.getItem('avatar_' + userId));
             // Hər istifadəçinin ÖZÜNƏ məxsus premium yaddaşını yoxlayırıq
             const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
 
@@ -79,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         supabaseGlobal.auth.getSession().then(async ({ data: { session } }) => {
             if (session) {
                 const currentUserId = session.user.id;
+                resolveAvatar(supabaseGlobal, session);
                 const { data: abuneData } = await supabaseGlobal
                     .from('abunelikler')
                     .select('bitis_tarixi')
@@ -295,6 +315,9 @@ if (window.location.pathname.endsWith("statistics.html")) {
         if (!premiumError && premiumData) {
             premiumData.forEach(p => activePremiumUserIds.add(p.user_id));
         }
+        const { data: avatarData } = await client
+            .from('profile_avatars').select('user_id, avatar_url').in('user_id', userIds);
+        const avatarMap = new Map((avatarData || []).map(a => [a.user_id, a.avatar_url]));
 
         const tbody = document.getElementById('leaderboardBody');
         if (!tbody) return;
@@ -315,7 +338,13 @@ if (window.location.pathname.endsWith("statistics.html")) {
             tbody.innerHTML += `
                 <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
                     <td>${index + 1}</td>
-                    <td>${nameToShow} ${premiumBadge}</td>
+                    <td>
+                        <div class="lb-user">
+                            <img class="lb-avatar" src="${avatarMap.get(row.user_id) || '../images/profile.webp'}"
+                                alt="" loading="lazy" onerror="this.onerror=null;this.src='../images/profile.webp'">
+                            <span class="lb-name">${nameToShow}</span>${premiumBadge}
+                        </div>
+                    </td>
                     <td>${row.elo_rating || 1000}</td>
                     <td>${accuracy}%</td>
                 </tr>
@@ -524,6 +553,70 @@ if (window.location.pathname.includes("profile.html")) {
             const createdDate = new Date(user.created_at);
             const options = { day: 'numeric', month: 'long', year: 'numeric' };
             createdAtText.textContent = createdDate.toLocaleDateString('az-AZ', options);
+        }
+        // ---------- PROFİL ŞƏKLİ ----------
+        const avatarPreview = document.getElementById('avatarPreview');
+        const avatarFile = document.getElementById('avatarFile');
+        const avatarPickBtn = document.getElementById('avatarPickBtn');
+        const avatarActions = document.getElementById('avatarActions');
+
+        const cachedAv = localStorage.getItem('avatar_' + user.id);
+        if (cachedAv && avatarPreview) avatarPreview.src = cachedAv;
+        supabaseClient.from('profile_avatars').select('avatar_url').eq('user_id', user.id).maybeSingle()
+            .then(({ data }) => { if (data?.avatar_url && avatarPreview) avatarPreview.src = data.avatar_url; });
+
+        // Yalnız email/şifrə istifadəçilərinə yükləmə düyməsi (hamıya açmaq üçün şərti sil)
+        if (avatarActions) avatarActions.style.display = 'flex';
+        function compressImage(file, size = 256, quality = 0.85) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                const objUrl = URL.createObjectURL(file);
+                img.onload = () => {
+                    URL.revokeObjectURL(objUrl);
+                    const s = Math.min(img.width, img.height);          // mərkəzdən kvadrat kəsim
+                    const canvas = document.createElement('canvas');
+                    canvas.width = canvas.height = size;
+                    canvas.getContext('2d').drawImage(img, (img.width - s) / 2, (img.height - s) / 2, s, s, 0, 0, size, size);
+                    canvas.toBlob(b => b ? resolve(b) : reject(new Error('Sıxışdırma alınmadı.')), 'image/webp', quality);
+                };
+                img.onerror = () => { URL.revokeObjectURL(objUrl); reject(new Error('Şəkil oxuna bilmədi.')); };
+                img.src = objUrl;
+            });
+        }
+
+        if (avatarPickBtn && avatarFile) {
+            avatarPickBtn.addEventListener('click', () => avatarFile.click());
+            avatarFile.addEventListener('change', async () => {
+                const file = avatarFile.files[0];
+                avatarFile.value = '';
+                if (!file) return;
+                if (!file.type.startsWith('image/')) { await showMessage('Yalnız şəkil faylı seçin.'); return; }
+                if (file.size > 10 * 1024 * 1024) { await showMessage('Şəkil 10 MB-dan böyük ola bilməz.'); return; }
+
+                const oldText = avatarPickBtn.textContent;
+                avatarPickBtn.disabled = true;
+                avatarPickBtn.textContent = 'Yüklənir...';
+                try {
+                    const blob = await compressImage(file);             // ~10-30 KB olur
+                    const fd = new FormData();
+                    fd.append('file', blob, 'avatar');
+                    const { data, error } = await supabaseClient.functions.invoke('upload-avatar', { body: fd });
+                    if (error) {
+                        let msg = error.message;
+                        try { msg = (await error.context.json()).error || msg; } catch (_) { }
+                        throw new Error(msg);
+                    }
+                    avatarPreview.src = data.url;
+                    localStorage.setItem('avatar_' + user.id, data.url);
+                    if (window.setTopAvatar) window.setTopAvatar(data.url);
+                    await showMessage('Profil şəkli yeniləndi!');
+                } catch (e) {
+                    await showMessage(e.message || 'Xəta baş verdi.');
+                } finally {
+                    avatarPickBtn.disabled = false;
+                    avatarPickBtn.textContent = oldText;
+                }
+            });
         }
         // ==========================================
         // 3. ABUNƏLİK YOXLANIŞI VƏ EKRANA YAZDIRILMASI

@@ -191,6 +191,7 @@
             <div class="panel-tabs">
                 <button class="panel-tab active" data-tab="desc">Təsvir</button>
                 <button class="panel-tab" data-tab="tests">Test Keysləri</button>
+                <button class="panel-tab" data-tab="steps">Köməkçi</button>
             </div>
 
             <div class="panel-scroll">
@@ -203,10 +204,22 @@
                         <a href="problems-menu.html" class="back-link">← Məsələlərə qayıt</a>
                     </div>
                     <div class="problem-desc" id="problem-desc">Sual yüklənir...</div>
+
                 </div>
 
                 <div class="panel-content hidden" id="tab-tests">
                     <div id="test-cases-list"></div>
+                </div>
+                <div class="panel-content hidden" id="tab-steps">
+                    
+                    <div class="ws-problem-header">
+                        <a href="problems-menu.html" class="back-link">← Məsələlərə qayıt</a>
+                        <h2>Addım-addım Həll</h2>
+                        <p>Addım-addım bələdçi: Çətinlik çəkdiyiniz tapşırıqları kiçik alt-tapşırıqlara bölərək tək-tək həll edin. Hər mərhələnin özünəməxsus editoru və terminalı var. Kiçik addımları tamamlayaraq əsas məsələnin məntiqini asanlıqla mənimsəyin.</p>
+                    </div>
+                    <div id="steps-container">
+                        <!-- Dinamik olaraq addımlar bura yüklənəcək -->
+                    </div>
                 </div>
 
             </div>

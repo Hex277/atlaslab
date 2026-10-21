@@ -221,6 +221,9 @@ button {
 }
 .profile-bg img {
     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .limit-badge {
     display: inline-flex;
@@ -803,7 +806,21 @@ button {
 .input-group input:focus {
     border:1px solid #B89A5A;
 }
+/* Leaderboard avatar */
+.lb-user { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.lb-avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.lb-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.lb-user .lb-premium-text-bg { flex-shrink: 0; }
 
+/* Profil səhifəsi avatar */
+.avatar-section { display: flex; flex-direction: row; align-items: center; gap: 12px; justify-content: space-between; padding: 10px; border: 1px solid #B89A5A; border-radius: 15px;}
+.avatar-large { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border); }
+.avatar-actions { flex-direction: column; align-items: center; gap: 6px; }
+.avatar-actions small { color: var(--text-color); opacity: .6; font-size: 12px; }
+.avatar-btn { background: transparent; border: 1px solid #B89A5A; color: #B89A5A; border-radius: 8px; padding: 8px 16px; cursor: pointer; font-size: 13px; }
+.avatar-btn:disabled { opacity: .5; cursor: default; }
+
+/* İstəyə bağlı: premium olanda şəkil dəyişmir, yalnız çərçivə əlavə olunur */
 .profile-buttons {
     display: flex;
     justify-content: space-between;
@@ -816,6 +833,7 @@ button {
     border: 1px solid #B89A5A;
     border-radius: 15px;
     justify-content: space-between;
+    align-items: center;
 }
 .premium-abunelik-bg {
     display: flex;
@@ -2344,5 +2362,8 @@ button:disabled {
     }
     #open-ai-btn {
         display: none;
+    }
+    .leaderboard-container {
+        padding: 15px;
     }
 }

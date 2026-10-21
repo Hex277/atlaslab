@@ -315,6 +315,7 @@ async function loadProblem() {
   } finally {
     wsLoading.classList.add('hidden');
   }
+  await loadProblemSteps(); 
 }
 
 function renderProblem() {
@@ -363,7 +364,342 @@ function renderTestCases() {
     </div>
   `).join('');
 }
+// ═══════════════════════════════════════════════════════════════
+// KÖMƏKÇİ ADDIMLAR (hər addımın öz editoru + öz Test Result terminalı)
+// ═══════════════════════════════════════════════════════════════
+let problemSteps = [];
+let stepEditors = [];
+let stepLangs = {};              // { idx: 'python' }
+let stepCodeByLang = {};         // { idx: { python: '...', java: '...' } }
+let stepErrorDecorations = {};
+let stepResults = {};            // { idx: [results] }
 
+// Mövcud şablon qurucularına toxunmadan addım üçün şablon al
+function stepTemplate(step, lang) {
+  const prev = problem;
+  problem = step;                // builder-lər global `problem` oxuyur
+  try { return TEMPLATE_BUILDERS[lang](); }
+  finally { problem = prev; }
+}
+
+async function loadProblemSteps() {
+  const container = document.getElementById('steps-container');
+  try {
+    const { data, error } = await db
+      .from('problem_steps')
+      .select('id, step_order, title, description, function_name, return_type, params, step_test_cases(id, input_data, expected_output)')
+      .eq('problem_id', PROBLEM_ID)
+      .order('step_order', { ascending: true });
+    if (error) throw error;
+
+    problemSteps = (data || []).map(s => ({
+      ...s,
+      testCases: (s.step_test_cases || []).sort((a, b) => a.id - b.id),
+    }));
+    problemSteps.forEach((_, i) => { stepLangs[i] = 'python'; stepCodeByLang[i] = {}; });
+    renderSteps();
+  } catch (err) {
+    console.error('[AtlasLab Code] loadProblemSteps:', err);
+    container.innerHTML = '<div class="table-empty">Köməkçi addımlar yüklənmədi.</div>';
+  }
+}
+
+function stepEnvInfo(lang) {
+  const label = LANG_CONFIG[lang].label;
+  if (lang === 'python') {
+    return pyodideReady ? { ready: true, text: 'Python mühiti hazırdır' }
+                        : { ready: false, text: 'Mühit hazırlanır...' };
+  }
+  if (lang === 'javascript') return { ready: true, text: 'JavaScript mühiti hazırdır' };
+  const s = BATCH_ENGINES[lang].state;
+  return s === 'ready' ? { ready: true, text: `${label} mühiti hazırdır` }
+       : s === 'error' ? { ready: false, text: `${label} mühiti yüklənmədi (təkrar cəhd olunacaq)` }
+       : { ready: false, text: `${label} mühiti hazırlanır...` };
+}
+
+function updateStepEnv(idx) {
+  const card = document.querySelector(`.step-card[data-step-index="${idx}"]`);
+  if (!card) return;
+  const el = card.querySelector('.env-status');
+  const info = stepEnvInfo(stepLangs[idx] || 'python');
+  el.classList.toggle('ready', info.ready);
+  el.querySelector('.step-env-text').textContent = info.text;
+}
+function updateAllStepEnv() { problemSteps.forEach((_, i) => updateStepEnv(i)); }
+
+const STEP_EMPTY_OUTPUT = '<span class="c-line c-info">Kod işə salındıqda nəticə burada görünəcək.</span>';
+
+function renderSteps() {
+  const container = document.getElementById('steps-container');
+  if (!problemSteps.length) {
+    container.innerHTML = '<div class="table-empty">Bu məsələ üçün köməkçi addım əlavə edilməyib.</div>';
+    return;
+  }
+
+  const langOptions = Object.entries(LANG_CONFIG).map(([key, c]) => `
+    <div class="step-lang-option" data-lang="${key}">
+      <span class="lang-dot" style="background:${c.dotColor}"></span> ${c.label}
+    </div>`).join('');
+
+  container.innerHTML = problemSteps.map((step, idx) => {
+    const cfg = LANG_CONFIG[stepLangs[idx]];
+    return `
+      <div class="step-card" data-step-index="${idx}">
+        <div class="step-header">Addım ${step.step_order}: ${escHtml(step.title)}</div>
+        <div class="step-desc">${escHtml(step.description)}</div>
+
+        <div class="step-toolbar">
+          <div class="step-toolbar-left">
+            <div class="step-lang-badge">
+              <span class="lang-dot" style="background:${cfg.dotColor}"></span>
+              <span class="step-lang-label">${cfg.label}</span>
+              <span class="lang-caret">▾</span>
+              <div class="step-lang-dropdown">${langOptions}</div>
+            </div>
+            <div class="env-status">
+              <span class="env-spin"></span>
+              <span class="step-env-text">Mühit hazırlanır...</span>
+            </div>
+          </div>
+          <button class="btn-run step-run-btn">▶ İşə sal</button>
+        </div>
+
+        <div class="step-editor-host" id="step-editor-${idx}"></div>
+
+        <div class="console-panel step-console">
+          <div class="console-header step-console-header" title="Kiçilt / böyüt">
+            <span class="console-title">Test Result</span>
+            <div class="console-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div>
+            <button class="console-clear step-console-clear">Təmizlə</button>
+          </div>
+          <div class="console-output" id="step-output-${idx}">${STEP_EMPTY_OUTPUT}</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  createStepEditors();
+}
+
+function createStepEditors() {
+  // Monaco hələ yüklənməyibsə gözləyir (köhnə setTimeout(100) yarışını aradan qaldırır)
+  require(['vs/editor/editor.main'], () => {
+    const isDark = document.body.classList.contains('dark-theme');
+    stepEditors = problemSteps.map((step, idx) => {
+      const host = document.getElementById(`step-editor-${idx}`);
+      if (!host) return null;
+      const editor = monaco.editor.create(host, {
+        value: stepTemplate(step, stepLangs[idx]),
+        language: LANG_CONFIG[stepLangs[idx]].monacoId,
+        theme: isDark ? 'vs-dark' : 'vs',
+        fontSize: 13,
+        fontFamily: "'Fira Code', 'Cascadia Code', 'Courier New', monospace",
+        minimap: { enabled: false },
+        automaticLayout: true,
+        scrollBeyondLastLine: false,
+        glyphMargin: true,
+        padding: { top: 10 },
+        tabSize: 4,
+        scrollbar: { alwaysConsumeMouseWheel: false },   // səhifə scroll-u editorda ilişib qalmasın
+      });
+      editor.onDidChangeModelContent(() => clearStepErrorHighlight(idx));
+      return editor;
+    });
+    updateAllStepEnv();
+  });
+}
+
+// ─── Hadisələr (delegation — bir dəfə qoşulur) ────────────────
+document.getElementById('steps-container').addEventListener('click', (e) => {
+  const card = e.target.closest('.step-card');
+  if (!card) return;
+  const idx = parseInt(card.dataset.stepIndex, 10);
+
+  if (e.target.closest('.step-lang-option')) {
+    e.stopPropagation();
+    switchStepLanguage(idx, e.target.closest('.step-lang-option').dataset.lang);
+    card.querySelector('.step-lang-dropdown').classList.remove('open');
+    return;
+  }
+  if (e.target.closest('.step-lang-badge')) {
+    e.stopPropagation();
+    document.querySelectorAll('.step-lang-dropdown').forEach(d => {
+      if (d !== card.querySelector('.step-lang-dropdown')) d.classList.remove('open');
+    });
+    card.querySelector('.step-lang-dropdown').classList.toggle('open');
+    return;
+  }
+  if (e.target.closest('.step-run-btn')) { runStep(idx); return; }
+
+  if (e.target.closest('.step-console-clear')) {
+    document.getElementById(`step-output-${idx}`).innerHTML = STEP_EMPTY_OUTPUT;
+    delete stepResults[idx];
+    clearStepErrorHighlight(idx);
+    return;
+  }
+  if (e.target.closest('.step-console-header')) {
+    card.querySelector('.step-console').classList.toggle('collapsed');
+    return;
+  }
+  const tab = e.target.closest('.tr-tab');
+  if (tab) {
+    const r = (stepResults[idx] || [])[parseInt(tab.dataset.idx, 10)];
+    if (!r) return;
+    card.querySelectorAll('.tr-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    card.querySelector('.tr-detail').innerHTML = renderCaseDetail(r);
+    if (r.error && r.errorLine) highlightStepErrorLine(idx, r.errorLine);
+    else clearStepErrorHighlight(idx);
+  }
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.step-lang-dropdown').forEach(d => d.classList.remove('open'));
+});
+
+function switchStepLanguage(idx, lang) {
+  const editor = stepEditors[idx];
+  if (!editor || !LANG_CONFIG[lang] || lang === stepLangs[idx]) return;
+
+  stepCodeByLang[idx][stepLangs[idx]] = editor.getValue();   // dil dəyişəndə kod itməsin
+  stepLangs[idx] = lang;
+
+  const cfg = LANG_CONFIG[lang];
+  const card = document.querySelector(`.step-card[data-step-index="${idx}"]`);
+  card.querySelector('.step-lang-label').textContent = cfg.label;
+  card.querySelector('.step-lang-badge .lang-dot').style.background = cfg.dotColor;
+
+  monaco.editor.setModelLanguage(editor.getModel(), cfg.monacoId);
+  editor.setValue(stepCodeByLang[idx][lang] ?? stepTemplate(problemSteps[idx], lang));
+  clearStepErrorHighlight(idx);
+  updateStepEnv(idx);
+  if (BATCH_ENGINES[lang]) BATCH_ENGINES[lang].warmUp().catch(() => {});
+}
+
+function clearStepErrorHighlight(idx) {
+  const ed = stepEditors[idx];
+  if (ed) stepErrorDecorations[idx] = ed.deltaDecorations(stepErrorDecorations[idx] || [], []);
+}
+
+function highlightStepErrorLine(idx, lineNumber) {
+  clearStepErrorHighlight(idx);
+  const ed = stepEditors[idx];
+  if (!lineNumber || !ed || !window.monaco) return;
+  stepErrorDecorations[idx] = ed.deltaDecorations([], [{
+    range: new monaco.Range(lineNumber, 1, lineNumber, 1),
+    options: {
+      isWholeLine: true,
+      className: 'error-line-highlight',
+      glyphMarginClassName: 'error-line-glyph',
+    }
+  }]);
+  ed.revealLineInCenter(lineNumber);
+}
+
+// ─── Addımı işə sal (əsas editorun eyni mühakiməsi) ───────────
+async function runStep(idx) {
+  if (isRunning) { showToast('Başqa kod icra olunur, bir az gözləyin.', 'warn'); return; }
+
+  const step = problemSteps[idx];
+  const editor = stepEditors[idx];
+  if (!step || !editor) return;
+
+  const lang = stepLangs[idx];
+  const cfg = LANG_CONFIG[lang];
+  const cases = step.testCases;
+
+  if (lang === 'python' && !pyodideReady) {
+    showToast('Python mühiti hələ hazırlanır, bir neçə saniyə gözləyin.', 'warn');
+    return;
+  }
+  if (!cases.length) { showToast('Bu addım üçün test keysi tapılmadı.', 'error'); return; }
+  if (cfg.batch && BATCH_ENGINES[lang].state !== 'ready') {
+    showToast('Mühit hazırlanır — hazır olan kimi kod icra olunacaq.', 'info');
+  }
+
+  const card = document.querySelector(`.step-card[data-step-index="${idx}"]`);
+  const btn = card.querySelector('.step-run-btn');
+  const btnText = btn.textContent;
+
+  isRunning = true;           // Pyodide və mühərriklər paylaşılır — eyni anda bir icra
+  btn.disabled = true;
+  btn.textContent = '⏳ İcra olunur...';
+  clearStepErrorHighlight(idx);
+
+  try {
+    const code = editor.getValue();
+    const paramNames = (step.params || []).map(p => p.name);
+    const results = [];
+
+    const batch = cfg.batch
+      ? await BATCH_ENGINES[lang].runBatch({ userCode: code, problem: step, testCases: cases })
+      : null;
+
+    const t0 = performance.now();
+    for (let i = 0; i < cases.length; i++) {
+      const tc = cases[i];
+      const r = batch ? batch[i] : await executeCode(code, tc.input_data || {}, paramNames, lang, step);
+      if (!r) break;
+      const { resultJson, output, error, errorLine, compileError } = r;
+
+      let actual = null, passed = false;
+      if (!error) {
+        try {
+          actual = (resultJson === null || resultJson === undefined) ? null : JSON.parse(resultJson);
+          passed = deepEqual(actual, tc.expected_output);
+        } catch (_) { passed = false; }
+      }
+      results.push({
+        index: i + 1, passed, error, errorLine, compileError,
+        input: tc.input_data, expected: tc.expected_output, actual, output,
+      });
+      if (error) break;
+    }
+
+    renderStepResult(idx, results, Math.round(performance.now() - t0));
+    const passedCount = results.filter(r => r.passed).length;
+    showToast(`Addım ${step.step_order}: ${passedCount}/${cases.length} test keçdi.`,
+      passedCount === cases.length ? 'success' : 'warn');
+  } catch (err) {
+    console.error('[AtlasLab Code] runStep:', err);
+    showToast('İcra zamanı xəta baş verdi.', 'error');
+  } finally {
+    isRunning = false;
+    btn.disabled = false;
+    btn.textContent = btnText;
+  }
+}
+
+function renderStepResult(idx, results, runtimeMs) {
+  const out = document.getElementById(`step-output-${idx}`);
+  stepResults[idx] = results;
+  if (!results.length) {
+    out.innerHTML = '<span class="c-line c-warn">Nəticə alınmadı.</span>';
+    return;
+  }
+
+  const allPassed = results.every(r => r.passed);
+  const status = computeOverallStatus(results, allPassed);
+  const firstFail = results.findIndex(r => !r.passed);
+  const active = firstFail === -1 ? 0 : firstFail;
+
+  const tabsHTML = results.map((r, i) => `
+    <button class="tr-tab ${r.passed ? 'pass' : 'fail'} ${i === active ? 'active' : ''}" data-idx="${i}">
+      <span class="tr-tab-ic">${r.passed ? '✓' : '✕'}</span> Case ${i + 1}
+    </button>`).join('');
+
+  out.innerHTML = `
+    <div class="test-result">
+      <div class="tr-status-row">
+        <span class="tr-status ${status.key}">${status.label}</span>
+        <span class="tr-runtime">Runtime: ${runtimeMs} ms</span>
+      </div>
+      <div class="tr-tabs">${tabsHTML}</div>
+      <div class="tr-detail">${renderCaseDetail(results[active])}</div>
+    </div>`;
+
+  const r = results[active];
+  if (r.error && r.errorLine) highlightStepErrorLine(idx, r.errorLine);
+  else clearStepErrorHighlight(idx);
+}
 // ═══════════════════════════════════════════════════════════════
 // MONACO EDITOR
 // ═══════════════════════════════════════════════════════════════
@@ -511,6 +847,7 @@ function loadScript(src) {
 }
 
 function updateEnvStatus() {
+  updateAllStepEnv();
   const cfg = LANG_CONFIG[currentLang];
 
   if (!cfg.executable) {
@@ -535,13 +872,13 @@ function updateEnvStatus() {
     envStatus.classList.toggle('ready', s === 'ready');
     envStatusText.textContent = s === 'ready' ? 'C++ mühiti hazırdır'
       : s === 'error' ? 'C++ mühiti yüklənmədi (təkrar cəhd olunacaq)'
-      : 'C++ mühiti hazırlanır (ilk dəfə ~20 MB)...';
+      : 'C++ mühiti hazırlanır...';
   } else if (currentLang === 'java') {
     const s = javaEngine.state;
     envStatus.classList.toggle('ready', s === 'ready');
     envStatusText.textContent = s === 'ready' ? 'Java mühiti hazırdır'
       : s === 'error' ? 'Java mühiti yüklənmədi (təkrar cəhd olunacaq)'
-      : 'Java mühiti hazırlanır (ilk dəfə JVM yüklənir, bir az çəkə bilər)...';
+      : 'Java mühiti hazırlanır...';
   }
 }
 
@@ -668,12 +1005,12 @@ try {
 // ═══════════════════════════════════════════════════════════════
 // KODU İCRA ET (bir test keysi üçün)
 // ═══════════════════════════════════════════════════════════════
-async function executeCode(code, argsObj, paramNames) {
-  if (currentLang === 'python') {
-    return runPython(code, argsObj, paramNames, problem.function_name, problem.class_name || 'Solution');
+async function executeCode(code, argsObj, paramNames, lang = currentLang, spec = problem) {
+  if (lang === 'python') {
+    return runPython(code, argsObj, paramNames, spec.function_name, spec.class_name || 'Solution');
   }
-  if (currentLang === 'javascript') {
-    return runJavaScript(code, argsObj, paramNames, problem.function_name);
+  if (lang === 'javascript') {
+    return runJavaScript(code, argsObj, paramNames, spec.function_name);
   }
   return { resultJson: null, output: '', error: 'Bu dil hələ dəstəklənmir.', errorLine: null };
 }
@@ -1123,7 +1460,7 @@ function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", cust
 // ═══════════════════════════════════════════════════════════════
 // BEYİN FASİLƏSİ — idle aşkarlama
 // ═══════════════════════════════════════════════════════════════
-const BRAIN_BREAK_IDLE_MS = 5 * 60 * 1000; 
+const BRAIN_BREAK_IDLE_MS = 10 * 60 * 1000; 
 let brainBreakTimer = null;
 let brainBreakShown = false;
 

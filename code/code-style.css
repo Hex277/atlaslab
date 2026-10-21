@@ -762,27 +762,130 @@ button:disabled {
 /* ==============================
    PROBLEMS MENU STYLES
 ============================== */
-
 /* Page header */
-.page-header { margin-bottom: 28px; }
-.page-header h1 {
-  font-size: 26px; font-weight: 800;
-  letter-spacing: -0.02em; margin-bottom: 8px;
+.page-header { 
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Başlıq və təsviri solda saxlayır */
 }
+
+.page-header h1 {
+  font-size: 26px; 
+  font-weight: 800;
+  letter-spacing: -0.02em; 
+  margin-bottom: 8px;
+}
+
+#problems-description {
+  margin-top: 20px;
+}
+
 .page-header p {
     font-style: italic; /* Sitatın daha estetik, fəlsəfi görünməsi üçün */
     line-height: 1.6;
-    margin-top: 15px;
+    margin-top: 30px;
+    max-width: 500px;
+    text-align: right;     /* Mətni sağa yaslayır */
+    align-self: flex-end;  /* <p> blokunu sağ tərəfə keçirir */
 }
 
 .quote-author {
-    display: block; /* Müəllif adını mətndən ayırıb yeni sətrə keçirir */
-    text-align: right; /* Sağa yaslayır */
-    font-weight: bold; /* Qalın şriftlə yazır */
-    margin-top: 8px; /* Mətndən bir az fasilə buraxır */
-    font-style: normal; /* Müəllif adının kursiv olmasının qarşısını alır */
+    display: block;        /* Müəllif adını mətndən ayırıb yeni sətrə keçirir */
+    text-align: right;     /* Sağa yaslayır */
+    font-weight: bold;     /* Qalın şriftlə yazır */
+    margin-top: 8px;       /* Mətndən bir az fasilə buraxır */
+    font-style: normal;    /* Müəllif adının kursiv olmasının qarşısını alır */
 }
+/* --- Köməkçi Addımlar Stili --- */
+.step-card {
+  background: var(--surface);
+  margin-bottom: 20px;
+}
+.step-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.step-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+.step-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+/* --- Köməkçi Addımlar Dil Seçici Stili --- */
+.step-lang-badge {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.step-lang-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  min-width: 150px;
+  z-index: 50;
+  display: none;
+}
+.step-lang-dropdown.open { display: block; }
+.step-lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.step-lang-option:hover { background: var(--surface2); }
+.step-editor-host {
+  height: 220px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.step-toolbar-left { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.step-card .btn-run { padding: 5px 12px; font-size: 12px; }
+.step-card .env-status { font-size: 11px; padding: 3px 8px; }
 
+/* Dil nöqtəsi və ox (əsas .lang-badge altında olmadığı üçün ayrıca lazımdır) */
+.step-lang-badge .lang-dot,
+.step-lang-option .lang-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.step-lang-badge .lang-caret { font-size: 9px; opacity: 0.6; }
+
+/* Addım terminalı (əsas konsolun eyni görünüşü) */
+.step-console {
+  height: 230px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.step-console .console-header { cursor: pointer; }
+.step-console .console-output { font-size: 12.5px; padding: 8px 12px; }
 /* Stats bar */
 .stats-bar {
   display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap;
@@ -1003,13 +1106,17 @@ body.workspace-page { overflow: hidden; }
 
 /* Problem header in workspace */
 .ws-problem-header {
-  display: flex; align-items: flex-start; gap: 12px;
+  display: flex; align-items: flex-start; gap: 2px;
+  flex-direction: column;
   margin-bottom: 16px;
   position: relative;
 }
 .ws-problem-header h2 {
   font-size: 17px; font-weight: 800;
   letter-spacing: -0.01em; flex: 1; line-height: 1.4;
+}
+.ws-problem-header p {
+  font-size: 15px;
 }
 .back-link, .back-link-top {
   display: inline-flex; align-items: center; gap: 5px;
