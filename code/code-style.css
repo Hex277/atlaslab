@@ -1266,7 +1266,13 @@ body.workspace-page { overflow: hidden; }
   flex: 1; min-height: 0;
   position: relative;
 }
-
+monaco.editor.create(container, {
+    // ... mövcud ayarların
+    glyphMargin: false,          // soldakı boş breakpoint sahəsini silir
+    folding: false,              // kod qatlama oxları üçün yeri silir (istəsən true saxla)
+    lineNumbersMinChars: 2,      // nömrə sütununun minimum eni (defolt 5)
+    lineDecorationsWidth: 12     // nömrə ilə kod arasındakı boşluq (px)
+});
 /* Console */
 .console-panel {
   height: 210px; flex-shrink: 0;

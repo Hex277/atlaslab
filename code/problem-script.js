@@ -496,7 +496,7 @@ function createStepEditors() {
         minimap: { enabled: false },
         automaticLayout: true,
         scrollBeyondLastLine: false,
-        glyphMargin: true,
+        glyphMargin: false,
         padding: { top: 10 },
         tabSize: 4,
         scrollbar: { alwaysConsumeMouseWheel: false },   // səhifə scroll-u editorda ilişib qalmasın
@@ -728,7 +728,7 @@ function initEditor() {
       minimap: { enabled: false },
       automaticLayout: true,
       scrollBeyondLastLine: false,
-      glyphMargin: true,
+      glyphMargin: false,
       padding: { top: 14 },
       tabSize: 4,
     });

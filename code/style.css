@@ -832,7 +832,6 @@ button {
     border: 1px solid #B89A5A;
     border-radius: 15px;
     justify-content: space-between;
-    align-items: center;
 }
 .premium-abunelik-bg {
     display: flex;
