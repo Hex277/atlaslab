@@ -1255,12 +1255,46 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                 // Funksiyanı başlat
                 checkMultiLogin();
+                function formatQuestionText(text) {
+                    if (!text) return "";
+
+                    // Nömrələmə: 1-Muş, 2) Malatiya, 3. Otluqbeli (rəqəm + - və ya ) və ya . + hərf/simvol)
+                    // Qarşısında boşluq və ya ":" olmalıdır ki, "1914-cü il" kimi yerlər pozulmasın
+                    const itemRegex = /(?:^|[\s:;])(\d{1,2})\s*([\-–—\)\.])\s*(?=[^\d\s])/g;
+
+                    // Nömrələnmiş elementləri tap
+                    const matches = [...text.matchAll(itemRegex)];
+                    if (matches.length < 2) return text; // 2-dən az nömrə varsa, toxunma
+
+                    // Nömrələr 1-dən başlayıb ardıcıl artmalıdır (1,2,3...), əks halda toxunma
+                    let expected = 1;
+                    const validStarts = [];
+                    for (const m of matches) {
+                        if (parseInt(m[1], 10) === expected) {
+                            // m.index boşluq/":" simvolunu da əhatə edə bilər, ona görə real başlanğıcı tapırıq
+                            const numStart = m.index + m[0].indexOf(m[1]);
+                            validStarts.push(numStart);
+                            expected++;
+                        }
+                    }
+                    if (validStarts.length < 2) return text;
+
+                    // Mətni hissələrə bölürük: giriş hissəsi + hər bir nömrəli element
+                    let result = text.slice(0, validStarts[0]).trimEnd();
+                    for (let i = 0; i < validStarts.length; i++) {
+                        const start = validStarts[i];
+                        const end = i + 1 < validStarts.length ? validStarts[i + 1] : text.length;
+                        const item = text.slice(start, end).trim();
+                        result += `<br>${item}`;
+                    }
+                    return result;
+                }
                 function renderQuestion(index) {
                     const q = questions[index];
                     if (!q) return;
 
                     // 1. Sual mətnini innerHTML-ə çevirdik
-                    if (questionEl) questionEl.innerHTML = q.question;
+                    if (questionEl) questionEl.innerHTML = formatQuestionText(q.question);
                     
                     if (counterEl) counterEl.textContent = `${index + 1} / ${questions.length}`;
 
