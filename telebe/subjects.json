@@ -14,20 +14,6 @@
         "icon": "🇦🇿",
         "count": 10,
         "type": "dil_fenleri"
-      },
-      {
-        "id": "sahibkarliq-biznes",
-        "title": "Sahibkarlığın əsasları və biznesə giriş",
-        "icon": "💼",
-        "count": 10,
-        "type": "biznes_iqtisadiyyat"
-      },
-      {
-        "id": "eqli-mulkiyyet",
-        "title": "Əqli mülkiyyətin əsasları",
-        "icon": "⚖️",
-        "count": 10,
-        "type": "huquq"
       }
     ],
     "special_subjects": [
@@ -72,6 +58,20 @@
         "icon": "💾",
         "count": 10,
         "type": "texniki"
+      },
+      {
+        "id": "eqli-mulkiyyet",
+        "title": "Əqli mülkiyyətin əsasları",
+        "icon": "⚖️",
+        "count": 10,
+        "type": "huquq"
+      },
+      {
+        "id": "sahibkarliq-biznes",
+        "title": "Sahibkarlığın əsasları və biznesə giriş",
+        "icon": "💼",
+        "count": 10,
+        "type": "biznes_iqtisadiyyat"
       }
     ]
   },
@@ -126,7 +126,7 @@
         },
         "mexanika_it": {
           "name": "Mexanika və İnformasiya Texnologiyaları Fakültəsi",
-          "assigned_subjects": ["xdiak-mit1", "xdiak-mit2"]
+          "assigned_subjects": ["xdiak-mit1", "xdiak-mit2", "eqli-mulkiyyet", "sahibkarliq-biznes"]
         },
         "memarliq": {
           "name": "Memarlıq Fakültəsi",
