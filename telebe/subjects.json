@@ -72,6 +72,20 @@
         "icon": "💼",
         "count": 10,
         "type": "biznes_iqtisadiyyat"
+      },
+      {
+        "id": "komp-sebekeleri-azmiu",
+        "title": "Kompüter şəbəkələri",
+        "icon": "🌐",
+        "count": 10,
+        "type": "texniki"
+      },
+      {
+        "id": "komp-arxitekturasi-azmiu",
+        "title": "Kompüterlərin arxitekturası",
+        "icon": "🖧",
+        "count": 10,
+        "type": "texniki"
       }
     ]
   },
@@ -126,7 +140,7 @@
         },
         "mexanika_it": {
           "name": "Mexanika və İnformasiya Texnologiyaları Fakültəsi",
-          "assigned_subjects": ["xdiak-mit1", "xdiak-mit2", "eqli-mulkiyyet", "sahibkarliq-biznes"]
+          "assigned_subjects": ["xdiak-mit1", "xdiak-mit2", "eqli-mulkiyyet", "sahibkarliq-biznes", "komp-arxitekturasi-azmiu", "komp-sebekeleri-azmiu"]
         },
         "memarliq": {
           "name": "Memarlıq Fakültəsi",
