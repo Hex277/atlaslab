@@ -810,6 +810,21 @@ button {
 .lb-user { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .lb-avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .lb-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.rgb-name {
+  font-weight: bold; /* Qalın olması üçün */
+  background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff, #ff0000);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rgbAnimation 3s linear infinite;
+  display: inline-block; /* Bəzi brauzerlərdə düzgün işləməsi üçün vacibdir */
+}
+
+@keyframes rgbAnimation {
+  to {
+    background-position: 200% center;
+  }
+}
 .lb-user .lb-premium-text-bg { flex-shrink: 0; }
 
 /* Profil səhifəsi avatar */

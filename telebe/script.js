@@ -734,7 +734,11 @@ if (window.location.pathname.endsWith("statistics.html")) {
             if (isMe) nameToShow += ' (Siz)';
 
             const isPremium = activePremiumUserIds.has(row.user_id);
-            const premiumBadge = isPremium ? `<div class="lb-premium-text-bg" id="lb-premium-text"><p>Premium</p></div>` : '';
+            
+            // Əgər premiumdursa xüsusi 'rgb-name' sinfi veririk, deyilsə sadə mətn
+            const nameHTML = isPremium 
+                ? `<span class="rgb-name">${nameToShow}</span>` 
+                : nameToShow;
 
             tbody.innerHTML += `
                 <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(234, 207, 30, 0.077);' : ''}">
@@ -743,7 +747,7 @@ if (window.location.pathname.endsWith("statistics.html")) {
                         <div class="lb-user">
                             <img class="lb-avatar" src="${avatarMap.get(row.user_id) || '../images/profile.webp'}"
                                 alt="" loading="lazy" onerror="this.onerror=null;this.src='../images/profile.webp'">
-                            <span class="lb-name">${nameToShow}</span>${premiumBadge}
+                            <span class="lb-name">${nameHTML}</span>
                         </div>
                     </td>
                     <td>${row.elo_rating || 1000}</td>
