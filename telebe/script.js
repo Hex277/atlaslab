@@ -770,6 +770,15 @@ if (window.location.pathname.endsWith("statistics.html")) {
         const labelColor = isDarkMode ? '#ffffff' : '#333333';
         const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
 
+        // Maksimum dəyərə baxıb avtomatik step (addım) təyin etmək üçün
+        const maxCount = Math.max(...counts, 0);
+        let calculatedStepSize = 1;
+        if (maxCount > 10) {
+            calculatedStepSize = 10; // 50-dən çoxdursa 10-luq artısın
+        } else if (maxCount > 5) {
+            calculatedStepSize = 5;  // 20-dən çoxdursa 5-lik artsın
+        }
+
         myChart = new Chart(ctx, {
             type: 'line',
             data: {
@@ -794,7 +803,11 @@ if (window.location.pathname.endsWith("statistics.html")) {
                 scales: {
                     y: {
                         beginAtZero: true,
-                        ticks: { color: labelColor, stepSize: 1 },
+                        ticks: { 
+                            color: labelColor, 
+                            stepSize: calculatedStepSize, // Dinamik olaraq 5, 10 və ya 1 təyin olunur
+                            precision: 0 // Kəsr rəqəmlərin qarşısını alır (məs: 2.5 yox, tam rəqəm)
+                        },
                         grid: { color: gridColor }
                     },
                     x: {
