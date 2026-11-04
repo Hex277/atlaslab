@@ -984,8 +984,8 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
                         <h3 style="margin-bottom: 10px; color: #B89A5A;">Gündəlik limit doldu!</h3>
                         <p style="font-size: 15px; opacity: 0.9;">
-                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
-                             Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                            Pulsuz hesabla gündə yalnız <b>5 fənn</b> (50 sual) işləyə bilərsiniz.
+                             Pulsuz hesabla gündə yalnız <b>5 fənn</b> (50 sual) işləyə bilərsiniz.
                        </p>
                     </div>
                 `;
@@ -1191,7 +1191,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 }
 
                 // BURADA SUAL SAYINI 10 EDİRİK! (və ya test üçün slice(0, 2))
-                const questions = shuffleArray(allQuestions).slice(0, 10);
+                const questions = pickAdaptiveQuestions(allQuestions, 10);
 
                 let isQuizFinished = false;
                 let currentIndex = 0;
@@ -1199,6 +1199,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 let timerInterval;
                 let secondsElapsed = 0;
                 let userAnswers = {};
+                let answersLog = [];
 
                 const questionEl = document.getElementById("question-text");
                 const optionsContainer = document.getElementById("options-container");
@@ -1377,7 +1378,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 async function handleOptionClick(btn, questionData, index) {
                     const selected = btn.dataset.key;
                     userAnswers[index] = selected;
-
+                    answersLog.push({ id: questionData.id, selected });
                     const questionId = questionData.id;
                     const correctAnswer = questionData.correct_answer;
 
@@ -1649,7 +1650,13 @@ if (window.location.pathname.endsWith("quiz.html")) {
                             console.error("Statistika yenilənərkən xəta baş verdi:", error);
                         }
                     }
-
+                    // Sual çətinliklərini arxa fonda yenilə (UI-ı gözlətmir)
+                    if (userId && answersLog.length) {
+                        const eloBefore = eloData.newElo - eloData.diff; // quizdən əvvəlki reytinq
+                        supabaseClient
+                            .rpc('update_difficulty', { p_table: subjectId, p_user_elo: eloBefore, p_answers: answersLog })
+                            .then(({ error }) => { if (error) console.error("Difficulty update xətası:", error.message); });
+                    }
                     // ==========================================
                     // 3. ADDIM: REYTİNQ HESABLANDIQDAN SONRA SƏS VƏ NƏTİCƏ
                     // ==========================================
@@ -1940,7 +1947,37 @@ if (window.location.pathname.endsWith("quiz.html")) {
         // Funksiyanı çağırırıq
         loadQuestions();
     });
+    // Dopamin əyrisi: Asan, Asan, Orta, Orta, Orta, Çətin, Çətin, Orta, Orta, Asan
+    const DOPAMINE_CURVE = [0.10, 0.20, 0.40, 0.50, 0.60, 0.80, 0.90, 0.55, 0.45, 0.15];
 
+    function pickAdaptiveQuestions(all, count = 10) {
+        const n = all.length;
+        if (n <= count) return shuffleArray(all);
+
+        // əvvəl qarışdırırıq ki, eyni balı olan suallar təsadüfi sıralansın
+        const sorted = shuffleArray(all)
+            .map(q => ({ q, d: Number(q.difficulty_score ?? 0.5) }))
+            .sort((a, b) => a.d - b.d)
+            .map(x => x.q);
+
+        const used = new Set();
+        const result = [];
+        const win = Math.max(1, Math.floor(n * 0.08));
+
+        for (let i = 0; i < count; i++) {
+            const center = Math.round((DOPAMINE_CURVE[i] ?? 0.5) * (n - 1));
+            const pool = [];
+            for (let r = win; pool.length === 0; r += win) {
+                for (let j = Math.max(0, center - r); j <= Math.min(n - 1, center + r); j++) {
+                    if (!used.has(j)) pool.push(j);
+                }
+            }
+            const pick = pool[Math.floor(Math.random() * pool.length)];
+            used.add(pick);
+            result.push(sorted[pick]);
+        }
+        return result;
+    }
     function shuffleArray(array) {
         return array
             .map(a => [Math.random(), a])
