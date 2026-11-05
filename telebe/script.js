@@ -618,32 +618,44 @@ if (window.location.pathname.endsWith("statistics.html")) {
 
     const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
 
-    async function loadUserDashboard(userId) {
-        const client = getSupabase();
-        if (!client) return;
+        async function loadUserDashboard(userId) {
+            const client = getSupabase();
+            if (!client) return;
 
-        const { data, error } = await client
-            .from('user_stats')
-            .select('*')
-            .eq('user_id', userId)
-            .maybeSingle();
+            const { data, error } = await client
+                .from('user_stats')
+                .select('*')
+                .eq('user_id', userId)
+                .maybeSingle();
 
-        if (error || !data) return;
+            if (error || !data) return;
 
-        document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
-        document.getElementById('totalCode').innerText = data.totalCode || 0; // sütun adını öz DB-nlə tutuşdur
-        document.getElementById('eloValue').innerText = data.elo_rating || 1000;
-        document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
+            document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+            document.getElementById('totalCode').innerText = data.totalCode || 0; // sütun adını öz DB-nlə tutuşdur
+            document.getElementById('eloValue').innerText = data.elo_rating || 1000;
+            document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
 
-        const total = data.total_answered_questions || 0;
-        const correct = data.total_correct_answers || 0;
-        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
-        document.getElementById('accuracyRate').innerText = `${percent}%`;
+            const total = data.total_answered_questions || 0;
+            const correct = data.total_correct_answers || 0;
+            const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+            document.getElementById('accuracyRate').innerText = `${percent}%`;
 
-        const minutes = Math.floor((data.total_time_spent || 0) / 60);
-        const seconds = (data.total_time_spent || 0) % 60;
-        document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-    }
+            const totalSec = Number(data.total_time_spent) || 0;
+            let timeText;
+
+            if (totalSec >= 3600) {
+                // 1 saatdan çoxdursa: 1.5 saat, 2 saat, 12.3 saat
+                const hours = Math.round((totalSec / 3600) * 10) / 10;
+                timeText = `${hours} Saat`;
+            } else {
+                // 1 saatdan azdırsa: əvvəlki kimi dəq:san
+                const minutes = Math.floor(totalSec / 60);
+                const seconds = totalSec % 60;
+                timeText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+
+            document.getElementById('avgTime').innerText = timeText;
+        }
 
     function chartLabelFor(type) {
         if (type === 'code') return 'Kodlama Sayı';
@@ -1464,146 +1476,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         showResult();
                     }
                 }
-                async function updatePlayerStats(uId, currentScore, currentSeconds, totalQuestions, correctAnswers) {
-                    try {
-                        const client = window.globalSupabaseClient || window.supabaseClient;
-
-                        // 1. İSTİFADƏÇİ MƏLUMATLARINI ALIRIQ
-                        const { data: { user } } = await client.auth.getUser();
-                        const fullName = user?.user_metadata?.full_name || "Adsız İstifadəçi";
-
-                        // 2. TARİXLƏRİN HESABLANMASI
-                        const now = new Date();
-                        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-
-                        const yesterday = new Date(now);
-                        yesterday.setDate(now.getDate() - 1);
-                        const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
-
-                        // 3. MÖVCUD STATİSTİKANIN ÇƏKİLMƏSİ (Rating Deviation daxil olmaqla)
-                        let { data: stats, error: fetchErr } = await client
-                            .from('user_stats')
-                            .select('*')
-                            .eq('user_id', uId)
-                            .maybeSingle();
-
-                        if (fetchErr) throw fetchErr;
-
-                        let lastDateInDb = stats ? stats.last_quiz_date : null;
-                        let currentStreakInDb = stats ? (Number(stats.current_streak) || 0) : 0;
-                        let currentLimitInDb = stats ? (Number(stats.daily_limit_count) || 0) : 0;
-
-                        let finalStreak = 0;
-                        let finalLimit = 1;
-
-                        // --- STREAK VƏ LİMİT MƏNTİQİ ---
-                        if (!stats) {
-                            finalStreak = 1;
-                            finalLimit = 1;
-                        } else if (lastDateInDb === todayStr) {
-                            finalStreak = currentStreakInDb;
-                            finalLimit = currentLimitInDb + 1;
-                        } else if (lastDateInDb === yesterdayStr) {
-                            finalStreak = currentStreakInDb + 1;
-                            finalLimit = 1;
-                        } else {
-                            finalStreak = 1;
-                            finalLimit = 1;
-                        }
-
-                        // --- YENİ ELO (GLICKO) HESABLAMA MƏNTİQİ ---
-
-                        function calculateNewRating(currentElo, currentRD, percentage) {
-                            // 1. Sabitlər
-                            const q = Math.log(10) / 400;
-                            const quizDifficulty = 1000; // Quiz-in baza çətinliyi
-
-                            // 2. Quiz nəticəsini 0.0 - 1.0 arasına gətiririk (Actual Score)
-                            const s = percentage / 100;
-
-                            // 3. Ehtimal olunan nəticəni hesablayırıq (Expected Score)
-                            // Düstur: E = 1 / (1 + 10^((difficulty - elo) / 400))
-                            const e = 1 / (1 + Math.pow(10, (quizDifficulty - currentElo) / 400));
-
-                            // 4. RD-nin təsiri ilə d^2 dəyərini tapırıq
-                            const dSquared = 1 / (Math.pow(q, 2) * (e * (1 - e)));
-
-                            // 5. Yeni Elo (Rating)
-                            // K-faktoru yerinə dinamik bir çarpan istifadə olunur
-                            const multiplier = q / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared));
-                            const newElo = currentElo + multiplier * (s - e);
-
-                            let newRD = Math.sqrt(1 / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared)));
-
-                            // RD limitləri: Nə qədər usta olsa da, şübhə 30-dan aşağı düşmür
-                            newRD = Math.max(30, Math.min(350, newRD));
-
-                            return {
-                                rating: Math.round(newElo),
-                                rd: Math.round(newRD),
-                                diff: Math.round(newElo - currentElo)
-                            };
-                        }
-
-                        const percentage = (correctAnswers / totalQuestions) * 100;
-                        const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
-                        const currentRD = stats ? (Number(stats.rating_deviation) || 350) : 350;
-
-                        // Hesablamanı icra edirik
-                        const eloResult = calculateNewRating(currentElo, currentRD, percentage);
-
-                        // 4. USER_STATS YENİLƏMƏSİ (Upsert)
-                        const updatePayload = {
-                            display_name: fullName,
-                            quizzes_completed: (stats ? (Number(stats.quizzes_completed) || 0) : 0) + 1,
-                            total_time_spent: (stats ? (Number(stats.total_time_spent) || 0) : 0) + currentSeconds,
-                            total_answered_questions: (stats ? (Number(stats.total_answered_questions) || 0) : 0) + totalQuestions,
-                            total_correct_answers: (stats ? (Number(stats.total_correct_answers) || 0) : 0) + correctAnswers,
-                            total_score: (stats ? (Number(stats.total_score) || 0) : 0) + currentScore,
-
-                            // YENİ MƏLUMATLAR
-                            elo_rating: eloResult.rating,
-                            rating_deviation: eloResult.rd,
-
-                            current_streak: finalStreak,
-                            last_quiz_date: todayStr,
-                            daily_limit_count: finalLimit,
-                            updated_at: new Date().toISOString()
-                        };
-
-                        const { error: updErr } = await client
-                            .from('user_stats')
-                            .upsert({ user_id: uId, ...updatePayload });
-
-                        if (updErr) throw updErr;
-
-                        // 5. QUIZ_HISTORY (Olduğu kimi qalır)
-                        const { data: historyData } = await client
-                            .from('quiz_history')
-                            .select('quiz_count')
-                            .eq('user_id', uId)
-                            .eq('quiz_date', todayStr)
-                            .maybeSingle();
-
-                        const newHistoryCount = (historyData ? (Number(historyData.quiz_count) || 0) : 0) + 1;
-
-                        await client.from('quiz_history').upsert({
-                            user_id: uId,
-                            quiz_date: todayStr,
-                            quiz_count: newHistoryCount
-                        }, { onConflict: 'user_id, quiz_date' });
-
-                        // NƏTİCƏNİ QAYTARIRIQ (UI üçün eloDifference və newElo)
-                        return {
-                            diff: eloResult.diff,
-                            newElo: eloResult.rating
-                        };
-
-                    } catch (err) {
-                        console.error("Gözlənilməz xəta:", err.message);
-                        return null;
-                    }
-                }
+                
                 async function showResult() {
                     clearInterval(timerInterval);
                     
@@ -1652,23 +1525,21 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     // ==========================================
                     // 2. ADDIM: ARXA FONDA ASİNXRON SORĞUNUN GÖNDƏRİLMƏSİ
                     // ==========================================
-                    let eloData = { diff: 0, newElo: 1000 }; // Default dəyərlər
-                    
+                    let eloData = { diff: 0, newElo: 1000 };
+
                     if (userId) {
-                        try {
-                            // UI artıq dəyişib və loader fırlanır, ona görə bu gözləmə istifadəçini yorruyacaq
-                            const result = await updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
-                            if (result) eloData = result;
-                        } catch (error) {
-                            console.error("Statistika yenilənərkən xəta baş verdi:", error);
+                        const { data, error } = await supabaseClient.functions.invoke('submit-quiz', {
+                            body: { subject_id: subjectId, answers: answersLog, seconds: secondsElapsed }
+                        });
+                        if (!error && data) {
+                            eloData = { diff: data.diff, newElo: data.newElo };
+                        } else {
+                            const errBody = await error?.context?.json?.().catch(() => null);
+                            if (errBody?.error === 'daily_limit') {
+                                // limit mesajını göstər / premium.html-ə yönləndir
+                            }
+                            console.error("submit-quiz xətası:", errBody || error);
                         }
-                    }
-                    // Sual çətinliklərini arxa fonda yenilə (UI-ı gözlətmir)
-                    if (userId && answersLog.length) {
-                        const eloBefore = eloData.newElo - eloData.diff; // quizdən əvvəlki reytinq
-                        supabaseClient
-                            .rpc('update_difficulty', { p_table: subjectId, p_user_elo: eloBefore, p_answers: answersLog })
-                            .then(({ error }) => { if (error) console.error("Difficulty update xətası:", error.message); });
                     }
                     // ==========================================
                     // 3. ADDIM: REYTİNQ HESABLANDIQDAN SONRA SƏS VƏ NƏTİCƏ
