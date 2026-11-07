@@ -14,7 +14,6 @@ const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // ─── URL param ────────────────────────────────────────────────
 const PROBLEM_ID = new URLSearchParams(window.location.search).get('id');
-const ELO_REWARD = { easy: 10, medium: 20, hard: 50 };
 let problemStartTime = null;
 
 // ─── State ────────────────────────────────────────────────────
@@ -777,6 +776,7 @@ function clearErrorHighlight() {
 // ═══════════════════════════════════════════════════════════════
 // DİL SEÇİMİ
 // ═══════════════════════════════════════════════════════════════
+
 langBadge.addEventListener('click', (e) => {
   e.stopPropagation();
   langDropdown.classList.toggle('open');
@@ -1199,22 +1199,26 @@ async function executeAllTests(isSubmit) {
   renderTestResultPanel(results, runtimeMs);
 
   if (isSubmit) {
-    await recordDailyActivity(CURRENT_USER_ID);
-    await incrementCodeStats(CURRENT_USER_ID);
-    await addTimeSpent(CURRENT_USER_ID);
+    const seconds = Math.floor((Date.now() - (problemStartTime || Date.now())) / 1000);
+    problemStartTime = Date.now();
 
-    if (allPassed) {
-      const alreadySolved = await checkAlreadySolved();
-      if (!alreadySolved) {
-        await markAsSolved();
-        const diff = (problem.difficulty || '').toLowerCase();
-        await applyEloChange(CURRENT_USER_ID, ELO_REWARD[diff] || 10);
-      }
-      showResultModal(true);
+    const { data, error } = await db.functions.invoke('submit-code', {
+      body: { problem_id: Number(PROBLEM_ID), passed: allPassed, seconds }
+    });
+
+    if (error) {
+      const errBody = await error?.context?.json?.().catch(() => null);
+      if (errBody?.error === 'daily_limit') showToast('Enerjiniz bitdi, sabah təkrar gəlin.', 'error');
+      else showToast('Nəticə qeyd olunarkən xəta baş verdi.', 'error');
+      console.error('[AtlasLab Code] submit-code:', errBody || error);
     } else {
-      await applyEloChange(CURRENT_USER_ID, -5);
-      showResultModal(false, passedCount, testCases.length);
+      energyRemaining = data.energyRemaining === null ? Infinity : data.energyRemaining;
+      const display = document.getElementById('limit-text');
+      if (display && energyRemaining !== Infinity) display.innerText = energyRemaining;
     }
+
+    if (allPassed) showResultModal(true);
+    else showResultModal(false, passedCount, testCases.length);
   } else {
     showToast(`${passedCount}/${testCases.length} test keçdi.`, allPassed ? 'success' : 'warn');
   }
@@ -1223,96 +1227,6 @@ async function executeAllTests(isSubmit) {
   btnRun.disabled = false;
   btnSubmit.disabled = false;
   btnSubmit.textContent = originalSubmitText;
-}
-
-// ═══════════════════════════════════════════════════════════════
-// SUPABASE: Həll edildi kimi qeyd et (Real Auth)
-// ═══════════════════════════════════════════════════════════════
-async function markAsSolved() {
-  try {
-    const { data: { user }, error: authError } = await db.auth.getUser();
-
-    if (authError || !user) {
-      showToast('Nəticəni qeyd etmək üçün sistemə daxil olmalısınız.', 'error');
-      return;
-    }
-
-    const userId = user.id;
-
-    const { data: existing } = await db
-      .from('user_submissions')
-      .select('id')
-      .eq('user_id', userId)
-      .eq('problem_id', PROBLEM_ID)
-      .eq('status', 'solved')
-      .maybeSingle();
-
-    if (existing) return;
-
-    const { error } = await db
-      .from('user_submissions')
-      .insert({
-        user_id: userId,
-        problem_id: PROBLEM_ID,
-        status: 'solved'
-      });
-
-    if (error) throw error;
-  } catch (err) {
-    console.error('[AtlasLab Code] markAsSolved:', err);
-    showToast('Nəticə bazaya yazılarkən xəta baş verdi.', 'error');
-  }
-}
-
-async function checkAlreadySolved() {
-  const { data } = await db.from('user_submissions')
-    .select('id').eq('user_id', CURRENT_USER_ID).eq('problem_id', PROBLEM_ID)
-    .eq('status', 'solved').maybeSingle();
-  return !!data;
-}
-
-async function applyEloChange(uId, delta) {
-  if (!uId) return;
-  const { data: stats } = await db.from('user_stats')
-    .select('elo_rating').eq('user_id', uId).maybeSingle();
-  const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
-  await db.from('user_stats').upsert({ user_id: uId, elo_rating: currentElo + delta });
-}
-
-async function incrementCodeStats(uId) {
-  if (!uId) return;
-  try {
-    const { data: stats } = await db.from('user_stats')
-      .select('totalCode').eq('user_id', uId).maybeSingle();
-    const newTotal = (stats ? (Number(stats.totalCode) || 0) : 0) + 1;
-    await db.from('user_stats').upsert({ user_id: uId, totalCode: newTotal });
-
-    const now = new Date();
-    const todayStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
-    const { data: hist } = await db.from('code_history')
-      .select('code_count').eq('user_id', uId).eq('code_date', todayStr).maybeSingle();
-    const newCount = (hist ? (Number(hist.code_count) || 0) : 0) + 1;
-    await db.from('code_history').upsert(
-      { user_id: uId, code_date: todayStr, code_count: newCount },
-      { onConflict: 'user_id, code_date' }
-    );
-  } catch (err) {
-    console.error('[AtlasLab Code] incrementCodeStats:', err);
-  }
-}
-
-async function addTimeSpent(uId) {
-  if (!uId || !problemStartTime) return;
-  const elapsedSeconds = Math.floor((Date.now() - problemStartTime) / 1000);
-  problemStartTime = Date.now();
-  try {
-    const { data: stats } = await db.from('user_stats')
-      .select('total_time_spent').eq('user_id', uId).maybeSingle();
-    const newTotal = (stats ? (Number(stats.total_time_spent) || 0) : 0) + elapsedSeconds;
-    await db.from('user_stats').upsert({ user_id: uId, total_time_spent: newTotal });
-  } catch (err) {
-    console.error('[AtlasLab Code] addTimeSpent:', err);
-  }
 }
 
 function getSessionId() {
@@ -1329,38 +1243,6 @@ async function syncSession(uId) {
   const { error } = await db.from('user_stats')
     .update({ last_session_id: getSessionId() }).match({ user_id: uId });
   if (error) console.error('[AtlasLab Code] syncSession:', error.message);
-}
-
-async function recordDailyActivity(uId) {
-  if (!uId) return;
-  const now = new Date();
-  const todayStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
-  const yesterday = new Date(now); yesterday.setDate(now.getDate() - 1);
-  const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`;
-
-  const { data: stats } = await db.from('user_stats')
-    .select('daily_limit_count, current_streak, last_quiz_date')
-    .eq('user_id', uId).maybeSingle();
-
-  const lastDate = stats ? stats.last_quiz_date : null;
-  const usedToday = (lastDate === todayStr) ? (Number(stats.daily_limit_count) || 0) : 0;
-
-  let newStreak;
-  if (lastDate === todayStr) newStreak = Number(stats.current_streak) || 0;
-  else if (lastDate === yesterdayStr) newStreak = (Number(stats.current_streak) || 0) + 1;
-  else newStreak = 1;
-
-  await db.from('user_stats').upsert({
-    user_id: uId,
-    daily_limit_count: usedToday + 1,
-    current_streak: newStreak,
-    last_quiz_date: todayStr,
-    updated_at: new Date().toISOString()
-  });
-
-  energyRemaining = Math.max(0, 5 - (usedToday + 1));
-  const display = document.getElementById('limit-text');
-  if (display) display.innerText = energyRemaining;
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -1570,15 +1452,3 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden' && drafts) drafts.flush();
 });
 window.addEventListener('pagehide', () => { if (drafts) drafts.flush(); });
-
-document.getElementById('btn-reset').addEventListener('click', async () => {
-  if (!monacoEditor) return;
-  const ok = await showMessage(
-    'Yazdığınız kod silinəcək və başlanğıc şablon bərpa olunacaq. Davam edək?',
-    'confirm', 'Sıfırla', 'Ləğv et');
-  if (!ok) return;
-  drafts.clear(currentLang);
-  delete codeByLang[currentLang];
-  monacoEditor.setValue(TEMPLATE_BUILDERS[currentLang]());
-  clearErrorHighlight();
-});
