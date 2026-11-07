@@ -93,11 +93,8 @@ if (actionBtn) {
 
             // 6. TƏHLÜKƏSİZLİK: Unikal Ad Yoxlanışı (Supabase)
             actionBtn.textContent = "Ad yoxlanılır...";
-            const { data: existingUser, error: checkError } = await supabaseClient
-                .from('user_stats')
-                .select('display_name')
-                .ilike('display_name', name)
-                .maybeSingle();
+            const { data: available, error: checkError } = await supabaseClient
+                .rpc('is_username_available', { p_name: name });
 
             if (checkError) {
                 showMessage("Ad yoxlanılarkən xəta baş verdi: " + checkError.message);
@@ -105,8 +102,7 @@ if (actionBtn) {
                 actionBtn.disabled = false;
                 return;
             }
-
-            if (existingUser) {
+            if (!available) {
                 showMessage("Bu istifadəçi adı artıq istifadədədir! Zəhmət olmasa başqa bir ad seçin.");
                 actionBtn.textContent = originalText;
                 actionBtn.disabled = false;
@@ -127,8 +123,7 @@ if (actionBtn) {
                 password: password,
                 options: {
                     data: { 
-                        full_name: name,
-                        is_premium: false // YENİ: Başlanğıcda premium deyil (false)
+                        full_name: name
                     },
                     emailRedirectTo: 'https://atlaslab.az/telebe/tesdiq.html'
                 }
