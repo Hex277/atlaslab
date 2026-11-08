@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src https://xoebhhdirsvjorjlrfzi.supabase.co; base-uri 'none'; form-action 'none'">
+<title>Qapalı bölmə</title>
+<style>
+:root{--bg:#f1f2ee;--ink:#1c2321;--mut:#69726b;--line:#d8dbd2;--acc:#14594f;--panel:#fff;--err:#a23a2a}
+@media(prefers-color-scheme:dark){:root{--bg:#131816;--ink:#e6eae4;--mut:#929c94;--line:#2a322e;--acc:#6cc2b0;--panel:#1a201d;--err:#e08a78}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+[hidden]{display:none!important}
+input,select,button{font:inherit;color:inherit}
+#login{min-height:100vh;display:grid;place-items:center;padding:24px}
+#login form{width:min(360px,100%);display:grid;gap:12px}
+h1{font-size:22px;margin:0 0 4px;font-weight:650}
+.fld{padding:10px 12px;border:1px solid var(--line);background:var(--panel);border-radius:6px;width:100%}
+.fld:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.btn{padding:10px 14px;border:1px solid var(--acc);background:var(--acc);color:var(--panel);border-radius:6px;cursor:pointer;font-weight:600}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line);font-weight:500}
+.btn:disabled{opacity:.5;cursor:default}
+.err{color:var(--err);min-height:1.5em;margin:0}
+#app{padding:20px clamp(12px,3vw,32px) 40px;max-width:1500px;margin:0 auto}
+.top{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.tabs{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.tabs button{border:0;background:var(--panel);padding:9px 14px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--acc);color:var(--panel)}
+.sp{flex:1}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.bar #q{flex:2 1 260px}
+.bar select{flex:1 1 170px;max-width:260px}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--panel);font-weight:600;color:var(--mut);font-size:13px;white-space:nowrap}
+tbody tr:hover{background:color-mix(in srgb,var(--acc) 7%,transparent)}
+td.n{color:var(--mut);font-variant-numeric:tabular-nums}
+td.m{font-variant-numeric:tabular-nums;white-space:nowrap}
+.empty{padding:28px;text-align:center;color:var(--mut)}
+.pg{display:flex;gap:10px;align-items:center;justify-content:flex-end;margin-top:12px;color:var(--mut)}
+</style>
+</head>
+<body>
+
+<section id="login">
+  <form id="lf" autocomplete="off">
+    <h1>Qapalı bölmə</h1>
+    <input class="fld" id="pw" type="password" placeholder="Şifrə" autocomplete="current-password" maxlength="200" required>
+    <button class="btn" id="lb" type="submit">Daxil ol</button>
+    <p class="err" id="le" role="alert"></p>
+  </form>
+</section>
+
+<main id="app" hidden>
+  <div class="top">
+    <div class="tabs">
+      <button id="t1" data-t="zt_siyahi" aria-pressed="true">ZT siyahı</button>
+      <button id="t2" data-t="zm_siyahi" aria-pressed="false">ZM siyahı</button>
+    </div>
+    <span class="sp"></span>
+    <button class="btn ghost" id="out">Çıxış</button>
+  </div>
+  <div class="bar">
+    <input class="fld" id="q" type="search" placeholder="Ad, soyad və ya ata adı üzrə axtar" maxlength="100">
+    <span id="filters" style="display:contents"></span>
+  </div>
+  <div class="wrap"><table><thead id="th"></thead><tbody id="tb"></tbody></table><div class="empty" id="em" hidden>Heç nə tapılmadı.</div></div>
+  <div class="pg"><span id="info"></span><button class="btn ghost" id="pv">Əvvəlki</button><button class="btn ghost" id="nx">Sonrakı</button></div>
+</main>
+
+<script>
+const API = "https://xoebhhdirsvjorjlrfzi.supabase.co/functions/v1/private-api";
+const $ = id => document.getElementById(id);
+const BASE = [["No","№"],["ad_soyad_ata","Ad, soyad, ata adı"],["fin_kod","FİN"],["dogum_tarixi","Doğum tarixi"],["tehsil_muessisesi","Təhsil müəssisəsi"],["ixtisas","İxtisas"]];
+const COLS = { zt_siyahi: BASE, zm_siyahi: BASE.concat([["vezife","Vəzifə"],["elmi_ad","Elmi ad"],["kafedra","Kafedra"]]) };
+const FILTERS = { zt_siyahi:["ixtisas"], zm_siyahi:["ixtisas","vezife","elmi_ad","kafedra"] };
+const LABEL = { ixtisas:"İxtisas", vezife:"Vəzifə", elmi_ad:"Elmi ad", kafedra:"Kafedra" };
+
+let token = null, table = "zt_siyahi", page = 0, size = 50, total = 0, timer;   // token yalnız yaddaşda (səhifə yenilənəndə silinir)
+
+async function api(body){
+  const r = await fetch(API, { method:"POST", headers:{ "Content-Type":"application/json", ...(token ? { Authorization:"Bearer "+token } : {}) }, body:JSON.stringify(body) });
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401 && token) { logout("Sessiya bitdi. Yenidən daxil olun."); }
+  if (!r.ok) throw new Error(j.error || "Xəta baş verdi");
+  return j;
+}
+function logout(msg){
+  token = null; $("app").hidden = true; $("login").hidden = false;
+  $("pw").value = ""; $("le").textContent = msg || ""; $("tb").replaceChildren();
+}
+$("out").onclick = () => logout();
+
+$("lf").onsubmit = async e => {
+  e.preventDefault(); $("lb").disabled = true; $("le").textContent = "";
+  try {
+    const j = await api({ action:"login", password:$("pw").value });
+    token = j.token; $("pw").value = "";
+    $("login").hidden = true; $("app").hidden = false;
+    switchTable("zt_siyahi");
+  } catch (err) { $("le").textContent = err.message; }
+  $("lb").disabled = false;
+};
+
+function switchTable(t){
+  table = t; page = 0; $("q").value = "";
+  $("t1").setAttribute("aria-pressed", t === "zt_siyahi"); $("t2").setAttribute("aria-pressed", t === "zm_siyahi");
+  const th = document.createElement("tr");
+  COLS[t].forEach(([, l]) => { const c = document.createElement("th"); c.textContent = l; th.append(c); });
+  $("th").replaceChildren(th);
+  load(true);
+}
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => switchTable(b.dataset.t));
+
+function buildFilters(opts){
+  const box = $("filters"); box.replaceChildren();
+  FILTERS[table].forEach(f => {
+    const s = document.createElement("select"); s.className = "fld"; s.name = f; s.setAttribute("aria-label", LABEL[f]);
+    const o0 = new Option(LABEL[f] + ": hamısı", ""); s.add(o0);
+    (opts[f] || []).forEach(v => s.add(new Option(v, v)));
+    s.onchange = () => { page = 0; load(); };
+    box.append(s);
+  });
+}
+
+async function load(withOptions){
+  const filters = {};
+  document.querySelectorAll("#filters select").forEach(s => { if (s.value) filters[s.name] = s.value; });
+  try {
+    const j = await api({ action:"data", table, q:$("q").value, filters, page, withOptions:!!withOptions });
+    if (j.options) buildFilters(j.options);
+    size = j.size; total = j.total || 0; render(j.rows || []);
+  } catch (err) { $("em").hidden = false; $("em").textContent = err.message; }
+}
+
+function fmtDate(v){
+  const s = String(v ?? "").trim();
+  return /^\d{1,2}[\s,./-]+\d{1,2}[\s,./-]+\d{4}$/.test(s) ? s.replace(/[\s,./-]+/g, ".") : s;
+}
+function render(rows){
+  const frag = document.createDocumentFragment();
+  rows.forEach(r => {
+    const tr = document.createElement("tr");
+    COLS[table].forEach(([k]) => {
+      const td = document.createElement("td");
+      let v = r[k] ?? "";
+      if (k === "fin_kod") v = String(v).toUpperCase();
+      if (k === "dogum_tarixi") v = fmtDate(v);
+      if (k === "No") td.className = "n"; if (k === "dogum_tarixi" || k === "fin_kod") td.className = "m";
+      td.textContent = v;            // heç vaxt innerHTML yox → XSS yoxdur
+      tr.append(td);
+    });
+    frag.append(tr);
+  });
+  $("tb").replaceChildren(frag);
+  $("em").hidden = rows.length > 0; $("em").textContent = "Heç nə tapılmadı.";
+  const a = total ? page * size + 1 : 0, b = Math.min(total, page * size + rows.length);
+  $("info").textContent = `${a}–${b} / ${total}`;
+  $("pv").disabled = page === 0; $("nx").disabled = (page + 1) * size >= total;
+}
+$("pv").onclick = () => { page--; load(); };
+$("nx").onclick = () => { page++; load(); };
+$("q").oninput = () => { clearTimeout(timer); timer = setTimeout(() => { page = 0; load(); }, 350); };
+</script>
+</body>
+</html>
