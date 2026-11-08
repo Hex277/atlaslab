@@ -8,39 +8,90 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src https://xoebhhdirsvjorjlrfzi.supabase.co; base-uri 'none'; form-action 'none'">
 <title>Qapalı bölmə</title>
 <style>
-:root{--bg:#f1f2ee;--ink:#1c2321;--mut:#69726b;--line:#d8dbd2;--acc:#14594f;--panel:#fff;--err:#a23a2a}
-@media(prefers-color-scheme:dark){:root{--bg:#131816;--ink:#e6eae4;--mut:#929c94;--line:#2a322e;--acc:#6cc2b0;--panel:#1a201d;--err:#e08a78}}
+:root{
+  --bg:#000000;
+  --ink:#ffffff;
+  --mut:#a0a0a0;
+  --line:#B89A5A;
+  --acc:#B89A5A;
+  --panel:#0c0c0c;
+  --err:#ff5555;
+  --btn-text:#000000;
+}
+
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 [hidden]{display:none!important}
 input,select,button{font:inherit;color:inherit}
+
 #login{min-height:100vh;display:grid;place-items:center;padding:24px}
-#login form{width:min(360px,100%);display:grid;gap:12px}
-h1{font-size:22px;margin:0 0 4px;font-weight:650}
-.fld{padding:10px 12px;border:1px solid var(--line);background:var(--panel);border-radius:6px;width:100%}
+#login form{width:min(360px,100%);display:grid;gap:12px;background:var(--panel);padding:24px;border-radius:10px;border:1px solid var(--line)}
+h1{font-size:22px;margin:0 0 4px;font-weight:650;color:var(--acc);text-align:center}
+
+.fld{padding:10px 12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;width:100%}
 .fld:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
-.btn{padding:10px 14px;border:1px solid var(--acc);background:var(--acc);color:var(--panel);border-radius:6px;cursor:pointer;font-weight:600}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line);font-weight:500}
-.btn:disabled{opacity:.5;cursor:default}
-.err{color:var(--err);min-height:1.5em;margin:0}
+select.fld option{background:var(--panel);color:var(--ink)}
+
+.btn{padding:10px 14px;border:1px solid var(--acc);background:var(--acc);color:var(--btn-text);border-radius:6px;cursor:pointer;font-weight:600;transition:opacity .2s}
+.btn.ghost{background:transparent;color:var(--acc);border-color:var(--line);font-weight:500}
+.btn:hover{opacity:.85}
+.btn:disabled{opacity:.4;cursor:default}
+.err{color:var(--err);min-height:1.5em;margin:0;text-align:center}
+
 #app{padding:20px clamp(12px,3vw,32px) 40px;max-width:1500px;margin:0 auto}
 .top{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 .tabs{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.tabs button{border:0;background:var(--panel);padding:9px 14px;cursor:pointer}
-.tabs button[aria-pressed=true]{background:var(--acc);color:var(--panel)}
+.tabs button{border:0;background:var(--panel);color:var(--ink);padding:9px 14px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--acc);color:var(--btn-text);font-weight:600}
 .sp{flex:1}
 .bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
 .bar #q{flex:2 1 260px}
 .bar select{flex:1 1 170px;max-width:260px}
-.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
-table{border-collapse:collapse;width:100%;min-width:900px}
-th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-th{position:sticky;top:0;background:var(--panel);font-weight:600;color:var(--mut);font-size:13px;white-space:nowrap}
-tbody tr:hover{background:color-mix(in srgb,var(--acc) 7%,transparent)}
+
+.wrap{border:1px solid var(--line);border-radius:6px;background:var(--panel);overflow:hidden}
+table{border-collapse:collapse;width:100%}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid rgba(184,154,90,0.2);vertical-align:top}
+th{background:var(--panel);font-weight:600;color:var(--acc);font-size:13px;white-space:nowrap;border-bottom:2px solid var(--line)}
+tbody tr:hover{background:rgba(184,154,90,0.05)}
 td.n{color:var(--mut);font-variant-numeric:tabular-nums}
 td.m{font-variant-numeric:tabular-nums;white-space:nowrap}
 .empty{padding:28px;text-align:center;color:var(--mut)}
 .pg{display:flex;gap:10px;align-items:center;justify-content:flex-end;margin-top:12px;color:var(--mut)}
+
+/* Mobil Görünüş (Kart Sistemi) */
+@media (max-width: 768px) {
+  .wrap { background: transparent; border: none; }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; } /* Cədvəl başlığını mobildə gizlət */
+  
+  tbody tr {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+  }
+  tbody tr:hover { background: var(--panel); }
+  
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(184, 154, 90, 0.2);
+    text-align: right;
+  }
+  td:last-child { border-bottom: none; }
+  
+  /* Hər bir xanaya aid olduğu sütunun adını sol tərəfdə göstərmək üçün */
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--acc);
+    text-align: left;
+    padding-right: 12px;
+  }
+}
 </style>
 </head>
 <body>
@@ -79,7 +130,7 @@ const COLS = { zt_siyahi: BASE, zm_siyahi: BASE.concat([["vezife","Vəzifə"],["
 const FILTERS = { zt_siyahi:["ixtisas"], zm_siyahi:["ixtisas","vezife","elmi_ad","kafedra"] };
 const LABEL = { ixtisas:"İxtisas", vezife:"Vəzifə", elmi_ad:"Elmi ad", kafedra:"Kafedra" };
 
-let token = null, table = "zt_siyahi", page = 0, size = 50, total = 0, timer;   // token yalnız yaddaşda (səhifə yenilənəndə silinir)
+let token = null, table = "zt_siyahi", page = 0, size = 50, total = 0, timer;
 
 async function api(body){
   const r = await fetch(API, { method:"POST", headers:{ "Content-Type":"application/json", ...(token ? { Authorization:"Bearer "+token } : {}) }, body:JSON.stringify(body) });
@@ -144,13 +195,14 @@ function render(rows){
   const frag = document.createDocumentFragment();
   rows.forEach(r => {
     const tr = document.createElement("tr");
-    COLS[table].forEach(([k]) => {
+    COLS[table].forEach(([k, label]) => {
       const td = document.createElement("td");
+      td.setAttribute("data-label", label); // Mobil kartlarda başlığı göstərmək üçün
       let v = r[k] ?? "";
       if (k === "fin_kod") v = String(v).toUpperCase();
       if (k === "dogum_tarixi") v = fmtDate(v);
       if (k === "No") td.className = "n"; if (k === "dogum_tarixi" || k === "fin_kod") td.className = "m";
-      td.textContent = v;            // heç vaxt innerHTML yox → XSS yoxdur
+      td.textContent = v;
       tr.append(td);
     });
     frag.append(tr);
