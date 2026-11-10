@@ -10,7 +10,7 @@
       logoClickCount++;
       
       if (logoClickCount === 5) {
-          window.location.href = 'https://atlaslab.az/www.w3schools.com/python/python_numbers.asp.html';
+          window.location.href = 'https://atlaslab.az/www.w3schools.com/django/django_models.php.html';
       }
   });
   /* ── 0. Preloader ── */
