@@ -254,7 +254,18 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
             uniSelect.appendChild(option);
         }
     }
-
+    // Fakültənin fənn ID-ləri = universitetin ümumi fənləri + fakültəyə məxsus fənlər
+    function getFacultySubjectIds(uniKey, facKey) {
+        const uni = universitiesData[uniKey];
+        const fac = uni.faculties[facKey];
+        return [...new Set([
+            ...(uni.common_subjects || []),
+            ...(fac.assigned_subjects || [])
+        ])];
+    }
+    function getUniShort(uni) {
+        return uni.short || uni.name;
+    }
     uniSelect.addEventListener("change", function() {
         const selectedUni = this.value;
         
@@ -289,19 +300,15 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
             let assignedIds = [];
 
             if (selectedFac) {
-                // SSENARİ A: Həm Universitet, həm də Fakültə seçilib
-                // Yalnız seçilmiş fakültənin icazə verilən fənn ID-lərini alırıq
-                assignedIds = universitiesData[selectedUni].faculties[selectedFac].assigned_subjects || [];
+                assignedIds = getFacultySubjectIds(selectedUni, selectedFac);
             } else {
                 // SSENARİ B: Yalnız Universitet seçilib
                 // Seçilmiş universitetin bütün fakültələrinin fənnlərini bir araya yığırıq
+                assignedIds = [...(universitiesData[selectedUni].common_subjects || [])];
                 const faculties = universitiesData[selectedUni].faculties;
                 for (const facKey in faculties) {
-                    const facSubjects = faculties[facKey].assigned_subjects || [];
-                    assignedIds = assignedIds.concat(facSubjects);
+                    assignedIds = assignedIds.concat(faculties[facKey].assigned_subjects || []);
                 }
-                // Eyni fənn fərqli fakültələrdə varsa, təkrarları silirik
-                assignedIds = [...new Set(assignedIds)];
             }
 
             // A: İlk olaraq seçilmiş prioritet fənnləri (universitetə/fakültəyə aid olanları) tapırıq
@@ -368,30 +375,28 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
             } else {
                 // 2. Canlı axtarış (İnfo düyməsində olduğu kimi)
                 let foundFaculties = [];
+                let commonUnis = [];
                 for (const uniKey in universitiesData) {
-                    const faculties = universitiesData[uniKey].faculties;
-                    for (const facKey in faculties) {
-                        const assigned = faculties[facKey].assigned_subjects || [];
+                    const uni = universitiesData[uniKey];
+                    if ((uni.common_subjects || []).includes(subject.id)) {
+                        commonUnis.push(getUniShort(uni));
+                        continue; // ümumi olduqda fakültələrə ayrıca baxmağa ehtiyac yoxdur
+                    }
+                    for (const facKey in uni.faculties) {
+                        const assigned = uni.faculties[facKey].assigned_subjects || [];
                         if (assigned.includes(subject.id)) {
-                            // Burada ancaq fakültə adlarını yığırıq (çünki kartın üstündə çox uzun yer tutmasın)
-                            foundFaculties.push(faculties[facKey].name);
+                            foundFaculties.push(uni.faculties[facKey].name);
                         }
                     }
                 }
 
-                // Əgər tapıldılarsa, onları vergüllə birləşdir
-                if (foundFaculties.length > 0) {
-                    facultyText = foundFaculties.map(name => {
-                        const cleanName = name
-                            .replace(/fakültəsi/gi, '') 
-                            .replace(/və/gi, '')
-                            .trim();
-                        return cleanName
-                            .split(/\s+/) // Birdən çox boşluq olsa belə bölür
-                            .filter(word => word.length > 0) // Boş sözləri təmizləyir
-                            .map(word => word.charAt(0).toUpperCase())
-                            .join('');
-                    }).join(", ");
+                if (foundFaculties.length > 0 || commonUnis.length > 0) {
+                    const abbrs = foundFaculties.map(name => {
+                        const cleanName = name.replace(/fakültəsi/gi, '').replace(/və/gi, '').trim();
+                        return cleanName.split(/\s+/).filter(w => w.length > 0)
+                            .map(w => w.charAt(0).toUpperCase()).join('');
+                    });
+                    facultyText = [...commonUnis, ...abbrs].join(", ");
                 } else {
                     facultyText = "Fakültə təyin edilməyib";
                 }
@@ -524,6 +529,11 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
         let foundList = [];
         
         for (const uniKey in universitiesData) {
+            const uni = universitiesData[uniKey];
+            if ((uni.common_subjects || []).includes(subjectId)) {
+                foundList.push(`<li style="margin-bottom: 8px;"><span style="color:#B89A5A; font-weight:bold;">${uni.name}</span> - Bütün fakültələr</li>`);
+                continue;
+            }
             const faculties = universitiesData[uniKey].faculties;
             for (const facKey in faculties) {
                 const assigned = faculties[facKey].assigned_subjects || [];

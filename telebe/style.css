@@ -499,6 +499,7 @@ button {
     padding: 15px;
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 10px;
 }
 #last-label {
@@ -508,6 +509,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    text-align: center;
 }
 
 .stats-chart-container {
