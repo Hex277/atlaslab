@@ -214,13 +214,6 @@
         "type": "muhendislik"
       },
       {
-        "id": "karyera-planlamasi-azmiu",
-        "title": "Karyera planlaması",
-        "icon": "📈",
-        "count": 10,
-        "type": "biznes_iqtisadiyyat"
-      },
-      {
         "id": "korporativ-idareetme-azmiu",
         "title": "Korporativ idarəetmə",
         "icon": "🏢",
@@ -481,7 +474,6 @@
       },
       "common_subjects": [
         "biznesin-esaslari-azmiu",
-        "karyera-planlamasi-azmiu",
         "proseslerin-analizi-ve-identifikasiyasi-azmiu",
         "psixologiya-azmiu",
         "perakende-ticaret-marketingi-azmiu",
