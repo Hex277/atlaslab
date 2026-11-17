@@ -1,20 +1,7 @@
 {
   "subject_pool": {
     "global_subjects": [
-      {
-        "id": "azerbaycan-tarixi",
-        "title": "Azərbaycan tarixi",
-        "icon": "📜",
-        "count": 10,
-        "type": "humanitar"
-      },
-      {
-        "id": "adiak",
-        "title": "Azərbaycan dilində işgüzar və akademik kommunikasiya",
-        "icon": "🇦🇿",
-        "count": 10,
-        "type": "dil_fenleri"
-      }
+      
     ],
     "special_subjects": [
       {
@@ -214,6 +201,13 @@
         "type": "muhendislik"
       },
       {
+        "id": "karyera-planlamasi-azmiu",
+        "title": "Karyera planlaması",
+        "icon": "📈",
+        "count": 10,
+        "type": "biznes_iqtisadiyyat"
+      },
+      {
         "id": "korporativ-idareetme-azmiu",
         "title": "Korporativ idarəetmə",
         "icon": "🏢",
@@ -366,6 +360,20 @@
         "icon": "📊",
         "count": 10,
         "type": "biznes_iqtisadiyyat"
+      },
+      {
+        "id": "azerbaycan-tarixi",
+        "title": "Azərbaycan tarixi",
+        "icon": "📜",
+        "count": 10,
+        "type": "humanitar"
+      },
+      {
+        "id": "adiak",
+        "title": "Azərbaycan dilində işgüzar və akademik kommunikasiya",
+        "icon": "🇦🇿",
+        "count": 10,
+        "type": "dil_fenleri"
       }
     ]
   },
@@ -474,10 +482,13 @@
       },
       "common_subjects": [
         "biznesin-esaslari-azmiu",
+        "karyera-planlamasi-azmiu",
         "proseslerin-analizi-ve-identifikasiyasi-azmiu",
         "psixologiya-azmiu",
         "perakende-ticaret-marketingi-azmiu",
-        "teskilati-davranis-azmiu"
+        "teskilati-davranis-azmiu",
+        "azerbaycan-tarixi",
+        "adiak"
       ],
       "short": "AzMİU"
     },

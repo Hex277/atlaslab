@@ -266,6 +266,11 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
     function getUniShort(uni) {
         return uni.short || uni.name;
     }
+    function abbreviateFaculty(name) {
+        return name.replace(/fakültəsi/gi, '').replace(/və/gi, '').trim()
+            .split(/\s+/).filter(w => w.length > 0)
+            .map(w => w.charAt(0).toUpperCase()).join('');
+    }
     uniSelect.addEventListener("change", function() {
         const selectedUni = this.value;
         
@@ -374,32 +379,31 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
                 facultyText = "Ümumi (Bütün fakültələr)";
             } else {
                 // 2. Canlı axtarış (İnfo düyməsində olduğu kimi)
-                let foundFaculties = [];
-                let commonUnis = [];
+                const groups = [];
                 for (const uniKey in universitiesData) {
                     const uni = universitiesData[uniKey];
+                    const short = getUniShort(uni);
+
+                    // Universitetin bütün fakültələrinə aid fənn: yalnız qısa ad
                     if ((uni.common_subjects || []).includes(subject.id)) {
-                        commonUnis.push(getUniShort(uni));
-                        continue; // ümumi olduqda fakültələrə ayrıca baxmağa ehtiyac yoxdur
+                        groups.push(short);
+                        continue;
                     }
+
+                    // Yalnız müəyyən fakültələrə aid fənn: BDU (H, TRK)
+                    const abbrs = [];
                     for (const facKey in uni.faculties) {
-                        const assigned = uni.faculties[facKey].assigned_subjects || [];
-                        if (assigned.includes(subject.id)) {
-                            foundFaculties.push(uni.faculties[facKey].name);
+                        const fac = uni.faculties[facKey];
+                        if ((fac.assigned_subjects || []).includes(subject.id)) {
+                            abbrs.push(abbreviateFaculty(fac.name));
                         }
+                    }
+                    if (abbrs.length > 0) {
+                        groups.push(`${short} (${abbrs.join(", ")})`);
                     }
                 }
 
-                if (foundFaculties.length > 0 || commonUnis.length > 0) {
-                    const abbrs = foundFaculties.map(name => {
-                        const cleanName = name.replace(/fakültəsi/gi, '').replace(/və/gi, '').trim();
-                        return cleanName.split(/\s+/).filter(w => w.length > 0)
-                            .map(w => w.charAt(0).toUpperCase()).join('');
-                    });
-                    facultyText = [...commonUnis, ...abbrs].join(", ");
-                } else {
-                    facultyText = "Fakültə təyin edilməyib";
-                }
+                facultyText = groups.length > 0 ? groups.join(" | ") : "Fakültə təyin edilməyib";
             }
 
             return `
