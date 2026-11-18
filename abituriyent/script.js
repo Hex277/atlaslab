@@ -994,7 +994,7 @@ function scrollToQrup(qrupId, clickedBtn) {
   
     // Əgər buraxılışdırsa fərqli funksiyanı çağır
     if (qrupId === "qrup5") {
-      qrupuYenileBuraxilis(qrupId);
+      qrupuYenileBuraxilis();
     } else {
       qrupuYenile(qrupId);
     }

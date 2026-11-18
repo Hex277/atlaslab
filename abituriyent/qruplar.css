@@ -844,7 +844,6 @@ body.dark-mode .white-icon {
 
 /* ─── Footer (desktop sidebar pages) ─── */
 .site-footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -993,15 +992,17 @@ div[data-v-77565f88] {
 @media (min-width: 769px) {
     #language-selector,
     #menu-bar,
-    #toggle-dark-mode,
-    .main-content {
+    #toggle-dark-mode{
         position: fixed;
         z-index: 99;
     }
 
     .main-content {
         margin-left: 235px;
-        padding: 10px 0 10px 30px;
+        padding: 20px;
+        width: calc(100% - 235px);
+        box-sizing: border-box;
+        position: relative;
     }
 
     .search-bar {
@@ -1057,6 +1058,8 @@ div[data-v-77565f88] {
 
     .header {
         margin-left: 240px;
+        width: calc(100% - 240px); /* ƏLAVƏ ET */
+        box-sizing: border-box;    /* ƏLAVƏ ET */
     }
 
     /* Group block switcher */
