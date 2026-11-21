@@ -719,14 +719,15 @@ if (window.location.pathname.endsWith("statistics.html")) {
 
         renderChart(fixedLabels, countsData, chartLabelFor(type));
     }
-
+    const escapeHtml = (s) => String(s ?? '').replace(/[&<>"']/g,
+        (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     async function loadLeaderboard(currentUserId) {
         const client = getSupabase();
         if (!client) return;
 
         const { data: statsData, error: statsError } = await client
             .from('user_stats')
-            .select('*')
+            .select('user_id, display_name, elo_rating, total_answered_questions, total_correct_answers')
             .order('elo_rating', { ascending: false })
             .limit(30);
 
@@ -756,7 +757,7 @@ if (window.location.pathname.endsWith("statistics.html")) {
                 : 0;
 
             const isMe = row.user_id === currentUserId;
-            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5);
+            let nameToShow = escapeHtml(row.display_name || 'İstifadəçi #' + row.user_id.slice(0, 5));
             if (isMe) nameToShow += ' (Siz)';
 
             const isPremium = activePremiumUserIds.has(row.user_id);
@@ -771,7 +772,7 @@ if (window.location.pathname.endsWith("statistics.html")) {
                     <td>${index + 1}</td>
                     <td>
                         <div class="lb-user">
-                            <img class="lb-avatar" src="${avatarMap.get(row.user_id) || '../images/profile.webp'}"
+                            <img class="lb-avatar" src="${escapeHtml(avatarMap.get(row.user_id) || '../images/profile.webp')}""
                                 alt="" loading="lazy" onerror="this.onerror=null;this.src='../images/profile.webp'">
                             <span class="lb-name">${nameHTML}</span>
                         </div>
@@ -1930,7 +1931,11 @@ if (window.location.pathname.includes("profile.html")) {
         const passwordInput = document.getElementById('password');
         const createdAtText = document.getElementById('createdat');
 
-        if (usernameInput) usernameInput.value = user.user_metadata?.full_name || "";
+        if (usernameInput) {
+            const { data: me } = await supabaseClient.from('user_stats')
+                .select('display_name').eq('user_id', user.id).maybeSingle();
+            usernameInput.value = me?.display_name || user.user_metadata?.full_name || "";
+        }
         if (emailInput) emailInput.value = user.email || "";
         if (passwordInput) passwordInput.value = "********"; // Şifrə gizli qalmalıdır
         if (createdAtText && user.created_at) {
@@ -2175,16 +2180,16 @@ if (window.location.pathname.includes("profile.html")) {
                 saveBtn.textContent = "Saxlanılır...";
                 saveBtn.disabled = true;
 
-                // Adı metadata kimi yeniləyirik
-                const { data, error } = await supabaseClient.auth.updateUser({
-                    data: { full_name: newName }
-                });
+                const { error } = await supabaseClient.rpc('change_display_name', { p_name: newName });
 
                 saveBtn.textContent = originalText;
                 saveBtn.disabled = false;
 
                 if (error) {
-                    await showMessage("Xəta: " + error.message);
+                    const m = error.message || '';
+                    if (m.includes('name_taken') || error.code === '23505') await showMessage("Bu istifadəçi adı artıq istifadədədir!");
+                    else if (m.includes('invalid_name')) await showMessage("Ad 3–20 simvol olmalıdır; yalnız hərf, rəqəm, boşluq, _ və - istifadə edin.");
+                    else await showMessage("Xəta: " + m);
                 } else {
                     await showMessage("Profil məlumatlarınız uğurla yadda saxlanıldı!", "showMessage", "Tamam");
                 }
@@ -2244,15 +2249,16 @@ if (window.location.pathname.includes("profile.html")) {
 
                     // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
                     deleteBtn.textContent = "Göndərilir...";
+                    const { data: result, error: rpcError } = await supabaseClient.rpc('request_account_deletion');
 
-                    const { error: insertError } = await supabaseClient
-                        .from('hesab_silme_telebleri')
-                        .insert([
-                            { email: userEmail }
-                        ]);
-
-                    if (insertError) {
-                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + insertError.message);
+                    if (rpcError) {
+                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + rpcError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+                    if (result === 'already') {
+                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
                         deleteBtn.textContent = "Hesabı sil";
                         deleteBtn.disabled = false;
                         return;
