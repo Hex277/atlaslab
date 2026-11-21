@@ -841,55 +841,29 @@ if (window.location.pathname.includes("profile.html")) {
         const deleteBtn = document.querySelector('.btn-delete');
         if (deleteBtn) {
             deleteBtn.addEventListener('click', async () => {
-                const isConfirmed = await showMessage("Hesabınızı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz!", "confirm");
-
+                const deleteBtn = document.querySelector('.btn-delete');
                 if (isConfirmed) {
-                    deleteBtn.textContent = "Yoxlanılır...";
+                    deleteBtn.textContent = "Göndərilir...";
                     deleteBtn.disabled = true;
 
-                    const userEmail = user.email;
+                    const { data: result, error: rpcError } = await supabaseClient.rpc('request_account_deletion');
 
-                    // 1. Əvvəlcə yoxlayırıq: Bu e-poçt artıq cədvəldə varmı?
-                    const { data: existingData, error: checkError } = await supabaseClient
-                        .from('hesab_silme_telebleri')
-                        .select('email')
-                        .eq('email', userEmail); // Cədvəldəki 'email' sütunu istifadəçinin e-poçtuna bərabər olanları tap
-
-                    if (checkError) {
-                        await showMessage("Sorğu yoxlanılarkən xəta baş verdi: " + checkError.message);
+                    if (rpcError) {
+                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + rpcError.message);
                         deleteBtn.textContent = "Hesabı sil";
                         deleteBtn.disabled = false;
                         return;
                     }
 
-                    // 2. Əgər data içində nəticə varsa, deməli artıq müraciət edib
-                    if (existingData && existingData.length > 0) {
+                    if (result === 'already') {
                         await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
                         deleteBtn.textContent = "Hesabı sil";
                         deleteBtn.disabled = false;
-                        return; // funksiyanı buradaca dayandırırıq ki, yenidən bazaya yazmasın
-                    }
-
-                    // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
-                    deleteBtn.textContent = "Göndərilir...";
-
-                    const { error: insertError } = await supabaseClient
-                        .from('hesab_silme_telebleri')
-                        .insert([
-                            { email: userEmail }
-                        ]);
-
-                    if (insertError) {
-                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + insertError.message);
-                        deleteBtn.textContent = "Hesabı sil";
-                        deleteBtn.disabled = false;
                         return;
                     }
 
-                    // Uğurla yazıldıqdan sonra istifadəçiyə yekun mesajı veririk
                     await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
 
-                    // Sistemdən çıxış edib login-ə atırıq
                     await supabaseClient.auth.signOut();
                     window.location.href = "login.html";
                 }

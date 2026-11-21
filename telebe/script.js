@@ -2229,64 +2229,31 @@ if (window.location.pathname.includes("profile.html")) {
         // HESABI SİL (Supabase Cədvəlinə Yazmaq - Spam qorumalı)
         // ==========================================
         const deleteBtn = document.querySelector('.btn-delete');
-        if (deleteBtn) {
-            deleteBtn.addEventListener('click', async () => {
-                const isConfirmed = await showMessage("Hesabınızı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz!", "confirm");
+        if (isConfirmed) {
+            deleteBtn.textContent = "Göndərilir...";
+            deleteBtn.disabled = true;
 
-                if (isConfirmed) {
-                    deleteBtn.textContent = "Yoxlanılır...";
-                    deleteBtn.disabled = true;
+            const { data: result, error: rpcError } = await supabaseClient.rpc('request_account_deletion');
 
-                    const userEmail = user.email;
+            if (rpcError) {
+                await showMessage("Sorğu göndərilərkən xəta baş verdi: " + rpcError.message);
+                deleteBtn.textContent = "Hesabı sil";
+                deleteBtn.disabled = false;
+                return;
+            }
 
-                    // 1. Əvvəlcə yoxlayırıq: Bu e-poçt artıq cədvəldə varmı?
-                    const { data: existingData, error: checkError } = await supabaseClient
-                        .from('hesab_silme_telebleri')
-                        .select('email')
-                        .eq('email', userEmail); // Cədvəldəki 'email' sütunu istifadəçinin e-poçtuna bərabər olanları tap
+            if (result === 'already') {
+                await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
+                deleteBtn.textContent = "Hesabı sil";
+                deleteBtn.disabled = false;
+                return;
+            }
 
-                    if (checkError) {
-                        await showMessage("Sorğu yoxlanılarkən xəta baş verdi: " + checkError.message);
-                        deleteBtn.textContent = "Hesabı sil";
-                        deleteBtn.disabled = false;
-                        return;
-                    }
+            await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
 
-                    // 2. Əgər data içində nəticə varsa, deməli artıq müraciət edib
-                    if (existingData && existingData.length > 0) {
-                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
-                        deleteBtn.textContent = "Hesabı sil";
-                        deleteBtn.disabled = false;
-                        return; // funksiyanı buradaca dayandırırıq ki, yenidən bazaya yazmasın
-                    }
-
-                    // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
-                    deleteBtn.textContent = "Göndərilir...";
-                    const { data: result, error: rpcError } = await supabaseClient.rpc('request_account_deletion');
-
-                    if (rpcError) {
-                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + rpcError.message);
-                        deleteBtn.textContent = "Hesabı sil";
-                        deleteBtn.disabled = false;
-                        return;
-                    }
-                    if (result === 'already') {
-                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
-                        deleteBtn.textContent = "Hesabı sil";
-                        deleteBtn.disabled = false;
-                        return;
-                    }
-
-                    // Uğurla yazıldıqdan sonra istifadəçiyə yekun mesajı veririk
-                    await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
-
-                    // Sistemdən çıxış edib login-ə atırıq
-                    await supabaseClient.auth.signOut();
-                    window.location.href = "login.html";
-                }
-            });
+            await supabaseClient.auth.signOut();
+            window.location.href = "login.html";
         }
-
     });
 }
 // ---------------------- PREMIUM PAGE ----------------------
