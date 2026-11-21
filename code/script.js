@@ -449,18 +449,31 @@ if (window.location.pathname.endsWith("statistics.html")) {
             const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
             const monthlyTotals = {};
 
-            let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
-            while (tempDate <= endDate) {
-                const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
+            const startYear = startDate.getFullYear();
+            const startMonth = startDate.getMonth();
+            const endYear = endDate.getFullYear();
+            const endMonth = endDate.getMonth();
+
+            for (
+                let year = startYear, month = startMonth;
+                year < endYear || (year === endYear && month <= endMonth);
+                month += 1
+            ) {
+                if (month > 11) {
+                    month = 0;
+                    year += 1;
+                }
+                const label = `${monthNames[month]} ${year}`;
                 monthlyTotals[label] = 0;
-                tempDate.setMonth(tempDate.getMonth() + 1);
             }
 
             const addMonthly = (rows, dateCol, countCol) => {
                 rows.forEach(item => {
                     const d = new Date(item[dateCol]);
                     const label = `${monthNames[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
-                    if (monthlyTotals[label] !== undefined) monthlyTotals[label] += Number(item[countCol]) || 0;
+                    if (Object.hasOwn(monthlyTotals, label)) {
+                        monthlyTotals[label] += Number(item[countCol]) || 0;
+                    }
                 });
             };
 
