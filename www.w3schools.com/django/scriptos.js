@@ -11,7 +11,6 @@
         }
 
         let aiCavabi = "";
-        const API_KEY = "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";
 
         tryItDuymesi.addEventListener('click', async (event) => {
             if (event) event.stopPropagation();
